@@ -1,108 +1,57 @@
-import { chapterContent } from "@/components/story/Chapters";
-import StaticPitch from "@/components/story/StaticPitch";
-import Story from "@/components/story/Story";
-import type { StatRef, StoryData } from "@/components/story/types";
-import { claimText, displays, dossier, section, type Dossier } from "@/lib/data";
-import { FORMATION_SLOTS, GAP_ZONES, opposition, scatter, slotPositions } from "@/lib/formations";
+import Link from "next/link";
 
-const SHOWCASE = "liverpool";
-
-// which slot a position-group gap occupies, by formation
-const GAP_SLOTS: Record<string, string[]> = {
-  goalkeeper: ["GK"],
-  "centre-back": ["CB"],
-  "full-back": ["RB", "RWB"],
-  "defensive midfield": ["DM", "CM"],
-  "central midfield": ["CM", "AM"],
-  winger: ["RW", "RM", "AM"],
-  "centre-forward": ["CF"],
-};
-
-function storyData(d: Dossier): StoryData {
-  const disp = displays(d);
-  const ref = (id: string): StatRef => ({ id, stat: d.stats[id], display: disp[id] ?? d.stats[id].display });
-  // key_stats keep each section's facts in priority order (need one before need two, the top candidate first)
-  const ordered = [...Object.values(d.key_stats ?? {}).flat().map((k) => k.stat), ...Object.keys(d.stats)];
-  const find = (metric: string, pred: (e: string) => boolean = () => true) => {
-    const id = ordered.find((i) => d.stats[i] && d.stats[i].metric === metric && pred(d.stats[i].entity_id));
-    return id ? ref(id) : undefined;
-  };
-  const formation = find("predicted_formation");
-  const slots = FORMATION_SLOTS[String(formation?.stat.value ?? "4-3-3")] ?? FORMATION_SLOTS["4-3-3"];
-  const need = find("need");
-  const needGroup = need ? String(need.stat.value) : undefined;
-  const candidateSlot = needGroup ? slots.findIndex((s) => (GAP_SLOTS[needGroup] ?? []).includes(s)) : -1;
-  const home = slotPositions(slots);
-
-  // the top-ranked candidate the Scout section cited
-  const cand = find("expected_minutes_share") ?? find("realism");
-  const candId = cand?.stat.entity_id;
-  const candStat = (metric: string) => (candId ? find(metric, (e) => e === candId) : undefined);
-  const scout = section(d, "scout");
-  const candLine = scout?.claims.map(claimText).find((t) => cand && t.includes(cand.stat.entity_name) && t.includes("("));
-  const candClub = candLine?.match(/\(([^)]+)\)/)?.[1];
-
-  const match = find("p_home_win") ?? find("p_away_win");
-  const [homeName, awayName] = (match?.stat.entity_name ?? " v ").split(" v ");
-  const matchId = match?.stat.entity_id;
-  // six numbers with different metrics, cross-checked ones first, then re-checked single-source and model outputs
-  const rank: Record<string, number> = { verified: 0, single_source: 1, model_output: 2 };
-  const verifiedSamples = ordered
-    .filter((id, i) => d.stats[id] && ordered.indexOf(id) === i && d.stats[id].status in rank)
-    .sort((a, b) => rank[d.stats[a].status] - rank[d.stats[b].status])
-    .filter((id, i, all) => all.findIndex((j) => d.stats[j].metric === d.stats[id].metric) === i)
-    .slice(0, 6)
-    .map(ref);
-
-  return {
-    club: d.club.name,
-    slug: d.club.slug,
-    manager: find("appointed")?.stat.entity_name ?? find("pl_matches")?.stat.entity_name,
-    position: find("league_position", (e) => e === d.club.slug),
-    formation,
-    threat: find("threat_share"),
-    defActions: find("def_actions"),
-    need,
-    needGroup,
-    signings: (scout?.claims ?? [])
-      .filter((c) => c.type === "attributed")
-      .map((c) => ({ title: claimText(c).replace(/^According to [^,]+, /, ""), url: c.sources[0]?.url ?? null })),
-    candidate: cand
-      ? {
-          name: cand.stat.entity_name,
-          club: candClub,
-          age: candStat("age"),
-          value: candStat("market_value"),
-          fairFee: candStat("fair_fee"),
-          minutes: candStat("expected_minutes_share"),
-          realism: candStat("realism"),
-        }
-      : undefined,
-    verifiedSamples,
-    numbersTotal: d.verification.stat_auditor.numbers_total,
-    untraceable: d.verification.stat_auditor.numbers_untraceable,
-    generatedAt: d.generated_at,
-    prediction: match
-      ? {
-          home: homeName,
-          away: awayName,
-          kickoff: find("kickoff_utc", (e) => e === matchId),
-          pHome: find("p_home_win", (e) => e === matchId),
-          pDraw: find("p_draw", (e) => e === matchId),
-          pAway: find("p_away_win", (e) => e === matchId),
-        }
-      : undefined,
-    scene: {
-      scatter: scatter(22),
-      home,
-      away: opposition(),
-      candidateSlot,
-      gap: GAP_ZONES[needGroup ?? ""] ?? [0, 0],
-    },
-  };
-}
-
+// The front door: what dugout is and how it checks itself; every club's story is one click away (/clubs/).
 export default function Home() {
-  const data = storyData(dossier(SHOWCASE));
-  return <Story scene={data.scene} pitch={<StaticPitch data={data} />} chapters={chapterContent(data)} />;
+  return (
+    <article className="grid12 pt-10 pb-6">
+      <p className="hang mono-label">Open-source sporting director · Premier League</p>
+      <h1 className="hang mt-3 max-w-5xl font-display text-[clamp(3.4rem,10vw,8.5rem)] leading-[0.88]">
+        Every club, <span className="italic">read in full.</span>
+      </h1>
+      <p className="hang mt-8 max-w-2xl text-lg">
+        Every night dugout reads free football data, refits its backtested models and writes a scouting dossier for each
+        Premier League club: how the side plays, the next match, the likely XI, the gap in the squad and who could fill
+        it, from the dream target to the realistic one and the hidden gem.
+      </p>
+      <p className="hang mt-8">
+        <Link
+          href="/clubs/"
+          className="inline-block border-2 border-ink px-6 py-3 font-display text-3xl leading-none hover:bg-ink hover:text-bone focus-visible:bg-ink focus-visible:text-bone"
+        >
+          Choose your club <span aria-hidden="true">→</span>
+        </Link>
+      </p>
+
+      <section className="col-span-12 mt-20 grid gap-8 border-t border-ink pt-6 sm:col-span-10 sm:col-start-2 sm:grid-cols-3" aria-label="How it works">
+        <div>
+          <h2 className="font-display text-2xl italic">The model never writes a number.</h2>
+          <p className="mt-2 text-pencil">
+            The writer uses fact codes; code fills every figure from an evidence ledger, and the Stat Auditor re-runs each
+            one against its source.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-display text-2xl italic">Two verifiers, or it is withheld.</h2>
+          <p className="mt-2 text-pencil">
+            Fact-Check needs an official source or two independent ones. Anything that fails is struck out with the
+            reason, in public.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-display text-2xl italic">Every number has a receipt.</h2>
+          <p className="mt-2 text-pencil">
+            Hover or tap any figure for its source, fetch time and status. The models&apos; backtests, weak results included,
+            are on the methods page.
+          </p>
+        </div>
+      </section>
+      <p className="hang mono-label mt-10 flex flex-wrap gap-x-6 gap-y-2">
+        <Link className="underline" href="/scoreboard/">Every prediction against the result</Link>
+        <Link className="underline" href="/methods/">How the models are tested</Link>
+        <a className="underline" href="https://github.com/delta96040/dugout" target="_blank" rel="noopener noreferrer">
+          Source code (<span data-meta>MIT</span>)
+        </a>
+      </p>
+    </article>
+  );
 }

@@ -27,7 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Link>
           <nav aria-label="Main" className="col-span-12 mt-2 flex flex-wrap gap-x-5 gap-y-1 sm:col-span-9 sm:mt-0 sm:justify-end">
             <Link className="mono-label hover:text-ink" href="/clubs/">Clubs</Link>
-            <Link className="mono-label hover:text-ink" href="/club/liverpool/">Dossier</Link>
             <Link className="mono-label hover:text-ink" href="/scoreboard/">Scoreboard</Link>
             <Link className="mono-label hover:text-ink" href="/methods/">Methods</Link>
           </nav>

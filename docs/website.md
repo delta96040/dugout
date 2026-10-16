@@ -17,8 +17,9 @@ uv run python tools/check_site_numbers.py   # fails if any visible digit is not 
 
 | Route | What |
 |---|---|
-| `/` | The scroll story: six pinned chapters over one persistent WebGL canvas, fed by the showcase club's dossier |
-| `/clubs` | Typographic index of the clubs with a verified dossier (big serif names, mono form strings) |
+| `/` | The front door: what dugout is, how it verifies itself, and a "Choose your club" button |
+| `/story/[slug]` | The scroll story for any club: six pinned chapters over one persistent WebGL canvas, fed by its dossier; a club picker on top |
+| `/clubs` | Choose your club: typographic index (big serif names, mono form strings), each with its story and dossier |
 | `/club/[slug]` | The dossier: summary and the six specialists' verified prose; withheld material listed |
 | `/methods` | How the models and both verifiers work, with every backtest score linked to its report |
 | `/scoreboard` | Every prediction against the real result (live rows, and walk-forward backtest rows, always labelled) |
@@ -48,6 +49,8 @@ the built pages and fails on anything else.
   shell: scroll, WebGL, cursor); scrambled numbers read the chapter on screen from a context (`story/active.ts`).
   The static story (same text, SVG pitch) paints first; the WebGL scene loads on the first
   interaction. Reduced-motion, no-WebGL, data-saving and low-memory devices keep the static story.
+- **Chapter three** shows the scout's three lists for the top need (best fit, realistic, hidden gem; the first name
+  of each with its verified numbers) and up to three fact-checked "linked in the press" rumours, labelled as such.
 - **Prefetch fix**: Next's static export writes segment-prefetch files as `__next.x/__PAGE__.txt` but the router
   requests `__next.x.__PAGE__.txt`; `scripts/flatten-prefetch.mjs` (run by `npm run build`) writes the dotted copies.
 - **Cursor**: a chalk crosshair with a fading trail over the pitch.

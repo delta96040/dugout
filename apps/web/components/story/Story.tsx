@@ -131,7 +131,7 @@ export default function Story({
               </section>
             );
           })}
-          <p className="mono-label absolute bottom-4 left-1/2 -translate-x-1/2" aria-hidden="true">
+          <p className="scroll-hint mono-label absolute bottom-4 left-1/2 -translate-x-1/2" aria-hidden="true">
             {chapter < CHAPTERS - 1 ? "scroll" : ""}
           </p>
         </div>

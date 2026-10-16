@@ -9,6 +9,8 @@ function N({ s, className }: { s?: StatRef; className?: string }) {
   return s ? <Num stat={s.stat} display={s.display} className={className} /> : <span className="text-pencil">n/a</span>;
 }
 
+const TARGET_LABEL = { best: "Best fit · dream target", realistic: "Realistic · gettable", gem: "Hidden gem · young" };
+
 /** The six chapters' copy, rendered on the server. Scrambled numbers resolve when their chapter is on screen
  *  (Scramble reads the active chapter from context), so this needs no client state. */
 export function chapterContent(d: StoryData) {
@@ -81,24 +83,54 @@ export function chapterContent(d: StoryData) {
     },
     {
       kicker: "Chapter three · scout the fix",
-      body: d.candidate ? (
+      body: d.targets.length ? (
         <>
-          <h2 className="font-display text-[clamp(2.4rem,5.6vw,5.2rem)] leading-[0.9]">{d.candidate.name}</h2>
-          <p className="mono-label mt-2">{d.candidate.club}</p>
-          <dl className="mt-6 grid max-w-md grid-cols-2 gap-x-6 gap-y-2 font-mono text-sm">
-            <dt className="text-pencil">Age</dt>
-            <dd>{d.candidate.age && <Scramble s={d.candidate.age} chapter={2} />}</dd>
-            <dt className="text-pencil">Market value</dt>
-            <dd>{d.candidate.value && <Scramble s={d.candidate.value} chapter={2} />}</dd>
-            <dt className="text-pencil">Fair fee (model)</dt>
-            <dd>{d.candidate.fairFee && <Scramble s={d.candidate.fairFee} chapter={2} />}</dd>
-            <dt className="text-pencil">Chance of the move</dt>
-            <dd>{d.candidate.realism && <Scramble s={d.candidate.realism} chapter={2} />}</dd>
-          </dl>
-          {d.candidate.minutes && (
-            <p className="stamp mt-6 text-xl">
-              Plays <N s={d.candidate.minutes} /> of minutes
-            </p>
+          <h2 className="font-display text-[clamp(2.2rem,5vw,4.4rem)] leading-[0.9]">
+            Three ways <span className="italic">to fix it.</span>
+          </h2>
+          <ul className="mt-5 grid max-w-2xl gap-4 sm:grid-cols-3">
+            {d.targets.map((t) => (
+              <li key={t.kind} className="border-t-2 border-ink pt-2">
+                <p className={`mono-label ${t.kind === "realistic" ? "text-red" : ""}`}>{TARGET_LABEL[t.kind]}</p>
+                <p className="mt-1 font-display text-2xl leading-tight">{t.name}</p>
+                {t.club && <p className="mono-label">{t.club}</p>}
+                <dl className="mt-2 font-mono text-sm">
+                  {t.age && (
+                    <div className="flex justify-between gap-3">
+                      <dt className="text-pencil">Age</dt>
+                      <dd>
+                        <Scramble s={t.age} chapter={2} />
+                      </dd>
+                    </div>
+                  )}
+                  {t.figure && (
+                    <div className="flex justify-between gap-3">
+                      <dt className="text-pencil">{t.figureLabel}</dt>
+                      <dd>
+                        <Scramble s={t.figure} chapter={2} />
+                      </dd>
+                    </div>
+                  )}
+                </dl>
+              </li>
+            ))}
+          </ul>
+          {d.rumours.length > 0 && (
+            <div className="mt-5 max-w-2xl">
+              <p className="mono-label">Linked in the press · rumours, not facts</p>
+              <ul className="mt-1 space-y-0.5 text-sm">
+                {d.rumours.slice(0, 3).map((r) => (
+                  <li key={r.text}>
+                    {r.text}{" "}
+                    {r.url && (
+                      <a className="font-mono text-xs underline" href={r.url} target="_blank" rel="noopener noreferrer">
+                        The Guardian
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </>
       ) : (
