@@ -114,11 +114,30 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
     - Next: rumour track record (Rumour Mill archive x TM transfers + wiki_transfers as outcome labels), then a
       league picker (needs non-PL leagues: football-data.org free tier has PD/SA/BL1/FL1/DED; FPL is PL-only),
       needs model on played positions, conformal fee ranges, summer-2026 fees as a fresh valuation holdout.
-  - **Next, in order:** (1) Wikipedia summer-2026 transfers (MediaWiki API, CC BY-SA) for fees + outcome labels;
-    (2) rumour track record from the Guardian Rumour Mill archive (outlet hit rates, per-rumour probability,
-    backtested); (3) Groq as first LLM (user must create the account and add GROQ_API_KEY; then `gh secret set`);
-    (4) needs model on played positions; (5) API-Football injury history for other big leagues; (6) Championship
-    squads via local refresh; (7) conformal ranges on fair fees.
+  - **2026-10-17, branch `rumour-track-record` (the novelty from landscape.md):**
+    - `rumour_archive` adapter (history job): every Rumour Mill column since 2001-02-16 (5,238 columns, ~105 calls
+      once, finished years cached 10 years) -> `rumours` (32,725 paragraphs). Outlets: the column links out for
+      ~2% only; `outlet_in_text` adds outlets named in the prose ("says the Mirror") -> ~5,750 credited.
+    - `dugout-models rumours` (backtest; publish writes `rumour_links` + model_outputs model='rumours'): club
+      gazetteer from TM names + aliases (capitalised runs only), players by normalised name, own club and loan owner
+      excluded, labels "joined that club within 3/6/12 months" from TM + wiki_transfers (coverage to 2026-09-02).
+    - Data traps found (do not re-learn): transfermarkt-datasets `transfers` is very partial (none for players
+      inactive since 2023, gaps for active ones, e.g. Marmoush to Man City missing); `player_valuations.current_club_id`
+      is TODAY's club (only `current_club_name` is dated); appearances include national-team games (World Cup).
+      Club timelines therefore join transfers + appearances (club games only) + dated valuation names.
+      **realism.py snapshots use `current_club_id` too (wealth rank by today's club): a bug to fix.**
+    - Results (rumours.md): 6 months, test 2025-26: Brier 0.135 vs 0.151 (base rate since 2020-21), AUC 0.72,
+      calibrated. The column changed in 2020 (fewer items, ~9% -> ~17% came true): era flag. Outlets' shrunk
+      records barely differ and hurt on validation -> published as records, not used to score (negative result).
+      A leave-one-out outlet encoding leaked labels via the scaler (fixed: out-of-fold by season, capped prior).
+    - Site: "Reports like this came true within half a year about one time in N" next to each incoming
+      "Linked in the press" item (story chapter three; dossier scout section), Methods row. No number words in
+      templates ("six" is a stray number to the Stat Auditor; "one"/"half" are allowed).
+    - Live after merge: needs the history job once (nightly with `history: true`, or Sunday) to fill `rumours`.
+  - **Next, in order:** (1) fix realism's club-on-date bug (above); (2) needs model on played positions;
+    (3) API-Football injury history for other big leagues; (4) Championship squads via local refresh;
+    (5) conformal ranges on fair fees; (6) rumour news signal for realism (PRIORS["news_weight_per_point"] is a
+    prior; the archive can now fit it).
   - User wants: product voice everywhere (no "model" wording on the site), realistic targets, all major leagues,
     and STATUS updated before the context fills so a new chat can continue.
 

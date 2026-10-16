@@ -152,6 +152,19 @@ def _trim_csv(url: str, body: bytes) -> bytes:
     return b"\n".join(body.splitlines()[:21]) + b"\n"
 
 
+def _trim_rumour_mill(url: str, doc: Any) -> Any:
+    """Two columns, one page, and of each body only the first two paragraphs that name a player (bold)."""
+    results = []
+    for r in doc["response"]["results"][:2]:
+        paras = [
+            p
+            for p in re.findall(r"<p>.*?</p>", r.get("fields", {}).get("body", ""), flags=re.S)
+            if "<strong>" in p
+        ]
+        results.append({**r, "fields": {"body": "".join(paras[:2])}})
+    return {"response": {**doc["response"], "pages": 1, "results": results}}
+
+
 TRIMMERS: dict[str, Callable[[str, bytes], bytes]] = {
     "rss": _trim_rss,
     "football_data_couk": _trim_csv,
@@ -182,4 +195,5 @@ TRIMMERS: dict[str, Callable[[str, bytes], bytes]] = {
         }
     ),
     "api_football": _json(_trim_list("response", 6)),
+    "rumour_archive": _json(_trim_rumour_mill),
 }

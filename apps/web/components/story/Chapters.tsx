@@ -103,6 +103,11 @@ export function chapterContent(d: StoryData) {
                 {d.rumours.slice(0, 2).map((r) => (
                   <li key={r.text}>
                     {r.text}{" "}
+                    {r.record && (
+                      <span className="text-pencil">
+                        Reports like this came true within half a year about one time in <Scramble s={r.record} chapter={2} />.{" "}
+                      </span>
+                    )}
                     {r.url && (
                       <a className="font-mono text-xs underline" href={r.url} target="_blank" rel="noopener noreferrer">
                         The Guardian

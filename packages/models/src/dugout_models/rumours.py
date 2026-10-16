@@ -3,16 +3,17 @@
 Each archived paragraph (`rumours`, adapter rumour_archive) names players in bold and mentions clubs. A *link* is
 (rumour, player, club) for every club mentioned near the player other than his own club (and the club that loaned
 him out). Players and clubs are resolved to Transfermarkt ids by normalised name; the outcome is whether he joined
-that club within 3, 6 or 12 months (transfermarkt-datasets transfers to 2026-07-06, then Wikipedia's summer-2026
+that club within 3, 6 or 12 months (transfermarkt-datasets club timelines to 2026-07-06, see People; then Wikipedia's summer-2026
 transfer lists via `wiki_transfers`). Links whose window is not over yet stay unlabelled.
 
 Two estimates, both trained on older seasons and tested on the latest (docs/backtests/rumours.md):
 - per outlet: the share of its links that came true, shrunk towards the overall rate (beta-binomial empirical Bayes)
   so an outlet with a handful of rumours is not called perfect or hopeless;
-- per rumour: a logistic regression on the outlet's shrunk rate, the buyer/seller wealth gap, the player's age and
-  value, how close the transfer deadline is, how often the same link was reported before, and how many clubs the
-  item names. Contract length is *not* used: only today's contracts exist, and for old rumours they leak the outcome
-  (a player who moved has a new contract).
+- per rumour: a logistic regression on the buyer/seller wealth gap, the player's age and value, the transfer
+  window and how close its deadline is, how often the same link was reported before, how many clubs and players the
+  item names, and the column's era. The outlet's record made validation worse, so it is published but not used.
+  Contract length is *not* used: only today's contracts exist, and for old rumours they leak the outcome (a player
+  who moved has a new contract).
 """
 
 from __future__ import annotations
@@ -49,9 +50,10 @@ SUMMER_2026_CLOSE = pd.Timestamp("2026-09-02")  # Wikipedia's summer-2026 lists 
 FIRST_SEASON = 2004  # 2004-05: Transfermarkt's transfer histories thin out before (docs/backtests/rumours.md)
 MONTH = pd.Timedelta(days=30.44)
 COLUMN = "The Guardian"  # outlet of an item the column does not credit to anyone else
+# Shipped features. The outlet's shrunk record (OUTLET_FEATURES) made validation seasons 2023-24 and 2024-25 worse,
+# so it is published as a track record but not used to score a rumour (rumours.md).
+OUTLET_FEATURES = ["outlet_logit", "credited"]
 FEATURES = [
-    "outlet_logit",
-    "credited",
     "age",
     "age2",
     "log_mv",
@@ -65,7 +67,11 @@ FEATURES = [
     "log_repeats",
     "n_clubs",
     "n_players",
+    "modern_column",
 ]
+# From 2020 the column runs far fewer, shorter items (about 250 columns a year before, 40-90 after) and many more
+# of them come true; the era is known when a rumour is published, so it is a feature (rumours.md, by season).
+MODERN_SEASON = 2020
 
 # Short names the column uses that are not Transfermarkt names, -> a Transfermarkt club code (clubs.parquet).
 ALIASES = {
@@ -126,9 +132,14 @@ GENERIC = {
     "national", "nacional", "union", "sport", "sporting club", "club", "academy", "independiente", "racing",
     "dynamo", "dinamo", "fc", "sc", "ac", "as", "cd", "free agent", "without club", "retired", "unknown",
     "career break", "ban", "england", "brazil", "spain", "france", "germany", "italy", "portugal", "argentina",
+    "van", "den", "der", "de", "la", "el", "al", "st", "san", "santa", "start", "top", "star", "sun",
 }  # fmt: skip
 YOUTH = re.compile(r"\b(u ?\d{2}|ii|iii|b|c|reserves?|youth|academy|yth|jgd|juniors?|primavera)\b")
 MIN_MOVES = 15  # a club must appear in this many Transfermarkt moves to be in the gazetteer
+# a run of capitalised words, allowing the small words inside club names ("Atlético de Madrid", "Brighton & Hove")
+_CAP = r"(?:[A-ZÀ-ÖØ-Þ0-9][\w'’.\-]*)"
+_JOIN = r"(?:\s+(?:de|del|della|di|da|do|dos|la|le|of|and|upon|am|an|der|&)(?=\s+[A-ZÀ-ÖØ-Þ]))?"
+CAPITALISED = re.compile(rf"{_CAP}(?:{_JOIN}\s+{_CAP})*")
 
 
 def fold(name: str) -> str:
@@ -195,8 +206,14 @@ class Gazetteer:
         return cls(names=names, label=label, longest=max(len(n.split()) for n in names))
 
     def find(self, text: str) -> list[tuple[str, str]]:
-        """(club id, matched name) for every club named in the text, longest names first, no overlaps."""
-        toks = normalise(text).split()
+        """(club id, matched name) for every club named in the text, longest names first, no overlaps.
+        Only runs of capitalised words count ("Reading", "Start", "Nice" as clubs, not as words)."""
+        out = []
+        for run in CAPITALISED.findall(text):
+            out += self._match(normalise(run).split())
+        return out
+
+    def _match(self, toks: list[str]) -> list[tuple[str, str]]:
         out, i = [], 0
         while i < len(toks):
             for k in range(min(self.longest, len(toks) - i), 0, -1):
@@ -216,40 +233,53 @@ class Gazetteer:
 
 @dataclass
 class People:
-    """Transfermarkt players by normalised name, plus each player's club history."""
+    """Transfermarkt players by normalised name, and where each one played when.
+
+    transfermarkt-datasets only carries transfer histories for players active in 2023 or later (none for anyone
+    whose last season is 2022 or earlier), so the club timeline joins three sources: transfers (exact dates),
+    appearances (2012 onwards, the club per game) and valuations (dated club *names*: the valuations' club id is
+    today's club, not the club on the day, so names are mapped to ids by matching them with appearances)."""
 
     by_name: dict[str, list[int]]
     dob: dict[int, pd.Timestamp]
     peak: dict[int, float]
     last_season: dict[int, float]
-    moves: dict[int, list[tuple[pd.Timestamp, str, str, float]]]  # (date, from, to, fee), by date
+    days: dict[int, np.ndarray]  # observation dates (int days since epoch), sorted
+    clubs: dict[int, list[str]]  # club at each observation ("0" = without a club)
+    loans: dict[int, list[tuple[pd.Timestamp, str]]]  # fee-less transfers: (date, club he came from)
+    club_names: dict[str, str]  # valuations' normalised club name -> club id
 
     @classmethod
-    def build(cls, players: pd.DataFrame, transfers: pd.DataFrame) -> People:
+    def build(cls, t: dict[str, pd.DataFrame], gaz: Gazetteer | None = None) -> People:
+        players = t["players"]
         by_name: dict[str, list[int]] = defaultdict(list)
         for pid, name in zip(players.player_id, players.name, strict=True):
             if isinstance(name, str):
                 by_name[person_key(name)].append(int(pid))
-        tr = transfers[pd.to_datetime(transfers.transfer_date) <= TM_SNAPSHOT].copy()
-        tr["d"] = pd.to_datetime(tr.transfer_date)
-        tr = tr.sort_values("d")
-        moves: dict[int, list] = defaultdict(list)
-        for r in tr.itertuples():
-            moves[int(r.player_id)].append(
-                (
-                    r.d,
-                    _cid(r.from_club_id),
-                    _cid(r.to_club_id),
-                    float(pd.to_numeric(r.transfer_fee, errors="coerce") or 0),
-                )
-            )
+        obs, names = club_timeline(t, gaz)
+        days, clubs = {}, {}
+        for pid, g in obs.groupby("player_id", sort=False):
+            days[int(pid)] = g.day.to_numpy()
+            clubs[int(pid)] = g.club.tolist()
+        tr = t["transfers"]
+        tr = tr[
+            (pd.to_datetime(tr.transfer_date) <= TM_SNAPSHOT)
+            & (pd.to_numeric(tr.transfer_fee, errors="coerce").fillna(0) == 0)
+        ]
+        loans: dict[int, list] = defaultdict(list)
+        for pid, d, frm in zip(tr.player_id, pd.to_datetime(tr.transfer_date), tr.from_club_id, strict=True):
+            if (c := _cid(frm)) is not None:
+                loans[int(pid)].append((d, c))
         idx = players.set_index("player_id")
         return cls(
             by_name=dict(by_name),
             dob=pd.to_datetime(idx.date_of_birth).to_dict(),
             peak=idx.highest_market_value_in_eur.fillna(0).to_dict(),
             last_season=idx.last_season.to_dict(),
-            moves=dict(moves),
+            days=days,
+            clubs=clubs,
+            loans=dict(loans),
+            club_names=names,
         )
 
     def candidates(self, name: str, d: pd.Timestamp) -> list[int]:
@@ -267,14 +297,121 @@ class People:
         return out
 
     def club_on(self, pid: int, d: pd.Timestamp) -> tuple[str | None, str | None]:
-        """(club, club that loaned him out or None) on day d, from his transfer history."""
-        before = [m for m in self.moves.get(pid, []) if m[0] <= d]
-        if not before:
+        """(club, club that may own him while he is on loan, or None) on day d."""
+        if pid not in self.days:
             return None, None
-        when, frm, to, fee = before[-1]
+        i = int(np.searchsorted(self.days[pid], _day(d), side="right")) - 1
+        if i < 0:
+            return None, None
+        club = self.clubs[pid][i]
         # a fee-less move in the last 13 months may be a loan: the club he came from may still own him
-        parent = frm if fee == 0 and (d - when).days < 400 else None
-        return to, parent
+        parent = next(
+            (c for w, c in reversed(self.loans.get(pid, [])) if w <= d and (d - w).days < 400), None
+        )
+        return (None if club == "0" else club), parent
+
+    def arrivals(self) -> pd.DataFrame:
+        """(player, club, date) each time the timeline shows him at a new club; the date is the first sighting."""
+        rows = []
+        for pid, ds in self.days.items():
+            cs = self.clubs[pid]
+            for i in range(1, len(cs)):
+                if cs[i] != cs[i - 1] and cs[i] != "0":
+                    rows.append((str(pid), cs[i], ds[i]))
+        out = pd.DataFrame(rows, columns=["tm_player_id", "tm_club_id", "day"])
+        out["date"] = pd.to_datetime(out.pop("day"), unit="D")
+        return out
+
+
+def _day(d: pd.Timestamp) -> int:
+    return int((pd.Timestamp(d).normalize() - EPOCH).days)
+
+
+EPOCH = pd.Timestamp("1970-01-01")
+WITHOUT_CLUB = {"without club", "retired", "unknown", "career break", "ban", "free agent"}
+
+
+def club_timeline(
+    t: dict[str, pd.DataFrame], gaz: Gazetteer | None = None
+) -> tuple[pd.DataFrame, dict[str, str]]:
+    """Dated club observations per player (player_id, day, club), sorted, and the club-name map; see People."""
+    parts = []
+    tr = t["transfers"]
+    tr = tr[pd.to_datetime(tr.transfer_date) <= TM_SNAPSHOT]
+    d = pd.to_datetime(tr.transfer_date)
+    parts.append(
+        pd.DataFrame({"player_id": tr.player_id, "date": d, "club": tr.to_club_id.map(_cid), "rank": 0})
+    )
+    # the club he left was his club until the day before
+    parts.append(
+        pd.DataFrame(
+            {
+                "player_id": tr.player_id,
+                "date": d - pd.Timedelta(days=1),
+                "club": tr.from_club_id.map(_cid),
+                "rank": 0,
+            }
+        )
+    )
+    if "appearances" in t:
+        ap = t["appearances"]
+        if "competitions" in t and "competition_id" in ap:  # national-team games are not a club
+            nat = t["competitions"].loc[
+                t["competitions"].type == "national_team_competition", "competition_id"
+            ]
+            ap = ap[~ap.competition_id.isin(set(nat))]
+        ap = ap[["player_id", "date", "player_club_id"]].copy()
+        ap["date"] = pd.to_datetime(ap.date)
+        ap["half"] = ap.date.dt.year * 2 + (ap.date.dt.month >= 7)
+        g = ap.groupby(["player_id", "player_club_id", "half"]).date.agg(["min", "max"]).reset_index()
+        for col in ("min", "max"):
+            parts.append(
+                pd.DataFrame(
+                    {"player_id": g.player_id, "date": g[col], "club": g.player_club_id.map(_cid), "rank": 1}
+                )
+            )
+        names = valuation_club_ids(t, ap, gaz)
+    else:
+        names = {}
+    v = t["player_valuations"][["player_id", "date", "current_club_name"]].copy()
+    v["date"] = pd.to_datetime(v.date)
+    key = v.current_club_name.fillna("").map(normalise)
+    v["club"] = key.map(names)
+    v.loc[key.isin(WITHOUT_CLUB), "club"] = "0"
+    parts.append(v.dropna(subset=["club"])[["player_id", "date", "club"]].assign(rank=2))
+    obs = pd.concat(parts).dropna(subset=["club"])
+    obs = obs[obs.date <= TM_SNAPSHOT]
+    obs["day"] = (obs.date - EPOCH).dt.days
+    # on the same day the more exact source wins
+    obs = obs.sort_values(["player_id", "day", "rank"]).drop_duplicates(["player_id", "day"], keep="first")
+    return obs[["player_id", "day", "club"]].reset_index(drop=True), names
+
+
+def valuation_club_ids(t: dict[str, pd.DataFrame], ap: pd.DataFrame, gaz: Gazetteer | None) -> dict[str, str]:
+    """Normalised club name as valuations print it -> club id, learnt from the club he played for that month."""
+    v = t["player_valuations"][["player_id", "date", "current_club_name"]].copy()
+    v["date"] = pd.to_datetime(v.date)
+    a = ap[["player_id", "date", "player_club_id"]].sort_values("date")
+    m = pd.merge_asof(
+        v.sort_values("date"),
+        a,
+        on="date",
+        by="player_id",
+        direction="nearest",
+        tolerance=pd.Timedelta(days=45),
+    ).dropna(subset=["player_club_id"])
+    m["key"] = m.current_club_name.fillna("").map(normalise)
+    votes = m.groupby(["key", "player_club_id"]).size().rename("n").reset_index()
+    total = votes.groupby("key").n.transform("sum")
+    best = votes[(votes.n >= 3) & (votes.n / total >= 0.6)].sort_values("n").groupby("key").tail(1)
+    out = {k: _cid(c) for k, c in zip(best.key, best.player_club_id, strict=True)}
+    for r in t["clubs"].itertuples():  # clubs in the covered leagues by their full name
+        out.setdefault(normalise(r.name), str(r.club_id))
+    if gaz is not None:  # anything else by the gazetteer (short names)
+        for name in set(v.current_club_name.dropna().map(normalise)) - set(out):
+            if name and name not in WITHOUT_CLUB and (cid := gaz.names.get(name)):
+                out[name] = cid
+    return out
 
 
 def _cid(x: Any) -> str | None:
@@ -294,7 +431,9 @@ def links_from(rumours: pd.DataFrame, gaz: Gazetteer, people: People) -> tuple[p
             if pd.Timestamp(r.published_at).tzinfo
             else pd.Timestamp(r.published_at)
         )
-        names = [n for n in r.players if n]
+        # older columns put clubs in bold too: a bold name that is a club is not a player
+        names = [n for n in r.players if n and normalise(n) not in gaz.names]
+        stats["bold_clubs"] += len(r.players) - len(names)
         sentences = SENTENCE.split(r.body_text)
         # take the players' own names out of the text so a surname is never read as a club
         strip = sorted(
@@ -302,8 +441,12 @@ def links_from(rumours: pd.DataFrame, gaz: Gazetteer, people: People) -> tuple[p
             key=len,
             reverse=True,
         )
-        pattern = re.compile("|".join(re.escape(s) for s in strip), flags=re.I) if strip else None
-        all_clubs = {c for c, _ in gaz.find(pattern.sub(" ", r.body_text) if pattern else r.body_text)}
+        pattern = (
+            re.compile(r"\b(?:" + "|".join(re.escape(s) for s in strip) + r")\b", flags=re.I)
+            if strip
+            else None
+        )
+        all_clubs = {c for c, _ in gaz.find(pattern.sub(" ; ", r.body_text) if pattern else r.body_text)}
         resolved = []
         for name in names:
             stats["names"] += 1
@@ -325,7 +468,7 @@ def links_from(rumours: pd.DataFrame, gaz: Gazetteer, people: People) -> tuple[p
                 r.body_text
             ]
             text = " ".join(near)
-            clubs = gaz.find(pattern.sub(" ", text) if pattern else text)
+            clubs = gaz.find(pattern.sub(" ; ", text) if pattern else text)
             own, parent = people.club_on(pid, d)
             linked: dict[str, str] = {}
             for cid, matched in clubs:
@@ -356,16 +499,9 @@ def links_from(rumours: pd.DataFrame, gaz: Gazetteer, people: People) -> tuple[p
 # ---- outcomes ----------------------------------------------------------------------------------------------
 
 
-def all_moves(transfers: pd.DataFrame, wiki: pd.DataFrame | None, gaz: Gazetteer) -> pd.DataFrame:
-    """Every recorded arrival (player, club, date): Transfermarkt to its snapshot, then Wikipedia's lists."""
-    tm = transfers[pd.to_datetime(transfers.transfer_date) <= TM_SNAPSHOT]
-    out = pd.DataFrame(
-        {
-            "tm_player_id": tm.player_id.astype(int).astype(str),
-            "tm_club_id": tm.to_club_id.map(_cid),
-            "date": pd.to_datetime(tm.transfer_date),
-        }
-    )
+def all_moves(people: People, wiki: pd.DataFrame | None, gaz: Gazetteer) -> pd.DataFrame:
+    """Every recorded arrival (player, club, date): Transfermarkt's timeline to its snapshot, then Wikipedia's lists."""
+    out = people.arrivals()
     if wiki is not None and len(wiki):
         w = wiki[wiki.tm_player_id.notna() & (wiki.kind != "end_of_loan")].copy()
         club = w.tm_to_club.where(
@@ -405,10 +541,13 @@ def coverage(wiki: pd.DataFrame | None) -> pd.Timestamp:
 # ---- features ----------------------------------------------------------------------------------------------
 
 
-def club_values(valuations: pd.DataFrame) -> pd.DataFrame:
-    """Squad value (sum of the latest valuation in the year before) per club on 1 January and 1 July each year."""
-    v = valuations[["player_id", "date", "market_value_in_eur", "current_club_id"]].copy()
+def club_values(valuations: pd.DataFrame, names: dict[str, str]) -> pd.DataFrame:
+    """Squad value (sum of the latest valuation in the year before) per club on 1 January and 1 July each year.
+    The club is the one the valuation names on its date (its club id column is today's club)."""
+    v = valuations[["player_id", "date", "market_value_in_eur", "current_club_name"]].copy()
     v["date"] = pd.to_datetime(v.date)
+    v["club"] = v.current_club_name.fillna("").map(normalise).map(names)
+    v = v.dropna(subset=["club"])
     rows = []
     for year in range(2003, 2027):
         for month in (1, 7):
@@ -419,10 +558,8 @@ def club_values(valuations: pd.DataFrame) -> pd.DataFrame:
                 .groupby("player_id")
                 .tail(1)
             )
-            tot = w.groupby("current_club_id").market_value_in_eur.sum()
-            rows.append(
-                pd.DataFrame({"snap": s, "club": tot.index.astype(int).astype(str), "value": tot.values})
-            )
+            tot = w.groupby("club").market_value_in_eur.sum()
+            rows.append(pd.DataFrame({"snap": s, "club": tot.index, "value": tot.to_numpy()}))
     return pd.concat(rows)
 
 
@@ -481,23 +618,30 @@ def features(links: pd.DataFrame, t: dict[str, pd.DataFrame], values: pd.DataFra
     x["log_repeats"] = np.log1p(rep)
     x["credited"] = (x.outlet != COLUMN).astype(float)
     x["season"] = d.dt.year - (d.dt.month < 7)
+    x["modern_column"] = (x.season >= MODERN_SEASON).astype(float)
     return x
 
 
 # ---- estimates ---------------------------------------------------------------------------------------------
 
 
+MAX_PRIOR_STRENGTH = (
+    5000.0  # a + b: when outlets are indistinguishable the likelihood keeps rising towards infinity
+)
+
+
 def beta_prior(hits: np.ndarray, n: np.ndarray) -> tuple[float, float]:
-    """Beta(a, b) maximising the beta-binomial marginal likelihood of the outlets' records."""
+    """Beta(a, b) maximising the beta-binomial marginal likelihood of the outlets' records, as (mean, strength)."""
 
     def nll(z):
-        a, b = np.exp(z)
+        m, k = expit(z[0]), min(np.exp(z[1]), MAX_PRIOR_STRENGTH)
+        a, b = m * k, (1 - m) * k
         return -np.sum(betaln(hits + a, n - hits + b) - betaln(a, b))
 
-    p = max(hits.sum() / max(n.sum(), 1), 1e-3)
-    res = minimize(nll, np.log([p * 20, (1 - p) * 20]), method="Nelder-Mead")
-    a, b = np.exp(res.x)
-    return float(a), float(b)
+    p = float(np.clip(hits.sum() / max(n.sum(), 1), 1e-3, 1 - 1e-3))
+    res = minimize(nll, [logit(p), np.log(20.0)], method="Nelder-Mead")
+    m, k = expit(res.x[0]), min(float(np.exp(res.x[1])), MAX_PRIOR_STRENGTH)
+    return float(m * k), float((1 - m) * k)
 
 
 def outlet_rates(train: pd.DataFrame, y: str) -> tuple[dict[str, dict[str, float]], tuple[float, float]]:
@@ -518,7 +662,7 @@ def outlet_rates(train: pd.DataFrame, y: str) -> tuple[dict[str, dict[str, float
 def _outlet_logit(x: pd.DataFrame, rates: dict, prior: tuple[float, float]) -> np.ndarray:
     base = prior[0] / sum(prior)
     p = x.outlet.map(lambda o: rates.get(o, {}).get("shrunk", base)).to_numpy(float)
-    return logit(np.clip(p, 1e-4, 1 - 1e-4))
+    return np.round(logit(np.clip(p, 1e-3, 1 - 1e-3)), 3)  # rounded: tiny differences carry no signal
 
 
 @dataclass
@@ -528,26 +672,30 @@ class RumourModel:
     scaler: StandardScaler
     clf: LogisticRegression
     medians: dict[str, float]
+    features: list[str]
 
     @classmethod
-    def fit(cls, train: pd.DataFrame, y: str) -> RumourModel:
+    def fit(cls, train: pd.DataFrame, y: str, features: list[str] | None = None) -> RumourModel:
+        features = features or FEATURES
         rates, prior = outlet_rates(train, y)
-        # the outlet feature on training rows comes from the other rows' records (leave-one-out), not their own
+        # the outlet feature on a training row comes from the outlets' records in the *other* seasons, never its
+        # own (leave-one-out within a season leaks the row's label once the scaler magnifies tiny differences)
         x = train.copy()
-        g = train.groupby("outlet")[y].agg(["sum", "count"])
-        s, c = x.outlet.map(g["sum"]), x.outlet.map(g["count"])
-        loo = (s - x[y].astype(float) + prior[0]) / (c - 1 + sum(prior))
-        x["outlet_logit"] = logit(np.clip(loo, 1e-4, 1 - 1e-4))
-        medians = {f: float(x[f].median()) for f in FEATURES}
-        X = x[FEATURES].fillna(medians).to_numpy(float)
+        x["outlet_logit"] = 0.0
+        for season in x.season.unique() if "outlet_logit" in features else ():
+            other = x.season != season
+            r_, p_ = outlet_rates(x[other], y)
+            x.loc[~other, "outlet_logit"] = _outlet_logit(x[~other], r_, p_)
+        medians = {f: float(x[f].median()) for f in features}
+        X = x[features].fillna(medians).to_numpy(float)
         scaler = StandardScaler().fit(X)
         clf = LogisticRegression(C=1.0, max_iter=2000).fit(scaler.transform(X), x[y].astype(int))
-        return cls(rates, prior, scaler, clf, medians)
+        return cls(rates, prior, scaler, clf, medians, list(features))
 
     def predict(self, x: pd.DataFrame) -> np.ndarray:
         x = x.copy()
         x["outlet_logit"] = _outlet_logit(x, self.rates, self.prior)
-        X = x[FEATURES].fillna(self.medians).to_numpy(float)
+        X = x[self.features].fillna(self.medians).to_numpy(float)
         return self.clf.predict_proba(self.scaler.transform(X))[:, 1]
 
     def outlet_p(self, x: pd.DataFrame) -> np.ndarray:
@@ -588,10 +736,15 @@ def calibration(p: np.ndarray, y: np.ndarray, edges=(0, 0.05, 0.1, 0.2, 0.3, 0.5
 
 
 def load_tm(tm_dir: Path = TM_DIR) -> dict[str, pd.DataFrame]:
-    return {
+    t = {
         n: pd.read_parquet(tm_dir / f"{n}.parquet")
         for n in ("players", "transfers", "player_valuations", "clubs")
     }
+    t["appearances"] = pd.read_parquet(
+        tm_dir / "appearances.parquet", columns=["player_id", "date", "player_club_id", "competition_id"]
+    )
+    t["competitions"] = pd.read_parquet(tm_dir / "competitions.parquet", columns=["competition_id", "type"])
+    return t
 
 
 def build(
@@ -599,18 +752,30 @@ def build(
 ) -> tuple[pd.DataFrame, dict]:
     """All links with labels and features, plus match statistics."""
     t = t or load_tm()
-    rumours = con.execute("SELECT rumour_id, published_at, players, outlet, body_text FROM rumours").df()
+    rumours = load_rumours(con)
     wiki = con.execute("SELECT * FROM wiki_transfers").df() if _has(con, "wiki_transfers") else None
     gaz = Gazetteer.build(t["transfers"], t["clubs"])
-    people = People.build(t["players"], t["transfers"])
+    people = People.build(t, gaz)
     links, stats = links_from(rumours, gaz, people)
     stats["paragraphs"] = len(rumours)
     stats["paragraphs_linked"] = int(links.rumour_id.nunique()) if len(links) else 0
     cov = coverage(wiki)
-    links = label(links, all_moves(t["transfers"], wiki, gaz), cov)
-    links = features(links, t, club_values(t["player_valuations"]))
+    links = label(links, all_moves(people, wiki, gaz), cov)
+    links = features(links, t, club_values(t["player_valuations"], people.club_names))
     stats["coverage_end"] = str(cov.date())
     return links, stats
+
+
+def load_rumours(con: duckdb.DuckDBPyConnection) -> pd.DataFrame:
+    """The archive plus the nightly Rumour Mill items (news_items, same ids), so this week's rumours are scored
+    even before the weekly archive run picks them up."""
+    return con.execute(
+        """SELECT rumour_id, published_at, players, outlet, body_text FROM rumours
+           UNION ALL
+           SELECT news_id, published_at, string_split(title, '; '), outlet, body_text FROM news_items
+           WHERE source = 'guardian_rumours' AND body_text IS NOT NULL
+             AND news_id NOT IN (SELECT rumour_id FROM rumours)"""
+    ).df()
 
 
 def _has(con, table: str) -> bool:
@@ -631,7 +796,7 @@ def backtest(
         links, stats = build(con)
     stats = stats or {}
     report: dict[str, Any] = {
-        "generated": datetime.now(UTC).isoformat(timespec="seconds"),
+        "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "matching": stats,
         "horizons": {},
     }
@@ -645,7 +810,16 @@ def backtest(
         model = RumourModel.fit(train, y)
         yt = test[y].to_numpy(float)
         base = np.full(len(test), train[y].mean())
+        recent = np.full(len(test), train[train.season >= MODERN_SEASON][y].mean())
         p_model, p_outlet = model.predict(test), model.outlet_p(test)
+        variants = {
+            "with the outlet record": RumourModel.fit(train, y, [*OUTLET_FEATURES, *FEATURES]),
+            "without the era flag": RumourModel.fit(train, y, [f for f in FEATURES if f != "modern_column"]),
+            "without repeats": RumourModel.fit(train, y, [f for f in FEATURES if f != "log_repeats"]),
+            f"trained on {MODERN_SEASON}-{MODERN_SEASON + 1 - 2000:02d} onwards only": RumourModel.fit(
+                train[train.season >= MODERN_SEASON], y
+            ),
+        }
         by_season = lab.groupby("season")[y].agg(["mean", "count"])
         report["horizons"][str(n)] = {
             "train_seasons": f"{int(train.season.min())}-{int(train.season.max()) + 1 - 2000:02d}",
@@ -655,10 +829,13 @@ def backtest(
             "train_rate": float(train[y].mean()),
             "test_rate": float(yt.mean()),
             "base_rate": scores(base, yt),
+            "recent_rate": scores(recent, yt),
             "outlet_only": scores(p_outlet, yt),
             "model": scores(p_model, yt),
+            "variants": {k: scores(m.predict(test), yt) for k, m in variants.items()},
             "calibration": calibration(p_model, yt),
-            "coefficients": dict(zip(FEATURES, np.round(model.clf.coef_[0], 3).tolist(), strict=True)),
+            "coefficients": dict(zip(model.features, np.round(model.clf.coef_[0], 3).tolist(), strict=True)),
+            "recent_train_rate": float(train[train.season >= MODERN_SEASON][y].mean()),
             "prior": {"a": model.prior[0], "b": model.prior[1]},
             "outlets": {
                 o: r for o, r in sorted(model.rates.items(), key=lambda kv: -kv[1]["n"]) if r["n"] >= 20
@@ -677,48 +854,73 @@ def backtest(
 
 def report_md(r: dict) -> str:
     s = r["matching"]
-    pct = lambda a, b: f"{a / b:.0%}" if b else "-"  # noqa: E731
+
+    def pct(a: float, b: float) -> str:
+        return f"{a / b:.0%}" if b else "-"
+
+    def row(name: str, sc: dict) -> str:
+        auc = f"{sc['auc']:.3f}" if "auc" in sc else "-"
+        return f"| {name} | {sc['brier']:.4f} | {sc['log_loss']:.4f} | {auc} | {sc['mean_p']:.1%} |"
+
     lines = [
         "# Transfer rumour track record backtest",
         "",
-        f"Generated {r['generated']}. The Guardian's Rumour Mill archive (Guardian Open Platform) x what happened",
-        f"(transfermarkt-datasets transfers to 2026-07-06, Wikipedia summer-2026 lists to {s.get('coverage_end')}).",
+        f"Generated {r['generated_at']}. Rumours: the Guardian's Rumour Mill archive (Guardian Open Platform), every",
+        "column since February 2001. What happened: transfermarkt-datasets (CC0) to 2026-07-06, then Wikipedia's",
+        f"summer-2026 transfer lists (CC BY-SA) to {s.get('coverage_end')}. A rumour *came true* when the player",
+        "joined the club it linked him with within the horizon; links whose horizon is not over are left out.",
         "",
         "## Matching",
         "",
-        f"- Paragraphs naming a player: {s.get('paragraphs', 0)}; player names: {s.get('names', 0)}.",
-        f"- Names matched to one Transfermarkt player: {s.get('names_matched', 0)} ({pct(s.get('names_matched', 0), s.get('names', 0))});"
-        f" {s.get('names_ambiguous', 0)} had namesakes (resolved by the club the item mentions, then by value);"
-        f" {s.get('names_unmatched', 0)} unmatched (bold club names, nicknames, surnames only, players outside the dataset).",
+        f"- Paragraphs naming someone in bold: {s.get('paragraphs', 0)}. Bold names that are clubs (older columns"
+        f" bold clubs too): {s.get('bold_clubs', 0)}; other names: {s.get('names', 0)}.",
+        f"- Names matched to a Transfermarkt player active at the time: {s.get('names_matched', 0)}"
+        f" ({pct(s.get('names_matched', 0), s.get('names', 0))}); {s.get('names_ambiguous', 0)} had namesakes"
+        " (resolved by the club the item mentions, then by peak value). Unmatched: managers, nicknames, surnames"
+        " only, and players the dataset does not cover (few before 2004).",
         f"- Matched players with no other club named near them: {s.get('players_without_club', 0)}.",
-        f"- Links (rumour x player x club): {s.get('links', 0)}, from {s.get('paragraphs_linked', 0)} paragraphs"
-        f" ({pct(s.get('paragraphs_linked', 0), s.get('paragraphs', 0))}).",
+        f"- Links (rumour x player x club, the player's own club and loan owner excluded): {s.get('links', 0)},"
+        f" from {s.get('paragraphs_linked', 0)} paragraphs ({pct(s.get('paragraphs_linked', 0), s.get('paragraphs', 0))}).",
+        "- Where a player played when: transfermarkt-datasets carries transfer histories only for players active",
+        "  in 2023 or later, so clubs on a date come from transfers, appearances (2012 onwards) and the valuations'",
+        "  dated club names together (the valuations' club id is today's club, not the club on the day).",
         "",
-        "## Results (train on older seasons, test on the latest fully observed one)",
+        "## Results",
         "",
-        "| Horizon | Train | Test | Test links | Came true | Base rate Brier | Outlet only | Model | Base log loss | Model log loss | Model AUC |",
-        "|---|---|---|---|---|---|---|---|---|---|---|",
+        "Train on every season from 2004-05 up to the test season; test on the latest season with labels.",
+        "",
     ]
     for n, h in r["horizons"].items():
-        lines.append(
-            f"| {n} months | {h['train_seasons']} ({h['n_train']}) | {h['test_season']} | {h['n_test']} | {h['test_rate']:.1%} |"
-            f" {h['base_rate']['brier']:.4f} | {h['outlet_only']['brier']:.4f} | **{h['model']['brier']:.4f}** |"
-            f" {h['base_rate']['log_loss']:.4f} | {h['model']['log_loss']:.4f} | {h['model'].get('auc', float('nan')):.3f} |"
-        )
+        lines += [
+            f"### Within {n} months: test {h['test_season']}, {h['n_test']} links, {h['test_rate']:.1%} came true",
+            "",
+            f"Training {h['train_seasons']}: {h['n_train']} links, {h['train_rate']:.1%} came true"
+            f" ({h['recent_train_rate']:.1%} from {MODERN_SEASON}-{MODERN_SEASON + 1 - 2000:02d}).",
+            "",
+            "| Forecast | Brier | Log loss | AUC | Mean forecast |",
+            "|---|---|---|---|---|",
+            row("Base rate, all training seasons", h["base_rate"]),
+            row(f"Base rate since {MODERN_SEASON}-{MODERN_SEASON + 1 - 2000:02d}", h["recent_rate"]),
+            row("Outlet record only (shrunk)", h["outlet_only"]),
+            row("**Shipped: logistic**", h["model"]),
+            *[row(k, v) for k, v in h["variants"].items()],
+            "",
+        ]
     h = r["horizons"][str(SHIPPED_HORIZON)]
     lines += [
-        "",
-        f"## Shipped horizon: {SHIPPED_HORIZON} months",
+        f"## Shipped: {SHIPPED_HORIZON} months",
         "",
         "Calibration on the test season:",
         "",
-        "| Predicted | Links | Mean predicted | Came true |",
+        "| Forecast | Links | Mean forecast | Came true |",
         "|---|---|---|---|",
         *[f"| {c['bin']} | {c['n']} | {c['mean_p']:.1%} | {c['rate']:.1%} |" for c in h["calibration"]],
         "",
-        "Coefficients (standardised): " + ", ".join(f"{k} {v}" for k, v in h["coefficients"].items()),
+        "Coefficients (standardised features): "
+        + ", ".join(f"{k} {v}" for k, v in h["coefficients"].items()),
         "",
-        f"Outlet prior Beta({h['prior']['a']:.2f}, {h['prior']['b']:.2f}). Outlets with 20+ training links:",
+        f"Outlet records, shrunk to the overall rate with a Beta({h['prior']['a']:.1f}, {h['prior']['b']:.1f}) prior"
+        " (fitted by maximum marginal likelihood): outlets with 20+ training links.",
         "",
         "| Outlet | Links | Came true | Raw rate | Shrunk rate |",
         "|---|---|---|---|---|",
@@ -732,6 +934,28 @@ def report_md(r: dict) -> str:
         "| Season | Links | Came true |",
         "|---|---|---|",
         *[f"| {s} | {v['n']} | {v['rate']:.1%} |" for s, v in h["by_season"].items()],
+        "",
+        "## Reading this honestly",
+        "",
+        "- **Outlets barely differ (a negative result).** The fitted prior is strong, so even outlets with hundreds",
+        "  of links are shrunk close to the average, and the outlet-only forecast is no better than the base rate.",
+        "  Adding the outlet's record to the rumour model made both validation seasons (2023-24, 2024-25) and the",
+        "  test season slightly worse, so it is not used to score rumours; the records are published as they are.",
+        "  Most items (the column's own summaries) credit no outlet; outlets are known only when the column links",
+        "  to or names them. What separates rumours is the rumour itself: how often the same link was reported",
+        "  before, how many clubs the item names, the transfer window, and how valuable the player is.",
+        f"- **The column changed.** From {MODERN_SEASON}-{MODERN_SEASON + 1 - 2000:02d} it runs fewer, shorter items"
+        " and about twice as many come true; a base rate from all years badly underestimates today's rumours. The era flag handles",
+        "  it; the base rate since then is the fair baseline to beat.",
+        "- **Labels are a lower bound.** A move counts only if it is in transfermarkt-datasets or, after July 2026,",
+        "  on one of the Wikipedia lists (13 European leagues: moves to Saudi Arabia, the United States or Portugal",
+        "  in summer 2026 are missed). Dates from appearances or valuations are first sightings, so a move can look",
+        "  later than it was. Links come from club names near the player's name; some are noise (a club mentioned",
+        "  for another reason), which also pulls the rates down. Before 2012-13 there are no appearances, so club",
+        "  timelines rest on transfers and valuations alone and the earlier seasons' rates are probably understated.",
+        "- **Calibration is rough at the edges:** the lowest forecasts came true less often than forecast and the",
+        "  few highest ones more often (table above); the middle, where most rumours sit, is close.",
+        "- **Not used:** contract length (only today's contracts exist; for old rumours they leak the outcome).",
         "",
     ]
     return "\n".join(lines) + "\n"
@@ -755,10 +979,13 @@ def publish(con: duckdb.DuckDBPyConnection, now: datetime, recent_days: int = 12
     """Outlet track records (all labelled links) and the chance each recent rumour comes true, for the site.
 
     Rows: entity_type 'outlet' (metrics links / came_true / hit_rate, shrunk) and entity_type 'rumour' with
-    entity_id = the paragraph's news_id and context '<club slug>:<folded player name>' for every dugout club
-    the item links with the player (metrics p_true, one_in). Also rewrites the rumour_links table."""
+    entity_id '<paragraph news_id>:<folded player name>' and context = the dugout club the item links him with
+    (metrics p_true, one_in). Also rewrites the rumour_links table."""
     from dugout_models.publish import _row
 
+    if not (TM_DIR / "transfers.parquet").exists() or not len(load_rumours(con)):
+        log.warning("rumours: no archive or no transfermarkt-datasets tables yet (history job); skipped")
+        return []
     links, _ = build(con)
     write_links(con, links, now)
     links = links[links.season >= FIRST_SEASON]
@@ -781,13 +1008,14 @@ def publish(con: duckdb.DuckDBPyConnection, now: datetime, recent_days: int = 12
     if len(recent):
         recent["p"] = model.predict(recent)
         for r in recent.itertuples():
-            ctx = f"{slugs[r.tm_club_id]}:{fold(r.player_name)}"
-            rows.append(_row("rumours", "rumour", r.rumour_id, "p_true", float(r.p), now, ctx))
+            # one entity per player named in the paragraph; context = the dugout club he is linked with
+            eid, ctx = f"{r.rumour_id}:{fold(r.player_name)}", slugs[r.tm_club_id]
+            rows.append(_row("rumours", "rumour", eid, "p_true", float(r.p), now, ctx))
             rows.append(
                 _row(
                     "rumours",
                     "rumour",
-                    r.rumour_id,
+                    eid,
                     "one_in",
                     int(max(1, round(1 / max(r.p, 1e-3)))),
                     now,
