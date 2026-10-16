@@ -1,6 +1,7 @@
 // The scroll story's data for one club (/story/<club>/), built from its verified dossier.
-import type { StatRef, StoryData, Target } from "@/components/story/types";
+import type { StatRef, StoryData } from "@/components/story/types";
 import { claimText, displays, section, type Dossier } from "@/lib/data";
+import { shortlists } from "@/lib/shortlist";
 import { FORMATION_SLOTS, GAP_ZONES, opposition, scatter, slotPositions } from "@/lib/formations";
 
 
@@ -14,13 +15,6 @@ const GAP_SLOTS: Record<string, string[]> = {
   winger: ["RW", "RM", "AM"],
   "centre-forward": ["CF"],
 };
-
-// the scout's lists: the age fact is labelled with its list, the list's own number follows (tools.KIND_METRICS)
-const KINDS: { kind: Target["kind"]; figure: string; figureLabel: string }[] = [
-  { kind: "best", figure: "market value", figureLabel: "Market value" },
-  { kind: "realistic", figure: "chance the move happens", figureLabel: "Chance of the move" },
-  { kind: "gem", figure: "projected market value", figureLabel: "Projected value" },
-];
 
 export function storyData(d: Dossier): StoryData {
   const disp = displays(d);
@@ -38,25 +32,8 @@ export function storyData(d: Dossier): StoryData {
   const candidateSlot = needGroup ? slots.findIndex((s) => (GAP_SLOTS[needGroup] ?? []).includes(s)) : -1;
   const home = slotPositions(slots);
 
-  // the first name on each of the scout's lists for the top need
   const scout = section(d, "scout");
-  const scoutText = (scout?.claims ?? []).map(claimText);
-  const scoutStats = d.key_stats?.scout ?? [];
-  const targets: Target[] = [];
-  for (const k of KINDS) {
-    const age = scoutStats.find((r) => r.label === `age (${k.kind} target)`);
-    if (!age) continue;
-    const fig = scoutStats.find((r) => r.subject === age.subject && r.label.startsWith(k.figure));
-    const line = scoutText.find((t) => t.includes(`${age.subject} (`));
-    targets.push({
-      kind: k.kind,
-      name: age.subject,
-      club: line?.match(new RegExp(`${age.subject.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} \\(([^)]+)\\)`))?.[1],
-      age: ref(age.stat),
-      figure: fig ? ref(fig.stat) : undefined,
-      figureLabel: k.figureLabel,
-    });
-  }
+  const targets = shortlists(d);
   const attributed = (scout?.claims ?? []).filter((c) => c.type === "attributed");
 
   const match = find("p_home_win") ?? find("p_away_win");

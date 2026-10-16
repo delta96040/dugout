@@ -668,15 +668,28 @@ def rumours(tb: Toolbox, club: str, direction: str, limit: int = 3) -> list[Fact
 
 
 LEADS = {"best": "Dream target", "realistic": "Realistic target", "gem": "Hidden gem"}
-# the numbers each list is about (a section has room for about two dozen sentences)
+# What each pick shows for the top need: who, where, price (fair fee) and the numbers behind "why this player".
+# The second need gets one pick per list with its headline number only (KIND_HEADLINE).
 KIND_METRICS = {
+    "best": {
+        "age",
+        "candidate_club",
+        "fair_fee",
+        "market_value",
+        "expected_minutes_share",
+        "contract_months",
+    },
+    "realistic": {"age", "candidate_club", "fair_fee", "realism", "p_sold", "contract_months"},
+    "gem": {"age", "candidate_club", "fair_fee", "proj_value_4y", "minutes_share_now"},
+}
+KIND_HEADLINE = {
     "best": {"age", "market_value"},
     "realistic": {"age", "fair_fee", "realism"},
     "gem": {"age", "proj_value_4y"},
 }
 
 
-def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
+def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
     name = tb.name(club)
     facts: list[Fact] = []
     # signings the club has already announced (official site) shape the needs; say so first
@@ -713,9 +726,13 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                 entity_id=club,
             )
         )
-        # two lists per need: the best fit whatever the odds, and the moves most likely to happen
+        # three lists per need: the best fit whatever the odds, the moves most likely to happen, young players
+        # who should grow into the role; several names each for the top need, the leading name for the second
         picked: list[tuple[str, str, str, str]] = []
-        for kind, n_kind in (("best", per_need), ("realistic", per_need), ("gem", 1)):
+        n_kind = per_need if rank == 1 else 1
+        metrics = KIND_METRICS if rank == 1 else KIND_HEADLINE
+        which = "" if rank == 1 else ", second need"
+        for kind in ("best", "realistic", "gem"):
             cands = tb.con.execute(
                 """SELECT entity_id, context, value_text FROM model_outputs WHERE model = 'scout'
                    AND metric = 'candidate_name' AND context LIKE ?
@@ -736,8 +753,27 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
             for metric, label, tmpl, fmt in (
                 (
                     "age",
-                    f"age ({kind} target)",
+                    f"age ({kind} target{which})",
                     f"{lead}: {cname} ({cclub}), who is {{p}} years old.",
+                    "int",
+                ),
+                ("candidate_club", "current club", f"{cname} plays for {{p}}.", None),
+                (
+                    "minutes_share_now",
+                    "share of his club's minutes over the last year",
+                    f"{cname} has played {{p}} of {cclub}'s minutes over the last year.",
+                    "pct",
+                ),
+                (
+                    "p_sold",
+                    "chance his club sells him in a window",
+                    f"We estimate a {{p}} chance that {cclub} sell {cname} in a transfer window.",
+                    "pct",
+                ),
+                (
+                    "contract_months",
+                    "months left on his contract",
+                    f"{cname} has {{p}} months left on his contract.",
                     "int",
                 ),
                 ("market_value", "market value", f"{cname} has a market value of {{p}}.", "eur_m"),
@@ -766,7 +802,7 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                     "pct1",
                 ),
             ):
-                if metric not in KIND_METRICS[kind]:
+                if metric not in metrics[kind]:
                     continue
                 rec = tb.model("scout", "player", pid, metric, ctx)
                 gloss = ""

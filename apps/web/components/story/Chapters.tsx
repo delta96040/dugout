@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Num from "@/components/Num";
+import Shortlists from "@/components/Shortlists";
 import { REPO } from "./constants";
 import Scramble from "./Scramble";
 import Stars from "./Stars";
@@ -8,8 +9,6 @@ import type { StatRef, StoryData } from "./types";
 function N({ s, className }: { s?: StatRef; className?: string }) {
   return s ? <Num stat={s.stat} display={s.display} className={className} /> : <span className="text-pencil">n/a</span>;
 }
-
-const TARGET_LABEL = { best: "Dream target · whatever the cost", realistic: "Realistic target · gettable", gem: "Hidden gem · young, rising" };
 
 /** The six chapters' copy, rendered on the server. Scrambled numbers resolve when their chapter is on screen
  *  (Scramble reads the active chapter from context), so this needs no client state. */
@@ -85,41 +84,23 @@ export function chapterContent(d: StoryData) {
       kicker: "Chapter three · scout the fix",
       body: d.targets.length ? (
         <>
-          <h2 className="font-display text-[clamp(2.2rem,5vw,4.4rem)] leading-[0.9]">
+          <h2 className="font-display text-[clamp(2rem,5vw,4.4rem)] leading-[0.9]">
             Three ways <span className="italic">to fix it.</span>
           </h2>
-          <ul className="mt-5 grid max-w-2xl gap-4 sm:grid-cols-3">
-            {d.targets.map((t) => (
-              <li key={t.kind} className="border-t-2 border-ink pt-2">
-                <p className={`mono-label ${t.kind === "realistic" ? "text-red" : ""}`}>{TARGET_LABEL[t.kind]}</p>
-                <p className="mt-1 font-display text-2xl leading-tight">{t.name}</p>
-                {t.club && <p className="mono-label">{t.club}</p>}
-                <dl className="mt-2 font-mono text-sm">
-                  {t.age && (
-                    <div className="flex justify-between gap-3">
-                      <dt className="text-pencil">Age</dt>
-                      <dd>
-                        <Scramble s={t.age} chapter={2} />
-                      </dd>
-                    </div>
-                  )}
-                  {t.figure && (
-                    <div className="flex justify-between gap-3">
-                      <dt className="text-pencil">{t.figureLabel}</dt>
-                      <dd>
-                        <Scramble s={t.figure} chapter={2} />
-                      </dd>
-                    </div>
-                  )}
-                </dl>
-              </li>
-            ))}
-          </ul>
+          <div className="mt-4 max-w-2xl">
+            <Shortlists
+              targets={d.targets}
+              buyer={d.club}
+              need={d.needGroup}
+              n={(s) => <Scramble s={s} chapter={2} />}
+              compact
+            />
+          </div>
           {d.rumours.length > 0 && (
-            <div className="mt-5 max-w-2xl">
+            <div className="mt-4 max-w-2xl">
               <p className="mono-label">Linked in the press · rumours, not facts</p>
               <ul className="mt-1 space-y-0.5 text-sm">
-                {d.rumours.slice(0, 3).map((r) => (
+                {d.rumours.slice(0, 2).map((r) => (
                   <li key={r.text}>
                     {r.text}{" "}
                     {r.url && (

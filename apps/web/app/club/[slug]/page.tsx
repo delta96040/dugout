@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { SectionProse } from "@/components/Claims";
 import MetaNum from "@/components/MetaNum";
 import Num from "@/components/Num";
+import Shortlists from "@/components/Shortlists";
 import { ordinal, plainReason, when } from "@/lib/format";
 import { clubSlugs, dossier, firstStat } from "@/lib/data";
+import { shortlists } from "@/lib/shortlist";
 
 export function generateStaticParams() {
   return clubSlugs().map((slug) => ({ slug }));
@@ -23,6 +25,8 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
   const pos = firstStat(d, "league_position", slug);
   const v = d.verification;
   const sections = ORDER.map((a) => d.sections.find((s) => s.agent === a)).filter((s) => s !== undefined);
+  const targets = shortlists(d);
+  const need = d.key_stats?.scout?.find((r) => r.label === "squad need, priority one")?.display;
   return (
     <article>
       <section className="grid12 relative overflow-hidden pt-10 pb-6">
@@ -62,6 +66,16 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
           </div>
           <div className={`col-span-12 mt-4 sm:col-span-6 sm:mt-0 ${i % 2 ? "sm:col-start-2 sm:row-start-1" : "sm:col-start-6"}`}>
             <SectionProse section={s} d={d} />
+            {s.agent === "scout" && targets.length > 0 && (
+              <div className="mt-6">
+                <Shortlists
+                  targets={targets}
+                  buyer={d.club.name}
+                  need={need}
+                  n={(x) => <Num stat={x.stat} display={x.display} />}
+                />
+              </div>
+            )}
             {s.withheld.length > 0 && (
               <details className="mt-3">
                 <summary className="mono-label cursor-pointer">Removed in checking (<span data-meta>{s.withheld.length}</span>)</summary>
