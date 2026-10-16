@@ -18,6 +18,7 @@ from dugout_pipeline.adapters.transfermarkt import (
 )
 from dugout_pipeline.adapters.weather import OpenMeteoAdapter
 from dugout_pipeline.adapters.wikidata import WikidataAdapter
+from dugout_pipeline.adapters.wikipedia_transfers import WikipediaTransfersAdapter
 from dugout_pipeline.ids import sync_catalogue
 
 
@@ -45,6 +46,7 @@ ADAPTERS: dict[str, type[SourceAdapter]] = {
         TransfermarktFileAdapter,
         GuardianAdapter,
         GuardianRumourMillAdapter,
+        WikipediaTransfersAdapter,
         RSSAdapter,
         ClubNewsAdapter,
         OpenMeteoAdapter,
@@ -68,6 +70,7 @@ JOBS: dict[str, list[str]] = {
         "transfermarkt_file",
         "guardian",
         "guardian_rumours",
+        "wikipedia_transfers",
         "rss",
         "club_news",
         "open_meteo",

@@ -152,6 +152,7 @@ class Market:
         realism.TOP_TIER.update(comps.loc[comps.sub_type == "first_tier", "competition_id"])
         self.squads = pd.read_csv(SQUADS, dtype={"tm_player_id": str, "tm_club_id": str})
         self.incoming: dict[str, list[tuple]] = {}  # filled from official announcements by market()
+        self.moved: set[str] = set()  # moved since the dataset snapshot (Wikipedia lists), filled by market()
         self.played = positions_played()  # positions players actually start at (positions.py)
         self.players = self.t["players"].copy()
         self.players["player_id"] = self.players.player_id.astype(str)
@@ -479,7 +480,9 @@ class Market:
         pool.loc[in_sq, "current_club_domestic_competition_id"] = PL
         joined = pd.to_datetime(pool.player_id.map(now_sq.joined), errors="coerce")
         pool = pool[
-            (pool.current_club_id.astype(str) != tm_club) & ~(joined > self.now - pd.Timedelta(days=365))
+            (pool.current_club_id.astype(str) != tm_club)
+            & ~(joined > self.now - pd.Timedelta(days=365))
+            & ~pool.player_id.astype(str).isin(self.moved)
         ].copy()
         pool["age"] = (self.now - pd.to_datetime(pool.date_of_birth)).dt.days / 365.25
         pool["value"] = pool.player_id.map(self.latest_value)
@@ -562,9 +565,22 @@ def _tm_to_reep(con: duckdb.DuckDBPyConnection) -> dict[str, str]:
     return {str(a): b for a, b in rows}
 
 
+def recent_moves(con: duckdb.DuckDBPyConnection) -> set[str]:
+    """Transfermarkt ids of players Wikipedia's transfer lists show joining a club (or leaving one) since the
+    dataset snapshot. Loan returns are not counted: the player is back where the dataset expects him."""
+    try:
+        rows = con.execute(
+            "SELECT DISTINCT tm_player_id FROM wiki_transfers WHERE tm_player_id IS NOT NULL AND kind <> 'end_of_loan'"
+        ).fetchall()
+    except duckdb.CatalogException:  # warehouse from before the table existed
+        return set()
+    return {str(r[0]) for r in rows}
+
+
 def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | None = None) -> list[dict]:
     mk = Market(now)
     mk.incoming = agreed_signings(con, now, set(mk.squads.name))
+    mk.moved = recent_moves(con)
     mk.fit()
     reep = _tm_to_reep(con)
     showcase = clubs or sorted(mk.squads.club_id.unique())
