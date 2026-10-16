@@ -54,17 +54,23 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
     `uv run dugout-agents --no-llm dossier <clubs...>` (~1.3 min a club).
   - Dev preview: .claude/launch.json "web" (npm --prefix apps/web run dev, port 3000).
 
-- **Phase 5 — ship: IN PROGRESS (2026-10-16)**, branch `phase-5-ship`.
-  - Done: CI `web` job (typecheck, build, banned patterns, digit check); nightly now ingest -> history (Sundays or
-    `history: true`) -> `dugout-models publish` -> commit `data/prediction_log.csv` -> `dugout-agents dossier --all`
-    (LLM for showcase clubs only, `onboard.showcase_clubs`) -> scoreboard -> site build + checks -> commit data to
-    main. Live prediction log is committed (CI warehouse is only an evictable cache). Actions on Node 24 majors
-    (checkout v7, cache v6, setup-uv v10, setup-node v7); nightly and injuries share one cache path list.
-    `apps/web/vercel.json` (skip builds unless apps/web, data/clubs, scoreboard or backtests changed). README
-    (badges, diagram, quick starts, limitations), CONTRIBUTING, issue/PR templates.
-  - Live: https://dugout2.vercel.app (Vercel project by the user, Root Directory `apps/web`, deploys main).
+- **Phase 5 — ship: DONE (2026-10-16).** PRs #2, #6, #8 merged. Live: https://dugout2.vercel.app (Vercel project
+  by the user, Root Directory `apps/web`, deploys main; `vercel.json` skips builds unless the site or its data change).
+  - Nightly (02:30 UTC, ~45 min from a cold cache): ingest -> history (Sundays or `history: true`) -> publish ->
+    commit `data/prediction_log.csv` -> `dugout-agents dossier --all` -> scoreboard -> site build + checks -> commit
+    `data/` to main -> Vercel deploys. First full run 2026-10-16: 20/20 dossiers, 0 untraceable numbers.
+  - History job includes `api_football_history` (free-plan injury lists 2022-24, the injury model's training data;
+    shares API-Football's cache/budget via `SourceAdapter.client_name`). `data/raw` is in the CI cache (never committed).
+  - All workflows share ONE cache path list (`~/.cache/reep`, `~/.cache/huggingface`, `.cache`, `data/warehouse`,
+    `data/raw`); changing it means a cold start: run the nightly by hand with `history: true`.
   - setup-uv has no floating major tags since v8: pin exact versions (v10.2.0).
-  - First nightly after merge: run it by hand with `history: true` (new cache paths -> cold warehouse).
+  - OpenRouter free tier: 50 requests/day (resets 00:00 UTC). Local LLM rebuilds the same day use it up and CI then
+    templates the showcase clubs too (graceful). Buying 10 credits lifts it to 1000/day (user's call, not free).
+  - Lighthouse mobile on the live site: home 91, dossier 90-91, scoreboard 90, clubs 92, methods 93; a11y/BP/SEO 100.
+    PageSpeed Insights' keyless API quota was exhausted; re-check there when convenient.
+  - README (live badge, GIF in docs/assets/story.gif recorded with puppeteer from the live site), CONTRIBUTING,
+    issue/PR templates, starter issues #3 #4 (good first issue) #5 (help wanted).
+  - Minor: at 400 px viewport height the story's "scroll" label overlaps chapter five's model note.
 
 ## Key facts discovered (do not re-research)
 - API-Football free plan: seasons 2022–2024 only + rolling yesterday→tomorrow date window; 100 req/day.
@@ -83,7 +89,6 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
 - `uv run dugout-models backtest <model|all>`; `uv run pytest`; `uv run ruff check . && uv run ruff format .`
 
 ## Open items / ideas
-- Lineups appear 20–40 min before kick-off; 4-hourly injuries job misses them → kick-off-aware schedule (Phase 5).
-- Brentford venue stale in Wikidata and football-data.org (Griffin Park) — fix upstream on Wikidata.
-- GitHub Actions warnings: Node 20 actions deprecated; bump action versions.
+- Lineups appear 20–40 min before kick-off; 4-hourly injuries job misses them → issue #5.
+- Brentford venue stale in Wikidata and football-data.org (Griffin Park) — issue #4.
 - API-Football 2022–24 fixture-stats backfill (`dugout backfill-api-football`) not scheduled; optional.
