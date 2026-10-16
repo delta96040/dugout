@@ -21,5 +21,6 @@ uv run dugout-models backtest all
 | Fact-Check NLI | [factcheck_nli.md](factcheck_nli.md) | 48 hand-labelled football premise/claim pairs | DeBERTa-v3 base and large: no false verifications; base 3x faster (used) |
 | Agents (end to end) | [templates](agents_eval_templates.md) · [LLM](agents_eval_llm.md) | 56 hand-labelled questions | See reports: 0 untraceable numbers is the hard target |
 | Lineup optimiser | [lineup.md](lineup.md) | Trust weight chosen on 2023-24, test 2024-25 | Predicted XI 78% overlap vs 77% heuristic |
+| Lineup shape (formation) | [lineup_shape.md](lineup_shape.md) | Formation from the manager's last 6 XIs, scored on 2025-27 | Back line right 75% vs 61% for the previous rule (= base rate) |
 
 Negative and weak results are published on purpose: the site shows each model's evidence next to its output.
