@@ -43,6 +43,8 @@ export default function MethodsPage() {
   const pred = readBacktest<J>("predictor");
   const val = readBacktest<J>("valuation");
   const real = readBacktest<J>("realism");
+  const rum = readBacktest<J>("rumours");
+  const rum6 = rum?.horizons?.["6"];
   const inj = readBacktest<J>("injury");
   const lin = readBacktest<J>("lineup");
   const opp = readBacktest<J>("opportunity");
@@ -119,6 +121,14 @@ export default function MethodsPage() {
             P(sold in a window) × the club&apos;s share of plausible buyers. Sale model AUC{" "}
             <B file="realism" j={real} value={real?.mobility?.auc} label="mobility AUC" />; destination AUC{" "}
             <B file="realism" j={real} value={real?.destination?.auc} label="destination AUC" />.
+          </Row>
+          <Row name="Rumour track record" verdict="beats the base rate · outlets barely differ">
+            What became of every rumour in the Guardian&apos;s Rumour Mill archive: each one checked against the move
+            that did or did not happen within half a year. On the latest season Brier{" "}
+            <B file="rumours" j={rum} value={rum6?.model?.brier} label="Brier, rumour track record" /> vs{" "}
+            <B file="rumours" j={rum} value={rum6?.recent_rate?.brier} label="Brier, recent base rate" /> for the recent base rate; AUC{" "}
+            <B file="rumours" j={rum} value={rum6?.model?.auc} label="AUC, rumour track record" />. Outlets&apos; records barely differ once
+            shrunk to the average, so a rumour is judged on its own signs: repeat reports, how many clubs it names, the window.
           </Row>
           <Row name="Player potential" verdict="beats age curve · wide bands">
             Projected market value. Median error two years ahead{" "}

@@ -114,7 +114,7 @@ def cmd_record(args) -> int:
         )
         adapter = build(args.source, ctx)
         try:
-            print(adapter.ingest())
+            print(adapter.ingest(**getattr(adapter, "record_kwargs", {})))
         finally:
             adapter.close()
     print(f"fixtures written to packages/pipeline/tests/fixtures/{args.source}/")

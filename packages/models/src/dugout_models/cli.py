@@ -81,6 +81,13 @@ def _run_one(model: str, args, con) -> bool:
             {h: (v["model"]["mae_log"], v["age_curve"]["mae_log"]) for h, v in r["horizons"].items()},
         )
         return all(v["model"]["mae_log"] < v["age_curve"]["mae_log"] for v in r["horizons"].values())
+    if model == "rumours":
+        from dugout_models.rumours import SHIPPED_HORIZON, backtest
+
+        r = backtest(con, BACKTESTS)
+        h = r["horizons"][str(SHIPPED_HORIZON)]
+        print("rumours:", {k: h[k]["brier"] for k in ("recent_rate", "outlet_only", "model")})
+        return h["model"]["brier"] < h["recent_rate"]["brier"]
     raise SystemExit(f"unknown model {model}")
 
 
@@ -95,6 +102,7 @@ MODELS = [
     "injury",
     "lineup",
     "potential",
+    "rumours",
 ]
 
 
@@ -147,7 +155,7 @@ def main(argv: list[str] | None = None) -> int:
         "publish", help="fit shipped models on all data; write current outputs to model_outputs"
     )
     s.add_argument(
-        "models", nargs="*", help="predictor lineup injury roles fingerprint market (default: all)"
+        "models", nargs="*", help="predictor lineup injury roles fingerprint market rumours (default: all)"
     )
     s.set_defaults(fn=cmd_publish)
     s = sub.add_parser(
