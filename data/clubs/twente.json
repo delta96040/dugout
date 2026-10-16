@@ -1,0 +1,2655 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "twente",
+    "name": "Twente",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "eredivisie",
+    "name": "Eredivisie",
+    "country": "Netherlands"
+  },
+  "generated_at": "2026-10-16T21:04:07+00:00",
+  "data_as_of": "2026-10-16T20:56:27+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Twente for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Twente are "
+          },
+          {
+            "stat": "ev_996a4095b30f2c06",
+            "display": "4th"
+          },
+          {
+            "text": " in the Eredivisie table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Twente have "
+          },
+          {
+            "stat": "ev_89b2225564f1261e",
+            "display": "17"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Twente's next league match is Twente v Utrecht on "
+          },
+          {
+            "stat": "ev_f3f590c73b0897fe",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Twente's biggest squad need is "
+          },
+          {
+            "stat": "ev_77b4c1d187e09bf9",
+            "display": "centre-back"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Twente doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Twente are "
+            },
+            {
+              "stat": "ev_996a4095b30f2c06",
+              "display": "4th"
+            },
+            {
+              "text": " in the Eredivisie table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Twente have "
+            },
+            {
+              "stat": "ev_89b2225564f1261e",
+              "display": "17"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Twente have scored "
+            },
+            {
+              "stat": "ev_6d292ffc659bd89c",
+              "display": "16"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Twente have conceded "
+            },
+            {
+              "stat": "ev_5a28054709fc94f3",
+              "display": "8"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Twente's most recent league results read "
+            },
+            {
+              "stat": "ev_be2d2169a603c533",
+              "display": "DWWWD"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "John van den Brom has been Twente's head coach since "
+            },
+            {
+              "stat": "ev_e911bfb0e39b790b",
+              "display": "15 September 2025"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Twente expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Twente's next league match is Twente v Utrecht on "
+            },
+            {
+              "stat": "ev_f3f590c73b0897fe",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Twente's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Twente, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Twente players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Bart van Rooij's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_65ada28591b1e65f",
+              "display": "47%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Filip Thorvaldsen's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_4ad8f040c6e74ac4",
+              "display": "33%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Sondre Ørjasæter's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_d263bfbec3600480",
+              "display": "18%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Bart van Rooij at "
+            },
+            {
+              "stat": "ev_636bc95ea6a7be4f",
+              "display": "€10.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Bart van Rooij is "
+            },
+            {
+              "stat": "ev_a90fe34f081a6154",
+              "display": "€5.9m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Sondre Ørjasæter at "
+            },
+            {
+              "stat": "ev_6225767d08c114f2",
+              "display": "€7.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Sondre Ørjasæter is "
+            },
+            {
+              "stat": "ev_7bc985244504ef64",
+              "display": "€5.0m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Ramiz Zerrouki at "
+            },
+            {
+              "stat": "ev_516a81fb14c6d5c5",
+              "display": "€6.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ramiz Zerrouki is "
+            },
+            {
+              "stat": "ev_c27c73c92d568cb4",
+              "display": "€2.9m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Twente strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Twente's biggest squad need is "
+            },
+            {
+              "stat": "ev_77b4c1d187e09bf9",
+              "display": "centre-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Enrico Delprato (Parma Calcio 1913), who is "
+            },
+            {
+              "stat": "ev_26b94e6a8df3d9e6",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Enrico Delprato plays for "
+            },
+            {
+              "stat": "ev_fca78865b6060211",
+              "display": "Parma Calcio 1913"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Enrico Delprato has a market value of "
+            },
+            {
+              "stat": "ev_e60f4aee63d5ae48",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Enrico Delprato is "
+            },
+            {
+              "stat": "ev_3b2f7ca9732e91b4",
+              "display": "€3.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Enrico Delprato to play "
+            },
+            {
+              "stat": "ev_1fa1cb503f9962d7",
+              "display": "62%"
+            },
+            {
+              "text": " of Twente's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Mads Bech Sørensen (FC Midtjylland), who is "
+            },
+            {
+              "stat": "ev_665cd85d35fe9cad",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Mads Bech Sørensen plays for "
+            },
+            {
+              "stat": "ev_afe70024f184f221",
+              "display": "FC Midtjylland"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Mads Bech Sørensen has a market value of "
+            },
+            {
+              "stat": "ev_44d50d8c83e6f14a",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Mads Bech Sørensen is "
+            },
+            {
+              "stat": "ev_602c84abe2701179",
+              "display": "€3.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Mads Bech Sørensen to play "
+            },
+            {
+              "stat": "ev_d28b6c03469a523c",
+              "display": "60%"
+            },
+            {
+              "text": " of Twente's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Luca Ranieri (ACF Fiorentina), who is "
+            },
+            {
+              "stat": "ev_e9536d6ff78e75ba",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Luca Ranieri plays for "
+            },
+            {
+              "stat": "ev_c884392acd5d6060",
+              "display": "ACF Fiorentina"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Luca Ranieri has a market value of "
+            },
+            {
+              "stat": "ev_71dd6376df7d79b4",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Luca Ranieri is "
+            },
+            {
+              "stat": "ev_751bc06ddbc5a048",
+              "display": "€3.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Luca Ranieri to play "
+            },
+            {
+              "stat": "ev_b3582dff86fdc7ef",
+              "display": "60%"
+            },
+            {
+              "text": " of Twente's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Thijmen Blokzijl (FC Groningen), who is "
+            },
+            {
+              "stat": "ev_eb4e86ca62d07a35",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Thijmen Blokzijl plays for "
+            },
+            {
+              "stat": "ev_cc9df9ea4edc12d8",
+              "display": "FC Groningen"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_21f5dc5fcd864dc1",
+              "display": "57%"
+            },
+            {
+              "text": " chance that FC Groningen sell Thijmen Blokzijl in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Thijmen Blokzijl is "
+            },
+            {
+              "stat": "ev_aea68de287252749",
+              "display": "€3.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_ca0eea8e7ebbf507",
+              "display": "1.0%"
+            },
+            {
+              "text": " chance that Thijmen Blokzijl joins Twente in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Marvin Young (Sparta Rotterdam), who is "
+            },
+            {
+              "stat": "ev_34667a33237fbd1e",
+              "display": "21"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Marvin Young plays for "
+            },
+            {
+              "stat": "ev_e475df28e27ec68a",
+              "display": "Sparta Rotterdam"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_e46eb373c7222447",
+              "display": "43%"
+            },
+            {
+              "text": " chance that Sparta Rotterdam sell Marvin Young in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Marvin Young is "
+            },
+            {
+              "stat": "ev_09c5f5f81c229b3a",
+              "display": "€4.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Twente's second squad need is "
+            },
+            {
+              "stat": "ev_b4baff95380db099",
+              "display": "centre-forward"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Enrico Delprato has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Mads Bech Sørensen has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Luca Ranieri has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Thijmen Blokzijl has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Marvin Young has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_09c5f5f81c229b3a": {
+      "value": 4000000.0,
+      "display": "4000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpeb52fb6bf6a496",
+      "entity_name": "Marvin Young",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0f466ffb2a0a0664": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_102fa4598195ae18": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp97a467a77489db",
+      "entity_name": "Mads Bech Sørensen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18880bc788cc56f9": {
+      "value": 0.0045,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_195e6538c5b45e2d": {
+      "value": 5100000.0,
+      "display": "5100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp47890ce479b495",
+      "entity_name": "Aaron Bibout",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1e208800a2c92ac4": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3d80354139b663",
+      "entity_name": "Janderson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1fa1cb503f9962d7": {
+      "value": 0.618,
+      "display": "0.62",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpb00b97e78ef73d",
+      "entity_name": "Enrico Del Prato",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_21f5dc5fcd864dc1": {
+      "value": 0.567,
+      "display": "0.57",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpab0083b0265803",
+      "entity_name": "Tijmen Blokzijl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26a47e9be96e7366": {
+      "value": "Cercle Brugge",
+      "display": "Cercle Brugge",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp18ffa77e058a62",
+      "entity_name": "Valy Konaté",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26b94e6a8df3d9e6": {
+      "value": 26.9,
+      "display": "26.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb00b97e78ef73d",
+      "entity_name": "Enrico Del Prato",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_34667a33237fbd1e": {
+      "value": 21.0,
+      "display": "21",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpeb52fb6bf6a496",
+      "entity_name": "Marvin Young",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3b2f7ca9732e91b4": {
+      "value": 3800000.0,
+      "display": "3800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb00b97e78ef73d",
+      "entity_name": "Enrico Del Prato",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_44d50d8c83e6f14a": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp97a467a77489db",
+      "entity_name": "Mads Bech Sørensen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_45bacfd2aa71cf78": {
+      "value": 1300000.0,
+      "display": "1300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpda6be7764b1929",
+      "entity_name": "David López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4824fc59b36e0cf6": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp3271257d818d56",
+      "entity_name": "Luca Ranieri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_490ac4d42979553c": {
+      "value": 23.4,
+      "display": "23.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4a1bc05841372fb2": {
+      "value": 2700000.0,
+      "display": "2700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp18ffa77e058a62",
+      "entity_name": "Valy Konaté",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4ad8f040c6e74ac4": {
+      "value": 0.328,
+      "display": "0.33",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp85a3b3fc9c8f95",
+      "entity_name": "Filip Thorvaldsen",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4fabc142e996d2dc": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpeb52fb6bf6a496",
+      "entity_name": "Marvin Young",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5133222c1f2799d2": {
+      "value": 1900000.0,
+      "display": "1900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp01c31897beb215",
+      "entity_name": "Nikita Lobov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_516a81fb14c6d5c5": {
+      "value": 6500000.0,
+      "display": "6500000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpae4822534bc27c",
+      "entity_name": "Ramiz Zerrouki",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5a28054709fc94f3": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5dc4baaabd50edfa": {
+      "value": 0.35,
+      "display": "0.35",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp18ffa77e058a62",
+      "entity_name": "Valy Konaté",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_602c84abe2701179": {
+      "value": 3400000.0,
+      "display": "3400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp97a467a77489db",
+      "entity_name": "Mads Bech Sørensen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6225767d08c114f2": {
+      "value": 7000000.0,
+      "display": "7000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp2ed290400316fa",
+      "entity_name": "Sondre Ørjasæter",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_62ee5a4e12f85e51": {
+      "value": 21.2,
+      "display": "21.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp01c31897beb215",
+      "entity_name": "Nikita Lobov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_636bc95ea6a7be4f": {
+      "value": 10000000.0,
+      "display": "10000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_65ada28591b1e65f": {
+      "value": 0.472,
+      "display": "0.47",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_665cd85d35fe9cad": {
+      "value": 27.8,
+      "display": "27.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp97a467a77489db",
+      "entity_name": "Mads Bech Sørensen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6d292ffc659bd89c": {
+      "value": 16.0,
+      "display": "16",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_71dd6376df7d79b4": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3271257d818d56",
+      "entity_name": "Luca Ranieri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7277774566571cca": {
+      "value": "FC Rubin Kazan",
+      "display": "FC Rubin Kazan",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp01c31897beb215",
+      "entity_name": "Nikita Lobov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_751bc06ddbc5a048": {
+      "value": 3700000.0,
+      "display": "3700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3271257d818d56",
+      "entity_name": "Luca Ranieri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_77b4c1d187e09bf9": {
+      "value": "centre-back",
+      "display": "centre-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7bc985244504ef64": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2ed290400316fa",
+      "entity_name": "Sondre Ørjasæter",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_83ebe9c5d6855bed": {
+      "value": 1500000.0,
+      "display": "1500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_854182cc130cb315": {
+      "value": 0.007,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpeb52fb6bf6a496",
+      "entity_name": "Marvin Young",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8605fd4d6c1d2d85": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpab0083b0265803",
+      "entity_name": "Tijmen Blokzijl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_875a5ddd8f741b50": {
+      "value": 27.4,
+      "display": "27.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3d80354139b663",
+      "entity_name": "Janderson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_89b2225564f1261e": {
+      "value": 17.0,
+      "display": "17",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8bdc6af3ee04ea21": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpb00b97e78ef73d",
+      "entity_name": "Enrico Del Prato",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d1b61496f3e524c": {
+      "value": 0.472,
+      "display": "0.47",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp01c31897beb215",
+      "entity_name": "Nikita Lobov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8ea177acacc8c0c8": {
+      "value": "Excelsior Rotterdam",
+      "display": "Excelsior Rotterdam",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8f04d16ac01ca52e": {
+      "value": 3100000.0,
+      "display": "3100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp18ffa77e058a62",
+      "entity_name": "Valy Konaté",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_90786b2b5a38828d": {
+      "value": "RCD Mallorca",
+      "display": "RCD Mallorca",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpda6be7764b1929",
+      "entity_name": "David López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_938fff5cc07c78d5": {
+      "value": 22.1,
+      "display": "22.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp47890ce479b495",
+      "entity_name": "Aaron Bibout",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_996a4095b30f2c06": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_a0f11c5fea061554": {
+      "value": 2100000.0,
+      "display": "2100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpda6be7764b1929",
+      "entity_name": "David López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a90fe34f081a6154": {
+      "value": 5900000.0,
+      "display": "5900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_accd09ee12c24e0b": {
+      "value": 0.321,
+      "display": "0.32",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aea68de287252749": {
+      "value": 3400000.0,
+      "display": "3400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpab0083b0265803",
+      "entity_name": "Tijmen Blokzijl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_af6da9bd0fdb68b7": {
+      "value": 23.9,
+      "display": "23.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_afe70024f184f221": {
+      "value": "FC Midtjylland",
+      "display": "FC Midtjylland",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp97a467a77489db",
+      "entity_name": "Mads Bech Sørensen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b3582dff86fdc7ef": {
+      "value": 0.6,
+      "display": "0.60",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp3271257d818d56",
+      "entity_name": "Luca Ranieri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b4baff95380db099": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b6328cb6899e81c4": {
+      "value": 23.7,
+      "display": "23.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpda6be7764b1929",
+      "entity_name": "David López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_be2d2169a603c533": {
+      "value": "DWWWD",
+      "display": "DWWWD",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "twente",
+      "entity_name": "Twente",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_be58caf251dac606": {
+      "value": 0.341,
+      "display": "0.34",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpda6be7764b1929",
+      "entity_name": "David López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c27c73c92d568cb4": {
+      "value": 2900000.0,
+      "display": "2900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpae4822534bc27c",
+      "entity_name": "Ramiz Zerrouki",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c38d633c7a75e062": {
+      "value": 4600000.0,
+      "display": "4600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c4e2c08e4f3135a9": {
+      "value": 19.9,
+      "display": "19.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp18ffa77e058a62",
+      "entity_name": "Valy Konaté",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c884392acd5d6060": {
+      "value": "ACF Fiorentina",
+      "display": "ACF Fiorentina",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3271257d818d56",
+      "entity_name": "Luca Ranieri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c9dc2a6015cc7848": {
+      "value": 0.0012,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ca0eea8e7ebbf507": {
+      "value": 0.0098,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpab0083b0265803",
+      "entity_name": "Tijmen Blokzijl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cc9df9ea4edc12d8": {
+      "value": "FC Groningen",
+      "display": "FC Groningen",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpab0083b0265803",
+      "entity_name": "Tijmen Blokzijl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d263bfbec3600480": {
+      "value": 0.185,
+      "display": "0.18",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp2ed290400316fa",
+      "entity_name": "Sondre Ørjasæter",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d28b6c03469a523c": {
+      "value": 0.601,
+      "display": "0.60",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp97a467a77489db",
+      "entity_name": "Mads Bech Sørensen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e46eb373c7222447": {
+      "value": 0.429,
+      "display": "0.43",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpeb52fb6bf6a496",
+      "entity_name": "Marvin Young",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e475df28e27ec68a": {
+      "value": "Sparta Rotterdam",
+      "display": "Sparta Rotterdam",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpeb52fb6bf6a496",
+      "entity_name": "Marvin Young",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e60f4aee63d5ae48": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb00b97e78ef73d",
+      "entity_name": "Enrico Del Prato",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e911bfb0e39b790b": {
+      "value": "2025-09-15",
+      "display": "2025-09-15",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q733609",
+      "entity_name": "John van den Brom",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q733609",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e9536d6ff78e75ba": {
+      "value": 27.5,
+      "display": "27.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3271257d818d56",
+      "entity_name": "Luca Ranieri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eb4e86ca62d07a35": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpab0083b0265803",
+      "entity_name": "Tijmen Blokzijl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f0b1e2a2d57687c5": {
+      "value": 1700000.0,
+      "display": "1700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp01c31897beb215",
+      "entity_name": "Nikita Lobov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f3f590c73b0897fe": {
+      "value": "2026-10-18T18:00:00+00:00",
+      "display": "2026-10-18T18:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "eredivisie:2026-27:twente:utrecht",
+      "entity_name": "Twente v Utrecht",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:20.460767+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_fca78865b6060211": {
+      "value": "Parma Calcio 1913",
+      "display": "Parma Calcio 1913",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpb00b97e78ef73d",
+      "entity_name": "Enrico Del Prato",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_996a4095b30f2c06",
+        "display": "4th",
+        "label": "league position",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_89b2225564f1261e",
+        "display": "17",
+        "label": "league points",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_6d292ffc659bd89c",
+        "display": "16",
+        "label": "league goals scored",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_5a28054709fc94f3",
+        "display": "8",
+        "label": "league goals conceded",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_be2d2169a603c533",
+        "display": "DWWWD",
+        "label": "recent league results, oldest first",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_e911bfb0e39b790b",
+        "display": "15 September 2025",
+        "label": "appointed head coach of Twente",
+        "subject": "John van den Brom"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_f3f590c73b0897fe",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Twente v Utrecht"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_65ada28591b1e65f",
+        "display": "47%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_4ad8f040c6e74ac4",
+        "display": "33%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Filip Thorvaldsen"
+      },
+      {
+        "stat": "ev_d263bfbec3600480",
+        "display": "18%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Sondre Ørjasæter"
+      },
+      {
+        "stat": "ev_636bc95ea6a7be4f",
+        "display": "€10.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_a90fe34f081a6154",
+        "display": "€5.9m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_6225767d08c114f2",
+        "display": "€7.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Sondre Ørjasæter"
+      },
+      {
+        "stat": "ev_7bc985244504ef64",
+        "display": "€5.0m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Sondre Ørjasæter"
+      },
+      {
+        "stat": "ev_516a81fb14c6d5c5",
+        "display": "€6.5m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Ramiz Zerrouki"
+      },
+      {
+        "stat": "ev_c27c73c92d568cb4",
+        "display": "€2.9m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Ramiz Zerrouki"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_77b4c1d187e09bf9",
+        "display": "centre-back",
+        "label": "squad need, priority one",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_26b94e6a8df3d9e6",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Enrico Delprato"
+      },
+      {
+        "stat": "ev_fca78865b6060211",
+        "display": "Parma Calcio 1913",
+        "label": "current club",
+        "subject": "Enrico Delprato"
+      },
+      {
+        "stat": "ev_8bdc6af3ee04ea21",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Enrico Delprato"
+      },
+      {
+        "stat": "ev_e60f4aee63d5ae48",
+        "display": "€6.0m",
+        "label": "market value",
+        "subject": "Enrico Delprato"
+      },
+      {
+        "stat": "ev_3b2f7ca9732e91b4",
+        "display": "€3.8m",
+        "label": "estimated fair fee",
+        "subject": "Enrico Delprato"
+      },
+      {
+        "stat": "ev_1fa1cb503f9962d7",
+        "display": "62%",
+        "label": "expected share of minutes at the club",
+        "subject": "Enrico Delprato"
+      },
+      {
+        "stat": "ev_665cd85d35fe9cad",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Mads Bech Sørensen"
+      },
+      {
+        "stat": "ev_afe70024f184f221",
+        "display": "FC Midtjylland",
+        "label": "current club",
+        "subject": "Mads Bech Sørensen"
+      },
+      {
+        "stat": "ev_102fa4598195ae18",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Mads Bech Sørensen"
+      },
+      {
+        "stat": "ev_44d50d8c83e6f14a",
+        "display": "€6.0m",
+        "label": "market value",
+        "subject": "Mads Bech Sørensen"
+      },
+      {
+        "stat": "ev_602c84abe2701179",
+        "display": "€3.4m",
+        "label": "estimated fair fee",
+        "subject": "Mads Bech Sørensen"
+      },
+      {
+        "stat": "ev_d28b6c03469a523c",
+        "display": "60%",
+        "label": "expected share of minutes at the club",
+        "subject": "Mads Bech Sørensen"
+      },
+      {
+        "stat": "ev_e9536d6ff78e75ba",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Luca Ranieri"
+      },
+      {
+        "stat": "ev_c884392acd5d6060",
+        "display": "ACF Fiorentina",
+        "label": "current club",
+        "subject": "Luca Ranieri"
+      },
+      {
+        "stat": "ev_4824fc59b36e0cf6",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Luca Ranieri"
+      },
+      {
+        "stat": "ev_71dd6376df7d79b4",
+        "display": "€6.0m",
+        "label": "market value",
+        "subject": "Luca Ranieri"
+      },
+      {
+        "stat": "ev_751bc06ddbc5a048",
+        "display": "€3.7m",
+        "label": "estimated fair fee",
+        "subject": "Luca Ranieri"
+      },
+      {
+        "stat": "ev_b3582dff86fdc7ef",
+        "display": "60%",
+        "label": "expected share of minutes at the club",
+        "subject": "Luca Ranieri"
+      },
+      {
+        "stat": "ev_eb4e86ca62d07a35",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Thijmen Blokzijl"
+      },
+      {
+        "stat": "ev_cc9df9ea4edc12d8",
+        "display": "FC Groningen",
+        "label": "current club",
+        "subject": "Thijmen Blokzijl"
+      },
+      {
+        "stat": "ev_21f5dc5fcd864dc1",
+        "display": "57%",
+        "label": "chance his club sells him in a window",
+        "subject": "Thijmen Blokzijl"
+      },
+      {
+        "stat": "ev_8605fd4d6c1d2d85",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Thijmen Blokzijl"
+      },
+      {
+        "stat": "ev_aea68de287252749",
+        "display": "€3.4m",
+        "label": "estimated fair fee",
+        "subject": "Thijmen Blokzijl"
+      },
+      {
+        "stat": "ev_ca0eea8e7ebbf507",
+        "display": "1.0%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Thijmen Blokzijl"
+      },
+      {
+        "stat": "ev_34667a33237fbd1e",
+        "display": "21",
+        "label": "age (realistic target)",
+        "subject": "Marvin Young"
+      },
+      {
+        "stat": "ev_e475df28e27ec68a",
+        "display": "Sparta Rotterdam",
+        "label": "current club",
+        "subject": "Marvin Young"
+      },
+      {
+        "stat": "ev_e46eb373c7222447",
+        "display": "43%",
+        "label": "chance his club sells him in a window",
+        "subject": "Marvin Young"
+      },
+      {
+        "stat": "ev_4fabc142e996d2dc",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Marvin Young"
+      },
+      {
+        "stat": "ev_09c5f5f81c229b3a",
+        "display": "€4.0m",
+        "label": "estimated fair fee",
+        "subject": "Marvin Young"
+      },
+      {
+        "stat": "ev_854182cc130cb315",
+        "display": "0.7%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Marvin Young"
+      },
+      {
+        "stat": "ev_490ac4d42979553c",
+        "display": "23",
+        "label": "age (realistic target)",
+        "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_8ea177acacc8c0c8",
+        "display": "Excelsior Rotterdam",
+        "label": "current club",
+        "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_accd09ee12c24e0b",
+        "display": "32%",
+        "label": "chance his club sells him in a window",
+        "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_0f466ffb2a0a0664",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_83ebe9c5d6855bed",
+        "display": "€1.5m",
+        "label": "estimated fair fee",
+        "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_18880bc788cc56f9",
+        "display": "0.4%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_c4e2c08e4f3135a9",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Valy Konaté"
+      },
+      {
+        "stat": "ev_26a47e9be96e7366",
+        "display": "Cercle Brugge",
+        "label": "current club",
+        "subject": "Valy Konaté"
+      },
+      {
+        "stat": "ev_5dc4baaabd50edfa",
+        "display": "35%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Valy Konaté"
+      },
+      {
+        "stat": "ev_4a1bc05841372fb2",
+        "display": "€2.7m",
+        "label": "estimated fair fee",
+        "subject": "Valy Konaté"
+      },
+      {
+        "stat": "ev_8f04d16ac01ca52e",
+        "display": "€3.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "Valy Konaté"
+      },
+      {
+        "stat": "ev_b6328cb6899e81c4",
+        "display": "24",
+        "label": "age (gem target)",
+        "subject": "David López"
+      },
+      {
+        "stat": "ev_90786b2b5a38828d",
+        "display": "RCD Mallorca",
+        "label": "current club",
+        "subject": "David López"
+      },
+      {
+        "stat": "ev_be58caf251dac606",
+        "display": "34%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "David López"
+      },
+      {
+        "stat": "ev_45bacfd2aa71cf78",
+        "display": "€1.3m",
+        "label": "estimated fair fee",
+        "subject": "David López"
+      },
+      {
+        "stat": "ev_a0f11c5fea061554",
+        "display": "€2.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "David López"
+      },
+      {
+        "stat": "ev_62ee5a4e12f85e51",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Nikita Lobov"
+      },
+      {
+        "stat": "ev_7277774566571cca",
+        "display": "FC Rubin Kazan",
+        "label": "current club",
+        "subject": "Nikita Lobov"
+      },
+      {
+        "stat": "ev_8d1b61496f3e524c",
+        "display": "47%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Nikita Lobov"
+      },
+      {
+        "stat": "ev_f0b1e2a2d57687c5",
+        "display": "€1.7m",
+        "label": "estimated fair fee",
+        "subject": "Nikita Lobov"
+      },
+      {
+        "stat": "ev_5133222c1f2799d2",
+        "display": "€1.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Nikita Lobov"
+      },
+      {
+        "stat": "ev_b4baff95380db099",
+        "display": "centre-forward",
+        "label": "squad need, priority two",
+        "subject": "Twente"
+      },
+      {
+        "stat": "ev_875a5ddd8f741b50",
+        "display": "27",
+        "label": "age (best target, second need)",
+        "subject": "Janderson"
+      },
+      {
+        "stat": "ev_1e208800a2c92ac4",
+        "display": "€6.0m",
+        "label": "market value",
+        "subject": "Janderson"
+      },
+      {
+        "stat": "ev_af6da9bd0fdb68b7",
+        "display": "24",
+        "label": "age (realistic target, second need)",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_c38d633c7a75e062",
+        "display": "€4.6m",
+        "label": "estimated fair fee",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_c9dc2a6015cc7848",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_938fff5cc07c78d5",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Aaron Bibout"
+      },
+      {
+        "stat": "ev_195e6538c5b45e2d",
+        "display": "€5.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "Aaron Bibout"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 46,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 46,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Parma Calcio 1913"
+  ]
+}

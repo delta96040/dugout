@@ -1,0 +1,1680 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "cambuur",
+    "name": "Cambuur",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "eredivisie",
+    "name": "Eredivisie",
+    "country": "Netherlands"
+  },
+  "generated_at": "2026-10-16T20:56:48+00:00",
+  "data_as_of": "2026-10-16T20:56:27+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Cambuur for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Cambuur are "
+          },
+          {
+            "stat": "ev_edb59a7c3a32847a",
+            "display": "12th"
+          },
+          {
+            "text": " in the Eredivisie table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Cambuur have "
+          },
+          {
+            "stat": "ev_a765fece2b267b1d",
+            "display": "8"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Cambuur's next league match is Cambuur v AZ on "
+          },
+          {
+            "stat": "ev_07c7facade7ce409",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Cambuur's biggest squad need is "
+          },
+          {
+            "stat": "ev_9e4da2e5585cec92",
+            "display": "centre-forward"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Cambuur doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Cambuur are "
+            },
+            {
+              "stat": "ev_edb59a7c3a32847a",
+              "display": "12th"
+            },
+            {
+              "text": " in the Eredivisie table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Cambuur have "
+            },
+            {
+              "stat": "ev_a765fece2b267b1d",
+              "display": "8"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Cambuur have scored "
+            },
+            {
+              "stat": "ev_df87d467f3101e48",
+              "display": "11"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Cambuur have conceded "
+            },
+            {
+              "stat": "ev_0760fd841ad697f1",
+              "display": "19"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Cambuur's most recent league results read "
+            },
+            {
+              "stat": "ev_33fc76f52702f82a",
+              "display": "WDWDL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Johan Plat has been Cambuur's head coach since "
+            },
+            {
+              "stat": "ev_3be52e93ac791b76",
+              "display": "1 July 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Cambuur expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Cambuur's next league match is Cambuur v AZ on "
+            },
+            {
+              "stat": "ev_07c7facade7ce409",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Cambuur's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Cambuur, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Cambuur players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Luca Plogmann's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_77aa000a15047166",
+              "display": "1%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Mathieu Maertens's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_4a84fab2768c9e8b",
+              "display": "1%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Rafik el Arguioui's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_fd5386ab3ab86415",
+              "display": "0%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Mathieu Maertens at "
+            },
+            {
+              "stat": "ev_1e6ec40a4e5ae876",
+              "display": "€0.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Mathieu Maertens is "
+            },
+            {
+              "stat": "ev_90c01457b7deb62b",
+              "display": "€0.2m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Lucas Jetten at "
+            },
+            {
+              "stat": "ev_cf4fff003808cd85",
+              "display": "€0.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Lucas Jetten is "
+            },
+            {
+              "stat": "ev_bc26a95024cc8962",
+              "display": "€1.2m"
+            },
+            {
+              "text": ", above his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Jamal Amofa at "
+            },
+            {
+              "stat": "ev_b66c3a70bd562cea",
+              "display": "€0.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Jamal Amofa is "
+            },
+            {
+              "stat": "ev_c603ac1f0e49f0fc",
+              "display": "€0.4m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Cambuur strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Cambuur's biggest squad need is "
+            },
+            {
+              "stat": "ev_9e4da2e5585cec92",
+              "display": "centre-forward"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Junior Kroupi (AFC Bournemouth), who is "
+            },
+            {
+              "stat": "ev_59cbaf149440e1b0",
+              "display": "20"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Junior Kroupi plays for "
+            },
+            {
+              "stat": "ev_dcdcc4ef3dd58ee5",
+              "display": "AFC Bournemouth"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Junior Kroupi has played "
+            },
+            {
+              "stat": "ev_36cf12d281d2ebaa",
+              "display": "61%"
+            },
+            {
+              "text": " of AFC Bournemouth's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Junior Kroupi is "
+            },
+            {
+              "stat": "ev_320d40b740a57107",
+              "display": "€63.3m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Junior Kroupi's market value to reach "
+            },
+            {
+              "stat": "ev_af8548be1b061ccf",
+              "display": "€85.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Kenan Yıldız (Juventus FC), who is "
+            },
+            {
+              "stat": "ev_c16fa93f66f3db43",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Kenan Yıldız plays for "
+            },
+            {
+              "stat": "ev_350fdc6410e05748",
+              "display": "Juventus FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Kenan Yıldız has played "
+            },
+            {
+              "stat": "ev_a94d7e4d2b4a8425",
+              "display": "85%"
+            },
+            {
+              "text": " of Juventus FC's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Kenan Yıldız is "
+            },
+            {
+              "stat": "ev_f836d488477f9b54",
+              "display": "€68.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Kenan Yıldız's market value to reach "
+            },
+            {
+              "stat": "ev_93af9c4a3d3aeb24",
+              "display": "€71.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Christian Kofane (Bayer 04 Leverkusen), who is "
+            },
+            {
+              "stat": "ev_64e9c0dd2fd4ad6e",
+              "display": "20"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Christian Kofane plays for "
+            },
+            {
+              "stat": "ev_d0bdba2f9fdb3714",
+              "display": "Bayer 04 Leverkusen"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Christian Kofane has played "
+            },
+            {
+              "stat": "ev_00db59c107a67ea3",
+              "display": "45%"
+            },
+            {
+              "text": " of Bayer 04 Leverkusen's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Christian Kofane is "
+            },
+            {
+              "stat": "ev_8b321cfb9131bc9a",
+              "display": "€38.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Christian Kofane's market value to reach "
+            },
+            {
+              "stat": "ev_ce16ca53b5ef5b5f",
+              "display": "€69.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Cambuur's second squad need is "
+            },
+            {
+              "stat": "ev_bf6604de41953e97",
+              "display": "winger"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Nolan Gillot (RAAL La Louvière), who is "
+            },
+            {
+              "stat": "ev_c8482ee8835213c6",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nolan Gillot has a market value of "
+            },
+            {
+              "stat": "ev_441c5560955c88c6",
+              "display": "€0.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Lamine Yamal (FC Barcelona), who is "
+            },
+            {
+              "stat": "ev_9cccf83c5d827e56",
+              "display": "19"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Lamine Yamal's market value to reach "
+            },
+            {
+              "stat": "ev_fed9c994e5e23a16",
+              "display": "€315m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    }
+  ],
+  "stats": {
+    "ev_00db59c107a67ea3": {
+      "value": 0.452,
+      "display": "0.45",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp6fbf4876c567d5",
+      "entity_name": "Christian Kofane",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0760fd841ad697f1": {
+      "value": 19.0,
+      "display": "19",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_07c7facade7ce409": {
+      "value": "2026-10-18T12:30:00+00:00",
+      "display": "2026-10-18T12:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "eredivisie:2026-27:cambuur:az",
+      "entity_name": "Cambuur v AZ",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:20.460767+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_1e6ec40a4e5ae876": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpdc42568558554d",
+      "entity_name": "Mathieu Maertens",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-04T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_320d40b740a57107": {
+      "value": 63300000.0,
+      "display": "63300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp9f114b7227ea6b",
+      "entity_name": "Junior Kroupi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_33fc76f52702f82a": {
+      "value": "WDWDL",
+      "display": "WDWDL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_350fdc6410e05748": {
+      "value": "Juventus FC",
+      "display": "Juventus FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_36cf12d281d2ebaa": {
+      "value": 0.608,
+      "display": "0.61",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp9f114b7227ea6b",
+      "entity_name": "Junior Kroupi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3be52e93ac791b76": {
+      "value": "2026-07-01",
+      "display": "2026-07-01",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q1692065",
+      "entity_name": "Johan Plat",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q1692065",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_441c5560955c88c6": {
+      "value": 500000.0,
+      "display": "500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa3e6ab79368893",
+      "entity_name": "Nolan Gillot",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4a84fab2768c9e8b": {
+      "value": 0.006,
+      "display": "0.01",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpdc42568558554d",
+      "entity_name": "Mathieu Maertens",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59cbaf149440e1b0": {
+      "value": 20.3,
+      "display": "20.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9f114b7227ea6b",
+      "entity_name": "Junior Kroupi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_64e9c0dd2fd4ad6e": {
+      "value": 20.2,
+      "display": "20.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp6fbf4876c567d5",
+      "entity_name": "Christian Kofane",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_77aa000a15047166": {
+      "value": 0.01,
+      "display": "0.01",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpa2fe6dc924da7c",
+      "entity_name": "Luca Plogmann",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8b321cfb9131bc9a": {
+      "value": 38200000.0,
+      "display": "38200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6fbf4876c567d5",
+      "entity_name": "Christian Kofane",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_90c01457b7deb62b": {
+      "value": 200000.0,
+      "display": "200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpdc42568558554d",
+      "entity_name": "Mathieu Maertens",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_93af9c4a3d3aeb24": {
+      "value": 71500000.0,
+      "display": "71500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9cccf83c5d827e56": {
+      "value": 19.3,
+      "display": "19.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e4da2e5585cec92": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a765fece2b267b1d": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_a94d7e4d2b4a8425": {
+      "value": 0.854,
+      "display": "0.85",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_af8548be1b061ccf": {
+      "value": 85500000.0,
+      "display": "85500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp9f114b7227ea6b",
+      "entity_name": "Junior Kroupi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b66c3a70bd562cea": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb9af486d08c940",
+      "entity_name": "Jamal Amofa",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2025-12-16T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_bc26a95024cc8962": {
+      "value": 1200000.0,
+      "display": "1200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0ab2a249f29427",
+      "entity_name": "Lucas Jetten",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bf6604de41953e97": {
+      "value": "winger",
+      "display": "winger",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c16fa93f66f3db43": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c603ac1f0e49f0fc": {
+      "value": 400000.0,
+      "display": "400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb9af486d08c940",
+      "entity_name": "Jamal Amofa",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c8482ee8835213c6": {
+      "value": 24.0,
+      "display": "24",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa3e6ab79368893",
+      "entity_name": "Nolan Gillot",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ce16ca53b5ef5b5f": {
+      "value": 69600000.0,
+      "display": "69600000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp6fbf4876c567d5",
+      "entity_name": "Christian Kofane",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cf4fff003808cd85": {
+      "value": 700000.0,
+      "display": "700000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp0ab2a249f29427",
+      "entity_name": "Lucas Jetten",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2025-12-16T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d0bdba2f9fdb3714": {
+      "value": "Bayer 04 Leverkusen",
+      "display": "Bayer 04 Leverkusen",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp6fbf4876c567d5",
+      "entity_name": "Christian Kofane",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dcdcc4ef3dd58ee5": {
+      "value": "AFC Bournemouth",
+      "display": "AFC Bournemouth",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp9f114b7227ea6b",
+      "entity_name": "Junior Kroupi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_df87d467f3101e48": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_edb59a7c3a32847a": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "cambuur",
+      "entity_name": "Cambuur",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f836d488477f9b54": {
+      "value": 68400000.0,
+      "display": "68400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fd5386ab3ab86415": {
+      "value": 0.004,
+      "display": "0.00",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp688280634bf91b",
+      "entity_name": "Rafik el Arguioui",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fed9c994e5e23a16": {
+      "value": 314800000.0,
+      "display": "314800000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_edb59a7c3a32847a",
+        "display": "12th",
+        "label": "league position",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_a765fece2b267b1d",
+        "display": "8",
+        "label": "league points",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_df87d467f3101e48",
+        "display": "11",
+        "label": "league goals scored",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_0760fd841ad697f1",
+        "display": "19",
+        "label": "league goals conceded",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_33fc76f52702f82a",
+        "display": "WDWDL",
+        "label": "recent league results, oldest first",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_3be52e93ac791b76",
+        "display": "1 July 2026",
+        "label": "appointed head coach of Cambuur",
+        "subject": "Johan Plat"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_07c7facade7ce409",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Cambuur v AZ"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_77aa000a15047166",
+        "display": "1%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Luca Plogmann"
+      },
+      {
+        "stat": "ev_4a84fab2768c9e8b",
+        "display": "1%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Mathieu Maertens"
+      },
+      {
+        "stat": "ev_fd5386ab3ab86415",
+        "display": "0%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Rafik el Arguioui"
+      },
+      {
+        "stat": "ev_1e6ec40a4e5ae876",
+        "display": "€0.6m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Mathieu Maertens"
+      },
+      {
+        "stat": "ev_90c01457b7deb62b",
+        "display": "€0.2m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Mathieu Maertens"
+      },
+      {
+        "stat": "ev_cf4fff003808cd85",
+        "display": "€0.7m",
+        "label": "market value (Transfermarkt, as of December 2025)",
+        "subject": "Lucas Jetten"
+      },
+      {
+        "stat": "ev_bc26a95024cc8962",
+        "display": "€1.2m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Lucas Jetten"
+      },
+      {
+        "stat": "ev_b66c3a70bd562cea",
+        "display": "€0.6m",
+        "label": "market value (Transfermarkt, as of December 2025)",
+        "subject": "Jamal Amofa"
+      },
+      {
+        "stat": "ev_c603ac1f0e49f0fc",
+        "display": "€0.4m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Jamal Amofa"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_9e4da2e5585cec92",
+        "display": "centre-forward",
+        "label": "squad need, priority one",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_59cbaf149440e1b0",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Junior Kroupi"
+      },
+      {
+        "stat": "ev_dcdcc4ef3dd58ee5",
+        "display": "AFC Bournemouth",
+        "label": "current club",
+        "subject": "Junior Kroupi"
+      },
+      {
+        "stat": "ev_36cf12d281d2ebaa",
+        "display": "61%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Junior Kroupi"
+      },
+      {
+        "stat": "ev_320d40b740a57107",
+        "display": "€63.3m",
+        "label": "estimated fair fee",
+        "subject": "Junior Kroupi"
+      },
+      {
+        "stat": "ev_af8548be1b061ccf",
+        "display": "€85.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Junior Kroupi"
+      },
+      {
+        "stat": "ev_c16fa93f66f3db43",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_350fdc6410e05748",
+        "display": "Juventus FC",
+        "label": "current club",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_a94d7e4d2b4a8425",
+        "display": "85%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_f836d488477f9b54",
+        "display": "€68.4m",
+        "label": "estimated fair fee",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_93af9c4a3d3aeb24",
+        "display": "€71.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_64e9c0dd2fd4ad6e",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Christian Kofane"
+      },
+      {
+        "stat": "ev_d0bdba2f9fdb3714",
+        "display": "Bayer 04 Leverkusen",
+        "label": "current club",
+        "subject": "Christian Kofane"
+      },
+      {
+        "stat": "ev_00db59c107a67ea3",
+        "display": "45%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Christian Kofane"
+      },
+      {
+        "stat": "ev_8b321cfb9131bc9a",
+        "display": "€38.2m",
+        "label": "estimated fair fee",
+        "subject": "Christian Kofane"
+      },
+      {
+        "stat": "ev_ce16ca53b5ef5b5f",
+        "display": "€69.6m",
+        "label": "projected market value in a few seasons",
+        "subject": "Christian Kofane"
+      },
+      {
+        "stat": "ev_bf6604de41953e97",
+        "display": "winger",
+        "label": "squad need, priority two",
+        "subject": "Cambuur"
+      },
+      {
+        "stat": "ev_c8482ee8835213c6",
+        "display": "24",
+        "label": "age (best target, second need)",
+        "subject": "Nolan Gillot"
+      },
+      {
+        "stat": "ev_441c5560955c88c6",
+        "display": "€0.5m",
+        "label": "market value",
+        "subject": "Nolan Gillot"
+      },
+      {
+        "stat": "ev_9cccf83c5d827e56",
+        "display": "19",
+        "label": "age (gem target, second need)",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_fed9c994e5e23a16",
+        "display": "€315m",
+        "label": "projected market value in a few seasons",
+        "subject": "Lamine Yamal"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 41,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 41
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Bayer 04 Leverkusen"
+  ]
+}

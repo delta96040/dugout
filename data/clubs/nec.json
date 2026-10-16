@@ -1,0 +1,2285 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "nec",
+    "name": "NEC",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "eredivisie",
+    "name": "Eredivisie",
+    "country": "Netherlands"
+  },
+  "generated_at": "2026-10-16T21:02:47+00:00",
+  "data_as_of": "2026-10-16T20:56:27+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on NEC for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "NEC are "
+          },
+          {
+            "stat": "ev_0d42d35e12eea2fa",
+            "display": "11th"
+          },
+          {
+            "text": " in the Eredivisie table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "NEC have "
+          },
+          {
+            "stat": "ev_e986abdf5e61a5c5",
+            "display": "9"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "NEC's next league match is NEC v Fortuna Sittard on "
+          },
+          {
+            "stat": "ev_de17a27bd125e59a",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "We estimate Ahmetcan Kaplan's chance of being sold in a transfer window at "
+          },
+          {
+            "stat": "ev_1b2b4e248c075706",
+            "display": "13%"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are NEC doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "NEC are "
+            },
+            {
+              "stat": "ev_0d42d35e12eea2fa",
+              "display": "11th"
+            },
+            {
+              "text": " in the Eredivisie table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "NEC have "
+            },
+            {
+              "stat": "ev_e986abdf5e61a5c5",
+              "display": "9"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "NEC have scored "
+            },
+            {
+              "stat": "ev_398a035f0bfc3081",
+              "display": "13"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "NEC have conceded "
+            },
+            {
+              "stat": "ev_4d09c11be7220318",
+              "display": "14"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "NEC's most recent league results read "
+            },
+            {
+              "stat": "ev_258a991cf627bb7a",
+              "display": "DDLDL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dick Schreuder has been NEC's head coach since "
+            },
+            {
+              "stat": "ev_5ba4837c58a044f3",
+              "display": "1 July 2025"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should NEC expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "NEC's next league match is NEC v Fortuna Sittard on "
+            },
+            {
+              "stat": "ev_de17a27bd125e59a",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is NEC's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for NEC, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which NEC players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Ahmetcan Kaplan's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_1b2b4e248c075706",
+              "display": "13%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Kaj Sierhuis's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_244c1dd0068c2abf",
+              "display": "10%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Deveron Fonville's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_e1cfc8c91bfbcf54",
+              "display": "8%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Ahmetcan Kaplan at "
+            },
+            {
+              "stat": "ev_2664758482f36c75",
+              "display": "€7.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ahmetcan Kaplan is "
+            },
+            {
+              "stat": "ev_207c901191f5b615",
+              "display": "€4.0m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Gonzalo Crettaz at "
+            },
+            {
+              "stat": "ev_7799a4a1a9b2e395",
+              "display": "€4.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Gonzalo Crettaz is "
+            },
+            {
+              "stat": "ev_0e2a681a19d09aba",
+              "display": "€1.7m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Perr Schuurs at "
+            },
+            {
+              "stat": "ev_b5d59df0bc3617c2",
+              "display": "€25.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Perr Schuurs is "
+            },
+            {
+              "stat": "ev_2503b841891fca8b",
+              "display": "€13.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should NEC strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "NEC's biggest squad need is "
+            },
+            {
+              "stat": "ev_3c181825fd03d592",
+              "display": "centre-forward"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Peter Itodo (TOV FK Metalist 1925 Kharkiv), who is "
+            },
+            {
+              "stat": "ev_5379f73434be7540",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Peter Itodo plays for "
+            },
+            {
+              "stat": "ev_cbcff78d93093d7f",
+              "display": "TOV FK Metalist 1925 Kharkiv"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Peter Itodo has a market value of "
+            },
+            {
+              "stat": "ev_b428c7fe7a64a316",
+              "display": "€1.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Peter Itodo is "
+            },
+            {
+              "stat": "ev_79e43c9ef9b096a1",
+              "display": "€2.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Peter Itodo to play "
+            },
+            {
+              "stat": "ev_cc2b6f56461e5472",
+              "display": "57%"
+            },
+            {
+              "text": " of NEC's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Egor Golenkov (FK Rostov), who is "
+            },
+            {
+              "stat": "ev_e0ecdeee6aba2ec6",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Egor Golenkov plays for "
+            },
+            {
+              "stat": "ev_d9588dc9cc99596d",
+              "display": "FK Rostov"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Egor Golenkov has a market value of "
+            },
+            {
+              "stat": "ev_7f39a02e08135964",
+              "display": "€1.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Egor Golenkov is "
+            },
+            {
+              "stat": "ev_ea9935b638ba234c",
+              "display": "€1.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Egor Golenkov to play "
+            },
+            {
+              "stat": "ev_55a1c61cdf106be8",
+              "display": "51%"
+            },
+            {
+              "text": " of NEC's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Koen Kostons (PEC Zwolle), who is "
+            },
+            {
+              "stat": "ev_3f5ab8f0954a0ece",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Koen Kostons plays for "
+            },
+            {
+              "stat": "ev_1f90e6d35a716ca2",
+              "display": "PEC Zwolle"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Koen Kostons has a market value of "
+            },
+            {
+              "stat": "ev_643a2f9ce36aa5b2",
+              "display": "€1.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Koen Kostons is "
+            },
+            {
+              "stat": "ev_6cb52988b8f23fcf",
+              "display": "€1.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Koen Kostons to play "
+            },
+            {
+              "stat": "ev_77a170d621216496",
+              "display": "67%"
+            },
+            {
+              "text": " of NEC's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Jakob Napoleon Romsaas (Royal Charleroi Sporting Club), who is "
+            },
+            {
+              "stat": "ev_6274403d9a21de19",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Jakob Napoleon Romsaas plays for "
+            },
+            {
+              "stat": "ev_84f256c95cce2df2",
+              "display": "Royal Charleroi Sporting Club"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Jakob Napoleon Romsaas has played "
+            },
+            {
+              "stat": "ev_08cc1fb6f7fbcac7",
+              "display": "43%"
+            },
+            {
+              "text": " of Royal Charleroi Sporting Club's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Jakob Napoleon Romsaas is "
+            },
+            {
+              "stat": "ev_f0f31d275fa49a40",
+              "display": "€1.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Jakob Napoleon Romsaas's market value to reach "
+            },
+            {
+              "stat": "ev_0381c55cf214a793",
+              "display": "€2.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Ianis Stoica (CF Estrela Amadora), who is "
+            },
+            {
+              "stat": "ev_d2cd980b3380947a",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ianis Stoica plays for "
+            },
+            {
+              "stat": "ev_7823281606cc93ff",
+              "display": "CF Estrela Amadora"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ianis Stoica has played "
+            },
+            {
+              "stat": "ev_9f510a071c7718ab",
+              "display": "58%"
+            },
+            {
+              "text": " of CF Estrela Amadora's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ianis Stoica is "
+            },
+            {
+              "stat": "ev_edf3237e457beb4b",
+              "display": "€1.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Ianis Stoica's market value to reach "
+            },
+            {
+              "stat": "ev_2b90e8c6112dda6d",
+              "display": "€1.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Carlos Paraco (Kryvbas Kryvyi Rig), who is "
+            },
+            {
+              "stat": "ev_f83c6a67992d88b6",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Carlos Paraco plays for "
+            },
+            {
+              "stat": "ev_b6e2ebd8018fbb4a",
+              "display": "Kryvbas Kryvyi Rig"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Peter Itodo has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Egor Golenkov has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Koen Kostons has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_0381c55cf214a793": {
+      "value": 2000000.0,
+      "display": "2000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpe822cbb94e9d68",
+      "entity_name": "Jakob Napoleon Romsaas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_08cc1fb6f7fbcac7": {
+      "value": 0.426,
+      "display": "0.43",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpe822cbb94e9d68",
+      "entity_name": "Jakob Napoleon Romsaas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0ce6853c5cdd585e": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0d42d35e12eea2fa": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0e2a681a19d09aba": {
+      "value": 1700000.0,
+      "display": "1700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6d9a7af676fe87",
+      "entity_name": "Gonzalo Crettaz",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_116e76619521ffc0": {
+      "value": 0.759,
+      "display": "0.76",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpda891fedbe9376",
+      "entity_name": "Carlos Paraco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1b2b4e248c075706": {
+      "value": 0.133,
+      "display": "0.13",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp760e4c536e99de",
+      "entity_name": "Ahmetcan Kaplan",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1dd374b9c666e142": {
+      "value": 1800000.0,
+      "display": "1800000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb1ca6193ec9532",
+      "entity_name": "Ilya Krupskyi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1f90e6d35a716ca2": {
+      "value": "PEC Zwolle",
+      "display": "PEC Zwolle",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_207c901191f5b615": {
+      "value": 4000000.0,
+      "display": "4000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp760e4c536e99de",
+      "entity_name": "Ahmetcan Kaplan",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_244c1dd0068c2abf": {
+      "value": 0.099,
+      "display": "0.10",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp3744fafd2b41cd",
+      "entity_name": "Kaj Sierhuis",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2503b841891fca8b": {
+      "value": 13300000.0,
+      "display": "13300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp37b759315b7bca",
+      "entity_name": "Perr Schuurs",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_258a991cf627bb7a": {
+      "value": "DDLDL",
+      "display": "DDLDL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2664758482f36c75": {
+      "value": 7000000.0,
+      "display": "7000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp760e4c536e99de",
+      "entity_name": "Ahmetcan Kaplan",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2b90e8c6112dda6d": {
+      "value": 1500000.0,
+      "display": "1500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp2f3e88edbfe0ae",
+      "entity_name": "Ianis Stoica",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_398a035f0bfc3081": {
+      "value": 13.0,
+      "display": "13",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_3c181825fd03d592": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f5ab8f0954a0ece": {
+      "value": 27.1,
+      "display": "27.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4d09c11be7220318": {
+      "value": 14.0,
+      "display": "14",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_508938c76962f2bc": {
+      "value": 24.5,
+      "display": "24.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp59607d08d3ccb4",
+      "entity_name": "Yannick Leliendal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_52f8de0ed574a316": {
+      "value": 0.0038,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp59607d08d3ccb4",
+      "entity_name": "Yannick Leliendal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5379f73434be7540": {
+      "value": 23.3,
+      "display": "23.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb702a66ee9f3d1",
+      "entity_name": "Peter Itodo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_55a1c61cdf106be8": {
+      "value": 0.513,
+      "display": "0.51",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp6905127bf99455",
+      "entity_name": "Egor Golenkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5ba4837c58a044f3": {
+      "value": "2025-07-01",
+      "display": "2025-07-01",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q2212041",
+      "entity_name": "Dick Schreuder",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q2212041",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_6274403d9a21de19": {
+      "value": 22.4,
+      "display": "22.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpe822cbb94e9d68",
+      "entity_name": "Jakob Napoleon Romsaas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_643a2f9ce36aa5b2": {
+      "value": 1500000.0,
+      "display": "1500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6cb52988b8f23fcf": {
+      "value": 1200000.0,
+      "display": "1200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6ea397bdacfed3ee": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp59607d08d3ccb4",
+      "entity_name": "Yannick Leliendal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7799a4a1a9b2e395": {
+      "value": 4000000.0,
+      "display": "4000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp6d9a7af676fe87",
+      "entity_name": "Gonzalo Crettaz",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_77a170d621216496": {
+      "value": 0.668,
+      "display": "0.67",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7823281606cc93ff": {
+      "value": "CF Estrela Amadora",
+      "display": "CF Estrela Amadora",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp2f3e88edbfe0ae",
+      "entity_name": "Ianis Stoica",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_79e43c9ef9b096a1": {
+      "value": 2100000.0,
+      "display": "2100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb702a66ee9f3d1",
+      "entity_name": "Peter Itodo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7da62a80ad5608c7": {
+      "value": 22.0,
+      "display": "22",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb1ca6193ec9532",
+      "entity_name": "Ilya Krupskyi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7f39a02e08135964": {
+      "value": 1700000.0,
+      "display": "1700000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp6905127bf99455",
+      "entity_name": "Egor Golenkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8167dd4848df35ed": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpb702a66ee9f3d1",
+      "entity_name": "Peter Itodo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8457992b3b293dc5": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp6905127bf99455",
+      "entity_name": "Egor Golenkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_84f256c95cce2df2": {
+      "value": "Royal Charleroi Sporting Club",
+      "display": "Royal Charleroi Sporting Club",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpe822cbb94e9d68",
+      "entity_name": "Jakob Napoleon Romsaas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_904b311888814ff1": {
+      "value": 91900000.0,
+      "display": "91900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_96e828f5e3c2ae4f": {
+      "value": 1400000.0,
+      "display": "1400000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpda891fedbe9376",
+      "entity_name": "Carlos Paraco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9f510a071c7718ab": {
+      "value": 0.576,
+      "display": "0.58",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp2f3e88edbfe0ae",
+      "entity_name": "Ianis Stoica",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b428c7fe7a64a316": {
+      "value": 1800000.0,
+      "display": "1800000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb702a66ee9f3d1",
+      "entity_name": "Peter Itodo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b5d59df0bc3617c2": {
+      "value": 25000000.0,
+      "display": "25000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp37b759315b7bca",
+      "entity_name": "Perr Schuurs",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2024-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b6e2ebd8018fbb4a": {
+      "value": "Kryvbas Kryvyi Rig",
+      "display": "Kryvbas Kryvyi Rig",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpda891fedbe9376",
+      "entity_name": "Carlos Paraco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cbcff78d93093d7f": {
+      "value": "TOV FK Metalist 1925 Kharkiv",
+      "display": "TOV FK Metalist 1925 Kharkiv",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpb702a66ee9f3d1",
+      "entity_name": "Peter Itodo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cc2b6f56461e5472": {
+      "value": 0.57,
+      "display": "0.57",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpb702a66ee9f3d1",
+      "entity_name": "Peter Itodo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d2cd980b3380947a": {
+      "value": 23.9,
+      "display": "23.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp2f3e88edbfe0ae",
+      "entity_name": "Ianis Stoica",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d9588dc9cc99596d": {
+      "value": "FK Rostov",
+      "display": "FK Rostov",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp6905127bf99455",
+      "entity_name": "Egor Golenkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_de17a27bd125e59a": {
+      "value": "2026-10-18T18:00:00+00:00",
+      "display": "2026-10-18T18:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "eredivisie:2026-27:nec:fortuna-sittard",
+      "entity_name": "NEC v Fortuna Sittard",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:20.460767+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e0ecdeee6aba2ec6": {
+      "value": 27.3,
+      "display": "27.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp6905127bf99455",
+      "entity_name": "Egor Golenkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e1cfc8c91bfbcf54": {
+      "value": 0.077,
+      "display": "0.08",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp78c847078c3d9d",
+      "entity_name": "Deveron Fonville",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e986abdf5e61a5c5": {
+      "value": 9.0,
+      "display": "9",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ea9935b638ba234c": {
+      "value": 1200000.0,
+      "display": "1200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6905127bf99455",
+      "entity_name": "Egor Golenkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_edf3237e457beb4b": {
+      "value": 1600000.0,
+      "display": "1600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2f3e88edbfe0ae",
+      "entity_name": "Ianis Stoica",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_effcd0d5b46143fb": {
+      "value": 1900000.0,
+      "display": "1900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpda891fedbe9376",
+      "entity_name": "Carlos Paraco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f04914282bf634b3": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f0f31d275fa49a40": {
+      "value": 1700000.0,
+      "display": "1700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe822cbb94e9d68",
+      "entity_name": "Jakob Napoleon Romsaas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f83c6a67992d88b6": {
+      "value": 23.0,
+      "display": "23",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpda891fedbe9376",
+      "entity_name": "Carlos Paraco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ffbe06eecb0da2be": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "nec",
+      "entity_name": "NEC",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_0d42d35e12eea2fa",
+        "display": "11th",
+        "label": "league position",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_e986abdf5e61a5c5",
+        "display": "9",
+        "label": "league points",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_398a035f0bfc3081",
+        "display": "13",
+        "label": "league goals scored",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_4d09c11be7220318",
+        "display": "14",
+        "label": "league goals conceded",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_258a991cf627bb7a",
+        "display": "DDLDL",
+        "label": "recent league results, oldest first",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_5ba4837c58a044f3",
+        "display": "1 July 2025",
+        "label": "appointed head coach of NEC",
+        "subject": "Dick Schreuder"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_de17a27bd125e59a",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "NEC v Fortuna Sittard"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_1b2b4e248c075706",
+        "display": "13%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Ahmetcan Kaplan"
+      },
+      {
+        "stat": "ev_244c1dd0068c2abf",
+        "display": "10%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Kaj Sierhuis"
+      },
+      {
+        "stat": "ev_e1cfc8c91bfbcf54",
+        "display": "8%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Deveron Fonville"
+      },
+      {
+        "stat": "ev_2664758482f36c75",
+        "display": "€7.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Ahmetcan Kaplan"
+      },
+      {
+        "stat": "ev_207c901191f5b615",
+        "display": "€4.0m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Ahmetcan Kaplan"
+      },
+      {
+        "stat": "ev_7799a4a1a9b2e395",
+        "display": "€4.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Gonzalo Crettaz"
+      },
+      {
+        "stat": "ev_0e2a681a19d09aba",
+        "display": "€1.7m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Gonzalo Crettaz"
+      },
+      {
+        "stat": "ev_b5d59df0bc3617c2",
+        "display": "€25.0m",
+        "label": "market value (Transfermarkt, as of June 2024)",
+        "subject": "Perr Schuurs"
+      },
+      {
+        "stat": "ev_2503b841891fca8b",
+        "display": "€13.3m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Perr Schuurs"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_3c181825fd03d592",
+        "display": "centre-forward",
+        "label": "squad need, priority one",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_5379f73434be7540",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Peter Itodo"
+      },
+      {
+        "stat": "ev_cbcff78d93093d7f",
+        "display": "TOV FK Metalist 1925 Kharkiv",
+        "label": "current club",
+        "subject": "Peter Itodo"
+      },
+      {
+        "stat": "ev_8167dd4848df35ed",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Peter Itodo"
+      },
+      {
+        "stat": "ev_b428c7fe7a64a316",
+        "display": "€1.8m",
+        "label": "market value",
+        "subject": "Peter Itodo"
+      },
+      {
+        "stat": "ev_79e43c9ef9b096a1",
+        "display": "€2.1m",
+        "label": "estimated fair fee",
+        "subject": "Peter Itodo"
+      },
+      {
+        "stat": "ev_cc2b6f56461e5472",
+        "display": "57%",
+        "label": "expected share of minutes at the club",
+        "subject": "Peter Itodo"
+      },
+      {
+        "stat": "ev_e0ecdeee6aba2ec6",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Egor Golenkov"
+      },
+      {
+        "stat": "ev_d9588dc9cc99596d",
+        "display": "FK Rostov",
+        "label": "current club",
+        "subject": "Egor Golenkov"
+      },
+      {
+        "stat": "ev_8457992b3b293dc5",
+        "display": "2",
+        "label": "months left on his contract",
+        "subject": "Egor Golenkov"
+      },
+      {
+        "stat": "ev_7f39a02e08135964",
+        "display": "€1.7m",
+        "label": "market value",
+        "subject": "Egor Golenkov"
+      },
+      {
+        "stat": "ev_ea9935b638ba234c",
+        "display": "€1.2m",
+        "label": "estimated fair fee",
+        "subject": "Egor Golenkov"
+      },
+      {
+        "stat": "ev_55a1c61cdf106be8",
+        "display": "51%",
+        "label": "expected share of minutes at the club",
+        "subject": "Egor Golenkov"
+      },
+      {
+        "stat": "ev_3f5ab8f0954a0ece",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_1f90e6d35a716ca2",
+        "display": "PEC Zwolle",
+        "label": "current club",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_0ce6853c5cdd585e",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_643a2f9ce36aa5b2",
+        "display": "€1.5m",
+        "label": "market value",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_6cb52988b8f23fcf",
+        "display": "€1.2m",
+        "label": "estimated fair fee",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_77a170d621216496",
+        "display": "67%",
+        "label": "expected share of minutes at the club",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_6274403d9a21de19",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Jakob Napoleon Romsaas"
+      },
+      {
+        "stat": "ev_84f256c95cce2df2",
+        "display": "Royal Charleroi Sporting Club",
+        "label": "current club",
+        "subject": "Jakob Napoleon Romsaas"
+      },
+      {
+        "stat": "ev_08cc1fb6f7fbcac7",
+        "display": "43%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Jakob Napoleon Romsaas"
+      },
+      {
+        "stat": "ev_f0f31d275fa49a40",
+        "display": "€1.7m",
+        "label": "estimated fair fee",
+        "subject": "Jakob Napoleon Romsaas"
+      },
+      {
+        "stat": "ev_0381c55cf214a793",
+        "display": "€2.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Jakob Napoleon Romsaas"
+      },
+      {
+        "stat": "ev_d2cd980b3380947a",
+        "display": "24",
+        "label": "age (gem target)",
+        "subject": "Ianis Stoica"
+      },
+      {
+        "stat": "ev_7823281606cc93ff",
+        "display": "CF Estrela Amadora",
+        "label": "current club",
+        "subject": "Ianis Stoica"
+      },
+      {
+        "stat": "ev_9f510a071c7718ab",
+        "display": "58%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Ianis Stoica"
+      },
+      {
+        "stat": "ev_edf3237e457beb4b",
+        "display": "€1.6m",
+        "label": "estimated fair fee",
+        "subject": "Ianis Stoica"
+      },
+      {
+        "stat": "ev_2b90e8c6112dda6d",
+        "display": "€1.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Ianis Stoica"
+      },
+      {
+        "stat": "ev_f83c6a67992d88b6",
+        "display": "23",
+        "label": "age (gem target)",
+        "subject": "Carlos Paraco"
+      },
+      {
+        "stat": "ev_b6e2ebd8018fbb4a",
+        "display": "Kryvbas Kryvyi Rig",
+        "label": "current club",
+        "subject": "Carlos Paraco"
+      },
+      {
+        "stat": "ev_116e76619521ffc0",
+        "display": "76%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Carlos Paraco"
+      },
+      {
+        "stat": "ev_effcd0d5b46143fb",
+        "display": "€1.9m",
+        "label": "estimated fair fee",
+        "subject": "Carlos Paraco"
+      },
+      {
+        "stat": "ev_96e828f5e3c2ae4f",
+        "display": "€1.4m",
+        "label": "projected market value in a few seasons",
+        "subject": "Carlos Paraco"
+      },
+      {
+        "stat": "ev_ffbe06eecb0da2be",
+        "display": "full-back",
+        "label": "squad need, priority two",
+        "subject": "NEC"
+      },
+      {
+        "stat": "ev_7da62a80ad5608c7",
+        "display": "22",
+        "label": "age (best target, second need)",
+        "subject": "Ilya Krupskyi"
+      },
+      {
+        "stat": "ev_1dd374b9c666e142",
+        "display": "€1.8m",
+        "label": "market value",
+        "subject": "Ilya Krupskyi"
+      },
+      {
+        "stat": "ev_508938c76962f2bc",
+        "display": "24",
+        "label": "age (realistic target, second need)",
+        "subject": "Yannick Leliendal"
+      },
+      {
+        "stat": "ev_6ea397bdacfed3ee",
+        "display": "€1.0m",
+        "label": "estimated fair fee",
+        "subject": "Yannick Leliendal"
+      },
+      {
+        "stat": "ev_52f8de0ed574a316",
+        "display": "0.4%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Yannick Leliendal"
+      },
+      {
+        "stat": "ev_f04914282bf634b3",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_904b311888814ff1",
+        "display": "€91.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Nico O'Reilly"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 48,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 48,
+      "unverified": 3
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "TOV FK Metalist 1925 Kharkiv"
+  ]
+}

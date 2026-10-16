@@ -1,0 +1,2279 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "go-ahead-eagles",
+    "name": "Go Ahead Eagles",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "eredivisie",
+    "name": "Eredivisie",
+    "country": "Netherlands"
+  },
+  "generated_at": "2026-10-16T21:02:02+00:00",
+  "data_as_of": "2026-10-16T20:56:27+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Go Ahead Eagles for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Go Ahead Eagles are "
+          },
+          {
+            "stat": "ev_0d546d734871175b",
+            "display": "8th"
+          },
+          {
+            "text": " in the Eredivisie table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Go Ahead Eagles have "
+          },
+          {
+            "stat": "ev_1adcffe680181236",
+            "display": "11"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Go Ahead Eagles's next league match is PEC Zwolle v Go Ahead Eagles on "
+          },
+          {
+            "stat": "ev_31440c0b8679ed5f",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Go Ahead Eagles's biggest squad need is "
+          },
+          {
+            "stat": "ev_11479a0734b6a600",
+            "display": "goalkeeper"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Go Ahead Eagles doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles are "
+            },
+            {
+              "stat": "ev_0d546d734871175b",
+              "display": "8th"
+            },
+            {
+              "text": " in the Eredivisie table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles have "
+            },
+            {
+              "stat": "ev_1adcffe680181236",
+              "display": "11"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles have scored "
+            },
+            {
+              "stat": "ev_d61db5143c44db1d",
+              "display": "19"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles have conceded "
+            },
+            {
+              "stat": "ev_2857d5af54d66e0d",
+              "display": "17"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles's most recent league results read "
+            },
+            {
+              "stat": "ev_f5ab70949b794919",
+              "display": "DDDDL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Joseph Oosting has been Go Ahead Eagles's head coach since "
+            },
+            {
+              "stat": "ev_8868a92bfc9ab2fe",
+              "display": "1 July 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Go Ahead Eagles expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles's next league match is PEC Zwolle v Go Ahead Eagles on "
+            },
+            {
+              "stat": "ev_31440c0b8679ed5f",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Go Ahead Eagles's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Go Ahead Eagles, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Go Ahead Eagles players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Mathis Suray's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_a98712d6ab3ce8f6",
+              "display": "37%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Julius Dirksen's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_e889a6e7f6c285f7",
+              "display": "12%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Dean James's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_bd126aa22e11f51a",
+              "display": "11%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Mathis Suray at "
+            },
+            {
+              "stat": "ev_2ead704bb4812149",
+              "display": "€3.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Mathis Suray is "
+            },
+            {
+              "stat": "ev_dd280e875b9cf52e",
+              "display": "€2.2m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Melle  Meulensteen at "
+            },
+            {
+              "stat": "ev_2852955b3855289e",
+              "display": "€2.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Melle  Meulensteen is "
+            },
+            {
+              "stat": "ev_69f2788f5c8deb67",
+              "display": "€1.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Stefán Ingi Sigurðarson at "
+            },
+            {
+              "stat": "ev_4dd8237255db6eaf",
+              "display": "€2.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Stefán Ingi Sigurðarson is "
+            },
+            {
+              "stat": "ev_5bbb3bb37aec2e1b",
+              "display": "€1.2m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Go Ahead Eagles strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles's biggest squad need is "
+            },
+            {
+              "stat": "ev_11479a0734b6a600",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Alban Lafont (Panathinaikos Athlitikos Omilos), who is "
+            },
+            {
+              "stat": "ev_71c6abaaaf3e0de3",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Alban Lafont plays for "
+            },
+            {
+              "stat": "ev_13f22510041e2571",
+              "display": "Panathinaikos Athlitikos Omilos"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Alban Lafont has a market value of "
+            },
+            {
+              "stat": "ev_32f869a899bd3630",
+              "display": "€3.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Alban Lafont is "
+            },
+            {
+              "stat": "ev_01d5a2905ef36ae0",
+              "display": "€1.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Alban Lafont to play "
+            },
+            {
+              "stat": "ev_62627a4387985627",
+              "display": "55%"
+            },
+            {
+              "text": " of Go Ahead Eagles's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Elías Ólafsson (FC Midtjylland), who is "
+            },
+            {
+              "stat": "ev_5cfc0f69733a774a",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elías Ólafsson plays for "
+            },
+            {
+              "stat": "ev_f504841f68b62502",
+              "display": "FC Midtjylland"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elías Ólafsson has a market value of "
+            },
+            {
+              "stat": "ev_0fa84adfcf2bab49",
+              "display": "€3.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Elías Ólafsson is "
+            },
+            {
+              "stat": "ev_6e70cbee5d972b3a",
+              "display": "€1.3m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Elías Ólafsson to play "
+            },
+            {
+              "stat": "ev_801f9e38f1e91b9c",
+              "display": "55%"
+            },
+            {
+              "text": " of Go Ahead Eagles's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Bernt Klaverboer (SC Heerenveen), who is "
+            },
+            {
+              "stat": "ev_04b126cf966108f9",
+              "display": "21"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Bernt Klaverboer plays for "
+            },
+            {
+              "stat": "ev_b9a7481ff8f12d05",
+              "display": "SC Heerenveen"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Bernt Klaverboer has a market value of "
+            },
+            {
+              "stat": "ev_b38851cbf1cbe3bd",
+              "display": "€3.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Bernt Klaverboer is "
+            },
+            {
+              "stat": "ev_38e0f16f0ec9a6eb",
+              "display": "€1.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Bernt Klaverboer to play "
+            },
+            {
+              "stat": "ev_b9062c91ed985238",
+              "display": "51%"
+            },
+            {
+              "text": " of Go Ahead Eagles's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Ivan Pakholyuk (Kolos Kovalivka), who is "
+            },
+            {
+              "stat": "ev_958d6e0c68adea2e",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ivan Pakholyuk plays for "
+            },
+            {
+              "stat": "ev_7536034c89d6c2e6",
+              "display": "Kolos Kovalivka"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_0e217fce8b02d386",
+              "display": "40%"
+            },
+            {
+              "text": " chance that Kolos Kovalivka sell Ivan Pakholyuk in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ivan Pakholyuk is "
+            },
+            {
+              "stat": "ev_28d214ca5286a73c",
+              "display": "€1.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_58437dee17734803",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Ivan Pakholyuk joins Go Ahead Eagles in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Marios Siampanis (Volou Neos Podosferikos Syllogos), who is "
+            },
+            {
+              "stat": "ev_4ada2bee4a150ec4",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Marios Siampanis plays for "
+            },
+            {
+              "stat": "ev_7033b1655997bc1d",
+              "display": "Volou Neos Podosferikos Syllogos"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_000bd88df03a7fe3",
+              "display": "29%"
+            },
+            {
+              "text": " chance that Volou Neos Podosferikos Syllogos sell Marios Siampanis in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Marios Siampanis is "
+            },
+            {
+              "stat": "ev_95619227367a0e3f",
+              "display": "€0.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Go Ahead Eagles's second squad need is "
+            },
+            {
+              "stat": "ev_1dd4785916ea8445",
+              "display": "central midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Alban Lafont has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Elías Ólafsson has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Bernt Klaverboer has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Ivan Pakholyuk has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Marios Siampanis has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_000bd88df03a7fe3": {
+      "value": 0.29,
+      "display": "0.29",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpaef87c67031969",
+      "entity_name": "Marios Siampanis",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_01d5a2905ef36ae0": {
+      "value": 1400000.0,
+      "display": "1400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp67420e03e955bf",
+      "entity_name": "Alban Lafont",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_034b810027fcfe80": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_04b126cf966108f9": {
+      "value": 21.1,
+      "display": "21.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_08a766d0628e5c4d": {
+      "value": 0.0059,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0d546d734871175b": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0dc1ecab8fc66560": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp5536ddf37f4872",
+      "entity_name": "Serginho",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0e217fce8b02d386": {
+      "value": 0.395,
+      "display": "0.40",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp5e03826ed4079f",
+      "entity_name": "Ivan Pakholyuk",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0fa84adfcf2bab49": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpaa92e9d242d553",
+      "entity_name": "Elías Ólafsson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_11479a0734b6a600": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_13f22510041e2571": {
+      "value": "Panathinaikos Athlitikos Omilos",
+      "display": "Panathinaikos Athlitikos Omilos",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp67420e03e955bf",
+      "entity_name": "Alban Lafont",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1adcffe680181236": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_1dd4785916ea8445": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_272e1702fe1c0ebf": {
+      "value": 0.0004,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpe0d579ec7169f4",
+      "entity_name": "Marcos Peano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2852955b3855289e": {
+      "value": 2500000.0,
+      "display": "2500000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp431cf14b600383",
+      "entity_name": "Melle  Meulensteen",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2857d5af54d66e0d": {
+      "value": 17.0,
+      "display": "17",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_28d214ca5286a73c": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp5e03826ed4079f",
+      "entity_name": "Ivan Pakholyuk",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2ead704bb4812149": {
+      "value": 3500000.0,
+      "display": "3500000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_31440c0b8679ed5f": {
+      "value": "2026-10-18T10:15:00+00:00",
+      "display": "2026-10-18T10:15:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "eredivisie:2026-27:pec-zwolle:go-ahead-eagles",
+      "entity_name": "PEC Zwolle v Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:20.460767+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_32f869a899bd3630": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp67420e03e955bf",
+      "entity_name": "Alban Lafont",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_38e0f16f0ec9a6eb": {
+      "value": 1900000.0,
+      "display": "1900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3abc92e89e7683c2": {
+      "value": 28.0,
+      "display": "28",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpe0d579ec7169f4",
+      "entity_name": "Marcos Peano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4ada2bee4a150ec4": {
+      "value": 27.0,
+      "display": "27",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpaef87c67031969",
+      "entity_name": "Marios Siampanis",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4dd8237255db6eaf": {
+      "value": 2000000.0,
+      "display": "2000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpf87b7fb1e48132",
+      "entity_name": "Stefán Ingi Sigurðarson",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4e51774c88e3273a": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp67420e03e955bf",
+      "entity_name": "Alban Lafont",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_58437dee17734803": {
+      "value": 0.0006,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp5e03826ed4079f",
+      "entity_name": "Ivan Pakholyuk",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5bbb3bb37aec2e1b": {
+      "value": 1200000.0,
+      "display": "1200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf87b7fb1e48132",
+      "entity_name": "Stefán Ingi Sigurðarson",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5cfc0f69733a774a": {
+      "value": 26.6,
+      "display": "26.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpaa92e9d242d553",
+      "entity_name": "Elías Ólafsson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_62627a4387985627": {
+      "value": 0.552,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp67420e03e955bf",
+      "entity_name": "Alban Lafont",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_67fd36e7294df8b6": {
+      "value": "RAAL La Louvière",
+      "display": "RAAL La Louvière",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpe0d579ec7169f4",
+      "entity_name": "Marcos Peano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_69f2788f5c8deb67": {
+      "value": 1300000.0,
+      "display": "1300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp431cf14b600383",
+      "entity_name": "Melle  Meulensteen",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6e70cbee5d972b3a": {
+      "value": 1300000.0,
+      "display": "1300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpaa92e9d242d553",
+      "entity_name": "Elías Ólafsson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_701ea69f1b6a2898": {
+      "value": 14.0,
+      "display": "14",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp5e03826ed4079f",
+      "entity_name": "Ivan Pakholyuk",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7033b1655997bc1d": {
+      "value": "Volou Neos Podosferikos Syllogos",
+      "display": "Volou Neos Podosferikos Syllogos",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpaef87c67031969",
+      "entity_name": "Marios Siampanis",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_718bb225cb1a5a5c": {
+      "value": 26.9,
+      "display": "26.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp5536ddf37f4872",
+      "entity_name": "Serginho",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_71c6abaaaf3e0de3": {
+      "value": 27.7,
+      "display": "27.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp67420e03e955bf",
+      "entity_name": "Alban Lafont",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7536034c89d6c2e6": {
+      "value": "Kolos Kovalivka",
+      "display": "Kolos Kovalivka",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp5e03826ed4079f",
+      "entity_name": "Ivan Pakholyuk",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_77b011fe6728c92f": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_801f9e38f1e91b9c": {
+      "value": 0.55,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpaa92e9d242d553",
+      "entity_name": "Elías Ólafsson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_844a9ceb7f993121": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpe0d579ec7169f4",
+      "entity_name": "Marcos Peano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8868a92bfc9ab2fe": {
+      "value": "2026-07-01",
+      "display": "2026-07-01",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q2287077",
+      "entity_name": "Joseph Oosting",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q2287077",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_91ff83c8ad57e5bf": {
+      "value": 22.2,
+      "display": "22.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_934869aa12eb57fe": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpaa92e9d242d553",
+      "entity_name": "Elías Ólafsson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_95619227367a0e3f": {
+      "value": 400000.0,
+      "display": "400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpaef87c67031969",
+      "entity_name": "Marios Siampanis",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_958d6e0c68adea2e": {
+      "value": 22.5,
+      "display": "22.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp5e03826ed4079f",
+      "entity_name": "Ivan Pakholyuk",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9760d1cd2fc2e022": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe0d579ec7169f4",
+      "entity_name": "Marcos Peano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9a447266f39bf650": {
+      "value": 0.0004,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpaef87c67031969",
+      "entity_name": "Marios Siampanis",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a98712d6ab3ce8f6": {
+      "value": 0.371,
+      "display": "0.37",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b38851cbf1cbe3bd": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b9062c91ed985238": {
+      "value": 0.514,
+      "display": "0.51",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b9a7481ff8f12d05": {
+      "value": "SC Heerenveen",
+      "display": "SC Heerenveen",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bd126aa22e11f51a": {
+      "value": 0.113,
+      "display": "0.11",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp0dbbe2314666ab",
+      "entity_name": "Dean James",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c5b06da1381583eb": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpaef87c67031969",
+      "entity_name": "Marios Siampanis",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d61db5143c44db1d": {
+      "value": 19.0,
+      "display": "19",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_dd280e875b9cf52e": {
+      "value": 2200000.0,
+      "display": "2200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e889a6e7f6c285f7": {
+      "value": 0.117,
+      "display": "0.12",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpb058f3d8396ada",
+      "entity_name": "Julius Dirksen",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f504841f68b62502": {
+      "value": "FC Midtjylland",
+      "display": "FC Midtjylland",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpaa92e9d242d553",
+      "entity_name": "Elías Ólafsson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f5ab70949b794919": {
+      "value": "DDDDL",
+      "display": "DDDDL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "go-ahead-eagles",
+      "entity_name": "Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f6ca9139b35c4c60": {
+      "value": 0.281,
+      "display": "0.28",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpe0d579ec7169f4",
+      "entity_name": "Marcos Peano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_0d546d734871175b",
+        "display": "8th",
+        "label": "league position",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_1adcffe680181236",
+        "display": "11",
+        "label": "league points",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_d61db5143c44db1d",
+        "display": "19",
+        "label": "league goals scored",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_2857d5af54d66e0d",
+        "display": "17",
+        "label": "league goals conceded",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_f5ab70949b794919",
+        "display": "DDDDL",
+        "label": "recent league results, oldest first",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_8868a92bfc9ab2fe",
+        "display": "1 July 2026",
+        "label": "appointed head coach of Go Ahead Eagles",
+        "subject": "Joseph Oosting"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_31440c0b8679ed5f",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "PEC Zwolle v Go Ahead Eagles"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_a98712d6ab3ce8f6",
+        "display": "37%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_e889a6e7f6c285f7",
+        "display": "12%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Julius Dirksen"
+      },
+      {
+        "stat": "ev_bd126aa22e11f51a",
+        "display": "11%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Dean James"
+      },
+      {
+        "stat": "ev_2ead704bb4812149",
+        "display": "€3.5m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_dd280e875b9cf52e",
+        "display": "€2.2m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_2852955b3855289e",
+        "display": "€2.5m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Melle  Meulensteen"
+      },
+      {
+        "stat": "ev_69f2788f5c8deb67",
+        "display": "€1.3m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Melle  Meulensteen"
+      },
+      {
+        "stat": "ev_4dd8237255db6eaf",
+        "display": "€2.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Stefán Ingi Sigurðarson"
+      },
+      {
+        "stat": "ev_5bbb3bb37aec2e1b",
+        "display": "€1.2m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Stefán Ingi Sigurðarson"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_11479a0734b6a600",
+        "display": "goalkeeper",
+        "label": "squad need, priority one",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_71c6abaaaf3e0de3",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Alban Lafont"
+      },
+      {
+        "stat": "ev_13f22510041e2571",
+        "display": "Panathinaikos Athlitikos Omilos",
+        "label": "current club",
+        "subject": "Alban Lafont"
+      },
+      {
+        "stat": "ev_4e51774c88e3273a",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Alban Lafont"
+      },
+      {
+        "stat": "ev_32f869a899bd3630",
+        "display": "€3.0m",
+        "label": "market value",
+        "subject": "Alban Lafont"
+      },
+      {
+        "stat": "ev_01d5a2905ef36ae0",
+        "display": "€1.4m",
+        "label": "estimated fair fee",
+        "subject": "Alban Lafont"
+      },
+      {
+        "stat": "ev_62627a4387985627",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Alban Lafont"
+      },
+      {
+        "stat": "ev_5cfc0f69733a774a",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Elías Ólafsson"
+      },
+      {
+        "stat": "ev_f504841f68b62502",
+        "display": "FC Midtjylland",
+        "label": "current club",
+        "subject": "Elías Ólafsson"
+      },
+      {
+        "stat": "ev_934869aa12eb57fe",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Elías Ólafsson"
+      },
+      {
+        "stat": "ev_0fa84adfcf2bab49",
+        "display": "€3.0m",
+        "label": "market value",
+        "subject": "Elías Ólafsson"
+      },
+      {
+        "stat": "ev_6e70cbee5d972b3a",
+        "display": "€1.3m",
+        "label": "estimated fair fee",
+        "subject": "Elías Ólafsson"
+      },
+      {
+        "stat": "ev_801f9e38f1e91b9c",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Elías Ólafsson"
+      },
+      {
+        "stat": "ev_04b126cf966108f9",
+        "display": "21",
+        "label": "age (best target)",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_b9a7481ff8f12d05",
+        "display": "SC Heerenveen",
+        "label": "current club",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_034b810027fcfe80",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_b38851cbf1cbe3bd",
+        "display": "€3.0m",
+        "label": "market value",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_38e0f16f0ec9a6eb",
+        "display": "€1.9m",
+        "label": "estimated fair fee",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_b9062c91ed985238",
+        "display": "51%",
+        "label": "expected share of minutes at the club",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_958d6e0c68adea2e",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Ivan Pakholyuk"
+      },
+      {
+        "stat": "ev_7536034c89d6c2e6",
+        "display": "Kolos Kovalivka",
+        "label": "current club",
+        "subject": "Ivan Pakholyuk"
+      },
+      {
+        "stat": "ev_0e217fce8b02d386",
+        "display": "40%",
+        "label": "chance his club sells him in a window",
+        "subject": "Ivan Pakholyuk"
+      },
+      {
+        "stat": "ev_701ea69f1b6a2898",
+        "display": "14",
+        "label": "months left on his contract",
+        "subject": "Ivan Pakholyuk"
+      },
+      {
+        "stat": "ev_28d214ca5286a73c",
+        "display": "€1.0m",
+        "label": "estimated fair fee",
+        "subject": "Ivan Pakholyuk"
+      },
+      {
+        "stat": "ev_58437dee17734803",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Ivan Pakholyuk"
+      },
+      {
+        "stat": "ev_4ada2bee4a150ec4",
+        "display": "27",
+        "label": "age (realistic target)",
+        "subject": "Marios Siampanis"
+      },
+      {
+        "stat": "ev_7033b1655997bc1d",
+        "display": "Volou Neos Podosferikos Syllogos",
+        "label": "current club",
+        "subject": "Marios Siampanis"
+      },
+      {
+        "stat": "ev_000bd88df03a7fe3",
+        "display": "29%",
+        "label": "chance his club sells him in a window",
+        "subject": "Marios Siampanis"
+      },
+      {
+        "stat": "ev_c5b06da1381583eb",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Marios Siampanis"
+      },
+      {
+        "stat": "ev_95619227367a0e3f",
+        "display": "€0.4m",
+        "label": "estimated fair fee",
+        "subject": "Marios Siampanis"
+      },
+      {
+        "stat": "ev_9a447266f39bf650",
+        "display": "0.0%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Marios Siampanis"
+      },
+      {
+        "stat": "ev_3abc92e89e7683c2",
+        "display": "28",
+        "label": "age (realistic target)",
+        "subject": "Marcos Peano"
+      },
+      {
+        "stat": "ev_67fd36e7294df8b6",
+        "display": "RAAL La Louvière",
+        "label": "current club",
+        "subject": "Marcos Peano"
+      },
+      {
+        "stat": "ev_f6ca9139b35c4c60",
+        "display": "28%",
+        "label": "chance his club sells him in a window",
+        "subject": "Marcos Peano"
+      },
+      {
+        "stat": "ev_844a9ceb7f993121",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Marcos Peano"
+      },
+      {
+        "stat": "ev_9760d1cd2fc2e022",
+        "display": "€1.0m",
+        "label": "estimated fair fee",
+        "subject": "Marcos Peano"
+      },
+      {
+        "stat": "ev_272e1702fe1c0ebf",
+        "display": "0.0%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Marcos Peano"
+      },
+      {
+        "stat": "ev_1dd4785916ea8445",
+        "display": "central midfield",
+        "label": "squad need, priority two",
+        "subject": "Go Ahead Eagles"
+      },
+      {
+        "stat": "ev_718bb225cb1a5a5c",
+        "display": "27",
+        "label": "age (best target, second need)",
+        "subject": "Serginho"
+      },
+      {
+        "stat": "ev_0dc1ecab8fc66560",
+        "display": "€3.0m",
+        "label": "market value",
+        "subject": "Serginho"
+      },
+      {
+        "stat": "ev_91ff83c8ad57e5bf",
+        "display": "22",
+        "label": "age (realistic target, second need)",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_77b011fe6728c92f",
+        "display": "€0.6m",
+        "label": "estimated fair fee",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_08a766d0628e5c4d",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Nils Rossen"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 46,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 46,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}
