@@ -6,6 +6,7 @@ import argparse
 import logging
 import os
 import sys
+import time
 
 from dugout_pipeline.settings import REPO_ROOT
 
@@ -42,16 +43,22 @@ def cmd_dossier(args) -> int:
     ctx = _ctx(args)
     clubs = args.clubs
     llm_clubs = set(clubs)
-    if args.all:
-        # every club in the league; the LLM (free tier, small daily quota) writes for the showcase clubs only
+    if args.all or args.league:
+        # every club (of --league, if given); the LLM (free tier, small daily quota) writes for the showcase
+        # clubs only, templates for the rest
         clubs = [
-            c for (c,) in ctx.toolbox.con.execute("SELECT club_id FROM clubs ORDER BY club_id").fetchall()
+            c
+            for (c,) in ctx.toolbox.con.execute(
+                "SELECT club_id FROM clubs WHERE ? IS NULL OR league = ? ORDER BY league, club_id",
+                [args.league, args.league],
+            ).fetchall()
         ]
         llm_clubs = set(showcase_clubs(get_settings().config_dir))
     llm = ctx.llm
     ok = True
     for club in clubs:
         ctx.llm = llm if club in llm_clubs else None
+        t0 = time.monotonic()
         doc, _ = dossier.build(ctx, club)
         v = doc["verification"]
         if v["sections_published"] == 0 or not v["stat_auditor"]["ok"]:
@@ -59,7 +66,7 @@ def cmd_dossier(args) -> int:
             ok = False
             continue
         path = dossier.write(doc, CLUBS_DIR)
-        print(f"{club}: {path.relative_to(REPO_ROOT)}  {v}")
+        print(f"{club}: {path.relative_to(REPO_ROOT)}  {time.monotonic() - t0:.0f}s  {v}")
     return 0 if ok else 1
 
 
@@ -101,8 +108,9 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument(
         "--all",
         action="store_true",
-        help="every league club: showcase clubs with the LLM, the rest templates",
+        help="every club in every league: showcase clubs with the LLM, the rest templates",
     )
+    s.add_argument("--league", help="every club of one league (config/leagues.yaml key)")
     s.set_defaults(fn=cmd_dossier)
     s = sub.add_parser("eval")
     s.add_argument("--limit", type=int)

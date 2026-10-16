@@ -3,6 +3,7 @@ const SOURCE_NAMES: Record<string, string> = {
   fpl: "Fantasy Premier League",
   football_data_org: "football-data.org",
   transfermarkt: "Transfermarkt",
+  transfermarkt_datasets: "Transfermarkt (transfermarkt-datasets, CC0)",
   wikidata: "Wikidata",
   api_football: "API-Football",
 };

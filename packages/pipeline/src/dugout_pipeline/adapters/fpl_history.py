@@ -32,6 +32,7 @@ DEFENSIVE = {
 
 class FPLHistoryAdapter(SourceAdapter):
     name = "fpl_history"
+    requires = "fpl"
     tier = TIER_DATA
     ttl = 30 * DAY  # finished seasons do not change
     rate, per = 1, 1.0

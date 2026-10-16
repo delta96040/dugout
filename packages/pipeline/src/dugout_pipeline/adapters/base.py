@@ -84,11 +84,16 @@ class SourceAdapter(ABC):
     required: ClassVar[bool] = False  # nightly fails if a required source fails
     client_name: ClassVar[str | None] = None  # share another adapter's cache and daily budget (same provider)
     base_url: ClassVar[str] = ""
+    # "league": runs for each league that takes it (runner.run_leagues); "global": once per job, whatever the league
+    scope: ClassVar[str] = "league"
+    requires: ClassVar[str | None] = None  # provider_ids key a league needs for this source to run there
 
     def __init__(self, ctx: IngestContext):
         self.ctx = ctx
         if self.local_only and ctx.settings.ci:
             raise SourceDisabled(f"{self.name} is local-only and never runs in CI")
+        if self.requires and not ctx.league_cfg.get("provider_ids", {}).get(self.requires):
+            raise SourceDisabled(f"{self.name} needs provider_ids.{self.requires} ({ctx.league} has none)")
         self.client = CachedClient(
             self.client_name or self.name,
             cache_dir=ctx.settings.cache_dir,

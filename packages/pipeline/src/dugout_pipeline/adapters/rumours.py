@@ -111,6 +111,7 @@ def rumour_paragraphs(body_html: str) -> list[dict[str, Any]]:
 
 class GuardianRumourMillAdapter(SourceAdapter):
     name = "guardian_rumours"
+    scope = "global"
     client_name = "guardian"  # same key, cache and daily budget as the Guardian news adapter
     tier = TIER_SOCIAL
     ttl = 6 * HOUR

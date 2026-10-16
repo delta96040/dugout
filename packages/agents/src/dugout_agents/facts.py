@@ -84,6 +84,7 @@ class Toolbox:
         self.con, self.ledger = con, ledger
         self.now = now or datetime.now(UTC)
         self.season = con.execute("SELECT max(season) FROM matches").fetchone()[0]
+        self.club_league: dict[str, str] = dict(con.execute("SELECT club_id, league FROM clubs").fetchall())
         self.names: dict[str, str] = {}
         self.aliases: dict[str, list[str]] = {}
         self._load_names()
@@ -132,6 +133,13 @@ class Toolbox:
             _, _, h, a = entity_id.split(":")
             return f"{self.name(h)} v {self.name(a)}"
         return entity_id
+
+    def league(self, club: str) -> dict[str, Any]:
+        """The club's league block from config/leagues.yaml, with its key under `key`."""
+        from dugout_pipeline.clubs import league_config
+
+        key = self.club_league.get(club, "premier_league")
+        return {"key": key, **league_config(key)}
 
     def register(self, entity_id: str, name: str) -> None:
         """Entities outside the warehouse tables (e.g. scouting candidates from other leagues)."""
@@ -259,11 +267,19 @@ def prob_gloss(p: float) -> str:
     return "long shot"
 
 
-def rank_gloss(pos: float, n: int = 20) -> str:
-    if pos <= 4:
-        return "Champions League places"
-    if pos <= 7:
-        return "European places"
-    if pos >= n - 2:
-        return "relegation zone"
-    return "mid-table"
+def rank_gloss(pos: float, n: int = 20, table: dict[str, int] | None = None) -> str:
+    """Words for a league position. Qualification and relegation places come from the league's `table` config;
+    a league without one gets plain words (top three, top half...) rather than places we have not checked."""
+    if table:
+        if pos <= table["champions_league"]:
+            return "Champions League places"
+        if pos <= table["europe"]:
+            return "European places"
+        if pos > n - table["relegation"]:
+            return "relegation zone"
+        return "mid-table"
+    if pos <= 3:
+        return "top three"
+    if pos > n - 3:
+        return "bottom three"
+    return "top half" if pos <= n / 2 else "bottom half"

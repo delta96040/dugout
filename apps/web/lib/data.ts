@@ -56,9 +56,17 @@ export interface Stat {
   cross_checks: CrossCheck[];
 }
 
+export interface League {
+  key: string;
+  name: string;
+  country: string;
+}
+
 export interface Dossier {
   schema: string;
   club: { slug: string; name: string; season: string };
+  /** the club's league (dossiers written before leagues existed are Premier League) */
+  league?: League;
   generated_at: string;
   data_as_of: string;
   llm: string | null;
@@ -89,8 +97,39 @@ export function clubSlugs(): string[] {
     .sort();
 }
 
+const cache = new Map<string, Dossier>(); // every story page lists every club: read each file once per build
+
 export function dossier(slug: string): Dossier {
-  return JSON.parse(fs.readFileSync(path.join(CLUBS_DIR, `${slug}.json`), "utf-8")) as Dossier;
+  let d = cache.get(slug);
+  if (!d) {
+    d = JSON.parse(fs.readFileSync(path.join(CLUBS_DIR, `${slug}.json`), "utf-8")) as Dossier;
+    cache.set(slug, d);
+  }
+  return d;
+}
+
+const PREMIER_LEAGUE: League = { key: "premier_league", name: "Premier League", country: "England" };
+
+export function leagueOf(d: Dossier): League {
+  return d.league ?? PREMIER_LEAGUE;
+}
+
+/** Leagues with at least one verified dossier, in config order (data/leagues.json), each with its clubs. */
+export function leagues(): (League & { clubs: Dossier[] })[] {
+  const order = readData<League[]>("leagues.json") ?? [PREMIER_LEAGUE];
+  const byKey = new Map<string, Dossier[]>();
+  for (const d of allDossiers()) {
+    const k = leagueOf(d).key;
+    byKey.set(k, [...(byKey.get(k) ?? []), d]);
+  }
+  const known = order.filter((l) => byKey.has(l.key));
+  const extra = [...byKey.keys()].filter((k) => !known.some((l) => l.key === k));
+  return [...known, ...extra.map((k) => leagueOf(byKey.get(k)![0]))].map((l) => ({ ...l, clubs: byKey.get(l.key)! }));
+}
+
+/** URL segment for a league: premier_league -> premier-league. */
+export function leagueSlug(l: League): string {
+  return l.key.replace(/_/g, "-");
 }
 
 export function allDossiers(): Dossier[] {

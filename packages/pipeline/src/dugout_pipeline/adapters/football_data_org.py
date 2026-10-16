@@ -1,6 +1,10 @@
 """football-data.org v4 (free tier: 12 competitions incl. PL, 10 calls/min, scores slightly delayed).
 
-Second independent source for fixtures, results and standings; also head coaches and venues.
+Premier League: second independent source for fixtures, results and standings; also head coaches and venues.
+Leagues FPL does not cover (no `provider_ids.fpl`): the source of the clubs, squads and fixtures too. Clubs are
+matched to Transfermarkt (and so Reep) ids by name within the league's country, players by date of birth and name
+against transfermarkt-datasets (matching.py); a club or player without a confident match keeps a
+football-data.org id.
 """
 
 from __future__ import annotations
@@ -9,9 +13,14 @@ from datetime import date, datetime
 from typing import Any
 
 from dugout_pipeline.adapters.base import HOUR, TIER_DATA, SourceAdapter
-from dugout_pipeline.adapters.fpl import match_id
+from dugout_pipeline.adapters.fpl import _eid, _ts, match_id
+from dugout_pipeline.adapters.transfermarkt import TM_DIR
+from dugout_pipeline.clubs import slugify
 from dugout_pipeline.db import upsert
+from dugout_pipeline.ids import CLUB_PROVIDERS
+from dugout_pipeline.matching import best_club, best_player
 
+POSITIONS = {"Goalkeeper": "GK", "Defence": "DEF", "Midfield": "MID", "Offence": "FWD"}
 STATUS = {
     "FINISHED": "finished",
     "AWARDED": "finished",
@@ -28,6 +37,7 @@ STATUS = {
 
 class FootballDataOrgAdapter(SourceAdapter):
     name = "football_data_org"
+    requires = "football_data_org"
     tier = TIER_DATA
     ttl = 3 * HOUR
     rate, per, burst = 8, 60.0, 1  # 10/min allowed; stay under
@@ -48,9 +58,21 @@ class FootballDataOrgAdapter(SourceAdapter):
         teams = self.client.get(
             f"{self.base_url}competitions/{comp}/teams", params={"season": year}, ttl=24 * HOUR
         )
+        owns = not cfg["provider_ids"].get("fpl")  # no FPL: this source makes the league's clubs and squads
+        if owns:
+            clubs, club_ids = self.parse_new_clubs(teams.json())
+            counts["clubs"] = upsert(ctx.con, "clubs", clubs)
+            upsert(ctx.con, "entity_ids", club_ids)
+            ctx.load_clubs()
         ids, managers, venues = self.parse_teams(teams.json(), teams.fetched_at)
         counts["entity_ids"] = upsert(ctx.con, "entity_ids", ids)
         counts["managers"] = upsert(ctx.con, "managers", managers)
+        if owns:
+            players, player_ids = self.parse_squads(teams.json())
+            if players:  # a response without squads must not empty the league
+                self.release_departed({p["player_id"] for p in players})
+            counts["players"] = upsert(ctx.con, "players", players)
+            counts["entity_ids"] += upsert(ctx.con, "entity_ids", player_ids)
         for slug, (venue, address) in venues.items():
             ctx.con.execute(
                 "UPDATE clubs SET venue = coalesce(venue, ?), address = ? WHERE club_id = ?",
@@ -61,6 +83,9 @@ class FootballDataOrgAdapter(SourceAdapter):
         matches = self.client.get(f"{self.base_url}competitions/{comp}/matches", params={"season": year})
         obs = self.parse_matches(matches.json(), cfg["season"], matches.fetched_at)
         counts["match_observations"] = upsert(ctx.con, "match_observations", obs)
+        if owns:
+            fixtures = self.parse_fixtures(matches.json(), cfg["season"], matches.fetched_at)
+            counts["matches"] = upsert(ctx.con, "matches", fixtures)
         counts["evidence_ledger"] = self.record_scores(matches.json(), cfg["season"], matches)
 
         table = self.client.get(f"{self.base_url}competitions/{comp}/standings", params={"season": year})
@@ -68,6 +93,147 @@ class FootballDataOrgAdapter(SourceAdapter):
         counts["standings"] = upsert(ctx.con, "standings", rows)
         counts["evidence_ledger"] += self.record_standings(table.json(), cfg["season"], table)
         return counts
+
+    # ---- leagues without FPL: clubs, squads, fixtures ------------------------------------------------------
+    def parse_new_clubs(self, doc) -> tuple[list[dict], list[dict]]:
+        """A club keeps the slug it first got (by its football-data.org id). A new club is named by its Reep label
+        when it matches a Transfermarkt club; its slug gets the league's `slug_suffix` if another league already
+        uses it, so slugs never collide across leagues."""
+        cfg, con, league = self.ctx.league_cfg, self.ctx.con, self.ctx.league
+        known = dict(
+            con.execute(
+                """SELECT external_id, dugout_id FROM entity_ids WHERE entity_type = 'club'
+                   AND provider = 'football_data_org' AND namespace = 'team'"""
+            ).fetchall()
+        )
+        taken = dict(con.execute("SELECT club_id, league FROM clubs").fetchall())
+        overrides = {str(k): str(v) for k, v in (cfg.get("transfermarkt_clubs") or {}).items()}
+        # the league's own clubs in transfermarkt-datasets first (canonical names), then Reep's clubs in the
+        # country for a club new to the division (e.g. promoted for the first time)
+        tiers = [self._tm_clubs(cfg["provider_ids"].get("transfermarkt")), self.ctx.reep.teams(cfg["country"])]
+        clubs, ids = [], []
+        for t in doc["teams"]:
+            fid = str(t["id"])
+            tm = overrides.get(fid)
+            names = [t.get("name") or "", t.get("shortName") or ""]
+            for candidates in tiers if tm is None else []:
+                if hit := best_club(names, candidates, prefer={c[2] for c in tiers[0]}):
+                    tm = hit[2]
+                    break
+            m = self.ctx.reep.lookup("transfermarkt", "verein", tm) if tm else None
+            name = m.label if m and m.label else (t.get("shortName") or t["name"])
+            slug = known.get(fid)
+            if slug is None:
+                slug = slugify(name)
+                if taken.get(slug, league) != league:
+                    slug = f"{slug}-{cfg.get('slug_suffix') or slugify(cfg['country'])}"
+                taken[slug] = league
+            clubs.append(
+                {
+                    "club_id": slug,
+                    "reep_id": m.reep_id if m else None,
+                    "name": name,
+                    "short_name": t.get("tla"),
+                    "league": league,
+                    "season": cfg["season"],
+                    "updated_at": self.ctx.now,
+                }
+            )
+            ids.append(_eid("club", slug, "football_data_org", "team", fid, m))
+            if tm:
+                ids.append(_eid("club", slug, "transfermarkt", "verein", tm, m))
+            if m:
+                for prov, ns in CLUB_PROVIDERS.items():
+                    if ext := m.ids.get(f"{prov}/{ns}"):
+                        ids.append(_eid("club", slug, prov, ns, ext, m))
+        return clubs, ids
+
+    def _tm_clubs(self, comp: str | None) -> list[tuple[str, str, str]]:
+        """(None, name, Transfermarkt id) of every club transfermarkt-datasets has in the competition."""
+        path = TM_DIR / "clubs.parquet"
+        if not comp or not path.exists():
+            return []
+        return self.ctx.con.execute(
+            """SELECT NULL, name, CAST(club_id AS VARCHAR) FROM read_parquet(?)
+               WHERE domestic_competition_id = ? ORDER BY last_season DESC""",
+            [str(path), comp],
+        ).fetchall()
+
+    def _tm_players(self, dobs: set[str]) -> dict[str, list[tuple[str, str]]]:
+        """transfermarkt-datasets players (CC0, saved by the history job) by date of birth."""
+        path = TM_DIR / "players.parquet"
+        if not dobs or not path.exists():
+            return {}
+        rows = self.ctx.con.execute(
+            """SELECT strftime(CAST(date_of_birth AS DATE), '%Y-%m-%d') AS dob, CAST(player_id AS VARCHAR), name
+               FROM read_parquet(?) WHERE list_contains(?, strftime(CAST(date_of_birth AS DATE), '%Y-%m-%d'))""",
+            [str(path), sorted(dobs)],
+        ).fetchall()
+        out: dict[str, list[tuple[str, str]]] = {}
+        for dob, tm, name in rows:
+            out.setdefault(dob, []).append((tm, name))
+        return out
+
+    def parse_squads(self, doc) -> tuple[list[dict], list[dict]]:
+        squads = [(self._slug(t), p) for t in doc["teams"] for p in t.get("squad") or []]
+        tm_by_dob = self._tm_players({p["dateOfBirth"][:10] for _, p in squads if p.get("dateOfBirth")})
+        players, ids = [], []
+        for slug, p in squads:
+            if not slug:
+                continue
+            dob = (p.get("dateOfBirth") or "")[:10]
+            tm = best_player(p["name"], tm_by_dob.get(dob, [])) if dob else None
+            m = self.ctx.reep.lookup("transfermarkt", "spieler", tm) if tm else None
+            pid = m.reep_id if m else f"football_data_org:{p['id']}"
+            players.append(
+                {
+                    "player_id": pid,
+                    "reep_id": m.reep_id if m else None,
+                    "name": p["name"],
+                    "web_name": None,
+                    "birth_date": _date(dob or None),
+                    "nationality": p.get("nationality"),
+                    "position": POSITIONS.get(p.get("position") or ""),
+                    "club_id": slug,
+                    "updated_at": self.ctx.now,
+                }
+            )
+            ids.append(_eid("player", pid, "football_data_org", "person", p["id"], m))
+            if tm:
+                ids.append(_eid("player", pid, "transfermarkt", "spieler", tm, m))
+        return players, ids
+
+    def release_departed(self, current: set[str]) -> None:
+        """Players no longer in any of the league's squads leave their club (like FPL's "has joined" players)."""
+        self.ctx.con.execute(
+            """UPDATE players SET club_id = NULL WHERE club_id IN (SELECT club_id FROM clubs WHERE league = ?)
+               AND NOT list_contains(?, player_id)""",
+            [self.ctx.league, sorted(current)],
+        )
+
+    def parse_fixtures(self, doc, season: str, fetched_at: datetime) -> list[dict]:
+        rows = []
+        for m in doc["matches"]:
+            home, away = self._slug(m["homeTeam"]), self._slug(m["awayTeam"])
+            if not home or not away:
+                continue
+            ft = m["score"]["fullTime"]
+            rows.append(
+                {
+                    "match_id": match_id(self.ctx.league, season, home, away),
+                    "league": self.ctx.league,
+                    "season": season,
+                    "gameweek": m.get("matchday"),
+                    "kickoff_utc": _ts(m.get("utcDate")),
+                    "home_club_id": home,
+                    "away_club_id": away,
+                    "status": STATUS.get(m["status"], m["status"].lower()),
+                    "home_goals": ft["home"],
+                    "away_goals": ft["away"],
+                    "updated_at": fetched_at,
+                }
+            )
+        return rows
 
     def _slug(self, team: dict[str, Any]) -> str | None:
         return self.ctx.clubs.resolve(team.get("name") or "", "football_data_org/team", team.get("id"))

@@ -54,6 +54,7 @@ def parse_point(wkt: str) -> tuple[float, float] | None:
 
 class WikidataAdapter(SourceAdapter):
     name = "wikidata"
+    scope = "global"  # one SPARQL query for every club with a Transfermarkt id
     tier = TIER_DATA
     ttl = 7 * DAY
     rate, per = 1, 5.0
@@ -108,15 +109,17 @@ class WikidataAdapter(SourceAdapter):
         rows = []
         for b in doc["results"]["bindings"]:
             slug = tm.get(b["tm"]["value"])
-            if not slug or "start" not in b:  # a spell without a start date cannot be placed in time
+            start, end = _wd_date(b, "start"), _wd_date(b, "end")
+            # a spell without a start date cannot be placed in time; an "unknown value" end date is not current
+            if not slug or start is None or ("end" in b and end is None):
                 continue
             rows.append(
                 {
                     "manager_id": "wikidata:" + b["coach"]["value"].rsplit("/", 1)[-1],
                     "name": b["coachLabel"]["value"],
                     "club_id": slug,
-                    "start_date": date.fromisoformat(b["start"]["value"][:10]),
-                    "end_date": date.fromisoformat(b["end"]["value"][:10]) if "end" in b else None,
+                    "start_date": start,
+                    "end_date": end,
                     "source": self.name,
                 }
             )
@@ -145,10 +148,10 @@ class WikidataAdapter(SourceAdapter):
                     "manager_id": f"wikidata:{qid}",
                     "reep_id": None,
                     "name": b["coachLabel"]["value"],
-                    "birth_date": date.fromisoformat(b["dob"]["value"][:10]) if "dob" in b else None,
+                    "birth_date": _wd_date(b, "dob"),
                     "nationality": b.get("countryLabel", {}).get("value"),
                     "club_id": slug,
-                    "start_date": date.fromisoformat(start[:10]) if start else None,
+                    "start_date": _wd_date(b, "start"),
                     "source": self.name,
                     "updated_at": fetched_at,
                 }
@@ -159,3 +162,12 @@ def _q(s: str) -> str:
     from urllib.parse import quote_plus
 
     return quote_plus(s)
+
+
+def _wd_date(binding: dict, key: str) -> date | None:
+    """A Wikidata date value, or None when absent or "unknown value" (a blank-node URI, not a date)."""
+    value = binding.get(key, {}).get("value", "")
+    try:
+        return date.fromisoformat(value[:10])
+    except ValueError:
+        return None
