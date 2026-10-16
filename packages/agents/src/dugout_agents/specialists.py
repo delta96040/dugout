@@ -42,7 +42,7 @@ def _news(tb: Toolbox, club: str, focus: list[str]) -> list[Fact]:
 def _transfer(tb: Toolbox, club: str, focus: list[str]) -> list[Fact]:
     if focus:
         return [f for pid in focus for f in tools.squad_market(tb, club, pid)]
-    return tools.squad_market(tb, club)
+    return tools.squad_market(tb, club) + tools.rumours(tb, club, "out")
 
 
 SPECIALISTS: dict[str, Specialist] = {
@@ -118,7 +118,7 @@ SPECIALISTS: dict[str, Specialist] = {
         ),
     )
 }
-for _name, _n in (("lineup", 14), ("news", 12), ("transfer", 12), ("scout", 28), ("club", 10)):
+for _name, _n in (("lineup", 14), ("news", 12), ("transfer", 15), ("scout", 31), ("club", 10)):
     SPECIALISTS[_name] = dataclasses.replace(SPECIALISTS[_name], max_facts=_n)
 SPECIALISTS["lineup"] = dataclasses.replace(SPECIALISTS["lineup"], prose=False)
 

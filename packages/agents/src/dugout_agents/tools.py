@@ -6,9 +6,12 @@ binding rule), and avoids news keywords when the sentence only states a model ou
 
 from __future__ import annotations
 
-from datetime import datetime
+import csv
+import unicodedata
+from datetime import date, datetime, timedelta
 
 from dugout_agents.facts import MODEL_DOCS, Fact, Toolbox, prob_gloss, rank_gloss, z_gloss
+from dugout_pipeline.settings import REPO_ROOT
 
 FDO_URL = "https://api.football-data.org/v4/competitions/PL/standings"
 
@@ -597,6 +600,73 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
 
 # ---- Scout -------------------------------------------------------------------------------------------------
 # best: dream targets whatever the cost; realistic: the moves most likely to happen; gem: young and undervalued
+RUMOUR_DAYS = 60  # the fact-check corpus keeps news this long (runtime.NEWS_DAYS)
+
+
+def _fold_name(name: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", name.lower()) if not unicodedata.combining(c))
+
+
+def _joined(club: str) -> list[tuple[str, date]]:
+    """(player name, date he joined) for the club, from the committed squad file (data/reference)."""
+    path = REPO_ROOT / "data" / "reference" / "transfermarkt_squads.csv"
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as fh:
+        return [
+            (r["name"], date.fromisoformat(r["joined"]))
+            for r in csv.DictReader(fh)
+            if r["club_id"] == club and r.get("joined")
+        ]
+
+
+def rumours(tb: Toolbox, club: str, direction: str, limit: int = 3) -> list[Fact]:
+    """Transfer talk from the Guardian's Rumour Mill (pipeline adapter `guardian_rumours`), newest first.
+    direction "in": players at other clubs linked with this club; "out": this club's players linked with a move.
+    Each sentence is attributed to the Guardian and must be confirmed by Fact-Check against the column's paragraph;
+    it reports talk, never a fact about a transfer."""
+    name = tb.name(club)
+    squad = {
+        _fold_name(n)
+        for row in tb.con.execute("SELECT name, web_name FROM players WHERE club_id = ?", [club]).fetchall()
+        for n in row
+        if n
+    }
+    # a rumour from before a player joined his current club is about the move that already happened
+    joined = {_fold_name(n): d for n, d in _joined(club)}
+    facts: list[Fact] = []
+    seen: set[str] = set()
+    for title, published in tb.con.execute(
+        """SELECT title, published_at FROM news_items WHERE source = 'guardian_rumours'
+           AND list_contains(club_ids, ?) AND published_at >= ? ORDER BY published_at DESC""",
+        [club, tb.now - timedelta(days=RUMOUR_DAYS)],
+    ).fetchall():
+        for player in (title or "").split("; "):
+            key = _fold_name(player)
+            ours = key in squad or key.split()[-1] in squad
+            if not player or key in seen or ours != (direction == "out"):
+                continue
+            since = joined.get(key) or next(
+                (d for n, d in joined.items() if n.split()[-1] == key.split()[-1]), None
+            )
+            if since is not None and published.date() < since:
+                continue
+            seen.add(key)
+            tb.register(f"rumour:{key}", player)
+            text = (
+                f"According to The Guardian, {player} has been linked with a move away from {name}."
+                if direction == "out"
+                else f"According to The Guardian, {name} have been linked with {player}."
+            )
+            label = (
+                f"transfer rumour ({'outgoing' if direction == 'out' else 'incoming'}), {published:%d %B %Y}"
+            )
+            facts += _keep(_fact(tb, "The Guardian", label, text))
+            if len(facts) >= limit:
+                return facts
+    return facts
+
+
 LEADS = {"best": "Best fit", "realistic": "More realistic", "gem": "Hidden gem"}
 # the numbers each list is about (a section has room for about two dozen sentences)
 KIND_METRICS = {
@@ -628,6 +698,7 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                     f"According to {outlet[0]}, {title.rstrip('.')}.",
                 )
             )
+    facts += rumours(tb, club, "in")  # who the press links with the club, before the models' own lists
     for rank in (1, 2):
         need = tb.model("scout", "club", club, "need", f"need:{rank}")
         if need is None:
