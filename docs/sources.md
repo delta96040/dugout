@@ -24,6 +24,7 @@ Rules that apply to all sources (enforced in `packages/pipeline/src/dugout_pipel
 | football-data.org v4 | `FOOTBALL_DATA_ORG_KEY` | Free tier "free forever" for 12 competitions incl. PL; attribution appreciated | **10 calls/min** (`x-requests-available-minute`), scores slightly delayed, no player stats | 3 h (teams 24 h) | results, fixtures, standings, head coach, venue/address — second source for cross-checks | 3 |
 | API-Football v3 | `API_FOOTBALL_KEY` | api-sports.io terms; free plan | **100 req/day**. Free plan **only allows seasons 2022–2024**; for the current season only a rolling **yesterday→tomorrow** date window (`"Free plans do not have access to this season, try from 2022 to 2024"`) | 1 h (finished fixtures 30 d) | match-day fixtures, confirmed lineups, injuries (date window), per-fixture statistics incl. **xG**; slow backfill of 2022–2024 for training | 3 |
 | Guardian Open Platform | `GUARDIAN_API_KEY` | Developer key: non-commercial use, link back to the article; do not republish full text | **500/day, 60/min** (`x-ratelimit-limit-day`, `ratelimit-limit`) | 6 h | news + match reports (body text kept locally as Fact-Check evidence only) | 2 |
+| Guardian Rumour Mill (same key) | `GUARDIAN_API_KEY` | As above; the column credits each rumour's original outlet. Shown only as "linked", attributed, in our own words, after Fact-Check | 1 call per run, same budget | 6 h | transfer rumours (incoming and outgoing), tier 5; runs during transfer windows | 5 |
 | RSS: BBC Sport, Guardian, Sky Sports, ESPN | no | Publisher feeds for personal/non-commercial reading; we store headline, link, summary only | n/a; ≤ 1 req / 2 s | 1 h | news & rumours for News and Fact-Check agents | 2 |
 | Official club websites (`club_news`) | no | Club sites' terms; robots.txt checked per site (liverpoolfc.com: allows all, 2026-10-16); we store text locally as Fact-Check evidence and link out | sitemap + ≤ 1 page / 3 s, ≤ 150 articles per club per run | 6 h (articles 30 d) | the club's own announcements (signings, contracts, injuries). Stories the site *reproduces* from the press are credited to the original outlet | 1 (own announcements); original outlet's tier for reproduced stories |
 | SearXNG (self-hosted, optional) | `SEARXNG_URL` | AGPL software you run yourself | your instance | 6 h | on-demand evidence retrieval for Fact-Check | 2 |
@@ -89,3 +90,13 @@ Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-res
 | Guardian | 20 | 0 | 20 | 500/day |
 | FPL | 3 + finished gameweeks (cached 30 d) | 3 | ≈ 25 | none published |
 | Others | ≤ 15 each | 0 | small | — |
+
+## Considered and not used (2026-10-16)
+
+- **BBC Sport gossip column**: robots.txt allows it, but the BBC's terms could not be confirmed to allow automated
+  extraction or reuse (the terms page renders client-side; the BBC has pursued scrapers). The Guardian's Rumour Mill,
+  through its API, covers the same need.
+- **FBref** (and soccerdata's other sources: FotMob, Sofascore, WhoScored, Understat): robots.txt behind a Cloudflare
+  challenge (403) or disallowing; soccerdata's own releases describe CAPTCHA and anti-bot workarounds.
+- **Lineups and positions**: transfermarkt-datasets `game_lineups` (CC0) gives every starter's position up to July
+  2026; API-Football's free daily window covers lineups (with formation) from this season on.

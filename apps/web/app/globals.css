@@ -152,3 +152,10 @@ html.lenis body {
   text-decoration: underline dotted 1px var(--pencil);
   text-underline-offset: 4px;
 }
+
+/* the "scroll" hint sits under the chapter card; on short screens it would overlap the card's last line */
+@media (max-height: 640px) {
+  .scroll-hint {
+    display: none;
+  }
+}

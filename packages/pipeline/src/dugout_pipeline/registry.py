@@ -10,6 +10,7 @@ from dugout_pipeline.adapters.football_data_org import FootballDataOrgAdapter
 from dugout_pipeline.adapters.fpl import FPLAdapter
 from dugout_pipeline.adapters.fpl_history import FPLHistoryAdapter
 from dugout_pipeline.adapters.news import ClubNewsAdapter, GuardianAdapter, RSSAdapter
+from dugout_pipeline.adapters.rumours import GuardianRumourMillAdapter
 from dugout_pipeline.adapters.transfermarkt import (
     TransfermarktDatasetsLoader,
     TransfermarktFileAdapter,
@@ -43,6 +44,7 @@ ADAPTERS: dict[str, type[SourceAdapter]] = {
         FootballDataCoUkAdapter,
         TransfermarktFileAdapter,
         GuardianAdapter,
+        GuardianRumourMillAdapter,
         RSSAdapter,
         ClubNewsAdapter,
         OpenMeteoAdapter,
@@ -65,6 +67,7 @@ JOBS: dict[str, list[str]] = {
         "football_data_couk",
         "transfermarkt_file",
         "guardian",
+        "guardian_rumours",
         "rss",
         "club_news",
         "open_meteo",

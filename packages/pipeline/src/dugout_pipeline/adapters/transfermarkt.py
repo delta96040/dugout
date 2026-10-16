@@ -23,6 +23,9 @@ from dugout_pipeline.settings import REPO_ROOT
 
 SQUADS_CSV = REPO_ROOT / "data" / "reference" / "transfermarkt_squads.csv"
 TM_DIR = REPO_ROOT / "data" / "raw" / "transfermarkt"  # CC0 dataset tables for model training (git-ignored)
+LINEUPS_SINCE = (
+    "2023-07-01"  # starting positions from the last three seasons (game_lineups is 3M rows in all)
+)
 FIELDS = [
     "tm_player_id",
     "player_id",
@@ -258,7 +261,15 @@ class TransfermarktDatasetsLoader(SourceAdapter):
             "parquet_tables": self.save_model_tables(),
         }
 
-    MODEL_TABLES = ("players", "transfers", "player_valuations", "appearances", "clubs", "competitions")
+    MODEL_TABLES = (
+        "players",
+        "transfers",
+        "player_valuations",
+        "appearances",
+        "clubs",
+        "competitions",
+        "game_lineups",
+    )
 
     def save_model_tables(self) -> int:
         """Full CC0 tables the valuation / realism / injury models train on, as Parquet under data/raw/."""
@@ -267,7 +278,12 @@ class TransfermarktDatasetsLoader(SourceAdapter):
         TM_DIR.mkdir(parents=True, exist_ok=True)
         for name in self.MODEL_TABLES:
             res = self.client.get(f"{self.base_url}{name}.csv.gz")
-            pd.read_csv(io.BytesIO(gzip.decompress(res.content)), low_memory=False).to_parquet(
-                TM_DIR / f"{name}.parquet", index=False
-            )
+            df = pd.read_csv(io.BytesIO(gzip.decompress(res.content)), low_memory=False)
+            if name == "game_lineups":
+                # where players actually started (e.g. a "Centre-Back" who plays right-back): recent XIs only
+                df = df.loc[
+                    (df.type == "starting_lineup") & (df.date >= LINEUPS_SINCE),
+                    ["game_id", "date", "player_id", "club_id", "position"],
+                ]
+            df.to_parquet(TM_DIR / f"{name}.parquet", index=False)
         return len(self.MODEL_TABLES)

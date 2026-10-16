@@ -24,7 +24,7 @@ import pandas as pd
 from dugout_pipeline.settings import get_settings
 
 from dugout_models import potential
-from dugout_models.market import GROUPS, PL, Market
+from dugout_models.market import GROUPS, PL, SHORTLIST, STARTERS, Market
 from dugout_models.opportunity import FEATURES as OPP_FEATURES
 from dugout_models.publish import _row
 
@@ -157,6 +157,7 @@ def lookup(con: duckdb.DuckDBPyConnection, mk: Market, now: datetime, reep: dict
             ),
             _row("potential", "player", pid, "level_ceiling", level_words(q90, pl_values), now),
         ]
+    rows += gems(mk, pool, proj, ids, now)
     for club in showcase_clubs():
         fees = mk.fair_fee(pool.player_id.tolist(), pool.comp.tolist()).fair_fee
         X = outlook_many(mk, pool, club, fees)
@@ -178,4 +179,43 @@ def lookup(con: duckdb.DuckDBPyConnection, mk: Market, now: datetime, reep: dict
                 ]
             if pid in sfit.index and sfit[pid] == sfit[pid]:
                 rows.append(_row("fit", "player", pid, "style_fit", round(float(sfit[pid]), 1), now, club))
+    return rows
+
+
+GEM_AGES = (17, 23)
+
+
+def gems(mk: Market, pool: pd.DataFrame, proj: dict, ids: list[str], now: datetime) -> list[dict]:
+    """Hidden gems per club need: players aged 17-23 who play regularly (30%+ of minutes) in a top league, cost
+    less today than the club's last regular starter at the position, ranked by the potential model's projected
+    value in four years (potential.md). Current clubs come from the squad file where known; players who joined a
+    club in the last 12 months are left out, as on the other lists."""
+    g = pool.assign(pid=ids, proj4=np.expm1(proj[4].q50.to_numpy()))
+    g = g[g.age.between(GEM_AGES[0], GEM_AGES[1] + 0.999) & (g.minutes_share >= 0.3) & (g.top_tier == 1)]
+    now_sq = mk.squads.drop_duplicates("tm_player_id").set_index("tm_player_id")
+    joined = pd.to_datetime(g.player_id.map(now_sq.joined), errors="coerce")
+    g = g[~(joined > mk.now - pd.Timedelta(days=365))].copy()
+    g["club_now"] = g.player_id.map(now_sq.tm_club_id).fillna(g.club_id).astype(str)
+    g["sub"] = g.player_id.map(mk.players.sub_position)
+    club_names = mk.clubs.set_index("club_id").name
+    rows: list[dict] = []
+    for slug in sorted(mk.squads.club_id.unique()):
+        tm_club = str(mk.squads.loc[mk.squads.club_id == slug, "tm_club_id"].iloc[0])
+        sq = mk.squad(slug)
+        for i, n in mk.needs(slug).head(2).iterrows():
+            inc = sq.loc[sq.group == n.group, "market_value_eur"].astype(float).sort_values(ascending=False)
+            bar = inc.iloc[STARTERS[n.group] - 1] if len(inc) >= STARTERS[n.group] else np.inf
+            c = g[mk.plays(g.player_id, g["sub"], n.group) & (g.club_now != tm_club) & (g.mv < bar)]
+            for k, r in enumerate(c.nlargest(SHORTLIST, "proj4").itertuples(), 1):
+                ctx = f"{slug}:need:{i + 1}:gem:{k}"
+                rows += [
+                    _row(
+                        "scout", "player", r.pid, "candidate_name", mk.players.name.get(r.player_id), now, ctx
+                    ),
+                    _row("scout", "player", r.pid, "candidate_club", club_names.get(r.club_now), now, ctx),
+                    _row("scout", "player", r.pid, "candidate_position", n.group, now, ctx),
+                    _row("scout", "player", r.pid, "age", round(r.age, 1), now, ctx),
+                    _row("scout", "player", r.pid, "market_value", r.mv, now, ctx),
+                    _row("scout", "player", r.pid, "proj_value_4y", round(r.proj4, -5), now, ctx),
+                ]
     return rows

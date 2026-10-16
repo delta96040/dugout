@@ -1,41 +1,53 @@
 {
-  "generated_at": "2026-10-15T16:40:24+00:00",
+  "generated_at": "2026-10-16T14:55:03+00:00",
   "mobility": {
     "train": 138224,
     "test": 27481,
-    "auc_logistic": 0.7532123641695202,
-    "auc_gbm": 0.7534777985022688,
-    "auc": 0.7534777985022688,
-    "brier_logistic": 0.06865454759546931,
-    "brier_gbm": 0.06694446244645115,
+    "auc_logistic": 0.7602096452400174,
+    "auc_gbm": 0.7612057941965239,
+    "auc": 0.7612057941965239,
+    "brier_logistic": 0.0671188109390568,
+    "brier_gbm": 0.06642738839124325,
     "brier_base_rate": 0.07331123661021734,
+    "auc_logistic_v1": 0.7532123641695202,
+    "brier_logistic_v1": 0.06865454759546931,
+    "elite_regulars": 111,
+    "elite_regulars_sold": 0.036036036036036036,
+    "elite_regulars_mean_p": 0.13380244605169947,
+    "elite_regulars_mean_p_v1": 0.2871351111202845,
+    "elite_regulars_mean_p_gbm": 0.03657510742940087,
     "base_rate": 0.07732615261453368,
     "coefficients": {
-      "age": -0.783,
-      "age2": -0.25,
-      "log_mv": 0.616,
-      "mv_change": 0.113,
-      "minutes_share": -0.004,
-      "share_change": 0.055,
-      "rel_value": 0.329,
-      "log_league": 0.033,
+      "age": -0.821,
+      "age2": -0.204,
+      "log_mv": 1.263,
+      "mv_change": 0.075,
+      "minutes_share": 0.065,
+      "share_change": -0.01,
+      "rel_value": -0.024,
+      "log_league": -0.034,
       "tenure": 0.136,
-      "peak_ratio": 0.219,
-      "relegated": 0.086
+      "peak_ratio": 0.178,
+      "relegated": 0.096,
+      "log_europe_rank": 0.501,
+      "elite_regular": -0.068
     }
   },
   "destination": {
     "test_moves": 2004,
-    "auc": 0.7319324493217497,
-    "top1": 0.47355289421157687,
+    "auc": 0.7491176832799878,
+    "top1": 0.4820359281437126,
     "random_top1": 0.16493827160493826,
     "coefficients": {
-      "capacity_ratio": 0.279,
-      "league_gap": 0.116,
-      "club_value_gap": 0.154,
-      "same_league": 0.38,
-      "same_country": 0.38
-    }
+      "capacity_ratio": 0.238,
+      "league_gap": 0.115,
+      "club_value_gap": -0.376,
+      "same_league": 0.369,
+      "same_country": 0.369,
+      "step_down": -0.882
+    },
+    "v1_auc": 0.7319324493217497,
+    "v1_top1": 0.47355289421157687
   },
   "priors": {
     "contract": {

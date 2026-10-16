@@ -35,11 +35,13 @@ export default function ScoreboardPage() {
         Right <span className="italic">and</span> wrong, in public.
       </h1>
       <p className="hang mt-6 max-w-2xl">
-        {b.model}. <strong>Live</strong> rows were published before kick-off. <strong>Backtest</strong> rows were predicted walk-forward: the model was refit
-        on matches strictly before each block of fixtures, so none saw its own result. Live rows so far: <span data-meta>{live.length === 0 ? "none yet; logging started this season" : live.length}</span>.
+        Our match forecasts against the real results. <strong>Live</strong> forecasts were published before kick-off.{" "}
+        <strong>Replay</strong> rows recreate earlier matches: each forecast used only matches played before it, so none knew
+        its own result. Live forecasts so far:{" "}
+        <span data-meta>{live.length === 0 ? "none yet; we started logging this season" : live.length}</span>.
       </p>
       <p className="hang mono-label mt-6 max-w-2xl">
-        Probabilities: dugout predictor (<a className="underline" href={`${REPO_URL}/blob/main/docs/backtests/predictor.md`}>backtest report</a>).
+        Forecasts: dugout (<a className="underline" href={`${REPO_URL}/blob/main/docs/backtests/predictor.md`}>how they are tested</a>).
         Results: football-data.org and Fantasy Premier League, cross-checked. Hover, focus or tap any number for its source and time.
       </p>
       <div className="hang relative mt-6" data-sb-root>
@@ -63,7 +65,7 @@ export default function ScoreboardPage() {
                   <td data-meta className="py-2 pr-3 text-pencil">{r.date}</td>
                   <td className="py-2 pr-3 font-body text-base">
                     {r.home} <span className="italic">v</span> {r.away}
-                    <span className="mono-label ml-2">{r.kind}</span>
+                    <span className="mono-label ml-2">{r.kind === "live" ? "live" : "replay"}</span>
                   </td>
                   {[0, 1, 2].map((i) => (
                     <td key={i} className={`py-2 text-right ${r.pick === "HDA"[i] ? "font-bold" : ""}`}>

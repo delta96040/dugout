@@ -164,13 +164,20 @@ def tm_positions(con: duckdb.DuckDBPyConnection) -> pd.DataFrame:
     bridge = con.execute(
         "SELECT reep_id, external_id FROM reep.bridges WHERE provider='transfermarkt' AND namespace='spieler'"
     ).df()
-    return (
+    from dugout_models.positions import SLOT_SHARE, SLOT_STARTS, positions_played
+
+    # positions he starts at often enough count as natural too (a centre-back who also plays right-back)
+    alt = positions_played(SLOT_SHARE, SLOT_STARTS).map(lambda ps: {SUB[x] for x in ps if x in SUB})
+    out = (
         bridge.merge(tm, left_on="external_id", right_on="player_id")
-        .assign(slot=lambda d: d.sub_position.map(SUB))[["reep_id", "slot"]]
+        .assign(slot=lambda d: d.sub_position.map(SUB), alt=lambda d: d.external_id.map(alt))[
+            ["reep_id", "slot", "alt"]
+        ]
         .rename(columns={"reep_id": "player_id"})
-        .dropna()
+        .dropna(subset=["slot"])
         .drop_duplicates("player_id")
     )
+    return out
 
 
 FPL_SLOT = {"GK": "GK", "DEF": "CB", "MID": "CM", "FWD": "CF"}
@@ -187,7 +194,14 @@ def unavailable(con: duckdb.DuckDBPyConnection) -> set[str]:
 
 # ---- lineup optimiser --------------------------------------------------------------------------------------
 def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
-    from dugout_models.lineup import LINE, PREDICTED_XI_TRUST, best_formation, ratings_from_history
+    from dugout_models.lineup import (
+        LINE,
+        PREDICTED_XI_TRUST,
+        best_formation,
+        ratings_from_history,
+        recent_shape,
+        shape_formations,
+    )
 
     nxt = con.execute(
         """SELECT club, arg_min(match_id, kickoff_utc) AS match_id FROM (
@@ -205,10 +219,14 @@ def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
         [now - pd.Timedelta(days=400), now],
     ).df()
     stats["date"] = pd.to_datetime(stats.date)
+    stats["fpl_pos"] = stats.player_id.map(
+        dict(con.execute("SELECT player_id, position FROM players").fetchall())
+    )
     squads = con.execute("SELECT player_id, club_id, position FROM players WHERE club_id IS NOT NULL").df()
     pos = tm_positions(con)
     squads = squads.merge(pos, on="player_id", how="left")
     squads["slot"] = squads.slot.fillna(squads.position.map(FPL_SLOT))
+    squads["fpl_pos"] = squads.position  # FPL defenders stay in the back line (lineup.player_fit)
     out_ids = unavailable(con)
     rows = []
     for r in nxt.itertuples():
@@ -232,8 +250,10 @@ def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
         squad["fatigue"] = (squad.player_id.map(last7).fillna(0) - 135).clip(lower=0) / 90 * 0.5
         squad["rating"] = (1 - PREDICTED_XI_TRUST) * quality + PREDICTED_XI_TRUST * trust
         squad = squad.reset_index(drop=True)
+        # the shape the manager actually starts (docs/backtests/lineup_shape.md), then the best XI within it
+        club_xis = stats[(stats.club_id == r.club) & (stats.starts == 1)]
         try:
-            sel = best_formation(squad)
+            sel = best_formation(squad, shape_formations(recent_shape(club_xis)))
         except ValueError as exc:
             log.warning("lineup %s: %s", r.club, exc)
             continue

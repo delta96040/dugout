@@ -63,3 +63,13 @@ def con_counts(con):
         t: con.execute(f"SELECT count(*) FROM {t}").fetchone()[0]
         for t in ("clubs", "players", "matches", "injuries", "entity_ids", "evidence_ledger")
     }
+
+
+def test_players_who_joined_another_club_leave_the_squad():
+    from dugout_pipeline.adapters.fpl import left_club
+
+    assert left_club({"status": "u", "news": "Has joined Valencia on loan for the rest of the season"})
+    assert left_club({"status": "u", "news": "has joined  Kasimpasa on loan for the rest of the seaon."})
+    assert not left_club({"status": "u", "news": "Personal reasons"})
+    assert not left_club({"status": "i", "news": "Hamstring injury - Expected back 25 Oct"})
+    assert not left_club({"status": "a", "news": ""})
