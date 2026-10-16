@@ -294,3 +294,18 @@ class ApiFootballAdapter(SourceAdapter):
         INJURY_DIR.mkdir(parents=True, exist_ok=True)
         df.to_parquet(INJURY_DIR / f"injuries_{season}.parquet", index=False)
         return df
+
+
+class ApiFootballHistoryAdapter(ApiFootballAdapter):
+    """History job: the free plan's full-season injury lists (2022-2024) that the injury-risk model trains on.
+    One call per season, cached for a year; shares API-Football's cache and daily budget."""
+
+    name = "api_football_history"
+    client_name = "api_football"
+    seasons = (2022, 2023, 2024)  # the free plan's seasons
+
+    def ingest(self) -> dict[str, int]:
+        rows = 0
+        for season in self.seasons:
+            rows += len(self.injury_history(season))
+        return {"injury_history_rows": rows}

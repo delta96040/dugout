@@ -82,6 +82,7 @@ class SourceAdapter(ABC):
     respect_robots: ClassVar[bool] = True
     local_only: ClassVar[bool] = False  # refuses to run when CI is set
     required: ClassVar[bool] = False  # nightly fails if a required source fails
+    client_name: ClassVar[str | None] = None  # share another adapter's cache and daily budget (same provider)
     base_url: ClassVar[str] = ""
 
     def __init__(self, ctx: IngestContext):
@@ -89,7 +90,7 @@ class SourceAdapter(ABC):
         if self.local_only and ctx.settings.ci:
             raise SourceDisabled(f"{self.name} is local-only and never runs in CI")
         self.client = CachedClient(
-            self.name,
+            self.client_name or self.name,
             cache_dir=ctx.settings.cache_dir,
             user_agent=ctx.settings.user_agent,
             ttl=self.ttl,
