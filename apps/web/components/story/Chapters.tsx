@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Num from "@/components/Num";
 import Shortlists from "@/components/Shortlists";
+import { metricName } from "@/lib/format";
 import { REPO } from "./constants";
 import Scramble from "./Scramble";
 import Stars from "./Stars";
@@ -129,7 +130,7 @@ export function chapterContent(d: StoryData) {
             {d.verifiedSamples.map((s) => (
               <li key={s.id} className="flex justify-between gap-4 border-b border-ink/30 py-1">
                 <span className="text-pencil">
-                  {s.stat.metric.replaceAll("_", " ")} · {s.stat.entity_name}
+                  {s.label ?? metricName(s.stat.metric)} · {s.stat.entity_name}
                 </span>
                 <Scramble s={s} chapter={3} />
               </li>

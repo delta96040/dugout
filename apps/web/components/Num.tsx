@@ -1,6 +1,6 @@
 import { useId } from "react";
 import type { Stat } from "@/lib/data";
-import { sourceName, when } from "@/lib/format";
+import { metricName, sourceName, when } from "@/lib/format";
 
 const STATUS: Record<string, string> = {
   verified: "Verified",
@@ -43,7 +43,7 @@ export function CardBody({ stat }: { stat: Stat }) {
   return (
     <>
     <span className="block text-[0.65rem] uppercase tracking-widest text-pencil">
-      {stat.metric.replaceAll("_", " ")} · {stat.entity_name}
+      {metricName(stat.metric)} · {stat.entity_name}
     </span>
     <span className="mt-1 block">
       Source:{" "}

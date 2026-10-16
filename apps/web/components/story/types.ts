@@ -5,6 +5,8 @@ export interface StatRef {
   id: string;
   stat: Stat;
   display: string;
+  /** what the number measures, in words (the dossier's key-stat label) */
+  label?: string;
 }
 
 export interface StoryData {

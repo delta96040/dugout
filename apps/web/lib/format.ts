@@ -62,3 +62,11 @@ export function ordinal(n: number): string {
   const s = n % 100 >= 11 && n % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" } as Record<number, string>)[n % 10] ?? "th";
   return `${n}${s}`;
 }
+
+/** A metric code in words: "league_goalsFor" -> "league goals for". */
+export function metricName(metric: string): string {
+  return metric
+    .replaceAll("_", " ")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .toLowerCase();
+}

@@ -129,6 +129,14 @@ html.lenis body {
    Hover, keyboard focus or a tap (components/Tips.tsx sets data-open) shows the card; Escape closes it. */
 .tip-card {
   display: none;
+  /* a card under a display number (.bleed) must not inherit its tight tracking or no-wrap */
+  letter-spacing: normal;
+  white-space: normal;
+}
+/* the card under the right-aligned position figure opens leftwards, so it stays on screen */
+.bleed .tip-card {
+  left: auto;
+  right: 0;
 }
 .tip:hover > .tip-card,
 .tip:focus-within > .tip-card,
