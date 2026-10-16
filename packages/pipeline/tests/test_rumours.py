@@ -2,10 +2,10 @@ from dugout_pipeline.adapters.rumours import outlet_of, rumour_paragraphs
 
 BODY = (
     "<p>Monaco pulled out of a deal for <strong>Lamine Camara</strong> on deadline day.</p>"
-    "<p> <span>Related: </span><a href=\"https://www.theguardian.com/x\">All the deals</a> </p>"
+    '<p> <span>Related: </span><a href="https://www.theguardian.com/x">All the deals</a> </p>'
     "<p>There are also whispers that Liverpool will make a move for Camara.</p>"
     "<p>Leeds are in the hat for <strong>Darío</strong> <strong>Osorio.</strong>, says "
-    "<a href=\"https://www.thesun.co.uk/sport/1\">the Sun</a>.</p>"
+    '<a href="https://www.thesun.co.uk/sport/1">the Sun</a>.</p>'
     "<p>A paragraph about nobody in particular.</p>"
 )
 
