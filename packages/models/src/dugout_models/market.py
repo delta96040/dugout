@@ -195,7 +195,7 @@ class Market:
         return cached_frame(name, params, [valuation.TM_DIR, SQUADS], build)
 
     def fit(self) -> None:
-        df = self.frame("valuation", lambda: valuation.build(self.t))
+        df = self.frame("valuation", lambda: valuation.build(self.t), features=valuation.FEATURES)
         self.val = valuation.ValuationModel().fit(df[df.date <= self.now])
         snap = self.frame(
             "mobility",
@@ -245,7 +245,14 @@ class Market:
         row = self.clubs.loc[self.clubs.club_id == str(tm_club), "domestic_competition_id"]
         return row.iloc[0] if len(row) else None
 
-    def fair_fee(self, ids: list[str], seller_comp: list[str | None]) -> pd.DataFrame:
+    def fair_fee(
+        self,
+        ids: list[str],
+        seller_comp: list[str | None],
+        seller_club: list[str | None] | None = None,
+        buyer_club: str | None = None,
+    ) -> pd.DataFrame:
+        """Fair fee if sold to `buyer_club` (Transfermarkt id), or to a typical Premier League club when None."""
         ap = self.ap[(self.ap.date < self.now) & (self.ap.date >= self.now - pd.Timedelta(days=365))]
         form = ap.groupby("player_id").agg(
             minutes_365=("minutes_played", "sum"),
@@ -267,10 +274,19 @@ class Market:
         df["log_to_league"] = np.log1p(self.league_value.get((PL, ls_year), np.nan))
         df["same_league"] = (df.from_comp == PL).astype(float)
         df["year"] = year
+        df["mv"] = df.player_id.map(self.latest_value)
+        df["to_pl"] = 1.0
+        df["pl_to_pl"] = (df.from_comp == PL).astype(float)
+        if seller_club is None:  # each player's current club in the dataset
+            seller_club = df.player_id.map(self.players.current_club_id).astype(str).tolist()
+        df["log_from_cv"] = np.log1p([self.club_value.get(str(c), 0.0) for c in seller_club])
+        pl_clubs = self.squads.tm_club_id.astype(str).unique()
+        typical = float(np.median([self.club_value.get(c, 0.0) for c in pl_clubs]))
+        df["log_to_cv"] = np.log1p(self.club_value.get(str(buyer_club), typical) if buyer_club else typical)
         pos = df.player_id.map(self.players.position)
         for p in ("Attack", "Midfield", "Defender", "Goalkeeper"):
             df[f"pos_{p}"] = (pos == p).astype(float)
-        ok = df.dropna(subset=["age", "log_mv"]).index
+        ok = df[df.mv > 0].dropna(subset=["age", "log_mv"]).index
         out = pd.DataFrame(index=df.index, columns=["fair_fee", "low", "high"], dtype=float)
         if len(ok):
             out.loc[ok] = self.val.predict(df.loc[ok]).to_numpy()
@@ -482,7 +498,12 @@ class Market:
         pool = pool.nlargest(100, "value")  # the realism/outlook models are per-pair; keep the pool bounded
         if pool.empty:
             return pool
-        fees = self.fair_fee(pool.player_id.tolist(), pool.current_club_domestic_competition_id.tolist())
+        fees = self.fair_fee(
+            pool.player_id.tolist(),
+            pool.current_club_domestic_competition_id.tolist(),
+            pool.current_club_id.astype(str).tolist(),
+            buyer_club=tm_club,
+        )
         pool["fair_fee"] = fees.fair_fee.to_numpy()
         incumbents = sq[sq.group == group]
         out = []
@@ -550,7 +571,7 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
     rows: list[dict] = []
     # fair value and sale likelihood for every current Premier League player
     sq = mk.squads.copy()
-    fees = mk.fair_fee(sq.tm_player_id.tolist(), [PL] * len(sq))
+    fees = mk.fair_fee(sq.tm_player_id.tolist(), [PL] * len(sq), sq.tm_club_id.astype(str).tolist())
     sale = mk.sale_likelihood(sq.tm_player_id.tolist())
     for r, f, s in zip(sq.itertuples(), fees.itertuples(), sale.to_numpy(), strict=True):
         pid = (

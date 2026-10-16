@@ -88,6 +88,21 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
   - Not done / ideas: needs model still groups the squad by primary position only; injury tier not used to filter
     candidates (no injury model for non-PL players); manager formation history (TM games table) unused.
 
+- **Phase 6 (in progress, 2026-10-16), branch `valuation-and-research`:**
+  - Merged before this: PR #10 (scouting realism, played positions, rumours, club picker, product voice). Nightly run
+    38937666788 was rebuilding all dossiers with it (check it finished green and the site shows "Dream target").
+  - Valuation fixed: predicts log(fee / market value) with buyer/seller squad value and PL flags (valuation.md:
+    PL buyers MAE 0.516 -> 0.413, PL->PL 0.605 -> 0.350, bias 1.65x -> 1.06x). Lewis Hall fair fee 50.7m -> 60.0m.
+    Nationality tested, no effect. `fair_fee(ids, comps, seller_club, buyer_club)`.
+  - Research + plan: docs/research/landscape.md (projects, papers, novelty = rumour track record, limitation fixes).
+  - **Next, in order:** (1) Wikipedia summer-2026 transfers (MediaWiki API, CC BY-SA) for fees + outcome labels;
+    (2) rumour track record from the Guardian Rumour Mill archive (outlet hit rates, per-rumour probability,
+    backtested); (3) Groq as first LLM (user must create the account and add GROQ_API_KEY; then `gh secret set`);
+    (4) needs model on played positions; (5) API-Football injury history for other big leagues; (6) Championship
+    squads via local refresh; (7) conformal ranges on fair fees.
+  - User wants: product voice everywhere (no "model" wording on the site), realistic targets, all major leagues,
+    and STATUS updated before the context fills so a new chat can continue.
+
 ## Key facts discovered (do not re-research)
 - API-Football free plan: seasons 2022–2024 only + rolling yesterday→tomorrow date window; 100 req/day.
 - Guardian dev key: 500/day, 60/min. football-data.org: 10/min.
