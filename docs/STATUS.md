@@ -72,6 +72,22 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
     issue/PR templates, starter issues #3 #4 (good first issue) #5 (help wanted).
   - Minor: at 400 px viewport height the story's "scroll" label overlaps chapter five's model note.
 
+- **Post-launch improvements (2026-10-16, user feedback), branch `scouting-and-lineup`:**
+  - Lineup: formation family from the manager's observed shape (FPL DEF/FWD counts, last 6 XIs); FPL defenders stay
+    in the back line; positions a player starts at 10%+ (transfermarkt-datasets game_lineups) are natural
+    (lineup_shape.md: back line right 75% vs 61%). FPL "Has joined ..." players leave their old squad.
+  - Realism: destination step-down feature; sale model = gradient boosting with Europe wealth rank (elite young
+    regulars 3.7% predicted vs 3.6% actual; logistic said 28.7%). Rejected ideas recorded in realism.md.
+  - Shortlists: best (value among regulars), realistic (seller poorer than buyer, sale >= base rate, not an elite
+    regular, upgrade on the last regular starter), gem (17-23, projected value). Pool positions from real lineups
+    (25%+ of starts); current clubs from the squad file; recent joiners excluded.
+  - Rumours: `guardian_rumours` adapter (Rumour Mill via the Guardian API), attributed + fact-checked sentences;
+    BBC gossip / FBref not used (terms / robots), see docs/sources.md.
+  - Site: general homepage + "Choose your club" (/clubs/), /story/<club>/ for every club with a picker; chapter
+    three shows the three lists and rumours.
+  - Not done / ideas: needs model still groups the squad by primary position only; injury tier not used to filter
+    candidates (no injury model for non-PL players); manager formation history (TM games table) unused.
+
 ## Key facts discovered (do not re-research)
 - API-Football free plan: seasons 2022–2024 only + rolling yesterday→tomorrow date window; 100 req/day.
 - Guardian dev key: 500/day, 60/min. football-data.org: 10/min.
