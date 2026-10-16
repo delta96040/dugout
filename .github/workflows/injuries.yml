@@ -35,6 +35,7 @@ jobs:
             ~/.cache/huggingface
             .cache
             data/warehouse
+            data/raw
           key: pipeline-${{ github.run_id }}
           restore-keys: pipeline-
       - name: Injuries + lineups
@@ -47,4 +48,5 @@ jobs:
             ~/.cache/huggingface
             .cache
             data/warehouse
+            data/raw
           key: pipeline-${{ github.run_id }}
