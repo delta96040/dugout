@@ -7,6 +7,7 @@ which is how players and clubs are mapped to Reep ids.
 
 from __future__ import annotations
 
+import re
 from datetime import date, datetime
 from typing import Any
 
@@ -40,6 +41,14 @@ def _f(x: Any) -> float | None:
 
 def _ts(x: str | None) -> datetime | None:
     return datetime.fromisoformat(x.replace("Z", "+00:00")) if x else None
+
+
+def left_club(element: dict[str, Any]) -> bool:
+    """FPL keeps players who moved on at their old club, flagged unavailable with news like "Has joined Valencia
+    on loan for the rest of the season" or "Has joined Celta Vigo permanently": they are not in the squad."""
+    return element.get("status") == "u" and bool(
+        re.match(r"\s*has joined\b", element.get("news") or "", re.I)
+    )
 
 
 class FPLAdapter(SourceAdapter):
@@ -139,7 +148,7 @@ class FPLAdapter(SourceAdapter):
                     "web_name": e["web_name"],
                     "birth_date": date.fromisoformat(e["birth_date"]) if e.get("birth_date") else None,
                     "position": POSITIONS.get(e["element_type"]),
-                    "club_id": team_slug.get(str(e["team"])),
+                    "club_id": None if left_club(e) else team_slug.get(str(e["team"])),
                     "updated_at": self.ctx.now,
                 }
             )
@@ -154,7 +163,7 @@ class FPLAdapter(SourceAdapter):
     def parse_injuries(self, boot, team_slug, fpl_to_player, fetched_at: datetime) -> list[dict]:
         rows = []
         for e in boot["elements"]:
-            if e["status"] == "a" and not e["news"]:
+            if (e["status"] == "a" and not e["news"]) or left_club(e):
                 continue
             rows.append(
                 {
