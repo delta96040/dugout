@@ -1,9 +1,12 @@
-"""Transfer valuation: gradient-boosted regression of log(fee) on historical transfers (transfermarkt-datasets, CC0).
-
+"""Transfer valuation: gradient-boosted regression of the fee's premium over market value, log(fee / market value),
+on historical transfers (transfermarkt-datasets, CC0). Fair fee = today's market value x the predicted premium, so the
+estimate moves with the market (a tree model of log(fee) on the transfer year cannot extrapolate past its last
+training year, and underpriced Premier League deals by a third).
 Features known at the time of each transfer:
   age; position; market value at the time ("quality" as the market saw it); minutes, goals and assists in the
   previous 365 days; league strength of the selling and buying clubs (median player value in that league
-  that year); transfer year (fee inflation).
+  that year); squad value of the selling and buying clubs; whether the buyer is a Premier League club and whether
+  the move is between two Premier League clubs. Nationality was tested and adds nothing (valuation.md).
 Contract months remaining is *not* available historically (the dataset only has current contract expiry), so it
 cannot be learnt here; Transfer Realism uses it from current data with a documented prior weight instead.
 
@@ -33,12 +36,18 @@ FEATURES = [
     "log_from_league",
     "log_to_league",
     "same_league",
-    "year",
     "pos_Attack",
     "pos_Midfield",
     "pos_Defender",
     "pos_Goalkeeper",
+    "to_pl",
+    "pl_to_pl",
+    "log_from_cv",
+    "log_to_cv",
 ]
+# the previous model (log fee on the transfer year), kept for the backtest comparison
+FEATURES_V1 = [*FEATURES[:8], "year", *FEATURES[8:12]]
+PL = "GB1"
 
 
 def load(tm_dir: Path = TM_DIR) -> dict[str, pd.DataFrame]:
@@ -107,10 +116,32 @@ def build(t: dict[str, pd.DataFrame]) -> pd.DataFrame:
         )
         tr[f"log_{side}_league"] = np.log1p(tr[f"{side}_league"])
     tr["same_league"] = (tr.from_comp == tr.to_comp).astype(float)
+    tr["to_pl"] = (tr.to_comp == PL).astype(float)
+    tr["pl_to_pl"] = ((tr.to_comp == PL) & (tr.from_comp == PL)).astype(float)
+    cv = club_values(t)
+    tr["season"] = tr.date.dt.year - (tr.date.dt.month < 6)
+    for side in ("from", "to"):
+        key = pd.MultiIndex.from_arrays([tr[f"{side}_club_id"].astype(str), tr.season])
+        tr[f"log_{side}_cv"] = np.log1p(cv.reindex(key).fillna(0).to_numpy())
     for pos in ("Attack", "Midfield", "Defender", "Goalkeeper"):
         tr[f"pos_{pos}"] = (tr.position == pos).astype(float)
     tr["log_fee"] = np.log(tr.fee)
     return tr.dropna(subset=["age", "log_mv"]).reset_index(drop=True)
+
+
+def club_values(t: dict[str, pd.DataFrame]) -> pd.Series:
+    """Squad value by (club id, season starting that June): the sum of each player's latest valuation in the year
+    before 1 June."""
+    v = t["player_valuations"][["player_id", "date", "market_value_in_eur", "current_club_id"]].copy()
+    v["date"] = pd.to_datetime(v.date)
+    out = []
+    for y in range(int(v.date.dt.year.min()) + 1, int(v.date.dt.year.max()) + 2):
+        w = v[(v.date < f"{y}-06-01") & (v.date >= f"{y - 1}-06-01")].sort_values("date")
+        s = w.groupby("player_id").tail(1).groupby("current_club_id").market_value_in_eur.sum()
+        out.append(
+            pd.Series(s.to_numpy(), index=pd.MultiIndex.from_arrays([s.index.astype(str), [y] * len(s)]))
+        )
+    return pd.concat(out)
 
 
 def _window_sums(keys: pd.DataFrame, ap: pd.DataFrame, days: int = 365) -> pd.DataFrame:
@@ -152,14 +183,17 @@ class ValuationModel:
     )
 
     def fit(self, df: pd.DataFrame) -> ValuationModel:
-        self.model = lgb.LGBMRegressor(**self.params).fit(df[FEATURES], df.log_fee)
+        df = df[df.mv > 0]
+        premium = df.log_fee - np.log(df.mv)
+        self.model = lgb.LGBMRegressor(**self.params).fit(df[FEATURES], premium)
         # residual spread for a fair-price range (10th-90th percentile)
-        res = df.log_fee - self.model.predict(df[FEATURES])
+        res = premium - self.model.predict(df[FEATURES])
         self.q10, self.q90 = float(np.quantile(res, 0.1)), float(np.quantile(res, 0.9))
         return self
 
     def predict(self, df: pd.DataFrame) -> pd.DataFrame:
-        mu = self.model.predict(df[FEATURES])
+        """df needs FEATURES and `mv` (market value today, > 0)."""
+        mu = np.log(df.mv.to_numpy(float)) + self.model.predict(df[FEATURES])
         return pd.DataFrame(
             {"fair_fee": np.exp(mu), "low": np.exp(mu + self.q10), "high": np.exp(mu + self.q90)},
             index=df.index,
@@ -180,10 +214,31 @@ def _metrics(y_log: np.ndarray, pred_log: np.ndarray) -> dict:
 def backtest(out_dir: Path | None = None) -> dict:
     df = build(load())
     today = pd.Timestamp(datetime.now(UTC).date())  # some rows are pre-agreed future moves; exclude them
+    df = df[df.mv > 0]
     train, test = df[df.date < SPLIT], df[(df.date >= SPLIT) & (df.date <= today)]
     model = ValuationModel().fit(train)
     pred = np.log(model.predict(test).fair_fee.to_numpy())
     has_mv = test.mv.to_numpy() > 0
+    prev = lgb.LGBMRegressor(**ValuationModel.params).fit(train[FEATURES_V1], train.log_fee)
+    pred_prev = prev.predict(test[FEATURES_V1])
+    y = test.log_fee.to_numpy()
+    segments = {
+        "all": np.ones(len(test), bool),
+        "Premier League buyer": (test.to_pl == 1).to_numpy(),
+        "Premier League to Premier League": (test.pl_to_pl == 1).to_numpy(),
+        "Premier League buyer, age 24 or under": ((test.to_pl == 1) & (test.age <= 24)).to_numpy(),
+    }
+    seg = {
+        name: {
+            "n": int(m.sum()),
+            "model": _metrics(y[m], pred[m]),
+            "previous_model": _metrics(y[m], pred_prev[m]),
+            "market_value": _metrics(y[m], np.log(test.mv.to_numpy()[m])),
+            "median_fee_over_estimate": float(np.exp(np.median(y[m] - pred[m]))),
+            "median_fee_over_previous": float(np.exp(np.median(y[m] - pred_prev[m]))),
+        }
+        for name, m in segments.items()
+    }
     report = {
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "train": {"n": len(train), "from": str(train.date.min().date()), "to": str(train.date.max().date())},
@@ -193,6 +248,7 @@ def backtest(out_dir: Path | None = None) -> dict:
             test.log_fee.to_numpy()[has_mv], np.log(test.mv.to_numpy()[has_mv])
         ),
         "model_on_baseline_rows": _metrics(test.log_fee.to_numpy()[has_mv], pred[has_mv]),
+        "segments": seg,
         "importance": dict(
             sorted(
                 zip(FEATURES, model.model.feature_importances_.tolist(), strict=True), key=lambda kv: -kv[1]
@@ -216,6 +272,21 @@ def backtest(out_dir: Path | None = None) -> dict:
             "|---|---|---|---|---|",
             f"| **dugout valuation** | {m['mae_log']:.3f} | {m['median_ape']:.1%} | {m['within_25pct']:.1%} | {m['n']} |",
             f"| Market value at the time | {b['mae_log']:.3f} | {b['median_ape']:.1%} | {b['within_25pct']:.1%} | {b['n']} |",
+            "",
+            "By segment (MAE of log fee; fee / estimate is the median ratio, 1.00 = unbiased):",
+            "",
+            "| Segment | Transfers | dugout | previous model | market value | fee / estimate (previous) |",
+            "|---|---|---|---|---|---|",
+            *[
+                f"| {k} | {v['n']} | {v['model']['mae_log']:.3f} | {v['previous_model']['mae_log']:.3f} | "
+                f"{v['market_value']['mae_log']:.3f} | {v['median_fee_over_estimate']:.2f} "
+                f"({v['median_fee_over_previous']:.2f}) |"
+                for k, v in report["segments"].items()
+            ],
+            "",
+            "The previous model regressed log(fee) on the transfer year; trees cannot extrapolate a year they have not "
+            "seen, so it underpriced recent Premier League deals. Nationality (an English or homegrown premium) was "
+            "tested as a feature and added nothing once club context is known; it is not used.",
             "",
             "Feature importance (split count): "
             + ", ".join(f"{k} {v}" for k, v in report["importance"].items()),

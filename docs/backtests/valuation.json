@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T16:21:09+00:00",
+  "generated_at": "2026-10-16T17:19:22+00:00",
   "train": {
     "n": 11770,
     "from": "2005-01-01",
@@ -10,9 +10,9 @@
     "to": "2026-09-03"
   },
   "model": {
-    "mae_log": 0.6241102788706934,
-    "median_ape": 0.4385966271652756,
-    "within_25pct": 0.2871118672905147,
+    "mae_log": 0.5772527383209118,
+    "median_ape": 0.41810646358283216,
+    "within_25pct": 0.31475967673330496,
     "n": 4702
   },
   "baseline_market_value": {
@@ -22,24 +22,121 @@
     "n": 4702
   },
   "model_on_baseline_rows": {
-    "mae_log": 0.6241102788706934,
-    "median_ape": 0.4385966271652756,
-    "within_25pct": 0.2871118672905147,
+    "mae_log": 0.5772527383209118,
+    "median_ape": 0.41810646358283216,
+    "within_25pct": 0.31475967673330496,
     "n": 4702
   },
+  "segments": {
+    "all": {
+      "n": 4702,
+      "model": {
+        "mae_log": 0.5772527383209118,
+        "median_ape": 0.41810646358283216,
+        "within_25pct": 0.31475967673330496,
+        "n": 4702
+      },
+      "previous_model": {
+        "mae_log": 0.6241102788706934,
+        "median_ape": 0.4385966271652756,
+        "within_25pct": 0.2871118672905147,
+        "n": 4702
+      },
+      "market_value": {
+        "mae_log": 0.6780004324389304,
+        "median_ape": 0.49999999999999906,
+        "within_25pct": 0.2990216928966397,
+        "n": 4702
+      },
+      "median_fee_over_estimate": 0.9856610392779751,
+      "median_fee_over_previous": 1.0828724766710327
+    },
+    "Premier League buyer": {
+      "n": 371,
+      "model": {
+        "mae_log": 0.4126460784892478,
+        "median_ape": 0.294492964564883,
+        "within_25pct": 0.431266846361186,
+        "n": 371
+      },
+      "previous_model": {
+        "mae_log": 0.5161727928141798,
+        "median_ape": 0.3724259543276858,
+        "within_25pct": 0.33692722371967654,
+        "n": 371
+      },
+      "market_value": {
+        "mae_log": 0.5249003764490491,
+        "median_ape": 0.3103448275862065,
+        "within_25pct": 0.42048517520215634,
+        "n": 371
+      },
+      "median_fee_over_estimate": 0.9510323240027717,
+      "median_fee_over_previous": 1.336249867821596
+    },
+    "Premier League to Premier League": {
+      "n": 111,
+      "model": {
+        "mae_log": 0.34993550950967145,
+        "median_ape": 0.2341304269482166,
+        "within_25pct": 0.5585585585585585,
+        "n": 111
+      },
+      "previous_model": {
+        "mae_log": 0.6054553694313209,
+        "median_ape": 0.41812648928177987,
+        "within_25pct": 0.2072072072072072,
+        "n": 111
+      },
+      "market_value": {
+        "mae_log": 0.4875885357673966,
+        "median_ape": 0.3081761006289312,
+        "within_25pct": 0.36036036036036034,
+        "n": 111
+      },
+      "median_fee_over_estimate": 1.0566933400034417,
+      "median_fee_over_previous": 1.6480456318759082
+    },
+    "Premier League buyer, age 24 or under": {
+      "n": 215,
+      "model": {
+        "mae_log": 0.42557108466580124,
+        "median_ape": 0.3127633102507153,
+        "within_25pct": 0.4232558139534884,
+        "n": 215
+      },
+      "previous_model": {
+        "mae_log": 0.5530365875410128,
+        "median_ape": 0.37695520235034036,
+        "within_25pct": 0.29767441860465116,
+        "n": 215
+      },
+      "market_value": {
+        "mae_log": 0.6299080504405142,
+        "median_ape": 0.35999999999999993,
+        "within_25pct": 0.3627906976744186,
+        "n": 215
+      },
+      "median_fee_over_estimate": 0.9995322882489404,
+      "median_fee_over_previous": 1.3779398130302023
+    }
+  },
   "importance": {
-    "age": 4277,
-    "log_mv": 3221,
-    "log_to_league": 2442,
-    "year": 2081,
-    "log_from_league": 2072,
-    "minutes_365": 1168,
-    "apps_365": 829,
-    "ga_p90_365": 800,
-    "pos_Attack": 316,
-    "same_league": 258,
-    "pos_Defender": 220,
-    "pos_Midfield": 197,
-    "pos_Goalkeeper": 119
+    "log_to_cv": 3091,
+    "age": 2949,
+    "log_from_cv": 2922,
+    "log_mv": 2668,
+    "log_to_league": 1991,
+    "log_from_league": 1659,
+    "minutes_365": 712,
+    "ga_p90_365": 515,
+    "apps_365": 476,
+    "pos_Attack": 250,
+    "same_league": 188,
+    "pos_Defender": 172,
+    "pos_Midfield": 137,
+    "to_pl": 115,
+    "pos_Goalkeeper": 113,
+    "pl_to_pl": 42
   }
 }
