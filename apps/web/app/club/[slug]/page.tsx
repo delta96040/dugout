@@ -4,7 +4,7 @@ import MetaNum from "@/components/MetaNum";
 import Num from "@/components/Num";
 import Shortlists from "@/components/Shortlists";
 import { ordinal, plainReason, when } from "@/lib/format";
-import { clubSlugs, dossier, firstStat } from "@/lib/data";
+import { clubSlugs, dossier, firstStat, leagueOf } from "@/lib/data";
 import { shortlists } from "@/lib/shortlist";
 
 export function generateStaticParams() {
@@ -30,8 +30,8 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
   return (
     <article>
       <section className="grid12 relative overflow-hidden pt-10 pb-6">
-        <p className="hang mono-label">Confidential · scouting dossier · season <span data-meta>{d.club.season}</span></p>
-        <h1 className="hang mt-3 font-display text-[clamp(3.5rem,11vw,9rem)] leading-[0.9]">{d.club.name}</h1>
+        <p className="hang mono-label">Confidential · scouting dossier · <span data-name>{leagueOf(d).name}</span> · season <span data-meta>{d.club.season}</span></p>
+        <h1 className="hang mt-3 font-display text-[clamp(3.5rem,11vw,9rem)] leading-[0.9]" data-name>{d.club.name}</h1>
         {pos && (
           <div className="col-span-12 -mt-4 sm:-mt-10">
             <p className="bleed text-ink/90" aria-label="League position">

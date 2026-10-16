@@ -15,10 +15,10 @@ from dugout_pipeline.clubs import normalise
 # words that say nothing about which club it is ("Real" does: Real Madrid vs Rayo ... de Madrid)
 _STOP = {"cf", "club", "de", "del", "la", "el", "ud", "cd", "rcd", "rc", "sd", "ca", "ac", "as", "ss", "us"}
 _STOP |= {"sc", "calcio", "futbol", "balompie", "and", "of", "1"}
-# reserve and youth sides ("Ajax II", "Barcelona U19", "Jong PSV"), not "Willem II"
-_JUNIOR = re.compile(
-    r"(\s(ii|iii|b|c)$)|\b(u\d{2}|youth|reserves?|juniors?|primavera|castilla|jong|academy|amateure?)\b", re.I
-)
+# youth and reserve sides ("Barcelona U19", "Jong PSV"); "Ajax II" is a reserve side only when "Ajax" is also a
+# candidate (Willem II is a club of its own)
+_JUNIOR = re.compile(r"\b(u\d{2}|youth|reserves?|juniors?|primavera|castilla|jong|academy|amateure?)\b", re.I)
+_SECOND_TEAM = re.compile(r"^(.+?)\s(ii|iii|b|c)$", re.I)
 CLUB_THRESHOLD = 0.75
 PLAYER_THRESHOLD = 0.5
 
@@ -42,9 +42,11 @@ def best_club(
 ) -> tuple[str, str, str] | None:
     """The candidate (reep id, label, Transfermarkt id) whose label best matches any of `names`. Ties go to a
     Transfermarkt id in `prefer` (clubs that have played in the league: "Fortuna Sittard", not amateur "Sittard")."""
+    labels = {c[1] for c in candidates}
     scored = []
     for cand in candidates:
-        if _JUNIOR.search(cand[1]):
+        second = _SECOND_TEAM.match(cand[1])
+        if _JUNIOR.search(cand[1]) or (second and second.group(1) in labels):
             continue
         bonus = 0.05 if prefer and cand[2] in prefer else 0.0
         scored.append((max(name_score(n, cand[1]) for n in names if n) + bonus, cand))

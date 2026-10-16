@@ -82,7 +82,9 @@ def cmd_refresh_values(args) -> int:
     from dugout_pipeline.runner import format_report, run
 
     ctx = _ctx(args)
-    squads = "fpl" if ctx.league_cfg["provider_ids"].get("fpl") else "football_data_org"  # clubs + TM ids first
+    squads = (
+        "fpl" if ctx.league_cfg["provider_ids"].get("fpl") else "football_data_org"
+    )  # clubs + TM ids first
     job = run(ctx, [squads, "transfermarkt", "transfermarkt_file"])
     print(format_report(job))
     print("Commit data/reference/transfermarkt_squads.csv so CI can use it.")

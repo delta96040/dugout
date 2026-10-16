@@ -568,7 +568,9 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
                     tb,
                     pname,
                     label,
-                    f"Transfermarkt valued {pname} at {{p}}." if mv is None else f"Transfermarkt values {pname} at {{p}}.",
+                    f"Transfermarkt valued {pname} at {{p}}."
+                    if mv is None
+                    else f"Transfermarkt values {pname} at {{p}}.",
                     mv_rec,
                     "eur_m",
                     entity_id=pid,
@@ -635,14 +637,15 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
 def _dataset_value(tb: Toolbox, pid: str) -> tuple[tuple[str, Any] | None, date | None]:
     """The player's latest transfermarkt-datasets valuation (CC0; the dataset stops in June), cited by SQL."""
     row = tb.con.execute(
-        """SELECT max(date) FROM market_values WHERE player_id = ? AND source = 'transfermarkt_datasets'""", [pid]
+        """SELECT max(date) FROM market_values WHERE player_id = ? AND source = 'transfermarkt_datasets'""",
+        [pid],
     ).fetchone()
     if not row or row[0] is None:
         return None, None
     rec = tb.sql(
         """SELECT value_eur FROM market_values WHERE player_id = ? AND source = 'transfermarkt_datasets'
-           AND date = ?""",
-        [pid, row[0]],
+           AND date = CAST(? AS DATE)""",
+        [pid, row[0].isoformat()],
         entity_type="player",
         entity_id=pid,
         metric="market_value",

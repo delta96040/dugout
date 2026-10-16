@@ -222,7 +222,9 @@ class Market:
         names = self.t["clubs"].assign(club_id=lambda d: d.club_id.astype(str)).set_index("club_id").name
         if "club_name" in self.squads:
             extra = self.squads.dropna(subset=["club_name"]).drop_duplicates("tm_club_id")
-            names = pd.concat([names, extra.set_index("tm_club_id").club_name[lambda s: ~s.index.isin(names.index)]])
+            names = pd.concat(
+                [names, extra.set_index("tm_club_id").club_name[lambda s: ~s.index.isin(names.index)]]
+            )
         return names
 
     def buyer_comp(self, tm_club: str | None) -> str:
@@ -548,6 +550,7 @@ class Market:
             & (pool.current_club_id.astype(str) != tm_club)
             & (pool.last_season >= self.now.year - 1)
         ].copy()
+        pool["current_club_id"] = pool.current_club_id.astype(str)
         # transfermarkt-datasets stops in July; the current squads (squad file, other leagues' squads) know who has
         # moved since (e.g. Baleba to Manchester United in August). Use the current club, and leave out anyone who
         # joined his club in the last 12 months: clubs rarely sell a new signing.
@@ -555,7 +558,9 @@ class Market:
         in_sq = pool.player_id.isin(now_sq.index)
         pool.loc[in_sq, "current_club_id"] = pool.loc[in_sq, "player_id"].map(now_sq.tm_club_id)
         pool.loc[in_sq, "current_club_name"] = pool.loc[in_sq, "current_club_id"].map(self.club_names())
-        pool.loc[in_sq, "current_club_domestic_competition_id"] = pool.loc[in_sq, "player_id"].map(now_sq.comp)
+        pool.loc[in_sq, "current_club_domestic_competition_id"] = pool.loc[in_sq, "player_id"].map(
+            now_sq.comp
+        )
         joined = pd.to_datetime(pool.player_id.map(now_sq.joined), errors="coerce")
         pool = pool[
             (pool.current_club_id.astype(str) != tm_club)
@@ -668,8 +673,9 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
     sq = mk.squads.copy()
     fees = pd.concat(
         [
-            mk.fair_fee(g.tm_player_id.tolist(), [comp] * len(g), g.tm_club_id.astype(str).tolist(), None, comp)
-            .set_index(g.index)
+            mk.fair_fee(
+                g.tm_player_id.tolist(), [comp] * len(g), g.tm_club_id.astype(str).tolist(), None, comp
+            ).set_index(g.index)
             for comp, g in sq.groupby("comp", sort=False)
         ]
     ).reindex(sq.index)

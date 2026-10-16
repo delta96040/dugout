@@ -11,7 +11,7 @@ from dugout_pipeline.adapters.base import DAY, TIER_DATA, SourceAdapter
 from dugout_pipeline.db import upsert
 
 QUERY = """
-SELECT ?tm ?club ?venueLabel ?coord ?vstart ?coach ?coachLabel ?start ?dob ?countryLabel WHERE {
+SELECT ?tm ?club ?venueLabel ?coord ?vstart ?coach ?coachLabel ?start ?sprec ?dob ?countryLabel WHERE {
   VALUES ?tm { %s }
   ?club wdt:P7223 ?tm .
   OPTIONAL {
@@ -24,6 +24,7 @@ SELECT ?tm ?club ?venueLabel ?coord ?vstart ?coach ?coachLabel ?start ?dob ?coun
     ?club p:P286 ?st . ?st ps:P286 ?coach .
     FILTER NOT EXISTS { ?st pq:P582 ?end }
     OPTIONAL { ?st pq:P580 ?start }
+    OPTIONAL { ?st pqv:P580 ?sv . ?sv wikibase:timePrecision ?sprec }  # 11 = day, 9 = year
     OPTIONAL { ?coach wdt:P569 ?dob }
     OPTIONAL { ?coach wdt:P27 ?country }
   }
@@ -151,7 +152,8 @@ class WikidataAdapter(SourceAdapter):
                     "birth_date": _wd_date(b, "dob"),
                     "nationality": b.get("countryLabel", {}).get("value"),
                     "club_id": slug,
-                    "start_date": _wd_date(b, "start"),
+                    # a year-only start ("2026") arrives as 1 January: no appointment date rather than a wrong one
+                    "start_date": _wd_date(b, "start") if _precision(b) >= DAY_PRECISION else None,
                     "source": self.name,
                     "updated_at": fetched_at,
                 }
@@ -171,3 +173,14 @@ def _wd_date(binding: dict, key: str) -> date | None:
         return date.fromisoformat(value[:10])
     except ValueError:
         return None
+
+
+DAY_PRECISION = 11  # Wikidata time precision: 11 day, 10 month, 9 year
+
+
+def _precision(binding: dict) -> int:
+    """The start date's precision; statements without one (older answers, tests) count as day-precise."""
+    try:
+        return int(binding.get("sprec", {}).get("value", DAY_PRECISION))
+    except ValueError:
+        return DAY_PRECISION

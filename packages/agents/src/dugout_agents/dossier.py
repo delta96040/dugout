@@ -191,3 +191,12 @@ def write(doc: dict, out_dir: Path) -> Path:
     path = out_dir / f"{doc['club']['slug']}.json"
     path.write_text(json.dumps(doc, indent=2, ensure_ascii=False, default=str) + "\n", encoding="utf-8")
     return path
+
+
+def write_leagues(path: Path) -> Path:
+    """`data/leagues.json`: the configured leagues in config order, for the site's league picker."""
+    from dugout_pipeline.clubs import league_config, leagues
+
+    rows = [{"key": lg, **{k: league_config(lg)[k] for k in ("name", "country")}} for lg in leagues()]
+    path.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return path

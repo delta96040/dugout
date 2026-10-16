@@ -110,7 +110,10 @@ class FootballDataOrgAdapter(SourceAdapter):
         overrides = {str(k): str(v) for k, v in (cfg.get("transfermarkt_clubs") or {}).items()}
         # the league's own clubs in transfermarkt-datasets first (canonical names), then Reep's clubs in the
         # country for a club new to the division (e.g. promoted for the first time)
-        tiers = [self._tm_clubs(cfg["provider_ids"].get("transfermarkt")), self.ctx.reep.teams(cfg["country"])]
+        tiers = [
+            self._tm_clubs(cfg["provider_ids"].get("transfermarkt")),
+            self.ctx.reep.teams(cfg["country"]),
+        ]
         clubs, ids = [], []
         for t in doc["teams"]:
             fid = str(t["id"])
