@@ -596,7 +596,7 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
 
 
 # ---- Scout -------------------------------------------------------------------------------------------------
-def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
+def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
     name = tb.name(club)
     facts: list[Fact] = []
     # signings the club has already announced (official site) shape the needs; say so first
@@ -632,12 +632,19 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
                 entity_id=club,
             )
         )
-        cands = tb.con.execute(
-            """SELECT entity_id, context, value_text FROM model_outputs WHERE model = 'scout'
-               AND metric = 'candidate_name' AND context LIKE ? ORDER BY context""",
-            [f"{club}:need:{rank}:%"],
-        ).fetchall()
-        for pid, ctx, cname in cands[:per_need]:
+        # two lists per need: the best fit whatever the odds, and the moves most likely to happen
+        picked: list[tuple[str, str, str, str]] = []
+        for kind in ("best", "realistic"):
+            cands = tb.con.execute(
+                """SELECT entity_id, context, value_text FROM model_outputs WHERE model = 'scout'
+                   AND metric = 'candidate_name' AND context LIKE ?
+                   ORDER BY CAST(split_part(context, ':', 5) AS INTEGER)""",
+                [f"{club}:need:{rank}:{kind}:%"],
+            ).fetchall()
+            fresh = [(kind, *c) for c in cands if c[0] not in {p[1] for p in picked}]
+            picked += fresh[:per_need]
+        for kind, pid, ctx, cname in picked:
+            lead = "Best fit" if kind == "best" else "More realistic"
             tb.register(pid, cname)
             cclub = tb.con.execute(
                 "SELECT value_text FROM model_outputs WHERE model='scout' AND entity_id=? AND metric='candidate_club' "
@@ -646,7 +653,12 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
             ).fetchone()[0]
             tb.register(f"club_name:{cclub}", cclub)  # names like "TSG 1899 Hoffenheim" are allowed digits
             for metric, label, tmpl, fmt in (
-                ("age", "age", f"{cname} ({cclub}) is {{p}} years old.", "int"),
+                (
+                    "age",
+                    f"age ({'best-fit' if kind == 'best' else 'realistic'} target)",
+                    f"{lead}: {cname} ({cclub}), who is {{p}} years old.",
+                    "int",
+                ),
                 ("market_value", "market value", f"{cname} has a market value of {{p}}.", "eur_m"),
                 (
                     "fair_fee",

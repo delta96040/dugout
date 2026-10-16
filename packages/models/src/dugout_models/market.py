@@ -6,10 +6,11 @@ squad file `data/reference/transfermarkt_squads.csv` (values and contracts as of
   fair_fee              valuation model (docs/backtests/valuation.md): price if sold to another Premier League club
   sale_likelihood       mobility model (realism.md): P(sold for a fee in a transfer window), features as of today
   needs                 positions where the club is thinnest/weakest (heuristic: depth and value at the position)
-  shortlist             candidates per need, ranked by the mean percentile of quality (market value), playing-time
-                        outlook at the club (opportunity.md) and realism = P(move to this club in a window)
-                        = P(sold) x P(this buyer | sold) (realism.md). The ranking rule is a transparent heuristic;
-                        each component is a backtested model.
+  shortlist             two lists per need, from first-tier players in every league the dataset covers.
+                        best: highest market value among players the playing-time model (opportunity.md) expects
+                        to get at least 40% of the club's minutes. realistic: ranked by realism = P(move to this club in a window)
+                        = P(sold) x P(this buyer | sold) (realism.md), among candidates at least as good as the
+                        pool's median. The ranking rules are transparent heuristics; each component is backtested.
   sale_likelihood is not scored for players who joined their club in the last 12 months (no data at the new club).
 """
 
@@ -58,6 +59,7 @@ NEEDED = {
     "centre-forward": 2,
 }
 SHORTLIST = 5
+REGULAR_SHARE = 0.4  # expected share of the club's minutes to count as a regular (best-fit list)
 
 
 def _season(d: pd.Series) -> pd.Series:
@@ -179,7 +181,10 @@ class Market:
         df = self.frame("valuation", lambda: valuation.build(self.t))
         self.val = valuation.ValuationModel().fit(df[df.date <= self.now])
         snap = self.frame(
-            "mobility", lambda: realism.snapshots(self.t, range(2015, 2026)), years=[2015, 2025]
+            "mobility",
+            lambda: realism.snapshots(self.t, range(2015, 2026)),
+            years=[2015, 2025],
+            features=realism.MOBILITY,  # a feature change rebuilds the cached frame
         )
         snap = snap.dropna(subset=realism.MOBILITY)
         self.mob = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(
@@ -187,7 +192,10 @@ class Market:
         )
         self.mob_base = float(snap.moved.mean())
         pairs = self.frame(
-            "destination", lambda: realism.destination_pairs(self.t, range(2015, 2026)), years=[2015, 2025]
+            "destination",
+            lambda: realism.destination_pairs(self.t, range(2015, 2026)),
+            years=[2015, 2025],
+            features=realism.DESTINATION,
         )
         pairs = pairs.dropna(subset=realism.DESTINATION)
         self.dest = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(
@@ -422,6 +430,19 @@ class Market:
             & (pool.current_club_id.astype(str) != tm_club)
             & (pool.last_season >= self.now.year - 1)
         ].copy()
+        # transfermarkt-datasets stops in July; the squad file (refreshed locally) knows who has moved to a Premier
+        # League club since (e.g. Baleba to Manchester United in August). Use the current club, and leave out
+        # anyone who joined his club in the last 12 months: clubs rarely sell a new signing.
+        now_sq = self.squads.drop_duplicates("tm_player_id").set_index("tm_player_id")
+        in_sq = pool.player_id.isin(now_sq.index)
+        names = self.clubs.set_index("club_id").name
+        pool.loc[in_sq, "current_club_id"] = pool.loc[in_sq, "player_id"].map(now_sq.tm_club_id)
+        pool.loc[in_sq, "current_club_name"] = pool.loc[in_sq, "current_club_id"].map(names)
+        pool.loc[in_sq, "current_club_domestic_competition_id"] = PL
+        joined = pd.to_datetime(pool.player_id.map(now_sq.joined), errors="coerce")
+        pool = pool[
+            (pool.current_club_id.astype(str) != tm_club) & ~(joined > self.now - pd.Timedelta(days=365))
+        ].copy()
         pool["age"] = (self.now - pd.to_datetime(pool.date_of_birth)).dt.days / 365.25
         pool["value"] = pool.player_id.map(self.latest_value)
         recent = (
@@ -436,7 +457,7 @@ class Market:
             & (pool.value <= 1.2 * cap)
             & (pool.minutes_365 >= 1200)
         ]
-        pool = pool.nlargest(60, "value")  # the realism/outlook models are per-pair; keep the pool bounded
+        pool = pool.nlargest(100, "value")  # the realism/outlook models are per-pair; keep the pool bounded
         if pool.empty:
             return pool
         fees = self.fair_fee(pool.player_id.tolist(), pool.current_club_domestic_competition_id.tolist())
@@ -464,10 +485,20 @@ class Market:
         df = pd.DataFrame(out)
         if df.empty:
             return df
-        df["score"] = (
-            df.value.rank(pct=True) + df.minutes_share.rank(pct=True) + df.p_move.rank(pct=True)
-        ) / 3
-        return df.sort_values("score", ascending=False).head(SHORTLIST).reset_index(drop=True)
+        # Two lists, as a sporting director reads them. Best fit: the highest quality (market value) among players
+        # the playing-time model expects to be regulars, whatever the cost or the odds. Realistic: the moves most
+        # likely to happen (realism model), among candidates at least as good as the pool's median on quality and
+        # playing time. (A single blended score let a 1-in-150 move top the list.)
+        df["score"] = (df.value.rank(pct=True) + df.minutes_share.rank(pct=True)) / 2
+        regulars = df[df.minutes_share >= REGULAR_SHARE]
+        best = (
+            regulars.sort_values(["value", "minutes_share"], ascending=False)
+            .head(SHORTLIST)
+            .assign(kind="best")
+        )
+        good = df[df.score >= df.score.median()]
+        real = good.sort_values("p_move", ascending=False).head(SHORTLIST).assign(kind="realistic")
+        return pd.concat([best, real]).reset_index(drop=True)
 
 
 def _tm_to_reep(con: duckdb.DuckDBPyConnection) -> dict[str, str]:
@@ -515,11 +546,12 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
             rows.append(_row("scout", "club", slug, "need", n.group, now, f"need:{rank}"))
             rows.append(_row("scout", "club", slug, "need_depth", int(n.depth), now, f"need:{rank}"))
             short = mk.shortlist(slug, n.group, str(tm_club))
-            for k, c in short.iterrows():
+            for c in short.itertuples():
+                k = int((short.kind[: c.Index] == c.kind).sum())  # position within its list, from 0
                 pid = reep.get(c.tm_player_id, f"transfermarkt:{c.tm_player_id}")
-                ctx = f"{slug}:need:{rank}:{k + 1}"
+                ctx = f"{slug}:need:{rank}:{c.kind}:{k + 1}"
                 rows += [
-                    _row("scout", "player", pid, "candidate_name", c["name"], now, ctx),
+                    _row("scout", "player", pid, "candidate_name", c.name, now, ctx),
                     _row("scout", "player", pid, "candidate_club", c.club, now, ctx),
                     _row("scout", "player", pid, "candidate_position", n.group, now, ctx),
                     _row("scout", "player", pid, "age", round(c.age, 1), now, ctx),
