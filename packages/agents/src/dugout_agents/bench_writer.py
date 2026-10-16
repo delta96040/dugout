@@ -13,21 +13,20 @@ import time
 from datetime import UTC, datetime
 from pathlib import Path
 
+from dugout_agents import llm as llm_mod
 from dugout_agents import writer
 from dugout_agents.graph import Context
-from dugout_agents.llm import LLM, OpenAICompatLLM
+from dugout_agents.llm import LLM
 from dugout_agents.specialists import CLUB_LEVEL, SPECIALISTS
-
-ENDPOINTS = {"local": "http://localhost:11434/v1", "openrouter": "https://openrouter.ai/api/v1"}
+from dugout_pipeline.settings import get_settings
 
 
 def make_llm(spec: str) -> LLM:
-    """`local:<model>` (Ollama) or `openrouter:<model>` (key from .env)."""
-    from dugout_pipeline.settings import get_settings
-
-    where, model = spec.split(":", 1)
-    key = get_settings().secret("openrouter_api_key") if where == "openrouter" else None
-    return OpenAICompatLLM(ENDPOINTS[where], model, key)
+    """`<provider>:<model>` as in LLM_CHAIN (groq, openrouter, local)."""
+    llm = llm_mod.make_llm(spec, get_settings().llm_local_base_url)
+    if llm is None:
+        raise SystemExit(f"{spec}: the provider's API key is not set in .env")
+    return llm
 
 
 def sections(ctx: Context, clubs: list[str]) -> list[dict]:

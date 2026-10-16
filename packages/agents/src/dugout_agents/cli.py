@@ -110,7 +110,9 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--set", default="questions", choices=["questions", "holdout"], help="question set")
     s.set_defaults(fn=cmd_eval)
     s = sub.add_parser("bench-writer", help="compare LLMs on how often their notes pass the publish gate")
-    s.add_argument("--models", required=True, help="comma list of local:<model> / openrouter:<model>")
+    s.add_argument(
+        "--models", required=True, help="comma list of <provider>:<model> (groq, openrouter, local)"
+    )
     s.add_argument("--clubs", default="liverpool,arsenal")
     s.set_defaults(fn=cmd_bench_writer)
     args = p.parse_args(argv)

@@ -29,7 +29,8 @@ jobs:
       API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
       FOOTBALL_DATA_ORG_KEY: ${{ secrets.FOOTBALL_DATA_ORG_KEY }}
       GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
-      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }} # optional: without it every dossier is templated
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }} # optional LLM (first in LLM_CHAIN); without any LLM key dossiers are templated
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }} # optional: second LLM in the chain
       HF_TOKEN: ${{ secrets.HF_TOKEN }} # optional: Fact-Check model downloads
     steps:
       - uses: actions/checkout@v7

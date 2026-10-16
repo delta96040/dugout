@@ -27,15 +27,13 @@ class Settings(BaseSettings):
     football_data_org_key: SecretStr | None = None
     guardian_api_key: SecretStr | None = None
     openrouter_api_key: SecretStr | None = None
+    groq_api_key: SecretStr | None = None
     hf_token: SecretStr | None = None
 
-    # Agents' LLM: any OpenAI-compatible endpoint serving an open-weight model (Ollama locally by default).
-    # Primary: an open-weight model on OpenRouter's free tier (chosen in docs/backtests/writer_llm.md); fallback: local.
-    llm_base_url: str = "https://openrouter.ai/api/v1"
-    llm_model: str = "poolside/laguna-s-2.1:free"
-    llm_fallback_base_url: str | None = "http://localhost:11434/v1"
-    llm_fallback_model: str | None = "qwen2.5:3b"
-    llm_api_key: SecretStr | None = None  # only for hosted endpoints (e.g. OpenRouter); Ollama needs none
+    # Agents' LLM: `<provider>:<model>` entries tried in order (providers in dugout_agents.llm.PROVIDERS), all
+    # open-weight models; entries whose key is missing are skipped. Chosen in docs/backtests/writer_llm.md.
+    llm_chain: str = "groq:qwen/qwen3.8-27b,groq:openai/gpt-oss-120b,openrouter:poolside/laguna-s-2.1:free,local:qwen2.5:3b"
+    llm_local_base_url: str | None = None  # Ollama somewhere other than localhost:11434 (e.g. docker compose)
 
     searxng_url: str | None = None
     pff_data_dir: Path | None = None
