@@ -29,7 +29,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
   const need = d.key_stats?.scout?.find((r) => r.label === "squad need, priority one")?.display;
   return (
     <article>
-      <section className="grid12 relative overflow-hidden pt-10 pb-6">
+      <section className="grid12 relative overflow-x-clip pt-10 pb-6">
         <p className="hang mono-label">Confidential · scouting dossier · season <span data-meta>{d.club.season}</span></p>
         <h1 className="hang mt-3 font-display text-[clamp(3.5rem,11vw,9rem)] leading-[0.9]">{d.club.name}</h1>
         {pos && (
