@@ -41,7 +41,9 @@ MOBILITY = [
     "peak_ratio",
     "relegated",
 ]
-DESTINATION = ["capacity_ratio", "league_gap", "club_value_gap", "same_league", "same_country"]
+DESTINATION_V1 = ["capacity_ratio", "league_gap", "club_value_gap", "same_league", "same_country"]
+# step_down: how far the buyer is below the seller (players rarely move to smaller clubs). See realism.md.
+DESTINATION = [*DESTINATION_V1, "step_down"]
 PRIORS = {
     "contract": {"<=12 months": 0.8, "13-24 months": 0.3, ">24 months": -0.4},
     "news_weight_per_point": 0.35,
@@ -187,7 +189,13 @@ def _pair_features(fee, seller, buyer, capacity, clubs, comps, club_value: pd.Se
         "club_value_gap": float(np.log1p(club_value.get(buyer, 0)) - np.log1p(club_value.get(seller, 0))),
         "same_league": float(s_comp == b_comp),
         "same_country": float(s_country == b_country),
+        **step_features(seller, buyer, club_value),
     }
+
+
+def step_features(seller, buyer, club_value: pd.Series) -> dict:
+    gap = float(np.log1p(club_value.get(buyer, 0)) - np.log1p(club_value.get(seller, 0)))
+    return {"step_down": max(-gap, 0.0)}
 
 
 def contract_points(months_left: float | None) -> float:
@@ -221,11 +229,15 @@ def backtest(out_dir: Path | None = None) -> dict:
     p_gbm = gbm.predict_proba(test[MOBILITY])[:, 1]
     pairs = destination_pairs(t, range(2015, 2026)).dropna(subset=DESTINATION)
     ptr, pte = pairs[pairs.year <= 2023], pairs[pairs.year >= 2024]
-    dest = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(ptr[DESTINATION], ptr.label)
-    p_dest = dest.predict_proba(pte[DESTINATION])[:, 1]
-    # top-1 accuracy: is the real buyer ranked first among its candidates?
-    pte = pte.assign(p=p_dest)
-    top1 = pte.loc[pte.groupby(["year", "player_id"]).p.idxmax()].label.mean()
+
+    def fit_dest(cols):
+        m = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(ptr[cols], ptr.label)
+        p = m.predict_proba(pte[cols])[:, 1]
+        # top-1 accuracy: is the real buyer ranked first among its candidates?
+        return m, p, pte.assign(p=p).loc[lambda d: d.groupby(["year", "player_id"]).p.idxmax()].label.mean()
+
+    _, p_v1, top1_v1 = fit_dest(DESTINATION_V1)
+    dest, p_dest, top1 = fit_dest(DESTINATION)
     n_cands = pte.groupby(["year", "player_id"]).size().mean()
     report = {
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
@@ -247,6 +259,8 @@ def backtest(out_dir: Path | None = None) -> dict:
             "top1": float(top1),
             "random_top1": float(1 / n_cands),
             "coefficients": dict(zip(DESTINATION, dest[-1].coef_[0].round(3).tolist(), strict=True)),
+            "v1_auc": float(roc_auc_score(pte.label, p_v1)),
+            "v1_top1": float(top1_v1),
         },
         "priors": PRIORS,
     }
@@ -266,14 +280,21 @@ def backtest(out_dir: Path | None = None) -> dict:
             f"{m['brier_logistic']:.4f} vs base rate {m['brier_base_rate']:.4f}; {m['base_rate']:.1%} sold, "
             f"{m['test']} player-summers |",
             f"| Mobility | gradient boosting | {m['auc_gbm']:.3f} | Brier {m['brier_gbm']:.4f} |",
-            f"| Destination (this club, given a move) | pairwise logistic | {d['auc']:.3f} | real buyer ranked first "
-            f"{d['top1']:.1%} vs random {d['random_top1']:.1%}, {d['test_moves']} moves |",
+            f"| Destination (this club, given a move) | pairwise logistic + step-down | {d['auc']:.3f} | real buyer "
+            f"ranked first {d['top1']:.1%} vs random {d['random_top1']:.1%}, {d['test_moves']} moves |",
+            f"| Destination, without step-down | pairwise logistic | {d['v1_auc']:.3f} | real buyer ranked first "
+            f"{d['v1_top1']:.1%} |",
             "| Contract | prior weights | — | no historical contract data |",
             "| News signal | prior weights | — | no historical news archive |",
             "",
             "Mobility coefficients: " + ", ".join(f"{k} {v}" for k, v in m["coefficients"].items()),
             "",
             "Destination coefficients: " + ", ".join(f"{k} {v}" for k, v in d["coefficients"].items()),
+            "",
+            "Tested and not adopted (2026-10-16): a club-stature feature for mobility (selling club's squad value vs "
+            "its league's median club; AUC 0.753 with or without it: big clubs' regulars were sold in 15.7% of test "
+            "summers, more than the 7.7% base rate, not less), and an elite-rival feature for destination (both "
+            "clubs in their league's top six; coefficient about zero: top clubs do sell to domestic rivals).",
             "",
             "Wages are not modelled: no free, licensable wage data exists (Capology is not open).",
         ]

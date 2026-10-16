@@ -298,6 +298,7 @@ class Market:
                 "club_value_gap": cand.cv - s.cv,
                 "same_league": (cand.comp == s.comp).astype(float),
                 "same_country": (cand.country == s.country).astype(float),
+                "step_down": (s.cv - cand.cv).clip(lower=0),
             }
         )[realism.DESTINATION]
         p = self.dest.predict_proba(X)[:, 1]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T16:40:24+00:00",
+  "generated_at": "2026-10-16T14:20:00+00:00",
   "mobility": {
     "train": 138224,
     "test": 27481,
@@ -26,16 +26,19 @@
   },
   "destination": {
     "test_moves": 2004,
-    "auc": 0.7319324493217497,
-    "top1": 0.47355289421157687,
+    "auc": 0.7491176832799878,
+    "top1": 0.4820359281437126,
     "random_top1": 0.16493827160493826,
     "coefficients": {
-      "capacity_ratio": 0.279,
-      "league_gap": 0.116,
-      "club_value_gap": 0.154,
-      "same_league": 0.38,
-      "same_country": 0.38
-    }
+      "capacity_ratio": 0.238,
+      "league_gap": 0.115,
+      "club_value_gap": -0.376,
+      "same_league": 0.369,
+      "same_country": 0.369,
+      "step_down": -0.882
+    },
+    "v1_auc": 0.7319324493217497,
+    "v1_top1": 0.47355289421157687
   },
   "priors": {
     "contract": {
