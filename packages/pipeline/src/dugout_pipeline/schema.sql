@@ -166,6 +166,39 @@ CREATE TABLE IF NOT EXISTS transfers (
     PRIMARY KEY (player_id, date, source)
 );
 
+-- Transfers since the transfermarkt-datasets snapshot, from Wikipedia's transfer lists (CC BY-SA). Names and
+-- linked articles as listed; Transfermarkt ids via Wikidata. date is the completion date (table pages) or the cited
+-- announcement date (by-club pages), NULL when the page gives neither.
+CREATE TABLE IF NOT EXISTS wiki_transfers (
+    transfer_id   VARCHAR PRIMARY KEY,
+    page          VARCHAR NOT NULL,
+    date          DATE,
+    player_name   VARCHAR NOT NULL,
+    player_title  VARCHAR,
+    from_club     VARCHAR,
+    from_title    VARCHAR,
+    to_club       VARCHAR,
+    to_title      VARCHAR,
+    kind          VARCHAR NOT NULL,            -- permanent | loan | end_of_loan | free | released
+    fee_text      VARCHAR,
+    fee_native    DOUBLE,
+    currency      VARCHAR,
+    fee_eur       DOUBLE,                      -- ECB reference rate of the transfer date
+    loan_end      DATE,
+    tm_player_id  VARCHAR,
+    tm_from_club  VARCHAR,
+    tm_to_club    VARCHAR,
+    fetched_at    TIMESTAMPTZ NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS fx_rates (
+    date         DATE NOT NULL,
+    currency     VARCHAR NOT NULL,
+    per_eur      DOUBLE NOT NULL,             -- units of currency per euro (ECB reference rate)
+    source       VARCHAR NOT NULL,
+    PRIMARY KEY (date, currency, source)
+);
+
 CREATE TABLE IF NOT EXISTS market_values (
     player_id    VARCHAR NOT NULL,
     date         DATE NOT NULL,

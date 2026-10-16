@@ -95,6 +95,25 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
     PL buyers MAE 0.516 -> 0.413, PL->PL 0.605 -> 0.350, bias 1.65x -> 1.06x). Lewis Hall fair fee 50.7m -> 60.0m.
     Nationality tested, no effect. `fair_fee(ids, comps, seller_club, buyer_club)`.
   - Research + plan: docs/research/landscape.md (projects, papers, novelty = rumour track record, limitation fixes).
+  - **2026-10-17, branch `groq-and-transfers`:**
+    - Groq wired in: `LLM_CHAIN` (settings/.env) = groq qwen/qwen3.8-27b -> groq openai/gpt-oss-120b -> OpenRouter
+      Laguna -> local qwen2.5:3b; entries without a key are skipped. writer_llm.md: Qwen on Groq 83% accepted (12
+      sections), gpt-oss 58%. Groq free: ~1000 req/day per model, 8k tokens/min (a Liverpool LLM dossier ~6.5 min).
+      `GROQ_API_KEY` is in local .env; the GitHub secret must be set by the user (`gh secret set GROQ_API_KEY`).
+      LLM still writes for showcase clubs only in `--all` (token-per-minute cap); widening it is an option now.
+    - Shortlists: 3 picks per list (dream / realistic / gem) for the top need, 1 each for the second; every pick
+      has club, age, price (fair fee for this buyer; gems now get one too), contract months, and a "why" built
+      from verified numbers (components/Shortlists.tsx, used by the story and the dossier page). Wages: no free
+      licensable source (Capology/FBref not open, SoFIFA robots) -> not shown, the site says so.
+    - Live site showed "No shortlist passed verification today" because its dossiers predated PR #10's labels
+      (nightly 38937666788 rebuilds them).
+    - Wikipedia transfer lists (`wikipedia_transfers`, nightly): 14 pages (config/transfer_lists.yaml), 6,568
+      moves, 5,329 with a Transfermarkt player id via Wikidata, 181 with a fee (ECB-converted). Uses
+      `/wiki/<title>?action=raw` (robots allows; `/w/` API disallowed). Wikidata 502s are tolerated (ids skipped).
+      Players who moved this summer are dropped from shortlists and gems (`Market.moved`).
+    - Next: rumour track record (Rumour Mill archive x TM transfers + wiki_transfers as outcome labels), then a
+      league picker (needs non-PL leagues: football-data.org free tier has PD/SA/BL1/FL1/DED; FPL is PL-only),
+      needs model on played positions, conformal fee ranges, summer-2026 fees as a fresh valuation holdout.
   - **Next, in order:** (1) Wikipedia summer-2026 transfers (MediaWiki API, CC BY-SA) for fees + outcome labels;
     (2) rumour track record from the Guardian Rumour Mill archive (outlet hit rates, per-rumour probability,
     backtested); (3) Groq as first LLM (user must create the account and add GROQ_API_KEY; then `gh secret set`);

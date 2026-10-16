@@ -3,7 +3,7 @@
 set -euo pipefail
 
 REQUIRED=(API_FOOTBALL_KEY FOOTBALL_DATA_ORG_KEY GUARDIAN_API_KEY)
-OPTIONAL=(OPENROUTER_API_KEY HF_TOKEN)
+OPTIONAL=(GROQ_API_KEY OPENROUTER_API_KEY HF_TOKEN)
 
 if ! command -v gh >/dev/null 2>&1; then
   echo "gh (GitHub CLI) is not installed. Add these as repository secrets instead:"

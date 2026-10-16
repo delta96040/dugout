@@ -18,7 +18,7 @@ export interface StoryData {
   need?: StatRef;
   needGroup?: string;
   signings: { title: string; url: string | null }[];
-  /** the scout's three lists for the top need: best fit, realistic, hidden gem (first name of each) */
+  /** the scout's three lists for the top need: dream, realistic, hidden gem (up to three names each) */
   targets: Target[];
   /** transfer talk the Fact-Check confirmed in the Guardian's Rumour Mill (attributed, unverified as fact) */
   rumours: { text: string; url: string | null }[];
@@ -30,12 +30,23 @@ export interface StoryData {
   scene: { scatter: XY[]; home: XY[]; away: XY[]; candidateSlot: number; gap: XY };
 }
 
+/** One name on one of the scout's lists, with the verified numbers behind "why him" (absent ones are omitted). */
 export interface Target {
   kind: "best" | "realistic" | "gem";
   name: string;
   club?: string;
   age?: StatRef;
-  /** the number the list is about: market value, chance of the move, projected value */
-  figure?: StatRef;
-  figureLabel: string;
+  /** fair fee if this club bought him today */
+  price?: StatRef;
+  contract?: StatRef;
+  marketValue?: StatRef;
+  /** expected share of the buying club's minutes */
+  minutesThere?: StatRef;
+  /** share of his current club's minutes over the last year */
+  minutesNow?: StatRef;
+  /** chance his club sells him in a window */
+  pSold?: StatRef;
+  /** chance this move happens in a window */
+  chance?: StatRef;
+  projected?: StatRef;
 }

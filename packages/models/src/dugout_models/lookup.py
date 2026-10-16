@@ -194,7 +194,7 @@ def gems(mk: Market, pool: pd.DataFrame, proj: dict, ids: list[str], now: dateti
     g = g[g.age.between(GEM_AGES[0], GEM_AGES[1] + 0.999) & (g.minutes_share >= 0.3) & (g.top_tier == 1)]
     now_sq = mk.squads.drop_duplicates("tm_player_id").set_index("tm_player_id")
     joined = pd.to_datetime(g.player_id.map(now_sq.joined), errors="coerce")
-    g = g[~(joined > mk.now - pd.Timedelta(days=365))].copy()
+    g = g[~(joined > mk.now - pd.Timedelta(days=365)) & ~g.player_id.astype(str).isin(mk.moved)].copy()
     g["club_now"] = g.player_id.map(now_sq.tm_club_id).fillna(g.club_id).astype(str)
     g["sub"] = g.player_id.map(mk.players.sub_position)
     club_names = mk.clubs.set_index("club_id").name
@@ -206,7 +206,15 @@ def gems(mk: Market, pool: pd.DataFrame, proj: dict, ids: list[str], now: dateti
             inc = sq.loc[sq.group == n.group, "market_value_eur"].astype(float).sort_values(ascending=False)
             bar = inc.iloc[STARTERS[n.group] - 1] if len(inc) >= STARTERS[n.group] else np.inf
             c = g[mk.plays(g.player_id, g["sub"], n.group) & (g.club_now != tm_club) & (g.mv < bar)]
-            for k, r in enumerate(c.nlargest(SHORTLIST, "proj4").itertuples(), 1):
+            c = c.nlargest(SHORTLIST, "proj4")
+            # the price today if this club bought him (same valuation model as the other lists)
+            fees = mk.fair_fee(
+                c.player_id.tolist(),
+                [mk.comp_of(x) for x in c.club_now],
+                c.club_now.tolist(),
+                buyer_club=tm_club,
+            ).fair_fee.to_numpy()
+            for k, (r, fee) in enumerate(zip(c.itertuples(), fees, strict=True), 1):
                 ctx = f"{slug}:need:{i + 1}:gem:{k}"
                 rows += [
                     _row(
@@ -217,5 +225,8 @@ def gems(mk: Market, pool: pd.DataFrame, proj: dict, ids: list[str], now: dateti
                     _row("scout", "player", r.pid, "age", round(r.age, 1), now, ctx),
                     _row("scout", "player", r.pid, "market_value", r.mv, now, ctx),
                     _row("scout", "player", r.pid, "proj_value_4y", round(r.proj4, -5), now, ctx),
+                    _row("scout", "player", r.pid, "minutes_share_now", round(r.minutes_share, 3), now, ctx),
                 ]
+                if fee == fee:
+                    rows.append(_row("scout", "player", r.pid, "fair_fee", round(fee, -5), now, ctx))
     return rows

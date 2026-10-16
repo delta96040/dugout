@@ -1,56 +1,54 @@
 {
-  "generated_at": "2026-10-16T06:03:48+00:00",
+  "generated_at": "2026-10-16T17:59:06+00:00",
   "clubs": [
     "liverpool",
     "arsenal"
   ],
   "results": {
-    "openrouter:poolside/laguna-s-2.1:free": {
+    "groq:openai/gpt-oss-120b": {
       "sections": 12,
       "accepted": 0.5833333333333334,
-      "first_try": 0.3333333333333333,
+      "first_try": 0.5,
       "llm_errors": 0,
       "stray_number_drafts": 0,
-      "seconds_per_section": 42.0,
-      "api_calls": 24,
+      "seconds_per_section": 41.7,
+      "api_calls": 18,
       "rows": [
         {
           "club": "liverpool",
           "agent": "club",
           "accepted": true,
           "first_try": true,
-          "seconds": 8.0,
+          "seconds": 1.2,
           "llm_error": false,
           "stray": 0,
           "errors": [],
-          "text": "Liverpool are {{stat:ev_d502a8bcaad692e0|ord}} in the Premier League table with {{stat:ev_10e9e4e3480aaf18}} points, having scored {{stat:ev_87e91471026ac201}} goals and conceded {{stat:ev_8d3e72466be9f644}} league goals, with their most recent league results reading {{stat:ev_748af597b924ffb6}}. Andoni Iraola has been Liverpool's head coach since {{stat:ev_c7b9e8c24fdb34a3|date}}, and his style profile covers {{stat:ev_aa025fcc98fbdaa0|int}} Premier League matches. Teams under Iraola average {{stat:ev_070c26120807547a|.0f}} defensive actions per match, more active without the ball than almost any Premier League manager's side, while creating {{stat:ev_5606ed69b29a4687|.2f}} expected goals per match, more dangerous than average. We recommend continuing to support Iraola's high-pressing, defensively active approach, as teams under him take {{stat:ev_5ac1bc669c7aaf92|pct}} of the threat in their matches and concede {{stat:ev_9ddf130886408e2d|.2f}} expected goals per match, both close to the league average."
+          "text": "Liverpool are {{stat:ev_d502a8bcaad692e0|ord}} in the Premier League table. Liverpool have scored {{stat:ev_87e91471026ac201}} league goals and conceded {{stat:ev_8d3e72466be9f644}} league goals. Under Andoni Iraola, teams take {{stat:ev_6cbaf4526c21fb51|pct}} of the threat in matches, average defensive actions per match are {{stat:ev_e20e1dd64de9e656|.0f}}, expected goals for per match are {{stat:ev_e0a220d39bef2f87|.2f}}, expected goals against per match are {{stat:ev_afa5ae2d50de7c98|.2f}}, and share of chance creation is {{stat:ev_f29411c29d9fde6b|pct}}. We recommend focusing on converting the defensive activity into more goal scoring to improve league position."
         },
         {
           "club": "liverpool",
           "agent": "match",
           "accepted": true,
-          "first_try": false,
-          "seconds": 11.4,
+          "first_try": true,
+          "seconds": 0.7,
           "llm_error": false,
           "stray": 0,
-          "errors": [
-            "sentence 4 conflicting: elo of Liverpool is placed next to another name"
-          ],
-          "text": "Liverpool's next league match is Brentford v Liverpool on {{stat:ev_c095507361000aea|date}}. The model gives Brentford a {{stat:ev_02a73afb418cd3f8|pct}} chance of winning against Liverpool. The model gives Brentford v Liverpool a {{stat:ev_d9857c57a547d93e|pct}} chance of ending in a draw. The model gives Liverpool a {{stat:ev_460676e72eac1641|pct}} chance of winning against Brentford."
+          "errors": [],
+          "text": "Liverpool's next league match is Brentford v Liverpool on {{stat:ev_6cedb51e9073d4f5|date}}. Our forecast gives Brentford a {{stat:ev_0f0d72b1f90d0319|pct}} chance of winning against Liverpool. We expect Liverpool to score {{stat:ev_b066f349dd30fa2b|.1f}} goals against Brentford. We recommend a cautious approach as the match is balanced."
         },
         {
           "club": "liverpool",
           "agent": "lineup",
           "accepted": false,
           "first_try": false,
-          "seconds": 13.0,
+          "seconds": 313.9,
           "llm_error": false,
           "stray": 0,
           "errors": [
-            "sentence 2 conflicting: predicted_xi_slot of Alisson Becker is placed next to another name; predicted_xi_slot of Ronald Araujo is placed next to another name",
-            "sentence 3 conflicting: predicted_xi_slot of Jeremie Frimpong is placed next to another name; predicted_xi_slot of Milos Kerkez is placed next to another name; predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name",
-            "sentence 4 conflicting: predicted_xi_slot of Jeremy Jacquet is placed next to another name",
-            "sentence 5 conflicting: predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name"
+            "sentence 2 conflicting: predicted_xi_slot of Alisson Becker is placed next to another name; predicted_xi_slot of Virgil van Dijk is placed next to another name; predicted_xi_slot of Jeremy Jacquet is placed next to another name; predicted_xi_slot of Ronald Araujo is placed next to another name; predicted_xi_slot of Milos Kerkez is placed next to another name; predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name; predicted_xi_slot of Victor Munoz is placed next to another name; predicted_xi_slot of Florian Wirtz is placed next to another name",
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: predicted_xi_slot of Alisson Becker is placed next to another name; predicted_xi_slot of Virgil van Dijk is placed next to another name; predicted_xi_slot of Jeremy Jacquet is placed next to another name; predicted_xi_slot of Ronald Araujo is placed next to another name; predicted_xi_slot of Milos Kerkez is placed next to another name; predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name; predicted_xi_slot of Victor Munoz is placed next to another name; predicted_xi_slot of Florian Wirtz is placed next to another name",
+            "sentence 3 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
           ],
           "text": ""
         },
@@ -59,76 +57,239 @@
           "agent": "news",
           "accepted": false,
           "first_try": false,
-          "seconds": 269.5,
+          "seconds": 57.7,
           "llm_error": false,
           "stray": 0,
           "errors": [
             "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 2 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 3 unverified: injury clause: 0 independent source(s); need 2",
-            "sentence 5 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)"
           ],
           "text": ""
         },
         {
           "club": "liverpool",
           "agent": "transfer",
-          "accepted": true,
-          "first_try": true,
-          "seconds": 6.3,
+          "accepted": false,
+          "first_try": false,
+          "seconds": 20.6,
           "llm_error": false,
           "stray": 0,
-          "errors": [],
-          "text": "The mobility model puts Rio Ngumoha's sale likelihood in a transfer window at {{stat:ev_cbcca36047c88280|pct}}, with Transfermarkt valuing him at {{stat:ev_bd4601e6eaa7d2d6|eur_m}} and the valuation model putting his fair fee at {{stat:ev_35624fd1c0ca4b9e|eur_m}}, above his market value. The mobility model puts Dominik Szoboszlai's sale likelihood in a transfer window at {{stat:ev_8189e1556eeec639|pct}}. The mobility model puts Ryan Gravenberch's sale likelihood in a transfer window at {{stat:ev_77c2962f187481b8|pct}}, with Transfermarkt valuing him at {{stat:ev_4b115a7ef9a8916e|eur_m}} and the valuation model putting his fair fee at {{stat:ev_301f87465932f871|eur_m}}, in line with his market value. We recommend prioritising Ryan Gravenberch as a saleable asset given his strong valuation, while monitoring Szoboszlai and Ngumoha for potential exit opportunities."
+          "errors": [
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: sale_likelihood of Conor Bradley is placed next to another name",
+            "sentence 3 conflicting: contract_expires of Harvey Davies is placed next to another name; contract_expires of Virgil van Dijk is placed next to another name"
+          ],
+          "text": ""
         },
         {
           "club": "liverpool",
           "agent": "scout",
-          "accepted": false,
+          "accepted": true,
           "first_try": false,
-          "seconds": 51.8,
+          "seconds": 6.3,
           "llm_error": false,
           "stray": 0,
           "errors": [
-            "sentence 1 unverified: Liverpool FC's text does not support it (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 1 unverified: Liverpool FC's text does not support it (state it with a fact code, or in the wording of a statement fact)"
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
           ],
-          "text": ""
+          "text": "Liverpool's biggest squad need is {{stat:ev_ca0f1d3de868b95a}}. Liverpool's second squad need is {{stat:ev_8218af4da257915f}}. We recommend signing Achraf Hakimi (Paris Saint-Germain), who is {{stat:ev_28e0a91d85c2216a|int}} years old and has a market value of {{stat:ev_bb2d86e8a092571e|eur_m}}. We estimate a {{stat:ev_8f3b17e07a363f28|pct1}} chance that Lewis Hall (Newcastle United) joins Liverpool in a transfer window."
         },
         {
           "club": "arsenal",
           "agent": "club",
           "accepted": true,
           "first_try": true,
-          "seconds": 4.8,
+          "seconds": 0.9,
           "llm_error": false,
           "stray": 0,
           "errors": [],
-          "text": "Arsenal are {{stat:ev_b7bc7414313c83d8|ord}} in the Premier League table with {{stat:ev_b8304130ff4ad79f}} points, having scored {{stat:ev_c80af5e58421e8e4}} goals and conceded {{stat:ev_cf2563439146b3a0}}, while their most recent league results read {{stat:ev_1e7de2d140de3bd8}} and their Elo rating stands at {{stat:ev_4a5245f38a797842|int}}. Mikel Arteta has been Arsenal's head coach since {{stat:ev_b74d62729c2ae772|date}}, and his style profile covers {{stat:ev_a2ed30c5f963ba36|int}} Premier League matches. Teams under Arteta have taken {{stat:ev_04ddef0d78c3a1f4|pct}} of the threat in their matches, more territorial than almost any Premier League manager's side, averaging {{stat:ev_9c14f7d7efe36e97|.0f}} defensive actions per match, less active without the ball than average. Teams under Arteta create {{stat:ev_1e8804c6cc10e88f|.2f}} expected goals per match, more dangerous than average, concede {{stat:ev_ceaaa72ee8e7ad81|.2f}} expected goals per match, tighter than almost any Premier League manager's side, and account for {{stat:ev_36ff97d535760a96|pct}} of the chance creation in their matches, more creative than almost any Premier League manager's side. We recommend maintaining the current tactical approach given the strong underlying metrics across both ends of the pitch."
+          "text": "Arsenal are {{stat:ev_b7bc7414313c83d8|ord}} in the Premier League table. Arsenal have scored {{stat:ev_c80af5e58421e8e4}} league goals and conceded {{stat:ev_cf2563439146b3a0}} league goals. Teams under Arteta take {{stat:ev_1c2450b0eedcd2fb|pct}} of the threat in their matches, more territorial than almost any Premier League manager’s side. We recommend building on the high territorial share while improving defensive activity, as teams under Arteta average {{stat:ev_e2f79f324073b136|.0f}} defensive actions per match, less active than average."
         },
         {
           "club": "arsenal",
           "agent": "match",
           "accepted": true,
           "first_try": true,
-          "seconds": 3.6,
+          "seconds": 1.8,
           "llm_error": false,
           "stray": 0,
           "errors": [],
-          "text": "Arsenal's next league match is Nottingham Forest v Arsenal on {{stat:ev_5a6339154c0c1521|date}}. The model gives Arsenal a {{stat:ev_d4de86742e9184cb|pct}} chance of winning against Nottingham Forest, while Nottingham Forest has a {{stat:ev_55d73610dda47203|pct}} chance and the match has a {{stat:ev_0374934c7f045b95|pct}} chance of ending in a draw. The model expects Arsenal to score {{stat:ev_c2b538c84b5bdd50|.1f}} goals against Nottingham Forest, with Nottingham Forest expected to score {{stat:ev_86cc93d5df6834bb|.1f}} goals in return. We recommend preparing for a competitive fixture given the model's assessment of Arsenal as favourites."
+          "text": "Arsenal's next league match is Nottingham Forest v Arsenal on {{stat:ev_7956a61c147d839f|date}}. Our forecast gives Arsenal a {{stat:ev_00390c91eafc4aca|pct}} chance of winning against Nottingham Forest. We expect Arsenal to score {{stat:ev_9a50695881396d68|.1f}} goals and Nottingham Forest to score {{stat:ev_9f5276a845e4c728|.1f}} goals. We recommend a cautious approach given the close expected goals and the slight rating advantage of Arsenal ({{stat:ev_41d558e695ab03a0|int}} versus {{stat:ev_1ba71801fd1c4334|int}})."
         },
         {
           "club": "arsenal",
           "agent": "lineup",
           "accepted": false,
           "first_try": false,
-          "seconds": 46.8,
+          "seconds": 27.8,
           "llm_error": false,
           "stray": 0,
           "errors": [
-            "sentence 2 conflicting: predicted_xi_slot of David Raya Martin is placed next to another name; predicted_xi_slot of Ezri Konsa Ngoyo is placed next to another name; predicted_xi_slot of Gabriel dos Santos Magalhaes is placed next to another name; predicted_xi_slot of Benjamin White is placed next to another name; predicted_xi_slot of Riccardo Calafiori is placed next to another name; predicted_xi_slot of Martín Zubimendi Ibáñez is placed next to another name; predicted_xi_slot of Declan Rice is placed next to another name; predicted_xi_slot of Bruno Guimarães Rodriguez Moura is placed next to another name; predicted_xi_slot of Bukayo Saka is placed next to another name",
-            "sentence 4 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
-            "too many sentences"
+            "sentence 4 unverified: injury clause: 0 independent source(s); need 2",
+            "sentence 2 conflicting: predicted_xi_slot of David Raya Martin is placed next to another name; predicted_xi_slot of Ezri Konsa Ngoyo is placed next to another name; predicted_xi_slot of Gabriel dos Santos Magalhães is placed next to another name",
+            "sentence 3 conflicting: predicted_xi_slot of Declan Rice is placed next to another name; predicted_xi_slot of Bruno Guimaraes Rodriguez Moura is placed next to another name; predicted_xi_slot of Martin Ødegaard is placed next to another name; predicted_xi_slot of Bukayo Saka is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
+          "agent": "news",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 50.3,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Reiss Nelson is unavailable for selection. Christos Tzolis is injured with a hamstring injury. According to ESPN, Merino says Arsenal “ready” to win it all. We recommend monitoring the injury updates on the squad before finalising the next matchday lineup."
+        },
+        {
+          "club": "arsenal",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 18.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 4 conflicting: sale_likelihood belongs to Myles Lewis-Skelly, who is not named here; market_value belongs to Myles Lewis-Skelly, who is not named here; fair_fee belongs to Myles Lewis-Skelly, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Arsenal’s biggest squad need is {{stat:ev_c44c180440bfa3a0}}. Arsenal’s second squad need is {{stat:ev_9e740be668a320fd}}. Dream target for the first need is Ryan Gravenberch, who is {{stat:ev_89b3f9c4ac8eedd0|int}} years old and has a market value of {{stat:ev_2c8c5f4f659f1aa3|eur_m}}. We recommend pursuing Ryan Gravenberch as the primary solution."
+        }
+      ]
+    },
+    "groq:openai/gpt-oss-20b": {
+      "sections": 12,
+      "accepted": 0.5833333333333334,
+      "first_try": 0.5,
+      "llm_errors": 0,
+      "stray_number_drafts": 0,
+      "seconds_per_section": 15.4,
+      "api_calls": 19,
+      "rows": [
+        {
+          "club": "liverpool",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Liverpool are {{stat:ev_d502a8bcaad692e0|ord}} in the Premier League table, having accumulated {{stat:ev_10e9e4e3480aaf18}} points and scored {{stat:ev_87e91471026ac201}} league goals while conceding {{stat:ev_8d3e72466be9f644}} league goals. Their recent league results read {{stat:ev_748af597b924ffb6}}, and their Elo rating is {{stat:ev_5ab4710328dcd030|int}}. Under Andoni Iraola, the team has taken {{stat:ev_6cbaf4526c21fb51|pct}} of the threat, performed {{stat:ev_e20e1dd64de9e656|.0f}} defensive actions per match, created {{stat:ev_e0a220d39bef2f87|.2f}} expected goals per match, conceded {{stat:ev_afa5ae2d50de7c98|.2f}} expected goals per match, and accounted for {{stat:ev_f29411c29d9fde6b|pct}} of the chance creation in their matches. We recommend focusing on maintaining the defensive activity that has proven more effective than most Premier League sides."
+        },
+        {
+          "club": "liverpool",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 1.1,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Liverpool’s next league match is Brentford v Liverpool on {{stat:ev_6cedb51e9073d4f5|date}}. Our forecast gives Brentford a {{stat:ev_0f0d72b1f90d0319|pct}} chance of winning, a {{stat:ev_d594416065e06dbe|pct}} chance of drawing, and a {{stat:ev_9218a1ca90520b53|pct}} chance of Liverpool winning. We expect Brentford to score {{stat:ev_c4fe4d26d46f46af|.1f}} goals and Liverpool to score {{stat:ev_b066f349dd30fa2b|.1f}} goals. We recommend focusing on defensive solidity, as Liverpool’s Elo rating of {{stat:ev_5ab4710328dcd030|int}} is only slightly higher than Brentford’s {{stat:ev_00a214d42d31bfee|int}}."
+        },
+        {
+          "club": "liverpool",
+          "agent": "lineup",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 1.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: predicted_xi_slot of Alisson Becker is placed next to another name; predicted_xi_slot of Virgil van Dijk is placed next to another name; predicted_xi_slot of Jeremy Jacquet is placed next to another name; predicted_xi_slot of Ronald Araujo is placed next to another name; predicted_xi_slot of Milos Kerkez is placed next to another name; predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name; predicted_xi_slot of Victor Munoz is placed next to another name; predicted_xi_slot of Florian Wirtz is placed next to another name",
+            "sentence 3 conflicting: predicted_xi_slot of Virgil van Dijk is placed next to another name; predicted_xi_slot of Jeremy Jacquet is placed next to another name; predicted_xi_slot of Ronald Araujo is placed next to another name",
+            "sentence 4 conflicting: predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name; predicted_xi_slot of Victor Munoz is placed next to another name; predicted_xi_slot of Florian Wirtz is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "liverpool",
+          "agent": "news",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 48.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Giovanni Leoni is injured with a knee injury. Cody Gakpo is injured with an ankle injury. Alexander Isak is injured with a thigh injury. We recommend reviewing squad options for the upcoming match."
+        },
+        {
+          "club": "liverpool",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 8.2,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 1 conflicting: sale_likelihood of Vitezslav Jaros is placed next to another name; no word for sale_likelihood near its number",
+            "sentence 3 conflicting: fair_fee of Alexis Mac Allister is placed next to another name",
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": ""
+        },
+        {
+          "club": "liverpool",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Liverpool’s biggest squad need is {{stat:ev_ca0f1d3de868b95a}} and the club should prioritise a defensive reinforcement, with the best target being Achraf Hakimi who is {{stat:ev_28e0a91d85c2216a|int}} years old and valued at {{stat:ev_bb2d86e8a092571e|eur_m}}. A realistic option is Lewis Hall, who is {{stat:ev_a8658a678bc22589|int}} years old, with a fair‑fee estimate of {{stat:ev_9554762de2b1cca8|eur_m}} and a {{stat:ev_8f3b17e07a363f28|pct1}} chance of signing. For a long‑term project, Davide Bartesaghi, aged {{stat:ev_685bcbd8a46bb6b0|int}}, could be nurtured with a projected market value of {{stat:ev_c3e1b68506dfd909|eur_m}} in a few seasons. We recommend pursuing Achraf Hakimi first, then evaluating Lewis Hall as a backup."
+        },
+        {
+          "club": "arsenal",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Arsenal are {{stat:ev_b7bc7414313c83d8|ord}} in the Premier League table and have accumulated {{stat:ev_b8304130ff4ad79f}} points. They have scored {{stat:ev_c80af5e58421e8e4}} league goals while conceding {{stat:ev_cf2563439146b3a0}} league goals, and their recent results read {{stat:ev_1e7de2d140de3bd8}}. Mikel Arteta has been Arsenal's head coach since {{stat:ev_b74d62729c2ae772|date}} and his teams have taken {{stat:ev_1c2450b0eedcd2fb|pct}} of the threat, average {{stat:ev_e2f79f324073b136|.0f}} defensive actions per match, create {{stat:ev_6b063e3e2f1475b8|.2f}} expected goals per match, concede {{stat:ev_588e6f4bb76ec764|.2f}} expected goals per match, and account for {{stat:ev_859ca2a85bea8b0f|pct}} of the chance creation in their matches. We recommend focusing on maintaining the high territorial control that Arteta’s side displays."
+        },
+        {
+          "club": "arsenal",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 1.3,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 conflicting: elo of Arsenal is placed next to another name",
+            "sentence 4 conflicting: elo of Arsenal is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
+          "agent": "lineup",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 1.3,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: predicted_xi_slot of David Raya Martin is placed next to another name; predicted_xi_slot of Ezri Konsa Ngoyo is placed next to another name; predicted_xi_slot of Gabriel dos Santos Magalhães is placed next to another name; predicted_xi_slot of Benjamin White is placed next to another name; predicted_xi_slot of Riccardo Calafiori is placed next to another name; predicted_xi_slot of Declan Rice is placed next to another name; predicted_xi_slot of Bruno Guimaraes Rodriguez Moura is placed next to another name; predicted_xi_slot of Martin Ødegaard is placed next to another name; predicted_xi_slot of Bukayo Saka is placed next to another name; predicted_xi_slot of Noni Madueke is placed next to another name",
+            "sentence 3 conflicting: predicted_xi_slot of Ezri Konsa Ngoyo is placed next to another name; predicted_xi_slot of Gabriel dos Santos Magalhães is placed next to another name; predicted_xi_slot of Benjamin White is placed next to another name",
+            "sentence 4 conflicting: predicted_xi_slot of Declan Rice is placed next to another name; predicted_xi_slot of Bruno Guimaraes Rodriguez Moura is placed next to another name; predicted_xi_slot of Martin Ødegaard is placed next to another name; predicted_xi_slot of Bukayo Saka is placed next to another name"
           ],
           "text": ""
         },
@@ -137,51 +298,219 @@
           "agent": "news",
           "accepted": true,
           "first_try": false,
-          "seconds": 55.9,
+          "seconds": 101.3,
           "llm_error": false,
           "stray": 0,
           "errors": [
-            "too many sentences"
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
           ],
-          "text": "Christos Tzolis is injured with a hamstring injury. William Saliba is injured with a back injury. Reiss Nelson is unavailable. We recommend monitoring Piero Hincapié's {{stat:ev_2348d5c18392c859}}% chance of playing and Martín Zubimendi Ibáñez's {{stat:ev_861c1cd2cdfcd1b5}}% chance of playing ahead of the next round."
+          "text": "Christos Tzolis is injured with a hamstring injury. William Saliba is injured with a back injury. Reiss Nelson is unavailable. According to ESPN, Merino: Arsenal 'ready' to win it all."
         },
         {
           "club": "arsenal",
           "agent": "transfer",
           "accepted": true,
-          "first_try": false,
-          "seconds": 15.6,
+          "first_try": true,
+          "seconds": 0.7,
           "llm_error": false,
           "stray": 0,
-          "errors": [
-            "sentence 1 conflicting: sale_likelihood of Bukayo Saka is placed next to another name; no word for sale_likelihood near its number"
-          ],
-          "text": "The mobility model puts Bukayo Saka's sale likelihood in a transfer window at {{stat:ev_3c6fef2878ba4711|pct}}. The mobility model puts Myles Lewis-Skelly's sale likelihood in a transfer window at {{stat:ev_4254979e49ff9011|pct}}. The mobility model puts William Saliba's sale likelihood in a transfer window at {{stat:ev_804990af52645c5c|pct}}. Transfermarkt values Jurriën Timber at {{stat:ev_d0f34cf4e792f17a|eur_m}}, and the valuation model puts his fair fee at {{stat:ev_7f6a26e6ad501e71|eur_m}}, in line with his market value. Transfermarkt values Declan Rice at {{stat:ev_2459b76e1857734e|eur_m}}, and the valuation model puts his fair fee at {{stat:ev_c03f126a7157eb3a|eur_m}}, below his market value. We recommend retaining both Jurriën Timber and Declan Rice, as their valuations suggest strong market demand and limited upside from a sale."
+          "errors": [],
+          "text": "We estimate Kai Havertz's chance of being sold in a transfer window at {{stat:ev_1084e6d5492028dc|pct}}. We estimate Mikel Merino Zazón's chance of being sold in a transfer window at {{stat:ev_3dfee9547f05dedd|pct}}. Transfermarkt values Jurriën Timber at {{stat:ev_d0f34cf4e792f17a|eur_m}} and our fair‑fee estimate for him is {{stat:ev_f2218825c2977056|eur_m}}, in line with his market value. We recommend considering a sale of Kai Havertz or Mikel Merino Zazón, as their market values and sale probabilities suggest a profitable exit."
         },
         {
           "club": "arsenal",
           "agent": "scout",
           "accepted": false,
           "first_try": false,
-          "seconds": 17.8,
+          "seconds": 19.2,
           "llm_error": false,
           "stray": 0,
           "errors": [
-            "too many sentences",
-            "sentence 3 conflicting: fair_fee of Ryan Gravenberch is placed next to another name; expected_minutes_share of Ryan Gravenberch is placed next to another name; realism of Ryan Gravenberch is placed next to another name",
-            "sentence 4 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)"
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: no word for age near its number",
+            "sentence 3 conflicting: no word for age near its number",
+            "sentence 4 conflicting: no word for age near its number; no word for age near its number"
           ],
           "text": ""
         }
       ]
     },
-    "openrouter:google/gemma-4-31b-it:free": {
+    "groq:qwen/qwen3.8-27b": {
+      "sections": 12,
+      "accepted": 0.8333333333333334,
+      "first_try": 0.3333333333333333,
+      "llm_errors": 0,
+      "stray_number_drafts": 0,
+      "seconds_per_section": 14.5,
+      "api_calls": 20,
+      "rows": [
+        {
+          "club": "liverpool",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.5,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Liverpool are {{stat:ev_d502a8bcaad692e0|ord}} in the Premier League table with {{stat:ev_10e9e4e3480aaf18}} points, having scored {{stat:ev_87e91471026ac201}} league goals while conceding {{stat:ev_8d3e72466be9f644}}. Andoni Iraola has been Liverpool's head coach since {{stat:ev_c7b9e8c24fdb34a3|date}}, and his tactical profile is based on {{stat:ev_965bee8a10efd593|int}} Premier League matches. Teams under Iraola average {{stat:ev_e20e1dd64de9e656|.0f}} defensive actions per match, which is more active without the ball than almost any Premier League manager's side, while creating {{stat:ev_e0a220d39bef2f87|.2f}} expected goals per match. We recommend focusing on the defensive intensity as a key differentiator for Liverpool's current approach."
+        },
+        {
+          "club": "liverpool",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.6,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Liverpool's next league match is Brentford v Liverpool on {{stat:ev_6cedb51e9073d4f5|date}}. Our forecast gives Liverpool a {{stat:ev_9218a1ca90520b53|pct}} chance of winning against Brentford, while the probability of a draw in Brentford v Liverpool is {{stat:ev_d594416065e06dbe|pct}}. We expect Liverpool to score {{stat:ev_b066f349dd30fa2b|.1f}} goals against Brentford, compared to {{stat:ev_c4fe4d26d46f46af|.1f}} expected goals for Brentford. We recommend preparing for a tight contest given Liverpool's {{stat:ev_5ab4710328dcd030|int}} Elo rating versus Brentford's {{stat:ev_00a214d42d31bfee|int}}."
+        },
+        {
+          "club": "liverpool",
+          "agent": "lineup",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 0.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: predicted_xi_slot of Alisson Becker is placed next to another name; predicted_xi_slot of Virgil van Dijk is placed next to another name; predicted_xi_slot of Jeremy Jacquet is placed next to another name",
+            "sentence 3 conflicting: predicted_xi_slot of Alexis Mac Allister is placed next to another name; predicted_xi_slot of Trey Nyoni is placed next to another name; predicted_xi_slot of Dominik Szoboszlai is placed next to another name; predicted_xi_slot of Victor Munoz is placed next to another name"
+          ],
+          "text": "We expect Liverpool to line up in a {{stat:ev_2045d9fa7de2f1ea}} for the next match. Predicted to start: Alisson Becker at {{stat:ev_a99520b8754a3e32}}. Predicted to start: Virgil van Dijk at {{stat:ev_aadc91e94fcc4fa0}}. We recommend managing Virgil van Dijk's minutes given his injury risk is {{stat:ev_c97147c9cb89b279}}."
+        },
+        {
+          "club": "liverpool",
+          "agent": "news",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 78.8,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 conflicting: injury clause: contradicted by a tier 1-2 source",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": "Giovanni Leoni is injured with a knee injury. Cody Gakpo is injured with an ankle injury. Alexander Isak is injured with a thigh injury. We recommend monitoring Dominik Szoboszlai who has a {{stat:ev_0d23e507ba43676a}}% chance of playing."
+        },
+        {
+          "club": "liverpool",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 15.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 conflicting: market_value of Ryan Gravenberch is placed next to another name"
+          ],
+          "text": "We estimate Vitezslav Jaros's chance of being sold in a transfer window at {{stat:ev_9cd5252d8433c7ab|pct}}. Transfermarkt values Ryan Gravenberch at {{stat:ev_4b115a7ef9a8916e|eur_m}}. According to The Guardian, Cody Gakpo has been linked with a move away from Liverpool. We recommend reviewing the squad depth before the next window."
+        },
+        {
+          "club": "liverpool",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 1.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: need of Liverpool is placed next to another name; age of Achraf Hakimi is placed next to another name; no word for age near its number"
+          ],
+          "text": "Liverpool's biggest squad need is {{stat:ev_ca0f1d3de868b95a}}. Dream target: Achraf Hakimi (Paris Saint-Germain), who is {{stat:ev_28e0a91d85c2216a|int}} years old. Realistic target: Lewis Hall (Newcastle United), who is {{stat:ev_a8658a678bc22589|int}} years old. We recommend prioritising the pursuit of Lewis Hall over other candidates."
+        },
+        {
+          "club": "arsenal",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.5,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Arsenal are {{stat:ev_b7bc7414313c83d8|ord}} in the Premier League table with {{stat:ev_b8304130ff4ad79f}} points, having scored {{stat:ev_c80af5e58421e8e4}} league goals while conceding {{stat:ev_cf2563439146b3a0}}. Mikel Arteta has been Arsenal's head coach since {{stat:ev_b74d62729c2ae772|date}}, and his style profile covers {{stat:ev_4b844f88d6b13b7d|int}} Premier League matches. Teams under Arteta have taken {{stat:ev_1c2450b0eedcd2fb|pct}} of the threat in their matches, more territorial than almost any Premier League manager's side, while averaging {{stat:ev_e2f79f324073b136|.0f}} defensive actions per match, less active without the ball than average. We recommend focusing on the fact that teams under Arteta create {{stat:ev_6b063e3e2f1475b8|.2f}} expected goals per match, more dangerous than average, and concede {{stat:ev_588e6f4bb76ec764|.2f}} expected goals per match, tighter than almost any Premier League manager's side."
+        },
+        {
+          "club": "arsenal",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 0.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Arsenal's next league match is Nottingham Forest v Arsenal on {{stat:ev_7956a61c147d839f|date}}. Our forecast gives Arsenal a {{stat:ev_00390c91eafc4aca|pct}} chance of winning against Nottingham Forest, while Nottingham Forest has a {{stat:ev_58ecdd441ada02f4|pct}} chance of winning. We expect Arsenal to score {{stat:ev_9a50695881396d68|.1f}} goals against Nottingham Forest, compared to {{stat:ev_9f5276a845e4c728|.1f}} expected goals for the home side. We recommend prioritizing defensive solidity given the {{stat:ev_00de6f7eb12766f8|pct}} probability of a draw."
+        },
+        {
+          "club": "arsenal",
+          "agent": "lineup",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 1.2,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: predicted_xi_slot of David Raya Martin is placed next to another name; predicted_xi_slot of Ezri Konsa Ngoyo is placed next to another name; predicted_xi_slot of Gabriel dos Santos Magalhães is placed next to another name",
+            "sentence 3 conflicting: predicted_xi_slot of Declan Rice is placed next to another name; predicted_xi_slot of Bruno Guimaraes Rodriguez Moura is placed next to another name; predicted_xi_slot of Martin Ødegaard is placed next to another name; predicted_xi_slot of Bukayo Saka is placed next to another name",
+            "sentence 2 conflicting: predicted_xi_slot of David Raya Martin is placed next to another name; predicted_xi_slot of Ezri Konsa Ngoyo is placed next to another name; predicted_xi_slot of Gabriel dos Santos Magalhães is placed next to another name; predicted_xi_slot of Benjamin White is placed next to another name; predicted_xi_slot of Riccardo Calafiori is placed next to another name; predicted_xi_slot of Declan Rice is placed next to another name; predicted_xi_slot of Bruno Guimaraes Rodriguez Moura is placed next to another name; predicted_xi_slot of Martin Ødegaard is placed next to another name; predicted_xi_slot of Bukayo Saka is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
+          "agent": "news",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 59.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": "Christos Tzolis is injured with a hamstring injury. William Saliba is injured with a back injury. Reiss Nelson is unavailable. We recommend monitoring the availability of Piero Hincapié and Martín Zubimendi Ibáñez before the next round."
+        },
+        {
+          "club": "arsenal",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 0.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 conflicting: fair_fee of Jurrien Timber is placed next to another name"
+          ],
+          "text": "We estimate Kai Havertz's chance of being sold in a transfer window at {{stat:ev_1084e6d5492028dc|pct}}. We estimate Mikel Merino Zazón's chance of being sold in a transfer window at {{stat:ev_3dfee9547f05dedd|pct}}. We estimate Myles Lewis-Skelly's chance of being sold in a transfer window at {{stat:ev_a91587ff113ce66f|pct}}. Transfermarkt values Jurriën Timber at {{stat:ev_d0f34cf4e792f17a|eur_m}}."
+        },
+        {
+          "club": "arsenal",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 13.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: need of Arsenal is placed next to another name",
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": ""
+        }
+      ]
+    },
+    "openrouter:poolside/laguna-s-2.1:free": {
       "sections": 12,
       "accepted": 0.0,
       "first_try": 0.0,
       "llm_errors": 12,
       "stray_number_drafts": 0,
-      "seconds_per_section": 37.4,
+      "seconds_per_section": 36.2,
       "api_calls": 48,
       "rows": [
         {
@@ -189,7 +518,7 @@
           "agent": "club",
           "accepted": false,
           "first_try": false,
-          "seconds": 38.2,
+          "seconds": 35.9,
           "llm_error": true,
           "stray": 0,
           "errors": [],
@@ -200,7 +529,7 @@
           "agent": "match",
           "accepted": false,
           "first_try": false,
-          "seconds": 36.9,
+          "seconds": 35.3,
           "llm_error": true,
           "stray": 0,
           "errors": [],
@@ -208,6 +537,72 @@
         },
         {
           "club": "liverpool",
+          "agent": "lineup",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 35.6,
+          "llm_error": true,
+          "stray": 0,
+          "errors": [],
+          "text": ""
+        },
+        {
+          "club": "liverpool",
+          "agent": "news",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 35.5,
+          "llm_error": true,
+          "stray": 0,
+          "errors": [],
+          "text": ""
+        },
+        {
+          "club": "liverpool",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 35.3,
+          "llm_error": true,
+          "stray": 0,
+          "errors": [],
+          "text": ""
+        },
+        {
+          "club": "liverpool",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 36.8,
+          "llm_error": true,
+          "stray": 0,
+          "errors": [],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 38.5,
+          "llm_error": true,
+          "stray": 0,
+          "errors": [],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 37.8,
+          "llm_error": true,
+          "stray": 0,
+          "errors": [],
+          "text": ""
+        },
+        {
+          "club": "arsenal",
           "agent": "lineup",
           "accepted": false,
           "first_try": false,
@@ -218,77 +613,11 @@
           "text": ""
         },
         {
-          "club": "liverpool",
-          "agent": "news",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 37.3,
-          "llm_error": true,
-          "stray": 0,
-          "errors": [],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "transfer",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 37.5,
-          "llm_error": true,
-          "stray": 0,
-          "errors": [],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "scout",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 37.4,
-          "llm_error": true,
-          "stray": 0,
-          "errors": [],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "club",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 38.2,
-          "llm_error": true,
-          "stray": 0,
-          "errors": [],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "match",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 37.4,
-          "llm_error": true,
-          "stray": 0,
-          "errors": [],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "lineup",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 37.0,
-          "llm_error": true,
-          "stray": 0,
-          "errors": [],
-          "text": ""
-        },
-        {
           "club": "arsenal",
           "agent": "news",
           "accepted": false,
           "first_try": false,
-          "seconds": 36.7,
+          "seconds": 35.3,
           "llm_error": true,
           "stray": 0,
           "errors": [],
@@ -299,7 +628,7 @@
           "agent": "transfer",
           "accepted": false,
           "first_try": false,
-          "seconds": 37.2,
+          "seconds": 35.6,
           "llm_error": true,
           "stray": 0,
           "errors": [],
@@ -310,194 +639,11 @@
           "agent": "scout",
           "accepted": false,
           "first_try": false,
-          "seconds": 36.8,
+          "seconds": 35.4,
           "llm_error": true,
           "stray": 0,
           "errors": [],
           "text": ""
-        }
-      ]
-    },
-    "local:qwen2.5:3b": {
-      "sections": 12,
-      "accepted": 0.16666666666666666,
-      "first_try": 0.16666666666666666,
-      "llm_errors": 0,
-      "stray_number_drafts": 2,
-      "seconds_per_section": 56.1,
-      "api_calls": 22,
-      "rows": [
-        {
-          "club": "liverpool",
-          "agent": "club",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 59.9,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "too many sentences",
-            "too many sentences"
-          ],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "match",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 29.1,
-          "llm_error": false,
-          "stray": 1,
-          "errors": [
-            "sentence 4 conflicting: elo of Liverpool is placed next to another name",
-            "numbers written directly: two"
-          ],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "lineup",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 78.3,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "sentence 1 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 2 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 3 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 4 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)"
-          ],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "news",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 73.8,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "sentence 1 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 3 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
-            "the note states too few of the facts; state the facts first, then at most one recommendation",
-            "too many sentences"
-          ],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "transfer",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 61.3,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 5 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 6 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
-            "too many sentences"
-          ],
-          "text": ""
-        },
-        {
-          "club": "liverpool",
-          "agent": "scout",
-          "accepted": true,
-          "first_try": true,
-          "seconds": 38.8,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [],
-          "text": "We recommend Liverpool strengthen with Jurriën Timber, as he fits the squad need, priority one and has a fair fee of {{stat:ev_4adbaebdc6bbfb25|eur_m}}. His expected minutes share at Liverpool is {{stat:ev_d2c60f57a90f494e|pct}}, making him a strong candidate for integration."
-        },
-        {
-          "club": "arsenal",
-          "agent": "club",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 42.2,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "too many sentences",
-            "too many sentences"
-          ],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "match",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 26.7,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "sentence 4 conflicting: elo of Arsenal is placed next to another name; no word for elo near its number",
-            "sentence 5 conflicting: elo of Arsenal is placed next to another name; no word for elo near its number"
-          ],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "lineup",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 44.8,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "too many sentences",
-            "sentence 2 conflicting: predicted_xi_slot of David Raya Martin is placed next to another name"
-          ],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "news",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 126.0,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [
-            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 5 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 2 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
-          ],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "transfer",
-          "accepted": false,
-          "first_try": false,
-          "seconds": 50.5,
-          "llm_error": false,
-          "stray": 1,
-          "errors": [
-            "sentence 1 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
-            "sentence 2 conflicting: no word for sale_likelihood near its number",
-            "sentence 3 conflicting: market_value of Jurrien Timber is placed next to another name; fair_fee of Jurrien Timber is placed next to another name",
-            "the note states too few of the facts; state the facts first, then at most one recommendation"
-          ],
-          "text": ""
-        },
-        {
-          "club": "arsenal",
-          "agent": "scout",
-          "accepted": true,
-          "first_try": true,
-          "seconds": 41.2,
-          "llm_error": false,
-          "stray": 0,
-          "errors": [],
-          "text": "We recommend Arsenal strengthen with Adam Wharton, given his expected minutes share aligns closely with {{stat:ev_471c3dddb0a9fb5c|pct}} and his fair fee is within {{stat:ev_2b3fd3550f0b5229|eur_m}}. Additionally, his transfer window likelihood is {{stat:ev_8886bae7646c58bb|pct1}}, making him a strong candidate for the squad need, priority one."
         }
       ]
     }

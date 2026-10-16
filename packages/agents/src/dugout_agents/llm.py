@@ -1,8 +1,8 @@
 """LLM access: any OpenAI-compatible chat endpoint serving an open-weight model.
 
-Default is a local Ollama (`LLM_BASE_URL=http://localhost:11434/v1`, `LLM_MODEL=qwen2.5:3b`). A hosted endpoint
-(e.g. OpenRouter's free open-weight models) works the same way with `LLM_API_KEY`. The key is sent only as the
-Authorization header of that endpoint and is never logged.
+`LLM_CHAIN` lists `<provider>:<model>` entries tried in order (see PROVIDERS): free hosted open-weight models
+(Groq, OpenRouter) first, a local Ollama model last. Keys come from .env under each provider's own name and are
+sent only as the Authorization header of that endpoint; they are never logged.
 
 The LLM only ever turns fact cards into prose. It never sees a number (facts carry placeholders, not values),
 and its output is rejected unless it passes the same checks as the Stat Auditor.
@@ -31,6 +31,30 @@ class LLMError(RuntimeError):
     pass
 
 
+# provider -> (OpenAI-compatible base URL, settings field holding its key or None)
+PROVIDERS: dict[str, tuple[str, str | None]] = {
+    "groq": ("https://api.groq.com/openai/v1", "groq_api_key"),
+    "openrouter": ("https://openrouter.ai/api/v1", "openrouter_api_key"),
+    "local": ("http://localhost:11434/v1", None),  # Ollama; LLM_LOCAL_BASE_URL overrides (e.g. in docker)
+}
+
+
+def extra_body(provider: str, model: str) -> dict:
+    """Reasoning models: think briefly and keep the reasoning out of the reply (it counts toward max_tokens)."""
+    if provider == "groq" and model.startswith("openai/gpt-oss"):
+        return {"reasoning_effort": "low", "include_reasoning": False}
+    if provider == "groq" and model.startswith("qwen/qwen3"):
+        return {"reasoning_effort": "none"}
+    return {}
+
+
+def _retry_after(value: str) -> float | None:
+    try:
+        return min(float(value), 60.0)
+    except ValueError:
+        return None
+
+
 class OpenAICompatLLM:
     RETRY_STATUS = (429, 500, 502, 503, 504)
 
@@ -44,10 +68,12 @@ class OpenAICompatLLM:
         max_tokens: int = 600,
         retries: int = 3,
         sleep: Callable[[float], None] = time.sleep,
+        extra: dict | None = None,
     ):
         self.base_url, self.model = base_url.rstrip("/"), model
         self.name = model
         self.temperature, self.max_tokens, self.retries, self._sleep = temperature, max_tokens, retries, sleep
+        self.extra = extra or {}
         headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
         if "openrouter.ai" in self.base_url:  # OpenRouter asks apps to identify themselves
             headers |= {"HTTP-Referer": "https://github.com/delta96040/dugout", "X-Title": "dugout"}
@@ -61,14 +87,15 @@ class OpenAICompatLLM:
             "temperature": self.temperature,
             "max_tokens": self.max_tokens,
             "seed": 7,
+            **self.extra,
         }
         for attempt in range(self.retries + 1):
             try:
                 self.calls += 1
                 r = self._http.post(f"{self.base_url}/chat/completions", json=body)
                 if r.status_code in self.RETRY_STATUS and attempt < self.retries:
-                    wait = r.headers.get("retry-after", "")
-                    self._sleep(min(float(wait), 60) if wait.isdigit() else 5 * 2**attempt)
+                    wait = _retry_after(r.headers.get("retry-after", ""))
+                    self._sleep(wait if wait is not None else 5 * 2**attempt)
                     continue
                 r.raise_for_status()
                 return r.json()["choices"][0]["message"]["content"] or ""
@@ -131,25 +158,33 @@ def _reachable(llm: OpenAICompatLLM) -> bool:
     return False
 
 
-def from_settings() -> LLM | None:
-    """The configured LLM (with the optional fallback), or None when none is reachable (templates only).
+def make_llm(spec: str, local_base_url: str | None = None) -> OpenAICompatLLM | None:
+    """`<provider>:<model>`, e.g. `groq:openai/gpt-oss-120b`. None when the provider's key is not set."""
+    from dugout_pipeline.settings import get_settings
 
-    Chosen on docs/backtests/writer_llm.md: Poolside Laguna-S 2.1 (open weights, OpenMDW licence) via OpenRouter's
-    free tier passes the publish gate far more often than the local 3B model, which stays as the fallback."""
+    provider, model = spec.strip().split(":", 1)
+    if provider not in PROVIDERS:
+        raise ValueError(f"unknown LLM provider {provider!r} (known: {', '.join(PROVIDERS)})")
+    base, key_name = PROVIDERS[provider]
+    if provider == "local" and local_base_url:
+        base = local_base_url
+    key = get_settings().secret(key_name) if key_name else None
+    if key_name and not key:
+        return None
+    return OpenAICompatLLM(base, model, key, extra=extra_body(provider, model))
+
+
+def from_settings() -> LLM | None:
+    """The configured LLM chain (`LLM_CHAIN`), or None when nothing is reachable (templates only).
+
+    Chosen on docs/backtests/writer_llm.md; every entry serves open weights. Entries without a key are skipped."""
     from dugout_pipeline.settings import get_settings
 
     s = get_settings()
     chain: list[LLM] = []
-    for base, model in ((s.llm_base_url, s.llm_model), (s.llm_fallback_base_url, s.llm_fallback_model)):
-        if not base or not model:
-            continue
-        key = s.secret("llm_api_key") if base == s.llm_base_url else None
-        if not key and "openrouter.ai" in base:  # the OpenRouter key is already in .env under its own name
-            key = s.secret("openrouter_api_key")
-        if "openrouter.ai" in base and not key:
-            continue
-        llm = OpenAICompatLLM(base, model, key)
-        if _reachable(llm):
+    for spec in filter(None, s.llm_chain.split(",")):
+        llm = make_llm(spec, s.llm_local_base_url)
+        if llm is not None and _reachable(llm):
             chain.append(llm)
     if not chain:
         log.warning("no LLM endpoint reachable; using deterministic templates only")

@@ -1,0 +1,20 @@
+# Wikipedia transfer lists read by the wikipedia_transfers adapter (CC BY-SA 4.0): "List of <country> football
+# transfers <window>". Pages that do not exist (yet) are skipped. `currency` is the page's default for fees.
+# Windows after the transfermarkt-datasets snapshot (July 2026) are the ones that matter; add the next one when
+# its pages appear.
+windows: ["summer 2026", "winter 2026–27"]
+pages:
+  - {country: English, currency: GBP}
+  - {country: Scottish, currency: GBP}
+  - {country: Spanish, currency: EUR}
+  - {country: Italian, currency: EUR}
+  - {country: German, currency: EUR}
+  - {country: French, currency: EUR}
+  - {country: Dutch, currency: EUR}
+  - {country: Portuguese, currency: EUR}
+  - {country: Belgian, currency: EUR}
+  - {country: Turkish, currency: EUR}
+  - {country: Greek, currency: EUR}
+  - {country: Austrian, currency: EUR}
+  - {country: Swiss, currency: CHF}
+  - {country: Danish, currency: DKK}
