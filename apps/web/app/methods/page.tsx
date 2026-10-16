@@ -1,7 +1,7 @@
 import Num from "@/components/Num";
 import { readBacktest, REPO_URL, type Stat } from "@/lib/data";
 
-export const metadata = { title: "Methods — dugout" };
+export const metadata = { title: "How it works — dugout" };
 
 type J = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
 
@@ -56,14 +56,14 @@ export default function MethodsPage() {
   const seasons = pred ? Object.keys(pred.results) : [];
   return (
     <article className="grid12 pt-10">
-      <p className="hang mono-label">Methods · every score from a reproducible backtest · negative results included</p>
+      <p className="hang mono-label">How it works · every forecast tested on past seasons · weak results included</p>
       <h1 className="hang mt-3 font-display text-[clamp(3rem,9vw,7rem)] leading-[0.9]">How dugout knows what it says.</h1>
 
       <section className="hang mt-14" aria-labelledby="rule">
         <h2 id="rule" className="mono-label">The rule</h2>
         <p className="mt-3 max-w-2xl font-display text-3xl leading-snug">
-          The language model never writes a number. It writes with codes; code fills each code from the evidence ledger, and
-          nothing is published unless two independent checks pass.
+          AI writes the words, never the numbers. Every figure is filled straight from the data, and nothing is published
+          unless two independent checks pass.
         </p>
         <ol className="mt-6 grid max-w-3xl gap-6 sm:grid-cols-2">
           <li>

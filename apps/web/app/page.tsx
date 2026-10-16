@@ -9,7 +9,7 @@ export default function Home() {
         Every club, <span className="italic">read in full.</span>
       </h1>
       <p className="hang mt-8 max-w-2xl text-lg">
-        Every night dugout reads free football data, refits its backtested models and writes a scouting dossier for each
+        Every night dugout reads the latest football data, updates its forecasts and writes a scouting dossier for each
         Premier League club: how the side plays, the next match, the likely XI, the gap in the squad and who could fill
         it, from the dream target to the realistic one and the hidden gem.
       </p>
@@ -24,30 +24,30 @@ export default function Home() {
 
       <section className="col-span-12 mt-20 grid gap-8 border-t border-ink pt-6 sm:col-span-10 sm:col-start-2 sm:grid-cols-3" aria-label="How it works">
         <div>
-          <h2 className="font-display text-2xl italic">The model never writes a number.</h2>
+          <h2 className="font-display text-2xl italic">AI writes the words, never the numbers.</h2>
           <p className="mt-2 text-pencil">
-            The writer uses fact codes; code fills every figure from an evidence ledger, and the Stat Auditor re-runs each
-            one against its source.
+            Every figure comes straight from the data and is checked against its source before anything is
+            published.
           </p>
         </div>
         <div>
-          <h2 className="font-display text-2xl italic">Two verifiers, or it is withheld.</h2>
+          <h2 className="font-display text-2xl italic">Checked twice, or not published.</h2>
           <p className="mt-2 text-pencil">
-            Fact-Check needs an official source or two independent ones. Anything that fails is struck out with the
-            reason, in public.
+            News needs an official source or two independent ones. Anything that fails is removed, and we say
+            why.
           </p>
         </div>
         <div>
           <h2 className="font-display text-2xl italic">Every number has a receipt.</h2>
           <p className="mt-2 text-pencil">
-            Hover or tap any figure for its source, fetch time and status. The models&apos; backtests, weak results included,
-            are on the methods page.
+            Hover or tap any figure for its source and when it was fetched. How every forecast is tested, weak
+            results included, is on How it works.
           </p>
         </div>
       </section>
       <p className="hang mono-label mt-10 flex flex-wrap gap-x-6 gap-y-2">
         <Link className="underline" href="/scoreboard/">Every prediction against the result</Link>
-        <Link className="underline" href="/methods/">How the models are tested</Link>
+        <Link className="underline" href="/methods/">How it works</Link>
         <a className="underline" href="https://github.com/delta96040/dugout" target="_blank" rel="noopener noreferrer">
           Source code (<span data-meta>MIT</span>)
         </a>

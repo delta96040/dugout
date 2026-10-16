@@ -5,7 +5,7 @@ import { sourceName, when } from "@/lib/format";
 const STATUS: Record<string, string> = {
   verified: "Verified",
   single_source: "Single source, re-checked",
-  model_output: "dugout model output, re-checked",
+  model_output: "dugout estimate, re-checked",
   disputed: "Sources disagree",
 };
 

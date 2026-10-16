@@ -31,7 +31,7 @@ export function SectionProse({ section, d }: { section: Section; d: Dossier }) {
     <div className="space-y-3">
       {section.claims.map((c, i) => (
         <p key={i} className={c.status === "analysis" ? "border-l-2 border-pencil pl-3 italic text-ink/80" : ""}>
-          {c.status === "analysis" && <span className="mono-label mr-2 not-italic">Analysis</span>}
+          {c.status === "analysis" && <span className="mono-label mr-2 not-italic">Our view</span>}
           <ClaimText claim={c} d={d} />
           {c.sources.length > 0 && (
             <span className="ml-2 font-mono text-xs text-pencil">
@@ -54,10 +54,6 @@ export function SectionProse({ section, d }: { section: Section; d: Dossier }) {
           )}
         </p>
       ))}
-      <p className="mono-label pt-1">
-        Written by {section.writer.startsWith("llm:") ? <>an open-weight LLM (<span data-meta>{section.writer.slice(4)}</span>)</> : "deterministic templates"};
-        every number filled from the evidence ledger.
-      </p>
     </div>
   );
 }

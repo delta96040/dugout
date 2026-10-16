@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SectionProse } from "@/components/Claims";
 import MetaNum from "@/components/MetaNum";
 import Num from "@/components/Num";
-import { ordinal, when } from "@/lib/format";
+import { ordinal, plainReason, when } from "@/lib/format";
 import { clubSlugs, dossier, firstStat } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -38,8 +38,8 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
         <div className="hang mt-6 flex flex-wrap items-center gap-6">
           <span data-meta className="stamp text-lg">Verified ×2</span>
           <p className="mono-label max-w-xl">
-            Stat Auditor and Fact-Check passed · <MetaNum n={v.stat_auditor.numbers_total} note="numbers published, each re-run against its source by the Stat Auditor" /> numbers ·{" "}
-            <MetaNum n={v.stat_auditor.numbers_untraceable} note="numbers not filled from the evidence ledger (target zero)" /> untraceable · data as of <span data-meta>{when(d.data_as_of)}</span>
+            Every figure checked against its source · <MetaNum n={v.stat_auditor.numbers_total} note="figures on this page, each re-checked against its source" /> figures ·{" "}
+            <MetaNum n={v.stat_auditor.numbers_untraceable} note="figures without a traceable source (always zero: anything else is removed)" /> unsourced · updated <span data-meta>{when(d.data_as_of)}</span>
           </p>
         </div>
       </section>
@@ -64,11 +64,11 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
             <SectionProse section={s} d={d} />
             {s.withheld.length > 0 && (
               <details className="mt-3">
-                <summary className="mono-label cursor-pointer">Withheld by verification (<span data-meta>{s.withheld.length}</span>)</summary>
+                <summary className="mono-label cursor-pointer">Removed in checking (<span data-meta>{s.withheld.length}</span>)</summary>
                 <ul className="mt-2 space-y-1 text-sm text-pencil">
                   {s.withheld.map((w, j) => (
                     <li key={j}>
-                      <span className="line-through">{w.text}</span> — <span data-meta>{w.status}: {w.reason}</span>
+                      <span className="line-through">{w.text}</span> — <span data-meta>{plainReason(w.status, w.reason)}</span>
                     </li>
                   ))}
                 </ul>

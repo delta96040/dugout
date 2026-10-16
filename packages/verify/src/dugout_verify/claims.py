@@ -34,7 +34,8 @@ RESULT = re.compile(
 ANALYSIS = re.compile(
     r"\b(should|could|would|might|may|recommend\w*|suggest\w*|we think|in our view|consider\w*|ideal|"
     r"best option|priority|need\w*|ought|arguably|appears|seems|projected|model expects|model rates|"
-    r"our model|the model)\b",
+    r"our model|the model|we expect|we estimate|estimat\w*|forecast\w*|we project|predicted|"
+    r"our analysis|dream target|realistic target|hidden gem)\b",
     re.I,
 )
 # Sentence boundary: ., ! or ? followed by whitespace and an upper-case letter, quote or placeholder.

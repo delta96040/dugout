@@ -287,10 +287,10 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
         if rec is None:
             continue
         if side:
-            tmpl = f"The model gives {side} a {{p}} chance of winning against {a if side == h else h}."
+            tmpl = f"Our forecast gives {side} a {{p}} chance of winning against {a if side == h else h}."
             label = f"probability {side} win"
         else:
-            tmpl = f"The model gives {h} v {a} a {{p}} chance of ending in a draw."
+            tmpl = f"Our forecast gives {h} v {a} a {{p}} chance of ending in a draw."
             label = "probability of a draw"
         facts.append(_fact(tb, side or f"{h} v {a}", label, tmpl, rec, "pct", prob_gloss(float(rec[1])), mid))
     for metric, side in (("exp_home_goals", h), ("exp_away_goals", a)):
@@ -300,7 +300,7 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
                 tb,
                 side,
                 "expected goals in this match",
-                f"The model expects {side} to score {{p}} goals against {a if side == h else h}.",
+                f"We expect {side} to score {{p}} goals against {a if side == h else h}.",
                 rec,
                 ".1f",
                 entity_id=mid,
@@ -358,7 +358,7 @@ def predicted_xi(tb: Toolbox, club: str) -> list[Fact]:
             tb,
             name,
             "predicted formation for the next match",
-            f"The lineup model sets {name} up in a {{p}} for the next match.",
+            f"We expect {name} to line up in a {{p}} for the next match.",
             tb.model("lineup", "club", club, "predicted_formation", mid),
             entity_id=club,
         )
@@ -377,7 +377,7 @@ def predicted_xi(tb: Toolbox, club: str) -> list[Fact]:
                 tb,
                 pname,
                 f"predicted starting slot ({SLOT_NAMES.get(slot, slot)})",
-                f"The lineup model starts {pname} at {{p}}.",
+                f"Predicted to start: {pname} at {{p}}.",
                 rec,
                 entity_id=pid,
             )
@@ -388,8 +388,8 @@ def predicted_xi(tb: Toolbox, club: str) -> list[Fact]:
                 _fact(
                     tb,
                     pname,
-                    "injury-risk tier (load and history model)",
-                    f"{pname} is in the {{p}} risk tier of the injury-risk model.",
+                    "injury-risk tier (estimate from load and injury history)",
+                    f"We estimate {pname}'s injury risk as {{p}}.",
                     tier,
                     gloss="worth managing his minutes",
                     entity_id=pid,
@@ -506,11 +506,11 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
             _fact(
                 tb,
                 pname,
-                "model estimate of being sold for a fee in a window (no academy or contract-length signal)",
-                f"The mobility model puts {pname}'s sale likelihood in a transfer window at {{p}}.",
+                "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+                f"We estimate {pname}'s chance of being sold in a transfer window at {{p}}.",
                 rec,
                 "pct",
-                "a model estimate from comparable players, not a report that he is for sale",
+                "an estimate from comparable players, not a report that he is for sale",
                 pid,
             )
         )
@@ -556,8 +556,8 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
             _fact(
                 tb,
                 pname,
-                "fair fee if sold to another Premier League club (valuation model)",
-                f"The valuation model puts {pname}'s fair fee at {{p}}" + (f", {gloss}." if gloss else "."),
+                "estimated fair fee if sold to another Premier League club",
+                f"Our fair-fee estimate for {pname} is {{p}}" + (f", {gloss}." if gloss else "."),
                 ff,
                 "eur_m",
                 gloss,
@@ -667,7 +667,7 @@ def rumours(tb: Toolbox, club: str, direction: str, limit: int = 3) -> list[Fact
     return facts
 
 
-LEADS = {"best": "Best fit", "realistic": "More realistic", "gem": "Hidden gem"}
+LEADS = {"best": "Dream target", "realistic": "Realistic target", "gem": "Hidden gem"}
 # the numbers each list is about (a section has room for about two dozen sentences)
 KIND_METRICS = {
     "best": {"age", "market_value"},
@@ -708,7 +708,7 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                 tb,
                 name,
                 f"squad need, priority {'one' if rank == 1 else 'two'}",
-                f"The squad model ranks {{p}} as {name}'s {'biggest' if rank == 1 else 'second'} need.",
+                f"{name}'s {'biggest' if rank == 1 else 'second'} squad need is {{p}}.",
                 need,
                 entity_id=club,
             )
@@ -743,26 +743,26 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                 ("market_value", "market value", f"{cname} has a market value of {{p}}.", "eur_m"),
                 (
                     "fair_fee",
-                    "fair fee (valuation model)",
-                    f"The valuation model puts {cname}'s fair fee at {{p}}.",
+                    "estimated fair fee",
+                    f"Our fair-fee estimate for {cname} is {{p}}.",
                     "eur_m",
                 ),
                 (
                     "expected_minutes_share",
-                    "expected share of minutes at the club (playing-time model)",
-                    f"The playing-time model expects {cname} to play {{p}} of {name}'s minutes.",
+                    "expected share of minutes at the club",
+                    f"We project {cname} to play {{p}} of {name}'s minutes.",
                     "pct",
                 ),
                 (
                     "proj_value_4y",
-                    "projected market value at the long horizon (potential model, see potential.md)",
-                    f"The potential model's long-range projection puts {cname}'s market value at {{p}}.",
+                    "projected market value in a few seasons",
+                    f"We project {cname}'s market value to reach {{p}}.",
                     "eur_m",
                 ),
                 (
                     "realism",
                     "chance the move happens in a window (sale likelihood x this club's share of buyers)",
-                    f"The realism model gives a move for {cname} to {name} a {{p}} chance in a transfer window.",
+                    f"We estimate a {{p}} chance that {cname} joins {name} in a transfer window.",
                     "pct1",
                 ),
             ):
@@ -839,25 +839,25 @@ def player_potential(tb: Toolbox, pid: str) -> list[Fact]:
         (
             "proj_value_2y",
             "projected market value, short horizon (median)",
-            f"The potential model projects {name}'s value at {{p}} by {{d}}.",
+            f"We project {name}'s value at {{p}} by {{d}}.",
             None,
         ),
         (
             "proj_value_4y",
             "projected market value, long horizon (median)",
-            f"The potential model projects {name}'s value at {{p}} by {{d}}, {{level}}.",
+            f"We project {name}'s value at {{p}} by {{d}}, {{level}}.",
             "level_4y",
         ),
         (
             "ceiling_value_4y",
             "optimistic case, long horizon (90th percentile)",
-            f"In the potential model's optimistic case {name} would be worth {{p}} by {{d}}, {{level}}.",
+            f"In our optimistic case {name} would be worth {{p}} by {{d}}, {{level}}.",
             "level_ceiling",
         ),
         (
             "floor_value_4y",
             "cautious case, long horizon (10th percentile)",
-            f"In the potential model's cautious case {name} would be worth {{p}} by {{d}}.",
+            f"In our cautious case {name} would be worth {{p}} by {{d}}.",
             None,
         ),
     ):
@@ -873,7 +873,7 @@ def player_potential(tb: Toolbox, pid: str) -> list[Fact]:
         _fact(
             tb,
             name,
-            "role last season (roles model)",
+            "role last season",
             f"Last season {name} played as a {{p}}.",
             role,
             entity_id=pid,
@@ -893,8 +893,8 @@ def player_fit(tb: Toolbox, pid: str, club: str) -> list[Fact]:
         _fact(
             tb,
             name,
-            f"expected share of {cname}'s minutes (playing-time model)",
-            f"The playing-time model expects {name} to play {{p}} of {cname}'s minutes.",
+            f"expected share of {cname}'s minutes",
+            f"We project {name} to play {{p}} of {cname}'s minutes.",
             tb.model("fit", "player", pid, "expected_minutes_share", club),
             "pct",
             entity_id=pid,
@@ -915,9 +915,9 @@ def player_fit(tb: Toolbox, pid: str, club: str) -> list[Fact]:
             _fact(
                 tb,
                 name,
-                "position is a top need in the squad model",
+                "position is a top squad need",
                 f"{name}'s position, {{p}}, is {'among' if need == 'yes' else 'not among'} "
-                f"{cname}'s biggest needs in the squad model.",
+                f"{cname}'s biggest squad needs, by our analysis.",
                 group,
                 entity_id=pid,
             )

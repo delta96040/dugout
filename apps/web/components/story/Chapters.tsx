@@ -9,7 +9,7 @@ function N({ s, className }: { s?: StatRef; className?: string }) {
   return s ? <Num stat={s.stat} display={s.display} className={className} /> : <span className="text-pencil">n/a</span>;
 }
 
-const TARGET_LABEL = { best: "Best fit · dream target", realistic: "Realistic · gettable", gem: "Hidden gem · young" };
+const TARGET_LABEL = { best: "Dream target · whatever the cost", realistic: "Realistic target · gettable", gem: "Hidden gem · young, rising" };
 
 /** The six chapters' copy, rendered on the server. Scrambled numbers resolve when their chapter is on screen
  *  (Scramble reads the active chapter from context), so this needs no client state. */
@@ -157,7 +157,7 @@ export function chapterContent(d: StoryData) {
           <p className="mt-5 flex flex-wrap items-center gap-5">
             <span data-meta className="stamp text-2xl">Verified ×2</span>
             <span className="mono-label">
-              Stat Auditor: every query re-run · Fact-Check: two independent sources or one official · hover any number
+              Every figure re-checked against its source · news needs an official source or two independent ones · hover any number
             </span>
           </p>
         </>
@@ -187,7 +187,7 @@ export function chapterContent(d: StoryData) {
             Open source. Free. <span className="italic text-red">Yours.</span>
           </h2>
           <p className="mt-6 max-w-md">
-            MIT-licensed, built only on free data and open-weight models. Clone it, point it at your club, check every number yourself.
+            Free and open source, built only on free data and open AI. Point it at your club and check every number yourself.
           </p>
           <p className="mt-4 flex flex-wrap items-center gap-5 font-mono text-sm">
             <a className="border-b-2 border-red pb-0.5" href={REPO} target="_blank" rel="noopener noreferrer">
@@ -228,7 +228,7 @@ function ChalkLines({ d }: { d: StoryData }) {
           </div>
         );
       })}
-      <p className="mono-label">Model: Elo + xG Dixon–Coles stack, beats Elo on both test seasons; bookmakers are still better.</p>
+      <p className="mono-label">Forecast from team ratings and chance quality, tested on two full seasons: better than a classic rating system, not yet as sharp as the bookmakers.</p>
     </div>
   );
 }

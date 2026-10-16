@@ -7,9 +7,41 @@ const SOURCE_NAMES: Record<string, string> = {
   api_football: "API-Football",
 };
 
+// dugout's own estimates, by what they are to a reader
+const DUGOUT: Record<string, string> = {
+  predictor: "dugout match forecast",
+  lineup: "dugout predicted XI",
+  injury: "dugout injury-risk estimate",
+  roles: "dugout player-role analysis",
+  fingerprint: "dugout style analysis",
+  valuation: "dugout valuation",
+  realism: "dugout transfer odds",
+  scout: "dugout scouting",
+  potential: "dugout development projection",
+  fit: "dugout fit analysis",
+  lookup: "dugout player profile",
+  market: "dugout valuation",
+};
+
 export function sourceName(source: string): string {
-  if (source.startsWith("dugout_model:")) return `dugout ${source.split(":")[1]} model`;
+  if (source.startsWith("dugout_model:")) {
+    const [name, ...rest] = source.slice("dugout_model:".length).split(" ");
+    const note = rest.join(" ").replace("walk-forward backtest", "replay of past matches");
+    return `${DUGOUT[name] ?? "dugout analysis"}${note ? ` ${note}` : ""}`;
+  }
   return SOURCE_NAMES[source] ?? source;
+}
+
+/** Why something was removed in checking, in plain words. */
+export function plainReason(status: string, reason: string): string {
+  if (status === "audit_error" || reason.includes("number")) return "it contained a figure we could not trace";
+  if (reason.includes("does not support")) return "the source does not say this";
+  if (reason.includes("contradicted")) return "a more reliable source says otherwise";
+  if (reason.includes("need 2") || reason.includes("independent source")) return "only one source so far";
+  if (reason.includes("no text from")) return "we could not find the source text";
+  if (reason.includes("placed next to another name")) return "the figure could belong to someone else";
+  if (reason.includes("stale") || reason.includes("old")) return "the news is too old";
+  return "it could not be confirmed";
 }
 
 export function when(iso: string): string {

@@ -59,16 +59,16 @@ SPECIALISTS: dict[str, Specialist] = {
         ),
         Specialist(
             "match",
-            "Match Predictor",
+            "Next Match",
             "match analyst",
             lambda tb, c, f: tools.next_match(tb, c),
             r"predict|forecast|win|beat|odds|chance|next (?:\w+ )?(?:match|game|fixture)|fixture|probab|result|"
             r"expect|kick-?off|when (?:is|are|do|does)\b.*\b(?:match|game|fixture|play)",
-            "What does the model expect from {club}'s next league match?",
+            "What should {club} expect from their next league match?",
         ),
         Specialist(
             "lineup",
-            "Lineup Selector",
+            "Predicted XI",
             "lineup selector",
             lambda tb, c, f: tools.predicted_xi(tb, c),
             r"line-?up|\bxi\b|start(?:ing|s)?\b|formation|selection|bench|pick|rotate|rotation",
@@ -76,7 +76,7 @@ SPECIALISTS: dict[str, Specialist] = {
         ),
         Specialist(
             "news",
-            "News & Injury",
+            "Team News",
             "news and medical liaison",
             _news,
             r"injur|(?:is|are|be|he|they) (?:\w+ )?fit\b(?! in| into| with| at| our| the system| your)|fit to play|fitness|news|"
@@ -85,7 +85,7 @@ SPECIALISTS: dict[str, Specialist] = {
         ),
         Specialist(
             "transfer",
-            "Transfer & Valuation",
+            "Transfers & Values",
             "transfer and valuation analyst",
             _transfer,
             r"valu|worth|sell|sold|sale|leave|exit|contract|fee|price|cost|offer|bid|market",
@@ -93,7 +93,7 @@ SPECIALISTS: dict[str, Specialist] = {
         ),
         Specialist(
             "scout",
-            "Scout",
+            "Recruitment",
             "chief scout",
             lambda tb, c, f: tools.shortlist(tb, c),
             r"sign|buy|target|replace|recruit|scout|shortlist|need|strengthen|candidate|who should",
