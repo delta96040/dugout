@@ -6,11 +6,16 @@ squad file `data/reference/transfermarkt_squads.csv` (values and contracts as of
   fair_fee              valuation model (docs/backtests/valuation.md): price if sold to another Premier League club
   sale_likelihood       mobility model (realism.md): P(sold for a fee in a transfer window), features as of today
   needs                 positions where the club is thinnest/weakest (heuristic: depth and value at the position)
-  shortlist             two lists per need, from first-tier players in every league the dataset covers.
+  shortlist             three lists per need, from first-tier players in every league the dataset covers.
                         best: highest market value among players the playing-time model (opportunity.md) expects
-                        to get at least 40% of the club's minutes. realistic: ranked by realism = P(move to this club in a window)
-                        = P(sold) x P(this buyer | sold) (realism.md), among candidates at least as good as the
-                        pool's median. The ranking rules are transparent heuristics; each component is backtested.
+                        to get at least 40% of the club's minutes, whatever the cost or the odds.
+                        realistic: ranked by realism = P(move to this club in a window) = P(sold) x P(this buyer |
+                        sold) (realism.md), among players whose club is poorer than the buyer, is more likely than
+                        average to sell them and is not a top-ten-in-Europe club starting them, and who would be an
+                        upgrade on the club's last regular starter at the position.
+                        gem (lookup.py): ages 17-23, playing regularly, cheaper than that starter today, ranked by
+                        the potential model's projected value in four years.
+                        The ranking rules are transparent; each component is a backtested model.
   sale_likelihood is not scored for players who joined their club in the last 12 months (no data at the new club).
 """
 
@@ -57,6 +62,16 @@ NEEDED = {
     "central midfield": 4,
     "winger": 4,
     "centre-forward": 2,
+}
+# regular starters per position group in a typical XI: the bar a realistic target has to clear
+STARTERS = {
+    "goalkeeper": 1,
+    "centre-back": 2,
+    "full-back": 2,
+    "defensive midfield": 1,
+    "central midfield": 2,
+    "winger": 2,
+    "centre-forward": 1,
 }
 SHORTLIST = 5
 REGULAR_SHARE = 0.4  # expected share of the club's minutes to count as a regular (best-fit list)
@@ -187,9 +202,7 @@ class Market:
             features=realism.MOBILITY,  # a feature change rebuilds the cached frame
         )
         snap = snap.dropna(subset=realism.MOBILITY)
-        self.mob = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(
-            snap[realism.MOBILITY], snap.moved
-        )
+        self.mob = realism.mobility_model().fit(snap[realism.MOBILITY], snap.moved)
         self.mob_base = float(snap.moved.mean())
         pairs = self.frame(
             "destination",
@@ -320,6 +333,7 @@ class Market:
             "p_move": float(p_sold * share),
             "p_sold": float(p_sold),
             "p_this_club": share,
+            "step_up": float(bt.loc[buyer].cv - s.cv),  # > 0: the buyer is the richer club
             "contract_months": None if months is None else float(months),
         }
 
@@ -487,8 +501,10 @@ class Market:
             return df
         # Two lists, as a sporting director reads them. Best fit: the highest quality (market value) among players
         # the playing-time model expects to be regulars, whatever the cost or the odds. Realistic: the moves most
-        # likely to happen (realism model), among candidates at least as good as the pool's median on quality and
-        # playing time. (A single blended score let a 1-in-150 move top the list.)
+        # likely to happen (realism model), only for players whose club is more likely than average to sell them
+        # (sale likelihood at or above the base rate: not an elite club's young regular) and who would be an
+        # upgrade (worth at least as much as the incumbent the club would start last at the position).
+        # (A single blended score let a 1-in-150 move top the list.)
         df["score"] = (df.value.rank(pct=True) + df.minutes_share.rank(pct=True)) / 2
         regulars = df[df.minutes_share >= REGULAR_SHARE]
         best = (
@@ -496,7 +512,12 @@ class Market:
             .head(SHORTLIST)
             .assign(kind="best")
         )
-        good = df[df.score >= df.score.median()]
+        inc = incumbents.market_value_eur.astype(float).sort_values(ascending=False)
+        bar = inc.iloc[STARTERS[group] - 1] if len(inc) >= STARTERS[group] else 0.0
+        # regulars at Europe's ten richest clubs were sold in 3.6% of summers (realism.md): not realistic targets
+        elite = df.tm_player_id.map(self.now_snap.elite_regular).fillna(0) >= 0.5
+        # and players move up to richer clubs (realism.md: step-down), so the seller must be the poorer club
+        good = df[(df.p_sold >= self.mob_base) & (df.value >= bar) & ~elite & (df.step_up > 0)]
         real = good.sort_values("p_move", ascending=False).head(SHORTLIST).assign(kind="realistic")
         return pd.concat([best, real]).reset_index(drop=True)
 

@@ -118,7 +118,7 @@ SPECIALISTS: dict[str, Specialist] = {
         ),
     )
 }
-for _name, _n in (("lineup", 14), ("news", 12), ("transfer", 12), ("scout", 14), ("club", 10)):
+for _name, _n in (("lineup", 14), ("news", 12), ("transfer", 12), ("scout", 28), ("club", 10)):
     SPECIALISTS[_name] = dataclasses.replace(SPECIALISTS[_name], max_facts=_n)
 SPECIALISTS["lineup"] = dataclasses.replace(SPECIALISTS["lineup"], prose=False)
 

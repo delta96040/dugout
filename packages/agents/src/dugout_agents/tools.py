@@ -596,6 +596,16 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
 
 
 # ---- Scout -------------------------------------------------------------------------------------------------
+# best: dream targets whatever the cost; realistic: the moves most likely to happen; gem: young and undervalued
+LEADS = {"best": "Best fit", "realistic": "More realistic", "gem": "Hidden gem"}
+# the numbers each list is about (a section has room for about two dozen sentences)
+KIND_METRICS = {
+    "best": {"age", "market_value"},
+    "realistic": {"age", "fair_fee", "realism"},
+    "gem": {"age", "proj_value_4y"},
+}
+
+
 def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
     name = tb.name(club)
     facts: list[Fact] = []
@@ -634,7 +644,7 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
         )
         # two lists per need: the best fit whatever the odds, and the moves most likely to happen
         picked: list[tuple[str, str, str, str]] = []
-        for kind in ("best", "realistic"):
+        for kind, n_kind in (("best", per_need), ("realistic", per_need), ("gem", 1)):
             cands = tb.con.execute(
                 """SELECT entity_id, context, value_text FROM model_outputs WHERE model = 'scout'
                    AND metric = 'candidate_name' AND context LIKE ?
@@ -642,9 +652,9 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                 [f"{club}:need:{rank}:{kind}:%"],
             ).fetchall()
             fresh = [(kind, *c) for c in cands if c[0] not in {p[1] for p in picked}]
-            picked += fresh[:per_need]
+            picked += fresh[:n_kind]
         for kind, pid, ctx, cname in picked:
-            lead = "Best fit" if kind == "best" else "More realistic"
+            lead = LEADS[kind]
             tb.register(pid, cname)
             cclub = tb.con.execute(
                 "SELECT value_text FROM model_outputs WHERE model='scout' AND entity_id=? AND metric='candidate_club' "
@@ -655,7 +665,7 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
             for metric, label, tmpl, fmt in (
                 (
                     "age",
-                    f"age ({'best-fit' if kind == 'best' else 'realistic'} target)",
+                    f"age ({kind} target)",
                     f"{lead}: {cname} ({cclub}), who is {{p}} years old.",
                     "int",
                 ),
@@ -673,12 +683,20 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 2) -> list[Fact]:
                     "pct",
                 ),
                 (
+                    "proj_value_4y",
+                    "projected market value at the long horizon (potential model, see potential.md)",
+                    f"The potential model's long-range projection puts {cname}'s market value at {{p}}.",
+                    "eur_m",
+                ),
+                (
                     "realism",
                     "chance the move happens in a window (sale likelihood x this club's share of buyers)",
                     f"The realism model gives a move for {cname} to {name} a {{p}} chance in a transfer window.",
                     "pct1",
                 ),
             ):
+                if metric not in KIND_METRICS[kind]:
+                    continue
                 rec = tb.model("scout", "player", pid, metric, ctx)
                 gloss = ""
                 if metric == "realism" and rec is not None:

@@ -28,7 +28,7 @@ from sklearn.preprocessing import StandardScaler
 
 from dugout_models.valuation import TM_DIR, load
 
-MOBILITY = [
+MOBILITY_V1 = [
     "age",
     "age2",
     "log_mv",
@@ -41,6 +41,11 @@ MOBILITY = [
     "peak_ratio",
     "relegated",
 ]
+# Europe's richest clubs rarely sell young regulars (3.6% a summer at the top ten, 2024-25) though the features
+# above (young, valuable, rising) look like a sale; the club's wealth rank across Europe, and its interaction with
+# being a regular, let the model tell a Timber at Arsenal from a regular at a selling club. See realism.md.
+ELITE_RANK = 10
+MOBILITY = [*MOBILITY_V1, "log_europe_rank", "elite_regular"]
 DESTINATION_V1 = ["capacity_ratio", "league_gap", "club_value_gap", "same_league", "same_country"]
 # step_down: how far the buyer is below the seller (players rarely move to smaller clubs). See realism.md.
 DESTINATION = [*DESTINATION_V1, "step_down"]
@@ -97,6 +102,11 @@ def snapshots(
         club_val = v.groupby("club_id").market_value_in_eur.transform("median")
         v["rel_value"] = np.log1p(v.market_value_in_eur) - np.log1p(club_val)
         v["log_league"] = np.log1p(league_val)
+        # club wealth rank across Europe: total value of its valued players (1 = richest)
+        total = v.groupby("club_id").market_value_in_eur.transform("sum")
+        europe_rank = total.rank(ascending=False, method="dense")
+        v["log_europe_rank"] = np.log(europe_rank)
+        v["elite_regular"] = (europe_rank <= ELITE_RANK).astype(float) * v.minutes_share
         v["log_mv"] = np.log1p(v.market_value_in_eur)
         v["mv_change"] = np.log1p(v.market_value_in_eur) - np.log1p(
             v.market_value_in_eur_prev.fillna(v.market_value_in_eur)
@@ -198,6 +208,22 @@ def step_features(seller, buyer, club_value: pd.Series) -> dict:
     return {"step_down": max(-gap, 0.0)}
 
 
+def mobility_model() -> lgb.LGBMClassifier:
+    """The shipped sale-likelihood model: gradient boosting beats the logistic on test Brier (realism.md) and is
+    calibrated for young regulars at Europe's richest clubs, where the logistic overstated sales several-fold."""
+    return lgb.LGBMClassifier(
+        n_estimators=400,
+        learning_rate=0.03,
+        num_leaves=31,
+        min_child_samples=200,
+        subsample=0.8,
+        subsample_freq=1,
+        colsample_bytree=0.8,
+        verbose=-1,
+        random_state=7,
+    )
+
+
 def contract_points(months_left: float | None) -> float:
     if months_left is None or np.isnan(months_left):
         return 0.0
@@ -215,17 +241,13 @@ def backtest(out_dir: Path | None = None) -> dict:
     train, test = snap[snap.year <= 2023], snap[snap.year >= 2024]
     mob = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(train[MOBILITY], train.moved)
     p_mob = mob.predict_proba(test[MOBILITY])[:, 1]
-    gbm = lgb.LGBMClassifier(
-        n_estimators=400,
-        learning_rate=0.03,
-        num_leaves=31,
-        min_child_samples=200,
-        subsample=0.8,
-        subsample_freq=1,
-        colsample_bytree=0.8,
-        verbose=-1,
-    )
-    gbm.fit(train[MOBILITY], train.moved)
+    mob_v1 = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000))
+    p_mob_v1 = mob_v1.fit(train[MOBILITY_V1], train.moved).predict_proba(test[MOBILITY_V1])[:, 1]
+    # young regulars at Europe's ten richest clubs: the players a shortlist most often gets wrong
+    elite = (
+        (test.log_europe_rank <= np.log(ELITE_RANK)) & (test.age <= 26) & (test.minutes_share >= 0.5)
+    ).to_numpy()
+    gbm = mobility_model().fit(train[MOBILITY], train.moved)
     p_gbm = gbm.predict_proba(test[MOBILITY])[:, 1]
     pairs = destination_pairs(t, range(2015, 2026)).dropna(subset=DESTINATION)
     ptr, pte = pairs[pairs.year <= 2023], pairs[pairs.year >= 2024]
@@ -250,6 +272,13 @@ def backtest(out_dir: Path | None = None) -> dict:
             "brier_logistic": float(brier_score_loss(test.moved, p_mob)),
             "brier_gbm": float(brier_score_loss(test.moved, p_gbm)),
             "brier_base_rate": float(brier_score_loss(test.moved, np.full(len(test), train.moved.mean()))),
+            "auc_logistic_v1": float(roc_auc_score(test.moved, p_mob_v1)),
+            "brier_logistic_v1": float(brier_score_loss(test.moved, p_mob_v1)),
+            "elite_regulars": int(elite.sum()),
+            "elite_regulars_sold": float(test.moved.to_numpy()[elite].mean()),
+            "elite_regulars_mean_p": float(p_mob[elite].mean()),
+            "elite_regulars_mean_p_v1": float(p_mob_v1[elite].mean()),
+            "elite_regulars_mean_p_gbm": float(p_gbm[elite].mean()),
             "base_rate": float(test.moved.mean()),
             "coefficients": dict(zip(MOBILITY, mob[-1].coef_[0].round(3).tolist(), strict=True)),
         },
@@ -279,7 +308,9 @@ def backtest(out_dir: Path | None = None) -> dict:
             f"| Mobility (sold for a fee this summer?) | logistic | {m['auc_logistic']:.3f} | Brier "
             f"{m['brier_logistic']:.4f} vs base rate {m['brier_base_rate']:.4f}; {m['base_rate']:.1%} sold, "
             f"{m['test']} player-summers |",
-            f"| Mobility | gradient boosting | {m['auc_gbm']:.3f} | Brier {m['brier_gbm']:.4f} |",
+            f"| **Mobility (shipped)** | gradient boosting | {m['auc_gbm']:.3f} | Brier {m['brier_gbm']:.4f} |",
+            f"| Mobility, without Europe wealth rank | logistic | {m['auc_logistic_v1']:.3f} | Brier "
+            f"{m['brier_logistic_v1']:.4f} |",
             f"| Destination (this club, given a move) | pairwise logistic + step-down | {d['auc']:.3f} | real buyer "
             f"ranked first {d['top1']:.1%} vs random {d['random_top1']:.1%}, {d['test_moves']} moves |",
             f"| Destination, without step-down | pairwise logistic | {d['v1_auc']:.3f} | real buyer ranked first "
@@ -288,6 +319,13 @@ def backtest(out_dir: Path | None = None) -> dict:
             "| News signal | prior weights | — | no historical news archive |",
             "",
             "Mobility coefficients: " + ", ".join(f"{k} {v}" for k, v in m["coefficients"].items()),
+            "",
+            f"Young regulars at Europe's {ELITE_RANK} richest clubs (age 26 or under, half the minutes or more): "
+            f"{m['elite_regulars']} test player-summers, {m['elite_regulars_sold']:.1%} sold; mean predicted "
+            f"{m['elite_regulars_mean_p_gbm']:.1%} by the shipped gradient boosting, {m['elite_regulars_mean_p']:.1%} by the "
+            f"logistic, {m['elite_regulars_mean_p_v1']:.1%} by the logistic without the wealth rank. The gradient "
+            "boosting is chosen on test Brier; its weakness is the opposite group: valuable regulars at clubs outside "
+            "Europe's richest 30 were sold 38% of the time and it predicts about 20% (the logistic about 36%).",
             "",
             "Destination coefficients: " + ", ".join(f"{k} {v}" for k, v in d["coefficients"].items()),
             "",
