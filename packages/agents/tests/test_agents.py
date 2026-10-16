@@ -332,3 +332,36 @@ def test_register_adds_a_second_spelling_and_suffix_names_match():
     assert tb.aliases["p"] is shared and "Rassoul N'Diaye" in shared and "Rassoul Ndiaye" in shared
     al = _person_aliases("Ronald Koeman Jr.", None)
     assert "Koeman" in al and any(re.search(rf"\b{re.escape(a)}\b", "Ronald Koeman Jr.'s chance") for a in al)
+
+
+def test_rumour_track_record_follows_its_rumour(con, ledger):
+    from dugout_agents import tools
+    from dugout_agents.graph import Section, gate
+
+    url = "https://www.theguardian.com/football/2026/oct/10/rumours"
+    for nid, player, body in (
+        ("n1-p0", "Bob Smith", "Liverpool want Bob Smith."),
+        ("n1-p1", "Carl Jones", "Arsenal want Carl Jones."),  # tagged with Liverpool, but does not say so
+    ):
+        con.execute(
+            "INSERT INTO news_items VALUES (?, 'guardian_rumours', 'The Guardian', ?, ?, ?, NULL, ?, ['liverpool'], 5, ?)",
+            [nid, url, player, NOW - timedelta(days=5), body, NOW],
+        )
+        key = player.lower()
+        con.execute(
+            "INSERT INTO model_outputs VALUES ('rumours', 'r', 'rumour', ?, 'one_in', 'liverpool', 5, NULL, ?)",
+            [f"{nid}:{key}", NOW],
+        )
+    ctx = make_ctx(con, ledger)
+    facts = tools.rumours(ctx.toolbox, "liverpool", "in")
+    assert [f.label for f in facts].count("rumour track record") == 2
+    sec = Section("scout", "Scout", "q", template=" ".join(f.sentence() for f in facts))
+    gate(sec, ctx)
+    assert sec.status == "published"
+    assert "Liverpool have been linked with Bob Smith." in sec.text
+    assert (
+        "Past reports like this one about Bob Smith came true within half a year about one time in 5."
+        in sec.text
+    )
+    assert "Carl Jones" not in sec.text
+    assert any(w["reason"] == "the rumour it is about was not confirmed" for w in sec.withheld)

@@ -7,6 +7,7 @@ binding rule), and avoids news keywords when the sentence only states a model ou
 from __future__ import annotations
 
 import csv
+import re
 import unicodedata
 from datetime import date, datetime, timedelta
 from typing import Any
@@ -696,8 +697,8 @@ def rumours(tb: Toolbox, club: str, direction: str, limit: int = 3) -> list[Fact
     joined = {_fold_name(n): d for n, d in _joined(club)}
     facts: list[Fact] = []
     seen: set[str] = set()
-    for title, published in tb.con.execute(
-        """SELECT title, published_at FROM news_items WHERE source = 'guardian_rumours'
+    for rumour_id, title, published in tb.con.execute(
+        """SELECT news_id, title, published_at FROM news_items WHERE source = 'guardian_rumours'
            AND list_contains(club_ids, ?) AND published_at >= ? ORDER BY published_at DESC""",
         [club, tb.now - timedelta(days=RUMOUR_DAYS)],
     ).fetchall():
@@ -722,9 +723,35 @@ def rumours(tb: Toolbox, club: str, direction: str, limit: int = 3) -> list[Fact
                 f"transfer rumour ({'outgoing' if direction == 'out' else 'incoming'}), {published:%d %B %Y}"
             )
             facts += _keep(_fact(tb, "The Guardian", label, text))
-            if len(facts) >= limit:
+            if direction == "in":
+                facts += _keep(rumour_record(tb, club, rumour_id, player))
+            if sum(f.label.startswith("transfer rumour") for f in facts) >= limit:
                 return facts
     return facts
+
+
+# the track-record sentence names the player it follows; graph.gate drops it when that rumour is not published
+RUMOUR_RECORD = re.compile(r"^Past reports like this one about (.+?) came true")
+
+
+def rumour_record(tb: Toolbox, club: str, rumour_id: str, player: str) -> Fact | None:
+    """How often Rumour Mill reports like this one came true (dugout-models rumours, docs/backtests/rumours.md):
+    published as "one time in N" from the chance that the player joins this club within half a year."""
+    eid = f"{rumour_id}:{_fold_name(player)}"
+    rec = tb.model("rumours", "rumour", eid, "one_in", club)
+    if rec is None:
+        return None
+    tb.register(eid, player)
+    return _fact(
+        tb,
+        player,
+        "rumour track record",
+        f"Past reports like this one about {player} came true within half a year about one time in {{p}}.",
+        rec,
+        "int",
+        "from what became of past Rumour Mill reports with similar signs",
+        eid,
+    )
 
 
 LEADS = {"best": "Dream target", "realistic": "Realistic target", "gem": "Hidden gem"}

@@ -31,6 +31,7 @@ MODEL_DOCS = {
     "realism": f"{REPO}/docs/backtests/realism.md",
     "scout": f"{REPO}/packages/models/src/dugout_models/market.py",
     "potential": f"{REPO}/docs/backtests/potential.md",
+    "rumours": f"{REPO}/docs/backtests/rumours.md",
     "fit": f"{REPO}/docs/backtests/opportunity.md",
     "lookup": f"{REPO}/packages/models/src/dugout_models/lookup.py",
 }

@@ -230,6 +230,38 @@ CREATE TABLE IF NOT EXISTS news_items (
     fetched_at   TIMESTAMPTZ NOT NULL
 );
 
+-- The Guardian Rumour Mill back-catalogue (adapter rumour_archive): one row per paragraph that names a player.
+-- body_text is kept locally to find the linked clubs; never republished.
+CREATE TABLE IF NOT EXISTS rumours (
+    rumour_id    VARCHAR PRIMARY KEY,         -- = news_items.news_id of the same paragraph
+    published_at TIMESTAMPTZ NOT NULL,
+    url          VARCHAR NOT NULL,            -- the Guardian column
+    paragraph    INTEGER NOT NULL,
+    players      VARCHAR[] NOT NULL,          -- as the column names them (bold)
+    outlet       VARCHAR NOT NULL,            -- the outlet the column credits, else The Guardian
+    body_text    VARCHAR NOT NULL,
+    fetched_at   TIMESTAMPTZ NOT NULL
+);
+
+-- Each rumour resolved to (player, linked club) pairs and labelled with what happened (`dugout-models rumours`):
+-- Transfermarkt ids by normalised name; joined_<n>m = he joined that club within n months (NULL: not yet known).
+CREATE TABLE IF NOT EXISTS rumour_links (
+    link_id        VARCHAR PRIMARY KEY,       -- <rumour_id>:<tm_player_id>:<tm_club_id>
+    rumour_id      VARCHAR NOT NULL,
+    published_at   TIMESTAMPTZ NOT NULL,
+    outlet         VARCHAR NOT NULL,
+    player_name    VARCHAR NOT NULL,          -- as the column names him
+    tm_player_id   VARCHAR NOT NULL,
+    club_name      VARCHAR NOT NULL,          -- the linked club, as matched in the text
+    tm_club_id     VARCHAR NOT NULL,
+    from_tm_club   VARCHAR,                   -- his club on the day (Transfermarkt transfer history)
+    joined_3m      BOOLEAN,
+    joined_6m      BOOLEAN,
+    joined_12m     BOOLEAN,
+    joined_on      DATE,                      -- first move to the linked club after the rumour, if any
+    labelled_at    TIMESTAMPTZ NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS standings (
     league       VARCHAR NOT NULL,
     season       VARCHAR NOT NULL,

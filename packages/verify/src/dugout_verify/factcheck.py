@@ -85,6 +85,7 @@ METRIC_WORDS = {
     "exp_away_goals": r"goal|xg",
     "elo": r"\belo\b|rating",
     "age": r"\bage|year|old",
+    "one_in": r"came true|track record|one time in",
 }
 
 

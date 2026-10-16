@@ -413,8 +413,9 @@ def publish(
 ) -> dict:
     now = now or datetime.now(UTC)
     from dugout_models.market import market
+    from dugout_models.rumours import publish as rumours
 
-    registry = {**MODELS, "market": market}
+    registry = {**MODELS, "market": market, "rumours": rumours}
     counts = {}
     for name in models or list(registry):
         rows = registry[name](con, now)
