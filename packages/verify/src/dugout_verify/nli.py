@@ -6,8 +6,13 @@ Both are behind small protocols so tests can use deterministic fakes (no network
 
 from __future__ import annotations
 
+import hashlib
+import sqlite3
+import threading
 from dataclasses import dataclass
+from datetime import date
 from functools import cached_property
+from pathlib import Path
 from typing import Protocol
 
 import numpy as np
@@ -113,3 +118,85 @@ class BgeEmbedder:
                 cls = model(**enc).last_hidden_state[:, 0].numpy()  # BGE uses the [CLS] vector
             out.append(cls / np.linalg.norm(cls, axis=1, keepdims=True))
         return np.vstack(out) if out else np.zeros((0, 384))
+
+
+class _Store:
+    """A small SQLite key -> bytes store, safe across threads. Entries unused for `keep_days` are dropped on open."""
+
+    def __init__(self, path: Path, keep_days: int = 30):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        self._con = sqlite3.connect(str(path), check_same_thread=False)
+        self._lock = threading.Lock()
+        self._today = date.today().toordinal()
+        with self._lock, self._con:
+            self._con.execute(
+                "CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v BLOB NOT NULL, seen INTEGER)"
+            )
+            self._con.execute("DELETE FROM kv WHERE seen < ?", [self._today - keep_days])
+
+    def get_many(self, keys: list[str]) -> dict[str, bytes]:
+        out: dict[str, bytes] = {}
+        with self._lock:
+            for i in range(0, len(keys), 500):
+                part = keys[i : i + 500]
+                q = f"SELECT k, v FROM kv WHERE k IN ({','.join('?' * len(part))})"
+                out |= dict(self._con.execute(q, part).fetchall())
+            if out:
+                with self._con:
+                    self._con.executemany(
+                        "UPDATE kv SET seen = ? WHERE k = ?", [(self._today, k) for k in out]
+                    )
+        return out
+
+    def put_many(self, items: dict[str, bytes]) -> None:
+        with self._lock, self._con:
+            self._con.executemany(
+                "INSERT OR REPLACE INTO kv VALUES (?, ?, ?)", [(k, v, self._today) for k, v in items.items()]
+            )
+
+
+def _key(*parts: str) -> str:
+    return hashlib.sha256("\0".join(parts).encode()).hexdigest()
+
+
+class CachedNLI:
+    """NLI scores kept on disk between runs. The weights are pinned, so the same premise and hypothesis always
+    score the same: most of a night's Fact-Check pairs were already scored the night before."""
+
+    def __init__(self, inner: DebertaNLI, path: Path):
+        self.inner, self.store = inner, _Store(path)
+        self._tag = f"nli:{inner.spec.revision}:{inner.max_length}"
+
+    def scores(self, premises: list[str], hypothesis: str) -> np.ndarray:
+        keys = [_key(self._tag, p, hypothesis) for p in premises]
+        hit = self.store.get_many(keys)
+        miss = [i for i, k in enumerate(keys) if k not in hit]
+        if miss:
+            fresh = self.inner.scores([premises[i] for i in miss], hypothesis).astype(np.float32)
+            new = {keys[i]: row.tobytes() for i, row in zip(miss, fresh, strict=True)}
+            self.store.put_many(new)
+            hit |= new
+        if not keys:
+            return np.zeros((0, 3), dtype=np.float32)
+        return np.vstack([np.frombuffer(hit[k], dtype=np.float32) for k in keys])
+
+
+class CachedEmbedder:
+    """Embeddings kept on disk between runs (pinned weights: a text always embeds the same)."""
+
+    def __init__(self, inner: BgeEmbedder, path: Path):
+        self.inner, self.store = inner, _Store(path)
+        self._tag = f"emb:{inner.spec.revision}"
+
+    def embed(self, texts: list[str], query: bool = False) -> np.ndarray:
+        keys = [_key(self._tag, "q" if query else "p", t) for t in texts]
+        hit = self.store.get_many(list(dict.fromkeys(keys)))
+        miss = list(dict.fromkeys(i for i, k in enumerate(keys) if k not in hit))
+        if miss:
+            fresh = self.inner.embed([texts[i] for i in miss], query=query).astype(np.float32)
+            new = {keys[i]: row.tobytes() for i, row in zip(miss, fresh, strict=True)}
+            self.store.put_many(new)
+            hit |= new
+        if not keys:
+            return np.zeros((0, 384), dtype=np.float32)
+        return np.vstack([np.frombuffer(hit[k], dtype=np.float32) for k in keys])

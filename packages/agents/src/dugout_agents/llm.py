@@ -50,9 +50,12 @@ def extra_body(provider: str, model: str) -> dict:
 
 def _retry_after(value: str) -> float | None:
     try:
-        return min(float(value), 60.0)
+        return float(value)
     except ValueError:
         return None
+
+
+FALLTHROUGH_WAIT = 10.0  # seconds a model in front of a fallback may be asked to wait before we move on
 
 
 class OpenAICompatLLM:
@@ -69,11 +72,16 @@ class OpenAICompatLLM:
         retries: int = 3,
         sleep: Callable[[float], None] = time.sleep,
         extra: dict | None = None,
+        max_wait: float | None = None,
+        clock: Callable[[], float] = time.monotonic,
     ):
         self.base_url, self.model = base_url.rstrip("/"), model
         self.name = model
         self.temperature, self.max_tokens, self.retries, self._sleep = temperature, max_tokens, retries, sleep
         self.extra = extra or {}
+        # With a fallback behind it, a model asked to wait longer than `max_wait` seconds (a per-minute token cap,
+        # a daily quota) is skipped until then instead of slept on; None = always wait (the last in the chain).
+        self.max_wait, self._clock, self.blocked_until = max_wait, clock, 0.0
         headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
         if "openrouter.ai" in self.base_url:  # OpenRouter asks apps to identify themselves
             headers |= {"HTTP-Referer": "https://github.com/delta96040/dugout", "X-Title": "dugout"}
@@ -89,13 +97,22 @@ class OpenAICompatLLM:
             "seed": 7,
             **self.extra,
         }
+        if self._clock() < self.blocked_until:
+            raise LLMError(f"{self.model}: rate-limited, skipped")
         for attempt in range(self.retries + 1):
             try:
                 self.calls += 1
                 r = self._http.post(f"{self.base_url}/chat/completions", json=body)
                 if r.status_code in self.RETRY_STATUS and attempt < self.retries:
                     wait = _retry_after(r.headers.get("retry-after", ""))
-                    self._sleep(wait if wait is not None else 5 * 2**attempt)
+                    if (
+                        r.status_code == 429
+                        and self.max_wait is not None
+                        and (wait is None or wait > self.max_wait)
+                    ):
+                        self.blocked_until = self._clock() + (wait if wait is not None else 60.0)
+                        raise LLMError(f"{self.model}: rate-limited, falling through")
+                    self._sleep(min(wait, 60.0) if wait is not None else 5 * 2**attempt)
                     continue
                 r.raise_for_status()
                 return r.json()["choices"][0]["message"]["content"] or ""
@@ -158,7 +175,9 @@ def _reachable(llm: OpenAICompatLLM) -> bool:
     return False
 
 
-def make_llm(spec: str, local_base_url: str | None = None) -> OpenAICompatLLM | None:
+def make_llm(
+    spec: str, local_base_url: str | None = None, max_wait: float | None = None
+) -> OpenAICompatLLM | None:
     """`<provider>:<model>`, e.g. `groq:openai/gpt-oss-120b`. None when the provider's key is not set."""
     from dugout_pipeline.settings import get_settings
 
@@ -171,7 +190,7 @@ def make_llm(spec: str, local_base_url: str | None = None) -> OpenAICompatLLM | 
     key = get_settings().secret(key_name) if key_name else None
     if key_name and not key:
         return None
-    return OpenAICompatLLM(base, model, key, extra=extra_body(provider, model))
+    return OpenAICompatLLM(base, model, key, extra=extra_body(provider, model), max_wait=max_wait)
 
 
 def from_settings() -> LLM | None:
@@ -189,4 +208,6 @@ def from_settings() -> LLM | None:
     if not chain:
         log.warning("no LLM endpoint reachable; using deterministic templates only")
         return None
+    for llm in chain[:-1]:  # each free model has its own rate limit: move on rather than sleep
+        llm.max_wait = FALLTHROUGH_WAIT
     return chain[0] if len(chain) == 1 else FallbackLLM(chain)

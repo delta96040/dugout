@@ -16,7 +16,7 @@ from dugout_pipeline.http import DiskCache
 from dugout_pipeline.settings import REPO_ROOT, get_settings
 from dugout_verify.factcheck import FactChecker, Passage, chunk
 from dugout_verify.ledger import EvidenceLedger
-from dugout_verify.nli import NLI, BgeEmbedder, DebertaNLI, Embedder
+from dugout_verify.nli import NLI, BgeEmbedder, CachedEmbedder, CachedNLI, DebertaNLI, Embedder
 
 log = logging.getLogger(__name__)
 NEWS_DAYS = 60
@@ -89,8 +89,10 @@ def make_context(
     ledger = EvidenceLedger(con)
     tb = Toolbox(con, ledger, now)
     corpus = passages(con, tb, now)
-    checker = FactChecker(
-        corpus, nli or DebertaNLI("base"), embedder or BgeEmbedder(), now=now, aliases=tb.aliases
-    )
+    # Fact-Check model outputs persist between runs (.cache is kept by CI): unchanged passages are not re-scored
+    cache = get_settings().cache_dir / "factcheck"
+    nli = nli or CachedNLI(DebertaNLI("base"), cache / "nli.sqlite")
+    embedder = embedder or CachedEmbedder(BgeEmbedder(), cache / "embeddings.sqlite")
+    checker = FactChecker(corpus, nli, embedder, now=now, aliases=tb.aliases)
     log.info("fact-check corpus: %d passages", len(corpus))
     return Context(tb, ledger, checker, llm, resolve_body=body_resolver(), files_root=REPO_ROOT)

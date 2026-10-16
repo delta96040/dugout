@@ -111,6 +111,13 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
       moves, 5,329 with a Transfermarkt player id via Wikidata, 181 with a fee (ECB-converted). Uses
       `/wiki/<title>?action=raw` (robots allows; `/w/` API disallowed). Wikidata 502s are tolerated (ids skipped).
       Players who moved this summer are dropped from shortlists and gems (`Market.moved`).
+    - Merged as PR #12; nightly 38948656718 (52 min) green, live site shows the three lists.
+  - **Faster nightly (branch `faster-nightly`):** (a) LLM fall-through: a chain member told to wait > 10 s
+    (`FALLTHROUGH_WAIT`) is skipped until its limit clears; the last member still waits. (b) Fact-Check NLI scores and
+    BGE embeddings cached on disk (`.cache/factcheck/*.sqlite`, keyed by pinned model revision + text, entries unused
+    30 days dropped; CI keeps `.cache`). Everton dossier: 660 s cold -> 8.4 s warm. Nightly timing before: ingest
+    ~21 min (19 of them `club_news` filling its article backlog, max 150 per club per run; shrinks once filled),
+    dossiers ~18 min (NLI + embeddings ~95%), publish ~2.5 min.
     - Next: rumour track record (Rumour Mill archive x TM transfers + wiki_transfers as outcome labels), then a
       league picker (needs non-PL leagues: football-data.org free tier has PD/SA/BL1/FL1/DED; FPL is PL-only),
       needs model on played positions, conformal fee ranges, summer-2026 fees as a fresh valuation holdout.
