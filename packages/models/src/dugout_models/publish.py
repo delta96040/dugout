@@ -164,13 +164,20 @@ def tm_positions(con: duckdb.DuckDBPyConnection) -> pd.DataFrame:
     bridge = con.execute(
         "SELECT reep_id, external_id FROM reep.bridges WHERE provider='transfermarkt' AND namespace='spieler'"
     ).df()
-    return (
+    from dugout_models.positions import SLOT_SHARE, SLOT_STARTS, positions_played
+
+    # positions he starts at often enough count as natural too (a centre-back who also plays right-back)
+    alt = positions_played(SLOT_SHARE, SLOT_STARTS).map(lambda ps: {SUB[x] for x in ps if x in SUB})
+    out = (
         bridge.merge(tm, left_on="external_id", right_on="player_id")
-        .assign(slot=lambda d: d.sub_position.map(SUB))[["reep_id", "slot"]]
+        .assign(slot=lambda d: d.sub_position.map(SUB), alt=lambda d: d.external_id.map(alt))[
+            ["reep_id", "slot", "alt"]
+        ]
         .rename(columns={"reep_id": "player_id"})
-        .dropna()
+        .dropna(subset=["slot"])
         .drop_duplicates("player_id")
     )
+    return out
 
 
 FPL_SLOT = {"GK": "GK", "DEF": "CB", "MID": "CM", "FWD": "CF"}

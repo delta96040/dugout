@@ -7,7 +7,7 @@ counted by FPL position (GK/DEF/MID/FWD). Only matches where all eleven starters
 
 | Rule | Back line right | XI overlap with the actual XI |
 |---|---|---|
-| **Observed shape** (current): the (defenders, forwards) count the manager started most often in the last 6 matches picks the formation family; the best XI is chosen within it, and FPL defenders only fill back-line slots | **75.3%** | 73.8% |
+| **Observed shape** (current): the (defenders, forwards) count the manager started most often in the last 6 matches picks the formation family; the best XI is chosen within it, FPL defenders only fill back-line slots, and positions a player started at in 10%+ of his games since 2023-24 (transfermarkt-datasets lineups) count as natural | **75.3%** | 74.2% |
 | Strongest fit (previous): the formation that fits the strongest XI best | 61.4% | 73.5% |
 | Always a back four (base rate) | 61.1% | — |
 
@@ -17,5 +17,5 @@ The window of 6 matches was set before this test and not tuned.
 
 Limits: FPL lists some wing-backs as MID, so only "back four or not" is scored. Who plays which slot cannot be
 scored (FPL does not record it); the "defenders stay in the back line" rule changes slots, not who starts, which
-is why the XI overlap barely moves. A defender listed as a centre-back still fits right-back less well than a
-natural right-back, so the model can prefer the natural full-back even when the manager does not.
+is why the XI overlap barely moves. Since the played-positions change a centre-back who also starts at right-back (Ronald Araújo: 14% of his starts
+since 2023-24) fits right-back fully; this season's positions arrive through API-Football's daily lineups.

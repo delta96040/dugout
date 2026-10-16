@@ -38,6 +38,7 @@ from dugout_models import realism, valuation
 from dugout_models.opportunity import FEATURES as OPP_FEATURES
 from dugout_models.opportunity import OpportunityModel
 from dugout_models.opportunity import build as opportunity_frame
+from dugout_models.positions import positions_played
 from dugout_models.publish import _row
 
 log = logging.getLogger(__name__)
@@ -151,6 +152,7 @@ class Market:
         realism.TOP_TIER.update(comps.loc[comps.sub_type == "first_tier", "competition_id"])
         self.squads = pd.read_csv(SQUADS, dtype={"tm_player_id": str, "tm_club_id": str})
         self.incoming: dict[str, list[tuple]] = {}  # filled from official announcements by market()
+        self.played = positions_played()  # positions players actually start at (positions.py)
         self.players = self.t["players"].copy()
         self.players["player_id"] = self.players.player_id.astype(str)
         self.players = self.players.set_index("player_id")
@@ -429,13 +431,19 @@ class Market:
             )
         return pd.DataFrame(rows).sort_values("score", ascending=False).reset_index(drop=True)
 
+    def plays(self, ids: pd.Series, primary: pd.Series, group: str) -> pd.Series:
+        """Players listed at a position of `group`, or who start there in a quarter of their games."""
+        wanted = set(GROUPS[group])
+        often = ids.astype(str).map(self.played).map(lambda s: isinstance(s, set) and bool(s & wanted))
+        return primary.isin(wanted) | often.astype(bool)
+
     def shortlist(self, club_slug: str, group: str, tm_club: str) -> pd.DataFrame:
         sq = self.squad(club_slug)
         cap = self.capacity.get(tm_club, np.nan)
         cap = cap if cap == cap and cap > 0 else self.club_value.get(tm_club, 0) * 0.1
         pool = self.players.reset_index()
         pool = pool[
-            pool.sub_position.isin(GROUPS[group])
+            self.plays(pool.player_id, pool.sub_position, group)
             & (
                 pool.current_club_domestic_competition_id.isin(
                     self.comps.loc[self.comps.sub_type == "first_tier", "competition_id"]

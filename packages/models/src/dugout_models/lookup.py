@@ -205,7 +205,7 @@ def gems(mk: Market, pool: pd.DataFrame, proj: dict, ids: list[str], now: dateti
         for i, n in mk.needs(slug).head(2).iterrows():
             inc = sq.loc[sq.group == n.group, "market_value_eur"].astype(float).sort_values(ascending=False)
             bar = inc.iloc[STARTERS[n.group] - 1] if len(inc) >= STARTERS[n.group] else np.inf
-            c = g[g["sub"].isin(GROUPS[n.group]) & (g.club_now != tm_club) & (g.mv < bar)]
+            c = g[mk.plays(g.player_id, g["sub"], n.group) & (g.club_now != tm_club) & (g.mv < bar)]
             for k, r in enumerate(c.nlargest(SHORTLIST, "proj4").itertuples(), 1):
                 ctx = f"{slug}:need:{i + 1}:gem:{k}"
                 rows += [

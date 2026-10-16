@@ -96,12 +96,14 @@ def fit_score(player_slot: str | None, slot: str) -> float:
     return 0.4 if LINE[player_slot] == LINE[slot] else 0.0
 
 
-def player_fit(player_slot: str | None, fpl_pos: str | None, slot: str) -> float:
+def player_fit(player_slot: str | None, fpl_pos: str | None, slot: str, alt=None) -> float:
     """Slot fit, except that FPL defenders stay in the back line: Transfermarkt calls a centre-back who plays
     right-back "CB", and CB is as close to DM as to RB, so a back-four side's right-back ended up in midfield.
     (FPL midfielders may still fill back-line slots: some wing-backs are listed MID.)"""
     if fpl_pos == "DEF" and LINE.get(slot) != "D":
         return 0.0
+    if isinstance(alt, set) and slot in alt:  # he starts there often (positions.py)
+        return 1.0
     return fit_score(player_slot, slot)
 
 
@@ -118,7 +120,10 @@ def optimise(squad: pd.DataFrame, formation: str = "4-3-3", time_limit: float = 
     slots = FORMATIONS[formation]
     squad = squad[squad.available].reset_index(drop=True)
     fpl = squad.fpl_pos if "fpl_pos" in squad else pd.Series([None] * len(squad))
-    fits = [[player_fit(sl, fp, s) for s in slots] for sl, fp in zip(squad.slot, fpl, strict=True)]
+    alt = squad.alt if "alt" in squad else pd.Series([None] * len(squad))
+    fits = [
+        [player_fit(sl, fp, s, al) for s in slots] for sl, fp, al in zip(squad.slot, fpl, alt, strict=True)
+    ]
     m = cp_model.CpModel()
     x = {}
     for p in squad.itertuples():
@@ -360,7 +365,7 @@ def shape_backtest(con, seasons: tuple[str, ...] = ("2025-26", "2026-27"), out_d
         if hist.match_id.nunique() < 5:
             continue
         truth = int((xi.fpl_pos == "DEF").sum()) == 4
-        squad = hist.drop_duplicates("player_id")[["player_id", "slot", "fpl_pos"]].copy()
+        squad = hist.drop_duplicates("player_id")[["player_id", "slot", "fpl_pos", "alt"]].copy()
         quality = squad.player_id.map(ratings_from_history(hist)).fillna(0)
         last5 = hist[hist.match_id.isin(hist.drop_duplicates("match_id").nlargest(5, "date").match_id)]
         share = squad.player_id.map(last5.groupby("player_id").minutes.sum() / (5 * 90)).fillna(0)
@@ -374,7 +379,7 @@ def shape_backtest(con, seasons: tuple[str, ...] = ("2025-26", "2026-27"), out_d
         # current rule: observed shape, FPL defenders in the back line; previous: best fit over all formations
         for name, sq, allowed in (
             ("observed_shape", squad, shape_formations(shape)),
-            ("strongest_fit", squad.drop(columns="fpl_pos"), list(FORMATIONS)),
+            ("strongest_fit", squad.drop(columns=["fpl_pos", "alt"]), list(FORMATIONS)),
         ):
             try:
                 sel = best_formation(sq, allowed)
