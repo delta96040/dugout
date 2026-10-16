@@ -1,0 +1,2493 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "werder-bremen",
+    "name": "Werder Bremen",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "country": "Germany"
+  },
+  "generated_at": "2026-10-16T21:29:36+00:00",
+  "data_as_of": "2026-10-16T21:21:16+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Werder Bremen for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Werder Bremen are "
+          },
+          {
+            "stat": "ev_2fece98b38993679",
+            "display": "7th"
+          },
+          {
+            "text": " in the Bundesliga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Werder Bremen have "
+          },
+          {
+            "stat": "ev_b6b02faef0558896",
+            "display": "8"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Werder Bremen's next league match is Werder Bremen v Paderborn on "
+          },
+          {
+            "stat": "ev_53b22aea23ef6041",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Werder Bremen's biggest squad need is "
+          },
+          {
+            "stat": "ev_5226dfc6e89484a3",
+            "display": "centre-forward"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Werder Bremen doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen are "
+            },
+            {
+              "stat": "ev_2fece98b38993679",
+              "display": "7th"
+            },
+            {
+              "text": " in the Bundesliga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen have "
+            },
+            {
+              "stat": "ev_b6b02faef0558896",
+              "display": "8"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen have scored "
+            },
+            {
+              "stat": "ev_1a4c411b2eca386d",
+              "display": "10"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen have conceded "
+            },
+            {
+              "stat": "ev_ecaf3a9e80ca73af",
+              "display": "10"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen's most recent league results read "
+            },
+            {
+              "stat": "ev_e01b9c262a555d30",
+              "display": "DWDWL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Daniel Thioune has been Werder Bremen's head coach since "
+            },
+            {
+              "stat": "ev_7cf6e1b04d1aabed",
+              "display": "4 February 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Werder Bremen expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen's next league match is Werder Bremen v Paderborn on "
+            },
+            {
+              "stat": "ev_53b22aea23ef6041",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Werder Bremen's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Werder Bremen, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Werder Bremen players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Oskar Wójcik's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_d7628d2b41735be4",
+              "display": "50%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Eren Dinkci's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_6a0d3a073f81d254",
+              "display": "30%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Jens Stage's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_97569f0ca09ec4ba",
+              "display": "15%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Senne Lynen at "
+            },
+            {
+              "stat": "ev_62d0a5fe816deee1",
+              "display": "€8.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Senne Lynen is "
+            },
+            {
+              "stat": "ev_04a6a9d9246712f7",
+              "display": "€5.4m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Werder Bremen strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen's biggest squad need is "
+            },
+            {
+              "stat": "ev_5226dfc6e89484a3",
+              "display": "centre-forward"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Odsonne Édouard (RC Lens), who is "
+            },
+            {
+              "stat": "ev_6a846144194caaf9",
+              "display": "29"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Odsonne Édouard plays for "
+            },
+            {
+              "stat": "ev_03cc77216a5fa642",
+              "display": "RC Lens"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Odsonne Édouard has a market value of "
+            },
+            {
+              "stat": "ev_8d3575c548a26c74",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Odsonne Édouard is "
+            },
+            {
+              "stat": "ev_49bcb35863b35e0e",
+              "display": "€8.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Odsonne Édouard to play "
+            },
+            {
+              "stat": "ev_971fbae1e50dc44b",
+              "display": "60%"
+            },
+            {
+              "text": " of Werder Bremen's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Hugo Duro (Valencia CF), who is "
+            },
+            {
+              "stat": "ev_1bd4246a655f1509",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hugo Duro plays for "
+            },
+            {
+              "stat": "ev_87c2dcfdeba1cf66",
+              "display": "Valencia CF"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hugo Duro has a market value of "
+            },
+            {
+              "stat": "ev_a42c79ab5bc7e4df",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Hugo Duro is "
+            },
+            {
+              "stat": "ev_009fe648e4ec3c62",
+              "display": "€8.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Hugo Duro to play "
+            },
+            {
+              "stat": "ev_678f94303015c5e3",
+              "display": "57%"
+            },
+            {
+              "text": " of Werder Bremen's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Yanis Begraoui (GD Estoril Praia), who is "
+            },
+            {
+              "stat": "ev_392842055220890f",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Yanis Begraoui plays for "
+            },
+            {
+              "stat": "ev_c58022ef89eabaa2",
+              "display": "GD Estoril Praia"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Yanis Begraoui has a market value of "
+            },
+            {
+              "stat": "ev_6d4c43989fcf4c7a",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Yanis Begraoui is "
+            },
+            {
+              "stat": "ev_7a200d4deac6fc84",
+              "display": "€11.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Yanis Begraoui to play "
+            },
+            {
+              "stat": "ev_c6926d20047adb34",
+              "display": "56%"
+            },
+            {
+              "text": " of Werder Bremen's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Tawanda Maswanhise (Motherwell FC), who is "
+            },
+            {
+              "stat": "ev_c62666f78a3cb6a3",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Tawanda Maswanhise plays for "
+            },
+            {
+              "stat": "ev_5f388fd065bc4c9e",
+              "display": "Motherwell FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_e275bb3ffdad603e",
+              "display": "78%"
+            },
+            {
+              "text": " chance that Motherwell FC sell Tawanda Maswanhise in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Tawanda Maswanhise is "
+            },
+            {
+              "stat": "ev_e4833ca259c15909",
+              "display": "€5.3m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_8ded8365eba3b410",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Tawanda Maswanhise joins Werder Bremen in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Gabriel Silva (CD Santa Clara), who is "
+            },
+            {
+              "stat": "ev_a25660446b3a52f5",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Gabriel Silva plays for "
+            },
+            {
+              "stat": "ev_146fafca0b695902",
+              "display": "CD Santa Clara"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_474d2fc167765807",
+              "display": "58%"
+            },
+            {
+              "text": " chance that CD Santa Clara sell Gabriel Silva in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Gabriel Silva is "
+            },
+            {
+              "stat": "ev_2241bea15f38524f",
+              "display": "€5.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Werder Bremen's second squad need is "
+            },
+            {
+              "stat": "ev_d339dca034625a21",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Odsonne Édouard has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Hugo Duro has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Yanis Begraoui has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Tawanda Maswanhise has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Gabriel Silva has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_009fe648e4ec3c62": {
+      "value": 8800000.0,
+      "display": "8800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0bdfee357301ce",
+      "entity_name": "Hugo Duro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_03cc77216a5fa642": {
+      "value": "RC Lens",
+      "display": "RC Lens",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp4aa9bde7049491",
+      "entity_name": "Odsonne Edouard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_04a6a9d9246712f7": {
+      "value": 5400000.0,
+      "display": "5400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpdfd860ef540af4",
+      "entity_name": "Senne Lynen",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_06caa9852eb5f533": {
+      "value": 0.001,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0fd5ccec9ebbf395": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpeb2abf25495fdf",
+      "entity_name": "Finn Dahmen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_10108c986046f735": {
+      "value": 20.8,
+      "display": "20.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp554453a8e38662",
+      "entity_name": "Kurban Rasulov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_146fafca0b695902": {
+      "value": "CD Santa Clara",
+      "display": "CD Santa Clara",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1a4c411b2eca386d": {
+      "value": 10.0,
+      "display": "10",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:20.942359+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_1bd4246a655f1509": {
+      "value": 26.9,
+      "display": "26.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp0bdfee357301ce",
+      "entity_name": "Hugo Duro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2241bea15f38524f": {
+      "value": 5500000.0,
+      "display": "5500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_237aacf9627ad59f": {
+      "value": "1.FC Union Berlin",
+      "display": "1.FC Union Berlin",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd4bd7921032e9f",
+      "entity_name": "Andrej Ilic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2fece98b38993679": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:20.942359+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_385be5b17007af4b": {
+      "value": 0.462,
+      "display": "0.46",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp2cabd7d023bdd4",
+      "entity_name": "Adrián Liso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_392842055220890f": {
+      "value": 25.3,
+      "display": "25.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3a13301140cdd328": {
+      "value": 0.436,
+      "display": "0.44",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp21e058a8700d23",
+      "entity_name": "Max Dean",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_435a785b2c72f3ab": {
+      "value": 4500000.0,
+      "display": "4500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp56206b109b5122",
+      "entity_name": "Thom van Bergen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4435568fda075180": {
+      "value": 3700000.0,
+      "display": "3700000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp56206b109b5122",
+      "entity_name": "Thom van Bergen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_46866fb5e69ba2e3": {
+      "value": 2500000.0,
+      "display": "2500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp554453a8e38662",
+      "entity_name": "Kurban Rasulov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_474d2fc167765807": {
+      "value": 0.581,
+      "display": "0.58",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_49bcb35863b35e0e": {
+      "value": 8800000.0,
+      "display": "8800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp4aa9bde7049491",
+      "entity_name": "Odsonne Edouard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4cb7cc8c0284d9db": {
+      "value": 3900000.0,
+      "display": "3900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp21e058a8700d23",
+      "entity_name": "Max Dean",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4d73bf0f704ade7c": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp2cabd7d023bdd4",
+      "entity_name": "Adrián Liso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5226dfc6e89484a3": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_53b22aea23ef6041": {
+      "value": "2026-10-17T13:30:00+00:00",
+      "display": "2026-10-17T13:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "bundesliga:2026-27:werder-bremen:paderborn",
+      "entity_name": "Werder Bremen v Paderborn",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:13.827014+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_580f65721c878a01": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp4aa9bde7049491",
+      "entity_name": "Odsonne Edouard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5b14de722bab051d": {
+      "value": 29.0,
+      "display": "29",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfe8900ecd7a9a2",
+      "entity_name": "Moritz Nicolas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5c89395b24ccc6bd": {
+      "value": 4900000.0,
+      "display": "4900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfe8900ecd7a9a2",
+      "entity_name": "Moritz Nicolas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5f388fd065bc4c9e": {
+      "value": "Motherwell FC",
+      "display": "Motherwell FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_62d0a5fe816deee1": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpdfd860ef540af4",
+      "entity_name": "Senne Lynen",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_65cb07adfbcfc7a2": {
+      "value": 26.5,
+      "display": "26.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd4bd7921032e9f",
+      "entity_name": "Andrej Ilic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_669fc6a2115ce461": {
+      "value": 22.7,
+      "display": "22.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp21e058a8700d23",
+      "entity_name": "Max Dean",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_670792bef0b6b854": {
+      "value": "KAA Gent",
+      "display": "KAA Gent",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp21e058a8700d23",
+      "entity_name": "Max Dean",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_678f94303015c5e3": {
+      "value": 0.573,
+      "display": "0.57",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp0bdfee357301ce",
+      "entity_name": "Hugo Duro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6a0d3a073f81d254": {
+      "value": 0.301,
+      "display": "0.30",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpc6f217b91f5606",
+      "entity_name": "Eren Dinkci",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6a846144194caaf9": {
+      "value": 28.7,
+      "display": "28.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4aa9bde7049491",
+      "entity_name": "Odsonne Edouard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6d4c43989fcf4c7a": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_703307b2ee2b887a": {
+      "value": 0.0009,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpd4bd7921032e9f",
+      "entity_name": "Andrej Ilic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_711fe78bbd8ae6a3": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpd4bd7921032e9f",
+      "entity_name": "Andrej Ilic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_769777d1b04a30ed": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_78ffb60c362bdf36": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7a200d4deac6fc84": {
+      "value": 11500000.0,
+      "display": "11500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7c479f8a259f9591": {
+      "value": 3800000.0,
+      "display": "3800000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp2cabd7d023bdd4",
+      "entity_name": "Adrián Liso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7cf6e1b04d1aabed": {
+      "value": "2026-02-04",
+      "display": "2026-02-04",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q123126",
+      "entity_name": "Daniel Thioune",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q123126",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_858fb1b28f019a6b": {
+      "value": 28.6,
+      "display": "28.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpeb2abf25495fdf",
+      "entity_name": "Finn Dahmen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_878e3fd89df59a07": {
+      "value": 2600000.0,
+      "display": "2600000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp21e058a8700d23",
+      "entity_name": "Max Dean",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_87c2dcfdeba1cf66": {
+      "value": "Valencia CF",
+      "display": "Valencia CF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp0bdfee357301ce",
+      "entity_name": "Hugo Duro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_88d913f2d410cb40": {
+      "value": 3900000.0,
+      "display": "3900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2cabd7d023bdd4",
+      "entity_name": "Adrián Liso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8ad5d37b6e2bd7de": {
+      "value": 6200000.0,
+      "display": "6200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd4bd7921032e9f",
+      "entity_name": "Andrej Ilic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d3575c548a26c74": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp4aa9bde7049491",
+      "entity_name": "Odsonne Edouard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8ded8365eba3b410": {
+      "value": 0.0012,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_971fbae1e50dc44b": {
+      "value": 0.596,
+      "display": "0.60",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp4aa9bde7049491",
+      "entity_name": "Odsonne Edouard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_97569f0ca09ec4ba": {
+      "value": 0.152,
+      "display": "0.15",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpdf8ff2b7e8587d",
+      "entity_name": "Jens Stage",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_99bc67bdfaa7db6a": {
+      "value": "Getafe CF",
+      "display": "Getafe CF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp2cabd7d023bdd4",
+      "entity_name": "Adrián Liso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9ac1725161985770": {
+      "value": 0.042,
+      "display": "0.04",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpd4bd7921032e9f",
+      "entity_name": "Andrej Ilic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a25660446b3a52f5": {
+      "value": 24.6,
+      "display": "24.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a42c79ab5bc7e4df": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp0bdfee357301ce",
+      "entity_name": "Hugo Duro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b6b02faef0558896": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:20.942359+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_bfeaa68ecf8bc93d": {
+      "value": 0.973,
+      "display": "0.97",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp56206b109b5122",
+      "entity_name": "Thom van Bergen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c08055052a51ca18": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp0bdfee357301ce",
+      "entity_name": "Hugo Duro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c58022ef89eabaa2": {
+      "value": "GD Estoril Praia",
+      "display": "GD Estoril Praia",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c62666f78a3cb6a3": {
+      "value": 23.9,
+      "display": "23.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c6926d20047adb34": {
+      "value": 0.565,
+      "display": "0.56",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cd80c49a141ada32": {
+      "value": 0.002,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpfe8900ecd7a9a2",
+      "entity_name": "Moritz Nicolas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cf0d0959fd710f46": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d339dca034625a21": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d7628d2b41735be4": {
+      "value": 0.498,
+      "display": "0.50",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp2ea5746b8987ed",
+      "entity_name": "Oskar Wójcik",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e01b9c262a555d30": {
+      "value": "DWDWL",
+      "display": "DWDWL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:20.942359+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e275bb3ffdad603e": {
+      "value": 0.776,
+      "display": "0.78",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e4833ca259c15909": {
+      "value": 5300000.0,
+      "display": "5300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfed7104c4b5883",
+      "entity_name": "Tawanda Maswanhise",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e9f07f8612ad82af": {
+      "value": 22.8,
+      "display": "22.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp56206b109b5122",
+      "entity_name": "Thom van Bergen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ecaf3a9e80ca73af": {
+      "value": 10.0,
+      "display": "10",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "werder-bremen",
+      "entity_name": "Werder Bremen",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:20.942359+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f78fdc28d6709a3f": {
+      "value": "FC Groningen",
+      "display": "FC Groningen",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp56206b109b5122",
+      "entity_name": "Thom van Bergen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_2fece98b38993679",
+        "display": "7th",
+        "label": "league position",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_b6b02faef0558896",
+        "display": "8",
+        "label": "league points",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_1a4c411b2eca386d",
+        "display": "10",
+        "label": "league goals scored",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_ecaf3a9e80ca73af",
+        "display": "10",
+        "label": "league goals conceded",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_e01b9c262a555d30",
+        "display": "DWDWL",
+        "label": "recent league results, oldest first",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_7cf6e1b04d1aabed",
+        "display": "4 February 2026",
+        "label": "appointed head coach of Werder Bremen",
+        "subject": "Daniel Thioune"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_53b22aea23ef6041",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Werder Bremen v Paderborn"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_d7628d2b41735be4",
+        "display": "50%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Oskar Wójcik"
+      },
+      {
+        "stat": "ev_6a0d3a073f81d254",
+        "display": "30%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Eren Dinkci"
+      },
+      {
+        "stat": "ev_97569f0ca09ec4ba",
+        "display": "15%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Jens Stage"
+      },
+      {
+        "stat": "ev_62d0a5fe816deee1",
+        "display": "€8.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Senne Lynen"
+      },
+      {
+        "stat": "ev_04a6a9d9246712f7",
+        "display": "€5.4m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Senne Lynen"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_5226dfc6e89484a3",
+        "display": "centre-forward",
+        "label": "squad need, priority one",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_6a846144194caaf9",
+        "display": "29",
+        "label": "age (best target)",
+        "subject": "Odsonne Édouard"
+      },
+      {
+        "stat": "ev_03cc77216a5fa642",
+        "display": "RC Lens",
+        "label": "current club",
+        "subject": "Odsonne Édouard"
+      },
+      {
+        "stat": "ev_580f65721c878a01",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Odsonne Édouard"
+      },
+      {
+        "stat": "ev_8d3575c548a26c74",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Odsonne Édouard"
+      },
+      {
+        "stat": "ev_49bcb35863b35e0e",
+        "display": "€8.8m",
+        "label": "estimated fair fee",
+        "subject": "Odsonne Édouard"
+      },
+      {
+        "stat": "ev_971fbae1e50dc44b",
+        "display": "60%",
+        "label": "expected share of minutes at the club",
+        "subject": "Odsonne Édouard"
+      },
+      {
+        "stat": "ev_1bd4246a655f1509",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Hugo Duro"
+      },
+      {
+        "stat": "ev_87c2dcfdeba1cf66",
+        "display": "Valencia CF",
+        "label": "current club",
+        "subject": "Hugo Duro"
+      },
+      {
+        "stat": "ev_c08055052a51ca18",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Hugo Duro"
+      },
+      {
+        "stat": "ev_a42c79ab5bc7e4df",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Hugo Duro"
+      },
+      {
+        "stat": "ev_009fe648e4ec3c62",
+        "display": "€8.8m",
+        "label": "estimated fair fee",
+        "subject": "Hugo Duro"
+      },
+      {
+        "stat": "ev_678f94303015c5e3",
+        "display": "57%",
+        "label": "expected share of minutes at the club",
+        "subject": "Hugo Duro"
+      },
+      {
+        "stat": "ev_392842055220890f",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_c58022ef89eabaa2",
+        "display": "GD Estoril Praia",
+        "label": "current club",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_78ffb60c362bdf36",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_6d4c43989fcf4c7a",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_7a200d4deac6fc84",
+        "display": "€11.5m",
+        "label": "estimated fair fee",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_c6926d20047adb34",
+        "display": "56%",
+        "label": "expected share of minutes at the club",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_c62666f78a3cb6a3",
+        "display": "24",
+        "label": "age (realistic target)",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_5f388fd065bc4c9e",
+        "display": "Motherwell FC",
+        "label": "current club",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_e275bb3ffdad603e",
+        "display": "78%",
+        "label": "chance his club sells him in a window",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_769777d1b04a30ed",
+        "display": "7",
+        "label": "months left on his contract",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_e4833ca259c15909",
+        "display": "€5.3m",
+        "label": "estimated fair fee",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_8ded8365eba3b410",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Tawanda Maswanhise"
+      },
+      {
+        "stat": "ev_a25660446b3a52f5",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_146fafca0b695902",
+        "display": "CD Santa Clara",
+        "label": "current club",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_474d2fc167765807",
+        "display": "58%",
+        "label": "chance his club sells him in a window",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_cf0d0959fd710f46",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_2241bea15f38524f",
+        "display": "€5.5m",
+        "label": "estimated fair fee",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_06caa9852eb5f533",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_65cb07adfbcfc7a2",
+        "display": "26",
+        "label": "age (realistic target)",
+        "subject": "Andrej Ilic"
+      },
+      {
+        "stat": "ev_237aacf9627ad59f",
+        "display": "1.FC Union Berlin",
+        "label": "current club",
+        "subject": "Andrej Ilic"
+      },
+      {
+        "stat": "ev_9ac1725161985770",
+        "display": "4%",
+        "label": "chance his club sells him in a window",
+        "subject": "Andrej Ilic"
+      },
+      {
+        "stat": "ev_711fe78bbd8ae6a3",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Andrej Ilic"
+      },
+      {
+        "stat": "ev_8ad5d37b6e2bd7de",
+        "display": "€6.2m",
+        "label": "estimated fair fee",
+        "subject": "Andrej Ilic"
+      },
+      {
+        "stat": "ev_703307b2ee2b887a",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Andrej Ilic"
+      },
+      {
+        "stat": "ev_4d73bf0f704ade7c",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Adrián Liso"
+      },
+      {
+        "stat": "ev_99bc67bdfaa7db6a",
+        "display": "Getafe CF",
+        "label": "current club",
+        "subject": "Adrián Liso"
+      },
+      {
+        "stat": "ev_385be5b17007af4b",
+        "display": "46%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Adrián Liso"
+      },
+      {
+        "stat": "ev_88d913f2d410cb40",
+        "display": "€3.9m",
+        "label": "estimated fair fee",
+        "subject": "Adrián Liso"
+      },
+      {
+        "stat": "ev_7c479f8a259f9591",
+        "display": "€3.8m",
+        "label": "projected market value in a few seasons",
+        "subject": "Adrián Liso"
+      },
+      {
+        "stat": "ev_e9f07f8612ad82af",
+        "display": "23",
+        "label": "age (gem target)",
+        "subject": "Thom van Bergen"
+      },
+      {
+        "stat": "ev_f78fdc28d6709a3f",
+        "display": "FC Groningen",
+        "label": "current club",
+        "subject": "Thom van Bergen"
+      },
+      {
+        "stat": "ev_bfeaa68ecf8bc93d",
+        "display": "97%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Thom van Bergen"
+      },
+      {
+        "stat": "ev_435a785b2c72f3ab",
+        "display": "€4.5m",
+        "label": "estimated fair fee",
+        "subject": "Thom van Bergen"
+      },
+      {
+        "stat": "ev_4435568fda075180",
+        "display": "€3.7m",
+        "label": "projected market value in a few seasons",
+        "subject": "Thom van Bergen"
+      },
+      {
+        "stat": "ev_669fc6a2115ce461",
+        "display": "23",
+        "label": "age (gem target)",
+        "subject": "Max Dean"
+      },
+      {
+        "stat": "ev_670792bef0b6b854",
+        "display": "KAA Gent",
+        "label": "current club",
+        "subject": "Max Dean"
+      },
+      {
+        "stat": "ev_3a13301140cdd328",
+        "display": "44%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Max Dean"
+      },
+      {
+        "stat": "ev_4cb7cc8c0284d9db",
+        "display": "€3.9m",
+        "label": "estimated fair fee",
+        "subject": "Max Dean"
+      },
+      {
+        "stat": "ev_878e3fd89df59a07",
+        "display": "€2.6m",
+        "label": "projected market value in a few seasons",
+        "subject": "Max Dean"
+      },
+      {
+        "stat": "ev_d339dca034625a21",
+        "display": "goalkeeper",
+        "label": "squad need, priority two",
+        "subject": "Werder Bremen"
+      },
+      {
+        "stat": "ev_858fb1b28f019a6b",
+        "display": "29",
+        "label": "age (best target, second need)",
+        "subject": "Finn Dahmen"
+      },
+      {
+        "stat": "ev_0fd5ccec9ebbf395",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Finn Dahmen"
+      },
+      {
+        "stat": "ev_5b14de722bab051d",
+        "display": "29",
+        "label": "age (realistic target, second need)",
+        "subject": "Moritz Nicolas"
+      },
+      {
+        "stat": "ev_5c89395b24ccc6bd",
+        "display": "€4.9m",
+        "label": "estimated fair fee",
+        "subject": "Moritz Nicolas"
+      },
+      {
+        "stat": "ev_cd80c49a141ada32",
+        "display": "0.2%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Moritz Nicolas"
+      },
+      {
+        "stat": "ev_10108c986046f735",
+        "display": "21",
+        "label": "age (gem target, second need)",
+        "subject": "Kurban Rasulov"
+      },
+      {
+        "stat": "ev_46866fb5e69ba2e3",
+        "display": "€2.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Kurban Rasulov"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 42,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 42,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

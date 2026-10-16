@@ -1,0 +1,760 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "angers-sco",
+    "name": "Angers SCO",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "ligue_1",
+    "name": "Ligue 1",
+    "country": "France"
+  },
+  "generated_at": "2026-10-16T21:39:43+00:00",
+  "data_as_of": "2026-10-16T21:39:40+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Angers SCO for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Angers SCO are "
+          },
+          {
+            "stat": "ev_af51906ed8b3ceb8",
+            "display": "12th"
+          },
+          {
+            "text": " in the Ligue 1 table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Angers SCO have "
+          },
+          {
+            "stat": "ev_6ce9e48db012cf05",
+            "display": "7"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Angers SCO's next league match is Angers SCO v Olympique Marseille on "
+          },
+          {
+            "stat": "ev_2e8a02a89374fa4a",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Angers SCO's biggest squad need is "
+          },
+          {
+            "stat": "ev_d4aa55515d37f365",
+            "display": "defensive midfield"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Angers SCO doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Angers SCO are "
+            },
+            {
+              "stat": "ev_af51906ed8b3ceb8",
+              "display": "12th"
+            },
+            {
+              "text": " in the Ligue 1 table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Angers SCO have "
+            },
+            {
+              "stat": "ev_6ce9e48db012cf05",
+              "display": "7"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Angers SCO have scored "
+            },
+            {
+              "stat": "ev_92aecbfb4a5a28db",
+              "display": "7"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Angers SCO have conceded "
+            },
+            {
+              "stat": "ev_4395e6fd8b5131ba",
+              "display": "10"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Angers SCO's most recent league results read "
+            },
+            {
+              "stat": "ev_dfab8096d9ad7139",
+              "display": "LWDLW"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Stéphane Gilli has been Angers SCO's head coach since "
+            },
+            {
+              "stat": "ev_ca8aef48749504e0",
+              "display": "9 June 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Angers SCO expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Angers SCO's next league match is Angers SCO v Olympique Marseille on "
+            },
+            {
+              "stat": "ev_2e8a02a89374fa4a",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Angers SCO's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Angers SCO, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Angers SCO players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Ousman Camara's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_c81ac7cd9736a25c",
+              "display": "32%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Yassin Belkhdim's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_abd6b1f927c2fbaa",
+              "display": "26%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Prosper Peter's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_6a1a712aef199a43",
+              "display": "13%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Yassin Belkhdim at "
+            },
+            {
+              "stat": "ev_66e09e94f5c9ce2e",
+              "display": "€7.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Yassin Belkhdim is "
+            },
+            {
+              "stat": "ev_2b5bfb61df4aba3e",
+              "display": "€4.5m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Angers SCO strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Angers SCO's biggest squad need is "
+            },
+            {
+              "stat": "ev_d4aa55515d37f365",
+              "display": "defensive midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Angers SCO's second squad need is "
+            },
+            {
+              "stat": "ev_4a3e3343037f9563",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    }
+  ],
+  "stats": {
+    "ev_2b5bfb61df4aba3e": {
+      "value": 4500000.0,
+      "display": "4500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb7859bebe57015",
+      "entity_name": "Yassin Belkhdim",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2e8a02a89374fa4a": {
+      "value": "2026-10-18T13:00:00+00:00",
+      "display": "2026-10-18T13:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:angers-sco:olympique-marseille",
+      "entity_name": "Angers SCO v Olympique Marseille",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:47.288390+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4395e6fd8b5131ba": {
+      "value": 10.0,
+      "display": "10",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4a3e3343037f9563": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_66e09e94f5c9ce2e": {
+      "value": 7000000.0,
+      "display": "7000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb7859bebe57015",
+      "entity_name": "Yassin Belkhdim",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_6a1a712aef199a43": {
+      "value": 0.134,
+      "display": "0.13",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6ce9e48db012cf05": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_92aecbfb4a5a28db": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_abd6b1f927c2fbaa": {
+      "value": 0.257,
+      "display": "0.26",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpb7859bebe57015",
+      "entity_name": "Yassin Belkhdim",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_af51906ed8b3ceb8": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_c81ac7cd9736a25c": {
+      "value": 0.321,
+      "display": "0.32",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp439c3d117e28d3",
+      "entity_name": "Ousman Camara",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ca8aef48749504e0": {
+      "value": "2026-06-09",
+      "display": "2026-06-09",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q121891089",
+      "entity_name": "Stéphane Gilli",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q121891089",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d4aa55515d37f365": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dfab8096d9ad7139": {
+      "value": "LWDLW",
+      "display": "LWDLW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "angers-sco",
+      "entity_name": "Angers SCO",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_af51906ed8b3ceb8",
+        "display": "12th",
+        "label": "league position",
+        "subject": "Angers SCO"
+      },
+      {
+        "stat": "ev_6ce9e48db012cf05",
+        "display": "7",
+        "label": "league points",
+        "subject": "Angers SCO"
+      },
+      {
+        "stat": "ev_92aecbfb4a5a28db",
+        "display": "7",
+        "label": "league goals scored",
+        "subject": "Angers SCO"
+      },
+      {
+        "stat": "ev_4395e6fd8b5131ba",
+        "display": "10",
+        "label": "league goals conceded",
+        "subject": "Angers SCO"
+      },
+      {
+        "stat": "ev_dfab8096d9ad7139",
+        "display": "LWDLW",
+        "label": "recent league results, oldest first",
+        "subject": "Angers SCO"
+      },
+      {
+        "stat": "ev_ca8aef48749504e0",
+        "display": "9 June 2026",
+        "label": "appointed head coach of Angers SCO",
+        "subject": "Stéphane Gilli"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_2e8a02a89374fa4a",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Angers SCO v Olympique Marseille"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_c81ac7cd9736a25c",
+        "display": "32%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Ousman Camara"
+      },
+      {
+        "stat": "ev_abd6b1f927c2fbaa",
+        "display": "26%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Yassin Belkhdim"
+      },
+      {
+        "stat": "ev_6a1a712aef199a43",
+        "display": "13%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_66e09e94f5c9ce2e",
+        "display": "€7.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Yassin Belkhdim"
+      },
+      {
+        "stat": "ev_2b5bfb61df4aba3e",
+        "display": "€4.5m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Yassin Belkhdim"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_d4aa55515d37f365",
+        "display": "defensive midfield",
+        "label": "squad need, priority one",
+        "subject": "Angers SCO"
+      },
+      {
+        "stat": "ev_4a3e3343037f9563",
+        "display": "goalkeeper",
+        "label": "squad need, priority two",
+        "subject": "Angers SCO"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 18,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 18
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Ligue 1"
+  ]
+}

@@ -26,6 +26,7 @@ class ReepAdapter(SourceAdapter):
     """Keeps the local Reep Register catalogue current (CC0, ~210 MB; the reep SDK verifies SHA-256)."""
 
     name = "reep"
+    scope = "global"
     ttl = 24 * HOUR
     required = True
 

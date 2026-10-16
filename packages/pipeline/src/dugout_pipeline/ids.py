@@ -50,6 +50,8 @@ class ReepMatch:
 class ReepIndex(Protocol):
     def lookup(self, provider: str, namespace: str, external_id: str | int) -> ReepMatch | None: ...
 
+    def teams(self, country: str) -> list[tuple[str, str, str]]: ...
+
 
 def catalogue_path() -> Path:
     from reep.config import Settings
@@ -85,6 +87,17 @@ class LocalReepIndex:
         }
         return ReepMatch(rid, label[0] if label else "", ids)
 
+    def teams(self, country: str) -> list[tuple[str, str, str]]:
+        """(reep id, label, Transfermarkt club id) of men's teams in a country: candidates when a provider without
+        a Reep bridge (football-data.org) names a club."""
+        return self._con.execute(
+            """SELECT e.reep_id, e.label, b.external_id FROM entities e JOIN bridges b USING (reep_id)
+               WHERE e.entity_type = 'team' AND coalesce(e.gender, 'men') = 'men' AND e.country = ?
+                 AND e.status = 'active'
+                 AND b.provider = 'transfermarkt' AND b.namespace = 'verein'""",
+            [country],
+        ).fetchall()
+
 
 def attach_catalogue(con: duckdb.DuckDBPyConnection, alias: str = "reep") -> bool:
     """ATTACH the Reep catalogue read-only for bulk SQL joins. Returns False if it is not synced."""
@@ -101,14 +114,21 @@ class StaticIndex:
     """In-memory index for tests: {(provider, namespace, external_id): ReepMatch}."""
 
     entries: dict[tuple[str, str, str], ReepMatch] = field(default_factory=dict)
+    countries: dict[str, list[tuple[str, str, str]]] = field(default_factory=dict)
 
     def lookup(self, provider: str, namespace: str, external_id: str | int) -> ReepMatch | None:
         return self.entries.get((provider, namespace, str(external_id)))
+
+    def teams(self, country: str) -> list[tuple[str, str, str]]:
+        return self.countries.get(country, [])
 
 
 class NullIndex:
     def lookup(self, provider: str, namespace: str, external_id: str | int) -> ReepMatch | None:
         return None
+
+    def teams(self, country: str) -> list[tuple[str, str, str]]:
+        return []
 
 
 @lru_cache

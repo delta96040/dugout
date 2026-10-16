@@ -1,0 +1,2573 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "juventus",
+    "name": "Juventus",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "serie_a",
+    "name": "Serie A",
+    "country": "Italy"
+  },
+  "generated_at": "2026-10-16T21:19:50+00:00",
+  "data_as_of": "2026-10-16T21:12:24+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Juventus for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Juventus are "
+          },
+          {
+            "stat": "ev_32056cf8ade7e481",
+            "display": "6th"
+          },
+          {
+            "text": " in the Serie A table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Juventus have "
+          },
+          {
+            "stat": "ev_747a8ad9b69578aa",
+            "display": "11"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Juventus's next league match is Juventus v Lazio on "
+          },
+          {
+            "stat": "ev_5f2c3e84610db4f4",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Juventus's biggest squad need is "
+          },
+          {
+            "stat": "ev_ef1f3ecf277cce12",
+            "display": "full-back"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Juventus doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Juventus are "
+            },
+            {
+              "stat": "ev_32056cf8ade7e481",
+              "display": "6th"
+            },
+            {
+              "text": " in the Serie A table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Juventus have "
+            },
+            {
+              "stat": "ev_747a8ad9b69578aa",
+              "display": "11"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Juventus have scored "
+            },
+            {
+              "stat": "ev_e734b8074b4bdaab",
+              "display": "9"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Juventus have conceded "
+            },
+            {
+              "stat": "ev_cc99623903425caf",
+              "display": "5"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Juventus's most recent league results read "
+            },
+            {
+              "stat": "ev_df4e98d122e00523",
+              "display": "DWLDW"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Luciano Spalletti has been Juventus's head coach since "
+            },
+            {
+              "stat": "ev_ab57e0823ec657b7",
+              "display": "30 October 2025"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Juventus expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Juventus's next league match is Juventus v Lazio on "
+            },
+            {
+              "stat": "ev_5f2c3e84610db4f4",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Juventus's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Juventus, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Juventus players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Kenan Yıldız's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_dc287ed60991cbf7",
+              "display": "29%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Juan Cabal's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_bfc17313ed254c04",
+              "display": "15%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Khéphren Thuram-Ulie's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_d91a11683b0aec23",
+              "display": "14%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Kenan Yıldız at "
+            },
+            {
+              "stat": "ev_f2f124bf48150a90",
+              "display": "€75.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Kenan Yıldız is "
+            },
+            {
+              "stat": "ev_530c48cc5072f953",
+              "display": "€59.1m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Douglas Luiz at "
+            },
+            {
+              "stat": "ev_d3c2588838c0b766",
+              "display": "€18.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Douglas Luiz is "
+            },
+            {
+              "stat": "ev_b44cd33113725cd3",
+              "display": "€9.8m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Juventus strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Juventus's biggest squad need is "
+            },
+            {
+              "stat": "ev_ef1f3ecf277cce12",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Jurriën Timber (Arsenal FC), who is "
+            },
+            {
+              "stat": "ev_ad7563d1c84b20a1",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Jurriën Timber plays for "
+            },
+            {
+              "stat": "ev_87c2b0ed70da6564",
+              "display": "Arsenal FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Jurriën Timber has a market value of "
+            },
+            {
+              "stat": "ev_6abf74e35ac939d8",
+              "display": "€70.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Jurriën Timber is "
+            },
+            {
+              "stat": "ev_3f004ae719d116fa",
+              "display": "€46.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Jurriën Timber to play "
+            },
+            {
+              "stat": "ev_d3ddb0ff2366fd58",
+              "display": "59%"
+            },
+            {
+              "text": " of Juventus's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Nico O'Reilly (Manchester City), who is "
+            },
+            {
+              "stat": "ev_52b35e2958ce2894",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nico O'Reilly plays for "
+            },
+            {
+              "stat": "ev_59474e44195fb349",
+              "display": "Manchester City"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nico O'Reilly has a market value of "
+            },
+            {
+              "stat": "ev_38ee303b1b29cafa",
+              "display": "€70.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Nico O'Reilly is "
+            },
+            {
+              "stat": "ev_552e81d799b003ee",
+              "display": "€48.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Nico O'Reilly to play "
+            },
+            {
+              "stat": "ev_2178f1ea6a503a55",
+              "display": "51%"
+            },
+            {
+              "text": " of Juventus's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Myles Lewis-Skelly (Arsenal FC), who is "
+            },
+            {
+              "stat": "ev_6ffe7f917a2e01a0",
+              "display": "20"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Myles Lewis-Skelly plays for "
+            },
+            {
+              "stat": "ev_de88f02f51627823",
+              "display": "Arsenal FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Myles Lewis-Skelly has a market value of "
+            },
+            {
+              "stat": "ev_b5f82c05760f9ed4",
+              "display": "€65.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Myles Lewis-Skelly is "
+            },
+            {
+              "stat": "ev_505794d8ca858501",
+              "display": "€56.3m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Myles Lewis-Skelly to play "
+            },
+            {
+              "stat": "ev_3b4d847782646f54",
+              "display": "55%"
+            },
+            {
+              "text": " of Juventus's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Dodô (ACF Fiorentina), who is "
+            },
+            {
+              "stat": "ev_59ab815353d573e4",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dodô plays for "
+            },
+            {
+              "stat": "ev_d00f6812bf5cb784",
+              "display": "ACF Fiorentina"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_4cd381c2bca1b50d",
+              "display": "25%"
+            },
+            {
+              "text": " chance that ACF Fiorentina sell Dodô in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Dodô is "
+            },
+            {
+              "stat": "ev_e8770ceda5181d3d",
+              "display": "€11.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_8ef78c5cfc469ed6",
+              "display": "0.6%"
+            },
+            {
+              "text": " chance that Dodô joins Juventus in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Wesley (Associazione Sportiva Roma), who is "
+            },
+            {
+              "stat": "ev_cf8a7c467794a01c",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Wesley plays for "
+            },
+            {
+              "stat": "ev_95fdc5cf42f43a1a",
+              "display": "Associazione Sportiva Roma"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_e5fede9c301e6173",
+              "display": "12%"
+            },
+            {
+              "text": " chance that Associazione Sportiva Roma sell Wesley in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Wesley is "
+            },
+            {
+              "stat": "ev_842c9041363a04a5",
+              "display": "€30.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Juventus's second squad need is "
+            },
+            {
+              "stat": "ev_1a1400979e0d3f60",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Jurriën Timber has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Nico O'Reilly has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Myles Lewis-Skelly has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Dodô has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Wesley has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_023c70d951d73669": {
+      "value": 21400000.0,
+      "display": "21400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1a1400979e0d3f60": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1e0beeb5835f359d": {
+      "value": 0.0063,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1e4052daf8738163": {
+      "value": 26.7,
+      "display": "26.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_20c6b5d3dd87dae2": {
+      "value": 0.117,
+      "display": "0.12",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2178f1ea6a503a55": {
+      "value": 0.51,
+      "display": "0.51",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2458febf23f12e83": {
+      "value": 0.003,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2b14b5ee0867785b": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_314481aa48a17241": {
+      "value": 13600000.0,
+      "display": "13600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rped385bece8b437",
+      "entity_name": "Martim Fernandes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3164f66a7195e6ac": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp11b4bd657ef93e",
+      "entity_name": "Wesley",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_32056cf8ade7e481": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_325b730a0ee25aa6": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp26cbefe9ec92e1",
+      "entity_name": "Saël Kumbedi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_377f1a459b55205d": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_38ee303b1b29cafa": {
+      "value": 70000000.0,
+      "display": "70000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3b4d847782646f54": {
+      "value": 0.554,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f004ae719d116fa": {
+      "value": 46100000.0,
+      "display": "46100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_42ef0b3f519a9f48": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4402a038c28222fc": {
+      "value": 21400000.0,
+      "display": "21400000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4a03db012a7ce9d2": {
+      "value": "Parma Calcio 1913",
+      "display": "Parma Calcio 1913",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4c0d02b3a3f6ba0d": {
+      "value": 0.0039,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp11b4bd657ef93e",
+      "entity_name": "Wesley",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4cd381c2bca1b50d": {
+      "value": 0.252,
+      "display": "0.25",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_505794d8ca858501": {
+      "value": 56300000.0,
+      "display": "56300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_513922635b8ea1c2": {
+      "value": 25.5,
+      "display": "25.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_52b35e2958ce2894": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_530c48cc5072f953": {
+      "value": 59100000.0,
+      "display": "59100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_552e81d799b003ee": {
+      "value": 48900000.0,
+      "display": "48900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_558c8d751aa49bb5": {
+      "value": 0.727,
+      "display": "0.73",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp26cbefe9ec92e1",
+      "entity_name": "Saël Kumbedi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59474e44195fb349": {
+      "value": "Manchester City",
+      "display": "Manchester City",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59ab815353d573e4": {
+      "value": 27.9,
+      "display": "27.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5f2c3e84610db4f4": {
+      "value": "2026-10-18T18:45:00+00:00",
+      "display": "2026-10-18T18:45:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "serie_a:2026-27:juventus:lazio",
+      "entity_name": "Juventus v Lazio",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:54:38.579753+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5f9165fe079154df": {
+      "value": "FC Porto",
+      "display": "FC Porto",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rped385bece8b437",
+      "entity_name": "Martim Fernandes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6abf74e35ac939d8": {
+      "value": 70000000.0,
+      "display": "70000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6ffe7f917a2e01a0": {
+      "value": 20.1,
+      "display": "20.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_740f9c873b51da44": {
+      "value": "Bologna Football Club 1909",
+      "display": "Bologna Football Club 1909",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_743eec8a0dd79625": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_747a8ad9b69578aa": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_74c60134590e8bf0": {
+      "value": 0.691,
+      "display": "0.69",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_842c9041363a04a5": {
+      "value": 30500000.0,
+      "display": "30500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp11b4bd657ef93e",
+      "entity_name": "Wesley",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_87c2b0ed70da6564": {
+      "value": "Arsenal FC",
+      "display": "Arsenal FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8ef78c5cfc469ed6": {
+      "value": 0.0062,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_92962f562340078d": {
+      "value": "VfL Wolfsburg",
+      "display": "VfL Wolfsburg",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp26cbefe9ec92e1",
+      "entity_name": "Saël Kumbedi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_95fdc5cf42f43a1a": {
+      "value": "Associazione Sportiva Roma",
+      "display": "Associazione Sportiva Roma",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp11b4bd657ef93e",
+      "entity_name": "Wesley",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_97312037abf1f004": {
+      "value": 26.3,
+      "display": "26.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a753598090ee8dd4": {
+      "value": 21.7,
+      "display": "21.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a831ba6b6d8584b6": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ab57e0823ec657b7": {
+      "value": "2025-10-30",
+      "display": "2025-10-30",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q310813",
+      "entity_name": "Luciano Spalletti",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q310813",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ad7563d1c84b20a1": {
+      "value": 25.3,
+      "display": "25.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_afccc90977518bce": {
+      "value": 20.1,
+      "display": "20.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b1be75e73bb68996": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b44cd33113725cd3": {
+      "value": 9800000.0,
+      "display": "9800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp81eb19257d44ea",
+      "entity_name": "Douglas Luiz",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b5f82c05760f9ed4": {
+      "value": 65000000.0,
+      "display": "65000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bd941da3d6f1f4e7": {
+      "value": 11700000.0,
+      "display": "11700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bfc17313ed254c04": {
+      "value": 0.15,
+      "display": "0.15",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpc1f7a9b4c529ba",
+      "entity_name": "Juan Cabal",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cc99623903425caf": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_cf8a7c467794a01c": {
+      "value": 23.1,
+      "display": "23.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp11b4bd657ef93e",
+      "entity_name": "Wesley",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d00f6812bf5cb784": {
+      "value": "ACF Fiorentina",
+      "display": "ACF Fiorentina",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d3c2588838c0b766": {
+      "value": 18000000.0,
+      "display": "18000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp81eb19257d44ea",
+      "entity_name": "Douglas Luiz",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-03T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d3ddb0ff2366fd58": {
+      "value": 0.588,
+      "display": "0.59",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d4300b0aded75148": {
+      "value": 20.7,
+      "display": "20.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rped385bece8b437",
+      "entity_name": "Martim Fernandes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d55d14183bf84160": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d91a11683b0aec23": {
+      "value": 0.136,
+      "display": "0.14",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp98029d8f8ca9b9",
+      "entity_name": "Khéphren Thuram-Ulie",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_db1ef46ac93aba17": {
+      "value": 17300000.0,
+      "display": "17300000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp26cbefe9ec92e1",
+      "entity_name": "Saël Kumbedi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dc287ed60991cbf7": {
+      "value": 0.292,
+      "display": "0.29",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_de88f02f51627823": {
+      "value": "Arsenal FC",
+      "display": "Arsenal FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ded1fa708419abd4": {
+      "value": 16900000.0,
+      "display": "16900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rped385bece8b437",
+      "entity_name": "Martim Fernandes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_df4e98d122e00523": {
+      "value": "DWLDW",
+      "display": "DWLDW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e08216f1b83da6cb": {
+      "value": 11800000.0,
+      "display": "11800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp26cbefe9ec92e1",
+      "entity_name": "Saël Kumbedi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e5fede9c301e6173": {
+      "value": 0.122,
+      "display": "0.12",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp11b4bd657ef93e",
+      "entity_name": "Wesley",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e734b8074b4bdaab": {
+      "value": 9.0,
+      "display": "9",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e8770ceda5181d3d": {
+      "value": 11400000.0,
+      "display": "11400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ec82e4815724aa63": {
+      "value": 0.422,
+      "display": "0.42",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rped385bece8b437",
+      "entity_name": "Martim Fernandes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ef1f3ecf277cce12": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "juventus",
+      "entity_name": "Juventus",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f2f124bf48150a90": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_fb58059dfd2c347c": {
+      "value": 10000000.0,
+      "display": "10000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_32056cf8ade7e481",
+        "display": "6th",
+        "label": "league position",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_747a8ad9b69578aa",
+        "display": "11",
+        "label": "league points",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_e734b8074b4bdaab",
+        "display": "9",
+        "label": "league goals scored",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_cc99623903425caf",
+        "display": "5",
+        "label": "league goals conceded",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_df4e98d122e00523",
+        "display": "DWLDW",
+        "label": "recent league results, oldest first",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_ab57e0823ec657b7",
+        "display": "30 October 2025",
+        "label": "appointed head coach of Juventus",
+        "subject": "Luciano Spalletti"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_5f2c3e84610db4f4",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Juventus v Lazio"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_dc287ed60991cbf7",
+        "display": "29%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_bfc17313ed254c04",
+        "display": "15%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Juan Cabal"
+      },
+      {
+        "stat": "ev_d91a11683b0aec23",
+        "display": "14%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Khéphren Thuram-Ulie"
+      },
+      {
+        "stat": "ev_f2f124bf48150a90",
+        "display": "€75.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_530c48cc5072f953",
+        "display": "€59.1m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_d3c2588838c0b766",
+        "display": "€18.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Douglas Luiz"
+      },
+      {
+        "stat": "ev_b44cd33113725cd3",
+        "display": "€9.8m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Douglas Luiz"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_ef1f3ecf277cce12",
+        "display": "full-back",
+        "label": "squad need, priority one",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_ad7563d1c84b20a1",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Jurriën Timber"
+      },
+      {
+        "stat": "ev_87c2b0ed70da6564",
+        "display": "Arsenal FC",
+        "label": "current club",
+        "subject": "Jurriën Timber"
+      },
+      {
+        "stat": "ev_42ef0b3f519a9f48",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Jurriën Timber"
+      },
+      {
+        "stat": "ev_6abf74e35ac939d8",
+        "display": "€70.0m",
+        "label": "market value",
+        "subject": "Jurriën Timber"
+      },
+      {
+        "stat": "ev_3f004ae719d116fa",
+        "display": "€46.1m",
+        "label": "estimated fair fee",
+        "subject": "Jurriën Timber"
+      },
+      {
+        "stat": "ev_d3ddb0ff2366fd58",
+        "display": "59%",
+        "label": "expected share of minutes at the club",
+        "subject": "Jurriën Timber"
+      },
+      {
+        "stat": "ev_52b35e2958ce2894",
+        "display": "22",
+        "label": "age (best target)",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_59474e44195fb349",
+        "display": "Manchester City",
+        "label": "current club",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_d55d14183bf84160",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_38ee303b1b29cafa",
+        "display": "€70.0m",
+        "label": "market value",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_552e81d799b003ee",
+        "display": "€48.9m",
+        "label": "estimated fair fee",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_2178f1ea6a503a55",
+        "display": "51%",
+        "label": "expected share of minutes at the club",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_6ffe7f917a2e01a0",
+        "display": "20",
+        "label": "age (best target)",
+        "subject": "Myles Lewis-Skelly"
+      },
+      {
+        "stat": "ev_de88f02f51627823",
+        "display": "Arsenal FC",
+        "label": "current club",
+        "subject": "Myles Lewis-Skelly"
+      },
+      {
+        "stat": "ev_2b14b5ee0867785b",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Myles Lewis-Skelly"
+      },
+      {
+        "stat": "ev_b5f82c05760f9ed4",
+        "display": "€65.0m",
+        "label": "market value",
+        "subject": "Myles Lewis-Skelly"
+      },
+      {
+        "stat": "ev_505794d8ca858501",
+        "display": "€56.3m",
+        "label": "estimated fair fee",
+        "subject": "Myles Lewis-Skelly"
+      },
+      {
+        "stat": "ev_3b4d847782646f54",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Myles Lewis-Skelly"
+      },
+      {
+        "stat": "ev_59ab815353d573e4",
+        "display": "28",
+        "label": "age (realistic target)",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_d00f6812bf5cb784",
+        "display": "ACF Fiorentina",
+        "label": "current club",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_4cd381c2bca1b50d",
+        "display": "25%",
+        "label": "chance his club sells him in a window",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_377f1a459b55205d",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_e8770ceda5181d3d",
+        "display": "€11.4m",
+        "label": "estimated fair fee",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_8ef78c5cfc469ed6",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_cf8a7c467794a01c",
+        "display": "23",
+        "label": "age (realistic target)",
+        "subject": "Wesley"
+      },
+      {
+        "stat": "ev_95fdc5cf42f43a1a",
+        "display": "Associazione Sportiva Roma",
+        "label": "current club",
+        "subject": "Wesley"
+      },
+      {
+        "stat": "ev_e5fede9c301e6173",
+        "display": "12%",
+        "label": "chance his club sells him in a window",
+        "subject": "Wesley"
+      },
+      {
+        "stat": "ev_3164f66a7195e6ac",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Wesley"
+      },
+      {
+        "stat": "ev_842c9041363a04a5",
+        "display": "€30.5m",
+        "label": "estimated fair fee",
+        "subject": "Wesley"
+      },
+      {
+        "stat": "ev_4c0d02b3a3f6ba0d",
+        "display": "0.4%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Wesley"
+      },
+      {
+        "stat": "ev_1e4052daf8738163",
+        "display": "27",
+        "label": "age (realistic target)",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_740f9c873b51da44",
+        "display": "Bologna Football Club 1909",
+        "label": "current club",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_20c6b5d3dd87dae2",
+        "display": "12%",
+        "label": "chance his club sells him in a window",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_b1be75e73bb68996",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_bd941da3d6f1f4e7",
+        "display": "€11.7m",
+        "label": "estimated fair fee",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_2458febf23f12e83",
+        "display": "0.3%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_afccc90977518bce",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_4a03db012a7ce9d2",
+        "display": "Parma Calcio 1913",
+        "label": "current club",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_74c60134590e8bf0",
+        "display": "69%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_a831ba6b6d8584b6",
+        "display": "€12.0m",
+        "label": "estimated fair fee",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_4402a038c28222fc",
+        "display": "€21.4m",
+        "label": "projected market value in a few seasons",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_325b730a0ee25aa6",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Saël Kumbedi"
+      },
+      {
+        "stat": "ev_92962f562340078d",
+        "display": "VfL Wolfsburg",
+        "label": "current club",
+        "subject": "Saël Kumbedi"
+      },
+      {
+        "stat": "ev_558c8d751aa49bb5",
+        "display": "73%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Saël Kumbedi"
+      },
+      {
+        "stat": "ev_e08216f1b83da6cb",
+        "display": "€11.8m",
+        "label": "estimated fair fee",
+        "subject": "Saël Kumbedi"
+      },
+      {
+        "stat": "ev_db1ef46ac93aba17",
+        "display": "€17.3m",
+        "label": "projected market value in a few seasons",
+        "subject": "Saël Kumbedi"
+      },
+      {
+        "stat": "ev_d4300b0aded75148",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Martim Fernandes"
+      },
+      {
+        "stat": "ev_5f9165fe079154df",
+        "display": "FC Porto",
+        "label": "current club",
+        "subject": "Martim Fernandes"
+      },
+      {
+        "stat": "ev_ec82e4815724aa63",
+        "display": "42%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Martim Fernandes"
+      },
+      {
+        "stat": "ev_314481aa48a17241",
+        "display": "€13.6m",
+        "label": "estimated fair fee",
+        "subject": "Martim Fernandes"
+      },
+      {
+        "stat": "ev_ded1fa708419abd4",
+        "display": "€16.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Martim Fernandes"
+      },
+      {
+        "stat": "ev_1a1400979e0d3f60",
+        "display": "goalkeeper",
+        "label": "squad need, priority two",
+        "subject": "Juventus"
+      },
+      {
+        "stat": "ev_513922635b8ea1c2",
+        "display": "26",
+        "label": "age (best target, second need)",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_743eec8a0dd79625",
+        "display": "€45.0m",
+        "label": "market value",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_97312037abf1f004",
+        "display": "26",
+        "label": "age (realistic target, second need)",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_023c70d951d73669",
+        "display": "€21.4m",
+        "label": "estimated fair fee",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_1e0beeb5835f359d",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_a753598090ee8dd4",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Matthieu Epolo"
+      },
+      {
+        "stat": "ev_fb58059dfd2c347c",
+        "display": "€10.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Matthieu Epolo"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 44,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 44,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

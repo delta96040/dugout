@@ -5,12 +5,17 @@ premier_league:
   season: "2026-27"          # dugout season label
   season_start_year: 2026    # used by APIs that key seasons by start year
   showcase_club: liverpool
+  # models published for this league only where backtested on it (docs/backtests/predictor.md, lineup.md)
+  backtested: [predictor, lineup]
+  # table places the dossier's wording uses (rank_gloss); a league without this block gets plain words
+  table: {teams: 20, champions_league: 4, europe: 7, relegation: 3}
   provider_ids:
     api_football: 39          # league id
     football_data_org: PL     # competition code
     football_data_couk: E0    # CSV division code
     fpl: true                 # FPL only covers the Premier League
     clubelo_country: ENG
+    transfermarkt: GB1        # transfermarkt-datasets competition id (valuation, shortlists)
   history_seasons: ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21",
                     "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
   news_feeds:
@@ -23,6 +28,72 @@ premier_league:
   club_sites:
     # Official club sites via their sitemaps (no RSS). robots.txt checked 2026-10-16: liverpoolfc.com allows all.
     - {club: liverpool, outlet: Liverpool FC, sitemap: "https://www.liverpoolfc.com/sitemaps/sitemap/0.xml", path_prefix: /news/}
+
+# Leagues without FPL. football-data.org's free tier (10 calls/min, 3 calls a league a night) supplies the clubs,
+# squads, fixtures, standings and head coaches; Transfermarkt ids come from Reep + transfermarkt-datasets
+# (adapters/football_data_org.py), so valuation and the shortlists work here too. Only the sources listed under
+# `sources` run for these leagues each night (the first league above runs the whole job). No showcase club: their
+# dossiers are templated. `country` must match Reep's country names (club matching); `transfermarkt_clubs` pins a
+# football-data.org team id to a Transfermarkt club id when name matching is wrong; `slug_suffix` is added to a
+# slug another league already uses.
+la_liga:
+  name: La Liga
+  country: Spain
+  season: "2026-27"
+  season_start_year: 2026
+  slug_suffix: esp
+  provider_ids:
+    football_data_org: PD
+    transfermarkt: ES1
+  sources: [football_data_org]
+  transfermarkt_clubs:
+    5335: 630    # Real Racing Club de Santander -> Racing de Santander
+
+serie_a:
+  name: Serie A
+  country: Italy
+  season: "2026-27"
+  season_start_year: 2026
+  slug_suffix: ita
+  provider_ids:
+    football_data_org: SA
+    transfermarkt: IT1
+  sources: [football_data_org]
+  transfermarkt_clubs:
+    108: 46      # FC Internazionale Milano -> Inter (Transfermarkt "Inter Milan")
+
+bundesliga:
+  name: Bundesliga
+  country: Germany
+  season: "2026-27"
+  season_start_year: 2026
+  slug_suffix: ger
+  provider_ids:
+    football_data_org: BL1
+    transfermarkt: L1
+  sources: [football_data_org]
+
+ligue_1:
+  name: Ligue 1
+  country: France
+  season: "2026-27"
+  season_start_year: 2026
+  slug_suffix: fra
+  provider_ids:
+    football_data_org: FL1
+    transfermarkt: FR1
+  sources: [football_data_org]
+
+eredivisie:
+  name: Eredivisie
+  country: Netherlands
+  season: "2026-27"
+  season_start_year: 2026
+  slug_suffix: ned
+  provider_ids:
+    football_data_org: DED
+    transfermarkt: NL1
+  sources: [football_data_org]
 
 # Names providers use that a generic normaliser cannot reconcile. Keys are normalised names.
 club_aliases:

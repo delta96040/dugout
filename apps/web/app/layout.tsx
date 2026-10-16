@@ -11,7 +11,7 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains-mo
 export const metadata: Metadata = {
   title: "dugout — an open-source sporting director",
   description:
-    "A free, open-source AI sporting director for the Premier League. Every number links to its source, timestamp and verification status.",
+    "A free, open-source AI sporting director for Europe's top leagues. Every number links to its source, timestamp and verification status.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T17:19:22+00:00",
+  "generated_at": "2026-10-16T21:49:20+00:00",
   "train": {
     "n": 11770,
     "from": "2005-01-01",
@@ -119,6 +119,236 @@
       },
       "median_fee_over_estimate": 0.9995322882489404,
       "median_fee_over_previous": 1.3779398130302023
+    },
+    "La Liga buyer": {
+      "n": 175,
+      "model": {
+        "mae_log": 0.5292689894330919,
+        "median_ape": 0.3728018246955055,
+        "within_25pct": 0.37142857142857144,
+        "n": 175
+      },
+      "previous_model": {
+        "mae_log": 0.6084993571121586,
+        "median_ape": 0.4206022446444001,
+        "within_25pct": 0.32571428571428573,
+        "n": 175
+      },
+      "market_value": {
+        "mae_log": 0.6409588189269555,
+        "median_ape": 0.45238095238095216,
+        "within_25pct": 0.3142857142857143,
+        "n": 175
+      },
+      "median_fee_over_estimate": 0.9635486363773564,
+      "median_fee_over_previous": 0.8475638099083749
+    },
+    "La Liga to La Liga": {
+      "n": 63,
+      "model": {
+        "mae_log": 0.6940794823333326,
+        "median_ape": 0.41052304747475565,
+        "within_25pct": 0.3333333333333333,
+        "n": 63
+      },
+      "previous_model": {
+        "mae_log": 0.8036668735846201,
+        "median_ape": 0.5540861836920186,
+        "within_25pct": 0.25396825396825395,
+        "n": 63
+      },
+      "market_value": {
+        "mae_log": 0.7874465282217225,
+        "median_ape": 0.5,
+        "within_25pct": 0.2857142857142857,
+        "n": 63
+      },
+      "median_fee_over_estimate": 0.9812228106038184,
+      "median_fee_over_previous": 0.8409017314468994
+    },
+    "Serie A buyer": {
+      "n": 345,
+      "model": {
+        "mae_log": 0.5014210418543015,
+        "median_ape": 0.3305227486316666,
+        "within_25pct": 0.39710144927536234,
+        "n": 345
+      },
+      "previous_model": {
+        "mae_log": 0.5275817702455954,
+        "median_ape": 0.3599831542412341,
+        "within_25pct": 0.3217391304347826,
+        "n": 345
+      },
+      "market_value": {
+        "mae_log": 0.5273384642629863,
+        "median_ape": 0.333333333333334,
+        "within_25pct": 0.391304347826087,
+        "n": 345
+      },
+      "median_fee_over_estimate": 1.0808618335841993,
+      "median_fee_over_previous": 1.039252554074368
+    },
+    "Serie A to Serie A": {
+      "n": 128,
+      "model": {
+        "mae_log": 0.5202460660813273,
+        "median_ape": 0.32036749046425883,
+        "within_25pct": 0.40625,
+        "n": 128
+      },
+      "previous_model": {
+        "mae_log": 0.5334241930417754,
+        "median_ape": 0.3529209711001944,
+        "within_25pct": 0.3515625,
+        "n": 128
+      },
+      "market_value": {
+        "mae_log": 0.5065502464986373,
+        "median_ape": 0.333333333333332,
+        "within_25pct": 0.4140625,
+        "n": 128
+      },
+      "median_fee_over_estimate": 1.0976244520758116,
+      "median_fee_over_previous": 1.0654321707239098
+    },
+    "Bundesliga buyer": {
+      "n": 269,
+      "model": {
+        "mae_log": 0.5891962017040663,
+        "median_ape": 0.4206224997259803,
+        "within_25pct": 0.2936802973977695,
+        "n": 269
+      },
+      "previous_model": {
+        "mae_log": 0.6243779218993063,
+        "median_ape": 0.49065957449867587,
+        "within_25pct": 0.2936802973977695,
+        "n": 269
+      },
+      "market_value": {
+        "mae_log": 0.6079291448770372,
+        "median_ape": 0.4814814814814814,
+        "within_25pct": 0.31970260223048325,
+        "n": 269
+      },
+      "median_fee_over_estimate": 0.8003314687444888,
+      "median_fee_over_previous": 0.7755459961503848
+    },
+    "Bundesliga to Bundesliga": {
+      "n": 82,
+      "model": {
+        "mae_log": 0.626887705358049,
+        "median_ape": 0.4137514557172054,
+        "within_25pct": 0.3048780487804878,
+        "n": 82
+      },
+      "previous_model": {
+        "mae_log": 0.6666695426324406,
+        "median_ape": 0.5248931675424906,
+        "within_25pct": 0.2926829268292683,
+        "n": 82
+      },
+      "market_value": {
+        "mae_log": 0.6369925716137341,
+        "median_ape": 0.48684210526315574,
+        "within_25pct": 0.2804878048780488,
+        "n": 82
+      },
+      "median_fee_over_estimate": 0.7936262582065283,
+      "median_fee_over_previous": 0.7288561015243468
+    },
+    "Ligue 1 buyer": {
+      "n": 213,
+      "model": {
+        "mae_log": 0.481547197441969,
+        "median_ape": 0.32993174571834466,
+        "within_25pct": 0.3427230046948357,
+        "n": 213
+      },
+      "previous_model": {
+        "mae_log": 0.5020989752327628,
+        "median_ape": 0.33738330770486413,
+        "within_25pct": 0.37089201877934275,
+        "n": 213
+      },
+      "market_value": {
+        "mae_log": 0.5944037289801881,
+        "median_ape": 0.39999999999999986,
+        "within_25pct": 0.37089201877934275,
+        "n": 213
+      },
+      "median_fee_over_estimate": 1.1689089318821626,
+      "median_fee_over_previous": 1.0673956722068527
+    },
+    "Ligue 1 to Ligue 1": {
+      "n": 53,
+      "model": {
+        "mae_log": 0.5040404775848023,
+        "median_ape": 0.4075497691663984,
+        "within_25pct": 0.3018867924528302,
+        "n": 53
+      },
+      "previous_model": {
+        "mae_log": 0.4931058883000177,
+        "median_ape": 0.3110644302108435,
+        "within_25pct": 0.37735849056603776,
+        "n": 53
+      },
+      "market_value": {
+        "mae_log": 0.6386231198028784,
+        "median_ape": 0.39999999999999986,
+        "within_25pct": 0.33962264150943394,
+        "n": 53
+      },
+      "median_fee_over_estimate": 1.1878093701684482,
+      "median_fee_over_previous": 1.127617257782841
+    },
+    "Eredivisie buyer": {
+      "n": 141,
+      "model": {
+        "mae_log": 0.5358326564666767,
+        "median_ape": 0.4376864252871438,
+        "within_25pct": 0.3120567375886525,
+        "n": 141
+      },
+      "previous_model": {
+        "mae_log": 0.5725122426739673,
+        "median_ape": 0.40954401156765247,
+        "within_25pct": 0.3120567375886525,
+        "n": 141
+      },
+      "market_value": {
+        "mae_log": 0.6258064815132145,
+        "median_ape": 0.49367088607595006,
+        "within_25pct": 0.2907801418439716,
+        "n": 141
+      },
+      "median_fee_over_estimate": 0.7821490671034022,
+      "median_fee_over_previous": 1.132989618944118
+    },
+    "Eredivisie to Eredivisie": {
+      "n": 46,
+      "model": {
+        "mae_log": 0.5164169557095117,
+        "median_ape": 0.4712785388338532,
+        "within_25pct": 0.30434782608695654,
+        "n": 46
+      },
+      "previous_model": {
+        "mae_log": 0.5424601288896941,
+        "median_ape": 0.38364555424926244,
+        "within_25pct": 0.32608695652173914,
+        "n": 46
+      },
+      "market_value": {
+        "mae_log": 0.6387965311374095,
+        "median_ape": 0.5246132208157525,
+        "within_25pct": 0.21739130434782608,
+        "n": 46
+      },
+      "median_fee_over_estimate": 0.9275623147880458,
+      "median_fee_over_previous": 1.118524808824178
     }
   },
   "importance": {

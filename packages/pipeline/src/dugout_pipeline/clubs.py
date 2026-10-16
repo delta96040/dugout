@@ -39,6 +39,12 @@ def league_config(league: str = "premier_league") -> dict[str, Any]:
     return load_config()[league]
 
 
+def leagues(config_dir: Path | None = None) -> list[str]:
+    """Configured leagues in file order. The first is the default league: it runs every source of a job; the
+    others run the sources their block lists under `sources`."""
+    return [k for k, v in load_config(config_dir).items() if isinstance(v, dict) and "provider_ids" in v]
+
+
 @dataclass
 class ClubResolver:
     """Maps provider names and ids to dugout club slugs for one league-season."""

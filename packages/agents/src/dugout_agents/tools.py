@@ -10,11 +10,12 @@ import csv
 import re
 import unicodedata
 from datetime import date, datetime, timedelta
+from typing import Any
 
 from dugout_agents.facts import MODEL_DOCS, Fact, Toolbox, prob_gloss, rank_gloss, z_gloss
 from dugout_pipeline.settings import REPO_ROOT
 
-FDO_URL = "https://api.football-data.org/v4/competitions/PL/standings"
+FDO_URL = "https://api.football-data.org/v4/competitions/{comp}/standings"
 
 
 def _fact(
@@ -45,18 +46,20 @@ def _fetched(tb: Toolbox, table: str, where: str, args: list, column: str = "fet
 # ---- Club & Tactics ----------------------------------------------------------------------------------------
 def club_profile(tb: Toolbox, club: str) -> list[Fact]:
     name = tb.name(club)
+    lg = tb.league(club)
     facts: list[Fact] = []
     pos = tb.latest("club", club, "league_position")
     if pos is not None:
+        n = sum(1 for c, k in tb.club_league.items() if k == lg["key"]) or 20
         facts.append(
             _fact(
                 tb,
                 name,
                 "league position",
-                f"{name} are {{p}} in the Premier League table.",
+                f"{name} are {{p}} in the {lg['name']} table.",
                 (pos.id, pos.value),
                 "ord",
-                rank_gloss(pos.value_num or 10),
+                rank_gloss(pos.value_num or n / 2, n, lg.get("table")),
                 club,
             )
         )
@@ -90,20 +93,21 @@ def club_profile(tb: Toolbox, club: str) -> list[Fact]:
                 entity_id=club,
             )
         )
-    w = "league = 'premier_league' AND season = ? AND club_id = ? AND source = 'football_data_org'"
-    fetched = _fetched(tb, "standings", w, [tb.season, club])
-    form = tb.con.execute(f"SELECT form FROM standings WHERE {w}", [tb.season, club]).fetchone()
+    w = "league = ? AND season = ? AND club_id = ? AND source = 'football_data_org'"
+    args = [lg["key"], tb.season, club]
+    fetched = _fetched(tb, "standings", w, args)
+    form = tb.con.execute(f"SELECT form FROM standings WHERE {w}", args).fetchone()
     if form and form[0]:
         rec = tb.sql(
             f"SELECT replace(form, ',', '') FROM standings WHERE {w}",
-            [tb.season, club],
+            args,
             entity_type="club",
             entity_id=club,
             metric="league_form",
             source="football_data_org",
             tier=2,
             fetched_at=fetched,
-            url=FDO_URL,
+            url=FDO_URL.format(comp=lg["provider_ids"]["football_data_org"]),
         )
         facts.append(
             _fact(
@@ -272,6 +276,19 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
     me, opp = (h, a) if is_home else (a, h)
     facts: list[Fact] = []
     ko = tb.model("predictor", "match", mid, "kickoff_utc")
+    if ko is None:  # a league without a backtested forecast: the fixture itself, from football-data.org
+        lg = tb.league(club)
+        ko = tb.sql(
+            "SELECT strftime(kickoff_utc, '%Y-%m-%dT%H:%M:%S+00:00') FROM matches WHERE match_id = ?",
+            [mid],
+            entity_type="match",
+            entity_id=mid,
+            metric="kickoff_utc",
+            source="football_data_org",
+            tier=2,
+            fetched_at=_fetched(tb, "matches", "match_id = ?", [mid], "updated_at"),
+            url=f"https://api.football-data.org/v4/competitions/{lg['provider_ids']['football_data_org']}/matches",
+        )
     facts.append(
         _fact(
             tb,
@@ -527,25 +544,44 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
             ).fetchall()
         ]
     )
+    if not top:  # no squad-file values (leagues without FPL): transfermarkt-datasets' latest valuation
+        top = [
+            r[0]
+            for r in tb.con.execute(
+                """SELECT v.player_id FROM market_values v JOIN players p USING (player_id)
+                   WHERE v.source = 'transfermarkt_datasets' AND p.club_id = ?
+                   QUALIFY row_number() OVER (PARTITION BY v.player_id ORDER BY v.date DESC) = 1
+                   ORDER BY v.value_eur DESC""",
+                [club],
+            ).fetchall()
+        ]
     for pid in list(dict.fromkeys(top))[:n]:
         pname = tb.name(pid)
         mv = tb.latest("player", pid, "market_value", "transfermarkt")
-        if mv is not None:
+        mv_rec = (mv.id, mv.value) if mv is not None else None
+        label = "market value (Transfermarkt)"
+        if mv is None:
+            mv_rec, when = _dataset_value(tb, pid)
+            label = f"market value (Transfermarkt, as of {when:%B %Y})" if when else label
+        if mv_rec is not None:
             facts += _keep(
                 _fact(
                     tb,
                     pname,
-                    "market value (Transfermarkt)",
-                    f"Transfermarkt values {pname} at {{p}}.",
-                    (mv.id, mv.value),
+                    label,
+                    f"Transfermarkt valued {pname} at {{p}}."
+                    if mv is None
+                    else f"Transfermarkt values {pname} at {{p}}.",
+                    mv_rec,
                     "eur_m",
                     entity_id=pid,
                 )
             )
         ff = tb.model("valuation", "player", pid, "fair_fee")
         gloss = ""
-        if mv is not None and ff is not None and mv.value_num:
-            r = float(ff[1]) / mv.value_num
+        mv_num = float(mv_rec[1]) if mv_rec is not None and mv_rec[1] is not None else None
+        if mv_num and ff is not None:
+            r = float(ff[1]) / mv_num
             gloss = (
                 "above his market value"
                 if r > 1.15
@@ -557,7 +593,7 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
             _fact(
                 tb,
                 pname,
-                "estimated fair fee if sold to another Premier League club",
+                f"estimated fair fee if sold to another {tb.league(club)['name']} club",
                 f"Our fair-fee estimate for {pname} is {{p}}" + (f", {gloss}." if gloss else "."),
                 ff,
                 "eur_m",
@@ -597,6 +633,30 @@ def squad_market(tb: Toolbox, club: str, player_id: str | None = None, n: int = 
             )
         )
     return facts
+
+
+def _dataset_value(tb: Toolbox, pid: str) -> tuple[tuple[str, Any] | None, date | None]:
+    """The player's latest transfermarkt-datasets valuation (CC0; the dataset stops in June), cited by SQL."""
+    row = tb.con.execute(
+        """SELECT max(date) FROM market_values WHERE player_id = ? AND source = 'transfermarkt_datasets'""",
+        [pid],
+    ).fetchone()
+    if not row or row[0] is None:
+        return None, None
+    rec = tb.sql(
+        """SELECT value_eur FROM market_values WHERE player_id = ? AND source = 'transfermarkt_datasets'
+           AND date = CAST(? AS DATE)""",
+        [pid, row[0].isoformat()],
+        entity_type="player",
+        entity_id=pid,
+        metric="market_value",
+        source="transfermarkt_datasets",
+        tier=3,
+        fetched_at=datetime.combine(row[0], datetime.min.time()).replace(tzinfo=tb.now.tzinfo),
+        url="https://github.com/dcaribou/transfermarkt-datasets",
+        unit="EUR",
+    )
+    return rec, row[0]
 
 
 # ---- Scout -------------------------------------------------------------------------------------------------

@@ -40,6 +40,7 @@ BUDGET_RESERVE = 10  # leave headroom for manual debugging and the 4-hourly inju
 
 class ApiFootballAdapter(SourceAdapter):
     name = "api_football"
+    requires = "api_football"
     tier = TIER_DATA
     ttl = 1 * HOUR
     rate, per, burst = 1, 7.0, 1  # free plan also caps per-minute calls; ~8/min is safe
@@ -301,6 +302,7 @@ class ApiFootballHistoryAdapter(ApiFootballAdapter):
     One call per season, cached for a year; shares API-Football's cache and daily budget."""
 
     name = "api_football_history"
+    requires = "api_football"
     client_name = "api_football"
     seasons = (2022, 2023, 2024)  # the free plan's seasons
 

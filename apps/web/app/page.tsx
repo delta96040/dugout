@@ -4,21 +4,22 @@ import Link from "next/link";
 export default function Home() {
   return (
     <article className="grid12 pt-10 pb-6">
-      <p className="hang mono-label">Open-source sporting director · Premier League</p>
+      <p className="hang mono-label">Open-source sporting director · Europe&apos;s top leagues</p>
       <h1 className="hang mt-3 max-w-5xl font-display text-[clamp(3.4rem,10vw,8.5rem)] leading-[0.88]">
         Every club, <span className="italic">read in full.</span>
       </h1>
       <p className="hang mt-8 max-w-2xl text-lg">
         Every night dugout reads the latest football data, updates its forecasts and writes a scouting dossier for each
-        Premier League club: how the side plays, the next match, the likely XI, the gap in the squad and who could fill
-        it, from the dream target to the realistic one and the hidden gem.
+        club in the Premier League, La Liga, Serie A, the Bundesliga, <span data-name>Ligue 1</span> and the Eredivisie: where the side stands,
+        what the squad is worth, the gap in it and who could fill it, from the dream target to the realistic one and
+        the hidden gem. Premier League clubs also get the next-match forecast and the likely XI.
       </p>
       <p className="hang mt-8">
         <Link
           href="/clubs/"
           className="inline-block border-2 border-ink px-6 py-3 font-display text-3xl leading-none hover:bg-ink hover:text-bone focus-visible:bg-ink focus-visible:text-bone"
         >
-          Choose your club <span aria-hidden="true">→</span>
+          Choose your league <span aria-hidden="true">→</span>
         </Link>
       </p>
 

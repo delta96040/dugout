@@ -8,7 +8,7 @@ export default function NotFound() {
         This page was <span className="italic text-red">never scouted.</span>
       </h1>
       <p className="hang mt-6">
-        <Link className="underline" href="/clubs/">Back to the clubs</Link>
+        <Link className="underline" href="/clubs/">Back to the leagues</Link>
       </p>
     </section>
   );

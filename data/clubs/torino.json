@@ -1,0 +1,1881 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "torino",
+    "name": "Torino",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "serie_a",
+    "name": "Serie A",
+    "country": "Italy"
+  },
+  "generated_at": "2026-10-16T21:20:49+00:00",
+  "data_as_of": "2026-10-16T21:12:24+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Torino for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Torino are "
+          },
+          {
+            "stat": "ev_4cf6e0a8a93ec461",
+            "display": "12th"
+          },
+          {
+            "text": " in the Serie A table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Torino have "
+          },
+          {
+            "stat": "ev_82943938a85b673d",
+            "display": "7"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Torino's next league match is Parma v Torino on "
+          },
+          {
+            "stat": "ev_9848b658a72477d4",
+            "display": "19 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Torino's biggest squad need is "
+          },
+          {
+            "stat": "ev_0b6008c79adb1127",
+            "display": "winger"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Torino doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Torino are "
+            },
+            {
+              "stat": "ev_4cf6e0a8a93ec461",
+              "display": "12th"
+            },
+            {
+              "text": " in the Serie A table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Torino have "
+            },
+            {
+              "stat": "ev_82943938a85b673d",
+              "display": "7"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Torino have scored "
+            },
+            {
+              "stat": "ev_6c5eb3bd9b7b458e",
+              "display": "7"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Torino have conceded "
+            },
+            {
+              "stat": "ev_0a377506f4b86572",
+              "display": "9"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Torino's most recent league results read "
+            },
+            {
+              "stat": "ev_4bc66fce79916570",
+              "display": "WDLWL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ignazio Abate has been Torino's head coach since "
+            },
+            {
+              "stat": "ev_c8e0fd538d6f6728",
+              "display": "12 June 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Torino expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Torino's next league match is Parma v Torino on "
+            },
+            {
+              "stat": "ev_9848b658a72477d4",
+              "display": "19 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Torino's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Torino, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Torino players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Cesare Casadei's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_5ede51f38b4d1262",
+              "display": "24%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Emirhan Ilkhan's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_67af4a6a3c557b64",
+              "display": "19%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Saúl Coco's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_bec8a7efd2493440",
+              "display": "18%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Pietro Comuzzo at "
+            },
+            {
+              "stat": "ev_5f7f4d706885ae71",
+              "display": "€18.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Pietro Comuzzo is "
+            },
+            {
+              "stat": "ev_949379964fafa8ba",
+              "display": "€15.5m"
+            },
+            {
+              "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Cesare Casadei at "
+            },
+            {
+              "stat": "ev_e939239291571b90",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Cesare Casadei is "
+            },
+            {
+              "stat": "ev_e5f9be080f34764c",
+              "display": "€11.1m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Daniel Bragança at "
+            },
+            {
+              "stat": "ev_f5dc9a5c25d9f26f",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Daniel Bragança is "
+            },
+            {
+              "stat": "ev_f0f6b5103d4f5b12",
+              "display": "€7.9m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Torino strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Torino's biggest squad need is "
+            },
+            {
+              "stat": "ev_0b6008c79adb1127",
+              "display": "winger"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Bitello (FK Dinamo Moskva), who is "
+            },
+            {
+              "stat": "ev_7ec1bc698f8fd5c0",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Bitello plays for "
+            },
+            {
+              "stat": "ev_361a34220c398612",
+              "display": "FK Dinamo Moskva"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Bitello has a market value of "
+            },
+            {
+              "stat": "ev_148288286da867f6",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Bitello is "
+            },
+            {
+              "stat": "ev_e5f932077a8abcf5",
+              "display": "€9.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Bitello to play "
+            },
+            {
+              "stat": "ev_6e04f6ccdbd11bc8",
+              "display": "56%"
+            },
+            {
+              "text": " of Torino's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Quentin Merlin (Stade Rennais FC), who is "
+            },
+            {
+              "stat": "ev_bbdcb232cf37be1e",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Quentin Merlin plays for "
+            },
+            {
+              "stat": "ev_1efa310c21bfa6d9",
+              "display": "Stade Rennais FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Quentin Merlin has a market value of "
+            },
+            {
+              "stat": "ev_bbcafb12431b4499",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Quentin Merlin is "
+            },
+            {
+              "stat": "ev_0e6c2fc50ee1eae5",
+              "display": "€10.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Quentin Merlin to play "
+            },
+            {
+              "stat": "ev_e5d28e39a4a72582",
+              "display": "55%"
+            },
+            {
+              "text": " of Torino's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Arsène Kouassi (FC Lorient), who is "
+            },
+            {
+              "stat": "ev_62e0596b7045599c",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Arsène Kouassi plays for "
+            },
+            {
+              "stat": "ev_1a8b4def570b378d",
+              "display": "FC Lorient"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Arsène Kouassi has a market value of "
+            },
+            {
+              "stat": "ev_6f3101020b013411",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Arsène Kouassi is "
+            },
+            {
+              "stat": "ev_9bba82991f4afa90",
+              "display": "€9.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Arsène Kouassi to play "
+            },
+            {
+              "stat": "ev_0ae8982eaea27680",
+              "display": "54%"
+            },
+            {
+              "text": " of Torino's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Torino's second squad need is "
+            },
+            {
+              "stat": "ev_45f7e1569cdcbf64",
+              "display": "centre-forward"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Pau Víctor (SC Braga), who is "
+            },
+            {
+              "stat": "ev_61fb9490704374b5",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Pau Víctor has a market value of "
+            },
+            {
+              "stat": "ev_d65b129e99ca1886",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Yanis Begraoui (GD Estoril Praia), who is "
+            },
+            {
+              "stat": "ev_8787259986404b8c",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Yanis Begraoui is "
+            },
+            {
+              "stat": "ev_a04e965ccccaac54",
+              "display": "€11.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_30e1ed2298299c6e",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Yanis Begraoui joins Torino in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Viktor Dadason (FC Copenhagen), who is "
+            },
+            {
+              "stat": "ev_0916d949288bb6bb",
+              "display": "18"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Viktor Dadason's market value to reach "
+            },
+            {
+              "stat": "ev_2dac72211f1bdf84",
+              "display": "€12.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Bitello has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Quentin Merlin has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Arsène Kouassi has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_0916d949288bb6bb": {
+      "value": 18.3,
+      "display": "18.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp2283e7f7481e44",
+      "entity_name": "Viktor Dadason",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0a377506f4b86572": {
+      "value": 9.0,
+      "display": "9",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0ae8982eaea27680": {
+      "value": 0.537,
+      "display": "0.54",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0b6008c79adb1127": {
+      "value": "winger",
+      "display": "winger",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0e6c2fc50ee1eae5": {
+      "value": 10700000.0,
+      "display": "10700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_148288286da867f6": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpc6c4e77137162a",
+      "entity_name": "Bitello",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1a8b4def570b378d": {
+      "value": "FC Lorient",
+      "display": "FC Lorient",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1efa310c21bfa6d9": {
+      "value": "Stade Rennais FC",
+      "display": "Stade Rennais FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_27bb01e3b3c64535": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2dac72211f1bdf84": {
+      "value": 12200000.0,
+      "display": "12200000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp2283e7f7481e44",
+      "entity_name": "Viktor Dadason",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30e1ed2298299c6e": {
+      "value": 0.0012,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_361a34220c398612": {
+      "value": "FK Dinamo Moskva",
+      "display": "FK Dinamo Moskva",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpc6c4e77137162a",
+      "entity_name": "Bitello",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_45f7e1569cdcbf64": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4bc66fce79916570": {
+      "value": "WDLWL",
+      "display": "WDLWL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4cf6e0a8a93ec461": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5ede51f38b4d1262": {
+      "value": 0.245,
+      "display": "0.24",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp70af57c353405b",
+      "entity_name": "Cesare Casadei",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5f7f4d706885ae71": {
+      "value": 18000000.0,
+      "display": "18000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpebfbc73b3dbbee",
+      "entity_name": "Pietro Comuzzo",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_61fb9490704374b5": {
+      "value": 24.9,
+      "display": "24.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp6018ddf903de04",
+      "entity_name": "Pau Víctor",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_62e0596b7045599c": {
+      "value": 22.8,
+      "display": "22.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_67af4a6a3c557b64": {
+      "value": 0.186,
+      "display": "0.19",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpf82ee38d7aa657",
+      "entity_name": "Emirhan Ilkhan",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c5eb3bd9b7b458e": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_6e04f6ccdbd11bc8": {
+      "value": 0.556,
+      "display": "0.56",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpc6c4e77137162a",
+      "entity_name": "Bitello",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6f3101020b013411": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7ec1bc698f8fd5c0": {
+      "value": 26.8,
+      "display": "26.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpc6c4e77137162a",
+      "entity_name": "Bitello",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_82943938a85b673d": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "torino",
+      "entity_name": "Torino",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8787259986404b8c": {
+      "value": 25.3,
+      "display": "25.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_949379964fafa8ba": {
+      "value": 15500000.0,
+      "display": "15500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpebfbc73b3dbbee",
+      "entity_name": "Pietro Comuzzo",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9848b658a72477d4": {
+      "value": "2026-10-19T18:45:00+00:00",
+      "display": "2026-10-19T18:45:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "serie_a:2026-27:parma:torino",
+      "entity_name": "Parma v Torino",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:54:38.579753+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_9bba82991f4afa90": {
+      "value": 9900000.0,
+      "display": "9900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9c8cb37844f0cf01": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a04e965ccccaac54": {
+      "value": 11800000.0,
+      "display": "11800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa0992f9e9d0902",
+      "entity_name": "Yanis Begraoui",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bbcafb12431b4499": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bbdcb232cf37be1e": {
+      "value": 24.4,
+      "display": "24.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bec8a7efd2493440": {
+      "value": 0.183,
+      "display": "0.18",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp102349e98a7027",
+      "entity_name": "Saúl Coco",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c8e0fd538d6f6728": {
+      "value": "2026-06-12",
+      "display": "2026-06-12",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q213007",
+      "entity_name": "Ignazio Abate",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q213007",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d65b129e99ca1886": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp6018ddf903de04",
+      "entity_name": "Pau Víctor",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e5d28e39a4a72582": {
+      "value": 0.546,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e5f932077a8abcf5": {
+      "value": 9500000.0,
+      "display": "9500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpc6c4e77137162a",
+      "entity_name": "Bitello",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e5f9be080f34764c": {
+      "value": 11100000.0,
+      "display": "11100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp70af57c353405b",
+      "entity_name": "Cesare Casadei",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e939239291571b90": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp70af57c353405b",
+      "entity_name": "Cesare Casadei",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ed594a2d870fdc02": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpc6c4e77137162a",
+      "entity_name": "Bitello",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f0f6b5103d4f5b12": {
+      "value": 7900000.0,
+      "display": "7900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7578a4355e21e8",
+      "entity_name": "Daniel Bragança",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f5dc9a5c25d9f26f": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp7578a4355e21e8",
+      "entity_name": "Daniel Bragança",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_4cf6e0a8a93ec461",
+        "display": "12th",
+        "label": "league position",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_82943938a85b673d",
+        "display": "7",
+        "label": "league points",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_6c5eb3bd9b7b458e",
+        "display": "7",
+        "label": "league goals scored",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_0a377506f4b86572",
+        "display": "9",
+        "label": "league goals conceded",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_4bc66fce79916570",
+        "display": "WDLWL",
+        "label": "recent league results, oldest first",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_c8e0fd538d6f6728",
+        "display": "12 June 2026",
+        "label": "appointed head coach of Torino",
+        "subject": "Ignazio Abate"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_9848b658a72477d4",
+        "display": "19 October 2026",
+        "label": "kick-off date",
+        "subject": "Parma v Torino"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_5ede51f38b4d1262",
+        "display": "24%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Cesare Casadei"
+      },
+      {
+        "stat": "ev_67af4a6a3c557b64",
+        "display": "19%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Emirhan Ilkhan"
+      },
+      {
+        "stat": "ev_bec8a7efd2493440",
+        "display": "18%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Saúl Coco"
+      },
+      {
+        "stat": "ev_5f7f4d706885ae71",
+        "display": "€18.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Pietro Comuzzo"
+      },
+      {
+        "stat": "ev_949379964fafa8ba",
+        "display": "€15.5m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Pietro Comuzzo"
+      },
+      {
+        "stat": "ev_e939239291571b90",
+        "display": "€15.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Cesare Casadei"
+      },
+      {
+        "stat": "ev_e5f9be080f34764c",
+        "display": "€11.1m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Cesare Casadei"
+      },
+      {
+        "stat": "ev_f5dc9a5c25d9f26f",
+        "display": "€12.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Daniel Bragança"
+      },
+      {
+        "stat": "ev_f0f6b5103d4f5b12",
+        "display": "€7.9m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Daniel Bragança"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_0b6008c79adb1127",
+        "display": "winger",
+        "label": "squad need, priority one",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_7ec1bc698f8fd5c0",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Bitello"
+      },
+      {
+        "stat": "ev_361a34220c398612",
+        "display": "FK Dinamo Moskva",
+        "label": "current club",
+        "subject": "Bitello"
+      },
+      {
+        "stat": "ev_ed594a2d870fdc02",
+        "display": "56",
+        "label": "months left on his contract",
+        "subject": "Bitello"
+      },
+      {
+        "stat": "ev_148288286da867f6",
+        "display": "€15.0m",
+        "label": "market value",
+        "subject": "Bitello"
+      },
+      {
+        "stat": "ev_e5f932077a8abcf5",
+        "display": "€9.5m",
+        "label": "estimated fair fee",
+        "subject": "Bitello"
+      },
+      {
+        "stat": "ev_6e04f6ccdbd11bc8",
+        "display": "56%",
+        "label": "expected share of minutes at the club",
+        "subject": "Bitello"
+      },
+      {
+        "stat": "ev_bbdcb232cf37be1e",
+        "display": "24",
+        "label": "age (best target)",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_1efa310c21bfa6d9",
+        "display": "Stade Rennais FC",
+        "label": "current club",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_9c8cb37844f0cf01",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_bbcafb12431b4499",
+        "display": "€15.0m",
+        "label": "market value",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_0e6c2fc50ee1eae5",
+        "display": "€10.7m",
+        "label": "estimated fair fee",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_e5d28e39a4a72582",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_62e0596b7045599c",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_1a8b4def570b378d",
+        "display": "FC Lorient",
+        "label": "current club",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_27bb01e3b3c64535",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_6f3101020b013411",
+        "display": "€15.0m",
+        "label": "market value",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_9bba82991f4afa90",
+        "display": "€9.9m",
+        "label": "estimated fair fee",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_0ae8982eaea27680",
+        "display": "54%",
+        "label": "expected share of minutes at the club",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_45f7e1569cdcbf64",
+        "display": "centre-forward",
+        "label": "squad need, priority two",
+        "subject": "Torino"
+      },
+      {
+        "stat": "ev_61fb9490704374b5",
+        "display": "25",
+        "label": "age (best target, second need)",
+        "subject": "Pau Víctor"
+      },
+      {
+        "stat": "ev_d65b129e99ca1886",
+        "display": "€15.0m",
+        "label": "market value",
+        "subject": "Pau Víctor"
+      },
+      {
+        "stat": "ev_8787259986404b8c",
+        "display": "25",
+        "label": "age (realistic target, second need)",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_a04e965ccccaac54",
+        "display": "€11.8m",
+        "label": "estimated fair fee",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_30e1ed2298299c6e",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Yanis Begraoui"
+      },
+      {
+        "stat": "ev_0916d949288bb6bb",
+        "display": "18",
+        "label": "age (gem target, second need)",
+        "subject": "Viktor Dadason"
+      },
+      {
+        "stat": "ev_2dac72211f1bdf84",
+        "display": "€12.2m",
+        "label": "projected market value in a few seasons",
+        "subject": "Viktor Dadason"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 44,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 44,
+      "unverified": 3
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

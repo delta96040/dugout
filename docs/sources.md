@@ -44,7 +44,15 @@ Rules that apply to all sources (enforced in `packages/pipeline/src/dugout_pipel
 
 FPL's `code` fields are Opta numeric ids (`opta/team_numeric`, `opta/person_numeric`), which the Reep Register
 bridges to every other provider. On 2026-10-15: **20/20 clubs** and **656/667 FPL players** resolved to Reep ids.
-football-data.org is not in Reep; its clubs are matched by name through `config/leagues.yaml` aliases.
+football-data.org is not in Reep. Premier League clubs are matched by name through `config/leagues.yaml` aliases.
+For the other leagues (La Liga, Serie A, Bundesliga, Ligue 1, Eredivisie: no FPL) football-data.org is the source of
+clubs, squads and fixtures: a club is matched by name to transfermarkt-datasets' clubs of that competition, then to
+Reep's men's teams of the league's country (reserve and youth sides excluded; config `transfermarkt_clubs` pins a
+pick), which gives the Transfermarkt and Reep ids; a player is matched to transfermarkt-datasets by date of birth and
+name. On 2026-10-17: **94/94 clubs** (two pinned in config) and **2,248/2,588 squad players** matched; the rest
+(mostly second-division and youth players the dataset does not cover) keep a `football_data_org:<id>` and get no
+value. Values for these leagues are transfermarkt-datasets' latest (June 2026), shown with that date; contracts
+are not shown (no current free source; June's would miss summer renewals).
 Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-resolved on every run.
 
 ### Two sources per key stat (for the Stat Auditor)
@@ -89,7 +97,7 @@ Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-res
 | Source | Nightly | Injuries job (each, ×6/day) | Daily total | Limit |
 |---|---|---|---|---|
 | API-Football | 3 fixture-date calls + ≤ 10 fixture stats + 2 injuries + lineups on match days ≈ 5–25 | ≈ 5 (cached) | ≤ 60 | 90 (100 minus 10 reserve) |
-| football-data.org | 3 | 0 | 3 | 10/min |
+| football-data.org | 18 (3 per league, 6 leagues; ~3.5 min at 8/min) | 0 | 18 | 10/min |
 | Guardian | 20 | 0 | 20 | 500/day |
 | FPL | 3 + finished gameweeks (cached 30 d) | 3 | ≈ 25 | none published |
 | Others | ≤ 15 each | 0 | small | — |

@@ -19,7 +19,7 @@ export function chapterContent(d: StoryData) {
       body: (
         <>
           <h2 className="font-display text-[clamp(2.4rem,5.6vw,5.2rem)] leading-[0.9]">
-            <span className="block">{d.club},</span>
+            <span className="block" data-name>{d.club},</span>
             <span className="block italic">read in full.</span>
           </h2>
           <p className="mt-6 max-w-md">
@@ -58,7 +58,7 @@ export function chapterContent(d: StoryData) {
             The gap is at <span className="italic text-red">{d.need ? <N s={d.need} className="font-display not-italic" /> : "—"}</span>.
           </h2>
           <p className="mt-6 max-w-md">
-            Every position is compared with the six squads closest in strength: depth, the best option&apos;s value, ageing.
+            Every position is compared with the six squads in its league closest in strength: depth, the best option&apos;s value, ageing.
             {d.signings.length > 0 && " Signings the club has already announced count before anything is recommended:"}
           </p>
           {d.signings.length > 0 && (

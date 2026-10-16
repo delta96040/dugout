@@ -1,0 +1,1611 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "pec-zwolle",
+    "name": "PEC Zwolle",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "eredivisie",
+    "name": "Eredivisie",
+    "country": "Netherlands"
+  },
+  "generated_at": "2026-10-16T21:03:41+00:00",
+  "data_as_of": "2026-10-16T20:56:27+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on PEC Zwolle for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "PEC Zwolle are "
+          },
+          {
+            "stat": "ev_27c778d7832c7b82",
+            "display": "16th"
+          },
+          {
+            "text": " in the Eredivisie table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "PEC Zwolle have "
+          },
+          {
+            "stat": "ev_b5a503d6d1a4cbb2",
+            "display": "4"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "PEC Zwolle's next league match is PEC Zwolle v Go Ahead Eagles on "
+          },
+          {
+            "stat": "ev_31440c0b8679ed5f",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "PEC Zwolle's biggest squad need is "
+          },
+          {
+            "stat": "ev_c8ba753d37be6afb",
+            "display": "defensive midfield"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are PEC Zwolle doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "PEC Zwolle are "
+            },
+            {
+              "stat": "ev_27c778d7832c7b82",
+              "display": "16th"
+            },
+            {
+              "text": " in the Eredivisie table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "PEC Zwolle have "
+            },
+            {
+              "stat": "ev_b5a503d6d1a4cbb2",
+              "display": "4"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "PEC Zwolle have scored "
+            },
+            {
+              "stat": "ev_08441d92b5512ca6",
+              "display": "6"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "PEC Zwolle have conceded "
+            },
+            {
+              "stat": "ev_0a1438282a9648a0",
+              "display": "21"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "PEC Zwolle's most recent league results read "
+            },
+            {
+              "stat": "ev_474aa562888e4319",
+              "display": "LLLDL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should PEC Zwolle expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "PEC Zwolle's next league match is PEC Zwolle v Go Ahead Eagles on "
+            },
+            {
+              "stat": "ev_31440c0b8679ed5f",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is PEC Zwolle's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for PEC Zwolle, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which PEC Zwolle players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Olivier Aertssen's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_8e3c307cf182c77c",
+              "display": "6%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Jasper Schendelaar's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_e41d69a45a985eb8",
+              "display": "6%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Koen Kostons's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_a1c1590e8de00763",
+              "display": "5%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Koen Kostons at "
+            },
+            {
+              "stat": "ev_ad4bc21fcbda2eb2",
+              "display": "€1.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Koen Kostons is "
+            },
+            {
+              "stat": "ev_519b368fc7644f3b",
+              "display": "€1.0m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should PEC Zwolle strengthen, and who fits?",
+      "status": "withheld",
+      "writer": "template",
+      "claims": [],
+      "withheld": [
+        {
+          "text": "Max Balard has [number] months left on his contract.",
+          "status": "conflicting",
+          "reason": "transfer clause: contradicted by a tier 1-2 source"
+        },
+        {
+          "text": "Elias Telles has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Ivan Belikov has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Nils Rossen has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Lennard Hartjes has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_018cf184b19da02c": {
+      "value": 0.0003,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpe5b5527f3c176e",
+      "entity_name": "Vicko Sevelj",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_03971ebeb92e1b83": {
+      "value": 24.6,
+      "display": "24.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3a9a09b35e9e58",
+      "entity_name": "Rick Meissen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_08441d92b5512ca6": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0a1438282a9648a0": {
+      "value": 21.0,
+      "display": "21",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0b1a4c49265f3b4e": {
+      "value": 24.0,
+      "display": "24",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpeeb89618ea4667",
+      "entity_name": "Danila Khotulev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1c5b3a7bcb853a10": {
+      "value": 500000.0,
+      "display": "500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1d06c94dbd452d75": {
+      "value": "Excelsior Rotterdam",
+      "display": "Excelsior Rotterdam",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_211b6d9f16285b82": {
+      "value": 25.9,
+      "display": "25.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp6c653878a2e57b",
+      "entity_name": "Max Balard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2628507c7e491768": {
+      "value": 0.0027,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp3a9a09b35e9e58",
+      "entity_name": "Rick Meissen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_27c778d7832c7b82": {
+      "value": 16.0,
+      "display": "16",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2b7b4bd3ed34b65b": {
+      "value": 22.2,
+      "display": "22.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_31440c0b8679ed5f": {
+      "value": "2026-10-18T10:15:00+00:00",
+      "display": "2026-10-18T10:15:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "eredivisie:2026-27:pec-zwolle:go-ahead-eagles",
+      "entity_name": "PEC Zwolle v Go Ahead Eagles",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:20.460767+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_31fdd542965122b3": {
+      "value": 0.0034,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_448b68e6ccd4bf21": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp93a57c90c24468",
+      "entity_name": "Ivan Belikov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_474aa562888e4319": {
+      "value": "LLLDL",
+      "display": "LLLDL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_519b368fc7644f3b": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_52a0b4de144e633e": {
+      "value": "FK Baltika",
+      "display": "FK Baltika",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp93a57c90c24468",
+      "entity_name": "Ivan Belikov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_540cb73fa5c97672": {
+      "value": "SC Telstar",
+      "display": "SC Telstar",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_57b8ae6f7385062c": {
+      "value": 0.451,
+      "display": "0.45",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp93a57c90c24468",
+      "entity_name": "Ivan Belikov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_57d2c95d34552777": {
+      "value": 900000.0,
+      "display": "900000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp93a57c90c24468",
+      "entity_name": "Ivan Belikov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_57ea6b00c9acb828": {
+      "value": 400000.0,
+      "display": "400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe5b5527f3c176e",
+      "entity_name": "Vicko Sevelj",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5e1bb12a2f61d704": {
+      "value": 0.206,
+      "display": "0.21",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_622e7d417ae46cbd": {
+      "value": 500000.0,
+      "display": "500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6c653878a2e57b",
+      "entity_name": "Max Balard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6cccdcb884320624": {
+      "value": 500000.0,
+      "display": "500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpc23a5c0ff8518d",
+      "entity_name": "Elias Telles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_72e653955082bf91": {
+      "value": "Kolos Kovalivka",
+      "display": "Kolos Kovalivka",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpc23a5c0ff8518d",
+      "entity_name": "Elias Telles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_759dc74503ddb2f0": {
+      "value": 0.512,
+      "display": "0.51",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp6c653878a2e57b",
+      "entity_name": "Max Balard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8e3c307cf182c77c": {
+      "value": 0.065,
+      "display": "0.07",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp729891a8670c7d",
+      "entity_name": "Olivier Aertssen",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9036b12b9d1fb3a6": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp6c653878a2e57b",
+      "entity_name": "Max Balard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_93b5b0389bf864c5": {
+      "value": 28.2,
+      "display": "28.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpc23a5c0ff8518d",
+      "entity_name": "Elias Telles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_99fc25ffba5be8cb": {
+      "value": 900000.0,
+      "display": "900000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpc23a5c0ff8518d",
+      "entity_name": "Elias Telles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a1c1590e8de00763": {
+      "value": 0.048,
+      "display": "0.05",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a9f46740a5210af2": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpe5b5527f3c176e",
+      "entity_name": "Vicko Sevelj",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ac476bca665533ba": {
+      "value": 0.207,
+      "display": "0.21",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpe5b5527f3c176e",
+      "entity_name": "Vicko Sevelj",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ad4bc21fcbda2eb2": {
+      "value": 1500000.0,
+      "display": "1500000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp0d74ca4e8778ef",
+      "entity_name": "Koen Kostons",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b5a503d6d1a4cbb2": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/DED/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:27.325868+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_bb1430f8935facb1": {
+      "value": 22.2,
+      "display": "22.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp93a57c90c24468",
+      "entity_name": "Ivan Belikov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c2985f0b5c091c7b": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c5a8630d58e84634": {
+      "value": 900000.0,
+      "display": "900000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp6c653878a2e57b",
+      "entity_name": "Max Balard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c8ba753d37be6afb": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cce32d9ede6c4ca7": {
+      "value": "centre-back",
+      "display": "centre-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "pec-zwolle",
+      "entity_name": "PEC Zwolle",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ce20ce94b7c2cc88": {
+      "value": 500000.0,
+      "display": "500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3a9a09b35e9e58",
+      "entity_name": "Rick Meissen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cf2a7f19a6e1cdf5": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d2de7fc7936960f4": {
+      "value": 0.0061,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d6f2d20b63521cba": {
+      "value": 0.385,
+      "display": "0.39",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp7eff52dd59216e",
+      "entity_name": "Nils Rossen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e41d69a45a985eb8": {
+      "value": 0.062,
+      "display": "0.06",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp3f71467983e489",
+      "entity_name": "Jasper Schendelaar",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e92390a5402e59fe": {
+      "value": "NAC Breda",
+      "display": "NAC Breda",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp6c653878a2e57b",
+      "entity_name": "Max Balard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eb561aa58781304d": {
+      "value": 0.504,
+      "display": "0.50",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpc23a5c0ff8518d",
+      "entity_name": "Elias Telles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eb9377ab04887990": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpc23a5c0ff8518d",
+      "entity_name": "Elias Telles",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ecc448c676fd9aef": {
+      "value": 900000.0,
+      "display": "900000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpeeb89618ea4667",
+      "entity_name": "Danila Khotulev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ed859565c6dc40ce": {
+      "value": 26.1,
+      "display": "26.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpe5b5527f3c176e",
+      "entity_name": "Vicko Sevelj",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f2612d1477b12748": {
+      "value": 23.5,
+      "display": "23.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f3816a8ad7de32f5": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f700f064588190bd": {
+      "value": "Dundee United FC",
+      "display": "Dundee United FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpe5b5527f3c176e",
+      "entity_name": "Vicko Sevelj",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fcfdd7f6362b15f0": {
+      "value": 900000.0,
+      "display": "900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp93a57c90c24468",
+      "entity_name": "Ivan Belikov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_27c778d7832c7b82",
+        "display": "16th",
+        "label": "league position",
+        "subject": "PEC Zwolle"
+      },
+      {
+        "stat": "ev_b5a503d6d1a4cbb2",
+        "display": "4",
+        "label": "league points",
+        "subject": "PEC Zwolle"
+      },
+      {
+        "stat": "ev_08441d92b5512ca6",
+        "display": "6",
+        "label": "league goals scored",
+        "subject": "PEC Zwolle"
+      },
+      {
+        "stat": "ev_0a1438282a9648a0",
+        "display": "21",
+        "label": "league goals conceded",
+        "subject": "PEC Zwolle"
+      },
+      {
+        "stat": "ev_474aa562888e4319",
+        "display": "LLLDL",
+        "label": "recent league results, oldest first",
+        "subject": "PEC Zwolle"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_31440c0b8679ed5f",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "PEC Zwolle v Go Ahead Eagles"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_8e3c307cf182c77c",
+        "display": "6%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Olivier Aertssen"
+      },
+      {
+        "stat": "ev_e41d69a45a985eb8",
+        "display": "6%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Jasper Schendelaar"
+      },
+      {
+        "stat": "ev_a1c1590e8de00763",
+        "display": "5%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_ad4bc21fcbda2eb2",
+        "display": "€1.5m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Koen Kostons"
+      },
+      {
+        "stat": "ev_519b368fc7644f3b",
+        "display": "€1.0m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Koen Kostons"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_c8ba753d37be6afb",
+        "display": "defensive midfield",
+        "label": "squad need, priority one",
+        "subject": "PEC Zwolle"
+      },
+      {
+        "stat": "ev_211b6d9f16285b82",
+        "display": "26",
+        "label": "age (best target)",
+        "subject": "Max Balard"
+      },
+      {
+        "stat": "ev_e92390a5402e59fe",
+        "display": "NAC Breda",
+        "label": "current club",
+        "subject": "Max Balard"
+      },
+      {
+        "stat": "ev_9036b12b9d1fb3a6",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Max Balard"
+      },
+      {
+        "stat": "ev_c5a8630d58e84634",
+        "display": "€0.9m",
+        "label": "market value",
+        "subject": "Max Balard"
+      },
+      {
+        "stat": "ev_622e7d417ae46cbd",
+        "display": "€0.5m",
+        "label": "estimated fair fee",
+        "subject": "Max Balard"
+      },
+      {
+        "stat": "ev_759dc74503ddb2f0",
+        "display": "51%",
+        "label": "expected share of minutes at the club",
+        "subject": "Max Balard"
+      },
+      {
+        "stat": "ev_93b5b0389bf864c5",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Elias Telles"
+      },
+      {
+        "stat": "ev_72e653955082bf91",
+        "display": "Kolos Kovalivka",
+        "label": "current club",
+        "subject": "Elias Telles"
+      },
+      {
+        "stat": "ev_eb9377ab04887990",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Elias Telles"
+      },
+      {
+        "stat": "ev_99fc25ffba5be8cb",
+        "display": "€0.9m",
+        "label": "market value",
+        "subject": "Elias Telles"
+      },
+      {
+        "stat": "ev_6cccdcb884320624",
+        "display": "€0.5m",
+        "label": "estimated fair fee",
+        "subject": "Elias Telles"
+      },
+      {
+        "stat": "ev_eb561aa58781304d",
+        "display": "50%",
+        "label": "expected share of minutes at the club",
+        "subject": "Elias Telles"
+      },
+      {
+        "stat": "ev_bb1430f8935facb1",
+        "display": "22",
+        "label": "age (best target)",
+        "subject": "Ivan Belikov"
+      },
+      {
+        "stat": "ev_52a0b4de144e633e",
+        "display": "FK Baltika",
+        "label": "current club",
+        "subject": "Ivan Belikov"
+      },
+      {
+        "stat": "ev_448b68e6ccd4bf21",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Ivan Belikov"
+      },
+      {
+        "stat": "ev_57d2c95d34552777",
+        "display": "€0.9m",
+        "label": "market value",
+        "subject": "Ivan Belikov"
+      },
+      {
+        "stat": "ev_fcfdd7f6362b15f0",
+        "display": "€0.9m",
+        "label": "estimated fair fee",
+        "subject": "Ivan Belikov"
+      },
+      {
+        "stat": "ev_57b8ae6f7385062c",
+        "display": "45%",
+        "label": "expected share of minutes at the club",
+        "subject": "Ivan Belikov"
+      },
+      {
+        "stat": "ev_2b7b4bd3ed34b65b",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_540cb73fa5c97672",
+        "display": "SC Telstar",
+        "label": "current club",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_d6f2d20b63521cba",
+        "display": "38%",
+        "label": "chance his club sells him in a window",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_cf2a7f19a6e1cdf5",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_1c5b3a7bcb853a10",
+        "display": "€0.5m",
+        "label": "estimated fair fee",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_d2de7fc7936960f4",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Nils Rossen"
+      },
+      {
+        "stat": "ev_f2612d1477b12748",
+        "display": "24",
+        "label": "age (realistic target)",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_1d06c94dbd452d75",
+        "display": "Excelsior Rotterdam",
+        "label": "current club",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_5e1bb12a2f61d704",
+        "display": "21%",
+        "label": "chance his club sells him in a window",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_c2985f0b5c091c7b",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_f3816a8ad7de32f5",
+        "display": "€0.6m",
+        "label": "estimated fair fee",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_31fdd542965122b3",
+        "display": "0.3%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_ed859565c6dc40ce",
+        "display": "26",
+        "label": "age (realistic target)",
+        "subject": "Vicko Sevelj"
+      },
+      {
+        "stat": "ev_f700f064588190bd",
+        "display": "Dundee United FC",
+        "label": "current club",
+        "subject": "Vicko Sevelj"
+      },
+      {
+        "stat": "ev_ac476bca665533ba",
+        "display": "21%",
+        "label": "chance his club sells him in a window",
+        "subject": "Vicko Sevelj"
+      },
+      {
+        "stat": "ev_a9f46740a5210af2",
+        "display": "7",
+        "label": "months left on his contract",
+        "subject": "Vicko Sevelj"
+      },
+      {
+        "stat": "ev_57ea6b00c9acb828",
+        "display": "€0.4m",
+        "label": "estimated fair fee",
+        "subject": "Vicko Sevelj"
+      },
+      {
+        "stat": "ev_018cf184b19da02c",
+        "display": "0.0%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Vicko Sevelj"
+      },
+      {
+        "stat": "ev_cce32d9ede6c4ca7",
+        "display": "centre-back",
+        "label": "squad need, priority two",
+        "subject": "PEC Zwolle"
+      },
+      {
+        "stat": "ev_0b1a4c49265f3b4e",
+        "display": "24",
+        "label": "age (best target, second need)",
+        "subject": "Danila Khotulev"
+      },
+      {
+        "stat": "ev_ecc448c676fd9aef",
+        "display": "€0.9m",
+        "label": "market value",
+        "subject": "Danila Khotulev"
+      },
+      {
+        "stat": "ev_03971ebeb92e1b83",
+        "display": "25",
+        "label": "age (realistic target, second need)",
+        "subject": "Rick Meissen"
+      },
+      {
+        "stat": "ev_ce20ce94b7c2cc88",
+        "display": "€0.5m",
+        "label": "estimated fair fee",
+        "subject": "Rick Meissen"
+      },
+      {
+        "stat": "ev_2628507c7e491768",
+        "display": "0.3%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Rick Meissen"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 15,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 41,
+      "conflicting": 1,
+      "unverified": 4
+    },
+    "sections_published": 4,
+    "sections_withheld": 1
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}
