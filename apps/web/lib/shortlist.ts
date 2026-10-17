@@ -10,8 +10,10 @@ export function shortlists(d: Dossier): Target[] {
   const ref = (id: string): StatRef => ({ id, stat: d.stats[id], display: disp[id] ?? d.stats[id].display });
   const rows = (d.key_stats?.scout ?? []).filter((r) => d.stats[r.stat]);
   const out: Target[] = [];
-  for (const kind of KINDS) {
-    for (const age of rows.filter((r) => r.label === `age (${kind} target)`)) {
+  for (const need of [0, 1] as const) {
+   for (const kind of KINDS) {
+    const suffix = need === 0 ? "" : ", second need";
+    for (const age of rows.filter((r) => r.label === `age (${kind} target${suffix})`)) {
       const fact = (label: string) => {
         const r = rows.find((x) => x.subject === age.subject && x.label.startsWith(label));
         return r ? ref(r.stat) : undefined;
@@ -19,6 +21,7 @@ export function shortlists(d: Dossier): Target[] {
       const club = fact("current club");
       out.push({
         kind,
+        need,
         name: age.subject,
         club: club ? String(club.stat.value) : undefined,
         age: ref(age.stat),
@@ -33,6 +36,7 @@ export function shortlists(d: Dossier): Target[] {
         projected: fact("projected market value"),
       });
     }
+   }
   }
   return out;
 }

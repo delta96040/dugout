@@ -5,10 +5,60 @@ import { metricName } from "@/lib/format";
 import { REPO } from "./constants";
 import Scramble from "./Scramble";
 import Stars from "./Stars";
+import type { Gap } from "@/lib/shortlist";
 import type { StatRef, StoryData } from "./types";
 
 function N({ s, className }: { s?: StatRef; className?: string }) {
   return s ? <Num stat={s.stat} display={s.display} className={className} /> : <span className="text-pencil">n/a</span>;
+}
+
+const num = (s?: StatRef) => (s ? Number(s.stat.value) : NaN);
+
+/** Why a position is a need, in plain words: say which problem it is (too few players, a best option worth less
+ *  than at similar clubs, an ageing group), then the figures behind it. Only the reasons that apply are given. */
+function GapReason({ g, club, first }: { g: Gap; club: string; first: boolean }) {
+  const thin = num(g.depth) < num(g.wanted);
+  const weak = num(g.bestValue) < num(g.peerValue);
+  const ageing = num(g.veterans) > 0;
+  const verdict = [thin && "too few players", weak && "below its rivals", ageing && "ageing"].filter(Boolean);
+  return (
+    <>
+      <span className="mono-label">
+        {first ? "Biggest need" : "Second need"} · {String(g.need.stat.value)}
+        {verdict.length > 0 && <> · {verdict.join(", ")}</>}
+      </span>
+      <br />
+      {thin && g.depth && g.wanted && (
+        <>
+          Only <N s={g.depth} /> players for it, veterans aside, where a squad carries <N s={g.wanted} />.{" "}
+        </>
+      )}
+      {weak && g.bestValue && g.peerValue && (
+        <>
+          The best of them{g.bestPlayer ? <>, <span data-name>{g.bestPlayer}</span>,</> : ""} is worth{" "}
+          <N s={g.bestValue} />; at the clubs closest to {club} in strength the best option there is typically worth{" "}
+          <N s={g.peerValue} />.{" "}
+        </>
+      )}
+      {!thin && !weak && g.bestValue && (
+        <>
+          {club} have the numbers and the level there today
+          {g.bestPlayer ? (
+            <>
+              {" "}
+              (<span data-name>{g.bestPlayer}</span>, <N s={g.bestValue} />)
+            </>
+          ) : null}
+          , so the need is about the years ahead.{" "}
+        </>
+      )}
+      {ageing && g.veterans && (
+        <>
+          <N s={g.veterans} /> of the options are veterans, so the position needs renewing soon.
+        </>
+      )}
+    </>
+  );
 }
 
 /** The six chapters' copy, rendered on the server. Scrambled numbers resolve when their chapter is on screen
@@ -70,35 +120,7 @@ export function chapterContent(d: StoryData) {
           <ol className="mt-5 max-w-lg space-y-3 text-sm sm:text-base">
             {d.gaps.map((g, i) => (
               <li key={g.need.id}>
-                <span className="mono-label">{i === 0 ? "Biggest need" : "Second need"} · </span>
-                {g.depth && (
-                  <>
-                    {d.club} have <N s={g.depth} /> players there, veterans aside
-                    {g.wanted ? (
-                      <>
-                        , where a squad carries <N s={g.wanted} />
-                      </>
-                    ) : null}
-                    .{" "}
-                  </>
-                )}
-                {g.bestValue && (
-                  <>
-                    Their best option{g.bestPlayer ? <>, <span data-name>{g.bestPlayer}</span>,</> : ""} is worth{" "}
-                    <N s={g.bestValue} />
-                    {g.peerValue ? (
-                      <>
-                        ; at the squads closest in strength the best option is typically worth <N s={g.peerValue} />
-                      </>
-                    ) : null}
-                    .{" "}
-                  </>
-                )}
-                {g.veterans && (
-                  <>
-                    <N s={g.veterans} /> of the options are veterans.
-                  </>
-                )}
+                <GapReason g={g} club={d.club} first={i === 0} />
               </li>
             ))}
           </ol>
@@ -136,8 +158,7 @@ export function chapterContent(d: StoryData) {
             <Shortlists
               targets={d.targets}
               buyer={d.club}
-              need={d.needGroup}
-              gap={d.gaps[0]}
+              gaps={d.gaps}
               n={(s) => <Scramble s={s} chapter={2} />}
               compact
             />
