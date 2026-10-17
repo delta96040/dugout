@@ -130,6 +130,9 @@ def make_ctx(con, ledger, llm=None):
 
 def test_routing():
     assert route("How many goals has Isak scored?") == ["club"]
+    assert route("How many goals will Liverpool score against Brentford?") == ["match"]
+    assert route("Will Brentford score against Liverpool this weekend?") == ["match"]
+    assert route("How many goals could Liverpool score in their next game?") == ["match"]
     assert route("Who should we sign to replace him?") == ["scout"]
     assert set(route("Is Isak fit for the next match?")) >= {"news", "match"}
     assert route("Tell me something") == ["club", "news"]
