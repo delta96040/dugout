@@ -10,8 +10,8 @@
     "name": "Serie A",
     "country": "Italy"
   },
-  "generated_at": "2026-10-16T21:20:08+00:00",
-  "data_as_of": "2026-10-16T21:12:24+00:00",
+  "generated_at": "2026-10-16T23:59:37+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
   "llm": null,
   "summary": {
     "agent": "director",
@@ -26,8 +26,8 @@
             "text": "Milan are "
           },
           {
-            "stat": "ev_fbed5eddacea1ff8",
-            "display": "5th"
+            "stat": "ev_4c93e29404b256ed",
+            "display": "6th"
           },
           {
             "text": " in the Serie A table."
@@ -44,7 +44,7 @@
             "text": "Milan have "
           },
           {
-            "stat": "ev_3dbb6bb7c61fd925",
+            "stat": "ev_853cf617cdd45604",
             "display": "12"
           },
           {
@@ -62,7 +62,7 @@
             "text": "Milan's next league match is Milan v Atalanta on "
           },
           {
-            "stat": "ev_b38ec64b8a6fb6b7",
+            "stat": "ev_cfa7319de7e0dcfd",
             "display": "18 October 2026"
           },
           {
@@ -77,11 +77,11 @@
       {
         "segments": [
           {
-            "text": "Milan's biggest squad need is "
+            "text": "We estimate Strahinja Pavlović's chance of being sold in a transfer window at "
           },
           {
-            "stat": "ev_71eb444c84e6217f",
-            "display": "central midfield"
+            "stat": "ev_a11718c42de9417d",
+            "display": "17%"
           },
           {
             "text": "."
@@ -109,8 +109,8 @@
               "text": "Milan are "
             },
             {
-              "stat": "ev_fbed5eddacea1ff8",
-              "display": "5th"
+              "stat": "ev_4c93e29404b256ed",
+              "display": "6th"
             },
             {
               "text": " in the Serie A table."
@@ -127,7 +127,7 @@
               "text": "Milan have "
             },
             {
-              "stat": "ev_3dbb6bb7c61fd925",
+              "stat": "ev_853cf617cdd45604",
               "display": "12"
             },
             {
@@ -145,7 +145,7 @@
               "text": "Milan have scored "
             },
             {
-              "stat": "ev_cb1c6dcffe36102e",
+              "stat": "ev_0bc80132a2e49889",
               "display": "11"
             },
             {
@@ -163,7 +163,7 @@
               "text": "Milan have conceded "
             },
             {
-              "stat": "ev_fabce9447b41c5d3",
+              "stat": "ev_ec4881d9551fa190",
               "display": "5"
             },
             {
@@ -181,7 +181,7 @@
               "text": "Milan's most recent league results read "
             },
             {
-              "stat": "ev_49a55860cb62c29a",
+              "stat": "ev_bbc47cac3c213b18",
               "display": "DWDDW"
             },
             {
@@ -199,7 +199,7 @@
               "text": "Ruben Amorim has been Milan's head coach since "
             },
             {
-              "stat": "ev_0903db0a71e502ef",
+              "stat": "ev_a175f0d2d2e531fa",
               "display": "16 June 2026"
             },
             {
@@ -217,7 +217,7 @@
               "text": "Ruben Amorim's style profile covers "
             },
             {
-              "stat": "ev_56b0f30c2eab7848",
+              "stat": "ev_b470665ba6187718",
               "display": "47"
             },
             {
@@ -235,7 +235,7 @@
               "text": "Teams under Amorim have taken "
             },
             {
-              "stat": "ev_e89e1c9182f827c4",
+              "stat": "ev_e91561d14ddd5883",
               "display": "54%"
             },
             {
@@ -253,7 +253,7 @@
               "text": "Teams under Amorim average "
             },
             {
-              "stat": "ev_a645dac1631f1561",
+              "stat": "ev_58f6a343d70eb76f",
               "display": "102"
             },
             {
@@ -271,7 +271,7 @@
               "text": "Teams under Amorim create "
             },
             {
-              "stat": "ev_4136f16af9af52f2",
+              "stat": "ev_541c5db96eeff48f",
               "display": "1.51"
             },
             {
@@ -299,7 +299,7 @@
               "text": "Milan's next league match is Milan v Atalanta on "
             },
             {
-              "stat": "ev_b38ec64b8a6fb6b7",
+              "stat": "ev_cfa7319de7e0dcfd",
               "display": "18 October 2026"
             },
             {
@@ -327,9 +327,28 @@
       "agent": "news",
       "title": "Team News",
       "question": "Who is unavailable for Milan, and what is the latest news?",
-      "status": "empty",
+      "status": "published",
       "writer": "template",
-      "claims": [],
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "According to The Guardian, Christian Pulisic is no longer a focal point for the US or Milan – and that’s OK."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by The Guardian",
+          "sources": [
+            {
+              "outlet": "The Guardian",
+              "tier": 2,
+              "url": "https://www.theguardian.com/football/2026/oct/13/christian-pulisic-focal-point-milan-usmnt",
+              "official": false
+            }
+          ]
+        }
+      ],
       "withheld": []
     },
     {
@@ -345,7 +364,7 @@
               "text": "We estimate Strahinja Pavlović's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_c17759baff0e58ca",
+              "stat": "ev_a11718c42de9417d",
               "display": "17%"
             },
             {
@@ -363,7 +382,7 @@
               "text": "We estimate Christian Pulisic's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_c3a4adb91332346a",
+              "stat": "ev_3dd600cbf4d3b3ea",
               "display": "12%"
             },
             {
@@ -381,11 +400,47 @@
               "text": "We estimate Ruben Loftus-Cheek's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_d94a87fa002b77cf",
+              "stat": "ev_94a6f30372ddeb4e",
               "display": "12%"
             },
             {
               "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Alexis Saelemaekers at "
+            },
+            {
+              "stat": "ev_4580d17100d96d46",
+              "display": "€20.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Alexis Saelemaekers is "
+            },
+            {
+              "stat": "ev_cecc6c972d7389b7",
+              "display": "€13.3m"
+            },
+            {
+              "text": ", below his market value."
             }
           ],
           "type": "stat",
@@ -417,7 +472,7 @@
               "text": "Our fair-fee estimate for Fikayo Tomori is "
             },
             {
-              "stat": "ev_6da9c416f725ce5b",
+              "stat": "ev_ab6b3922ec5a9ecf",
               "display": "€10.5m"
             },
             {
@@ -432,11 +487,11 @@
         {
           "segments": [
             {
-              "text": "Transfermarkt valued Davide Bartesaghi at "
+              "text": "Transfermarkt valued Warren Bondo at "
             },
             {
-              "stat": "ev_1f0f213cbd91038b",
-              "display": "€22.0m"
+              "stat": "ev_d95b194fc8195f88",
+              "display": "€6.0m"
             },
             {
               "text": "."
@@ -450,20 +505,38 @@
         {
           "segments": [
             {
-              "text": "Our fair-fee estimate for Davide Bartesaghi is "
+              "text": "Our fair-fee estimate for Warren Bondo is "
             },
             {
-              "stat": "ev_ac69f5e3871c3251",
-              "display": "€18.2m"
+              "stat": "ev_362e10878f3a0489",
+              "display": "€5.1m"
             },
             {
-              "text": ", below his market value."
+              "text": ", in line with his market value."
             }
           ],
           "type": "stat",
           "status": "verified",
           "reason": "bound to ledger rows",
           "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "According to The Guardian, Ruben Loftus-Cheek has been linked with a move away from Milan."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by The Guardian",
+          "sources": [
+            {
+              "outlet": "The Guardian",
+              "tier": 5,
+              "url": "https://www.theguardian.com/football/2026/aug/19/football-transfer-rumours-al-hilal-eye-moves-for-harry-kane-and-ollie-watkins",
+              "official": false
+            }
+          ]
         }
       ],
       "withheld": []
@@ -478,10 +551,64 @@
         {
           "segments": [
             {
+              "text": "According to The Guardian, Milan have been linked with Leny Yoro."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by The Guardian",
+          "sources": [
+            {
+              "outlet": "The Guardian",
+              "tier": 5,
+              "url": "https://www.theguardian.com/football/2026/aug/31/football-transfer-rumours-liverpool-to-sign-estevao-christian-pulisic-to-spurs",
+              "official": false
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "text": "Past reports like this one about Leny Yoro came true within half a year about one time in "
+            },
+            {
+              "stat": "ev_c5390ac5b06d3821",
+              "display": "12"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "According to The Guardian, Milan have been linked with Joshua Zirkzee."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by The Guardian",
+          "sources": [
+            {
+              "outlet": "The Guardian",
+              "tier": 5,
+              "url": "https://www.theguardian.com/football/2026/aug/31/football-transfer-rumours-liverpool-to-sign-estevao-christian-pulisic-to-spurs",
+              "official": false
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
               "text": "Milan's biggest squad need is "
             },
             {
-              "stat": "ev_71eb444c84e6217f",
+              "stat": "ev_d7729302ed06a3ec",
               "display": "central midfield"
             },
             {
@@ -499,7 +626,7 @@
               "text": "Dream target: Francisco Trincão (Sporting CP), who is "
             },
             {
-              "stat": "ev_f7d5c9b9e2d4a872",
+              "stat": "ev_2a12c0b5698208ca",
               "display": "27"
             },
             {
@@ -517,7 +644,7 @@
               "text": "Francisco Trincão plays for "
             },
             {
-              "stat": "ev_aafa89c0799e378f",
+              "stat": "ev_5bd4fb15f5d51004",
               "display": "Sporting CP"
             },
             {
@@ -535,7 +662,7 @@
               "text": "Francisco Trincão has a market value of "
             },
             {
-              "stat": "ev_be2bb7e4c7cc0a93",
+              "stat": "ev_4486bdb87db4ef5f",
               "display": "€40.0m"
             },
             {
@@ -553,7 +680,7 @@
               "text": "Our fair-fee estimate for Francisco Trincão is "
             },
             {
-              "stat": "ev_bc1e5b2b91442227",
+              "stat": "ev_b5f3d01ca5875729",
               "display": "€29.3m"
             },
             {
@@ -571,7 +698,7 @@
               "text": "We project Francisco Trincão to play "
             },
             {
-              "stat": "ev_16c6a9d1051b50d1",
+              "stat": "ev_cb2bf5951296ad18",
               "display": "64%"
             },
             {
@@ -589,7 +716,7 @@
               "text": "Dream target: Christoph Baumgartner (RB Leipzig), who is "
             },
             {
-              "stat": "ev_c4e5fc1cf620695f",
+              "stat": "ev_83d04dad8ed636d8",
               "display": "27"
             },
             {
@@ -607,7 +734,7 @@
               "text": "Christoph Baumgartner plays for "
             },
             {
-              "stat": "ev_becfef3320a2acbb",
+              "stat": "ev_ac2d776ada02c163",
               "display": "RB Leipzig"
             },
             {
@@ -625,7 +752,7 @@
               "text": "Christoph Baumgartner has a market value of "
             },
             {
-              "stat": "ev_a6413385d4669606",
+              "stat": "ev_b0a54de991851659",
               "display": "€40.0m"
             },
             {
@@ -643,7 +770,7 @@
               "text": "Our fair-fee estimate for Christoph Baumgartner is "
             },
             {
-              "stat": "ev_6a7d1bf78df8e09d",
+              "stat": "ev_5bde3e659bc1df1a",
               "display": "€27.5m"
             },
             {
@@ -661,7 +788,7 @@
               "text": "We project Christoph Baumgartner to play "
             },
             {
-              "stat": "ev_8f71615682019ad5",
+              "stat": "ev_86ff78d302ca2f96",
               "display": "61%"
             },
             {
@@ -679,7 +806,7 @@
               "text": "Dream target: Noah Sadiki (Sunderland AFC), who is "
             },
             {
-              "stat": "ev_23c8fb9d0a7f4135",
+              "stat": "ev_ce838b631b2b6766",
               "display": "22"
             },
             {
@@ -697,7 +824,7 @@
               "text": "Noah Sadiki plays for "
             },
             {
-              "stat": "ev_c3862a753b4054b8",
+              "stat": "ev_667f4eeb17a8bd12",
               "display": "Sunderland AFC"
             },
             {
@@ -715,7 +842,7 @@
               "text": "Noah Sadiki has a market value of "
             },
             {
-              "stat": "ev_ae0b7ab3f0a75b69",
+              "stat": "ev_646f773f7ff5f519",
               "display": "€40.0m"
             },
             {
@@ -733,7 +860,7 @@
               "text": "Our fair-fee estimate for Noah Sadiki is "
             },
             {
-              "stat": "ev_8fb8dde6c62519eb",
+              "stat": "ev_69837235bdb838a1",
               "display": "€35.5m"
             },
             {
@@ -751,7 +878,7 @@
               "text": "We project Noah Sadiki to play "
             },
             {
-              "stat": "ev_8f7b6e98c9a880a5",
+              "stat": "ev_5292fb7a82004018",
               "display": "60%"
             },
             {
@@ -769,7 +896,7 @@
               "text": "Realistic target: Adrián Bernabé (Parma Calcio 1913), who is "
             },
             {
-              "stat": "ev_bdda976662cee249",
+              "stat": "ev_d4e07fd4ab087933",
               "display": "25"
             },
             {
@@ -787,7 +914,7 @@
               "text": "Adrián Bernabé plays for "
             },
             {
-              "stat": "ev_6b2af76aa3296b19",
+              "stat": "ev_d8f648d4312ef109",
               "display": "Parma Calcio 1913"
             },
             {
@@ -805,7 +932,7 @@
               "text": "We estimate a "
             },
             {
-              "stat": "ev_4a54856f9c95716d",
+              "stat": "ev_55cde5d11d4811b1",
               "display": "34%"
             },
             {
@@ -823,7 +950,7 @@
               "text": "Our fair-fee estimate for Adrián Bernabé is "
             },
             {
-              "stat": "ev_a72ecd86f0f17350",
+              "stat": "ev_b8fe0db5915aedde",
               "display": "€11.8m"
             },
             {
@@ -841,7 +968,7 @@
               "text": "We estimate a "
             },
             {
-              "stat": "ev_d437ac8462610232",
+              "stat": "ev_1b13e3b45feda8b7",
               "display": "0.7%"
             },
             {
@@ -856,82 +983,10 @@
         {
           "segments": [
             {
-              "text": "Realistic target: Morten Frendrup (Genoa CFC), who is "
-            },
-            {
-              "stat": "ev_593895592f0fb6fe",
-              "display": "26"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Morten Frendrup plays for "
-            },
-            {
-              "stat": "ev_f4aa2713587966e4",
-              "display": "Genoa CFC"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We estimate a "
-            },
-            {
-              "stat": "ev_dcb6fec88bb96641",
-              "display": "28%"
-            },
-            {
-              "text": " chance that Genoa CFC sell Morten Frendrup in a transfer window."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Morten Frendrup is "
-            },
-            {
-              "stat": "ev_90b14fc62c6b55dc",
-              "display": "€13.3m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
               "text": "Milan's second squad need is "
             },
             {
-              "stat": "ev_9872035a8bd47928",
+              "stat": "ev_b0cfd3341d158696",
               "display": "defensive midfield"
             },
             {
@@ -946,6 +1001,16 @@
       ],
       "withheld": [
         {
+          "text": "According to The Guardian, Milan have been linked with Marcus Rashford.",
+          "status": "unverified",
+          "reason": "The Guardian's text does not support it"
+        },
+        {
+          "text": "Past reports like this one about Marcus Rashford came true within half a year about one time in [number].",
+          "status": "unverified",
+          "reason": "the rumour it is about was not confirmed"
+        },
+        {
           "text": "Francisco Trincão has [number] months left on his contract.",
           "status": "unverified",
           "reason": "transfer clause: no relevant source found"
@@ -958,15 +1023,10 @@
         {
           "text": "Noah Sadiki has [number] months left on his contract.",
           "status": "unverified",
-          "reason": "transfer clause: no relevant source found"
+          "reason": "transfer clause: 0 independent source(s); need 2"
         },
         {
           "text": "Adrián Bernabé has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: no relevant source found"
-        },
-        {
-          "text": "Morten Frendrup has [number] months left on his contract.",
           "status": "unverified",
           "reason": "transfer clause: no relevant source found"
         }
@@ -974,903 +1034,7 @@
     }
   ],
   "stats": {
-    "ev_066669f8e012fcd3": {
-      "value": 20.0,
-      "display": "20",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpd74793d10d8421",
-      "entity_name": "Charles De Ketelaere",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_06881b2b72061f37": {
-      "value": 20500000.0,
-      "display": "20500000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rpdb6b821adbee70",
-      "entity_name": "Oscar Højlund",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_073efcfb9e332744": {
-      "value": 0.393,
-      "display": "0.39",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rpa30d1f827fcad4",
-      "entity_name": "Mert Kömür",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0903db0a71e502ef": {
-      "value": "2026-06-16",
-      "display": "2026-06-16",
-      "unit": null,
-      "metric": "appointed",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q368682",
-      "entity_name": "Ruben Amorim",
-      "source": "wikidata",
-      "source_url": "https://www.wikidata.org/wiki/Q368682",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_14c85b0eb65c2905": {
-      "value": 0.0056,
-      "display": "0.01",
-      "unit": null,
-      "metric": "realism",
-      "entity_type": "player",
-      "entity_id": "rp3f587f1e7e902a",
-      "entity_name": "Morten Frendrup",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1632f7595392e7eb": {
-      "value": 0.407,
-      "display": "0.41",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rpb92075e35042f9",
-      "entity_name": "Isaque",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_16c6a9d1051b50d1": {
-      "value": 0.645,
-      "display": "0.65",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpbd1ab09db15262",
-      "entity_name": "Francisco Trincão",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_186a9a8a8d5abfbc": {
-      "value": 25.8,
-      "display": "25.80",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp0258ddff985d07",
-      "entity_name": "Kaishu Sano",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1f0f213cbd91038b": {
-      "value": 22000000.0,
-      "display": "22000000",
-      "unit": "EUR",
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp10eb919e84e146",
-      "entity_name": "Davide Bartesaghi",
-      "source": "transfermarkt_datasets",
-      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
-      "source_tier": 3,
-      "fetched_at": "2026-05-29T00:00:00+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_20ecd39ac65f3c71": {
-      "value": "FC Shakhtar Donetsk",
-      "display": "FC Shakhtar Donetsk",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpb92075e35042f9",
-      "entity_name": "Isaque",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_23c8fb9d0a7f4135": {
-      "value": 21.8,
-      "display": "21.80",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpe2c59f4243cfa2",
-      "entity_name": "Noah Sadiki",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_27c6bf0d570a9747": {
-      "value": 44.0,
-      "display": "44",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpbd1ab09db15262",
-      "entity_name": "Francisco Trincão",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2b00291c417b4fcc": {
-      "value": 0.0051,
-      "display": "0.01",
-      "unit": null,
-      "metric": "realism",
-      "entity_type": "player",
-      "entity_id": "rpd74793d10d8421",
-      "entity_name": "Charles De Ketelaere",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2d9003a7db885458": {
-      "value": 28100000.0,
-      "display": "28100000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpfef44d17bfd941",
-      "entity_name": "Maximo Perrone",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_39f5289f78b22cb3": {
-      "value": 19.6,
-      "display": "19.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpb92075e35042f9",
-      "entity_name": "Isaque",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3dbb6bb7c61fd925": {
-      "value": 12.0,
-      "display": "12",
-      "unit": null,
-      "metric": "league_points",
-      "entity_type": "club",
-      "entity_id": "milan",
-      "entity_name": "Milan",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_3e96916acea1a028": {
-      "value": 40000000.0,
-      "display": "40000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp0258ddff985d07",
-      "entity_name": "Kaishu Sano",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4136f16af9af52f2": {
-      "value": 1.5134,
-      "display": "1.51",
-      "unit": null,
-      "metric": "xg_for",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q368682",
-      "entity_name": "Ruben Amorim",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_43db11b654f5ff56": {
-      "value": 18100000.0,
-      "display": "18100000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rpfebc5546696de6",
-      "entity_name": "Jorthy Mokio",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_49a55860cb62c29a": {
-      "value": "DWDDW",
-      "display": "DWDDW",
-      "unit": null,
-      "metric": "league_form",
-      "entity_type": "club",
-      "entity_id": "milan",
-      "entity_name": "Milan",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/SA/standings",
-      "source_tier": 2,
-      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_4a54856f9c95716d": {
-      "value": 0.343,
-      "display": "0.34",
-      "unit": null,
-      "metric": "p_sold",
-      "entity_type": "player",
-      "entity_id": "rpd0f4bdf7fe6b1a",
-      "entity_name": "Adrián Bernabé",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_52b75cebd76866ea": {
-      "value": 17500000.0,
-      "display": "17500000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rpa30d1f827fcad4",
-      "entity_name": "Mert Kömür",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_544e9806ab4a559d": {
-      "value": "FC Augsburg",
-      "display": "FC Augsburg",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpa30d1f827fcad4",
-      "entity_name": "Mert Kömür",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_56b0f30c2eab7848": {
-      "value": 47.0,
-      "display": "47",
-      "unit": null,
-      "metric": "pl_matches",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q368682",
-      "entity_name": "Ruben Amorim",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_593895592f0fb6fe": {
-      "value": 25.5,
-      "display": "25.50",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp3f587f1e7e902a",
-      "entity_name": "Morten Frendrup",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_616f9bcd5d17a277": {
-      "value": 20.0,
-      "display": "20",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rp3f587f1e7e902a",
-      "entity_name": "Morten Frendrup",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_69749de1fa52d15c": {
-      "value": 25.6,
-      "display": "25.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpd74793d10d8421",
-      "entity_name": "Charles De Ketelaere",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6a7d1bf78df8e09d": {
-      "value": 27500000.0,
-      "display": "27500000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp993245a5ee9bab",
-      "entity_name": "Christoph Baumgartner",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6b2af76aa3296b19": {
-      "value": "Parma Calcio 1913",
-      "display": "Parma Calcio 1913",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpd0f4bdf7fe6b1a",
-      "entity_name": "Adrián Bernabé",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6bca1b73ab563c44": {
-      "value": 21.2,
-      "display": "21.20",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpa30d1f827fcad4",
-      "entity_name": "Mert Kömür",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6da9c416f725ce5b": {
-      "value": 10500000.0,
-      "display": "10500000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp8680cae0e593b8",
-      "entity_name": "Fikayo Tomori",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_71eb444c84e6217f": {
-      "value": "central midfield",
-      "display": "central midfield",
-      "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "milan",
-      "entity_name": "Milan",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_73b0212b6e1f24c4": {
-      "value": "Ajax Amsterdam",
-      "display": "Ajax Amsterdam",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpfebc5546696de6",
-      "entity_name": "Jorthy Mokio",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_85491b0a99e7e4bc": {
-      "value": "Atalanta BC",
-      "display": "Atalanta BC",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpd74793d10d8421",
-      "entity_name": "Charles De Ketelaere",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_89959df0121b2bec": {
-      "value": 0.163,
-      "display": "0.16",
-      "unit": null,
-      "metric": "p_sold",
-      "entity_type": "player",
-      "entity_id": "rpd74793d10d8421",
-      "entity_name": "Charles De Ketelaere",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8f71615682019ad5": {
-      "value": 0.61,
-      "display": "0.61",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rp993245a5ee9bab",
-      "entity_name": "Christoph Baumgartner",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8f7b6e98c9a880a5": {
-      "value": 0.601,
-      "display": "0.60",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpe2c59f4243cfa2",
-      "entity_name": "Noah Sadiki",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8fb8dde6c62519eb": {
-      "value": 35500000.0,
-      "display": "35500000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpe2c59f4243cfa2",
-      "entity_name": "Noah Sadiki",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_90b14fc62c6b55dc": {
-      "value": 13300000.0,
-      "display": "13300000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp3f587f1e7e902a",
-      "entity_name": "Morten Frendrup",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9154b32146aa8475": {
-      "value": 8.0,
-      "display": "8",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpd0f4bdf7fe6b1a",
-      "entity_name": "Adrián Bernabé",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_92e6354c5509921e": {
-      "value": 11000000.0,
-      "display": "11000000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpfebc5546696de6",
-      "entity_name": "Jorthy Mokio",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9872035a8bd47928": {
-      "value": "defensive midfield",
-      "display": "defensive midfield",
-      "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "milan",
-      "entity_name": "Milan",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9a7b8709fdc45e90": {
-      "value": 20.0,
-      "display": "20",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rp993245a5ee9bab",
-      "entity_name": "Christoph Baumgartner",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9ebda563700a74bd": {
-      "value": 22500000.0,
-      "display": "22500000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpd74793d10d8421",
-      "entity_name": "Charles De Ketelaere",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a240bc7d256e3b3d": {
-      "value": 44.0,
-      "display": "44",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpe2c59f4243cfa2",
-      "entity_name": "Noah Sadiki",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a6413385d4669606": {
-      "value": 40000000.0,
-      "display": "40000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp993245a5ee9bab",
-      "entity_name": "Christoph Baumgartner",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a645dac1631f1561": {
-      "value": 102.35,
-      "display": "102.35",
-      "unit": null,
-      "metric": "def_actions",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q368682",
-      "entity_name": "Ruben Amorim",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a72ecd86f0f17350": {
-      "value": 11800000.0,
-      "display": "11800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpd0f4bdf7fe6b1a",
-      "entity_name": "Adrián Bernabé",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_aafa89c0799e378f": {
-      "value": "Sporting CP",
-      "display": "Sporting CP",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpbd1ab09db15262",
-      "entity_name": "Francisco Trincão",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ac69f5e3871c3251": {
-      "value": 18200000.0,
-      "display": "18200000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp10eb919e84e146",
-      "entity_name": "Davide Bartesaghi",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ae0b7ab3f0a75b69": {
-      "value": 40000000.0,
-      "display": "40000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpe2c59f4243cfa2",
-      "entity_name": "Noah Sadiki",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_aecea8e76862fe3c": {
-      "value": 11700000.0,
-      "display": "11700000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpa30d1f827fcad4",
-      "entity_name": "Mert Kömür",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b38ec64b8a6fb6b7": {
-      "value": "2026-10-18T16:00:00+00:00",
-      "display": "2026-10-18T16:00:00+00:00",
-      "unit": null,
-      "metric": "kickoff_utc",
-      "entity_type": "match",
-      "entity_id": "serie_a:2026-27:milan:atalanta",
-      "entity_name": "Milan v Atalanta",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/SA/matches",
-      "source_tier": 2,
-      "fetched_at": "2026-10-16T18:54:38.579753+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_bc1e5b2b91442227": {
-      "value": 29300000.0,
-      "display": "29300000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpbd1ab09db15262",
-      "entity_name": "Francisco Trincão",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_bdda976662cee249": {
-      "value": 25.4,
-      "display": "25.40",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpd0f4bdf7fe6b1a",
-      "entity_name": "Adrián Bernabé",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_be2bb7e4c7cc0a93": {
-      "value": 40000000.0,
-      "display": "40000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpbd1ab09db15262",
-      "entity_name": "Francisco Trincão",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_be48a64db7840578": {
+    "ev_05097789c6b5c5f1": {
       "value": 0.5583,
       "display": "0.56",
       "unit": null,
@@ -1881,124 +1045,12 @@
       "source": "dugout_model:fingerprint",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_becfef3320a2acbb": {
-      "value": "RB Leipzig",
-      "display": "RB Leipzig",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp993245a5ee9bab",
-      "entity_name": "Christoph Baumgartner",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c17759baff0e58ca": {
-      "value": 0.166,
-      "display": "0.17",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rpf01a442a0b54ad",
-      "entity_name": "Strahinja Pavlović",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c3862a753b4054b8": {
-      "value": "Sunderland AFC",
-      "display": "Sunderland AFC",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpe2c59f4243cfa2",
-      "entity_name": "Noah Sadiki",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c3a4adb91332346a": {
-      "value": 0.121,
-      "display": "0.12",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp6db0be53c084d3",
-      "entity_name": "Christian Pulisic",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c4e5fc1cf620695f": {
-      "value": 27.2,
-      "display": "27.20",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp993245a5ee9bab",
-      "entity_name": "Christoph Baumgartner",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c7ef27170b35e525": {
-      "value": 1.3804,
-      "display": "1.38",
-      "unit": null,
-      "metric": "xg_against",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q368682",
-      "entity_name": "Ruben Amorim",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c9ac11badee1ca6f": {
-      "value": 21700000.0,
-      "display": "21700000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rpb92075e35042f9",
-      "entity_name": "Isaque",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_cb1c6dcffe36102e": {
+    "ev_0bc80132a2e49889": {
       "value": 11.0,
       "display": "11",
       "unit": null,
@@ -2009,44 +1061,60 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_cbb218671d3d9e6b": {
-      "value": 21.8,
-      "display": "21.80",
+    "ev_10a26e4b3e667320": {
+      "value": 40000000.0,
+      "display": "40000000",
       "unit": null,
-      "metric": "age",
+      "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rpdb6b821adbee70",
-      "entity_name": "Oscar Højlund",
+      "entity_id": "rp0258ddff985d07",
+      "entity_name": "Kaishu Sano",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_d19956de62ad0354": {
-      "value": 0.514,
-      "display": "0.51",
+    "ev_13f8b17c18ebc2f4": {
+      "value": "FC Shakhtar Donetsk",
+      "display": "FC Shakhtar Donetsk",
       "unit": null,
-      "metric": "minutes_share_now",
+      "metric": "candidate_club",
       "entity_type": "player",
-      "entity_id": "rpfebc5546696de6",
-      "entity_name": "Jorthy Mokio",
+      "entity_id": "rpb92075e35042f9",
+      "entity_name": "Isaque",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_d437ac8462610232": {
+    "ev_1acf5a822b290af9": {
+      "value": 28100000.0,
+      "display": "28100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfef44d17bfd941",
+      "entity_name": "Maximo Perrone",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1b13e3b45feda8b7": {
       "value": 0.0073,
       "display": "0.01",
       "unit": null,
@@ -2057,28 +1125,476 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_d94a87fa002b77cf": {
-      "value": 0.119,
+    "ev_1d388f48cb048d27": {
+      "value": 25.6,
+      "display": "25.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd74793d10d8421",
+      "entity_name": "Charles De Ketelaere",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26642592b8d66f74": {
+      "value": 11700000.0,
+      "display": "11700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa30d1f827fcad4",
+      "entity_name": "Mert Kömür",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26d49c66ef34b99e": {
+      "value": 20500000.0,
+      "display": "20500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpdb6b821adbee70",
+      "entity_name": "Oscar Højlund",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2a12c0b5698208ca": {
+      "value": 26.8,
+      "display": "26.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpbd1ab09db15262",
+      "entity_name": "Francisco Trincão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2c0d8ec36de09f6a": {
+      "value": 21700000.0,
+      "display": "21700000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpb92075e35042f9",
+      "entity_name": "Isaque",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3363dedd1a561df3": {
+      "value": 0.0058,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpfef44d17bfd941",
+      "entity_name": "Maximo Perrone",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_362e10878f3a0489": {
+      "value": 5100000.0,
+      "display": "5100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf2848c8a0a5f83",
+      "entity_name": "Warren Bondo",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3dd600cbf4d3b3ea": {
+      "value": 0.121,
       "display": "0.12",
       "unit": null,
       "metric": "sale_likelihood",
       "entity_type": "player",
-      "entity_id": "rp9ea76bb41324cd",
-      "entity_name": "Ruben Loftus-Cheek",
+      "entity_id": "rp6db0be53c084d3",
+      "entity_name": "Christian Pulisic",
       "source": "dugout_model:realism",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_dcb6fec88bb96641": {
+    "ev_3e240ca0a74bb38b": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpe2c59f4243cfa2",
+      "entity_name": "Noah Sadiki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4069343346042bdb": {
+      "value": 25.8,
+      "display": "25.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp0258ddff985d07",
+      "entity_name": "Kaishu Sano",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4486bdb87db4ef5f": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpbd1ab09db15262",
+      "entity_name": "Francisco Trincão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_451f8b0f8a932518": {
+      "value": "Genoa CFC",
+      "display": "Genoa CFC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3f587f1e7e902a",
+      "entity_name": "Morten Frendrup",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_45358029b4d8a47b": {
+      "value": "FC Augsburg",
+      "display": "FC Augsburg",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa30d1f827fcad4",
+      "entity_name": "Mert Kömür",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4580d17100d96d46": {
+      "value": 20000000.0,
+      "display": "20000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp5bfae8b2c06983",
+      "entity_name": "Alexis Saelemaekers",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4c93e29404b256ed": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "milan",
+      "entity_name": "Milan",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5292fb7a82004018": {
+      "value": 0.601,
+      "display": "0.60",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpe2c59f4243cfa2",
+      "entity_name": "Noah Sadiki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5327fce61cf06cff": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "one_in",
+      "entity_type": "rumour",
+      "entity_id": "44cca4841dead73f-p5:marcus rashford",
+      "entity_name": "Marcus Rashford",
+      "source": "dugout_model:rumours",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_541c5db96eeff48f": {
+      "value": 1.5134,
+      "display": "1.51",
+      "unit": null,
+      "metric": "xg_for",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q368682",
+      "entity_name": "Ruben Amorim",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_55cde5d11d4811b1": {
+      "value": 0.343,
+      "display": "0.34",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpd0f4bdf7fe6b1a",
+      "entity_name": "Adrián Bernabé",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_58f6a343d70eb76f": {
+      "value": 102.35,
+      "display": "102.35",
+      "unit": null,
+      "metric": "def_actions",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q368682",
+      "entity_name": "Ruben Amorim",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5bd4fb15f5d51004": {
+      "value": "Sporting CP",
+      "display": "Sporting CP",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpbd1ab09db15262",
+      "entity_name": "Francisco Trincão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5bde3e659bc1df1a": {
+      "value": 27500000.0,
+      "display": "27500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_646f773f7ff5f519": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpe2c59f4243cfa2",
+      "entity_name": "Noah Sadiki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_667f4eeb17a8bd12": {
+      "value": "Sunderland AFC",
+      "display": "Sunderland AFC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpe2c59f4243cfa2",
+      "entity_name": "Noah Sadiki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_69837235bdb838a1": {
+      "value": 35500000.0,
+      "display": "35500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe2c59f4243cfa2",
+      "entity_name": "Noah Sadiki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6aa16d5d195788d2": {
+      "value": 13300000.0,
+      "display": "13300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3f587f1e7e902a",
+      "entity_name": "Morten Frendrup",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7728b7b45cc91acb": {
+      "value": 0.0056,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp3f587f1e7e902a",
+      "entity_name": "Morten Frendrup",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_79b9f8933df1baa8": {
+      "value": 18100000.0,
+      "display": "18100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7a29cc96fed21126": {
+      "value": 19.6,
+      "display": "19.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb92075e35042f9",
+      "entity_name": "Isaque",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7ac8a434ba65337c": {
       "value": 0.278,
       "display": "0.28",
       "unit": null,
@@ -2089,12 +1605,700 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_e89e1c9182f827c4": {
+    "ev_7c689f73b2be99a4": {
+      "value": 0.393,
+      "display": "0.39",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpa30d1f827fcad4",
+      "entity_name": "Mert Kömür",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7f117d6f01fb94ac": {
+      "value": 13900000.0,
+      "display": "13900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb92075e35042f9",
+      "entity_name": "Isaque",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_81cae18fb9e1a021": {
+      "value": "Ajax Amsterdam",
+      "display": "Ajax Amsterdam",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_837a53e00c9f6fd3": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpd0f4bdf7fe6b1a",
+      "entity_name": "Adrián Bernabé",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_83d04dad8ed636d8": {
+      "value": 27.2,
+      "display": "27.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_853cf617cdd45604": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "milan",
+      "entity_name": "Milan",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_86ff78d302ca2f96": {
+      "value": 0.61,
+      "display": "0.61",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d2f4d8d50367eff": {
+      "value": 21.2,
+      "display": "21.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa30d1f827fcad4",
+      "entity_name": "Mert Kömür",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_94a6f30372ddeb4e": {
+      "value": 0.119,
+      "display": "0.12",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp9ea76bb41324cd",
+      "entity_name": "Ruben Loftus-Cheek",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_99682167ed770a75": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp3f587f1e7e902a",
+      "entity_name": "Morten Frendrup",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_99c5669fae384953": {
+      "value": 25.5,
+      "display": "25.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3f587f1e7e902a",
+      "entity_name": "Morten Frendrup",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9bf21b9cc7abe150": {
+      "value": 21.8,
+      "display": "21.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdb6b821adbee70",
+      "entity_name": "Oscar Højlund",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a11718c42de9417d": {
+      "value": 0.166,
+      "display": "0.17",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpf01a442a0b54ad",
+      "entity_name": "Strahinja Pavlović",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a175f0d2d2e531fa": {
+      "value": "2026-06-16",
+      "display": "2026-06-16",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q368682",
+      "entity_name": "Ruben Amorim",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q368682",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_a400e44bd814fcd2": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a730f6fee35c5446": {
+      "value": 0.407,
+      "display": "0.41",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpb92075e35042f9",
+      "entity_name": "Isaque",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ab6b3922ec5a9ecf": {
+      "value": 10500000.0,
+      "display": "10500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8680cae0e593b8",
+      "entity_name": "Fikayo Tomori",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ac2d776ada02c163": {
+      "value": "RB Leipzig",
+      "display": "RB Leipzig",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aeda8603cdd43887": {
+      "value": 11000000.0,
+      "display": "11000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b0a54de991851659": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b0cfd3341d158696": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "milan",
+      "entity_name": "Milan",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b470665ba6187718": {
+      "value": 47.0,
+      "display": "47",
+      "unit": null,
+      "metric": "pl_matches",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q368682",
+      "entity_name": "Ruben Amorim",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b5f3d01ca5875729": {
+      "value": 29300000.0,
+      "display": "29300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpbd1ab09db15262",
+      "entity_name": "Francisco Trincão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b8fe0db5915aedde": {
+      "value": 11800000.0,
+      "display": "11800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd0f4bdf7fe6b1a",
+      "entity_name": "Adrián Bernabé",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bbc47cac3c213b18": {
+      "value": "DWDDW",
+      "display": "DWDDW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "milan",
+      "entity_name": "Milan",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_c5390ac5b06d3821": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "one_in",
+      "entity_type": "rumour",
+      "entity_id": "44cca4841dead73f-p5:leny yoro",
+      "entity_name": "Leny Yoro",
+      "source": "dugout_model:rumours",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c862f73038a22fea": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpbd1ab09db15262",
+      "entity_name": "Francisco Trincão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cb2bf5951296ad18": {
+      "value": 0.645,
+      "display": "0.65",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpbd1ab09db15262",
+      "entity_name": "Francisco Trincão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cbcc68ff88b3e99d": {
+      "value": 0.0051,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpd74793d10d8421",
+      "entity_name": "Charles De Ketelaere",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ccc4d9bff58dd6e7": {
+      "value": 17500000.0,
+      "display": "17500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpa30d1f827fcad4",
+      "entity_name": "Mert Kömür",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ce72d24addaa97b1": {
+      "value": 1.3804,
+      "display": "1.38",
+      "unit": null,
+      "metric": "xg_against",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q368682",
+      "entity_name": "Ruben Amorim",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ce838b631b2b6766": {
+      "value": 21.8,
+      "display": "21.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpe2c59f4243cfa2",
+      "entity_name": "Noah Sadiki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cecc6c972d7389b7": {
+      "value": 13300000.0,
+      "display": "13300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp5bfae8b2c06983",
+      "entity_name": "Alexis Saelemaekers",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cfa7319de7e0dcfd": {
+      "value": "2026-10-18T16:00:00+00:00",
+      "display": "2026-10-18T16:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "serie_a:2026-27:milan:atalanta",
+      "entity_name": "Milan v Atalanta",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:39.130902+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d226238e5249cce8": {
+      "value": "Atalanta BC",
+      "display": "Atalanta BC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd74793d10d8421",
+      "entity_name": "Charles De Ketelaere",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d4e07fd4ab087933": {
+      "value": 25.4,
+      "display": "25.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd0f4bdf7fe6b1a",
+      "entity_name": "Adrián Bernabé",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d55a105924f4b029": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpd74793d10d8421",
+      "entity_name": "Charles De Ketelaere",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d62433cc624d5835": {
+      "value": 0.514,
+      "display": "0.51",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d7729302ed06a3ec": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "milan",
+      "entity_name": "Milan",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d8f648d4312ef109": {
+      "value": "Parma Calcio 1913",
+      "display": "Parma Calcio 1913",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd0f4bdf7fe6b1a",
+      "entity_name": "Adrián Bernabé",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d95b194fc8195f88": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpf2848c8a0a5f83",
+      "entity_name": "Warren Bondo",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_dd5af890e0160d1e": {
+      "value": 23.8,
+      "display": "23.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfef44d17bfd941",
+      "entity_name": "Maximo Perrone",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e221fc551226c194": {
+      "value": 22500000.0,
+      "display": "22500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd74793d10d8421",
+      "entity_name": "Charles De Ketelaere",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e91561d14ddd5883": {
       "value": 0.5357,
       "display": "0.54",
       "unit": null,
@@ -2105,7 +2309,7 @@
       "source": "dugout_model:fingerprint",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -2126,87 +2330,7 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_ee476ed24491d2d4": {
-      "value": 23.8,
-      "display": "23.80",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpfef44d17bfd941",
-      "entity_name": "Maximo Perrone",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_f3787ea4727085ed": {
-      "value": 18.6,
-      "display": "18.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpfebc5546696de6",
-      "entity_name": "Jorthy Mokio",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_f4aa2713587966e4": {
-      "value": "Genoa CFC",
-      "display": "Genoa CFC",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp3f587f1e7e902a",
-      "entity_name": "Morten Frendrup",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_f7d5c9b9e2d4a872": {
-      "value": 26.8,
-      "display": "26.80",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpbd1ab09db15262",
-      "entity_name": "Francisco Trincão",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_f88856ce6bb2735e": {
-      "value": 13900000.0,
-      "display": "13900000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpb92075e35042f9",
-      "entity_name": "Isaque",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_fabce9447b41c5d3": {
+    "ev_ec4881d9551fa190": {
       "value": 5.0,
       "display": "5",
       "unit": null,
@@ -2217,39 +2341,39 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_fbed5eddacea1ff8": {
-      "value": 5.0,
-      "display": "5",
+    "ev_f989d2b1cec0ac05": {
+      "value": 18.6,
+      "display": "18.60",
       "unit": null,
-      "metric": "league_position",
-      "entity_type": "club",
-      "entity_id": "milan",
-      "entity_name": "Milan",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T18:54:45.553064+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_fd35a8c363905cbe": {
-      "value": 0.0058,
-      "display": "0.01",
-      "unit": null,
-      "metric": "realism",
+      "metric": "age",
       "entity_type": "player",
-      "entity_id": "rpfef44d17bfd941",
-      "entity_name": "Maximo Perrone",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fa89fcd5aca26d90": {
+      "value": 0.163,
+      "display": "0.16",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpd74793d10d8421",
+      "entity_name": "Charles De Ketelaere",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -2258,73 +2382,73 @@
   "key_stats": {
     "club": [
       {
-        "stat": "ev_fbed5eddacea1ff8",
-        "display": "5th",
+        "stat": "ev_4c93e29404b256ed",
+        "display": "6th",
         "label": "league position",
         "subject": "Milan"
       },
       {
-        "stat": "ev_3dbb6bb7c61fd925",
+        "stat": "ev_853cf617cdd45604",
         "display": "12",
         "label": "league points",
         "subject": "Milan"
       },
       {
-        "stat": "ev_cb1c6dcffe36102e",
+        "stat": "ev_0bc80132a2e49889",
         "display": "11",
         "label": "league goals scored",
         "subject": "Milan"
       },
       {
-        "stat": "ev_fabce9447b41c5d3",
+        "stat": "ev_ec4881d9551fa190",
         "display": "5",
         "label": "league goals conceded",
         "subject": "Milan"
       },
       {
-        "stat": "ev_49a55860cb62c29a",
+        "stat": "ev_bbc47cac3c213b18",
         "display": "DWDDW",
         "label": "recent league results, oldest first",
         "subject": "Milan"
       },
       {
-        "stat": "ev_0903db0a71e502ef",
+        "stat": "ev_a175f0d2d2e531fa",
         "display": "16 June 2026",
         "label": "appointed head coach of Milan",
         "subject": "Ruben Amorim"
       },
       {
-        "stat": "ev_56b0f30c2eab7848",
+        "stat": "ev_b470665ba6187718",
         "display": "47",
         "label": "Premier League matches in the style sample",
         "subject": "Ruben Amorim"
       },
       {
-        "stat": "ev_e89e1c9182f827c4",
+        "stat": "ev_e91561d14ddd5883",
         "display": "54%",
         "label": "share of the match threat (territory)",
         "subject": "Ruben Amorim"
       },
       {
-        "stat": "ev_a645dac1631f1561",
+        "stat": "ev_58f6a343d70eb76f",
         "display": "102",
         "label": "defensive actions per match",
         "subject": "Ruben Amorim"
       },
       {
-        "stat": "ev_4136f16af9af52f2",
+        "stat": "ev_541c5db96eeff48f",
         "display": "1.51",
         "label": "expected goals for per match",
         "subject": "Ruben Amorim"
       },
       {
-        "stat": "ev_c7ef27170b35e525",
+        "stat": "ev_ce72d24addaa97b1",
         "display": "1.38",
         "label": "expected goals against per match",
         "subject": "Ruben Amorim"
       },
       {
-        "stat": "ev_be48a64db7840578",
+        "stat": "ev_05097789c6b5c5f1",
         "display": "56%",
         "label": "share of chance creation",
         "subject": "Ruben Amorim"
@@ -2332,7 +2456,7 @@
     ],
     "match": [
       {
-        "stat": "ev_b38ec64b8a6fb6b7",
+        "stat": "ev_cfa7319de7e0dcfd",
         "display": "18 October 2026",
         "label": "kick-off date",
         "subject": "Milan v Atalanta"
@@ -2342,22 +2466,34 @@
     "news": [],
     "transfer": [
       {
-        "stat": "ev_c17759baff0e58ca",
+        "stat": "ev_a11718c42de9417d",
         "display": "17%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Strahinja Pavlović"
       },
       {
-        "stat": "ev_c3a4adb91332346a",
+        "stat": "ev_3dd600cbf4d3b3ea",
         "display": "12%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Christian Pulisic"
       },
       {
-        "stat": "ev_d94a87fa002b77cf",
+        "stat": "ev_94a6f30372ddeb4e",
         "display": "12%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Ruben Loftus-Cheek"
+      },
+      {
+        "stat": "ev_4580d17100d96d46",
+        "display": "€20.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Alexis Saelemaekers"
+      },
+      {
+        "stat": "ev_cecc6c972d7389b7",
+        "display": "€13.3m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Alexis Saelemaekers"
       },
       {
         "stat": "ev_ebd9134211da467c",
@@ -2366,381 +2502,393 @@
         "subject": "Fikayo Tomori"
       },
       {
-        "stat": "ev_6da9c416f725ce5b",
+        "stat": "ev_ab6b3922ec5a9ecf",
         "display": "€10.5m",
         "label": "estimated fair fee if sold to another Serie A club",
         "subject": "Fikayo Tomori"
       },
       {
-        "stat": "ev_1f0f213cbd91038b",
-        "display": "€22.0m",
+        "stat": "ev_d95b194fc8195f88",
+        "display": "€6.0m",
         "label": "market value (Transfermarkt, as of May 2026)",
-        "subject": "Davide Bartesaghi"
+        "subject": "Warren Bondo"
       },
       {
-        "stat": "ev_ac69f5e3871c3251",
-        "display": "€18.2m",
+        "stat": "ev_362e10878f3a0489",
+        "display": "€5.1m",
         "label": "estimated fair fee if sold to another Serie A club",
-        "subject": "Davide Bartesaghi"
+        "subject": "Warren Bondo"
       }
     ],
     "scout": [
       {
-        "stat": "ev_71eb444c84e6217f",
+        "stat": "ev_5327fce61cf06cff",
+        "display": "12",
+        "label": "rumour track record",
+        "subject": "Marcus Rashford"
+      },
+      {
+        "stat": "ev_c5390ac5b06d3821",
+        "display": "12",
+        "label": "rumour track record",
+        "subject": "Leny Yoro"
+      },
+      {
+        "stat": "ev_d7729302ed06a3ec",
         "display": "central midfield",
         "label": "squad need, priority one",
         "subject": "Milan"
       },
       {
-        "stat": "ev_f7d5c9b9e2d4a872",
+        "stat": "ev_2a12c0b5698208ca",
         "display": "27",
         "label": "age (best target)",
         "subject": "Francisco Trincão"
       },
       {
-        "stat": "ev_aafa89c0799e378f",
+        "stat": "ev_5bd4fb15f5d51004",
         "display": "Sporting CP",
         "label": "current club",
         "subject": "Francisco Trincão"
       },
       {
-        "stat": "ev_27c6bf0d570a9747",
+        "stat": "ev_c862f73038a22fea",
         "display": "44",
         "label": "months left on his contract",
         "subject": "Francisco Trincão"
       },
       {
-        "stat": "ev_be2bb7e4c7cc0a93",
+        "stat": "ev_4486bdb87db4ef5f",
         "display": "€40.0m",
         "label": "market value",
         "subject": "Francisco Trincão"
       },
       {
-        "stat": "ev_bc1e5b2b91442227",
+        "stat": "ev_b5f3d01ca5875729",
         "display": "€29.3m",
         "label": "estimated fair fee",
         "subject": "Francisco Trincão"
       },
       {
-        "stat": "ev_16c6a9d1051b50d1",
+        "stat": "ev_cb2bf5951296ad18",
         "display": "64%",
         "label": "expected share of minutes at the club",
         "subject": "Francisco Trincão"
       },
       {
-        "stat": "ev_c4e5fc1cf620695f",
+        "stat": "ev_83d04dad8ed636d8",
         "display": "27",
         "label": "age (best target)",
         "subject": "Christoph Baumgartner"
       },
       {
-        "stat": "ev_becfef3320a2acbb",
+        "stat": "ev_ac2d776ada02c163",
         "display": "RB Leipzig",
         "label": "current club",
         "subject": "Christoph Baumgartner"
       },
       {
-        "stat": "ev_9a7b8709fdc45e90",
+        "stat": "ev_a400e44bd814fcd2",
         "display": "20",
         "label": "months left on his contract",
         "subject": "Christoph Baumgartner"
       },
       {
-        "stat": "ev_a6413385d4669606",
+        "stat": "ev_b0a54de991851659",
         "display": "€40.0m",
         "label": "market value",
         "subject": "Christoph Baumgartner"
       },
       {
-        "stat": "ev_6a7d1bf78df8e09d",
+        "stat": "ev_5bde3e659bc1df1a",
         "display": "€27.5m",
         "label": "estimated fair fee",
         "subject": "Christoph Baumgartner"
       },
       {
-        "stat": "ev_8f71615682019ad5",
+        "stat": "ev_86ff78d302ca2f96",
         "display": "61%",
         "label": "expected share of minutes at the club",
         "subject": "Christoph Baumgartner"
       },
       {
-        "stat": "ev_23c8fb9d0a7f4135",
+        "stat": "ev_ce838b631b2b6766",
         "display": "22",
         "label": "age (best target)",
         "subject": "Noah Sadiki"
       },
       {
-        "stat": "ev_c3862a753b4054b8",
+        "stat": "ev_667f4eeb17a8bd12",
         "display": "Sunderland AFC",
         "label": "current club",
         "subject": "Noah Sadiki"
       },
       {
-        "stat": "ev_a240bc7d256e3b3d",
+        "stat": "ev_3e240ca0a74bb38b",
         "display": "44",
         "label": "months left on his contract",
         "subject": "Noah Sadiki"
       },
       {
-        "stat": "ev_ae0b7ab3f0a75b69",
+        "stat": "ev_646f773f7ff5f519",
         "display": "€40.0m",
         "label": "market value",
         "subject": "Noah Sadiki"
       },
       {
-        "stat": "ev_8fb8dde6c62519eb",
+        "stat": "ev_69837235bdb838a1",
         "display": "€35.5m",
         "label": "estimated fair fee",
         "subject": "Noah Sadiki"
       },
       {
-        "stat": "ev_8f7b6e98c9a880a5",
+        "stat": "ev_5292fb7a82004018",
         "display": "60%",
         "label": "expected share of minutes at the club",
         "subject": "Noah Sadiki"
       },
       {
-        "stat": "ev_bdda976662cee249",
+        "stat": "ev_d4e07fd4ab087933",
         "display": "25",
         "label": "age (realistic target)",
         "subject": "Adrián Bernabé"
       },
       {
-        "stat": "ev_6b2af76aa3296b19",
+        "stat": "ev_d8f648d4312ef109",
         "display": "Parma Calcio 1913",
         "label": "current club",
         "subject": "Adrián Bernabé"
       },
       {
-        "stat": "ev_4a54856f9c95716d",
+        "stat": "ev_55cde5d11d4811b1",
         "display": "34%",
         "label": "chance his club sells him in a window",
         "subject": "Adrián Bernabé"
       },
       {
-        "stat": "ev_9154b32146aa8475",
+        "stat": "ev_837a53e00c9f6fd3",
         "display": "8",
         "label": "months left on his contract",
         "subject": "Adrián Bernabé"
       },
       {
-        "stat": "ev_a72ecd86f0f17350",
+        "stat": "ev_b8fe0db5915aedde",
         "display": "€11.8m",
         "label": "estimated fair fee",
         "subject": "Adrián Bernabé"
       },
       {
-        "stat": "ev_d437ac8462610232",
+        "stat": "ev_1b13e3b45feda8b7",
         "display": "0.7%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Adrián Bernabé"
       },
       {
-        "stat": "ev_593895592f0fb6fe",
+        "stat": "ev_99c5669fae384953",
         "display": "26",
         "label": "age (realistic target)",
         "subject": "Morten Frendrup"
       },
       {
-        "stat": "ev_f4aa2713587966e4",
+        "stat": "ev_451f8b0f8a932518",
         "display": "Genoa CFC",
         "label": "current club",
         "subject": "Morten Frendrup"
       },
       {
-        "stat": "ev_dcb6fec88bb96641",
+        "stat": "ev_7ac8a434ba65337c",
         "display": "28%",
         "label": "chance his club sells him in a window",
         "subject": "Morten Frendrup"
       },
       {
-        "stat": "ev_616f9bcd5d17a277",
+        "stat": "ev_99682167ed770a75",
         "display": "20",
         "label": "months left on his contract",
         "subject": "Morten Frendrup"
       },
       {
-        "stat": "ev_90b14fc62c6b55dc",
+        "stat": "ev_6aa16d5d195788d2",
         "display": "€13.3m",
         "label": "estimated fair fee",
         "subject": "Morten Frendrup"
       },
       {
-        "stat": "ev_14c85b0eb65c2905",
+        "stat": "ev_7728b7b45cc91acb",
         "display": "0.6%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Morten Frendrup"
       },
       {
-        "stat": "ev_69749de1fa52d15c",
+        "stat": "ev_1d388f48cb048d27",
         "display": "26",
         "label": "age (realistic target)",
         "subject": "Charles De Ketelaere"
       },
       {
-        "stat": "ev_85491b0a99e7e4bc",
+        "stat": "ev_d226238e5249cce8",
         "display": "Atalanta BC",
         "label": "current club",
         "subject": "Charles De Ketelaere"
       },
       {
-        "stat": "ev_89959df0121b2bec",
+        "stat": "ev_fa89fcd5aca26d90",
         "display": "16%",
         "label": "chance his club sells him in a window",
         "subject": "Charles De Ketelaere"
       },
       {
-        "stat": "ev_066669f8e012fcd3",
+        "stat": "ev_d55a105924f4b029",
         "display": "20",
         "label": "months left on his contract",
         "subject": "Charles De Ketelaere"
       },
       {
-        "stat": "ev_9ebda563700a74bd",
+        "stat": "ev_e221fc551226c194",
         "display": "€22.5m",
         "label": "estimated fair fee",
         "subject": "Charles De Ketelaere"
       },
       {
-        "stat": "ev_2b00291c417b4fcc",
+        "stat": "ev_cbcc68ff88b3e99d",
         "display": "0.5%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Charles De Ketelaere"
       },
       {
-        "stat": "ev_39f5289f78b22cb3",
+        "stat": "ev_7a29cc96fed21126",
         "display": "20",
         "label": "age (gem target)",
         "subject": "Isaque"
       },
       {
-        "stat": "ev_20ecd39ac65f3c71",
+        "stat": "ev_13f8b17c18ebc2f4",
         "display": "FC Shakhtar Donetsk",
         "label": "current club",
         "subject": "Isaque"
       },
       {
-        "stat": "ev_1632f7595392e7eb",
+        "stat": "ev_a730f6fee35c5446",
         "display": "41%",
         "label": "share of his club's minutes over the last year",
         "subject": "Isaque"
       },
       {
-        "stat": "ev_f88856ce6bb2735e",
+        "stat": "ev_7f117d6f01fb94ac",
         "display": "€13.9m",
         "label": "estimated fair fee",
         "subject": "Isaque"
       },
       {
-        "stat": "ev_c9ac11badee1ca6f",
+        "stat": "ev_2c0d8ec36de09f6a",
         "display": "€21.7m",
         "label": "projected market value in a few seasons",
         "subject": "Isaque"
       },
       {
-        "stat": "ev_f3787ea4727085ed",
+        "stat": "ev_f989d2b1cec0ac05",
         "display": "19",
         "label": "age (gem target)",
         "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_73b0212b6e1f24c4",
+        "stat": "ev_81cae18fb9e1a021",
         "display": "Ajax Amsterdam",
         "label": "current club",
         "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_d19956de62ad0354",
+        "stat": "ev_d62433cc624d5835",
         "display": "51%",
         "label": "share of his club's minutes over the last year",
         "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_92e6354c5509921e",
+        "stat": "ev_aeda8603cdd43887",
         "display": "€11.0m",
         "label": "estimated fair fee",
         "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_43db11b654f5ff56",
+        "stat": "ev_79b9f8933df1baa8",
         "display": "€18.1m",
         "label": "projected market value in a few seasons",
         "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_6bca1b73ab563c44",
+        "stat": "ev_8d2f4d8d50367eff",
         "display": "21",
         "label": "age (gem target)",
         "subject": "Mert Kömür"
       },
       {
-        "stat": "ev_544e9806ab4a559d",
+        "stat": "ev_45358029b4d8a47b",
         "display": "FC Augsburg",
         "label": "current club",
         "subject": "Mert Kömür"
       },
       {
-        "stat": "ev_073efcfb9e332744",
+        "stat": "ev_7c689f73b2be99a4",
         "display": "39%",
         "label": "share of his club's minutes over the last year",
         "subject": "Mert Kömür"
       },
       {
-        "stat": "ev_aecea8e76862fe3c",
+        "stat": "ev_26642592b8d66f74",
         "display": "€11.7m",
         "label": "estimated fair fee",
         "subject": "Mert Kömür"
       },
       {
-        "stat": "ev_52b75cebd76866ea",
+        "stat": "ev_ccc4d9bff58dd6e7",
         "display": "€17.5m",
         "label": "projected market value in a few seasons",
         "subject": "Mert Kömür"
       },
       {
-        "stat": "ev_9872035a8bd47928",
+        "stat": "ev_b0cfd3341d158696",
         "display": "defensive midfield",
         "label": "squad need, priority two",
         "subject": "Milan"
       },
       {
-        "stat": "ev_186a9a8a8d5abfbc",
+        "stat": "ev_4069343346042bdb",
         "display": "26",
         "label": "age (best target, second need)",
         "subject": "Kaishu Sano"
       },
       {
-        "stat": "ev_3e96916acea1a028",
+        "stat": "ev_10a26e4b3e667320",
         "display": "€40.0m",
         "label": "market value",
         "subject": "Kaishu Sano"
       },
       {
-        "stat": "ev_ee476ed24491d2d4",
+        "stat": "ev_dd5af890e0160d1e",
         "display": "24",
         "label": "age (realistic target, second need)",
         "subject": "Máximo Perrone"
       },
       {
-        "stat": "ev_2d9003a7db885458",
+        "stat": "ev_1acf5a822b290af9",
         "display": "€28.1m",
         "label": "estimated fair fee",
         "subject": "Máximo Perrone"
       },
       {
-        "stat": "ev_fd35a8c363905cbe",
+        "stat": "ev_3363dedd1a561df3",
         "display": "0.6%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Máximo Perrone"
       },
       {
-        "stat": "ev_cbb218671d3d9e6b",
+        "stat": "ev_9bf21b9cc7abe150",
         "display": "22",
         "label": "age (gem target, second need)",
         "subject": "Oscar Højlund"
       },
       {
-        "stat": "ev_06881b2b72061f37",
+        "stat": "ev_26d49c66ef34b99e",
         "display": "€20.5m",
         "label": "projected market value in a few seasons",
         "subject": "Oscar Højlund"
@@ -2750,14 +2898,14 @@
   "verification": {
     "stat_auditor": {
       "ok": true,
-      "numbers_total": 48,
+      "numbers_total": 47,
       "numbers_untraceable": 0
     },
     "fact_check_claims": {
-      "verified": 48,
-      "unverified": 5
+      "verified": 51,
+      "unverified": 6
     },
-    "sections_published": 5,
+    "sections_published": 6,
     "sections_withheld": 0
   },
   "methods": {
@@ -2770,6 +2918,7 @@
     "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
     "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
     "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
     "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
     "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
   },
