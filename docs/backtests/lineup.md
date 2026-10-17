@@ -27,3 +27,15 @@ actual XI, 658 team-matches per season:
 | Most minutes in the last 5 matches | 76.7% | 77.0% |
 
 A small gain, the same in both seasons; it removes picks that a reader can see are wrong.
+
+### Threshold for "out of the rotation" (2026-10-17)
+
+A two-minute cameo counted as a place in the side, so Chiesa (2 minutes in 2026-27) was still predicted. Now a player
+under `UNUSED_SHARE` of the last five matches' minutes is out of the rotation (factor 0.6):
+
+| Share of the last five matches' minutes | 2023-24 (choose) | 2024-25 (test) |
+|---|---|---|
+| none at all (before) | 78.2% | 78.3% |
+| under 2% | 78.2% | 78.3% |
+| under 5% | 78.3% | 78.3% |
+| **under 10% (chosen)** | **78.3%** | **78.35%** |

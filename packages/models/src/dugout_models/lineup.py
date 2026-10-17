@@ -26,6 +26,9 @@ PREDICTED_XI_TRUST = 0.75
 # by this, so a regular slightly out of position beats him (Endo, unused all season, was predicted at DM for
 # Liverpool when Gravenberch was suspended). Chosen on 2023-24, tested on 2024-25 (docs/backtests/lineup.md).
 UNUSED_FACTOR = 0.6
+# "Out of the rotation" = under this share of the last five matches' minutes (450): a two-minute cameo is not a
+# place in the side (Chiesa, Liverpool 2026-27). Chosen on 2023-24 like the factor.
+UNUSED_SHARE = 0.1
 
 FORMATIONS: dict[str, list[str]] = {
     "4-3-3": ["GK", "RB", "CB", "CB", "LB", "DM", "CM", "CM", "RW", "CF", "LW"],
@@ -220,14 +223,18 @@ def backtest(
     absences: pd.DataFrame,
     trust_weights: tuple[float, ...] = (0.0,),
     unused_factors: tuple[float, ...] = (1.0,),
+    unused_shares: tuple[float, ...] = (0.0,),
 ) -> dict:
     """stats: per player-match rows (match_id, date, club_id, player_id, minutes, starts, ict);
     positions: player_id -> slot; absences: (player_id, date) injury absences known before kick-off."""
     stats = stats.merge(positions, on="player_id", how="left")
     stats["line"] = stats.slot.map(LINE)
     absent = set(zip(absences.player_id, absences.date, strict=True))
-    combos = [(w, u) for w in trust_weights for u in unused_factors]
-    key = {(w, u): str(w) if u == 1.0 else f"{w}, unused x{u}" for w, u in combos}
+    combos = [(w, u, t) for w in trust_weights for u in unused_factors for t in unused_shares]
+    key = {
+        (w, u, t): str(w) if u == 1.0 else f"{w}, unused x{u}" + (f" below {t:.0%}" if t else "")
+        for w, u, t in combos
+    }
     overlap_opt: dict[str, list[float]] = {k: [] for k in key.values()}
     overlap_base, n = [], 0
     for (club, _match), grp in stats.groupby(["club_id", "match_id"]):
@@ -250,11 +257,11 @@ def backtest(
         squad["available"] = [(p, date) not in absent for p in squad.player_id]
         squad["fatigue"] = (squad.player_id.map(last7).fillna(0) - 135).clip(lower=0) / 90 * 0.5
         picks = {}
-        for w, u in combos:
+        for w, u, t in combos:
             squad["rating"] = (1 - w) * quality + w * trust
-            squad["weight"] = np.where(share > 0, 1.0, u)
+            squad["weight"] = np.where(share > t, 1.0, u)
             try:
-                picks[key[w, u]] = {p for p, _ in best_formation(squad).xi}
+                picks[key[w, u, t]] = {p for p, _ in best_formation(squad).xi}
             except ValueError:
                 break
         if len(picks) != len(combos):
@@ -278,6 +285,7 @@ def run_backtest(
     out_dir=None,
     trust_weights: tuple[float, ...] = (0.0,),
     unused_factors: tuple[float, ...] = (1.0,),
+    unused_shares: tuple[float, ...] = (0.0,),
 ) -> dict:
     """Agreement of the optimiser's XI with the XI the manager actually picked, vs a recent-minutes heuristic."""
     import json
@@ -309,7 +317,7 @@ def run_backtest(
     inj = pd.read_parquet(INJURY_DIR / f"injuries_{api_season}.parquet")
     inj = inj[inj.type == "Missing Fixture"].dropna(subset=["reep_id"])
     absences = pd.DataFrame({"player_id": inj.reep_id, "date": pd.to_datetime(inj.date)})
-    res = backtest(stats, positions, absences, trust_weights, unused_factors)
+    res = backtest(stats, positions, absences, trust_weights, unused_factors, unused_shares)
     report = {"generated_at": datetime.now(UTC).isoformat(timespec="seconds"), "season": season, **res}
     if out_dir:
         out_dir.mkdir(parents=True, exist_ok=True)

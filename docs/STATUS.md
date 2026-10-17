@@ -195,6 +195,11 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
   - Lineup: `UNUSED_FACTOR = 0.6` for players with no minutes in the club's last five matches (lineup.md: 78.0 ->
     78.2% on 2023-24, 78.25 -> 78.3% on 2024-25). Liverpool: Endo and Chiesa out, Nyoni in; Barcola at CF
     (more starts than Koumas).
+  - Merged as PR #17. Nightly fixes after it: PR #18 keeps the cached Reep catalogue when an upstream release is
+    broken (2026-10-17 "latest.json has no valid stamp"); `UNUSED_SHARE = 0.1` (a cameo is not a place in the
+    side; lineup.md); secrets are stripped of whitespace and a skipped LLM provider is logged with its HTTP status
+    (CI used Laguna, not Groq, on 2026-10-17: check the next nightly's log for "LLM ... skipped").
+  - Nightly with warm caches: 39 min (club_news backlog filled, Fact-Check cache warm).
 
 ## Key facts discovered (do not re-research)
 - API-Football free plan: seasons 2022–2024 only + rolling yesterday→tomorrow date window; 100 req/day.

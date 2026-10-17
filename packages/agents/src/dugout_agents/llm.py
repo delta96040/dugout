@@ -166,12 +166,17 @@ class FallbackLLM:
 
 
 def _reachable(llm: OpenAICompatLLM) -> bool:
+    why = ""
     for _ in range(2):  # a local server may still be loading its model: be patient once
         try:
             httpx.get(f"{llm.base_url}/models", timeout=30, headers=llm._http.headers).raise_for_status()
             return True
-        except httpx.HTTPError:
-            continue
+        except httpx.HTTPStatusError as exc:
+            why = f"HTTP {exc.response.status_code}"
+        except httpx.HTTPError as exc:
+            why = type(exc).__name__
+    # say why it was skipped (never the key or headers), so a missing writer in CI can be diagnosed
+    log.warning("LLM %s skipped: %s", llm.model, why)
     return False
 
 

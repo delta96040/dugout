@@ -53,7 +53,7 @@ class Settings(BaseSettings):
         if value is None:
             return None
         raw = value.get_secret_value() if isinstance(value, SecretStr) else str(value)
-        return raw or None
+        return raw.strip() or None  # a pasted secret often carries a newline, which breaks the auth header
 
 
 @lru_cache
