@@ -47,7 +47,8 @@ function Why({
   if (t.kind === "best")
     return (
       <>
-        {MOST[rank] ?? "One of the most"} valuable regular starters we found{need ? ` at ${need}` : ""}
+        {MOST[rank] ? `${MOST[rank]} valuable regular starter` : "One of the most valuable regular starters"} we found
+        {need ? ` at ${need}` : ""}
         {t.marketValue && <> (market value {n(t.marketValue)})</>}.{played}
         {t.minutesThere && (
           <>

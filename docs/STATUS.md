@@ -181,6 +181,21 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
     backtests per league (football-data.co.uk has SP1/I1/D1/F1/N1 results + odds), LLM prose for a showcase club
     per league if Groq's token cap allows, refresh-values for other leagues (merges per league; local only).
 
+- **Site fixes from user review (2026-10-17, branch `site-fixes`):**
+  - Chapter four and provenance cards use readable labels (`metricName`, key-stat labels), not metric codes.
+  - Provenance cards: no longer inherit the giant position figure's tracking/no-wrap; the dossier header clips
+    only sideways; long paths wrap; `Tips.place` nudges cards on screen and opens them upwards near the bottom.
+    Swept every card on dossier/clubs/methods/home at desktop and phone width: 0 off-screen or clipped.
+  - News: a headline must name the club or one of its players (an Arbeloa/Fulham piece was in Liverpool's
+    dossier); question headlines skipped.
+  - Chapter two shows the top two needs, each with its reason (depth vs what a squad carries, best option's
+    value vs similar squads, veterans), published by `market.needs` (`need_*` outputs).
+  - Why him: names the last regular starter he would beat (and his value), his minutes on record, contract
+    leverage when short, and how his move odds rank among the candidates.
+  - Lineup: `UNUSED_FACTOR = 0.6` for players with no minutes in the club's last five matches (lineup.md: 78.0 ->
+    78.2% on 2023-24, 78.25 -> 78.3% on 2024-25). Liverpool: Endo and Chiesa out, Nyoni in; Barcola at CF
+    (more starts than Koumas).
+
 ## Key facts discovered (do not re-research)
 - API-Football free plan: seasons 2022–2024 only + rolling yesterday→tomorrow date window; 100 req/day.
 - Guardian dev key: 500/day, 60/min. football-data.org: 10/min.
