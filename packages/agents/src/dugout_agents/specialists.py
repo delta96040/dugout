@@ -127,11 +127,25 @@ PLAYER_ONLY = ("potential", "fit")
 CLUB_LEVEL = [n for n in SPECIALISTS if n not in PLAYER_ONLY]
 
 
+FUTURE_SCORE = (
+    r"\b(?:will|can|could|would|should|might)\b.{0,60}\bscore\b"  # "will Brentford score ..." (PR #7)
+)
+
+
 def route(question: str) -> list[str]:
     """Keyword routing (deterministic, auditable). Falls back to Club & Tactics plus News & Injury."""
     q = question.lower()
     hits = [name for name, s in SPECIALISTS.items() if re.search(s.keywords, q)]
     # "worth" questions are about value, not form; "who should we sign" is scouting, not news
+    # Future scoring questions ask for a match forecast ("goals" also matches club stats), but not season-long
+    # ones ("who will score the most this season") or recruitment ("a striker who can score").
+    if re.search(FUTURE_SCORE, q) and not re.search(
+        r"\bseason\b|\bmost\b|\bsign|\bbuy|\btarget|\brecruit", q
+    ):
+        if "match" not in hits:
+            hits.append("match")
+        if "club" in hits:
+            hits.remove("club")
     if "scout" in hits and "transfer" in hits and re.search(r"sign|buy|target|replace|recruit|strengthen", q):
         hits.remove("transfer")
     return hits or ["club", "news"]
