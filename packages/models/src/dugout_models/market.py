@@ -275,7 +275,8 @@ class Market:
 
         def timeline():  # built once, only when a cached frame has to be rebuilt
             nonlocal people
-            people = people or realism.club_people(self.t)
+            # from freshly loaded tables: self.t carries string ids (_with_current_values), the timeline integer ones
+            people = people or realism.club_people(valuation.load())
             return people
 
         snap = self.frame(
