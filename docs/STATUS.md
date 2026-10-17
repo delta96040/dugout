@@ -132,7 +132,7 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
       inactive since 2023, gaps for active ones, e.g. Marmoush to Man City missing); `player_valuations.current_club_id`
       is TODAY's club (only `current_club_name` is dated); appearances include national-team games (World Cup).
       Club timelines therefore join transfers + appearances (club games only) + dated valuation names.
-      **realism.py snapshots use `current_club_id` too (wealth rank by today's club): a bug to fix.**
+      realism.py had the same bug (fixed on branch `realism-club-on-date`, below).
     - Results (rumours.md): 6 months, test 2025-26: Brier 0.135 vs 0.151 (base rate since 2020-21), AUC 0.72,
       calibrated. The column changed in 2020 (fewer items, ~9% -> ~17% came true): era flag. Outlets' shrunk
       records barely differ and hurt on validation -> published as records, not used to score (negative result).
@@ -141,10 +141,15 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
       "Linked in the press" item (story chapter three; dossier scout section), Methods row. No number words in
       templates ("six" is a stray number to the Stat Auditor; "one"/"half" are allowed).
     - Live after merge: needs the history job once (nightly with `history: true`, or Sunday) to fill `rumours`.
-  - **Next, in order:** (1) fix realism's club-on-date bug (above); (2) needs model on played positions;
-    (3) API-Football injury history for other big leagues; (4) Championship squads via local refresh;
-    (5) conformal ranges on fair fees; (6) rumour news signal for realism (PRIORS["news_weight_per_point"] is a
-    prior; the archive can now fit it).
+  - **2026-10-17, branch `realism-club-on-date` (on top of rumour-track-record):** realism's frames took the club
+    from `player_valuations.current_club_id` (today's club): wrong for 45% of players on 1 June 2016, 19% in 2024.
+    Now `realism.club_people` (the rumour timeline) gives the club on the day; mobility trains only on players with a
+    transfer history (`COVERED_ONLY`, chosen on validation 2023). Mobility AUC 0.764 / Brier 0.0672 vs 0.750 /
+    0.0703 on the same test rows; destination 0.733 vs 0.749, the old figure was hindsight (buyer squads counted by
+    today's club). Market frames are re-cached (`clubs="dated"`). Live scoring still uses today's club (correct).
+  - **Next, in order:** (1) needs model on played positions; (2) API-Football injury history for other big
+    leagues; (3) Championship squads via local refresh; (4) conformal ranges on fair fees; (5) rumour news signal
+    for realism (PRIORS["news_weight_per_point"] is a prior; the archive can now fit it).
   - User wants: product voice everywhere (no "model" wording on the site), realistic targets, all major leagues,
     and STATUS updated before the context fills so a new chat can continue.
 

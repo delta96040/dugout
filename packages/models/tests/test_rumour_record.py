@@ -75,6 +75,7 @@ def _tables() -> dict[str, pd.DataFrame]:
             ),
             "player_club_id": [148, 148, 148, 418, 418, 418, 3672],
             "competition_id": ["GB1", "GB1", "GB1", "ES1", "ES1", "ES1", "FIWC"],
+            "minutes_played": [90] * 7,
         }
     )
     comps = pd.DataFrame(
@@ -137,6 +138,20 @@ def test_people_timeline_fills_the_transfer_gap():
     assert ((arr.tm_player_id == "2") & (arr.tm_club_id == "418")).any()
     # namesakes: only the one of playing age on the day
     assert people.candidates("Ann Able", pd.Timestamp("2019-01-01")) == [1]
+
+
+def test_realism_snapshot_uses_the_club_on_the_day():
+    from dugout_models import realism
+
+    t, _, people = _setup()
+    # Ben Baker was at Tottenham on 1 June 2017; the valuations' club id says Real Madrid (his club today)
+    dated = realism.snapshots(t, [2017], people=people, covered_only=False).set_index("player_id")
+    undated = realism.snapshots(t, [2017], dated=False, covered_only=False).set_index("player_id")
+    assert dated.loc[2, "club_id"] == 148 and undated.loc[2, "club_id"] == 418
+    assert dated.loc[2, "minutes_share"] > 0  # his Tottenham games count for him
+    assert dated.loc[2, "tenure"] > 0.5  # in the timeline since September 2016
+    # covered_only keeps only players the dataset has a transfer history for (Ben Baker has none)
+    assert 2 not in set(realism.snapshots(t, [2017], people=people, covered_only=True).player_id)
 
 
 def test_links_skip_the_players_own_club_and_bold_clubs_and_label_by_horizon():

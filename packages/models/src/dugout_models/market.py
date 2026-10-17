@@ -271,20 +271,30 @@ class Market:
     def fit(self) -> None:
         df = self.frame("valuation", lambda: valuation.build(self.t), features=valuation.FEATURES)
         self.val = valuation.ValuationModel().fit(df[df.date <= self.now])
+        people = None
+
+        def timeline():  # built once, only when a cached frame has to be rebuilt
+            nonlocal people
+            people = people or realism.club_people(self.t)
+            return people
+
         snap = self.frame(
             "mobility",
-            lambda: realism.snapshots(self.t, range(2015, 2026)),
+            lambda: realism.snapshots(self.t, range(2015, 2026), people=timeline()),
             years=[2015, 2025],
             features=realism.MOBILITY,  # a feature change rebuilds the cached frame
+            clubs="dated",  # the club on 1 June from the club timeline (realism.md, 2026-10-17)
+            covered_only=realism.COVERED_ONLY,
         )
         snap = snap.dropna(subset=realism.MOBILITY)
         self.mob = realism.mobility_model().fit(snap[realism.MOBILITY], snap.moved)
         self.mob_base = float(snap.moved.mean())
         pairs = self.frame(
             "destination",
-            lambda: realism.destination_pairs(self.t, range(2015, 2026)),
+            lambda: realism.destination_pairs(self.t, range(2015, 2026), people=timeline()),
             years=[2015, 2025],
             features=realism.DESTINATION,
+            clubs="dated",
         )
         pairs = pairs.dropna(subset=realism.DESTINATION)
         self.dest = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(
