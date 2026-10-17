@@ -55,10 +55,54 @@ export function chapterContent(d: StoryData) {
       kicker: "Chapter two · find the gap",
       body: (
         <>
-          <h2 className="font-display text-[clamp(2.4rem,5.6vw,5.2rem)] leading-[0.9]">
-            The gap is at <span className="italic text-red">{d.need ? <N s={d.need} className="font-display not-italic" /> : "—"}</span>.
+          <h2 className="font-display text-[clamp(2.2rem,5vw,4.6rem)] leading-[0.9]">
+            {d.gaps.length > 1 ? "The gaps are at " : "The gap is at "}
+            {d.gaps.map((g, i) => (
+              <span key={g.need.id}>
+                {i > 0 && " and "}
+                <span className={`italic ${i === 0 ? "text-red" : ""}`}>
+                  <N s={g.need} className="font-display not-italic" />
+                </span>
+              </span>
+            ))}
+            {d.gaps.length === 0 && "—"}.
           </h2>
-          <p className="mt-6 max-w-md">
+          <ol className="mt-5 max-w-lg space-y-3 text-sm sm:text-base">
+            {d.gaps.map((g, i) => (
+              <li key={g.need.id}>
+                <span className="mono-label">{i === 0 ? "Biggest need" : "Second need"} · </span>
+                {g.depth && (
+                  <>
+                    {d.club} have <N s={g.depth} /> players there, veterans aside
+                    {g.wanted ? (
+                      <>
+                        , where a squad carries <N s={g.wanted} />
+                      </>
+                    ) : null}
+                    .{" "}
+                  </>
+                )}
+                {g.bestValue && (
+                  <>
+                    Their best option{g.bestPlayer ? <>, <span data-name>{g.bestPlayer}</span>,</> : ""} is worth{" "}
+                    <N s={g.bestValue} />
+                    {g.peerValue ? (
+                      <>
+                        ; at the squads closest in strength the best option is typically worth <N s={g.peerValue} />
+                      </>
+                    ) : null}
+                    .{" "}
+                  </>
+                )}
+                {g.veterans && (
+                  <>
+                    <N s={g.veterans} /> of the options are veterans.
+                  </>
+                )}
+              </li>
+            ))}
+          </ol>
+          <p className="mt-4 max-w-md text-sm">
             Every position is compared with the six squads in its league closest in strength: depth, the best option&apos;s value, ageing.
             {d.signings.length > 0 && " Signings the club has already announced count before anything is recommended:"}
           </p>
@@ -93,6 +137,7 @@ export function chapterContent(d: StoryData) {
               targets={d.targets}
               buyer={d.club}
               need={d.needGroup}
+              gap={d.gaps[0]}
               n={(s) => <Scramble s={s} chapter={2} />}
               compact
             />

@@ -515,6 +515,10 @@ class Market:
             quality_gap = max(0.0, 1 - b / ref[g]) if ref[g] == ref[g] and ref[g] > 0 else 0.0
             ageing = float((sq[(sq.group == g)].age >= 31).mean()) if (sq.group == g).any() else 0.0
             incoming = sum(1 for grp, _, _ in self.incoming.get(club_slug, []) if grp == g)
+            ranked = at.sort_values("market_value_eur", ascending=False)
+            top = ranked.head(1)
+            # the last regular starter: the player a signing would have to be better than to start
+            bar = ranked.iloc[STARTERS[g] - 1] if len(ranked) >= STARTERS[g] else None
             rows.append(
                 {
                     "group": g,
@@ -525,6 +529,14 @@ class Market:
                     "depth_gap": depth_gap,
                     "quality_gap": quality_gap,
                     "ageing_share": ageing,
+                    # the reasons, in numbers the site can show: depth against the target, the best option's value
+                    # against similar squads' best options, and who that best option is
+                    "wanted": want,
+                    "best_value": b,
+                    "peer_best_value": float(ref[g]) if ref[g] == ref[g] else np.nan,
+                    "best_name": top.name.iloc[0] if len(top) else None,
+                    "bar_name": bar["name"] if bar is not None else None,
+                    "bar_value": float(bar.market_value_eur) if bar is not None else np.nan,
                 }
             )
         return pd.DataFrame(rows).sort_values("score", ascending=False).reset_index(drop=True)
@@ -608,6 +620,7 @@ class Market:
                     "value": r.value,
                     "fair_fee": fee,
                     "minutes_share": share,
+                    "minutes_365": float(r.minutes_365),
                     **rs,
                 }
             )
@@ -702,6 +715,22 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
             rank = i + 1
             rows.append(_row("scout", "club", slug, "need", n.group, now, f"need:{rank}"))
             rows.append(_row("scout", "club", slug, "need_depth", int(n.depth), now, f"need:{rank}"))
+            ctx = f"need:{rank}"
+            rows.append(_row("scout", "club", slug, "need_wanted", int(n.wanted), now, ctx))
+            rows.append(
+                _row("scout", "club", slug, "need_ageing_share", round(float(n.ageing_share), 3), now, ctx)
+            )
+            if n.best_value > 0:
+                rows.append(_row("scout", "club", slug, "need_best_value", float(n.best_value), now, ctx))
+            if n.peer_best_value == n.peer_best_value:
+                rows.append(
+                    _row("scout", "club", slug, "need_peer_best_value", float(n.peer_best_value), now, ctx)
+                )
+            if isinstance(n.best_name, str):
+                rows.append(_row("scout", "club", slug, "need_best_player", n.best_name, now, ctx))
+            if isinstance(n.bar_name, str) and n.bar_value == n.bar_value:
+                rows.append(_row("scout", "club", slug, "need_bar_player", n.bar_name, now, ctx))
+                rows.append(_row("scout", "club", slug, "need_bar_value", float(n.bar_value), now, ctx))
             short = mk.shortlist(slug, n.group, str(tm_club))
             for c in short.itertuples():
                 k = int((short.kind[: c.Index] == c.kind).sum())  # position within its list, from 0
@@ -717,6 +746,7 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
                     _row(
                         "scout", "player", pid, "expected_minutes_share", round(c.minutes_share, 3), now, ctx
                     ),
+                    _row("scout", "player", pid, "minutes_last_year", int(c.minutes_365), now, ctx),
                     _row("scout", "player", pid, "realism", round(c.p_move, 4), now, ctx),
                     _row("scout", "player", pid, "p_sold", round(c.p_sold, 3), now, ctx),
                     _row("scout", "player", pid, "p_this_club", round(c.p_this_club, 4), now, ctx),

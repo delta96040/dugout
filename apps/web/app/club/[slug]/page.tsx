@@ -5,7 +5,7 @@ import Num from "@/components/Num";
 import Shortlists from "@/components/Shortlists";
 import { ordinal, plainReason, when } from "@/lib/format";
 import { clubSlugs, dossier, firstStat, leagueOf } from "@/lib/data";
-import { shortlists } from "@/lib/shortlist";
+import { gaps, shortlists } from "@/lib/shortlist";
 
 export function generateStaticParams() {
   return clubSlugs().map((slug) => ({ slug }));
@@ -72,6 +72,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
                   targets={targets}
                   buyer={d.club.name}
                   need={need}
+                  gap={gaps(d)[0]}
                   n={(x) => <Num stat={x.stat} display={x.display} />}
                 />
               </div>
