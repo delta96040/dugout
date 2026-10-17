@@ -10,8 +10,8 @@
     "name": "Premier League",
     "country": "England"
   },
-  "generated_at": "2026-10-16T23:18:05+00:00",
-  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "generated_at": "2026-10-17T08:22:36+00:00",
+  "data_as_of": "2026-10-17T08:18:37+00:00",
   "llm": "poolside/laguna-s-2.1:free",
   "summary": {
     "agent": "director",
@@ -26,7 +26,7 @@
             "text": "Arsenal are "
           },
           {
-            "stat": "ev_672478582d8759ab",
+            "stat": "ev_3f6f20611d2fe146",
             "display": "2nd"
           },
           {
@@ -44,7 +44,7 @@
             "text": "Arsenal have "
           },
           {
-            "stat": "ev_f84b75baad7ccdce",
+            "stat": "ev_f9ddce52f247bbb3",
             "display": "15"
           },
           {
@@ -62,7 +62,7 @@
             "text": "Arsenal's next league match is Nottingham Forest v Arsenal on "
           },
           {
-            "stat": "ev_9e61f4547d6bd865",
+            "stat": "ev_d0d050340a76da11",
             "display": "18 October 2026"
           },
           {
@@ -80,7 +80,7 @@
             "text": "We expect Arsenal to line up in a "
           },
           {
-            "stat": "ev_8f0bf7aab0096029",
+            "stat": "ev_d8025eec94eef58e",
             "display": "4-3-3"
           },
           {
@@ -101,7 +101,7 @@
       "title": "Club & Tactics",
       "question": "How are Arsenal doing this season, and how do they play under their head coach?",
       "status": "published",
-      "writer": "template",
+      "writer": "llm:poolside/laguna-s-2.1:free",
       "claims": [
         {
           "segments": [
@@ -109,61 +109,28 @@
               "text": "Arsenal are "
             },
             {
-              "stat": "ev_672478582d8759ab",
+              "stat": "ev_3f6f20611d2fe146",
               "display": "2nd"
             },
             {
-              "text": " in the Premier League table."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Arsenal have "
+              "text": " in the Premier League table with "
             },
             {
-              "stat": "ev_f84b75baad7ccdce",
+              "stat": "ev_f9ddce52f247bbb3",
               "display": "15"
             },
             {
-              "text": " points."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Arsenal have scored "
+              "text": " points, having scored "
             },
             {
-              "stat": "ev_b9abe94df258c446",
+              "stat": "ev_0bd525f880caec6a",
               "display": "10"
             },
             {
-              "text": " league goals."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Arsenal have conceded "
+              "text": " goals and conceded "
             },
             {
-              "stat": "ev_ccf0f603902d01b8",
+              "stat": "ev_2961e2121d59bfde",
               "display": "5"
             },
             {
@@ -178,28 +145,17 @@
         {
           "segments": [
             {
-              "text": "Arsenal's most recent league results read "
+              "text": "Their most recent league results read "
             },
             {
-              "stat": "ev_2e6c09c470924331",
+              "stat": "ev_8d65e75575c70001",
               "display": "WLWWW"
             },
             {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Arsenal's Elo rating is "
+              "text": ", and their Elo rating is "
             },
             {
-              "stat": "ev_4681a53a8a4aeba4",
+              "stat": "ev_6128fee218c79c28",
               "display": "1733"
             },
             {
@@ -221,21 +177,10 @@
               "display": "20 December 2019"
             },
             {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Mikel Arteta's style profile covers "
+              "text": ", and his style profile covers "
             },
             {
-              "stat": "ev_4333a50efdfe3f22",
+              "stat": "ev_80f5f9110c6a0b1d",
               "display": "158"
             },
             {
@@ -253,11 +198,39 @@
               "text": "Teams under Arteta have taken "
             },
             {
-              "stat": "ev_01f922a86cc7a4f1",
+              "stat": "ev_1de8207f7af72ed9",
               "display": "66%"
             },
             {
-              "text": " of the threat in their matches, more territorial than almost any Premier League manager's side."
+              "text": " of the threat in their matches, averaging "
+            },
+            {
+              "stat": "ev_bae83df4c476ae62",
+              "display": "93"
+            },
+            {
+              "text": " defensive actions per match, creating "
+            },
+            {
+              "stat": "ev_a85921111373153a",
+              "display": "1.84"
+            },
+            {
+              "text": " expected goals per match while conceding "
+            },
+            {
+              "stat": "ev_d47c00d67d193eb5",
+              "display": "0.89"
+            },
+            {
+              "text": " expected goals per match, and accounting for "
+            },
+            {
+              "stat": "ev_e6b8e07d982ee2fb",
+              "display": "64%"
+            },
+            {
+              "text": " of the chance creation in their matches."
             }
           ],
           "type": "stat",
@@ -268,19 +241,12 @@
         {
           "segments": [
             {
-              "text": "Teams under Arteta average "
-            },
-            {
-              "stat": "ev_606d44e42cdefaa9",
-              "display": "93"
-            },
-            {
-              "text": " defensive actions per match, less active without the ball than average."
+              "text": "We recommend maintaining the current tactical approach given the strong underlying metrics."
             }
           ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
+          "type": "analysis",
+          "status": "analysis",
+          "reason": "judgement, labelled as such",
           "sources": []
         }
       ],
@@ -299,7 +265,7 @@
               "text": "Arsenal's next league match is Nottingham Forest v Arsenal on "
             },
             {
-              "stat": "ev_9e61f4547d6bd865",
+              "stat": "ev_d0d050340a76da11",
               "display": "18 October 2026"
             },
             {
@@ -317,7 +283,7 @@
               "text": "Our forecast gives Nottingham Forest a "
             },
             {
-              "stat": "ev_27c91de6016060df",
+              "stat": "ev_73ad0fa05d49123e",
               "display": "19%"
             },
             {
@@ -335,7 +301,7 @@
               "text": "Our forecast gives Nottingham Forest v Arsenal a "
             },
             {
-              "stat": "ev_f32f9db791e42de2",
+              "stat": "ev_7939232f61409664",
               "display": "25%"
             },
             {
@@ -353,7 +319,7 @@
               "text": "Our forecast gives Arsenal a "
             },
             {
-              "stat": "ev_d9383384e6c08b4b",
+              "stat": "ev_e0c9e1eee78dcc91",
               "display": "57%"
             },
             {
@@ -371,7 +337,7 @@
               "text": "We expect Nottingham Forest to score "
             },
             {
-              "stat": "ev_a09b2a61cada4c29",
+              "stat": "ev_1653f79db8eeb8dd",
               "display": "0.9"
             },
             {
@@ -389,7 +355,7 @@
               "text": "We expect Arsenal to score "
             },
             {
-              "stat": "ev_bd870e4aa1d20e8c",
+              "stat": "ev_befb9608d76e4c3b",
               "display": "1.5"
             },
             {
@@ -407,7 +373,7 @@
               "text": "Arsenal's Elo rating is "
             },
             {
-              "stat": "ev_4681a53a8a4aeba4",
+              "stat": "ev_6128fee218c79c28",
               "display": "1733"
             },
             {
@@ -425,7 +391,7 @@
               "text": "Nottingham Forest's Elo rating is "
             },
             {
-              "stat": "ev_95506c53f06df362",
+              "stat": "ev_8ab227d31ee48de5",
               "display": "1469"
             },
             {
@@ -453,7 +419,7 @@
               "text": "We expect Arsenal to line up in a "
             },
             {
-              "stat": "ev_8f0bf7aab0096029",
+              "stat": "ev_d8025eec94eef58e",
               "display": "4-3-3"
             },
             {
@@ -471,7 +437,7 @@
               "text": "Predicted to start: David Raya Martín at "
             },
             {
-              "stat": "ev_39e5efe046bab5b7",
+              "stat": "ev_a0cf059d00c0cfb9",
               "display": "GK"
             },
             {
@@ -489,7 +455,7 @@
               "text": "Predicted to start: Ezri Konsa Ngoyo at "
             },
             {
-              "stat": "ev_ac78d9806f596d59",
+              "stat": "ev_e882ba20e11a4608",
               "display": "CB"
             },
             {
@@ -507,7 +473,7 @@
               "text": "We estimate Ezri Konsa Ngoyo's injury risk as "
             },
             {
-              "stat": "ev_2a2e00933fda6d94",
+              "stat": "ev_3f68fa0a1552c615",
               "display": "elevated"
             },
             {
@@ -525,7 +491,7 @@
               "text": "Predicted to start: Gabriel dos Santos Magalhães at "
             },
             {
-              "stat": "ev_eac4ae96f66df5dd",
+              "stat": "ev_ce2a45fe7eaf7954",
               "display": "CB"
             },
             {
@@ -543,7 +509,7 @@
               "text": "Predicted to start: Benjamin White at "
             },
             {
-              "stat": "ev_476f5715252e41c6",
+              "stat": "ev_ada3209422adb4d3",
               "display": "RB"
             },
             {
@@ -561,7 +527,7 @@
               "text": "Predicted to start: Riccardo Calafiori at "
             },
             {
-              "stat": "ev_4ec31fa6cbae16aa",
+              "stat": "ev_3569626d1a8888e4",
               "display": "LB"
             },
             {
@@ -579,7 +545,7 @@
               "text": "Predicted to start: Bruno Guimarães Rodriguez Moura at "
             },
             {
-              "stat": "ev_9d219eb48bc469d5",
+              "stat": "ev_8aadb92d82b593cd",
               "display": "DM"
             },
             {
@@ -597,7 +563,7 @@
               "text": "Predicted to start: Declan Rice at "
             },
             {
-              "stat": "ev_a229ac3800e88c5f",
+              "stat": "ev_7ca20f96cace3fad",
               "display": "CM"
             },
             {
@@ -615,7 +581,7 @@
               "text": "Predicted to start: Martin Ødegaard at "
             },
             {
-              "stat": "ev_9c38ca3c17d9e666",
+              "stat": "ev_68295b32047ebbde",
               "display": "CM"
             },
             {
@@ -633,7 +599,7 @@
               "text": "Predicted to start: Bukayo Saka at "
             },
             {
-              "stat": "ev_97d86a00f5edfe00",
+              "stat": "ev_958133af1762a895",
               "display": "RW"
             },
             {
@@ -651,7 +617,7 @@
               "text": "Predicted to start: Noni Madueke at "
             },
             {
-              "stat": "ev_aea6ec091e319e28",
+              "stat": "ev_24c321175ee8cd15",
               "display": "LW"
             },
             {
@@ -669,7 +635,7 @@
               "text": "Predicted to start: Kai Havertz at "
             },
             {
-              "stat": "ev_37ae0cbbdb89a22d",
+              "stat": "ev_0a2e19e5e363e086",
               "display": "CF"
             },
             {
@@ -689,7 +655,7 @@
       "title": "Team News",
       "question": "Who is unavailable for Arsenal, and what is the latest news?",
       "status": "published",
-      "writer": "template",
+      "writer": "llm:poolside/laguna-s-2.1:free",
       "claims": [
         {
           "segments": [
@@ -711,30 +677,6 @@
               "outlet": "Fantasy Premier League",
               "tier": 1,
               "url": "https://fantasy.premierleague.com/api/bootstrap-static/",
-              "official": true
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "text": "Piero Hincapié is injured with an ankle injury."
-            }
-          ],
-          "type": "injury",
-          "status": "verified",
-          "reason": "official source",
-          "sources": [
-            {
-              "outlet": "Fantasy Premier League",
-              "tier": 1,
-              "url": "https://fantasy.premierleague.com/api/bootstrap-static/",
-              "official": true
-            },
-            {
-              "outlet": "Arsenal",
-              "tier": 1,
-              "url": "https://www.arsenal.com/news/preview-arsenal-v-lille-abAz14F609Aa",
               "official": true
             }
           ]
@@ -766,20 +708,26 @@
         {
           "segments": [
             {
-              "text": "Martín Zubimendi Ibáñez is doubtful with an unspecified injury and a "
-            },
-            {
-              "stat": "ev_4580fe6f94df27f9",
-              "display": "75"
-            },
-            {
-              "text": "% chance of playing."
+              "text": "Piero Hincapié is injured with an ankle injury."
             }
           ],
-          "type": "stat",
+          "type": "injury",
           "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
+          "reason": "official source",
+          "sources": [
+            {
+              "outlet": "Fantasy Premier League",
+              "tier": 1,
+              "url": "https://fantasy.premierleague.com/api/bootstrap-static/",
+              "official": true
+            },
+            {
+              "outlet": "Arsenal",
+              "tier": 1,
+              "url": "https://www.arsenal.com/news/preview-nottingham-forest-v-arsenal-age4Q4H8rLTv",
+              "official": true
+            }
+          ]
         },
         {
           "segments": [
@@ -802,65 +750,34 @@
         {
           "segments": [
             {
-              "text": "According to Sky Sports, Arsenal latest: Gunners must adapt to whatever the game demands - Arteta."
+              "text": "Martín Zubimendi Ibáñez is doubtful with an unspecified injury and a "
+            },
+            {
+              "stat": "ev_c3c3c02d0910103d",
+              "display": "75"
+            },
+            {
+              "text": "% chance of playing."
             }
           ],
-          "type": "attributed",
+          "type": "stat",
           "status": "verified",
-          "reason": "published by Sky Sports",
-          "sources": [
-            {
-              "outlet": "Sky Sports",
-              "tier": 2,
-              "url": "https://www.skysports.com/football/live-blog/11095/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-              "official": false
-            }
-          ]
+          "reason": "bound to ledger rows",
+          "sources": []
         },
         {
           "segments": [
             {
-              "text": "According to BBC Sport, Arteta told Arsenal job cuts will help create success."
+              "text": "We recommend focusing on squad rotation given the multiple absences."
             }
           ],
-          "type": "attributed",
-          "status": "verified",
-          "reason": "published by BBC Sport",
-          "sources": [
-            {
-              "outlet": "BBC Sport",
-              "tier": 2,
-              "url": "https://www.bbc.co.uk/sport/football/articles/cr3wv4xd2l6yo?at_medium=RSS&at_campaign=rss",
-              "official": false
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "text": "According to The Guardian, Mikel Arteta defends job cuts at Arsenal to help club ‘evolve and create success’."
-            }
-          ],
-          "type": "attributed",
-          "status": "verified",
-          "reason": "published by The Guardian",
-          "sources": [
-            {
-              "outlet": "The Guardian",
-              "tier": 2,
-              "url": "https://www.theguardian.com/football/2026/oct/16/mikel-arteta-defends-job-cuts-at-arsenal-to-help-club-evolve-and-create-success",
-              "official": false
-            }
-          ]
+          "type": "analysis",
+          "status": "analysis",
+          "reason": "judgement, labelled as such",
+          "sources": []
         }
       ],
-      "withheld": [
-        {
-          "text": "According to The Guardian, Premier League news: go bananas: Maresca loving fans’ show of defiance; James injury blow for Blues.",
-          "status": "unverified",
-          "reason": "The Guardian's text does not support it"
-        }
-      ]
+      "withheld": []
     },
     {
       "agent": "transfer",
@@ -875,7 +792,7 @@
               "text": "We estimate Kai Havertz's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_c4153b311b3f3b28",
+              "stat": "ev_a4038c2eed58260e",
               "display": "11%"
             },
             {
@@ -893,7 +810,7 @@
               "text": "We estimate Mikel Merino Zazón's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_fc1aa23a0831e871",
+              "stat": "ev_df982ff6c8b354b1",
               "display": "10%"
             },
             {
@@ -911,7 +828,7 @@
               "text": "We estimate Myles Lewis-Skelly's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_c15b1371a22703a7",
+              "stat": "ev_8134c95d7f10a14e",
               "display": "10%"
             },
             {
@@ -947,11 +864,47 @@
               "text": "Our fair-fee estimate for Riccardo Calafiori is "
             },
             {
-              "stat": "ev_fbefc2586a137d28",
+              "stat": "ev_137d171070b8d31b",
               "display": "€69.5m"
             },
             {
               "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt values Eberechi Eze at "
+            },
+            {
+              "stat": "ev_6ca487780efb23d9",
+              "display": "€60.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Eberechi Eze is "
+            },
+            {
+              "stat": "ev_1cb6ff66cd5f3a73",
+              "display": "€44.4m"
+            },
+            {
+              "text": ", below his market value."
             }
           ],
           "type": "stat",
@@ -983,44 +936,8 @@
               "text": "Our fair-fee estimate for Jurriën Timber is "
             },
             {
-              "stat": "ev_a98975708f442137",
+              "stat": "ev_a28d55c3a40b970d",
               "display": "€71.8m"
-            },
-            {
-              "text": ", in line with his market value."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Transfermarkt values Noni Madueke at "
-            },
-            {
-              "stat": "ev_a2ae775d51343c22",
-              "display": "€45.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Noni Madueke is "
-            },
-            {
-              "stat": "ev_18546542606a8fe9",
-              "display": "€48.8m"
             },
             {
               "text": ", in line with his market value."
@@ -1039,145 +956,54 @@
       "title": "Recruitment",
       "question": "Where should Arsenal strengthen, and who fits?",
       "status": "published",
-      "writer": "template",
+      "writer": "llm:poolside/laguna-s-2.1:free",
       "claims": [
-        {
-          "segments": [
-            {
-              "text": "According to The Guardian, Arsenal have been linked with Malo Gusto."
-            }
-          ],
-          "type": "attributed",
-          "status": "verified",
-          "reason": "published by The Guardian",
-          "sources": [
-            {
-              "outlet": "The Guardian",
-              "tier": 5,
-              "url": "https://www.theguardian.com/football/2026/sep/02/football-transfer-rumours-jamie-vardy-to-sao-paulo-or-sheffield-wednesday",
-              "official": false
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "text": "According to The Guardian, Arsenal have been linked with Eli Junior Kroupi."
-            }
-          ],
-          "type": "attributed",
-          "status": "verified",
-          "reason": "published by The Guardian",
-          "sources": [
-            {
-              "outlet": "The Guardian",
-              "tier": 5,
-              "url": "https://www.theguardian.com/football/2026/sep/01/football-transfer-rumours-manchester-united-liverpool-eli-junior-kroupi-jamie-vardy-wrexham",
-              "official": false
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "text": "According to The Guardian, Arsenal have been linked with Julián Alvarez."
-            }
-          ],
-          "type": "attributed",
-          "status": "verified",
-          "reason": "published by The Guardian",
-          "sources": [
-            {
-              "outlet": "The Guardian",
-              "tier": 5,
-              "url": "https://www.theguardian.com/football/2026/aug/24/football-transfer-rumour-mill-julian-alvarez-arsenal-booed-atletico",
-              "official": false
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "text": "Past reports like this one about Julián Alvarez came true within half a year about one time in "
-            },
-            {
-              "stat": "ev_5d99fb8d26b4f45c",
-              "display": "5"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
         {
           "segments": [
             {
               "text": "Arsenal's biggest squad need is "
             },
             {
-              "stat": "ev_34b1b33a504b27ff",
+              "stat": "ev_a94f425ed758f86b",
               "display": "defensive midfield"
             },
             {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Dream target: Ryan Gravenberch (Liverpool FC), who is "
+              "text": ", where they have "
             },
             {
-              "stat": "ev_f0d80c1aaddccd39",
-              "display": "24"
+              "stat": "ev_2a5325a42f899700",
+              "display": "1"
             },
             {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Ryan Gravenberch plays for "
+              "text": " players for the position leaving veterans aside, while a squad typically carries "
             },
             {
-              "stat": "ev_79449508b59ce131",
-              "display": "Liverpool FC"
+              "stat": "ev_59adbf5170dc9c50",
+              "display": "2"
             },
             {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Ryan Gravenberch has a market value of "
+              "text": " and their best option is "
             },
             {
-              "stat": "ev_d8e462b178e4bf0b",
+              "stat": "ev_28a72c667efd296a",
+              "display": "Martín Zubimendi"
+            },
+            {
+              "text": " with a market value of "
+            },
+            {
+              "stat": "ev_77833a01ca60c580",
+              "display": "€65.0m"
+            },
+            {
+              "text": " compared to "
+            },
+            {
+              "stat": "ev_594eddab75f30816",
               "display": "€75.0m"
             },
             {
-              "text": "."
+              "text": " at similar clubs."
             }
           ],
           "type": "stat",
@@ -1188,28 +1014,77 @@
         {
           "segments": [
             {
-              "text": "Our fair-fee estimate for Ryan Gravenberch is "
+              "text": "Their last regular starter there is "
             },
             {
-              "stat": "ev_c6e5a14e969ca29a",
+              "stat": "ev_5d6efc08cb3a5619",
+              "display": "Martín Zubimendi"
+            },
+            {
+              "text": " with a market value of "
+            },
+            {
+              "stat": "ev_e186dddef92c62cc",
+              "display": "€65.0m"
+            },
+            {
+              "text": ", making the position a clear priority."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We recommend targeting "
+            },
+            {
+              "stat": "ev_e64835bcd1df82e8",
+              "display": "24"
+            },
+            {
+              "text": "-year-old "
+            },
+            {
+              "stat": "ev_56353a49de3335e9",
+              "display": "Liverpool FC"
+            },
+            {
+              "text": " Ryan Gravenberch, who has "
+            },
+            {
+              "stat": "ev_010413009f497b0c",
+              "display": "3700"
+            },
+            {
+              "text": " minutes in the past year, "
+            },
+            {
+              "stat": "ev_aae0174970360e18",
+              "display": "68"
+            },
+            {
+              "text": " months left on his contract, a market value of "
+            },
+            {
+              "stat": "ev_7113510c3e3c7da5",
+              "display": "€75.0m"
+            },
+            {
+              "text": ", a fair fee estimate of "
+            },
+            {
+              "stat": "ev_a6281c5081047126",
               "display": "€73.0m"
             },
             {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Ryan Gravenberch to play "
+              "text": ", and is projected to play "
             },
             {
-              "stat": "ev_41dfecf11f84a6fb",
+              "stat": "ev_a8f2c478858e7781",
               "display": "58%"
             },
             {
@@ -1224,302 +1099,49 @@
         {
           "segments": [
             {
-              "text": "Dream target: Adam Wharton (Crystal Palace), who is "
+              "text": "Their second squad need is "
             },
             {
-              "stat": "ev_c33f45c4f5cf3491",
-              "display": "23"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Adam Wharton plays for "
-            },
-            {
-              "stat": "ev_3270d447d73faa4f",
-              "display": "Crystal Palace"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Adam Wharton has a market value of "
-            },
-            {
-              "stat": "ev_b01d0d8efb458fca",
-              "display": "€75.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Adam Wharton is "
-            },
-            {
-              "stat": "ev_e3d0bbbeec837a45",
-              "display": "€90.1m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Adam Wharton to play "
-            },
-            {
-              "stat": "ev_4fc3a5823321e7bb",
-              "display": "53%"
-            },
-            {
-              "text": " of Arsenal's minutes."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Dream target: Kobbie Mainoo (Manchester United), who is "
-            },
-            {
-              "stat": "ev_077d79b857363453",
-              "display": "22"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Kobbie Mainoo plays for "
-            },
-            {
-              "stat": "ev_e2e9840f292ad733",
-              "display": "Manchester United"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Kobbie Mainoo has a market value of "
-            },
-            {
-              "stat": "ev_8f04976ab02d1566",
-              "display": "€75.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Kobbie Mainoo is "
-            },
-            {
-              "stat": "ev_288834e0d54ba0b0",
-              "display": "€95.6m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Kobbie Mainoo to play "
-            },
-            {
-              "stat": "ev_8b24be3c90e4874a",
-              "display": "44%"
-            },
-            {
-              "text": " of Arsenal's minutes."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Realistic target: Alex Scott (AFC Bournemouth), who is "
-            },
-            {
-              "stat": "ev_31022cdb3af0884c",
-              "display": "23"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Alex Scott plays for "
-            },
-            {
-              "stat": "ev_052ffcdc4e4a0e03",
-              "display": "AFC Bournemouth"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We estimate a "
-            },
-            {
-              "stat": "ev_440bd30fade31840",
-              "display": "30%"
-            },
-            {
-              "text": " chance that AFC Bournemouth sell Alex Scott in a transfer window."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Alex Scott is "
-            },
-            {
-              "stat": "ev_6fa775251eb0b451",
-              "display": "€82.8m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We estimate a "
-            },
-            {
-              "stat": "ev_ca597ba96799a989",
-              "display": "0.8%"
-            },
-            {
-              "text": " chance that Alex Scott joins Arsenal in a transfer window."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Hidden gem: Marc Bernal (FC Barcelona), who is "
-            },
-            {
-              "stat": "ev_1066ecbff9540bd5",
-              "display": "19"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Arsenal's second squad need is "
-            },
-            {
-              "stat": "ev_e6389ceeb645ce9d",
+              "stat": "ev_038fe783873c6ddf",
               "display": "goalkeeper"
             },
             {
-              "text": "."
+              "text": ", where they have "
+            },
+            {
+              "stat": "ev_433bd5f414fe8dfb",
+              "display": "3"
+            },
+            {
+              "text": " players leaving veterans aside, "
+            },
+            {
+              "stat": "ev_6e1d5b241e384741",
+              "display": "67%"
+            },
+            {
+              "text": " of their options are veterans, and their best option is "
+            },
+            {
+              "stat": "ev_361cba1ed2d37e21",
+              "display": "David Raya"
+            },
+            {
+              "text": " with a market value of "
+            },
+            {
+              "stat": "ev_f45b6e4c63c7add8",
+              "display": "€30.0m"
+            },
+            {
+              "text": " compared to "
+            },
+            {
+              "stat": "ev_0cfb440e239ad170",
+              "display": "€27.5m"
+            },
+            {
+              "text": " at similar clubs."
             }
           ],
           "type": "stat",
@@ -1528,31 +1150,26 @@
           "sources": []
         }
       ],
-      "withheld": [
-        {
-          "text": "Ryan Gravenberch has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: 0 independent source(s); need 2"
-        },
-        {
-          "text": "Adam Wharton has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: 0 independent source(s); need 2"
-        },
-        {
-          "text": "Kobbie Mainoo has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: 0 independent source(s); need 2"
-        },
-        {
-          "text": "Alex Scott has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: 0 independent source(s); need 2"
-        }
-      ]
+      "withheld": []
     }
   ],
   "stats": {
+    "ev_010413009f497b0c": {
+      "value": 3700.0,
+      "display": "3700",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
     "ev_010bd8c6f995f1e0": {
       "value": 65000000.0,
       "display": "65000000",
@@ -1569,169 +1186,9 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_01f922a86cc7a4f1": {
-      "value": 0.6625,
-      "display": "0.66",
-      "unit": null,
-      "metric": "threat_share",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q185572",
-      "entity_name": "Mikel Arteta",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_024ff4c9e3592860": {
-      "value": 27.6,
-      "display": "27.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp53404b1f2684d4",
-      "entity_name": "Gianluigi Donnarumma",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0288c81048fd0e8f": {
-      "value": 43800000.0,
-      "display": "43800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp4ca2754dc37950",
-      "entity_name": "Jobe Bellingham",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_052ffcdc4e4a0e03": {
-      "value": "AFC Bournemouth",
-      "display": "AFC Bournemouth",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpdc0476ca208fd6",
-      "entity_name": "Alex Scott",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_077d79b857363453": {
-      "value": 21.5,
-      "display": "21.50",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpee56c1079dbe50",
-      "entity_name": "Kobbie Mainoo",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0b50d6f7856bb4d8": {
-      "value": 0.562,
-      "display": "0.56",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp92406ad5b09a1e",
-      "entity_name": "Archie Gray",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1066ecbff9540bd5": {
-      "value": 19.4,
-      "display": "19.40",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpd53c870cfedbb6",
-      "entity_name": "Marc Bernal",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_132812833c817beb": {
-      "value": 69000000.0,
-      "display": "69000000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rpd53c870cfedbb6",
-      "entity_name": "Marc Bernal",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_16a5cfa5a98a5f7b": {
-      "value": 21.1,
-      "display": "21.10",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp4ca2754dc37950",
-      "entity_name": "Jobe Bellingham",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_18546542606a8fe9": {
-      "value": 48800000.0,
-      "display": "48800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpa84927c432ea8f",
-      "entity_name": "Noni Madueke",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1a08176f21b0f7bf": {
-      "value": 38800000.0,
-      "display": "38800000",
+    "ev_033e24fa6bb59407": {
+      "value": 39800000.0,
+      "display": "39800000",
       "unit": null,
       "metric": "proj_value_4y",
       "entity_type": "player",
@@ -1740,126 +1197,14 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_253c1b269f3598eb": {
-      "value": 32000000.0,
-      "display": "32000000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpd53c870cfedbb6",
-      "entity_name": "Marc Bernal",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_27c91de6016060df": {
-      "value": 0.1855,
-      "display": "0.19",
-      "unit": null,
-      "metric": "p_home_win",
-      "entity_type": "match",
-      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
-      "entity_name": "Nottingham Forest v Arsenal",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_288834e0d54ba0b0": {
-      "value": 95600000.0,
-      "display": "95600000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpee56c1079dbe50",
-      "entity_name": "Kobbie Mainoo",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2a2e00933fda6d94": {
-      "value": "elevated",
-      "display": "elevated",
-      "unit": null,
-      "metric": "injury_risk_tier",
-      "entity_type": "player",
-      "entity_id": "rp083a64f9207903",
-      "entity_name": "Ezri Konsa Ngoyo",
-      "source": "dugout_model:injury",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2e6c09c470924331": {
-      "value": "WLWWW",
-      "display": "WLWWW",
-      "unit": null,
-      "metric": "league_form",
-      "entity_type": "club",
-      "entity_id": "arsenal",
-      "entity_name": "Arsenal",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/PL/standings",
-      "source_tier": 2,
-      "fetched_at": "2026-10-16T22:31:34.588536+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_31022cdb3af0884c": {
-      "value": 23.2,
-      "display": "23.20",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpdc0476ca208fd6",
-      "entity_name": "Alex Scott",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3270d447d73faa4f": {
-      "value": "Crystal Palace",
-      "display": "Crystal Palace",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpa9a905dd8ddb35",
-      "entity_name": "Adam Wharton",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_34b1b33a504b27ff": {
-      "value": "defensive midfield",
-      "display": "defensive midfield",
+    "ev_038fe783873c6ddf": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
       "unit": null,
       "metric": "need",
       "entity_type": "club",
@@ -1868,284 +1213,12 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_357bd3c8db047e30": {
-      "value": 0.889,
-      "display": "0.89",
-      "unit": null,
-      "metric": "xg_against",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q185572",
-      "entity_name": "Mikel Arteta",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_37ae0cbbdb89a22d": {
-      "value": "CF",
-      "display": "CF",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rp4673857a8f0b93",
-      "entity_name": "Kai Havertz",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_39e5efe046bab5b7": {
-      "value": "GK",
-      "display": "GK",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rpb9cc4542f20788",
-      "entity_name": "David Raya Martín",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_41dfecf11f84a6fb": {
-      "value": 0.579,
-      "display": "0.58",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpa439c3e46c0e10",
-      "entity_name": "Ryan Gravenberch",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4333a50efdfe3f22": {
-      "value": 158.0,
-      "display": "158",
-      "unit": null,
-      "metric": "pl_matches",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q185572",
-      "entity_name": "Mikel Arteta",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_440bd30fade31840": {
-      "value": 0.304,
-      "display": "0.30",
-      "unit": null,
-      "metric": "p_sold",
-      "entity_type": "player",
-      "entity_id": "rpdc0476ca208fd6",
-      "entity_name": "Alex Scott",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4580fe6f94df27f9": {
-      "value": 75.0,
-      "display": "75",
-      "unit": "%",
-      "metric": "season_chance_of_playing_next_round",
-      "entity_type": "player",
-      "entity_id": "rp05816c1bdf0e44",
-      "entity_name": "Martín Zubimendi Ibáñez",
-      "source": "fpl",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/",
-      "source_tier": 1,
-      "fetched_at": "2026-10-16T22:30:44.227797+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_4681a53a8a4aeba4": {
-      "value": 1733.1,
-      "display": "1733.10",
-      "unit": null,
-      "metric": "elo",
-      "entity_type": "club",
-      "entity_id": "arsenal",
-      "entity_name": "Arsenal",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_476f5715252e41c6": {
-      "value": "RB",
-      "display": "RB",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rpac76683dd9984b",
-      "entity_name": "Benjamin White",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4a877ab224c66420": {
-      "value": 41600000.0,
-      "display": "41600000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp92406ad5b09a1e",
-      "entity_name": "Archie Gray",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4df87dc541d5435e": {
-      "value": 56.0,
-      "display": "56",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpee56c1079dbe50",
-      "entity_name": "Kobbie Mainoo",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4ec31fa6cbae16aa": {
-      "value": "LB",
-      "display": "LB",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rp2a8574691f4be8",
-      "entity_name": "Riccardo Calafiori",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4fc3a5823321e7bb": {
-      "value": 0.531,
-      "display": "0.53",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpa9a905dd8ddb35",
-      "entity_name": "Adam Wharton",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_5d99fb8d26b4f45c": {
-      "value": 5.0,
-      "display": "5",
-      "unit": null,
-      "metric": "one_in",
-      "entity_type": "rumour",
-      "entity_id": "e025e90ede033e5c-p2:julian alvarez",
-      "entity_name": "Julián Alvarez",
-      "source": "dugout_model:rumours",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_606d44e42cdefaa9": {
-      "value": 93.4773,
-      "display": "93.48",
-      "unit": null,
-      "metric": "def_actions",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q185572",
-      "entity_name": "Mikel Arteta",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_672478582d8759ab": {
-      "value": 2.0,
-      "display": "2",
-      "unit": null,
-      "metric": "league_position",
-      "entity_type": "club",
-      "entity_id": "arsenal",
-      "entity_name": "Arsenal",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/PL/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:31:34.588536+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_6d8cded7ef32a18d": {
-      "value": 45000000.0,
-      "display": "45000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp53404b1f2684d4",
-      "entity_name": "Gianluigi Donnarumma",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6fa775251eb0b451": {
+    "ev_0836ab046bc8d0d0": {
       "value": 82800000.0,
       "display": "82800000",
       "unit": null,
@@ -2156,396 +1229,28 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_7191d48fb878648f": {
-      "value": 0.691,
-      "display": "0.69",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp4ca2754dc37950",
-      "entity_name": "Jobe Bellingham",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_79449508b59ce131": {
-      "value": "Liverpool FC",
-      "display": "Liverpool FC",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpa439c3e46c0e10",
-      "entity_name": "Ryan Gravenberch",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_7dcc0ed18e3f0f51": {
-      "value": 20.0,
-      "display": "20",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpdc0476ca208fd6",
-      "entity_name": "Alex Scott",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8b24be3c90e4874a": {
-      "value": 0.443,
-      "display": "0.44",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpee56c1079dbe50",
-      "entity_name": "Kobbie Mainoo",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8b9abd6c1837c334": {
-      "value": 20.6,
-      "display": "20.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp92406ad5b09a1e",
-      "entity_name": "Archie Gray",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8c97792e2491fd43": {
-      "value": 32.0,
-      "display": "32",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpa9a905dd8ddb35",
-      "entity_name": "Adam Wharton",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8f04976ab02d1566": {
-      "value": 75000000.0,
-      "display": "75000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpee56c1079dbe50",
-      "entity_name": "Kobbie Mainoo",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8f0bf7aab0096029": {
-      "value": "4-3-3",
-      "display": "4-3-3",
-      "unit": null,
-      "metric": "predicted_formation",
-      "entity_type": "club",
-      "entity_id": "arsenal",
-      "entity_name": "Arsenal",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_909e7f26dc8a601b": {
-      "value": 0.305,
-      "display": "0.30",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rpd53c870cfedbb6",
-      "entity_name": "Marc Bernal",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_95506c53f06df362": {
-      "value": 1468.8,
-      "display": "1468.80",
-      "unit": null,
-      "metric": "elo",
-      "entity_type": "club",
-      "entity_id": "nottingham-forest",
-      "entity_name": "Nottingham Forest",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_96c24407c1a42df5": {
-      "value": 24.2,
-      "display": "24.20",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpea439be8b67f00",
-      "entity_name": "Bart Verbruggen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_97d86a00f5edfe00": {
-      "value": "RW",
-      "display": "RW",
+    "ev_0a2e19e5e363e086": {
+      "value": "CF",
+      "display": "CF",
       "unit": null,
       "metric": "predicted_xi_slot",
       "entity_type": "player",
-      "entity_id": "rp56bd0fc61d9da5",
-      "entity_name": "Bukayo Saka",
+      "entity_id": "rp4673857a8f0b93",
+      "entity_name": "Kai Havertz",
       "source": "dugout_model:lineup",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_9981bc66e3a00977": {
-      "value": 0.0045,
-      "display": "0.00",
-      "unit": null,
-      "metric": "realism",
-      "entity_type": "player",
-      "entity_id": "rpea439be8b67f00",
-      "entity_name": "Bart Verbruggen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9c38ca3c17d9e666": {
-      "value": "CM",
-      "display": "CM",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rpe0da48cba34547",
-      "entity_name": "Martin Ødegaard",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9d219eb48bc469d5": {
-      "value": "DM",
-      "display": "DM",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rp73f8e53a5d904a",
-      "entity_name": "Bruno Guimarães Rodriguez Moura",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9e61f4547d6bd865": {
-      "value": "2026-10-18T15:30:00+00:00",
-      "display": "2026-10-18T15:30:00+00:00",
-      "unit": null,
-      "metric": "kickoff_utc",
-      "entity_type": "match",
-      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
-      "entity_name": "Nottingham Forest v Arsenal",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a09b2a61cada4c29": {
-      "value": 0.9019,
-      "display": "0.90",
-      "unit": null,
-      "metric": "exp_home_goals",
-      "entity_type": "match",
-      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
-      "entity_name": "Nottingham Forest v Arsenal",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a229ac3800e88c5f": {
-      "value": "CM",
-      "display": "CM",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rp1b829f1d3468c4",
-      "entity_name": "Declan Rice",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a2ae775d51343c22": {
-      "value": 45000000.0,
-      "display": "45000000",
-      "unit": "EUR",
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpa84927c432ea8f",
-      "entity_name": "Noni Madueke",
-      "source": "transfermarkt",
-      "source_url": "https://www.transfermarkt.com/-/kader/verein/11/saison_id/2026/plus/1",
-      "source_tier": 3,
-      "fetched_at": "2026-10-14T00:00:00+00:00",
-      "query_kind": "file_csv",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_a98975708f442137": {
-      "value": 71800000.0,
-      "display": "71800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp51ffde383cd908",
-      "entity_name": "Jurriën Timber",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ac78d9806f596d59": {
-      "value": "CB",
-      "display": "CB",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rp083a64f9207903",
-      "entity_name": "Ezri Konsa Ngoyo",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_aea6ec091e319e28": {
-      "value": "LW",
-      "display": "LW",
-      "unit": null,
-      "metric": "predicted_xi_slot",
-      "entity_type": "player",
-      "entity_id": "rpa84927c432ea8f",
-      "entity_name": "Noni Madueke",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b01d0d8efb458fca": {
-      "value": 75000000.0,
-      "display": "75000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpa9a905dd8ddb35",
-      "entity_name": "Adam Wharton",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b03413a6ed7ea2f7": {
-      "value": 63900000.0,
-      "display": "63900000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp4ca2754dc37950",
-      "entity_name": "Jobe Bellingham",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b9abe94df258c446": {
+    "ev_0bd525f880caec6a": {
       "value": 10.0,
       "display": "10",
       "unit": null,
@@ -2556,140 +1261,220 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/PL/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:31:34.588536+00:00",
+      "fetched_at": "2026-10-17T07:08:06.371555+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_bd870e4aa1d20e8c": {
-      "value": 1.5113,
-      "display": "1.51",
+    "ev_0cfb440e239ad170": {
+      "value": 27500000.0,
+      "display": "27500000",
       "unit": null,
-      "metric": "exp_away_goals",
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_10c1f18c36659bef": {
+      "value": 27.6,
+      "display": "27.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_137d171070b8d31b": {
+      "value": 69500000.0,
+      "display": "69500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2a8574691f4be8",
+      "entity_name": "Riccardo Calafiori",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_14b544420465ea2f": {
+      "value": 63900000.0,
+      "display": "63900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_14f2dde7575851e8": {
+      "value": 21.1,
+      "display": "21.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_164e3610f43b0d79": {
+      "value": "Tottenham Hotspur",
+      "display": "Tottenham Hotspur",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp92406ad5b09a1e",
+      "entity_name": "Archie Gray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1653f79db8eeb8dd": {
+      "value": 0.902,
+      "display": "0.90",
+      "unit": null,
+      "metric": "exp_home_goals",
       "entity_type": "match",
       "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
       "entity_name": "Nottingham Forest v Arsenal",
       "source": "dugout_model:predictor",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_c15b1371a22703a7": {
-      "value": 0.101,
-      "display": "0.10",
+    "ev_1cb6ff66cd5f3a73": {
+      "value": 44400000.0,
+      "display": "44400000",
       "unit": null,
-      "metric": "sale_likelihood",
+      "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rp608dae0f18e8ee",
-      "entity_name": "Myles Lewis-Skelly",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "entity_id": "rp81c8e86b70acf0",
+      "entity_name": "Eberechi Eze",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_c33f45c4f5cf3491": {
-      "value": 22.7,
-      "display": "22.70",
+    "ev_1de8207f7af72ed9": {
+      "value": 0.6625,
+      "display": "0.66",
       "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpa9a905dd8ddb35",
-      "entity_name": "Adam Wharton",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c4153b311b3f3b28": {
-      "value": 0.109,
-      "display": "0.11",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp4673857a8f0b93",
-      "entity_name": "Kai Havertz",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c673e6b87f203593": {
-      "value": 0.6416,
-      "display": "0.64",
-      "unit": null,
-      "metric": "creativity_share",
+      "metric": "threat_share",
       "entity_type": "manager",
       "entity_id": "wikidata:Q185572",
       "entity_name": "Mikel Arteta",
       "source": "dugout_model:fingerprint",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_c6e5a14e969ca29a": {
-      "value": 73000000.0,
-      "display": "73000000",
+    "ev_1fd9e64132eaeaff": {
+      "value": "AFC Bournemouth",
+      "display": "AFC Bournemouth",
       "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpa439c3e46c0e10",
-      "entity_name": "Ryan Gravenberch",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ca597ba96799a989": {
-      "value": 0.0082,
-      "display": "0.01",
-      "unit": null,
-      "metric": "realism",
+      "metric": "candidate_club",
       "entity_type": "player",
       "entity_id": "rpdc0476ca208fd6",
       "entity_name": "Alex Scott",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_cbe050cfde67a348": {
-      "value": 68.0,
-      "display": "68",
+    "ev_2016ff005ead1815": {
+      "value": 1603.0,
+      "display": "1603",
       "unit": null,
-      "metric": "contract_months",
+      "metric": "minutes_last_year",
       "entity_type": "player",
-      "entity_id": "rpa439c3e46c0e10",
-      "entity_name": "Ryan Gravenberch",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_ccf0f603902d01b8": {
+    "ev_24c321175ee8cd15": {
+      "value": "LW",
+      "display": "LW",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rpa84927c432ea8f",
+      "entity_name": "Noni Madueke",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_28a72c667efd296a": {
+      "value": "Martín Zubimendi",
+      "display": "Martín Zubimendi",
+      "unit": null,
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2961e2121d59bfde": {
       "value": 5.0,
       "display": "5",
       "unit": null,
@@ -2700,9 +1485,1119 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/PL/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:31:34.588536+00:00",
+      "fetched_at": "2026-10-17T07:08:06.371555+00:00",
       "query_kind": "http_json",
       "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2a5325a42f899700": {
+      "value": 1.0,
+      "display": "1",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2aba2d5b86d8ca05": {
+      "value": 0.562,
+      "display": "0.56",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp92406ad5b09a1e",
+      "entity_name": "Archie Gray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2c67292953af46be": {
+      "value": "Crystal Palace",
+      "display": "Crystal Palace",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3569626d1a8888e4": {
+      "value": "LB",
+      "display": "LB",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rp2a8574691f4be8",
+      "entity_name": "Riccardo Calafiori",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_361cba1ed2d37e21": {
+      "value": "David Raya",
+      "display": "David Raya",
+      "unit": null,
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_36f0c3163ab15fe2": {
+      "value": 0.691,
+      "display": "0.69",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f68fa0a1552c615": {
+      "value": "elevated",
+      "display": "elevated",
+      "unit": null,
+      "metric": "injury_risk_tier",
+      "entity_type": "player",
+      "entity_id": "rp083a64f9207903",
+      "entity_name": "Ezri Konsa Ngoyo",
+      "source": "dugout_model:injury",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f6f20611d2fe146": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PL/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:08:06.371555+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_40260e5522017f90": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_433bd5f414fe8dfb": {
+      "value": 3.0,
+      "display": "3",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4e2a899057a5c6e0": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "one_in",
+      "entity_type": "rumour",
+      "entity_id": "e025e90ede033e5c-p2:julian alvarez",
+      "entity_name": "Julián Alvarez",
+      "source": "dugout_model:rumours",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4f53f1787311811e": {
+      "value": 0.0043,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpea439be8b67f00",
+      "entity_name": "Bart Verbruggen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4fc7b2c3dcad28b4": {
+      "value": 0.531,
+      "display": "0.53",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_56353a49de3335e9": {
+      "value": "Liverpool FC",
+      "display": "Liverpool FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_594eddab75f30816": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_595649459fe6b046": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59adbf5170dc9c50": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59b270dd581f33c1": {
+      "value": 35000000.0,
+      "display": "35000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp92406ad5b09a1e",
+      "entity_name": "Archie Gray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5b67acfc514d041c": {
+      "value": 0.305,
+      "display": "0.30",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d6efc08cb3a5619": {
+      "value": "Martín Zubimendi",
+      "display": "Martín Zubimendi",
+      "unit": null,
+      "metric": "need_bar_player",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d988a39be31e4e5": {
+      "value": 30000000.0,
+      "display": "30000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5e3894754a345fbd": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5ebbb3f2c6c2e171": {
+      "value": 32000000.0,
+      "display": "32000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6128fee218c79c28": {
+      "value": 1733.1,
+      "display": "1733.10",
+      "unit": null,
+      "metric": "elo",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_61c63e3da09c7d07": {
+      "value": 41600000.0,
+      "display": "41600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp92406ad5b09a1e",
+      "entity_name": "Archie Gray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_68295b32047ebbde": {
+      "value": "CM",
+      "display": "CM",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rpe0da48cba34547",
+      "entity_name": "Martin Ødegaard",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6ca487780efb23d9": {
+      "value": 60000000.0,
+      "display": "60000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp81c8e86b70acf0",
+      "entity_name": "Eberechi Eze",
+      "source": "transfermarkt",
+      "source_url": "https://www.transfermarkt.com/-/kader/verein/11/saison_id/2026/plus/1",
+      "source_tier": 3,
+      "fetched_at": "2026-10-14T00:00:00+00:00",
+      "query_kind": "file_csv",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_6e1d5b241e384741": {
+      "value": 0.667,
+      "display": "0.67",
+      "unit": null,
+      "metric": "need_ageing_share",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7113510c3e3c7da5": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_73ad0fa05d49123e": {
+      "value": 0.1856,
+      "display": "0.19",
+      "unit": null,
+      "metric": "p_home_win",
+      "entity_type": "match",
+      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
+      "entity_name": "Nottingham Forest v Arsenal",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_74fb8e7ca4a72e49": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_75db77a4a6a9a0b3": {
+      "value": 43800000.0,
+      "display": "43800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_76b8c1bad55b774c": {
+      "value": "Borussia Dortmund",
+      "display": "Borussia Dortmund",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_77833a01ca60c580": {
+      "value": 65000000.0,
+      "display": "65000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7939232f61409664": {
+      "value": 0.2478,
+      "display": "0.25",
+      "unit": null,
+      "metric": "p_draw",
+      "entity_type": "match",
+      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
+      "entity_name": "Nottingham Forest v Arsenal",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7ca20f96cace3fad": {
+      "value": "CM",
+      "display": "CM",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rp1b829f1d3468c4",
+      "entity_name": "Declan Rice",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_80f5f9110c6a0b1d": {
+      "value": 158.0,
+      "display": "158",
+      "unit": null,
+      "metric": "pl_matches",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q185572",
+      "entity_name": "Mikel Arteta",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8134c95d7f10a14e": {
+      "value": 0.101,
+      "display": "0.10",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp608dae0f18e8ee",
+      "entity_name": "Myles Lewis-Skelly",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_83bf4e6378b38305": {
+      "value": 20.6,
+      "display": "20.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp92406ad5b09a1e",
+      "entity_name": "Archie Gray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_88971ffce4da9c19": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpdc0476ca208fd6",
+      "entity_name": "Alex Scott",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_893d953f436dace1": {
+      "value": 19.4,
+      "display": "19.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8aadb92d82b593cd": {
+      "value": "DM",
+      "display": "DM",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rp73f8e53a5d904a",
+      "entity_name": "Bruno Guimarães Rodriguez Moura",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8ab227d31ee48de5": {
+      "value": 1468.8,
+      "display": "1468.80",
+      "unit": null,
+      "metric": "elo",
+      "entity_type": "club",
+      "entity_id": "nottingham-forest",
+      "entity_name": "Nottingham Forest",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d65e75575c70001": {
+      "value": "WLWWW",
+      "display": "WLWWW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PL/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-17T07:08:06.371555+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_9055e6aec29898b1": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_958133af1762a895": {
+      "value": "RW",
+      "display": "RW",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rp56bd0fc61d9da5",
+      "entity_name": "Bukayo Saka",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9c7096a9427a64ca": {
+      "value": 2519.0,
+      "display": "2519",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rpdc0476ca208fd6",
+      "entity_name": "Alex Scott",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9d98e645f8200c17": {
+      "value": 2288.0,
+      "display": "2288",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e1409251854df58": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a0cf059d00c0cfb9": {
+      "value": "GK",
+      "display": "GK",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rpb9cc4542f20788",
+      "entity_name": "David Raya Martín",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a28d55c3a40b970d": {
+      "value": 71800000.0,
+      "display": "71800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp51ffde383cd908",
+      "entity_name": "Jurriën Timber",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a4038c2eed58260e": {
+      "value": 0.109,
+      "display": "0.11",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp4673857a8f0b93",
+      "entity_name": "Kai Havertz",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a6281c5081047126": {
+      "value": 73000000.0,
+      "display": "73000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a66165efcf488643": {
+      "value": "Manchester United",
+      "display": "Manchester United",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a85921111373153a": {
+      "value": 1.8354,
+      "display": "1.84",
+      "unit": null,
+      "metric": "xg_for",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q185572",
+      "entity_name": "Mikel Arteta",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a8f2c478858e7781": {
+      "value": 0.579,
+      "display": "0.58",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a94f425ed758f86b": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aae0174970360e18": {
+      "value": 68.0,
+      "display": "68",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ada3209422adb4d3": {
+      "value": "RB",
+      "display": "RB",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rpac76683dd9984b",
+      "entity_name": "Benjamin White",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b11d06c3d07bc7ee": {
+      "value": 70000000.0,
+      "display": "70000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpdc0476ca208fd6",
+      "entity_name": "Alex Scott",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b3c8b1695876d984": {
+      "value": 50500000.0,
+      "display": "50500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpea439be8b67f00",
+      "entity_name": "Bart Verbruggen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b43d9394404f25be": {
+      "value": 69000000.0,
+      "display": "69000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bae83df4c476ae62": {
+      "value": 93.4773,
+      "display": "93.48",
+      "unit": null,
+      "metric": "def_actions",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q185572",
+      "entity_name": "Mikel Arteta",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_befb9608d76e4c3b": {
+      "value": 1.5113,
+      "display": "1.51",
+      "unit": null,
+      "metric": "exp_away_goals",
+      "entity_type": "match",
+      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
+      "entity_name": "Nottingham Forest v Arsenal",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c30ce4f0681653bf": {
+      "value": 22.7,
+      "display": "22.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c3c3c02d0910103d": {
+      "value": 75.0,
+      "display": "75",
+      "unit": "%",
+      "metric": "season_chance_of_playing_next_round",
+      "entity_type": "player",
+      "entity_id": "rp05816c1bdf0e44",
+      "entity_name": "Martín Zubimendi Ibáñez",
+      "source": "fpl",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/",
+      "source_tier": 1,
+      "fetched_at": "2026-10-17T07:07:16.320101+00:00",
+      "query_kind": "http_json",
+      "status": "verified",
+      "cross_checks": [
+        {
+          "source": "api_football",
+          "value": "doubtful",
+          "agrees": true
+        }
+      ]
+    },
+    "ev_c7c1fd5d3a102920": {
+      "value": 23.2,
+      "display": "23.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdc0476ca208fd6",
+      "entity_name": "Alex Scott",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ce2a45fe7eaf7954": {
+      "value": "CB",
+      "display": "CB",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rpe32943ceca4f2b",
+      "entity_name": "Gabriel dos Santos Magalhães",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d0d050340a76da11": {
+      "value": "2026-10-18T15:30:00+00:00",
+      "display": "2026-10-18T15:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
+      "entity_name": "Nottingham Forest v Arsenal",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
       "cross_checks": []
     },
     "ev_d0f34cf4e792f17a": {
@@ -2721,24 +2616,152 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_d8e462b178e4bf0b": {
-      "value": 75000000.0,
-      "display": "75000000",
+    "ev_d440b77564178d1f": {
+      "value": 21.2,
+      "display": "21.20",
       "unit": null,
-      "metric": "market_value",
+      "metric": "age",
       "entity_type": "player",
-      "entity_id": "rpa439c3e46c0e10",
-      "entity_name": "Ryan Gravenberch",
+      "entity_id": "rpe25668919b6e49",
+      "entity_name": "Mike Penders",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_d9383384e6c08b4b": {
-      "value": 0.5667,
+    "ev_d47c00d67d193eb5": {
+      "value": 0.889,
+      "display": "0.89",
+      "unit": null,
+      "metric": "xg_against",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q185572",
+      "entity_name": "Mikel Arteta",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d4868f4ac11bda7b": {
+      "value": 0.0082,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpdc0476ca208fd6",
+      "entity_name": "Alex Scott",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d669de14b807c567": {
+      "value": 24.2,
+      "display": "24.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpea439be8b67f00",
+      "entity_name": "Bart Verbruggen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d8025eec94eef58e": {
+      "value": "4-3-3",
+      "display": "4-3-3",
+      "unit": null,
+      "metric": "predicted_formation",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d8251f9744a39a55": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d8ab3d618b7be510": {
+      "value": 0.443,
+      "display": "0.44",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_df982ff6c8b354b1": {
+      "value": 0.104,
+      "display": "0.10",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp2208a2663396a3",
+      "entity_name": "Mikel Merino Zazón",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e05de13880cd4291": {
+      "value": 30000000.0,
+      "display": "30000000",
+      "unit": null,
+      "metric": "need_bar_value",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e0c9e1eee78dcc91": {
+      "value": 0.5666,
       "display": "0.57",
       "unit": null,
       "metric": "p_away_win",
@@ -2748,140 +2771,44 @@
       "source": "dugout_model:predictor",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_dc1fafb232bd7835": {
-      "value": 1.8354,
-      "display": "1.84",
+    "ev_e186dddef92c62cc": {
+      "value": 65000000.0,
+      "display": "65000000",
       "unit": null,
-      "metric": "xg_for",
-      "entity_type": "manager",
-      "entity_id": "wikidata:Q185572",
-      "entity_name": "Mikel Arteta",
-      "source": "dugout_model:fingerprint",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ddbfb54f0a1aeef2": {
-      "value": "Tottenham Hotspur",
-      "display": "Tottenham Hotspur",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp92406ad5b09a1e",
-      "entity_name": "Archie Gray",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e2e9840f292ad733": {
-      "value": "Manchester United",
-      "display": "Manchester United",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpee56c1079dbe50",
-      "entity_name": "Kobbie Mainoo",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e3b48fd8abf12fe2": {
-      "value": "Borussia Dortmund",
-      "display": "Borussia Dortmund",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp4ca2754dc37950",
-      "entity_name": "Jobe Bellingham",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e3d0bbbeec837a45": {
-      "value": 90100000.0,
-      "display": "90100000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpa9a905dd8ddb35",
-      "entity_name": "Adam Wharton",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e5263d2d40cbc7c6": {
-      "value": "FC Barcelona",
-      "display": "FC Barcelona",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rpd53c870cfedbb6",
-      "entity_name": "Marc Bernal",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e6389ceeb645ce9d": {
-      "value": "goalkeeper",
-      "display": "goalkeeper",
-      "unit": null,
-      "metric": "need",
+      "metric": "need_bar_value",
       "entity_type": "club",
       "entity_id": "arsenal",
       "entity_name": "Arsenal",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_eac4ae96f66df5dd": {
-      "value": "CB",
-      "display": "CB",
+    "ev_e541feb03b1b73f7": {
+      "value": 95600000.0,
+      "display": "95600000",
       "unit": null,
-      "metric": "predicted_xi_slot",
+      "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rpe32943ceca4f2b",
-      "entity_name": "Gabriel dos Santos Magalhães",
-      "source": "dugout_model:lineup",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f0d80c1aaddccd39": {
+    "ev_e64835bcd1df82e8": {
       "value": 24.4,
       "display": "24.40",
       "unit": null,
@@ -2892,39 +2819,135 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f14d5539da009280": {
-      "value": 50500000.0,
-      "display": "50500000",
+    "ev_e67fe58da7196a03": {
+      "value": 90100000.0,
+      "display": "90100000",
       "unit": null,
       "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rpea439be8b67f00",
-      "entity_name": "Bart Verbruggen",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f32f9db791e42de2": {
-      "value": 0.2478,
-      "display": "0.25",
+    "ev_e6b8e07d982ee2fb": {
+      "value": 0.6416,
+      "display": "0.64",
       "unit": null,
-      "metric": "p_draw",
-      "entity_type": "match",
-      "entity_id": "premier_league:2026-27:nottingham-forest:arsenal",
-      "entity_name": "Nottingham Forest v Arsenal",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "metric": "creativity_share",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q185572",
+      "entity_name": "Mikel Arteta",
+      "source": "dugout_model:fingerprint",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e882ba20e11a4608": {
+      "value": "CB",
+      "display": "CB",
+      "unit": null,
+      "metric": "predicted_xi_slot",
+      "entity_type": "player",
+      "entity_id": "rp083a64f9207903",
+      "entity_name": "Ezri Konsa Ngoyo",
+      "source": "dugout_model:lineup",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e91f84caf252ad23": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ea3483c1b06c7711": {
+      "value": 0.304,
+      "display": "0.30",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpdc0476ca208fd6",
+      "entity_name": "Alex Scott",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ee719dc31763d587": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f2583f0fbddf4f41": {
+      "value": "David Raya",
+      "display": "David Raya",
+      "unit": null,
+      "metric": "need_bar_player",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f45b6e4c63c7add8": {
+      "value": 30000000.0,
+      "display": "30000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "arsenal",
+      "entity_name": "Arsenal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -2945,39 +2968,7 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_f77d846f8f6e8461": {
-      "value": 45900000.0,
-      "display": "45900000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp92406ad5b09a1e",
-      "entity_name": "Archie Gray",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_f7a1992143da053a": {
-      "value": 21.2,
-      "display": "21.20",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpe25668919b6e49",
-      "entity_name": "Mike Penders",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_f84b75baad7ccdce": {
+    "ev_f9ddce52f247bbb3": {
       "value": 15.0,
       "display": "15",
       "unit": null,
@@ -2988,39 +2979,23 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/PL/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:31:34.588536+00:00",
+      "fetched_at": "2026-10-17T07:08:06.371555+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_fbefc2586a137d28": {
-      "value": 69500000.0,
-      "display": "69500000",
+    "ev_fddea72d554f2e89": {
+      "value": 45900000.0,
+      "display": "45900000",
       "unit": null,
-      "metric": "fair_fee",
+      "metric": "proj_value_4y",
       "entity_type": "player",
-      "entity_id": "rp2a8574691f4be8",
-      "entity_name": "Riccardo Calafiori",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "entity_id": "rp92406ad5b09a1e",
+      "entity_name": "Archie Gray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_fc1aa23a0831e871": {
-      "value": 0.104,
-      "display": "0.10",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp2208a2663396a3",
-      "entity_name": "Mikel Merino Zazón",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -3029,37 +3004,37 @@
   "key_stats": {
     "club": [
       {
-        "stat": "ev_672478582d8759ab",
+        "stat": "ev_3f6f20611d2fe146",
         "display": "2nd",
         "label": "league position",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_f84b75baad7ccdce",
+        "stat": "ev_f9ddce52f247bbb3",
         "display": "15",
         "label": "league points",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_b9abe94df258c446",
+        "stat": "ev_0bd525f880caec6a",
         "display": "10",
         "label": "league goals scored",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_ccf0f603902d01b8",
+        "stat": "ev_2961e2121d59bfde",
         "display": "5",
         "label": "league goals conceded",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_2e6c09c470924331",
+        "stat": "ev_8d65e75575c70001",
         "display": "WLWWW",
         "label": "recent league results, oldest first",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_4681a53a8a4aeba4",
+        "stat": "ev_6128fee218c79c28",
         "display": "1733",
         "label": "Elo rating (dugout's own)",
         "subject": "Arsenal"
@@ -3071,37 +3046,37 @@
         "subject": "Mikel Arteta"
       },
       {
-        "stat": "ev_4333a50efdfe3f22",
+        "stat": "ev_80f5f9110c6a0b1d",
         "display": "158",
         "label": "Premier League matches in the style sample",
         "subject": "Mikel Arteta"
       },
       {
-        "stat": "ev_01f922a86cc7a4f1",
+        "stat": "ev_1de8207f7af72ed9",
         "display": "66%",
         "label": "share of the match threat (territory)",
         "subject": "Mikel Arteta"
       },
       {
-        "stat": "ev_606d44e42cdefaa9",
+        "stat": "ev_bae83df4c476ae62",
         "display": "93",
         "label": "defensive actions per match",
         "subject": "Mikel Arteta"
       },
       {
-        "stat": "ev_dc1fafb232bd7835",
+        "stat": "ev_a85921111373153a",
         "display": "1.84",
         "label": "expected goals for per match",
         "subject": "Mikel Arteta"
       },
       {
-        "stat": "ev_357bd3c8db047e30",
+        "stat": "ev_d47c00d67d193eb5",
         "display": "0.89",
         "label": "expected goals against per match",
         "subject": "Mikel Arteta"
       },
       {
-        "stat": "ev_c673e6b87f203593",
+        "stat": "ev_e6b8e07d982ee2fb",
         "display": "64%",
         "label": "share of chance creation",
         "subject": "Mikel Arteta"
@@ -3109,49 +3084,49 @@
     ],
     "match": [
       {
-        "stat": "ev_9e61f4547d6bd865",
+        "stat": "ev_d0d050340a76da11",
         "display": "18 October 2026",
         "label": "kick-off date",
         "subject": "Nottingham Forest v Arsenal"
       },
       {
-        "stat": "ev_27c91de6016060df",
+        "stat": "ev_73ad0fa05d49123e",
         "display": "19%",
         "label": "probability Nottingham Forest win",
         "subject": "Nottingham Forest"
       },
       {
-        "stat": "ev_f32f9db791e42de2",
+        "stat": "ev_7939232f61409664",
         "display": "25%",
         "label": "probability of a draw",
         "subject": "Nottingham Forest v Arsenal"
       },
       {
-        "stat": "ev_d9383384e6c08b4b",
+        "stat": "ev_e0c9e1eee78dcc91",
         "display": "57%",
         "label": "probability Arsenal win",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_a09b2a61cada4c29",
+        "stat": "ev_1653f79db8eeb8dd",
         "display": "0.9",
         "label": "expected goals in this match",
         "subject": "Nottingham Forest"
       },
       {
-        "stat": "ev_bd870e4aa1d20e8c",
+        "stat": "ev_befb9608d76e4c3b",
         "display": "1.5",
         "label": "expected goals in this match",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_4681a53a8a4aeba4",
+        "stat": "ev_6128fee218c79c28",
         "display": "1733",
         "label": "Elo rating (dugout's own)",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_95506c53f06df362",
+        "stat": "ev_8ab227d31ee48de5",
         "display": "1469",
         "label": "Elo rating (dugout's own)",
         "subject": "Nottingham Forest"
@@ -3159,79 +3134,79 @@
     ],
     "lineup": [
       {
-        "stat": "ev_8f0bf7aab0096029",
+        "stat": "ev_d8025eec94eef58e",
         "display": "4-3-3",
         "label": "predicted formation for the next match",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_39e5efe046bab5b7",
+        "stat": "ev_a0cf059d00c0cfb9",
         "display": "GK",
         "label": "predicted starting slot (goalkeeper)",
         "subject": "David Raya Martín"
       },
       {
-        "stat": "ev_ac78d9806f596d59",
+        "stat": "ev_e882ba20e11a4608",
         "display": "CB",
         "label": "predicted starting slot (centre-back)",
         "subject": "Ezri Konsa Ngoyo"
       },
       {
-        "stat": "ev_2a2e00933fda6d94",
+        "stat": "ev_3f68fa0a1552c615",
         "display": "elevated",
         "label": "injury-risk tier (estimate from load and injury history)",
         "subject": "Ezri Konsa Ngoyo"
       },
       {
-        "stat": "ev_eac4ae96f66df5dd",
+        "stat": "ev_ce2a45fe7eaf7954",
         "display": "CB",
         "label": "predicted starting slot (centre-back)",
         "subject": "Gabriel dos Santos Magalhães"
       },
       {
-        "stat": "ev_476f5715252e41c6",
+        "stat": "ev_ada3209422adb4d3",
         "display": "RB",
         "label": "predicted starting slot (right-back)",
         "subject": "Benjamin White"
       },
       {
-        "stat": "ev_4ec31fa6cbae16aa",
+        "stat": "ev_3569626d1a8888e4",
         "display": "LB",
         "label": "predicted starting slot (left-back)",
         "subject": "Riccardo Calafiori"
       },
       {
-        "stat": "ev_9d219eb48bc469d5",
+        "stat": "ev_8aadb92d82b593cd",
         "display": "DM",
         "label": "predicted starting slot (defensive midfield)",
         "subject": "Bruno Guimarães Rodriguez Moura"
       },
       {
-        "stat": "ev_a229ac3800e88c5f",
+        "stat": "ev_7ca20f96cace3fad",
         "display": "CM",
         "label": "predicted starting slot (central midfield)",
         "subject": "Declan Rice"
       },
       {
-        "stat": "ev_9c38ca3c17d9e666",
+        "stat": "ev_68295b32047ebbde",
         "display": "CM",
         "label": "predicted starting slot (central midfield)",
         "subject": "Martin Ødegaard"
       },
       {
-        "stat": "ev_97d86a00f5edfe00",
+        "stat": "ev_958133af1762a895",
         "display": "RW",
         "label": "predicted starting slot (right wing)",
         "subject": "Bukayo Saka"
       },
       {
-        "stat": "ev_aea6ec091e319e28",
+        "stat": "ev_24c321175ee8cd15",
         "display": "LW",
         "label": "predicted starting slot (left wing)",
         "subject": "Noni Madueke"
       },
       {
-        "stat": "ev_37ae0cbbdb89a22d",
+        "stat": "ev_0a2e19e5e363e086",
         "display": "CF",
         "label": "predicted starting slot (centre-forward)",
         "subject": "Kai Havertz"
@@ -3239,7 +3214,7 @@
     ],
     "news": [
       {
-        "stat": "ev_4580fe6f94df27f9",
+        "stat": "ev_c3c3c02d0910103d",
         "display": "75",
         "label": "chance of playing next round (FPL)",
         "subject": "Martín Zubimendi Ibáñez"
@@ -3247,19 +3222,19 @@
     ],
     "transfer": [
       {
-        "stat": "ev_c4153b311b3f3b28",
+        "stat": "ev_a4038c2eed58260e",
         "display": "11%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Kai Havertz"
       },
       {
-        "stat": "ev_fc1aa23a0831e871",
+        "stat": "ev_df982ff6c8b354b1",
         "display": "10%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Mikel Merino Zazón"
       },
       {
-        "stat": "ev_c15b1371a22703a7",
+        "stat": "ev_8134c95d7f10a14e",
         "display": "10%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Myles Lewis-Skelly"
@@ -3271,10 +3246,22 @@
         "subject": "Riccardo Calafiori"
       },
       {
-        "stat": "ev_fbefc2586a137d28",
+        "stat": "ev_137d171070b8d31b",
         "display": "€69.5m",
         "label": "estimated fair fee if sold to another Premier League club",
         "subject": "Riccardo Calafiori"
+      },
+      {
+        "stat": "ev_6ca487780efb23d9",
+        "display": "€60.0m",
+        "label": "market value (Transfermarkt)",
+        "subject": "Eberechi Eze"
+      },
+      {
+        "stat": "ev_1cb6ff66cd5f3a73",
+        "display": "€44.4m",
+        "label": "estimated fair fee if sold to another Premier League club",
+        "subject": "Eberechi Eze"
       },
       {
         "stat": "ev_d0f34cf4e792f17a",
@@ -3283,316 +3270,442 @@
         "subject": "Jurriën Timber"
       },
       {
-        "stat": "ev_a98975708f442137",
+        "stat": "ev_a28d55c3a40b970d",
         "display": "€71.8m",
         "label": "estimated fair fee if sold to another Premier League club",
         "subject": "Jurriën Timber"
-      },
-      {
-        "stat": "ev_a2ae775d51343c22",
-        "display": "€45.0m",
-        "label": "market value (Transfermarkt)",
-        "subject": "Noni Madueke"
-      },
-      {
-        "stat": "ev_18546542606a8fe9",
-        "display": "€48.8m",
-        "label": "estimated fair fee if sold to another Premier League club",
-        "subject": "Noni Madueke"
       }
     ],
     "scout": [
       {
-        "stat": "ev_5d99fb8d26b4f45c",
+        "stat": "ev_4e2a899057a5c6e0",
         "display": "5",
         "label": "rumour track record",
         "subject": "Julián Alvarez"
       },
       {
-        "stat": "ev_34b1b33a504b27ff",
+        "stat": "ev_a94f425ed758f86b",
         "display": "defensive midfield",
         "label": "squad need, priority one",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_f0d80c1aaddccd39",
+        "stat": "ev_2a5325a42f899700",
+        "display": "1",
+        "label": "players for the position, veterans aside (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_59adbf5170dc9c50",
+        "display": "2",
+        "label": "players a squad carries there (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_28a72c667efd296a",
+        "display": "Martín Zubimendi",
+        "label": "best option there (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_5d6efc08cb3a5619",
+        "display": "Martín Zubimendi",
+        "label": "last regular starter there (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_e186dddef92c62cc",
+        "display": "€65.0m",
+        "label": "last regular starter's market value (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_77833a01ca60c580",
+        "display": "€65.0m",
+        "label": "best option's market value (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_594eddab75f30816",
+        "display": "€75.0m",
+        "label": "similar squads' best option's market value (need one)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_e64835bcd1df82e8",
         "display": "24",
         "label": "age (best target)",
         "subject": "Ryan Gravenberch"
       },
       {
-        "stat": "ev_79449508b59ce131",
+        "stat": "ev_56353a49de3335e9",
         "display": "Liverpool FC",
         "label": "current club",
         "subject": "Ryan Gravenberch"
       },
       {
-        "stat": "ev_cbe050cfde67a348",
+        "stat": "ev_010413009f497b0c",
+        "display": "3700",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_aae0174970360e18",
         "display": "68",
         "label": "months left on his contract",
         "subject": "Ryan Gravenberch"
       },
       {
-        "stat": "ev_d8e462b178e4bf0b",
+        "stat": "ev_7113510c3e3c7da5",
         "display": "€75.0m",
         "label": "market value",
         "subject": "Ryan Gravenberch"
       },
       {
-        "stat": "ev_c6e5a14e969ca29a",
+        "stat": "ev_a6281c5081047126",
         "display": "€73.0m",
         "label": "estimated fair fee",
         "subject": "Ryan Gravenberch"
       },
       {
-        "stat": "ev_41dfecf11f84a6fb",
+        "stat": "ev_a8f2c478858e7781",
         "display": "58%",
         "label": "expected share of minutes at the club",
         "subject": "Ryan Gravenberch"
       },
       {
-        "stat": "ev_c33f45c4f5cf3491",
+        "stat": "ev_c30ce4f0681653bf",
         "display": "23",
         "label": "age (best target)",
         "subject": "Adam Wharton"
       },
       {
-        "stat": "ev_3270d447d73faa4f",
+        "stat": "ev_2c67292953af46be",
         "display": "Crystal Palace",
         "label": "current club",
         "subject": "Adam Wharton"
       },
       {
-        "stat": "ev_8c97792e2491fd43",
+        "stat": "ev_9d98e645f8200c17",
+        "display": "2288",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_e91f84caf252ad23",
         "display": "32",
         "label": "months left on his contract",
         "subject": "Adam Wharton"
       },
       {
-        "stat": "ev_b01d0d8efb458fca",
+        "stat": "ev_74fb8e7ca4a72e49",
         "display": "€75.0m",
         "label": "market value",
         "subject": "Adam Wharton"
       },
       {
-        "stat": "ev_e3d0bbbeec837a45",
+        "stat": "ev_e67fe58da7196a03",
         "display": "€90.1m",
         "label": "estimated fair fee",
         "subject": "Adam Wharton"
       },
       {
-        "stat": "ev_4fc3a5823321e7bb",
+        "stat": "ev_4fc7b2c3dcad28b4",
         "display": "53%",
         "label": "expected share of minutes at the club",
         "subject": "Adam Wharton"
       },
       {
-        "stat": "ev_077d79b857363453",
+        "stat": "ev_5e3894754a345fbd",
         "display": "22",
         "label": "age (best target)",
         "subject": "Kobbie Mainoo"
       },
       {
-        "stat": "ev_e2e9840f292ad733",
+        "stat": "ev_a66165efcf488643",
         "display": "Manchester United",
         "label": "current club",
         "subject": "Kobbie Mainoo"
       },
       {
-        "stat": "ev_4df87dc541d5435e",
+        "stat": "ev_2016ff005ead1815",
+        "display": "1603",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Kobbie Mainoo"
+      },
+      {
+        "stat": "ev_40260e5522017f90",
         "display": "56",
         "label": "months left on his contract",
         "subject": "Kobbie Mainoo"
       },
       {
-        "stat": "ev_8f04976ab02d1566",
+        "stat": "ev_ee719dc31763d587",
         "display": "€75.0m",
         "label": "market value",
         "subject": "Kobbie Mainoo"
       },
       {
-        "stat": "ev_288834e0d54ba0b0",
+        "stat": "ev_e541feb03b1b73f7",
         "display": "€95.6m",
         "label": "estimated fair fee",
         "subject": "Kobbie Mainoo"
       },
       {
-        "stat": "ev_8b24be3c90e4874a",
+        "stat": "ev_d8ab3d618b7be510",
         "display": "44%",
         "label": "expected share of minutes at the club",
         "subject": "Kobbie Mainoo"
       },
       {
-        "stat": "ev_31022cdb3af0884c",
+        "stat": "ev_c7c1fd5d3a102920",
         "display": "23",
         "label": "age (realistic target)",
         "subject": "Alex Scott"
       },
       {
-        "stat": "ev_052ffcdc4e4a0e03",
+        "stat": "ev_1fd9e64132eaeaff",
         "display": "AFC Bournemouth",
         "label": "current club",
         "subject": "Alex Scott"
       },
       {
-        "stat": "ev_440bd30fade31840",
+        "stat": "ev_9c7096a9427a64ca",
+        "display": "2519",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Alex Scott"
+      },
+      {
+        "stat": "ev_ea3483c1b06c7711",
         "display": "30%",
         "label": "chance his club sells him in a window",
         "subject": "Alex Scott"
       },
       {
-        "stat": "ev_7dcc0ed18e3f0f51",
+        "stat": "ev_88971ffce4da9c19",
         "display": "20",
         "label": "months left on his contract",
         "subject": "Alex Scott"
       },
       {
-        "stat": "ev_6fa775251eb0b451",
+        "stat": "ev_b11d06c3d07bc7ee",
+        "display": "€70.0m",
+        "label": "market value",
+        "subject": "Alex Scott"
+      },
+      {
+        "stat": "ev_0836ab046bc8d0d0",
         "display": "€82.8m",
         "label": "estimated fair fee",
         "subject": "Alex Scott"
       },
       {
-        "stat": "ev_ca597ba96799a989",
+        "stat": "ev_d4868f4ac11bda7b",
         "display": "0.8%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Alex Scott"
       },
       {
-        "stat": "ev_1066ecbff9540bd5",
+        "stat": "ev_893d953f436dace1",
         "display": "19",
         "label": "age (gem target)",
         "subject": "Marc Bernal"
       },
       {
-        "stat": "ev_e5263d2d40cbc7c6",
+        "stat": "ev_595649459fe6b046",
         "display": "FC Barcelona",
         "label": "current club",
         "subject": "Marc Bernal"
       },
       {
-        "stat": "ev_909e7f26dc8a601b",
+        "stat": "ev_5b67acfc514d041c",
         "display": "30%",
         "label": "share of his club's minutes over the last year",
         "subject": "Marc Bernal"
       },
       {
-        "stat": "ev_253c1b269f3598eb",
+        "stat": "ev_5d988a39be31e4e5",
+        "display": "€30.0m",
+        "label": "market value",
+        "subject": "Marc Bernal"
+      },
+      {
+        "stat": "ev_5ebbb3f2c6c2e171",
         "display": "€32.0m",
         "label": "estimated fair fee",
         "subject": "Marc Bernal"
       },
       {
-        "stat": "ev_132812833c817beb",
+        "stat": "ev_b43d9394404f25be",
         "display": "€69.0m",
         "label": "projected market value in a few seasons",
         "subject": "Marc Bernal"
       },
       {
-        "stat": "ev_16a5cfa5a98a5f7b",
+        "stat": "ev_14f2dde7575851e8",
         "display": "21",
         "label": "age (gem target)",
         "subject": "Jobe Bellingham"
       },
       {
-        "stat": "ev_e3b48fd8abf12fe2",
+        "stat": "ev_76b8c1bad55b774c",
         "display": "Borussia Dortmund",
         "label": "current club",
         "subject": "Jobe Bellingham"
       },
       {
-        "stat": "ev_7191d48fb878648f",
+        "stat": "ev_36f0c3163ab15fe2",
         "display": "69%",
         "label": "share of his club's minutes over the last year",
         "subject": "Jobe Bellingham"
       },
       {
-        "stat": "ev_0288c81048fd0e8f",
+        "stat": "ev_d8251f9744a39a55",
+        "display": "€40.0m",
+        "label": "market value",
+        "subject": "Jobe Bellingham"
+      },
+      {
+        "stat": "ev_75db77a4a6a9a0b3",
         "display": "€43.8m",
         "label": "estimated fair fee",
         "subject": "Jobe Bellingham"
       },
       {
-        "stat": "ev_b03413a6ed7ea2f7",
+        "stat": "ev_14b544420465ea2f",
         "display": "€63.9m",
         "label": "projected market value in a few seasons",
         "subject": "Jobe Bellingham"
       },
       {
-        "stat": "ev_8b9abd6c1837c334",
+        "stat": "ev_83bf4e6378b38305",
         "display": "21",
         "label": "age (gem target)",
         "subject": "Archie Gray"
       },
       {
-        "stat": "ev_ddbfb54f0a1aeef2",
+        "stat": "ev_164e3610f43b0d79",
         "display": "Tottenham Hotspur",
         "label": "current club",
         "subject": "Archie Gray"
       },
       {
-        "stat": "ev_0b50d6f7856bb4d8",
+        "stat": "ev_2aba2d5b86d8ca05",
         "display": "56%",
         "label": "share of his club's minutes over the last year",
         "subject": "Archie Gray"
       },
       {
-        "stat": "ev_4a877ab224c66420",
+        "stat": "ev_59b270dd581f33c1",
+        "display": "€35.0m",
+        "label": "market value",
+        "subject": "Archie Gray"
+      },
+      {
+        "stat": "ev_61c63e3da09c7d07",
         "display": "€41.6m",
         "label": "estimated fair fee",
         "subject": "Archie Gray"
       },
       {
-        "stat": "ev_f77d846f8f6e8461",
+        "stat": "ev_fddea72d554f2e89",
         "display": "€45.9m",
         "label": "projected market value in a few seasons",
         "subject": "Archie Gray"
       },
       {
-        "stat": "ev_e6389ceeb645ce9d",
+        "stat": "ev_038fe783873c6ddf",
         "display": "goalkeeper",
         "label": "squad need, priority two",
         "subject": "Arsenal"
       },
       {
-        "stat": "ev_024ff4c9e3592860",
+        "stat": "ev_433bd5f414fe8dfb",
+        "display": "3",
+        "label": "players for the position, veterans aside (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_9e1409251854df58",
+        "display": "2",
+        "label": "players a squad carries there (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_361cba1ed2d37e21",
+        "display": "David Raya",
+        "label": "best option there (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_f2583f0fbddf4f41",
+        "display": "David Raya",
+        "label": "last regular starter there (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_e05de13880cd4291",
+        "display": "€30.0m",
+        "label": "last regular starter's market value (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_f45b6e4c63c7add8",
+        "display": "€30.0m",
+        "label": "best option's market value (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_0cfb440e239ad170",
+        "display": "€27.5m",
+        "label": "similar squads' best option's market value (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_6e1d5b241e384741",
+        "display": "67%",
+        "label": "share of the options who are veterans (need two)",
+        "subject": "Arsenal"
+      },
+      {
+        "stat": "ev_10c1f18c36659bef",
         "display": "28",
         "label": "age (best target, second need)",
         "subject": "Gianluigi Donnarumma"
       },
       {
-        "stat": "ev_6d8cded7ef32a18d",
+        "stat": "ev_9055e6aec29898b1",
         "display": "€45.0m",
         "label": "market value",
         "subject": "Gianluigi Donnarumma"
       },
       {
-        "stat": "ev_96c24407c1a42df5",
+        "stat": "ev_d669de14b807c567",
         "display": "24",
         "label": "age (realistic target, second need)",
         "subject": "Bart Verbruggen"
       },
       {
-        "stat": "ev_f14d5539da009280",
+        "stat": "ev_b3c8b1695876d984",
         "display": "€50.5m",
         "label": "estimated fair fee",
         "subject": "Bart Verbruggen"
       },
       {
-        "stat": "ev_9981bc66e3a00977",
+        "stat": "ev_4f53f1787311811e",
         "display": "0.4%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Bart Verbruggen"
       },
       {
-        "stat": "ev_f7a1992143da053a",
+        "stat": "ev_d440b77564178d1f",
         "display": "21",
         "label": "age (gem target, second need)",
         "subject": "Mike Penders"
       },
       {
-        "stat": "ev_1a08176f21b0f7bf",
-        "display": "€38.8m",
+        "stat": "ev_033e24fa6bb59407",
+        "display": "€39.8m",
         "label": "projected market value in a few seasons",
         "subject": "Mike Penders"
       }
@@ -3605,8 +3718,8 @@
       "numbers_untraceable": 0
     },
     "fact_check_claims": {
-      "verified": 79,
-      "unverified": 5
+      "verified": 47,
+      "analysis": 2
     },
     "sections_published": 7,
     "sections_withheld": 0

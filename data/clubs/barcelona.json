@@ -10,8 +10,8 @@
     "name": "La Liga",
     "country": "Spain"
   },
-  "generated_at": "2026-10-16T23:54:12+00:00",
-  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "generated_at": "2026-10-17T08:38:01+00:00",
+  "data_as_of": "2026-10-17T08:18:37+00:00",
   "llm": null,
   "summary": {
     "agent": "director",
@@ -26,7 +26,7 @@
             "text": "Barcelona are "
           },
           {
-            "stat": "ev_0b9a0585bdafd4fa",
+            "stat": "ev_7da3413d796d7646",
             "display": "1st"
           },
           {
@@ -44,7 +44,7 @@
             "text": "Barcelona have "
           },
           {
-            "stat": "ev_976913dee52eadf5",
+            "stat": "ev_709a8a577c174bb2",
             "display": "24"
           },
           {
@@ -62,7 +62,7 @@
             "text": "Barcelona's next league match is Real Betis v Barcelona on "
           },
           {
-            "stat": "ev_ce6dac16c549bd07",
+            "stat": "ev_b520498fa83151cc",
             "display": "17 October 2026"
           },
           {
@@ -80,7 +80,7 @@
             "text": "Barcelona's biggest squad need is "
           },
           {
-            "stat": "ev_fc8408ce820db3f5",
+            "stat": "ev_9814f30422c29bac",
             "display": "centre-forward"
           },
           {
@@ -109,7 +109,7 @@
               "text": "Barcelona are "
             },
             {
-              "stat": "ev_0b9a0585bdafd4fa",
+              "stat": "ev_7da3413d796d7646",
               "display": "1st"
             },
             {
@@ -127,7 +127,7 @@
               "text": "Barcelona have "
             },
             {
-              "stat": "ev_976913dee52eadf5",
+              "stat": "ev_709a8a577c174bb2",
               "display": "24"
             },
             {
@@ -145,7 +145,7 @@
               "text": "Barcelona have scored "
             },
             {
-              "stat": "ev_c5b97eaca8a2e3e2",
+              "stat": "ev_4c0a53604f914007",
               "display": "34"
             },
             {
@@ -163,7 +163,7 @@
               "text": "Barcelona have conceded "
             },
             {
-              "stat": "ev_ec6cd4efd146d0cc",
+              "stat": "ev_585bec7d5c49f6e7",
               "display": "7"
             },
             {
@@ -181,7 +181,7 @@
               "text": "Barcelona's most recent league results read "
             },
             {
-              "stat": "ev_b818405b02ff8ceb",
+              "stat": "ev_2945d8d3859169ab",
               "display": "WWWWW"
             },
             {
@@ -227,7 +227,7 @@
               "text": "Barcelona's next league match is Real Betis v Barcelona on "
             },
             {
-              "stat": "ev_ce6dac16c549bd07",
+              "stat": "ev_b520498fa83151cc",
               "display": "17 October 2026"
             },
             {
@@ -255,9 +255,28 @@
       "agent": "news",
       "title": "Team News",
       "question": "Who is unavailable for Barcelona, and what is the latest news?",
-      "status": "empty",
+      "status": "published",
       "writer": "template",
-      "claims": [],
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "According to CaughtOffside, Liverpool make contact to sign Jules Kounde."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by CaughtOffside",
+          "sources": [
+            {
+              "outlet": "CaughtOffside",
+              "tier": 3,
+              "url": "https://www.liverpoolfc.com/news/liverpool-make-contact-to-sign-jules-kounde",
+              "official": false
+            }
+          ]
+        }
+      ],
       "withheld": []
     },
     {
@@ -273,7 +292,7 @@
               "text": "We estimate Marc Bernal's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_acc5cc0143da211f",
+              "stat": "ev_6663dd507827cd65",
               "display": "14%"
             },
             {
@@ -291,7 +310,7 @@
               "text": "We estimate Dominik Livaković's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_41d384d3b7c56344",
+              "stat": "ev_280cf94c3e0053b4",
               "display": "12%"
             },
             {
@@ -309,11 +328,83 @@
               "text": "We estimate Raphinha's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_e8e58ed1bd1aa317",
+              "stat": "ev_2f97a69707d229e0",
               "display": "10%"
             },
             {
               "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Lamine Yamal at "
+            },
+            {
+              "stat": "ev_c881bf57c37c8a3a",
+              "display": "€200m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Lamine Yamal is "
+            },
+            {
+              "stat": "ev_8864b90a9c62590d",
+              "display": "€178m"
+            },
+            {
+              "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Pedri at "
+            },
+            {
+              "stat": "ev_7c0ba83fc71bdb59",
+              "display": "€150m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Pedri is "
+            },
+            {
+              "stat": "ev_adfd6af408af9adf",
+              "display": "€90.0m"
+            },
+            {
+              "text": ", below his market value."
             }
           ],
           "type": "stat",
@@ -345,44 +436,8 @@
               "text": "Our fair-fee estimate for Pau Cubarsí is "
             },
             {
-              "stat": "ev_0c014890a526dc26",
+              "stat": "ev_cec765ae183484f2",
               "display": "€53.3m"
-            },
-            {
-              "text": ", below his market value."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Transfermarkt valued Joan García at "
-            },
-            {
-              "stat": "ev_a47a3a40ddc90b94",
-              "display": "€45.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Joan García is "
-            },
-            {
-              "stat": "ev_db2a7029dba0c5c3",
-              "display": "€29.7m"
             },
             {
               "text": ", below his market value."
@@ -394,7 +449,13 @@
           "sources": []
         }
       ],
-      "withheld": []
+      "withheld": [
+        {
+          "text": "According to The Guardian, Gabriel Jesus has been linked with a move away from Barcelona.",
+          "status": "unverified",
+          "reason": "The Guardian's text does not support it"
+        }
+      ]
     },
     {
       "agent": "scout",
@@ -445,7 +506,7 @@
               "text": "Barcelona's biggest squad need is "
             },
             {
-              "stat": "ev_fc8408ce820db3f5",
+              "stat": "ev_9814f30422c29bac",
               "display": "centre-forward"
             },
             {
@@ -460,11 +521,47 @@
         {
           "segments": [
             {
-              "text": "Barcelona's second squad need is "
+              "text": "Barcelona have "
             },
             {
-              "stat": "ev_8c2c53bd293b45b9",
-              "display": "defensive midfield"
+              "stat": "ev_b7878c2fc04a5c16",
+              "display": "2"
+            },
+            {
+              "text": " players for centre-forward, leaving veterans aside."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "A squad carries "
+            },
+            {
+              "stat": "ev_3c13635831b38804",
+              "display": "2"
+            },
+            {
+              "text": " players for centre-forward."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Barcelona's best option for centre-forward is "
+            },
+            {
+              "stat": "ev_3aae2b8d0c26400b",
+              "display": "Gabriel Jesus"
             },
             {
               "text": "."
@@ -478,10 +575,190 @@
         {
           "segments": [
             {
-              "text": "Dream target: Aleksandar Pavlovic (Bayern Munich), who is "
+              "text": "The last of Barcelona's regular starters at centre-forward is "
             },
             {
-              "stat": "ev_5f365b75ab53b2d0",
+              "stat": "ev_91c0995d05bbac4f",
+              "display": "Gabriel Jesus"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Barcelona's regular starters at centre-forward has a market value of "
+            },
+            {
+              "stat": "ev_18226a163c71dd6d",
+              "display": "€17.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Barcelona's best option for centre-forward has a market value of "
+            },
+            {
+              "stat": "ev_d7eef1d3474eb20c",
+              "display": "€17.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "At the squads closest to Barcelona in strength, the best option for centre-forward is typically worth "
+            },
+            {
+              "stat": "ev_0759a82ff315dbbd",
+              "display": "€27.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Hugo Ekitiké (Liverpool FC), who is "
+            },
+            {
+              "stat": "ev_afb91fabb011e12f",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hugo Ekitiké plays for "
+            },
+            {
+              "stat": "ev_b34d2d48bf894f25",
+              "display": "Liverpool FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "In the matches on record for the past year, Hugo Ekitiké played "
+            },
+            {
+              "stat": "ev_cfe27c25f79c5bf3",
+              "display": "2274"
+            },
+            {
+              "text": " minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hugo Ekitiké has a market value of "
+            },
+            {
+              "stat": "ev_5c7e259ebe4bc3f9",
+              "display": "€80.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Hugo Ekitiké is "
+            },
+            {
+              "stat": "ev_6ef4bc5466e92a4b",
+              "display": "€63.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Hugo Ekitiké to play "
+            },
+            {
+              "stat": "ev_6a67357c3e2b4b28",
+              "display": "55%"
+            },
+            {
+              "text": " of Barcelona's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Kenan Yıldız (Juventus FC), who is "
+            },
+            {
+              "stat": "ev_6c6ff17dd2635040",
               "display": "22"
             },
             {
@@ -496,47 +773,11 @@
         {
           "segments": [
             {
-              "text": "Aleksandar Pavlovic has a market value of "
+              "text": "Kenan Yıldız plays for "
             },
             {
-              "stat": "ev_5fbc0fe8fd8fe4f3",
-              "display": "€90.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Realistic target: Pape Gueye (Villarreal CF), who is "
-            },
-            {
-              "stat": "ev_51872d54e9eaff5a",
-              "display": "28"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Pape Gueye is "
-            },
-            {
-              "stat": "ev_774f4f795f2cf742",
-              "display": "€28.1m"
+              "stat": "ev_40236ca4149367f3",
+              "display": "Juventus FC"
             },
             {
               "text": "."
@@ -550,14 +791,14 @@
         {
           "segments": [
             {
-              "text": "We estimate a "
+              "text": "In the matches on record for the past year, Kenan Yıldız played "
             },
             {
-              "stat": "ev_13684975d0121657",
-              "display": "0.6%"
+              "stat": "ev_2bbe976b0eae1d46",
+              "display": "3230"
             },
             {
-              "text": " chance that Pape Gueye joins Barcelona in a transfer window."
+              "text": " minutes."
             }
           ],
           "type": "stat",
@@ -568,32 +809,147 @@
         {
           "segments": [
             {
-              "text": "Hidden gem: Matvey Kislyak (PFK CSKA Moskva), who is "
+              "text": "Barcelona's second squad need is "
             },
             {
-              "stat": "ev_76a6ec7e880e396a",
-              "display": "21"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Matvey Kislyak's market value to reach "
-            },
-            {
-              "stat": "ev_34e5ed7779692d30",
-              "display": "€29.4m"
+              "stat": "ev_063d0e9dbc25f4e9",
+              "display": "goalkeeper"
             },
             {
               "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Barcelona have "
+            },
+            {
+              "stat": "ev_5d5b5e36277181cc",
+              "display": "2"
+            },
+            {
+              "text": " players for goalkeeper, leaving veterans aside."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "A squad carries "
+            },
+            {
+              "stat": "ev_8642d413772e97d2",
+              "display": "2"
+            },
+            {
+              "text": " players for goalkeeper."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Barcelona's best option for goalkeeper is "
+            },
+            {
+              "stat": "ev_84a9c2109e863f3f",
+              "display": "Joan García"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Barcelona's regular starters at goalkeeper is "
+            },
+            {
+              "stat": "ev_f15bd759a70c0364",
+              "display": "Joan García"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Barcelona's regular starters at goalkeeper has a market value of "
+            },
+            {
+              "stat": "ev_f0c4dd3ca28364cd",
+              "display": "€45.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Barcelona's best option for goalkeeper has a market value of "
+            },
+            {
+              "stat": "ev_dbfd2ff8561f8234",
+              "display": "€45.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "At the squads closest to Barcelona in strength, the best option for goalkeeper is typically worth "
+            },
+            {
+              "stat": "ev_a3856e9cb89484f2",
+              "display": "€10.5m"
+            },
+            {
+              "text": ". "
+            },
+            {
+              "stat": "ev_7ed37ffb232c8536",
+              "display": "67%"
+            },
+            {
+              "text": " of Barcelona's options for goalkeeper are veterans."
             }
           ],
           "type": "stat",
@@ -604,79 +960,329 @@
       ],
       "withheld": [
         {
-          "text": "According to The Guardian, Barcelona have been linked with Gabriel Jesus.",
+          "text": "According to The Guardian, Barcelona have been linked with Alejandro Balde.",
           "status": "unverified",
           "reason": "The Guardian's text does not support it"
+        },
+        {
+          "text": "Hugo Ekitiké has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Kenan Yıldız has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
         }
       ]
     }
   ],
   "stats": {
-    "ev_0b9a0585bdafd4fa": {
-      "value": 1.0,
-      "display": "1",
+    "ev_008d89dc688713ef": {
+      "value": 0.589,
+      "display": "0.59",
       "unit": null,
-      "metric": "league_position",
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0176d688ea7e2390": {
+      "value": 27.6,
+      "display": "27.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_063d0e9dbc25f4e9": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
       "entity_type": "club",
       "entity_id": "barcelona",
       "entity_name": "Barcelona",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
       "cross_checks": []
     },
-    "ev_0c014890a526dc26": {
-      "value": 53300000.0,
-      "display": "53300000",
+    "ev_0759a82ff315dbbd": {
+      "value": 27500000.0,
+      "display": "27500000",
+      "unit": null,
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0caecceb51882dab": {
+      "value": "AS Monaco",
+      "display": "AS Monaco",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0ee3e101b23b62c6": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_180d3289c53bd496": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18226a163c71dd6d": {
+      "value": 17000000.0,
+      "display": "17000000",
+      "unit": null,
+      "metric": "need_bar_value",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18f513b42359d52a": {
+      "value": 25.3,
+      "display": "25.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_19301b7a5b2fc87a": {
+      "value": 30000000.0,
+      "display": "30000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1b3852f5b566dd21": {
+      "value": "Villarreal CF",
+      "display": "Villarreal CF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1b8576c969024a93": {
+      "value": 21.9,
+      "display": "21.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4d527e427b5fd7",
+      "entity_name": "Robin Risser",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1b9d9acd1672aa2d": {
+      "value": 63500000.0,
+      "display": "63500000",
       "unit": null,
       "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_13684975d0121657": {
-      "value": 0.0059,
-      "display": "0.01",
-      "unit": null,
-      "metric": "realism",
-      "entity_type": "player",
-      "entity_id": "rpa0acb017ed4f5f",
-      "entity_name": "Pape Gueye",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_34e5ed7779692d30": {
-      "value": 29400000.0,
-      "display": "29400000",
+    "ev_1c157e4c86b1772e": {
+      "value": 44100000.0,
+      "display": "44100000",
       "unit": null,
       "metric": "proj_value_4y",
       "entity_type": "player",
-      "entity_id": "rp85c79f7279b367",
-      "entity_name": "Matvey Kislyak",
+      "entity_id": "rp4d527e427b5fd7",
+      "entity_name": "Robin Risser",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_41d384d3b7c56344": {
+    "ev_1ca810b3ac4c6eea": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1f5b1771be69faf0": {
+      "value": 0.0011,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_216b3f1690a51a02": {
+      "value": 0.498,
+      "display": "0.50",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp7c886b11a4a045",
+      "entity_name": "Matviy Ponomarenko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_246b1b3e36548557": {
+      "value": "RSC Anderlecht",
+      "display": "RSC Anderlecht",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp40aac51629d309",
+      "entity_name": "Mihajlo Cvetkovic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2579d93b2e187835": {
+      "value": 55300000.0,
+      "display": "55300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_280cf94c3e0053b4": {
       "value": 0.117,
       "display": "0.12",
       "unit": null,
@@ -687,7 +1293,215 @@
       "source": "dugout_model:realism",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2945d8d3859169ab": {
+      "value": "WWWWW",
+      "display": "WWWWW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-17T07:08:36.680332+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2bbe976b0eae1d46": {
+      "value": 3230.0,
+      "display": "3230",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2e8ac342ac91148f": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2f97a69707d229e0": {
+      "value": 0.105,
+      "display": "0.10",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp5e6ba4bca98681",
+      "entity_name": "Raphinha",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30ab5f625b230c0f": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_39481d286cbb42c1": {
+      "value": 25300000.0,
+      "display": "25300000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp7c886b11a4a045",
+      "entity_name": "Matviy Ponomarenko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3aae2b8d0c26400b": {
+      "value": "Gabriel Jesus",
+      "display": "Gabriel Jesus",
+      "unit": null,
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3c13635831b38804": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f5d1f8ee2c40386": {
+      "value": 27.5,
+      "display": "27.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_40236ca4149367f3": {
+      "value": "Juventus FC",
+      "display": "Juventus FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_40be263253b07229": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4178d92f257da7a4": {
+      "value": 0.585,
+      "display": "0.58",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp40aac51629d309",
+      "entity_name": "Mihajlo Cvetkovic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_41c66a3565a490a1": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -708,167 +1522,23 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_51872d54e9eaff5a": {
-      "value": 27.7,
-      "display": "27.70",
+    "ev_4b64789b31e2a17d": {
+      "value": "Manchester United",
+      "display": "Manchester United",
       "unit": null,
-      "metric": "age",
+      "metric": "candidate_club",
       "entity_type": "player",
-      "entity_id": "rpa0acb017ed4f5f",
-      "entity_name": "Pape Gueye",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_5f365b75ab53b2d0": {
-      "value": 22.5,
-      "display": "22.50",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp29ddeed4fefa10",
-      "entity_name": "Aleksandar Pavlović",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_5fbc0fe8fd8fe4f3": {
-      "value": 90000000.0,
-      "display": "90000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp29ddeed4fefa10",
-      "entity_name": "Aleksandar Pavlović",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_76a6ec7e880e396a": {
-      "value": 21.2,
-      "display": "21.20",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp85c79f7279b367",
-      "entity_name": "Matvey Kislyak",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_774f4f795f2cf742": {
-      "value": 28100000.0,
-      "display": "28100000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpa0acb017ed4f5f",
-      "entity_name": "Pape Gueye",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8c2c53bd293b45b9": {
-      "value": "defensive midfield",
-      "display": "defensive midfield",
-      "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "barcelona",
-      "entity_name": "Barcelona",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_976913dee52eadf5": {
-      "value": 24.0,
-      "display": "24",
-      "unit": null,
-      "metric": "league_points",
-      "entity_type": "club",
-      "entity_id": "barcelona",
-      "entity_name": "Barcelona",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_a47a3a40ddc90b94": {
-      "value": 45000000.0,
-      "display": "45000000",
-      "unit": "EUR",
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp11bc4736b8a553",
-      "entity_name": "Joan García",
-      "source": "transfermarkt_datasets",
-      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
-      "source_tier": 3,
-      "fetched_at": "2026-06-05T00:00:00+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_acc5cc0143da211f": {
-      "value": 0.138,
-      "display": "0.14",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rpd53c870cfedbb6",
-      "entity_name": "Marc Bernal",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b818405b02ff8ceb": {
-      "value": "WWWWW",
-      "display": "WWWWW",
-      "unit": null,
-      "metric": "league_form",
-      "entity_type": "club",
-      "entity_id": "barcelona",
-      "entity_name": "Barcelona",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/PD/standings",
-      "source_tier": 2,
-      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_c5b97eaca8a2e3e2": {
+    "ev_4c0a53604f914007": {
       "value": 34.0,
       "display": "34",
       "unit": null,
@@ -879,12 +1549,668 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "fetched_at": "2026-10-17T07:08:36.680332+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_ce6dac16c549bd07": {
+    "ev_4eaae4b16567b25d": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4f2eb25c0e7aad14": {
+      "value": 0.078,
+      "display": "0.08",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_548c1617ecac4b29": {
+      "value": 0.342,
+      "display": "0.34",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_57f97bf114f2217a": {
+      "value": 0.578,
+      "display": "0.58",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_582fddb2eee94ca3": {
+      "value": 0.075,
+      "display": "0.07",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_585bec7d5c49f6e7": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:08:36.680332+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5937fae3832bdfdc": {
+      "value": 14900000.0,
+      "display": "14900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7c886b11a4a045",
+      "entity_name": "Matviy Ponomarenko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5c7e259ebe4bc3f9": {
+      "value": 80000000.0,
+      "display": "80000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d5b5e36277181cc": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_601282a3fb6a911d": {
+      "value": 15400000.0,
+      "display": "15400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_61eab72ce4e9f88d": {
+      "value": 20.8,
+      "display": "20.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7c886b11a4a045",
+      "entity_name": "Matviy Ponomarenko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_663d2aa2a7d31b06": {
+      "value": 2434.0,
+      "display": "2434",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6663dd507827cd65": {
+      "value": 0.138,
+      "display": "0.14",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6a67357c3e2b4b28": {
+      "value": 0.553,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c6ff17dd2635040": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6ef4bc5466e92a4b": {
+      "value": 63400000.0,
+      "display": "63400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6fac7cde9efc8c58": {
+      "value": 36800000.0,
+      "display": "36800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_709a8a577c174bb2": {
+      "value": 24.0,
+      "display": "24",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:08:36.680332+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_730f3617a2d28ba5": {
+      "value": 19.2,
+      "display": "19.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_73fc1736d81a4bb8": {
+      "value": 14600000.0,
+      "display": "14600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp40aac51629d309",
+      "entity_name": "Mihajlo Cvetkovic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7c0ba83fc71bdb59": {
+      "value": 150000000.0,
+      "display": "150000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7da3413d796d7646": {
+      "value": 1.0,
+      "display": "1",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:08:36.680332+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7ed37ffb232c8536": {
+      "value": 0.667,
+      "display": "0.67",
+      "unit": null,
+      "metric": "need_ageing_share",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8191aa6236a79011": {
+      "value": 0.0018,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_819478628ac9e9f6": {
+      "value": 10000000.0,
+      "display": "10000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp40aac51629d309",
+      "entity_name": "Mihajlo Cvetkovic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_84a46e463159c51a": {
+      "value": "Real Betis Balompié",
+      "display": "Real Betis Balompié",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_84a9c2109e863f3f": {
+      "value": "Joan García",
+      "display": "Joan García",
+      "unit": null,
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_851326b191693f2b": {
+      "value": "Angers SCO",
+      "display": "Angers SCO",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_85ae2a01f405360a": {
+      "value": 27.4,
+      "display": "27.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8642d413772e97d2": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8864b90a9c62590d": {
+      "value": 178200000.0,
+      "display": "178200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_91c0995d05bbac4f": {
+      "value": "Gabriel Jesus",
+      "display": "Gabriel Jesus",
+      "unit": null,
+      "metric": "need_bar_player",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9814f30422c29bac": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9a7ba55f8e895109": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp7c886b11a4a045",
+      "entity_name": "Matviy Ponomarenko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a1f1913a5aad23c2": {
+      "value": 34600000.0,
+      "display": "34600000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a3856e9cb89484f2": {
+      "value": 10500000.0,
+      "display": "10500000",
+      "unit": null,
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_adfd6af408af9adf": {
+      "value": 90000000.0,
+      "display": "90000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ae5fe38ff0cc1427": {
+      "value": "Dynamo Kyiv",
+      "display": "Dynamo Kyiv",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp7c886b11a4a045",
+      "entity_name": "Matviy Ponomarenko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_afb91fabb011e12f": {
+      "value": 24.3,
+      "display": "24.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b34d2d48bf894f25": {
+      "value": "Liverpool FC",
+      "display": "Liverpool FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b399a14342dd31ee": {
+      "value": 2411.0,
+      "display": "2411",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b520498fa83151cc": {
       "value": "2026-10-17T16:30:00+00:00",
       "display": "2026-10-17T16:30:00+00:00",
       "unit": null,
@@ -895,23 +2221,215 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/PD/matches",
       "source_tier": 2,
-      "fetched_at": "2026-10-16T22:32:01.268126+00:00",
+      "fetched_at": "2026-10-17T07:08:29.520240+00:00",
       "query_kind": "sql",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_db2a7029dba0c5c3": {
-      "value": 29700000.0,
-      "display": "29700000",
+    "ev_b7878c2fc04a5c16": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b9fdd0365834a51c": {
+      "value": 19.8,
+      "display": "19.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp40aac51629d309",
+      "entity_name": "Mihajlo Cvetkovic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c64c728c9c670c1e": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rped1e8ae1548fbc",
+      "entity_name": "Matheus Santos Carneiro da Cunha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c74396e8b6d9fa23": {
+      "value": 0.382,
+      "display": "0.38",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c881bf57c37c8a3a": {
+      "value": 200000000.0,
+      "display": "200000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_cc13583e14c2b52a": {
+      "value": 21400000.0,
+      "display": "21400000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp40aac51629d309",
+      "entity_name": "Mihajlo Cvetkovic",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cec765ae183484f2": {
+      "value": 53300000.0,
+      "display": "53300000",
       "unit": null,
       "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rp11bc4736b8a553",
-      "entity_name": "Joan García",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
       "source": "dugout_model:valuation",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cfe27c25f79c5bf3": {
+      "value": 2274.0,
+      "display": "2274",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rp79486696b58cd0",
+      "entity_name": "Hugo Ekitiké",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d1af6a9625ab00cb": {
+      "value": 26.0,
+      "display": "26",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d23be13cbb5cbe44": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d7eef1d3474eb20c": {
+      "value": 17000000.0,
+      "display": "17000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d8d4a19b0ce9654b": {
+      "value": 2221.0,
+      "display": "2221",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dbfd2ff8561f8234": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -932,50 +2450,130 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_e8e58ed1bd1aa317": {
-      "value": 0.105,
-      "display": "0.10",
+    "ev_e7e61e7e002efad5": {
+      "value": 18000000.0,
+      "display": "18000000",
       "unit": null,
-      "metric": "sale_likelihood",
+      "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rp5e6ba4bca98681",
-      "entity_name": "Raphinha",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "entity_id": "rpa5933b59016239",
+      "entity_name": "Cucho Hernández",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_ec6cd4efd146d0cc": {
-      "value": 7.0,
-      "display": "7",
+    "ev_e930a2a363321ecd": {
+      "value": 24100000.0,
+      "display": "24100000",
       "unit": null,
-      "metric": "league_goalsAgainst",
-      "entity_type": "club",
-      "entity_id": "barcelona",
-      "entity_name": "Barcelona",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
       "cross_checks": []
     },
-    "ev_fc8408ce820db3f5": {
-      "value": "centre-forward",
-      "display": "centre-forward",
+    "ev_eba2dba372614824": {
+      "value": 75000000.0,
+      "display": "75000000",
       "unit": null,
-      "metric": "need",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpecfddf893e63b2",
+      "entity_name": "Kenan Yıldız",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f0c4dd3ca28364cd": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "need_bar_value",
       "entity_type": "club",
       "entity_id": "barcelona",
       "entity_name": "Barcelona",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f15bd759a70c0364": {
+      "value": "Joan García",
+      "display": "Joan García",
+      "unit": null,
+      "metric": "need_bar_player",
+      "entity_type": "club",
+      "entity_id": "barcelona",
+      "entity_name": "Barcelona",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f90486be72294701": {
+      "value": 0.0019,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp8272fa51e0bd38",
+      "entity_name": "Georges Mikautadze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fa05597c295c6614": {
+      "value": 2744.0,
+      "display": "2744",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rpb8522ec134dc41",
+      "entity_name": "Folarin Balogun",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ff03bf36e71fddd6": {
+      "value": 20600000.0,
+      "display": "20600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -984,31 +2582,31 @@
   "key_stats": {
     "club": [
       {
-        "stat": "ev_0b9a0585bdafd4fa",
+        "stat": "ev_7da3413d796d7646",
         "display": "1st",
         "label": "league position",
         "subject": "Barcelona"
       },
       {
-        "stat": "ev_976913dee52eadf5",
+        "stat": "ev_709a8a577c174bb2",
         "display": "24",
         "label": "league points",
         "subject": "Barcelona"
       },
       {
-        "stat": "ev_c5b97eaca8a2e3e2",
+        "stat": "ev_4c0a53604f914007",
         "display": "34",
         "label": "league goals scored",
         "subject": "Barcelona"
       },
       {
-        "stat": "ev_ec6cd4efd146d0cc",
+        "stat": "ev_585bec7d5c49f6e7",
         "display": "7",
         "label": "league goals conceded",
         "subject": "Barcelona"
       },
       {
-        "stat": "ev_b818405b02ff8ceb",
+        "stat": "ev_2945d8d3859169ab",
         "display": "WWWWW",
         "label": "recent league results, oldest first",
         "subject": "Barcelona"
@@ -1022,7 +2620,7 @@
     ],
     "match": [
       {
-        "stat": "ev_ce6dac16c549bd07",
+        "stat": "ev_b520498fa83151cc",
         "display": "17 October 2026",
         "label": "kick-off date",
         "subject": "Real Betis v Barcelona"
@@ -1032,22 +2630,46 @@
     "news": [],
     "transfer": [
       {
-        "stat": "ev_acc5cc0143da211f",
+        "stat": "ev_6663dd507827cd65",
         "display": "14%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Marc Bernal"
       },
       {
-        "stat": "ev_41d384d3b7c56344",
+        "stat": "ev_280cf94c3e0053b4",
         "display": "12%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Dominik Livaković"
       },
       {
-        "stat": "ev_e8e58ed1bd1aa317",
+        "stat": "ev_2f97a69707d229e0",
         "display": "10%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Raphinha"
+      },
+      {
+        "stat": "ev_c881bf57c37c8a3a",
+        "display": "€200m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_8864b90a9c62590d",
+        "display": "€178m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_7c0ba83fc71bdb59",
+        "display": "€150m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Pedri"
+      },
+      {
+        "stat": "ev_adfd6af408af9adf",
+        "display": "€90.0m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Pedri"
       },
       {
         "stat": "ev_481101d51190d536",
@@ -1056,92 +2678,530 @@
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_0c014890a526dc26",
+        "stat": "ev_cec765ae183484f2",
         "display": "€53.3m",
         "label": "estimated fair fee if sold to another La Liga club",
         "subject": "Pau Cubarsí"
-      },
-      {
-        "stat": "ev_a47a3a40ddc90b94",
-        "display": "€45.0m",
-        "label": "market value (Transfermarkt, as of June 2026)",
-        "subject": "Joan García"
-      },
-      {
-        "stat": "ev_db2a7029dba0c5c3",
-        "display": "€29.7m",
-        "label": "estimated fair fee if sold to another La Liga club",
-        "subject": "Joan García"
       }
     ],
     "scout": [
       {
-        "stat": "ev_fc8408ce820db3f5",
+        "stat": "ev_9814f30422c29bac",
         "display": "centre-forward",
         "label": "squad need, priority one",
         "subject": "Barcelona"
       },
       {
-        "stat": "ev_8c2c53bd293b45b9",
-        "display": "defensive midfield",
+        "stat": "ev_b7878c2fc04a5c16",
+        "display": "2",
+        "label": "players for the position, veterans aside (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_3c13635831b38804",
+        "display": "2",
+        "label": "players a squad carries there (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_3aae2b8d0c26400b",
+        "display": "Gabriel Jesus",
+        "label": "best option there (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_91c0995d05bbac4f",
+        "display": "Gabriel Jesus",
+        "label": "last regular starter there (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_18226a163c71dd6d",
+        "display": "€17.0m",
+        "label": "last regular starter's market value (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_d7eef1d3474eb20c",
+        "display": "€17.0m",
+        "label": "best option's market value (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_0759a82ff315dbbd",
+        "display": "€27.5m",
+        "label": "similar squads' best option's market value (need one)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_afb91fabb011e12f",
+        "display": "24",
+        "label": "age (best target)",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_b34d2d48bf894f25",
+        "display": "Liverpool FC",
+        "label": "current club",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_cfe27c25f79c5bf3",
+        "display": "2274",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_0ee3e101b23b62c6",
+        "display": "56",
+        "label": "months left on his contract",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_5c7e259ebe4bc3f9",
+        "display": "€80.0m",
+        "label": "market value",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_6ef4bc5466e92a4b",
+        "display": "€63.4m",
+        "label": "estimated fair fee",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_6a67357c3e2b4b28",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Hugo Ekitiké"
+      },
+      {
+        "stat": "ev_6c6ff17dd2635040",
+        "display": "22",
+        "label": "age (best target)",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_40236ca4149367f3",
+        "display": "Juventus FC",
+        "label": "current club",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_2bbe976b0eae1d46",
+        "display": "3230",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_d23be13cbb5cbe44",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_eba2dba372614824",
+        "display": "€75.0m",
+        "label": "market value",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_1b9d9acd1672aa2d",
+        "display": "€63.5m",
+        "label": "estimated fair fee",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_008d89dc688713ef",
+        "display": "59%",
+        "label": "expected share of minutes at the club",
+        "subject": "Kenan Yıldız"
+      },
+      {
+        "stat": "ev_85ae2a01f405360a",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_4b64789b31e2a17d",
+        "display": "Manchester United",
+        "label": "current club",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_b399a14342dd31ee",
+        "display": "2411",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_2e8ac342ac91148f",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_c64c728c9c670c1e",
+        "display": "€75.0m",
+        "label": "market value",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_2579d93b2e187835",
+        "display": "€55.3m",
+        "label": "estimated fair fee",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_57f97bf114f2217a",
+        "display": "58%",
+        "label": "expected share of minutes at the club",
+        "subject": "Matheus Cunha"
+      },
+      {
+        "stat": "ev_d1af6a9625ab00cb",
+        "display": "26",
+        "label": "age (realistic target)",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_1b3852f5b566dd21",
+        "display": "Villarreal CF",
+        "label": "current club",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_d8d4a19b0ce9654b",
+        "display": "2221",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_582fddb2eee94ca3",
+        "display": "8%",
+        "label": "chance his club sells him in a window",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_180d3289c53bd496",
+        "display": "56",
+        "label": "months left on his contract",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_19301b7a5b2fc87a",
+        "display": "€30.0m",
+        "label": "market value",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_e930a2a363321ecd",
+        "display": "€24.1m",
+        "label": "estimated fair fee",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_f90486be72294701",
+        "display": "0.2%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Georges Mikautadze"
+      },
+      {
+        "stat": "ev_3f5d1f8ee2c40386",
+        "display": "28",
+        "label": "age (realistic target)",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_84a46e463159c51a",
+        "display": "Real Betis Balompié",
+        "label": "current club",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_663d2aa2a7d31b06",
+        "display": "2434",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_4f2eb25c0e7aad14",
+        "display": "8%",
+        "label": "chance his club sells him in a window",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_1ca810b3ac4c6eea",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_e7e61e7e002efad5",
+        "display": "€18.0m",
+        "label": "market value",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_601282a3fb6a911d",
+        "display": "€15.4m",
+        "label": "estimated fair fee",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_8191aa6236a79011",
+        "display": "0.2%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Cucho Hernández"
+      },
+      {
+        "stat": "ev_18f513b42359d52a",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_0caecceb51882dab",
+        "display": "AS Monaco",
+        "label": "current club",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_fa05597c295c6614",
+        "display": "2744",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_c74396e8b6d9fa23",
+        "display": "38%",
+        "label": "chance his club sells him in a window",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_4eaae4b16567b25d",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_40be263253b07229",
+        "display": "€40.0m",
+        "label": "market value",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_6fac7cde9efc8c58",
+        "display": "€36.8m",
+        "label": "estimated fair fee",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_1f5b1771be69faf0",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Folarin Balogun"
+      },
+      {
+        "stat": "ev_730f3617a2d28ba5",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_851326b191693f2b",
+        "display": "Angers SCO",
+        "label": "current club",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_548c1617ecac4b29",
+        "display": "34%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_30ab5f625b230c0f",
+        "display": "€15.0m",
+        "label": "market value",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_ff03bf36e71fddd6",
+        "display": "€20.6m",
+        "label": "estimated fair fee",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_a1f1913a5aad23c2",
+        "display": "€34.6m",
+        "label": "projected market value in a few seasons",
+        "subject": "Prosper Peter"
+      },
+      {
+        "stat": "ev_61eab72ce4e9f88d",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Matviy Ponomarenko"
+      },
+      {
+        "stat": "ev_ae5fe38ff0cc1427",
+        "display": "Dynamo Kyiv",
+        "label": "current club",
+        "subject": "Matviy Ponomarenko"
+      },
+      {
+        "stat": "ev_216b3f1690a51a02",
+        "display": "50%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Matviy Ponomarenko"
+      },
+      {
+        "stat": "ev_9a7ba55f8e895109",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Matviy Ponomarenko"
+      },
+      {
+        "stat": "ev_5937fae3832bdfdc",
+        "display": "€14.9m",
+        "label": "estimated fair fee",
+        "subject": "Matviy Ponomarenko"
+      },
+      {
+        "stat": "ev_39481d286cbb42c1",
+        "display": "€25.3m",
+        "label": "projected market value in a few seasons",
+        "subject": "Matviy Ponomarenko"
+      },
+      {
+        "stat": "ev_b9fdd0365834a51c",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Mihajlo Cvetkovic"
+      },
+      {
+        "stat": "ev_246b1b3e36548557",
+        "display": "RSC Anderlecht",
+        "label": "current club",
+        "subject": "Mihajlo Cvetkovic"
+      },
+      {
+        "stat": "ev_4178d92f257da7a4",
+        "display": "58%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Mihajlo Cvetkovic"
+      },
+      {
+        "stat": "ev_819478628ac9e9f6",
+        "display": "€10.0m",
+        "label": "market value",
+        "subject": "Mihajlo Cvetkovic"
+      },
+      {
+        "stat": "ev_73fc1736d81a4bb8",
+        "display": "€14.6m",
+        "label": "estimated fair fee",
+        "subject": "Mihajlo Cvetkovic"
+      },
+      {
+        "stat": "ev_cc13583e14c2b52a",
+        "display": "€21.4m",
+        "label": "projected market value in a few seasons",
+        "subject": "Mihajlo Cvetkovic"
+      },
+      {
+        "stat": "ev_063d0e9dbc25f4e9",
+        "display": "goalkeeper",
         "label": "squad need, priority two",
         "subject": "Barcelona"
       },
       {
-        "stat": "ev_5f365b75ab53b2d0",
-        "display": "22",
-        "label": "age (best target, second need)",
-        "subject": "Aleksandar Pavlovic"
+        "stat": "ev_5d5b5e36277181cc",
+        "display": "2",
+        "label": "players for the position, veterans aside (need two)",
+        "subject": "Barcelona"
       },
       {
-        "stat": "ev_5fbc0fe8fd8fe4f3",
-        "display": "€90.0m",
-        "label": "market value",
-        "subject": "Aleksandar Pavlovic"
+        "stat": "ev_8642d413772e97d2",
+        "display": "2",
+        "label": "players a squad carries there (need two)",
+        "subject": "Barcelona"
       },
       {
-        "stat": "ev_51872d54e9eaff5a",
+        "stat": "ev_84a9c2109e863f3f",
+        "display": "Joan García",
+        "label": "best option there (need two)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_f15bd759a70c0364",
+        "display": "Joan García",
+        "label": "last regular starter there (need two)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_f0c4dd3ca28364cd",
+        "display": "€45.0m",
+        "label": "last regular starter's market value (need two)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_dbfd2ff8561f8234",
+        "display": "€45.0m",
+        "label": "best option's market value (need two)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_a3856e9cb89484f2",
+        "display": "€10.5m",
+        "label": "similar squads' best option's market value (need two)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_7ed37ffb232c8536",
+        "display": "67%",
+        "label": "share of the options who are veterans (need two)",
+        "subject": "Barcelona"
+      },
+      {
+        "stat": "ev_0176d688ea7e2390",
         "display": "28",
-        "label": "age (realistic target, second need)",
-        "subject": "Pape Gueye"
+        "label": "age (best target, second need)",
+        "subject": "Gianluigi Donnarumma"
       },
       {
-        "stat": "ev_774f4f795f2cf742",
-        "display": "€28.1m",
-        "label": "estimated fair fee",
-        "subject": "Pape Gueye"
+        "stat": "ev_41c66a3565a490a1",
+        "display": "€45.0m",
+        "label": "market value",
+        "subject": "Gianluigi Donnarumma"
       },
       {
-        "stat": "ev_13684975d0121657",
-        "display": "0.6%",
-        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
-        "subject": "Pape Gueye"
-      },
-      {
-        "stat": "ev_76a6ec7e880e396a",
-        "display": "21",
+        "stat": "ev_1b8576c969024a93",
+        "display": "22",
         "label": "age (gem target, second need)",
-        "subject": "Matvey Kislyak"
+        "subject": "Robin Risser"
       },
       {
-        "stat": "ev_34e5ed7779692d30",
-        "display": "€29.4m",
+        "stat": "ev_1c157e4c86b1772e",
+        "display": "€44.1m",
         "label": "projected market value in a few seasons",
-        "subject": "Matvey Kislyak"
+        "subject": "Robin Risser"
       }
     ]
   },
   "verification": {
     "stat_auditor": {
       "ok": true,
-      "numbers_total": 27,
+      "numbers_total": 46,
       "numbers_untraceable": 0
     },
     "fact_check_claims": {
-      "verified": 29,
-      "unverified": 1
+      "verified": 48,
+      "unverified": 4
     },
-    "sections_published": 5,
+    "sections_published": 6,
     "sections_withheld": 0
   },
   "methods": {

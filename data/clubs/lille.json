@@ -10,8 +10,8 @@
     "name": "Ligue 1",
     "country": "France"
   },
-  "generated_at": "2026-10-17T00:06:37+00:00",
-  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "generated_at": "2026-10-17T08:41:36+00:00",
+  "data_as_of": "2026-10-17T08:18:37+00:00",
   "llm": null,
   "summary": {
     "agent": "director",
@@ -26,7 +26,7 @@
             "text": "Lille are "
           },
           {
-            "stat": "ev_37c7b4e77c4527d0",
+            "stat": "ev_30a9d0fbdfac2412",
             "display": "2nd"
           },
           {
@@ -44,7 +44,7 @@
             "text": "Lille have "
           },
           {
-            "stat": "ev_8e25dc4aefb0be54",
+            "stat": "ev_fcb2d07631b534f1",
             "display": "13"
           },
           {
@@ -62,7 +62,7 @@
             "text": "Lille's next league match is Lille v Brest on "
           },
           {
-            "stat": "ev_824529e45930ad51",
+            "stat": "ev_f1471d483255f38c",
             "display": "17 October 2026"
           },
           {
@@ -80,8 +80,8 @@
             "text": "Lille's biggest squad need is "
           },
           {
-            "stat": "ev_730940eff05a5056",
-            "display": "centre-forward"
+            "stat": "ev_eed0f22e9e7e1b58",
+            "display": "defensive midfield"
           },
           {
             "text": "."
@@ -109,7 +109,7 @@
               "text": "Lille are "
             },
             {
-              "stat": "ev_37c7b4e77c4527d0",
+              "stat": "ev_30a9d0fbdfac2412",
               "display": "2nd"
             },
             {
@@ -127,7 +127,7 @@
               "text": "Lille have "
             },
             {
-              "stat": "ev_8e25dc4aefb0be54",
+              "stat": "ev_fcb2d07631b534f1",
               "display": "13"
             },
             {
@@ -145,7 +145,7 @@
               "text": "Lille have scored "
             },
             {
-              "stat": "ev_85d04093c2e55d06",
+              "stat": "ev_5eb3359284048752",
               "display": "9"
             },
             {
@@ -163,7 +163,7 @@
               "text": "Lille have conceded "
             },
             {
-              "stat": "ev_5b054a7ed5fbad45",
+              "stat": "ev_256c2ac5f2edfb43",
               "display": "4"
             },
             {
@@ -181,7 +181,7 @@
               "text": "Lille's most recent league results read "
             },
             {
-              "stat": "ev_90108cc010df14ef",
+              "stat": "ev_c54bc551247da582",
               "display": "WLWWD"
             },
             {
@@ -227,7 +227,7 @@
               "text": "Lille's next league match is Lille v Brest on "
             },
             {
-              "stat": "ev_824529e45930ad51",
+              "stat": "ev_f1471d483255f38c",
               "display": "17 October 2026"
             },
             {
@@ -292,7 +292,7 @@
               "text": "We estimate Hákon Arnar Haraldsson's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_dd06ffb37fecabdd",
+              "stat": "ev_0b6c86644f382b34",
               "display": "32%"
             },
             {
@@ -310,7 +310,7 @@
               "text": "We estimate Ngal'ayel Mukau's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_95b04bcb4eee3186",
+              "stat": "ev_22443d303827f63e",
               "display": "24%"
             },
             {
@@ -328,11 +328,47 @@
               "text": "We estimate Nathan Ngoy's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_62dd033c1009bd2d",
+              "stat": "ev_9234f1b5879e5745",
               "display": "23%"
             },
             {
               "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Ngal'ayel Mukau at "
+            },
+            {
+              "stat": "ev_9556f077569ec2d1",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ngal'ayel Mukau is "
+            },
+            {
+              "stat": "ev_68e91a48e1ec5f9c",
+              "display": "€12.3m"
+            },
+            {
+              "text": ", below his market value."
             }
           ],
           "type": "stat",
@@ -364,7 +400,7 @@
               "text": "Our fair-fee estimate for Hákon Arnar Haraldsson is "
             },
             {
-              "stat": "ev_0505e69386be9c3c",
+              "stat": "ev_e5c86884843e0bde",
               "display": "€17.8m"
             },
             {
@@ -400,44 +436,8 @@
               "text": "Our fair-fee estimate for Nathan Ngoy is "
             },
             {
-              "stat": "ev_fb7025ca73efd0b0",
+              "stat": "ev_bb5b9575a7f6d52a",
               "display": "€17.1m"
-            },
-            {
-              "text": ", below his market value."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Transfermarkt valued Hamza Igamane at "
-            },
-            {
-              "stat": "ev_1c94fed81ed21157",
-              "display": "€18.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Hamza Igamane is "
-            },
-            {
-              "stat": "ev_aed9f109a841d296",
-              "display": "€14.9m"
             },
             {
               "text": ", below his market value."
@@ -482,8 +482,8 @@
               "text": "Lille's biggest squad need is "
             },
             {
-              "stat": "ev_730940eff05a5056",
-              "display": "centre-forward"
+              "stat": "ev_eed0f22e9e7e1b58",
+              "display": "defensive midfield"
             },
             {
               "text": "."
@@ -497,11 +497,144 @@
         {
           "segments": [
             {
-              "text": "Dream target: Odsonne Édouard (RC Lens), who is "
+              "text": "Lille have "
             },
             {
-              "stat": "ev_eeba5cf9c405f67c",
-              "display": "29"
+              "stat": "ev_f024328d53d5c028",
+              "display": "2"
+            },
+            {
+              "text": " players for defensive midfield, leaving veterans aside."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "A squad carries "
+            },
+            {
+              "stat": "ev_436eb9e1beae8770",
+              "display": "2"
+            },
+            {
+              "text": " players for defensive midfield."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lille's best option for defensive midfield is "
+            },
+            {
+              "stat": "ev_f75f35f2238e2bd5",
+              "display": "Ngal'ayel Mukau"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Lille's regular starters at defensive midfield is "
+            },
+            {
+              "stat": "ev_e8962269cc86858a",
+              "display": "Ngal'ayel Mukau"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Lille's regular starters at defensive midfield has a market value of "
+            },
+            {
+              "stat": "ev_e73afab4fef6dd61",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lille's best option for defensive midfield has a market value of "
+            },
+            {
+              "stat": "ev_c7255066e6a20614",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "At the squads closest to Lille in strength, the best option for defensive midfield is typically worth "
+            },
+            {
+              "stat": "ev_6a5a5f628a4f4697",
+              "display": "€20.0m"
+            },
+            {
+              "text": ". "
+            },
+            {
+              "stat": "ev_1ba6e6ef632538ab",
+              "display": "67%"
+            },
+            {
+              "text": " of Lille's options for defensive midfield are veterans."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Nicolás Domínguez (Nottingham Forest), who is "
+            },
+            {
+              "stat": "ev_3fc83271206cf829",
+              "display": "28"
             },
             {
               "text": " years old."
@@ -515,29 +648,11 @@
         {
           "segments": [
             {
-              "text": "Odsonne Édouard plays for "
+              "text": "Nicolás Domínguez plays for "
             },
             {
-              "stat": "ev_cbc07923126b7291",
-              "display": "RC Lens"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Odsonne Édouard has a market value of "
-            },
-            {
-              "stat": "ev_a6bf422a4dccf5cb",
-              "display": "€12.0m"
+              "stat": "ev_613e1cf3d85d388d",
+              "display": "Nottingham Forest"
             },
             {
               "text": "."
@@ -551,11 +666,29 @@
         {
           "segments": [
             {
-              "text": "Our fair-fee estimate for Odsonne Édouard is "
+              "text": "In the matches on record for the past year, Nicolás Domínguez played "
             },
             {
-              "stat": "ev_705c13fac5308bf9",
-              "display": "€8.9m"
+              "stat": "ev_f4ec889f78a3360a",
+              "display": "2165"
+            },
+            {
+              "text": " minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nicolás Domínguez has a market value of "
+            },
+            {
+              "stat": "ev_3975abfcc94b1eb6",
+              "display": "€13.0m"
             },
             {
               "text": "."
@@ -569,11 +702,29 @@
         {
           "segments": [
             {
-              "text": "We project Odsonne Édouard to play "
+              "text": "Our fair-fee estimate for Nicolás Domínguez is "
             },
             {
-              "stat": "ev_b2958eb847308961",
-              "display": "57%"
+              "stat": "ev_1a341abd90cceb58",
+              "display": "€6.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Nicolás Domínguez to play "
+            },
+            {
+              "stat": "ev_8fcb60a7f1abc5b0",
+              "display": "61%"
             },
             {
               "text": " of Lille's minutes."
@@ -587,101 +738,11 @@
         {
           "segments": [
             {
-              "text": "Dream target: Hugo Duro (Valencia CF), who is "
+              "text": "Dream target: Ilia Gruev (Leeds United), who is "
             },
             {
-              "stat": "ev_2438ef214791922b",
-              "display": "27"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Hugo Duro plays for "
-            },
-            {
-              "stat": "ev_7dd6b307a7942e8c",
-              "display": "Valencia CF"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Hugo Duro has a market value of "
-            },
-            {
-              "stat": "ev_27b5a9911636207e",
-              "display": "€12.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Hugo Duro is "
-            },
-            {
-              "stat": "ev_8d258eaee246d65e",
-              "display": "€8.9m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Hugo Duro to play "
-            },
-            {
-              "stat": "ev_35e3ee7519685029",
-              "display": "53%"
-            },
-            {
-              "text": " of Lille's minutes."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Dream target: Yanis Begraoui (GD Estoril Praia), who is "
-            },
-            {
-              "stat": "ev_81a5de93c74a735e",
-              "display": "25"
+              "stat": "ev_b09399987832e762",
+              "display": "26"
             },
             {
               "text": " years old."
@@ -695,191 +756,11 @@
         {
           "segments": [
             {
-              "text": "Yanis Begraoui plays for "
+              "text": "Ilia Gruev plays for "
             },
             {
-              "stat": "ev_758e775d134c458d",
-              "display": "GD Estoril Praia"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Yanis Begraoui has a market value of "
-            },
-            {
-              "stat": "ev_a501d45465cb63a2",
-              "display": "€12.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Yanis Begraoui is "
-            },
-            {
-              "stat": "ev_2e8d3bf2a10a399c",
-              "display": "€11.6m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Yanis Begraoui to play "
-            },
-            {
-              "stat": "ev_f976f9517c65d831",
-              "display": "49%"
-            },
-            {
-              "text": " of Lille's minutes."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Hidden gem: Prosper Peter (Angers SCO), who is "
-            },
-            {
-              "stat": "ev_0adc2933313f8fdb",
-              "display": "19"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Prosper Peter plays for "
-            },
-            {
-              "stat": "ev_6840abdade854639",
-              "display": "Angers SCO"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Prosper Peter has played "
-            },
-            {
-              "stat": "ev_f0c9047911c90d3e",
-              "display": "34%"
-            },
-            {
-              "text": " of Angers SCO's minutes over the last year."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Prosper Peter is "
-            },
-            {
-              "stat": "ev_cb5fd2c1237c3c51",
-              "display": "€17.7m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "We project Prosper Peter's market value to reach "
-            },
-            {
-              "stat": "ev_6a5691b9d3c642b7",
-              "display": "€34.6m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Hidden gem: Matviy Ponomarenko (Dynamo Kyiv), who is "
-            },
-            {
-              "stat": "ev_2baf67e60418b17a",
-              "display": "21"
-            },
-            {
-              "text": " years old."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Matviy Ponomarenko plays for "
-            },
-            {
-              "stat": "ev_fdf7ac3cbe46f42a",
-              "display": "Dynamo Kyiv"
+              "stat": "ev_bbd8f219289a8462",
+              "display": "Leeds United"
             },
             {
               "text": "."
@@ -896,11 +777,144 @@
               "text": "Lille's second squad need is "
             },
             {
-              "stat": "ev_9a962cb0911237e9",
-              "display": "central midfield"
+              "stat": "ev_6265c05c5f7d39e8",
+              "display": "centre-forward"
             },
             {
               "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lille have "
+            },
+            {
+              "stat": "ev_87cd9696fe733af9",
+              "display": "2"
+            },
+            {
+              "text": " players for centre-forward, leaving veterans aside."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "A squad carries "
+            },
+            {
+              "stat": "ev_58e6f0bccb6db7d9",
+              "display": "2"
+            },
+            {
+              "text": " players for centre-forward."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lille's best option for centre-forward is "
+            },
+            {
+              "stat": "ev_97766900b111d6ae",
+              "display": "Hamza Igamane"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Lille's regular starters at centre-forward is "
+            },
+            {
+              "stat": "ev_f5c792e8645a6057",
+              "display": "Hamza Igamane"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "The last of Lille's regular starters at centre-forward has a market value of "
+            },
+            {
+              "stat": "ev_25859fcbeaee663b",
+              "display": "€18.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lille's best option for centre-forward has a market value of "
+            },
+            {
+              "stat": "ev_d73f0f301b1a79c3",
+              "display": "€18.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "At the squads closest to Lille in strength, the best option for centre-forward is typically worth "
+            },
+            {
+              "stat": "ev_ed58d48537012816",
+              "display": "€30.0m"
+            },
+            {
+              "text": ". "
+            },
+            {
+              "stat": "ev_8f36404031b3b779",
+              "display": "33%"
+            },
+            {
+              "text": " of Lille's options for centre-forward are veterans."
             }
           ],
           "type": "stat",
@@ -926,17 +940,7 @@
           "reason": "the rumour it is about was not confirmed"
         },
         {
-          "text": "Odsonne Édouard has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: no relevant source found"
-        },
-        {
-          "text": "Hugo Duro has [number] months left on his contract.",
-          "status": "unverified",
-          "reason": "transfer clause: no relevant source found"
-        },
-        {
-          "text": "Yanis Begraoui has [number] months left on his contract.",
+          "text": "Nicolás Domínguez has [number] months left on his contract.",
           "status": "unverified",
           "reason": "transfer clause: no relevant source found"
         }
@@ -944,196 +948,276 @@
     }
   ],
   "stats": {
-    "ev_01bf858401f9b029": {
-      "value": 25300000.0,
-      "display": "25300000",
+    "ev_03891338d2aed576": {
+      "value": 34600000.0,
+      "display": "34600000",
       "unit": null,
       "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp7c886b11a4a045",
-      "entity_name": "Matviy Ponomarenko",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0505e69386be9c3c": {
-      "value": 17800000.0,
-      "display": "17800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp9c31eeb1c5300a",
-      "entity_name": "Hákon Arnar Haraldsson",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0adc2933313f8fdb": {
-      "value": 19.2,
-      "display": "19.20",
-      "unit": null,
-      "metric": "age",
       "entity_type": "player",
       "entity_id": "rp5ad724da3cd55a",
       "entity_name": "Prosper Peter",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_12dbf650d6e02f75": {
-      "value": 0.0091,
-      "display": "0.01",
-      "unit": null,
-      "metric": "realism",
-      "entity_type": "player",
-      "entity_id": "rpefe18282490f84",
-      "entity_name": "Rassoul N'Diaye",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1c94fed81ed21157": {
-      "value": 18000000.0,
-      "display": "18000000",
-      "unit": "EUR",
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp81580b373e5925",
-      "entity_name": "Hamza Igamane",
-      "source": "transfermarkt_datasets",
-      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
-      "source_tier": 3,
-      "fetched_at": "2026-06-01T00:00:00+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_1e3f4cac4c949b9e": {
-      "value": 0.585,
-      "display": "0.58",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp40aac51629d309",
-      "entity_name": "Mihajlo Cvetkovic",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_24252b00cf226717": {
-      "value": 20.0,
-      "display": "20",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rpa0992f9e9d0902",
-      "entity_name": "Yanis Begraoui",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2438ef214791922b": {
-      "value": 26.9,
-      "display": "26.90",
+    "ev_065e85197fc23278": {
+      "value": 25.6,
+      "display": "25.60",
       "unit": null,
       "metric": "age",
       "entity_type": "player",
-      "entity_id": "rp0bdfee357301ce",
-      "entity_name": "Hugo Duro",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_2673b203e068c9db": {
-      "value": 20.0,
-      "display": "20",
-      "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rp4aa9bde7049491",
-      "entity_name": "Odsonne Edouard",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_27b5a9911636207e": {
-      "value": 12000000.0,
-      "display": "12000000",
+    "ev_0b3cebab67359851": {
+      "value": 8000000.0,
+      "display": "8000000",
       "unit": null,
       "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rp0bdfee357301ce",
-      "entity_name": "Hugo Duro",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_2baf67e60418b17a": {
-      "value": 20.8,
-      "display": "20.80",
+    "ev_0b6c86644f382b34": {
+      "value": 0.318,
+      "display": "0.32",
       "unit": null,
-      "metric": "age",
+      "metric": "sale_likelihood",
       "entity_type": "player",
-      "entity_id": "rp7c886b11a4a045",
-      "entity_name": "Matviy Ponomarenko",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "entity_id": "rp9c31eeb1c5300a",
+      "entity_name": "Hákon Arnar Haraldsson",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_2e8d3bf2a10a399c": {
-      "value": 11600000.0,
-      "display": "11600000",
+    "ev_0e8e82aff59fc7c0": {
+      "value": 18100000.0,
+      "display": "18100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1669098496b6d2d1": {
+      "value": 46.0,
+      "display": "46",
+      "unit": null,
+      "metric": "one_in",
+      "entity_type": "rumour",
+      "entity_id": "91a0ac49f66c9fa4-p6:finn jeltsch",
+      "entity_name": "Finn Jeltsch",
+      "source": "dugout_model:rumours",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1a341abd90cceb58": {
+      "value": 6900000.0,
+      "display": "6900000",
       "unit": null,
       "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rpa0992f9e9d0902",
-      "entity_name": "Yanis Begraoui",
+      "entity_id": "rp1188cad66ee4f6",
+      "entity_name": "Nicolás Domínguez",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1ba6e6ef632538ab": {
+      "value": 0.667,
+      "display": "0.67",
+      "unit": null,
+      "metric": "need_ageing_share",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_20f4fc0eb1a42f50": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_213be7d75aee2835": {
+      "value": 0.567,
+      "display": "0.57",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_22443d303827f63e": {
+      "value": 0.238,
+      "display": "0.24",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp86e743a423bb6f",
+      "entity_name": "Ngal'ayel Mukau",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_23fb75019aaad044": {
+      "value": 0.759,
+      "display": "0.76",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_256c2ac5f2edfb43": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:10:07.798092+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_25859fcbeaee663b": {
+      "value": 18000000.0,
+      "display": "18000000",
+      "unit": null,
+      "metric": "need_bar_value",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2c188253632cd6a4": {
+      "value": 0.596,
+      "display": "0.60",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2d52ceafcd7536d7": {
+      "value": 2414.0,
+      "display": "2414",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30a9d0fbdfac2412": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:10:07.798092+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
       "cross_checks": []
     },
     "ev_3145fb3f6e901a22": {
@@ -1152,183 +1236,39 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_31d7900859a21f4f": {
-      "value": 46.0,
-      "display": "46",
+    "ev_3329dc19169a325c": {
+      "value": 28.8,
+      "display": "28.80",
       "unit": null,
-      "metric": "one_in",
-      "entity_type": "rumour",
-      "entity_id": "91a0ac49f66c9fa4-p6:finn jeltsch",
-      "entity_name": "Finn Jeltsch",
-      "source": "dugout_model:rumours",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_35e3ee7519685029": {
-      "value": 0.533,
-      "display": "0.53",
-      "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rp0bdfee357301ce",
-      "entity_name": "Hugo Duro",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_37c7b4e77c4527d0": {
-      "value": 2.0,
-      "display": "2",
-      "unit": null,
-      "metric": "league_position",
-      "entity_type": "club",
-      "entity_id": "lille",
-      "entity_name": "Lille",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_4a4cfd0b7ecf283a": {
-      "value": 13000000.0,
-      "display": "13000000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp40aac51629d309",
-      "entity_name": "Mihajlo Cvetkovic",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_5b054a7ed5fbad45": {
-      "value": 4.0,
-      "display": "4",
-      "unit": null,
-      "metric": "league_goalsAgainst",
-      "entity_type": "club",
-      "entity_id": "lille",
-      "entity_name": "Lille",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_62dd033c1009bd2d": {
-      "value": 0.232,
-      "display": "0.23",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp86f6b8e5260a58",
-      "entity_name": "Nathan Ngoy",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6840abdade854639": {
-      "value": "Angers SCO",
-      "display": "Angers SCO",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp5ad724da3cd55a",
-      "entity_name": "Prosper Peter",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6a5691b9d3c642b7": {
-      "value": 34600000.0,
-      "display": "34600000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp5ad724da3cd55a",
-      "entity_name": "Prosper Peter",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_705c13fac5308bf9": {
-      "value": 8900000.0,
-      "display": "8900000",
-      "unit": null,
-      "metric": "fair_fee",
+      "metric": "age",
       "entity_type": "player",
       "entity_id": "rp4aa9bde7049491",
       "entity_name": "Odsonne Edouard",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_730940eff05a5056": {
-      "value": "centre-forward",
-      "display": "centre-forward",
+    "ev_3975abfcc94b1eb6": {
+      "value": 13000000.0,
+      "display": "13000000",
       "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "lille",
-      "entity_name": "Lille",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_758e775d134c458d": {
-      "value": "GD Estoril Praia",
-      "display": "GD Estoril Praia",
-      "unit": null,
-      "metric": "candidate_club",
+      "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rpa0992f9e9d0902",
-      "entity_name": "Yanis Begraoui",
+      "entity_id": "rp1188cad66ee4f6",
+      "entity_name": "Nicolás Domínguez",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_7a6994312adc241d": {
+    "ev_3fc83271206cf829": {
       "value": 28.3,
       "display": "28.30",
       "unit": null,
@@ -1339,76 +1279,140 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_7dd6b307a7942e8c": {
-      "value": "Valencia CF",
-      "display": "Valencia CF",
+    "ev_411d0d882faa68df": {
+      "value": 6900000.0,
+      "display": "6900000",
       "unit": null,
-      "metric": "candidate_club",
+      "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rp0bdfee357301ce",
-      "entity_name": "Hugo Duro",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_812ba228c3fab397": {
-      "value": 20.0,
-      "display": "20",
+    "ev_436eb9e1beae8770": {
+      "value": 2.0,
+      "display": "2",
       "unit": null,
-      "metric": "contract_months",
-      "entity_type": "player",
-      "entity_id": "rp0bdfee357301ce",
-      "entity_name": "Hugo Duro",
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_81a5de93c74a735e": {
-      "value": 25.3,
-      "display": "25.30",
+    "ev_4b2d7373f78a00e5": {
+      "value": 8700000.0,
+      "display": "8700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4c749b61dfaf5748": {
+      "value": 19.8,
+      "display": "19.80",
       "unit": null,
       "metric": "age",
       "entity_type": "player",
-      "entity_id": "rpa0992f9e9d0902",
-      "entity_name": "Yanis Begraoui",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_824529e45930ad51": {
-      "value": "2026-10-17T18:45:00+00:00",
-      "display": "2026-10-17T18:45:00+00:00",
+    "ev_4de1cc8026f01010": {
+      "value": 12000000.0,
+      "display": "12000000",
       "unit": null,
-      "metric": "kickoff_utc",
-      "entity_type": "match",
-      "entity_id": "ligue_1:2026-27:lille:brest",
-      "entity_name": "Lille v Brest",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches",
-      "source_tier": 2,
-      "fetched_at": "2026-10-16T22:33:42.581539+00:00",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
-      "status": "single_source",
+      "status": "model_output",
       "cross_checks": []
     },
-    "ev_85d04093c2e55d06": {
+    "ev_586d29779b324b6d": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_58e6f0bccb6db7d9": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5905a40a8bd57a48": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5eb3359284048752": {
       "value": 9.0,
       "display": "9",
       "unit": null,
@@ -1419,110 +1423,46 @@
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
+      "fetched_at": "2026-10-17T07:10:07.798092+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_86b90c9b65249eda": {
-      "value": "RSC Anderlecht",
-      "display": "RSC Anderlecht",
+    "ev_5f7998864f29b42c": {
+      "value": 0.514,
+      "display": "0.51",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_613e1cf3d85d388d": {
+      "value": "Nottingham Forest",
+      "display": "Nottingham Forest",
       "unit": null,
       "metric": "candidate_club",
       "entity_type": "player",
-      "entity_id": "rp40aac51629d309",
-      "entity_name": "Mihajlo Cvetkovic",
+      "entity_id": "rp1188cad66ee4f6",
+      "entity_name": "Nicolás Domínguez",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_86c04d1dcd5d1d89": {
-      "value": 5600000.0,
-      "display": "5600000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpefe18282490f84",
-      "entity_name": "Rassoul N'Diaye",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8d258eaee246d65e": {
-      "value": 8900000.0,
-      "display": "8900000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp0bdfee357301ce",
-      "entity_name": "Hugo Duro",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_8e25dc4aefb0be54": {
-      "value": 13.0,
-      "display": "13",
-      "unit": null,
-      "metric": "league_points",
-      "entity_type": "club",
-      "entity_id": "lille",
-      "entity_name": "Lille",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_90108cc010df14ef": {
-      "value": "WLWWD",
-      "display": "WLWWD",
-      "unit": null,
-      "metric": "league_form",
-      "entity_type": "club",
-      "entity_id": "lille",
-      "entity_name": "Lille",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
-      "source_tier": 2,
-      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_95b04bcb4eee3186": {
-      "value": 0.238,
-      "display": "0.24",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp86e743a423bb6f",
-      "entity_name": "Ngal'ayel Mukau",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9a962cb0911237e9": {
-      "value": "central midfield",
-      "display": "central midfield",
+    "ev_6265c05c5f7d39e8": {
+      "value": "centre-forward",
+      "display": "centre-forward",
       "unit": null,
       "metric": "need",
       "entity_type": "club",
@@ -1531,87 +1471,295 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_a501d45465cb63a2": {
-      "value": 12000000.0,
-      "display": "12000000",
+    "ev_641b2825f54c8ce0": {
+      "value": 16600000.0,
+      "display": "16600000",
       "unit": null,
-      "metric": "market_value",
+      "metric": "proj_value_4y",
       "entity_type": "player",
-      "entity_id": "rpa0992f9e9d0902",
-      "entity_name": "Yanis Begraoui",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_a564b67ec1d7ab87": {
-      "value": 19.6,
-      "display": "19.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp1afc660abefc4e",
-      "entity_name": "Renato Nhaga",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a6bf422a4dccf5cb": {
-      "value": 12000000.0,
-      "display": "12000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp4aa9bde7049491",
-      "entity_name": "Odsonne Edouard",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_aed9f109a841d296": {
-      "value": 14900000.0,
-      "display": "14900000",
+    "ev_68e91a48e1ec5f9c": {
+      "value": 12300000.0,
+      "display": "12300000",
       "unit": null,
       "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rp81580b373e5925",
-      "entity_name": "Hamza Igamane",
+      "entity_id": "rp86e743a423bb6f",
+      "entity_name": "Ngal'ayel Mukau",
       "source": "dugout_model:valuation",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_b2958eb847308961": {
-      "value": 0.572,
-      "display": "0.57",
+    "ev_6a5a5f628a4f4697": {
+      "value": 20000000.0,
+      "display": "20000000",
       "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rp4aa9bde7049491",
-      "entity_name": "Odsonne Edouard",
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c04a37874c54416": {
+      "value": 15300000.0,
+      "display": "15300000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6d83282b41a4c37a": {
+      "value": 10200000.0,
+      "display": "10200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_76f6ff6f31cb5b46": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp1188cad66ee4f6",
+      "entity_name": "Nicolás Domínguez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_81c44620a731e8b5": {
+      "value": 18.6,
+      "display": "18.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_87cd9696fe733af9": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8800ea072981cbe5": {
+      "value": "RC Lens",
+      "display": "RC Lens",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d65d4252dc1c7f3": {
+      "value": 0.309,
+      "display": "0.31",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8f36404031b3b779": {
+      "value": 0.333,
+      "display": "0.33",
+      "unit": null,
+      "metric": "need_ageing_share",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8fcb60a7f1abc5b0": {
+      "value": 0.609,
+      "display": "0.61",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp1188cad66ee4f6",
+      "entity_name": "Nicolás Domínguez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9234f1b5879e5745": {
+      "value": 0.232,
+      "display": "0.23",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp86f6b8e5260a58",
+      "entity_name": "Nathan Ngoy",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9556f077569ec2d1": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp86e743a423bb6f",
+      "entity_name": "Ngal'ayel Mukau",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_97766900b111d6ae": {
+      "value": "Hamza Igamane",
+      "display": "Hamza Igamane",
+      "unit": null,
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_984597c5d0f10d51": {
+      "value": 1255.0,
+      "display": "1255",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9950d161070edad9": {
+      "value": 19.2,
+      "display": "19.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp5ad724da3cd55a",
+      "entity_name": "Prosper Peter",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b09399987832e762": {
+      "value": 26.4,
+      "display": "26.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -1632,162 +1780,290 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_bd0240d272c5a09d": {
-      "value": 24.8,
-      "display": "24.80",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rpefe18282490f84",
-      "entity_name": "Rassoul N'Diaye",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c23e4cb9b64b659c": {
-      "value": 13800000.0,
-      "display": "13800000",
+    "ev_bb5b9575a7f6d52a": {
+      "value": 17100000.0,
+      "display": "17100000",
       "unit": null,
       "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rp7c886b11a4a045",
-      "entity_name": "Matviy Ponomarenko",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "entity_id": "rp86f6b8e5260a58",
+      "entity_name": "Nathan Ngoy",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_c5c0184a13016481": {
-      "value": 13000000.0,
-      "display": "13000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp1188cad66ee4f6",
-      "entity_name": "Nicolás Domínguez",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_cb5fd2c1237c3c51": {
-      "value": 17700000.0,
-      "display": "17700000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp5ad724da3cd55a",
-      "entity_name": "Prosper Peter",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_cbc07923126b7291": {
-      "value": "RC Lens",
-      "display": "RC Lens",
+    "ev_bbd8f219289a8462": {
+      "value": "Leeds United",
+      "display": "Leeds United",
       "unit": null,
       "metric": "candidate_club",
       "entity_type": "player",
-      "entity_id": "rp4aa9bde7049491",
-      "entity_name": "Odsonne Edouard",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_cc979a346e7e02a9": {
-      "value": 21400000.0,
-      "display": "21400000",
+    "ev_c14667666082c865": {
+      "value": 8000000.0,
+      "display": "8000000",
       "unit": null,
-      "metric": "proj_value_4y",
+      "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rp40aac51629d309",
-      "entity_name": "Mihajlo Cvetkovic",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_d5920762ab62db03": {
-      "value": 10800000.0,
-      "display": "10800000",
+    "ev_c2cb91cade921fab": {
+      "value": 9400000.0,
+      "display": "9400000",
       "unit": null,
-      "metric": "proj_value_4y",
+      "metric": "fair_fee",
       "entity_type": "player",
-      "entity_id": "rp1afc660abefc4e",
-      "entity_name": "Renato Nhaga",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_dd06ffb37fecabdd": {
-      "value": 0.318,
-      "display": "0.32",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp9c31eeb1c5300a",
-      "entity_name": "Hákon Arnar Haraldsson",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e99790f93c9a402b": {
-      "value": 0.498,
-      "display": "0.50",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp7c886b11a4a045",
-      "entity_name": "Matviy Ponomarenko",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_eeba5cf9c405f67c": {
-      "value": 28.7,
-      "display": "28.70",
+    "ev_c4dd0f7985733e45": {
+      "value": 22.2,
+      "display": "22.20",
       "unit": null,
       "metric": "age",
       "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c54bc551247da582": {
+      "value": "WLWWD",
+      "display": "WLWWD",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-17T07:10:07.798092+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_c7255066e6a20614": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d73f0f301b1a79c3": {
+      "value": 18000000.0,
+      "display": "18000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e5c86884843e0bde": {
+      "value": 17800000.0,
+      "display": "17800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp9c31eeb1c5300a",
+      "entity_name": "Hákon Arnar Haraldsson",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e69ae7daa9f317cc": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
       "entity_id": "rp4aa9bde7049491",
       "entity_name": "Odsonne Edouard",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e73afab4fef6dd61": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": null,
+      "metric": "need_bar_value",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e8962269cc86858a": {
+      "value": "Ngal'ayel Mukau",
+      "display": "Ngal'ayel Mukau",
+      "unit": null,
+      "metric": "need_bar_player",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ed58d48537012816": {
+      "value": 30000000.0,
+      "display": "30000000",
+      "unit": null,
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_edc1a4884c6aee58": {
+      "value": "Ajax Amsterdam",
+      "display": "Ajax Amsterdam",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ee22c77140329df2": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp305cbb8acfa73a",
+      "entity_name": "Ilia Gruev",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ee815b4f3413ab30": {
+      "value": 9200000.0,
+      "display": "9200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eed0f22e9e7e1b58": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f024328d53d5c028": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -1808,82 +2084,114 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_f0c9047911c90d3e": {
-      "value": 0.342,
-      "display": "0.34",
+    "ev_f1471d483255f38c": {
+      "value": "2026-10-17T18:45:00+00:00",
+      "display": "2026-10-17T18:45:00+00:00",
       "unit": null,
-      "metric": "minutes_share_now",
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:lille:brest",
+      "entity_name": "Lille v Brest",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-17T07:10:01.582367+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f4ec889f78a3360a": {
+      "value": 2165.0,
+      "display": "2165",
+      "unit": null,
+      "metric": "minutes_last_year",
       "entity_type": "player",
-      "entity_id": "rp5ad724da3cd55a",
-      "entity_name": "Prosper Peter",
+      "entity_id": "rp1188cad66ee4f6",
+      "entity_name": "Nicolás Domínguez",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f976f9517c65d831": {
-      "value": 0.493,
-      "display": "0.49",
+    "ev_f5c792e8645a6057": {
+      "value": "Hamza Igamane",
+      "display": "Hamza Igamane",
       "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpa0992f9e9d0902",
-      "entity_name": "Yanis Begraoui",
+      "metric": "need_bar_player",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_fb10fcd1ac243a35": {
-      "value": 19.8,
-      "display": "19.80",
+    "ev_f75f35f2238e2bd5": {
+      "value": "Ngal'ayel Mukau",
+      "display": "Ngal'ayel Mukau",
       "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp40aac51629d309",
-      "entity_name": "Mihajlo Cvetkovic",
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_fb7025ca73efd0b0": {
-      "value": 17100000.0,
-      "display": "17100000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp86f6b8e5260a58",
-      "entity_name": "Nathan Ngoy",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_fdf7ac3cbe46f42a": {
-      "value": "Dynamo Kyiv",
-      "display": "Dynamo Kyiv",
+    "ev_f8b59d55d4f1227e": {
+      "value": "RCD Espanyol Barcelona",
+      "display": "RCD Espanyol Barcelona",
       "unit": null,
       "metric": "candidate_club",
       "entity_type": "player",
-      "entity_id": "rp7c886b11a4a045",
-      "entity_name": "Matviy Ponomarenko",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fcb2d07631b534f1": {
+      "value": 13.0,
+      "display": "13",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "lille",
+      "entity_name": "Lille",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T07:10:07.798092+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_fdb7c736e24c900d": {
+      "value": "1.FC Union Berlin",
+      "display": "1.FC Union Berlin",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -1892,31 +2200,31 @@
   "key_stats": {
     "club": [
       {
-        "stat": "ev_37c7b4e77c4527d0",
+        "stat": "ev_30a9d0fbdfac2412",
         "display": "2nd",
         "label": "league position",
         "subject": "Lille"
       },
       {
-        "stat": "ev_8e25dc4aefb0be54",
+        "stat": "ev_fcb2d07631b534f1",
         "display": "13",
         "label": "league points",
         "subject": "Lille"
       },
       {
-        "stat": "ev_85d04093c2e55d06",
+        "stat": "ev_5eb3359284048752",
         "display": "9",
         "label": "league goals scored",
         "subject": "Lille"
       },
       {
-        "stat": "ev_5b054a7ed5fbad45",
+        "stat": "ev_256c2ac5f2edfb43",
         "display": "4",
         "label": "league goals conceded",
         "subject": "Lille"
       },
       {
-        "stat": "ev_90108cc010df14ef",
+        "stat": "ev_c54bc551247da582",
         "display": "WLWWD",
         "label": "recent league results, oldest first",
         "subject": "Lille"
@@ -1930,7 +2238,7 @@
     ],
     "match": [
       {
-        "stat": "ev_824529e45930ad51",
+        "stat": "ev_f1471d483255f38c",
         "display": "17 October 2026",
         "label": "kick-off date",
         "subject": "Lille v Brest"
@@ -1940,22 +2248,34 @@
     "news": [],
     "transfer": [
       {
-        "stat": "ev_dd06ffb37fecabdd",
+        "stat": "ev_0b6c86644f382b34",
         "display": "32%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Hákon Arnar Haraldsson"
       },
       {
-        "stat": "ev_95b04bcb4eee3186",
+        "stat": "ev_22443d303827f63e",
         "display": "24%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Ngal'ayel Mukau"
       },
       {
-        "stat": "ev_62dd033c1009bd2d",
+        "stat": "ev_9234f1b5879e5745",
         "display": "23%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Nathan Ngoy"
+      },
+      {
+        "stat": "ev_9556f077569ec2d1",
+        "display": "€15.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Ngal'ayel Mukau"
+      },
+      {
+        "stat": "ev_68e91a48e1ec5f9c",
+        "display": "€12.3m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Ngal'ayel Mukau"
       },
       {
         "stat": "ev_f049e4df1035b59e",
@@ -1964,7 +2284,7 @@
         "subject": "Hákon Arnar Haraldsson"
       },
       {
-        "stat": "ev_0505e69386be9c3c",
+        "stat": "ev_e5c86884843e0bde",
         "display": "€17.8m",
         "label": "estimated fair fee if sold to another Ligue 1 club",
         "subject": "Hákon Arnar Haraldsson"
@@ -1976,294 +2296,396 @@
         "subject": "Nathan Ngoy"
       },
       {
-        "stat": "ev_fb7025ca73efd0b0",
+        "stat": "ev_bb5b9575a7f6d52a",
         "display": "€17.1m",
         "label": "estimated fair fee if sold to another Ligue 1 club",
         "subject": "Nathan Ngoy"
-      },
-      {
-        "stat": "ev_1c94fed81ed21157",
-        "display": "€18.0m",
-        "label": "market value (Transfermarkt, as of June 2026)",
-        "subject": "Hamza Igamane"
-      },
-      {
-        "stat": "ev_aed9f109a841d296",
-        "display": "€14.9m",
-        "label": "estimated fair fee if sold to another Ligue 1 club",
-        "subject": "Hamza Igamane"
       }
     ],
     "scout": [
       {
-        "stat": "ev_31d7900859a21f4f",
+        "stat": "ev_1669098496b6d2d1",
         "display": "46",
         "label": "rumour track record",
         "subject": "Finn Jeltsch"
       },
       {
-        "stat": "ev_730940eff05a5056",
-        "display": "centre-forward",
+        "stat": "ev_eed0f22e9e7e1b58",
+        "display": "defensive midfield",
         "label": "squad need, priority one",
         "subject": "Lille"
       },
       {
-        "stat": "ev_eeba5cf9c405f67c",
-        "display": "29",
+        "stat": "ev_f024328d53d5c028",
+        "display": "2",
+        "label": "players for the position, veterans aside (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_436eb9e1beae8770",
+        "display": "2",
+        "label": "players a squad carries there (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_f75f35f2238e2bd5",
+        "display": "Ngal'ayel Mukau",
+        "label": "best option there (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_e8962269cc86858a",
+        "display": "Ngal'ayel Mukau",
+        "label": "last regular starter there (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_e73afab4fef6dd61",
+        "display": "€15.0m",
+        "label": "last regular starter's market value (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_c7255066e6a20614",
+        "display": "€15.0m",
+        "label": "best option's market value (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_6a5a5f628a4f4697",
+        "display": "€20.0m",
+        "label": "similar squads' best option's market value (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_1ba6e6ef632538ab",
+        "display": "67%",
+        "label": "share of the options who are veterans (need one)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_3fc83271206cf829",
+        "display": "28",
         "label": "age (best target)",
-        "subject": "Odsonne Édouard"
+        "subject": "Nicolás Domínguez"
       },
       {
-        "stat": "ev_cbc07923126b7291",
-        "display": "RC Lens",
+        "stat": "ev_613e1cf3d85d388d",
+        "display": "Nottingham Forest",
         "label": "current club",
-        "subject": "Odsonne Édouard"
+        "subject": "Nicolás Domínguez"
       },
       {
-        "stat": "ev_2673b203e068c9db",
+        "stat": "ev_f4ec889f78a3360a",
+        "display": "2165",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Nicolás Domínguez"
+      },
+      {
+        "stat": "ev_76f6ff6f31cb5b46",
         "display": "20",
         "label": "months left on his contract",
-        "subject": "Odsonne Édouard"
+        "subject": "Nicolás Domínguez"
       },
       {
-        "stat": "ev_a6bf422a4dccf5cb",
+        "stat": "ev_3975abfcc94b1eb6",
+        "display": "€13.0m",
+        "label": "market value",
+        "subject": "Nicolás Domínguez"
+      },
+      {
+        "stat": "ev_1a341abd90cceb58",
+        "display": "€6.9m",
+        "label": "estimated fair fee",
+        "subject": "Nicolás Domínguez"
+      },
+      {
+        "stat": "ev_8fcb60a7f1abc5b0",
+        "display": "61%",
+        "label": "expected share of minutes at the club",
+        "subject": "Nicolás Domínguez"
+      },
+      {
+        "stat": "ev_b09399987832e762",
+        "display": "26",
+        "label": "age (best target)",
+        "subject": "Ilia Gruev"
+      },
+      {
+        "stat": "ev_bbd8f219289a8462",
+        "display": "Leeds United",
+        "label": "current club",
+        "subject": "Ilia Gruev"
+      },
+      {
+        "stat": "ev_984597c5d0f10d51",
+        "display": "1255",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Ilia Gruev"
+      },
+      {
+        "stat": "ev_ee22c77140329df2",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Ilia Gruev"
+      },
+      {
+        "stat": "ev_5905a40a8bd57a48",
         "display": "€12.0m",
         "label": "market value",
-        "subject": "Odsonne Édouard"
+        "subject": "Ilia Gruev"
       },
       {
-        "stat": "ev_705c13fac5308bf9",
-        "display": "€8.9m",
+        "stat": "ev_411d0d882faa68df",
+        "display": "€6.9m",
         "label": "estimated fair fee",
-        "subject": "Odsonne Édouard"
+        "subject": "Ilia Gruev"
       },
       {
-        "stat": "ev_b2958eb847308961",
+        "stat": "ev_2c188253632cd6a4",
+        "display": "60%",
+        "label": "expected share of minutes at the club",
+        "subject": "Ilia Gruev"
+      },
+      {
+        "stat": "ev_065e85197fc23278",
+        "display": "26",
+        "label": "age (best target)",
+        "subject": "Urko González de Zárate"
+      },
+      {
+        "stat": "ev_f8b59d55d4f1227e",
+        "display": "RCD Espanyol Barcelona",
+        "label": "current club",
+        "subject": "Urko González de Zárate"
+      },
+      {
+        "stat": "ev_2d52ceafcd7536d7",
+        "display": "2414",
+        "label": "minutes played in the past year's matches on record",
+        "subject": "Urko González de Zárate"
+      },
+      {
+        "stat": "ev_20f4fc0eb1a42f50",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Urko González de Zárate"
+      },
+      {
+        "stat": "ev_586d29779b324b6d",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Urko González de Zárate"
+      },
+      {
+        "stat": "ev_c2cb91cade921fab",
+        "display": "€9.4m",
+        "label": "estimated fair fee",
+        "subject": "Urko González de Zárate"
+      },
+      {
+        "stat": "ev_213be7d75aee2835",
         "display": "57%",
         "label": "expected share of minutes at the club",
-        "subject": "Odsonne Édouard"
+        "subject": "Urko González de Zárate"
       },
       {
-        "stat": "ev_2438ef214791922b",
-        "display": "27",
-        "label": "age (best target)",
-        "subject": "Hugo Duro"
-      },
-      {
-        "stat": "ev_7dd6b307a7942e8c",
-        "display": "Valencia CF",
-        "label": "current club",
-        "subject": "Hugo Duro"
-      },
-      {
-        "stat": "ev_812ba228c3fab397",
-        "display": "20",
-        "label": "months left on his contract",
-        "subject": "Hugo Duro"
-      },
-      {
-        "stat": "ev_27b5a9911636207e",
-        "display": "€12.0m",
-        "label": "market value",
-        "subject": "Hugo Duro"
-      },
-      {
-        "stat": "ev_8d258eaee246d65e",
-        "display": "€8.9m",
-        "label": "estimated fair fee",
-        "subject": "Hugo Duro"
-      },
-      {
-        "stat": "ev_35e3ee7519685029",
-        "display": "53%",
-        "label": "expected share of minutes at the club",
-        "subject": "Hugo Duro"
-      },
-      {
-        "stat": "ev_81a5de93c74a735e",
-        "display": "25",
-        "label": "age (best target)",
-        "subject": "Yanis Begraoui"
-      },
-      {
-        "stat": "ev_758e775d134c458d",
-        "display": "GD Estoril Praia",
-        "label": "current club",
-        "subject": "Yanis Begraoui"
-      },
-      {
-        "stat": "ev_24252b00cf226717",
-        "display": "20",
-        "label": "months left on his contract",
-        "subject": "Yanis Begraoui"
-      },
-      {
-        "stat": "ev_a501d45465cb63a2",
-        "display": "€12.0m",
-        "label": "market value",
-        "subject": "Yanis Begraoui"
-      },
-      {
-        "stat": "ev_2e8d3bf2a10a399c",
-        "display": "€11.6m",
-        "label": "estimated fair fee",
-        "subject": "Yanis Begraoui"
-      },
-      {
-        "stat": "ev_f976f9517c65d831",
-        "display": "49%",
-        "label": "expected share of minutes at the club",
-        "subject": "Yanis Begraoui"
-      },
-      {
-        "stat": "ev_0adc2933313f8fdb",
+        "stat": "ev_81c44620a731e8b5",
         "display": "19",
         "label": "age (gem target)",
-        "subject": "Prosper Peter"
+        "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_6840abdade854639",
-        "display": "Angers SCO",
+        "stat": "ev_edc1a4884c6aee58",
+        "display": "Ajax Amsterdam",
         "label": "current club",
-        "subject": "Prosper Peter"
+        "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_f0c9047911c90d3e",
-        "display": "34%",
+        "stat": "ev_5f7998864f29b42c",
+        "display": "51%",
         "label": "share of his club's minutes over the last year",
-        "subject": "Prosper Peter"
+        "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_cb5fd2c1237c3c51",
-        "display": "€17.7m",
+        "stat": "ev_c14667666082c865",
+        "display": "€8.0m",
+        "label": "market value",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_6d83282b41a4c37a",
+        "display": "€10.2m",
         "label": "estimated fair fee",
-        "subject": "Prosper Peter"
+        "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_6a5691b9d3c642b7",
-        "display": "€34.6m",
+        "stat": "ev_0e8e82aff59fc7c0",
+        "display": "€18.1m",
         "label": "projected market value in a few seasons",
-        "subject": "Prosper Peter"
+        "subject": "Jorthy Mokio"
       },
       {
-        "stat": "ev_2baf67e60418b17a",
-        "display": "21",
-        "label": "age (gem target)",
-        "subject": "Matviy Ponomarenko"
-      },
-      {
-        "stat": "ev_fdf7ac3cbe46f42a",
-        "display": "Dynamo Kyiv",
-        "label": "current club",
-        "subject": "Matviy Ponomarenko"
-      },
-      {
-        "stat": "ev_e99790f93c9a402b",
-        "display": "50%",
-        "label": "share of his club's minutes over the last year",
-        "subject": "Matviy Ponomarenko"
-      },
-      {
-        "stat": "ev_c23e4cb9b64b659c",
-        "display": "€13.8m",
-        "label": "estimated fair fee",
-        "subject": "Matviy Ponomarenko"
-      },
-      {
-        "stat": "ev_01bf858401f9b029",
-        "display": "€25.3m",
-        "label": "projected market value in a few seasons",
-        "subject": "Matviy Ponomarenko"
-      },
-      {
-        "stat": "ev_fb10fcd1ac243a35",
+        "stat": "ev_4c749b61dfaf5748",
         "display": "20",
         "label": "age (gem target)",
-        "subject": "Mihajlo Cvetkovic"
+        "subject": "Andrija Bulatovic"
       },
       {
-        "stat": "ev_86b90c9b65249eda",
-        "display": "RSC Anderlecht",
+        "stat": "ev_8800ea072981cbe5",
+        "display": "RC Lens",
         "label": "current club",
-        "subject": "Mihajlo Cvetkovic"
+        "subject": "Andrija Bulatovic"
       },
       {
-        "stat": "ev_1e3f4cac4c949b9e",
-        "display": "58%",
+        "stat": "ev_8d65d4252dc1c7f3",
+        "display": "31%",
         "label": "share of his club's minutes over the last year",
-        "subject": "Mihajlo Cvetkovic"
+        "subject": "Andrija Bulatovic"
       },
       {
-        "stat": "ev_4a4cfd0b7ecf283a",
-        "display": "€13.0m",
+        "stat": "ev_0b3cebab67359851",
+        "display": "€8.0m",
+        "label": "market value",
+        "subject": "Andrija Bulatovic"
+      },
+      {
+        "stat": "ev_ee815b4f3413ab30",
+        "display": "€9.2m",
         "label": "estimated fair fee",
-        "subject": "Mihajlo Cvetkovic"
+        "subject": "Andrija Bulatovic"
       },
       {
-        "stat": "ev_cc979a346e7e02a9",
-        "display": "€21.4m",
+        "stat": "ev_641b2825f54c8ce0",
+        "display": "€16.6m",
         "label": "projected market value in a few seasons",
-        "subject": "Mihajlo Cvetkovic"
+        "subject": "Andrija Bulatovic"
       },
       {
-        "stat": "ev_9a962cb0911237e9",
-        "display": "central midfield",
+        "stat": "ev_c4dd0f7985733e45",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_fdb7c736e24c900d",
+        "display": "1.FC Union Berlin",
+        "label": "current club",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_23fb75019aaad044",
+        "display": "76%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_4de1cc8026f01010",
+        "display": "€12.0m",
+        "label": "market value",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_4b2d7373f78a00e5",
+        "display": "€8.7m",
+        "label": "estimated fair fee",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_6c04a37874c54416",
+        "display": "€15.3m",
+        "label": "projected market value in a few seasons",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_6265c05c5f7d39e8",
+        "display": "centre-forward",
         "label": "squad need, priority two",
         "subject": "Lille"
       },
       {
-        "stat": "ev_7a6994312adc241d",
-        "display": "28",
+        "stat": "ev_87cd9696fe733af9",
+        "display": "2",
+        "label": "players for the position, veterans aside (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_58e6f0bccb6db7d9",
+        "display": "2",
+        "label": "players a squad carries there (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_97766900b111d6ae",
+        "display": "Hamza Igamane",
+        "label": "best option there (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_f5c792e8645a6057",
+        "display": "Hamza Igamane",
+        "label": "last regular starter there (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_25859fcbeaee663b",
+        "display": "€18.0m",
+        "label": "last regular starter's market value (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_d73f0f301b1a79c3",
+        "display": "€18.0m",
+        "label": "best option's market value (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_ed58d48537012816",
+        "display": "€30.0m",
+        "label": "similar squads' best option's market value (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_8f36404031b3b779",
+        "display": "33%",
+        "label": "share of the options who are veterans (need two)",
+        "subject": "Lille"
+      },
+      {
+        "stat": "ev_3329dc19169a325c",
+        "display": "29",
         "label": "age (best target, second need)",
-        "subject": "Nicolás Domínguez"
+        "subject": "Odsonne Édouard"
       },
       {
-        "stat": "ev_c5c0184a13016481",
-        "display": "€13.0m",
+        "stat": "ev_e69ae7daa9f317cc",
+        "display": "€12.0m",
         "label": "market value",
-        "subject": "Nicolás Domínguez"
+        "subject": "Odsonne Édouard"
       },
       {
-        "stat": "ev_bd0240d272c5a09d",
-        "display": "25",
-        "label": "age (realistic target, second need)",
-        "subject": "Rassoul Ndiaye"
-      },
-      {
-        "stat": "ev_86c04d1dcd5d1d89",
-        "display": "€5.6m",
-        "label": "estimated fair fee",
-        "subject": "Rassoul Ndiaye"
-      },
-      {
-        "stat": "ev_12dbf650d6e02f75",
-        "display": "0.9%",
-        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
-        "subject": "Rassoul Ndiaye"
-      },
-      {
-        "stat": "ev_a564b67ec1d7ab87",
-        "display": "20",
+        "stat": "ev_9950d161070edad9",
+        "display": "19",
         "label": "age (gem target, second need)",
-        "subject": "Renato Nhaga"
+        "subject": "Prosper Peter"
       },
       {
-        "stat": "ev_d5920762ab62db03",
-        "display": "€10.8m",
+        "stat": "ev_03891338d2aed576",
+        "display": "€34.6m",
         "label": "projected market value in a few seasons",
-        "subject": "Renato Nhaga"
+        "subject": "Prosper Peter"
       }
     ]
   },
   "verification": {
     "stat_auditor": {
       "ok": true,
-      "numbers_total": 44,
+      "numbers_total": 46,
       "numbers_untraceable": 0
     },
     "fact_check_claims": {
       "verified": 46,
-      "unverified": 6
+      "unverified": 4
     },
     "sections_published": 6,
     "sections_withheld": 0
