@@ -142,12 +142,14 @@ def build(ctx: Context, club: str) -> tuple[dict, State]:
         for k, v in ((s.factcheck or {}).get("counts") or {}).items():
             fc_counts[k] = fc_counts.get(k, 0) + v
     cited = sorted({e for s in published for e in s.cited})
+    lg = ctx.toolbox.league(club)
     key, key_status, key_cross = key_stats(ctx, sections)
     status.update(key_status)
     cross.update(key_cross)
     doc: dict[str, Any] = {
         "schema": SCHEMA,
         "club": {"slug": club, "name": ctx.toolbox.name(club), "season": ctx.toolbox.season},
+        "league": {k: lg[k] for k in ("key", "name", "country")},
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "data_as_of": ctx.toolbox.now.isoformat(timespec="seconds"),
         "llm": ctx.llm.name if ctx.llm else None,
@@ -188,4 +190,13 @@ def write(doc: dict, out_dir: Path) -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"{doc['club']['slug']}.json"
     path.write_text(json.dumps(doc, indent=2, ensure_ascii=False, default=str) + "\n", encoding="utf-8")
+    return path
+
+
+def write_leagues(path: Path) -> Path:
+    """`data/leagues.json`: the configured leagues in config order, for the site's league picker."""
+    from dugout_pipeline.clubs import league_config, leagues
+
+    rows = [{"key": lg, **{k: league_config(lg)[k] for k in ("name", "country")}} for lg in leagues()]
+    path.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return path

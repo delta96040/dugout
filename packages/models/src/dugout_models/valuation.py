@@ -228,6 +228,17 @@ def backtest(out_dir: Path | None = None) -> dict:
         "Premier League to Premier League": (test.pl_to_pl == 1).to_numpy(),
         "Premier League buyer, age 24 or under": ((test.to_pl == 1) & (test.age <= 24)).to_numpy(),
     }
+    # every other configured league as a buyer: the fair fee on those clubs' dossiers is "if sold within the league"
+    from dugout_pipeline.clubs import league_config, leagues
+
+    for lg in leagues():
+        cfg = league_config(lg)
+        comp = cfg["provider_ids"].get("transfermarkt")
+        if comp and comp != PL:
+            segments[f"{cfg['name']} buyer"] = (test.to_comp == comp).to_numpy()
+            segments[f"{cfg['name']} to {cfg['name']}"] = (
+                (test.to_comp == comp) & (test.from_comp == comp)
+            ).to_numpy()
     seg = {
         name: {
             "n": int(m.sum()),
@@ -292,6 +303,9 @@ def backtest(out_dir: Path | None = None) -> dict:
             + ", ".join(f"{k} {v}" for k, v in report["importance"].items()),
             "",
             "Limitation: contract months remaining is not available historically, so it is not a feature.",
+            "",
+            "Other leagues' buyers (the fair fee on those clubs' dossiers): read MAE against the market-value column and "
+            "the median ratio; a ratio below 1.00 means fees came in under the estimate (it runs high there).",
         ]
         (out_dir / "valuation.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return report

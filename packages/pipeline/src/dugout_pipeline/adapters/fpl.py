@@ -53,6 +53,7 @@ def left_club(element: dict[str, Any]) -> bool:
 
 class FPLAdapter(SourceAdapter):
     name = "fpl"
+    requires = "fpl"  # FPL only covers the Premier League
     tier = TIER_OFFICIAL
     ttl = 2 * HOUR
     rate, per, burst = 1.0, 2.0, 1  # one request every 2 s: polite for an unofficial API

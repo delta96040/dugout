@@ -1,0 +1,1519 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "elversberg",
+    "name": "Elversberg",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "country": "Germany"
+  },
+  "generated_at": "2026-10-17T00:02:53+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Elversberg for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Elversberg are "
+          },
+          {
+            "stat": "ev_74ee01adfa5844e1",
+            "display": "10th"
+          },
+          {
+            "text": " in the Bundesliga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Elversberg have "
+          },
+          {
+            "stat": "ev_bb9e0478b5457bff",
+            "display": "7"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Elversberg's next league match is Elversberg v Augsburg on "
+          },
+          {
+            "stat": "ev_375ba99ff5ddcb3d",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Elversberg's biggest squad need is "
+          },
+          {
+            "stat": "ev_33a70a2ea5987be0",
+            "display": "centre-back"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Elversberg doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Elversberg are "
+            },
+            {
+              "stat": "ev_74ee01adfa5844e1",
+              "display": "10th"
+            },
+            {
+              "text": " in the Bundesliga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elversberg have "
+            },
+            {
+              "stat": "ev_bb9e0478b5457bff",
+              "display": "7"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elversberg have scored "
+            },
+            {
+              "stat": "ev_f189ebfdcf37abfc",
+              "display": "8"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elversberg have conceded "
+            },
+            {
+              "stat": "ev_3f2315471bc235e9",
+              "display": "8"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elversberg's most recent league results read "
+            },
+            {
+              "stat": "ev_b07278648854de2c",
+              "display": "LDLWW"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Elversberg expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Elversberg's next league match is Elversberg v Augsburg on "
+            },
+            {
+              "stat": "ev_375ba99ff5ddcb3d",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Elversberg's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Elversberg, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Elversberg players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Cole Campbell's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_7c06d2ffe4f0d365",
+              "display": "16%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Noah Darvich's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_9c0bea9c1bae1795",
+              "display": "1%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Francis Onyeka at "
+            },
+            {
+              "stat": "ev_8a416642c928855e",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Francis Onyeka is "
+            },
+            {
+              "stat": "ev_0b932d77c1699c9d",
+              "display": "€6.4m"
+            },
+            {
+              "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Cole Campbell at "
+            },
+            {
+              "stat": "ev_225692410eec39e7",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Cole Campbell is "
+            },
+            {
+              "stat": "ev_b343e368761eab29",
+              "display": "€6.2m"
+            },
+            {
+              "text": ", above his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Noah Darvich at "
+            },
+            {
+              "stat": "ev_3c749e1b44219659",
+              "display": "€4.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Noah Darvich is "
+            },
+            {
+              "stat": "ev_2d69a35dfe91e525",
+              "display": "€4.3m"
+            },
+            {
+              "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Elversberg strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Elversberg's biggest squad need is "
+            },
+            {
+              "stat": "ev_33a70a2ea5987be0",
+              "display": "centre-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Pau Cubarsí (FC Barcelona), who is "
+            },
+            {
+              "stat": "ev_f5cc45a51f2797dc",
+              "display": "20"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Pau Cubarsí plays for "
+            },
+            {
+              "stat": "ev_cc8774d7902bb474",
+              "display": "FC Barcelona"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Pau Cubarsí has played "
+            },
+            {
+              "stat": "ev_ea14899a705626ed",
+              "display": "86%"
+            },
+            {
+              "text": " of FC Barcelona's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Pau Cubarsí is "
+            },
+            {
+              "stat": "ev_f95a942719de0078",
+              "display": "€48.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Pau Cubarsí's market value to reach "
+            },
+            {
+              "stat": "ev_5d6ec9ebc628561d",
+              "display": "€94.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Dean Huijsen (Real Madrid), who is "
+            },
+            {
+              "stat": "ev_aa621ef64bcaafc3",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dean Huijsen plays for "
+            },
+            {
+              "stat": "ev_4202d1197069087a",
+              "display": "Real Madrid"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dean Huijsen has played "
+            },
+            {
+              "stat": "ev_3256887aa0183a41",
+              "display": "55%"
+            },
+            {
+              "text": " of Real Madrid's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Dean Huijsen is "
+            },
+            {
+              "stat": "ev_b09048be2dc2ded3",
+              "display": "€32.3m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Dean Huijsen's market value to reach "
+            },
+            {
+              "stat": "ev_9e430336fca8020b",
+              "display": "€70.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Tylel Tati (FC Nantes), who is "
+            },
+            {
+              "stat": "ev_a628b3a17fff05e4",
+              "display": "19"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Tylel Tati plays for "
+            },
+            {
+              "stat": "ev_158dfa9348903412",
+              "display": "FC Nantes"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Tylel Tati has played "
+            },
+            {
+              "stat": "ev_ccae8dafd6c674a1",
+              "display": "52%"
+            },
+            {
+              "text": " of FC Nantes's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Tylel Tati is "
+            },
+            {
+              "stat": "ev_5d203b93b6c34668",
+              "display": "€19.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Tylel Tati's market value to reach "
+            },
+            {
+              "stat": "ev_0e4f1294ef4707e0",
+              "display": "€60.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Elversberg's second squad need is "
+            },
+            {
+              "stat": "ev_ac665d3b3c467d15",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Robin Risser (RC Lens), who is "
+            },
+            {
+              "stat": "ev_69cb663b25596c8e",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Robin Risser's market value to reach "
+            },
+            {
+              "stat": "ev_ee3ea15a22b49778",
+              "display": "€44.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    }
+  ],
+  "stats": {
+    "ev_0b932d77c1699c9d": {
+      "value": 6400000.0,
+      "display": "6400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3d4ac56fb4bb5c",
+      "entity_name": "Francis Onyeka",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0e4f1294ef4707e0": {
+      "value": 60900000.0,
+      "display": "60900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_158dfa9348903412": {
+      "value": "FC Nantes",
+      "display": "FC Nantes",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_225692410eec39e7": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa222a89e6d4927",
+      "entity_name": "Cole Campbell",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2d69a35dfe91e525": {
+      "value": 4300000.0,
+      "display": "4300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp676f2d06dab05f",
+      "entity_name": "Noah Darvich",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3256887aa0183a41": {
+      "value": 0.552,
+      "display": "0.55",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_33a70a2ea5987be0": {
+      "value": "centre-back",
+      "display": "centre-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_375ba99ff5ddcb3d": {
+      "value": "2026-10-17T13:30:00+00:00",
+      "display": "2026-10-17T13:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "bundesliga:2026-27:elversberg:augsburg",
+      "entity_name": "Elversberg v Augsburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:11.210954+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_3c749e1b44219659": {
+      "value": 4000000.0,
+      "display": "4000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp676f2d06dab05f",
+      "entity_name": "Noah Darvich",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_3f2315471bc235e9": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4202d1197069087a": {
+      "value": "Real Madrid",
+      "display": "Real Madrid",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d203b93b6c34668": {
+      "value": 19000000.0,
+      "display": "19000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d6ec9ebc628561d": {
+      "value": 94000000.0,
+      "display": "94000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_69cb663b25596c8e": {
+      "value": 21.9,
+      "display": "21.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4d527e427b5fd7",
+      "entity_name": "Robin Risser",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_74ee01adfa5844e1": {
+      "value": 10.0,
+      "display": "10",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7c06d2ffe4f0d365": {
+      "value": 0.156,
+      "display": "0.16",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpa222a89e6d4927",
+      "entity_name": "Cole Campbell",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8a416642c928855e": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3d4ac56fb4bb5c",
+      "entity_name": "Francis Onyeka",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2025-12-16T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_9c0bea9c1bae1795": {
+      "value": 0.013,
+      "display": "0.01",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp676f2d06dab05f",
+      "entity_name": "Noah Darvich",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e430336fca8020b": {
+      "value": 70900000.0,
+      "display": "70900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a628b3a17fff05e4": {
+      "value": 18.7,
+      "display": "18.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aa621ef64bcaafc3": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ac665d3b3c467d15": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b07278648854de2c": {
+      "value": "LDLWW",
+      "display": "LDLWW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b09048be2dc2ded3": {
+      "value": 32300000.0,
+      "display": "32300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b343e368761eab29": {
+      "value": 6200000.0,
+      "display": "6200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa222a89e6d4927",
+      "entity_name": "Cole Campbell",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bb9e0478b5457bff": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_cc8774d7902bb474": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ccae8dafd6c674a1": {
+      "value": 0.516,
+      "display": "0.52",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ea14899a705626ed": {
+      "value": 0.865,
+      "display": "0.86",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ee3ea15a22b49778": {
+      "value": 44100000.0,
+      "display": "44100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp4d527e427b5fd7",
+      "entity_name": "Robin Risser",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f189ebfdcf37abfc": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "elversberg",
+      "entity_name": "Elversberg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f5cc45a51f2797dc": {
+      "value": 19.7,
+      "display": "19.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f95a942719de0078": {
+      "value": 48900000.0,
+      "display": "48900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_74ee01adfa5844e1",
+        "display": "10th",
+        "label": "league position",
+        "subject": "Elversberg"
+      },
+      {
+        "stat": "ev_bb9e0478b5457bff",
+        "display": "7",
+        "label": "league points",
+        "subject": "Elversberg"
+      },
+      {
+        "stat": "ev_f189ebfdcf37abfc",
+        "display": "8",
+        "label": "league goals scored",
+        "subject": "Elversberg"
+      },
+      {
+        "stat": "ev_3f2315471bc235e9",
+        "display": "8",
+        "label": "league goals conceded",
+        "subject": "Elversberg"
+      },
+      {
+        "stat": "ev_b07278648854de2c",
+        "display": "LDLWW",
+        "label": "recent league results, oldest first",
+        "subject": "Elversberg"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_375ba99ff5ddcb3d",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Elversberg v Augsburg"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_7c06d2ffe4f0d365",
+        "display": "16%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Cole Campbell"
+      },
+      {
+        "stat": "ev_9c0bea9c1bae1795",
+        "display": "1%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Noah Darvich"
+      },
+      {
+        "stat": "ev_8a416642c928855e",
+        "display": "€6.0m",
+        "label": "market value (Transfermarkt, as of December 2025)",
+        "subject": "Francis Onyeka"
+      },
+      {
+        "stat": "ev_0b932d77c1699c9d",
+        "display": "€6.4m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Francis Onyeka"
+      },
+      {
+        "stat": "ev_225692410eec39e7",
+        "display": "€5.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Cole Campbell"
+      },
+      {
+        "stat": "ev_b343e368761eab29",
+        "display": "€6.2m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Cole Campbell"
+      },
+      {
+        "stat": "ev_3c749e1b44219659",
+        "display": "€4.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Noah Darvich"
+      },
+      {
+        "stat": "ev_2d69a35dfe91e525",
+        "display": "€4.3m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Noah Darvich"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_33a70a2ea5987be0",
+        "display": "centre-back",
+        "label": "squad need, priority one",
+        "subject": "Elversberg"
+      },
+      {
+        "stat": "ev_f5cc45a51f2797dc",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Pau Cubarsí"
+      },
+      {
+        "stat": "ev_cc8774d7902bb474",
+        "display": "FC Barcelona",
+        "label": "current club",
+        "subject": "Pau Cubarsí"
+      },
+      {
+        "stat": "ev_ea14899a705626ed",
+        "display": "86%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Pau Cubarsí"
+      },
+      {
+        "stat": "ev_f95a942719de0078",
+        "display": "€48.9m",
+        "label": "estimated fair fee",
+        "subject": "Pau Cubarsí"
+      },
+      {
+        "stat": "ev_5d6ec9ebc628561d",
+        "display": "€94.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Pau Cubarsí"
+      },
+      {
+        "stat": "ev_aa621ef64bcaafc3",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Dean Huijsen"
+      },
+      {
+        "stat": "ev_4202d1197069087a",
+        "display": "Real Madrid",
+        "label": "current club",
+        "subject": "Dean Huijsen"
+      },
+      {
+        "stat": "ev_3256887aa0183a41",
+        "display": "55%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Dean Huijsen"
+      },
+      {
+        "stat": "ev_b09048be2dc2ded3",
+        "display": "€32.3m",
+        "label": "estimated fair fee",
+        "subject": "Dean Huijsen"
+      },
+      {
+        "stat": "ev_9e430336fca8020b",
+        "display": "€70.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Dean Huijsen"
+      },
+      {
+        "stat": "ev_a628b3a17fff05e4",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Tylel Tati"
+      },
+      {
+        "stat": "ev_158dfa9348903412",
+        "display": "FC Nantes",
+        "label": "current club",
+        "subject": "Tylel Tati"
+      },
+      {
+        "stat": "ev_ccae8dafd6c674a1",
+        "display": "52%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Tylel Tati"
+      },
+      {
+        "stat": "ev_5d203b93b6c34668",
+        "display": "€19.0m",
+        "label": "estimated fair fee",
+        "subject": "Tylel Tati"
+      },
+      {
+        "stat": "ev_0e4f1294ef4707e0",
+        "display": "€60.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Tylel Tati"
+      },
+      {
+        "stat": "ev_ac665d3b3c467d15",
+        "display": "goalkeeper",
+        "label": "squad need, priority two",
+        "subject": "Elversberg"
+      },
+      {
+        "stat": "ev_69cb663b25596c8e",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Robin Risser"
+      },
+      {
+        "stat": "ev_ee3ea15a22b49778",
+        "display": "€44.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "Robin Risser"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 37,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 37
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

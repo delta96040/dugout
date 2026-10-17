@@ -1,9 +1,12 @@
 """Transfer market outputs for `publish`: fair value, sale likelihood and a scouting shortlist per club.
 
 Built from transfermarkt-datasets (CC0; valuations and appearances run to June 2026) plus the committed current
-squad file `data/reference/transfermarkt_squads.csv` (values and contracts as of the last local refresh).
+squad file `data/reference/transfermarkt_squads.csv` (Premier League values and contracts as of the last local
+refresh) and, for leagues without FPL, the football-data.org squads in the warehouse (`warehouse_squads`), valued at
+their latest transfermarkt-datasets valuation.
 
-  fair_fee              valuation model (docs/backtests/valuation.md): price if sold to another Premier League club
+  fair_fee              valuation model (docs/backtests/valuation.md): price if sold to another club in the same
+                        league (the model is fitted on buyers in every league; Premier League buyers are a segment)
   sale_likelihood       mobility model (realism.md): P(sold for a fee in a transfer window), features as of today
   needs                 positions where the club is thinnest/weakest (heuristic: depth and value at the position)
   shortlist             three lists per need, from first-tier players in every league the dataset covers.
@@ -143,30 +146,100 @@ def agreed_signings(
     return out
 
 
+def warehouse_squads(con: duckdb.DuckDBPyConnection, skip: set[str]) -> pd.DataFrame:
+    """Squads of the clubs the committed squad file does not cover (leagues without FPL), from the warehouse:
+    football-data.org squads with Transfermarkt ids (pipeline matching), the club's league competition id from
+    config, and the date a player joined from Wikipedia's transfer lists where it shows this summer's move.
+    Values, contracts and earlier join dates are filled from transfermarkt-datasets by `Market`."""
+    from dugout_pipeline.clubs import league_config, leagues
+
+    comps = {lg: league_config(lg)["provider_ids"].get("transfermarkt") for lg in leagues()}
+    try:
+        joined = """(SELECT max(date) FROM wiki_transfers w WHERE w.tm_player_id = e.external_id
+                     AND w.tm_to_club = ec.external_id AND w.kind <> 'end_of_loan')"""
+        con.execute("SELECT 1 FROM wiki_transfers LIMIT 0")
+    except duckdb.CatalogException:  # warehouse from before the table existed
+        joined = "NULL"
+    df = con.execute(
+        f"""SELECT e.external_id AS tm_player_id, p.player_id, p.name, ec.external_id AS tm_club_id, p.club_id,
+                   CAST(p.birth_date AS VARCHAR) AS birth_date, CAST({joined} AS VARCHAR) AS joined, c.league,
+                   c.name AS club_name
+            FROM players p JOIN clubs c USING (club_id)
+            JOIN entity_ids e ON e.entity_type = 'player' AND e.provider = 'transfermarkt'
+                 AND e.namespace = 'spieler' AND e.dugout_id = p.player_id
+            JOIN entity_ids ec ON ec.entity_type = 'club' AND ec.provider = 'transfermarkt'
+                 AND ec.namespace = 'verein' AND ec.dugout_id = c.club_id
+            WHERE NOT list_contains(?, c.club_id)""",
+        [sorted(skip)],
+    ).df()
+    df["comp"] = df.league.map(comps)
+    return df.dropna(subset=["comp"]).drop(columns="league").drop_duplicates("tm_player_id")
+
+
 class Market:
-    def __init__(self, now: datetime):
+    def __init__(self, now: datetime, extra_squads: pd.DataFrame | None = None):
         self.now = pd.Timestamp(now.date())
         self.t = valuation.load()
         comps = pd.read_parquet(valuation.TM_DIR / "competitions.parquet")
         self.comps = comps
         realism.TOP_TIER.update(comps.loc[comps.sub_type == "first_tier", "competition_id"])
-        self.squads = pd.read_csv(SQUADS, dtype={"tm_player_id": str, "tm_club_id": str})
+        # the committed squad file (Premier League, refreshed locally) plus squads of other leagues (warehouse);
+        # `comp` is each club's Transfermarkt competition: buyer-league features use it
+        self.squads = pd.read_csv(SQUADS, dtype={"tm_player_id": str, "tm_club_id": str}).assign(comp=PL)
         self.incoming: dict[str, list[tuple]] = {}  # filled from official announcements by market()
         self.moved: set[str] = set()  # moved since the dataset snapshot (Wikipedia lists), filled by market()
         self.played = positions_played()  # positions players actually start at (positions.py)
         self.players = self.t["players"].copy()
         self.players["player_id"] = self.players.player_id.astype(str)
         self.players = self.players.set_index("player_id")
+        if extra_squads is not None and len(extra_squads):
+            self.squads = pd.concat([self.squads, self._fill(extra_squads)], ignore_index=True)
         self._with_current_values()
         self.clubs = self.t["clubs"].copy()
         self.clubs["club_id"] = self.clubs.club_id.astype(str)
+
+    def _fill(self, sq: pd.DataFrame) -> pd.DataFrame:
+        """Values (latest valuation, June at the latest), contract expiry and join date from transfermarkt-datasets
+        for squads without a squad-file row. No scrape date: these rows add no valuation rows of their own."""
+        sq = sq.copy()
+        v = self.t["player_valuations"].assign(player_id=lambda d: d.player_id.astype(str))
+        latest = v.sort_values("date").groupby("player_id").market_value_in_eur.last()
+        sq["market_value_eur"] = sq.tm_player_id.map(latest)
+        sq["contract_expires"] = pd.to_datetime(
+            sq.tm_player_id.map(self.players.contract_expiration_date), errors="coerce"
+        ).dt.strftime("%Y-%m-%d")
+        tr = self.t["transfers"].assign(
+            player_id=lambda d: d.player_id.astype(str), to_club_id=lambda d: d.to_club_id.astype(str)
+        )
+        last_in = tr.groupby(["player_id", "to_club_id"]).transfer_date.max()
+        earlier = [last_in.get((p, c)) for p, c in zip(sq.tm_player_id, sq.tm_club_id, strict=True)]
+        sq["joined"] = sq.joined.where(sq.joined.notna(), pd.Series(earlier, index=sq.index))
+        sq["joined"] = pd.to_datetime(sq.joined, errors="coerce").dt.strftime("%Y-%m-%d")
+        return sq
+
+    def club_names(self) -> pd.Series:
+        """Transfermarkt club id -> name: the dataset's, else the warehouse's (a club new to the top flight)."""
+        names = self.t["clubs"].assign(club_id=lambda d: d.club_id.astype(str)).set_index("club_id").name
+        if "club_name" in self.squads:
+            extra = self.squads.dropna(subset=["club_name"]).drop_duplicates("tm_club_id")
+            names = pd.concat(
+                [names, extra.set_index("tm_club_id").club_name[lambda s: ~s.index.isin(names.index)]]
+            )
+        return names
+
+    def buyer_comp(self, tm_club: str | None) -> str:
+        """The buyer's league: from the squads (current) or the dataset; the Premier League when unknown."""
+        if tm_club is None:
+            return PL
+        row = self.squads.loc[self.squads.tm_club_id == str(tm_club), "comp"]
+        return row.iloc[0] if len(row) else (self.comp_of(str(tm_club)) or PL)
 
     def _with_current_values(self) -> None:
         """Adds today's squad-file values as valuation rows, so 'latest value' means October, not June."""
         v = self.t["player_valuations"].copy()
         v["player_id"] = v.player_id.astype(str)
         v["current_club_id"] = v.current_club_id.astype(str)
-        sq = self.squads.dropna(subset=["market_value_eur"])
+        sq = self.squads.dropna(subset=["market_value_eur", "scraped_on"])
         extra = pd.DataFrame(
             {
                 "player_id": sq.tm_player_id,
@@ -174,7 +247,7 @@ class Market:
                 "market_value_in_eur": sq.market_value_eur.astype(float),
                 "current_club_name": sq.club_id,
                 "current_club_id": sq.tm_club_id,
-                "player_club_domestic_competition_id": PL,
+                "player_club_domestic_competition_id": sq.comp,
             }
         )
         v["date"] = pd.to_datetime(v.date)
@@ -252,8 +325,11 @@ class Market:
         seller_comp: list[str | None],
         seller_club: list[str | None] | None = None,
         buyer_club: str | None = None,
+        buyer_comp: str | None = None,
     ) -> pd.DataFrame:
-        """Fair fee if sold to `buyer_club` (Transfermarkt id), or to a typical Premier League club when None."""
+        """Fair fee if sold to `buyer_club` (Transfermarkt id), or to a typical club of `buyer_comp` (default: the
+        Premier League) when None. The valuation model is fitted on buyers in every league (valuation.md)."""
+        to = buyer_comp or self.buyer_comp(buyer_club)
         ap = self.ap[(self.ap.date < self.now) & (self.ap.date >= self.now - pd.Timedelta(days=365))]
         form = ap.groupby("player_id").agg(
             minutes_365=("minutes_played", "sum"),
@@ -272,17 +348,19 @@ class Market:
         ].fillna(0)
         df["ga_p90_365"] = (df.goals + df.assists) / df.minutes_365.clip(lower=90) * 90
         df["log_from_league"] = np.log1p([self.league_value.get((c, ls_year), np.nan) for c in df.from_comp])
-        df["log_to_league"] = np.log1p(self.league_value.get((PL, ls_year), np.nan))
-        df["same_league"] = (df.from_comp == PL).astype(float)
+        df["log_to_league"] = np.log1p(self.league_value.get((to, ls_year), np.nan))
+        df["same_league"] = (df.from_comp == to).astype(float)
         df["year"] = year
         df["mv"] = df.player_id.map(self.latest_value)
-        df["to_pl"] = 1.0
-        df["pl_to_pl"] = (df.from_comp == PL).astype(float)
+        df["to_pl"] = float(to == PL)
+        df["pl_to_pl"] = ((df.from_comp == PL) & (to == PL)).astype(float)
         if seller_club is None:  # each player's current club in the dataset
             seller_club = df.player_id.map(self.players.current_club_id).astype(str).tolist()
         df["log_from_cv"] = np.log1p([self.club_value.get(str(c), 0.0) for c in seller_club])
-        pl_clubs = self.squads.tm_club_id.astype(str).unique()
-        typical = float(np.median([self.club_value.get(c, 0.0) for c in pl_clubs]))
+        league_clubs = self.squads.loc[self.squads.comp == to, "tm_club_id"].astype(str).unique()
+        if not len(league_clubs):
+            league_clubs = self.clubs.loc[self.clubs.domestic_competition_id == to, "club_id"].unique()
+        typical = float(np.median([self.club_value.get(c, 0.0) for c in league_clubs]))
         df["log_to_cv"] = np.log1p(self.club_value.get(str(buyer_club), typical) if buyer_club else typical)
         pos = df.player_id.map(self.players.position)
         for p in ("Attack", "Midfield", "Defender", "Goalkeeper"):
@@ -384,7 +462,7 @@ class Market:
             "prev_share": mins[pid] / (90 * max(games, 1)),
             "log_mv": np.log1p(mv),
             "age": (self.now - dob).days / 365.25 if pd.notna(dob) else np.nan,
-            "league_gap": np.log1p(self.league_value.get((PL, ls_year), np.nan))
+            "league_gap": np.log1p(self.league_value.get((self.buyer_comp(buyer), ls_year), np.nan))
             - np.log1p(self.league_value.get((self.comp_of(club), ls_year), np.nan)),
             "rank_at_pos": 1 + int((inc_vals > mv).sum()),
             "value_vs_best": np.log1p(mv) - np.log1p(inc_vals.max()) if len(inc_vals) else 0.0,
@@ -415,9 +493,12 @@ class Market:
         median best option at the same position among the `peers` clubs with the most similar squad strength
         (like with like: goalkeepers vs goalkeepers, a title contender vs title contenders), and ageing.
         Signings the club has announced but who have not joined yet (loaned back, joining next summer) come from
-        its official news (`agreed_signings`). Higher = bigger need. A transparent heuristic, not a fitted model."""
+        its official news (`agreed_signings`). Peers come from the club's own league. Higher = bigger need. A
+        transparent heuristic, not a fitted model."""
+        comp = self.squads.loc[self.squads.club_id == club_slug, "comp"].iloc[0]
         strength = {
-            c: self.squad(c).market_value_eur.nlargest(11).median() for c in self.squads.club_id.unique()
+            c: self.squad(c).market_value_eur.nlargest(11).median()
+            for c in self.squads.loc[self.squads.comp == comp, "club_id"].unique()
         }
         mine = strength[club_slug]
         near = sorted((c for c in strength if c != club_slug), key=lambda c: abs(np.log(strength[c] / mine)))[
@@ -469,15 +550,17 @@ class Market:
             & (pool.current_club_id.astype(str) != tm_club)
             & (pool.last_season >= self.now.year - 1)
         ].copy()
-        # transfermarkt-datasets stops in July; the squad file (refreshed locally) knows who has moved to a Premier
-        # League club since (e.g. Baleba to Manchester United in August). Use the current club, and leave out
-        # anyone who joined his club in the last 12 months: clubs rarely sell a new signing.
+        pool["current_club_id"] = pool.current_club_id.astype(str)
+        # transfermarkt-datasets stops in July; the current squads (squad file, other leagues' squads) know who has
+        # moved since (e.g. Baleba to Manchester United in August). Use the current club, and leave out anyone who
+        # joined his club in the last 12 months: clubs rarely sell a new signing.
         now_sq = self.squads.drop_duplicates("tm_player_id").set_index("tm_player_id")
         in_sq = pool.player_id.isin(now_sq.index)
-        names = self.clubs.set_index("club_id").name
         pool.loc[in_sq, "current_club_id"] = pool.loc[in_sq, "player_id"].map(now_sq.tm_club_id)
-        pool.loc[in_sq, "current_club_name"] = pool.loc[in_sq, "current_club_id"].map(names)
-        pool.loc[in_sq, "current_club_domestic_competition_id"] = PL
+        pool.loc[in_sq, "current_club_name"] = pool.loc[in_sq, "current_club_id"].map(self.club_names())
+        pool.loc[in_sq, "current_club_domestic_competition_id"] = pool.loc[in_sq, "player_id"].map(
+            now_sq.comp
+        )
         joined = pd.to_datetime(pool.player_id.map(now_sq.joined), errors="coerce")
         pool = pool[
             (pool.current_club_id.astype(str) != tm_club)
@@ -578,16 +661,24 @@ def recent_moves(con: duckdb.DuckDBPyConnection) -> set[str]:
 
 
 def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | None = None) -> list[dict]:
-    mk = Market(now)
+    csv_clubs = set(pd.read_csv(SQUADS, usecols=["club_id"]).club_id)
+    mk = Market(now, warehouse_squads(con, skip=csv_clubs))
     mk.incoming = agreed_signings(con, now, set(mk.squads.name))
     mk.moved = recent_moves(con)
     mk.fit()
     reep = _tm_to_reep(con)
     showcase = clubs or sorted(mk.squads.club_id.unique())
     rows: list[dict] = []
-    # fair value and sale likelihood for every current Premier League player
+    # fair value (if sold to another club in the same league) and sale likelihood for every current squad player
     sq = mk.squads.copy()
-    fees = mk.fair_fee(sq.tm_player_id.tolist(), [PL] * len(sq), sq.tm_club_id.astype(str).tolist())
+    fees = pd.concat(
+        [
+            mk.fair_fee(
+                g.tm_player_id.tolist(), [comp] * len(g), g.tm_club_id.astype(str).tolist(), None, comp
+            ).set_index(g.index)
+            for comp, g in sq.groupby("comp", sort=False)
+        ]
+    ).reindex(sq.index)
     sale = mk.sale_likelihood(sq.tm_player_id.tolist())
     for r, f, s in zip(sq.itertuples(), fees.itertuples(), sale.to_numpy(), strict=True):
         pid = (

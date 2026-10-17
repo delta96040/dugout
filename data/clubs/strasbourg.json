@@ -1,0 +1,2655 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "strasbourg",
+    "name": "Strasbourg",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "ligue_1",
+    "name": "Ligue 1",
+    "country": "France"
+  },
+  "generated_at": "2026-10-16T21:46:34+00:00",
+  "data_as_of": "2026-10-16T21:39:40+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Strasbourg for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Strasbourg are "
+          },
+          {
+            "stat": "ev_a52cf0b30045f00a",
+            "display": "11th"
+          },
+          {
+            "text": " in the Ligue 1 table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Strasbourg have "
+          },
+          {
+            "stat": "ev_67a9a05847f163a6",
+            "display": "7"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Strasbourg's next league match is Strasbourg v Paris Saint-Germain on "
+          },
+          {
+            "stat": "ev_d5e2d6e3903aba59",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Strasbourg's biggest squad need is "
+          },
+          {
+            "stat": "ev_fb9187d8998fbfbc",
+            "display": "full-back"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Strasbourg doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Strasbourg are "
+            },
+            {
+              "stat": "ev_a52cf0b30045f00a",
+              "display": "11th"
+            },
+            {
+              "text": " in the Ligue 1 table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Strasbourg have "
+            },
+            {
+              "stat": "ev_67a9a05847f163a6",
+              "display": "7"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Strasbourg have scored "
+            },
+            {
+              "stat": "ev_78dc921777ae36a3",
+              "display": "11"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Strasbourg have conceded "
+            },
+            {
+              "stat": "ev_5d603644b4b9e286",
+              "display": "12"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Strasbourg's most recent league results read "
+            },
+            {
+              "stat": "ev_72a4779158c76c00",
+              "display": "LLDWW"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hugo Oliveira has been Strasbourg's head coach since "
+            },
+            {
+              "stat": "ev_5b85b915bc263b46",
+              "display": "15 July 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Strasbourg expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Strasbourg's next league match is Strasbourg v Paris Saint-Germain on "
+            },
+            {
+              "stat": "ev_d5e2d6e3903aba59",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Strasbourg's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Strasbourg, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Strasbourg players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Mateo Del Blanco's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_70039248fdaa6216",
+              "display": "39%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Joaquín Panichelli's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_f601f1e8da46d5ca",
+              "display": "30%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Oso's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_5a5941ef5b3a5681",
+              "display": "21%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Joaquín Panichelli at "
+            },
+            {
+              "stat": "ev_6f05280180a8d548",
+              "display": "€35.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Joaquín Panichelli is "
+            },
+            {
+              "stat": "ev_a117e477bd0a12c6",
+              "display": "€29.2m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Martial Godo at "
+            },
+            {
+              "stat": "ev_fa0060126e1c91ab",
+              "display": "€22.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Martial Godo is "
+            },
+            {
+              "stat": "ev_92adbadcc7faa7b0",
+              "display": "€17.6m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Karim Coulibaly at "
+            },
+            {
+              "stat": "ev_2b7bb82f17c1b4d2",
+              "display": "€28.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Karim Coulibaly is "
+            },
+            {
+              "stat": "ev_9e3e15a504a3e4f3",
+              "display": "€27.9m"
+            },
+            {
+              "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Strasbourg strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Strasbourg's biggest squad need is "
+            },
+            {
+              "stat": "ev_fb9187d8998fbfbc",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Andrea Cambiaso (Juventus FC), who is "
+            },
+            {
+              "stat": "ev_bc4e3fd558c6c489",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Andrea Cambiaso plays for "
+            },
+            {
+              "stat": "ev_06fb80d5c430d8c0",
+              "display": "Juventus FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Andrea Cambiaso has a market value of "
+            },
+            {
+              "stat": "ev_3fa47796c982111a",
+              "display": "€20.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Andrea Cambiaso is "
+            },
+            {
+              "stat": "ev_86f37f618eb6f8c0",
+              "display": "€14.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Andrea Cambiaso to play "
+            },
+            {
+              "stat": "ev_025956b56316119b",
+              "display": "63%"
+            },
+            {
+              "text": " of Strasbourg's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Nnamdi Collins (Eintracht Frankfurt), who is "
+            },
+            {
+              "stat": "ev_ecd69a7f8c04690a",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nnamdi Collins plays for "
+            },
+            {
+              "stat": "ev_49527d101ee8b25d",
+              "display": "Eintracht Frankfurt"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nnamdi Collins has a market value of "
+            },
+            {
+              "stat": "ev_eff6c5b9ec93b1a0",
+              "display": "€20.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Nnamdi Collins is "
+            },
+            {
+              "stat": "ev_5f975b97d63d70e8",
+              "display": "€14.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Nnamdi Collins to play "
+            },
+            {
+              "stat": "ev_5dd37d9cd3acb577",
+              "display": "58%"
+            },
+            {
+              "text": " of Strasbourg's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Santiago Mouriño (Villarreal CF), who is "
+            },
+            {
+              "stat": "ev_d960d0051d9f050a",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Santiago Mouriño plays for "
+            },
+            {
+              "stat": "ev_6c7e01787e49715c",
+              "display": "Villarreal CF"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Santiago Mouriño has a market value of "
+            },
+            {
+              "stat": "ev_095451a827494c5b",
+              "display": "€20.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Santiago Mouriño is "
+            },
+            {
+              "stat": "ev_4644fb3a583bcd05",
+              "display": "€14.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Santiago Mouriño to play "
+            },
+            {
+              "stat": "ev_8f4f87bb3673b599",
+              "display": "56%"
+            },
+            {
+              "text": " of Strasbourg's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Arsène Kouassi (FC Lorient), who is "
+            },
+            {
+              "stat": "ev_065eca6915fd34ff",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Arsène Kouassi plays for "
+            },
+            {
+              "stat": "ev_0fd148f7f530b204",
+              "display": "FC Lorient"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_d1a489853ca86a72",
+              "display": "27%"
+            },
+            {
+              "text": " chance that FC Lorient sell Arsène Kouassi in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Arsène Kouassi is "
+            },
+            {
+              "stat": "ev_80c9650cb9336923",
+              "display": "€10.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_d3b09feadf1d20ad",
+              "display": "0.6%"
+            },
+            {
+              "text": " chance that Arsène Kouassi joins Strasbourg in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Quentin Merlin (Stade Rennais FC), who is "
+            },
+            {
+              "stat": "ev_b168126a9963e4e4",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Quentin Merlin plays for "
+            },
+            {
+              "stat": "ev_69011cdbc46c16c2",
+              "display": "Stade Rennais FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_480fa9d8e03b6f1c",
+              "display": "7%"
+            },
+            {
+              "text": " chance that Stade Rennais FC sell Quentin Merlin in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Quentin Merlin is "
+            },
+            {
+              "stat": "ev_41348da232051d4f",
+              "display": "€10.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Strasbourg's second squad need is "
+            },
+            {
+              "stat": "ev_1d90f8c20f873ccc",
+              "display": "defensive midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Andrea Cambiaso has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Nnamdi Collins has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Santiago Mouriño has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Arsène Kouassi has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Quentin Merlin has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_025956b56316119b": {
+      "value": 0.631,
+      "display": "0.63",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpfcd060cb4fd187",
+      "entity_name": "Andrea Cambiaso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_065eca6915fd34ff": {
+      "value": 22.8,
+      "display": "22.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_06fb80d5c430d8c0": {
+      "value": "Juventus FC",
+      "display": "Juventus FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpfcd060cb4fd187",
+      "entity_name": "Andrea Cambiaso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_088334b985b2396e": {
+      "value": 21.9,
+      "display": "21.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp86e743a423bb6f",
+      "entity_name": "Ngal'ayel Mukau",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_095451a827494c5b": {
+      "value": 20000000.0,
+      "display": "20000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3e69adff8e6eaa",
+      "entity_name": "Santiago Mouriño",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0fd148f7f530b204": {
+      "value": "FC Lorient",
+      "display": "FC Lorient",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_10388f199da8cfc1": {
+      "value": 0.0076,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp86e743a423bb6f",
+      "entity_name": "Ngal'ayel Mukau",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1288d3f3701b8994": {
+      "value": 5400000.0,
+      "display": "5400000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpd4c97e55dba03e",
+      "entity_name": "Juho Lähteenmäki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_140a06d245396864": {
+      "value": 21.8,
+      "display": "21.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_15951963b6518585": {
+      "value": 0.0019,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1d8d4cdff7f00db3": {
+      "value": 18.6,
+      "display": "18.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1d90f8c20f873ccc": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2b7bb82f17c1b4d2": {
+      "value": 28000000.0,
+      "display": "28000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp0a7b4387e3382c",
+      "entity_name": "Karim Coulibaly",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2d0b15a166348606": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_395b3a2212e56fda": {
+      "value": 6400000.0,
+      "display": "6400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd4c97e55dba03e",
+      "entity_name": "Juho Lähteenmäki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3fa47796c982111a": {
+      "value": 20000000.0,
+      "display": "20000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpfcd060cb4fd187",
+      "entity_name": "Andrea Cambiaso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_41348da232051d4f": {
+      "value": 10900000.0,
+      "display": "10900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4644fb3a583bcd05": {
+      "value": 14500000.0,
+      "display": "14500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3e69adff8e6eaa",
+      "entity_name": "Santiago Mouriño",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_480fa9d8e03b6f1c": {
+      "value": 0.073,
+      "display": "0.07",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_49527d101ee8b25d": {
+      "value": "Eintracht Frankfurt",
+      "display": "Eintracht Frankfurt",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd9dd6873829f7f",
+      "entity_name": "Nnamdi Collins",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5a5941ef5b3a5681": {
+      "value": 0.21,
+      "display": "0.21",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpa08d58e2a6330f",
+      "entity_name": "Oso",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5b85b915bc263b46": {
+      "value": "2026-07-15",
+      "display": "2026-07-15",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q131452135",
+      "entity_name": "Hugo Oliveira",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q131452135",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5d603644b4b9e286": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5dd37d9cd3acb577": {
+      "value": 0.577,
+      "display": "0.58",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpd9dd6873829f7f",
+      "entity_name": "Nnamdi Collins",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5f0d29e208781129": {
+      "value": 0.0011,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5f975b97d63d70e8": {
+      "value": 14400000.0,
+      "display": "14400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd9dd6873829f7f",
+      "entity_name": "Nnamdi Collins",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_67a9a05847f163a6": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_69011cdbc46c16c2": {
+      "value": "Stade Rennais FC",
+      "display": "Stade Rennais FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c23f1b78379b970": {
+      "value": 5700000.0,
+      "display": "5700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp52b4b76c9a9ff7",
+      "entity_name": "Yaimar Medina",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c7e01787e49715c": {
+      "value": "Villarreal CF",
+      "display": "Villarreal CF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3e69adff8e6eaa",
+      "entity_name": "Santiago Mouriño",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6e17675b53b51a3f": {
+      "value": "FC Nordsjaelland",
+      "display": "FC Nordsjaelland",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd4c97e55dba03e",
+      "entity_name": "Juho Lähteenmäki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6f05280180a8d548": {
+      "value": 35000000.0,
+      "display": "35000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd59c378050bbf2",
+      "entity_name": "Joaquín Panichelli",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_70039248fdaa6216": {
+      "value": 0.388,
+      "display": "0.39",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp9a3a242dff6909",
+      "entity_name": "Mateo Del Blanco",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7102d7b563ec1b92": {
+      "value": "FC Twente Enschede",
+      "display": "FC Twente Enschede",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_72a4779158c76c00": {
+      "value": "LLDWW",
+      "display": "LLDWW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_755726301d92e18a": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_78dc921777ae36a3": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7f92cb8bfa35497a": {
+      "value": 28.4,
+      "display": "28.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3f53ba102d2c4b",
+      "entity_name": "Vitaly Janelt",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_80c9650cb9336923": {
+      "value": 10000000.0,
+      "display": "10000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_832ffbd5ed5c09f6": {
+      "value": 6400000.0,
+      "display": "6400000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_86f37f618eb6f8c0": {
+      "value": 14000000.0,
+      "display": "14000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfcd060cb4fd187",
+      "entity_name": "Andrea Cambiaso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_89a2ad05fd2f3323": {
+      "value": 5700000.0,
+      "display": "5700000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp52b4b76c9a9ff7",
+      "entity_name": "Yaimar Medina",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8b1d0279a7cda263": {
+      "value": 5900000.0,
+      "display": "5900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8f4f87bb3673b599": {
+      "value": 0.559,
+      "display": "0.56",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp3e69adff8e6eaa",
+      "entity_name": "Santiago Mouriño",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8fd4f94ea1571d4b": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp3e69adff8e6eaa",
+      "entity_name": "Santiago Mouriño",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_92750b32fef79d02": {
+      "value": "KV Mechelen",
+      "display": "KV Mechelen",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_92adbadcc7faa7b0": {
+      "value": 17600000.0,
+      "display": "17600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp847e124f149e8f",
+      "entity_name": "Martial Godo",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9b06c866def75aa2": {
+      "value": 8300000.0,
+      "display": "8300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e3e15a504a3e4f3": {
+      "value": 27900000.0,
+      "display": "27900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0a7b4387e3382c",
+      "entity_name": "Karim Coulibaly",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a117e477bd0a12c6": {
+      "value": 29200000.0,
+      "display": "29200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd59c378050bbf2",
+      "entity_name": "Joaquín Panichelli",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a52cf0b30045f00a": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ab1baa6cc579bfa1": {
+      "value": "KRC Genk",
+      "display": "KRC Genk",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp52b4b76c9a9ff7",
+      "entity_name": "Yaimar Medina",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b168126a9963e4e4": {
+      "value": 24.4,
+      "display": "24.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa72eeb9f227cf4",
+      "entity_name": "Quentin Merlin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bc4e3fd558c6c489": {
+      "value": 26.7,
+      "display": "26.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfcd060cb4fd187",
+      "entity_name": "Andrea Cambiaso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c21e9dc1ccb1b394": {
+      "value": 25.4,
+      "display": "25.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d1a489853ca86a72": {
+      "value": 0.274,
+      "display": "0.27",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d1d915ec43373318": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpfcd060cb4fd187",
+      "entity_name": "Andrea Cambiaso",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d3b09feadf1d20ad": {
+      "value": 0.0059,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpa6368f466f9920",
+      "entity_name": "Arsène Kouassi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d5e2d6e3903aba59": {
+      "value": "2026-10-17T15:15:00+00:00",
+      "display": "2026-10-17T15:15:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:strasbourg:paris-saint-germain",
+      "entity_name": "Strasbourg v Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:47.288390+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d960d0051d9f050a": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3e69adff8e6eaa",
+      "entity_name": "Santiago Mouriño",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_db6f072aa09f1324": {
+      "value": 12800000.0,
+      "display": "12800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp86e743a423bb6f",
+      "entity_name": "Ngal'ayel Mukau",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e48a6cc5535bbe97": {
+      "value": 0.909,
+      "display": "0.91",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e78123eb6c572833": {
+      "value": 0.546,
+      "display": "0.55",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e9a92d7937da849b": {
+      "value": 20.3,
+      "display": "20.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd4c97e55dba03e",
+      "entity_name": "Juho Lähteenmäki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ecd69a7f8c04690a": {
+      "value": 22.8,
+      "display": "22.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd9dd6873829f7f",
+      "entity_name": "Nnamdi Collins",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_edf8c3ecc365164a": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpf370ec8746b8c6",
+      "entity_name": "Bart van Rooij",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eff6c5b9ec93b1a0": {
+      "value": 20000000.0,
+      "display": "20000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd9dd6873829f7f",
+      "entity_name": "Nnamdi Collins",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f16add2eca2a3032": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpd9dd6873829f7f",
+      "entity_name": "Nnamdi Collins",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f601f1e8da46d5ca": {
+      "value": 0.295,
+      "display": "0.29",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpd59c378050bbf2",
+      "entity_name": "Joaquín Panichelli",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f769547cbef8d40b": {
+      "value": 21.9,
+      "display": "21.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp52b4b76c9a9ff7",
+      "entity_name": "Yaimar Medina",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f8d6fd19865e4bb9": {
+      "value": 0.521,
+      "display": "0.52",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp52b4b76c9a9ff7",
+      "entity_name": "Yaimar Medina",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f90b0cc02fa31e4b": {
+      "value": 18100000.0,
+      "display": "18100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fa0060126e1c91ab": {
+      "value": 22000000.0,
+      "display": "22000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp847e124f149e8f",
+      "entity_name": "Martial Godo",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_fb9187d8998fbfbc": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "strasbourg",
+      "entity_name": "Strasbourg",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fe206524995a1778": {
+      "value": 20000000.0,
+      "display": "20000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3f53ba102d2c4b",
+      "entity_name": "Vitaly Janelt",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ff55b8418c79d01f": {
+      "value": 0.627,
+      "display": "0.63",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpd4c97e55dba03e",
+      "entity_name": "Juho Lähteenmäki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_a52cf0b30045f00a",
+        "display": "11th",
+        "label": "league position",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_67a9a05847f163a6",
+        "display": "7",
+        "label": "league points",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_78dc921777ae36a3",
+        "display": "11",
+        "label": "league goals scored",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_5d603644b4b9e286",
+        "display": "12",
+        "label": "league goals conceded",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_72a4779158c76c00",
+        "display": "LLDWW",
+        "label": "recent league results, oldest first",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_5b85b915bc263b46",
+        "display": "15 July 2026",
+        "label": "appointed head coach of Strasbourg",
+        "subject": "Hugo Oliveira"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_d5e2d6e3903aba59",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Strasbourg v Paris Saint-Germain"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_70039248fdaa6216",
+        "display": "39%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Mateo Del Blanco"
+      },
+      {
+        "stat": "ev_f601f1e8da46d5ca",
+        "display": "30%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Joaquín Panichelli"
+      },
+      {
+        "stat": "ev_5a5941ef5b3a5681",
+        "display": "21%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Oso"
+      },
+      {
+        "stat": "ev_6f05280180a8d548",
+        "display": "€35.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Joaquín Panichelli"
+      },
+      {
+        "stat": "ev_a117e477bd0a12c6",
+        "display": "€29.2m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Joaquín Panichelli"
+      },
+      {
+        "stat": "ev_fa0060126e1c91ab",
+        "display": "€22.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Martial Godo"
+      },
+      {
+        "stat": "ev_92adbadcc7faa7b0",
+        "display": "€17.6m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Martial Godo"
+      },
+      {
+        "stat": "ev_2b7bb82f17c1b4d2",
+        "display": "€28.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Karim Coulibaly"
+      },
+      {
+        "stat": "ev_9e3e15a504a3e4f3",
+        "display": "€27.9m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Karim Coulibaly"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_fb9187d8998fbfbc",
+        "display": "full-back",
+        "label": "squad need, priority one",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_bc4e3fd558c6c489",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Andrea Cambiaso"
+      },
+      {
+        "stat": "ev_06fb80d5c430d8c0",
+        "display": "Juventus FC",
+        "label": "current club",
+        "subject": "Andrea Cambiaso"
+      },
+      {
+        "stat": "ev_d1d915ec43373318",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Andrea Cambiaso"
+      },
+      {
+        "stat": "ev_3fa47796c982111a",
+        "display": "€20.0m",
+        "label": "market value",
+        "subject": "Andrea Cambiaso"
+      },
+      {
+        "stat": "ev_86f37f618eb6f8c0",
+        "display": "€14.0m",
+        "label": "estimated fair fee",
+        "subject": "Andrea Cambiaso"
+      },
+      {
+        "stat": "ev_025956b56316119b",
+        "display": "63%",
+        "label": "expected share of minutes at the club",
+        "subject": "Andrea Cambiaso"
+      },
+      {
+        "stat": "ev_ecd69a7f8c04690a",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Nnamdi Collins"
+      },
+      {
+        "stat": "ev_49527d101ee8b25d",
+        "display": "Eintracht Frankfurt",
+        "label": "current club",
+        "subject": "Nnamdi Collins"
+      },
+      {
+        "stat": "ev_f16add2eca2a3032",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Nnamdi Collins"
+      },
+      {
+        "stat": "ev_eff6c5b9ec93b1a0",
+        "display": "€20.0m",
+        "label": "market value",
+        "subject": "Nnamdi Collins"
+      },
+      {
+        "stat": "ev_5f975b97d63d70e8",
+        "display": "€14.4m",
+        "label": "estimated fair fee",
+        "subject": "Nnamdi Collins"
+      },
+      {
+        "stat": "ev_5dd37d9cd3acb577",
+        "display": "58%",
+        "label": "expected share of minutes at the club",
+        "subject": "Nnamdi Collins"
+      },
+      {
+        "stat": "ev_d960d0051d9f050a",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Santiago Mouriño"
+      },
+      {
+        "stat": "ev_6c7e01787e49715c",
+        "display": "Villarreal CF",
+        "label": "current club",
+        "subject": "Santiago Mouriño"
+      },
+      {
+        "stat": "ev_8fd4f94ea1571d4b",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Santiago Mouriño"
+      },
+      {
+        "stat": "ev_095451a827494c5b",
+        "display": "€20.0m",
+        "label": "market value",
+        "subject": "Santiago Mouriño"
+      },
+      {
+        "stat": "ev_4644fb3a583bcd05",
+        "display": "€14.5m",
+        "label": "estimated fair fee",
+        "subject": "Santiago Mouriño"
+      },
+      {
+        "stat": "ev_8f4f87bb3673b599",
+        "display": "56%",
+        "label": "expected share of minutes at the club",
+        "subject": "Santiago Mouriño"
+      },
+      {
+        "stat": "ev_065eca6915fd34ff",
+        "display": "23",
+        "label": "age (realistic target)",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_0fd148f7f530b204",
+        "display": "FC Lorient",
+        "label": "current club",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_d1a489853ca86a72",
+        "display": "27%",
+        "label": "chance his club sells him in a window",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_755726301d92e18a",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_80c9650cb9336923",
+        "display": "€10.0m",
+        "label": "estimated fair fee",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_d3b09feadf1d20ad",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Arsène Kouassi"
+      },
+      {
+        "stat": "ev_b168126a9963e4e4",
+        "display": "24",
+        "label": "age (realistic target)",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_69011cdbc46c16c2",
+        "display": "Stade Rennais FC",
+        "label": "current club",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_480fa9d8e03b6f1c",
+        "display": "7%",
+        "label": "chance his club sells him in a window",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_2d0b15a166348606",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_41348da232051d4f",
+        "display": "€10.9m",
+        "label": "estimated fair fee",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_15951963b6518585",
+        "display": "0.2%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Quentin Merlin"
+      },
+      {
+        "stat": "ev_c21e9dc1ccb1b394",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_7102d7b563ec1b92",
+        "display": "FC Twente Enschede",
+        "label": "current club",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_e78123eb6c572833",
+        "display": "55%",
+        "label": "chance his club sells him in a window",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_edf8c3ecc365164a",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_9b06c866def75aa2",
+        "display": "€8.3m",
+        "label": "estimated fair fee",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_5f0d29e208781129",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Bart van Rooij"
+      },
+      {
+        "stat": "ev_140a06d245396864",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Thérence Koudou"
+      },
+      {
+        "stat": "ev_92750b32fef79d02",
+        "display": "KV Mechelen",
+        "label": "current club",
+        "subject": "Thérence Koudou"
+      },
+      {
+        "stat": "ev_e48a6cc5535bbe97",
+        "display": "91%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Thérence Koudou"
+      },
+      {
+        "stat": "ev_8b1d0279a7cda263",
+        "display": "€5.9m",
+        "label": "estimated fair fee",
+        "subject": "Thérence Koudou"
+      },
+      {
+        "stat": "ev_832ffbd5ed5c09f6",
+        "display": "€6.4m",
+        "label": "projected market value in a few seasons",
+        "subject": "Thérence Koudou"
+      },
+      {
+        "stat": "ev_f769547cbef8d40b",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Yaimar Medina"
+      },
+      {
+        "stat": "ev_ab1baa6cc579bfa1",
+        "display": "KRC Genk",
+        "label": "current club",
+        "subject": "Yaimar Medina"
+      },
+      {
+        "stat": "ev_f8d6fd19865e4bb9",
+        "display": "52%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Yaimar Medina"
+      },
+      {
+        "stat": "ev_6c23f1b78379b970",
+        "display": "€5.7m",
+        "label": "estimated fair fee",
+        "subject": "Yaimar Medina"
+      },
+      {
+        "stat": "ev_89a2ad05fd2f3323",
+        "display": "€5.7m",
+        "label": "projected market value in a few seasons",
+        "subject": "Yaimar Medina"
+      },
+      {
+        "stat": "ev_e9a92d7937da849b",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Juho Lähteenmäki"
+      },
+      {
+        "stat": "ev_6e17675b53b51a3f",
+        "display": "FC Nordsjaelland",
+        "label": "current club",
+        "subject": "Juho Lähteenmäki"
+      },
+      {
+        "stat": "ev_ff55b8418c79d01f",
+        "display": "63%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Juho Lähteenmäki"
+      },
+      {
+        "stat": "ev_395b3a2212e56fda",
+        "display": "€6.4m",
+        "label": "estimated fair fee",
+        "subject": "Juho Lähteenmäki"
+      },
+      {
+        "stat": "ev_1288d3f3701b8994",
+        "display": "€5.4m",
+        "label": "projected market value in a few seasons",
+        "subject": "Juho Lähteenmäki"
+      },
+      {
+        "stat": "ev_1d90f8c20f873ccc",
+        "display": "defensive midfield",
+        "label": "squad need, priority two",
+        "subject": "Strasbourg"
+      },
+      {
+        "stat": "ev_7f92cb8bfa35497a",
+        "display": "28",
+        "label": "age (best target, second need)",
+        "subject": "Vitaly Janelt"
+      },
+      {
+        "stat": "ev_fe206524995a1778",
+        "display": "€20.0m",
+        "label": "market value",
+        "subject": "Vitaly Janelt"
+      },
+      {
+        "stat": "ev_088334b985b2396e",
+        "display": "22",
+        "label": "age (realistic target, second need)",
+        "subject": "Ngal'ayel Mukau"
+      },
+      {
+        "stat": "ev_db6f072aa09f1324",
+        "display": "€12.8m",
+        "label": "estimated fair fee",
+        "subject": "Ngal'ayel Mukau"
+      },
+      {
+        "stat": "ev_10388f199da8cfc1",
+        "display": "0.8%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Ngal'ayel Mukau"
+      },
+      {
+        "stat": "ev_1d8d4cdff7f00db3",
+        "display": "19",
+        "label": "age (gem target, second need)",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_f90b0cc02fa31e4b",
+        "display": "€18.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "Jorthy Mokio"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 46,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 46,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Ligue 1"
+  ]
+}

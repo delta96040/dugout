@@ -23,7 +23,8 @@ export interface StoryData {
   /** the scout's three lists for the top need: dream, realistic, hidden gem (up to three names each) */
   targets: Target[];
   /** transfer talk the Fact-Check confirmed in the Guardian's Rumour Mill (attributed, unverified as fact) */
-  rumours: { text: string; url: string | null }[];
+  /** with how often reports like it came true (one time in N), when the item links a player with this club */
+  rumours: { text: string; url: string | null; record?: StatRef }[];
   verifiedSamples: StatRef[];
   numbersTotal: number;
   untraceable: number;

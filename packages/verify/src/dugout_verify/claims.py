@@ -79,6 +79,8 @@ def split_sentences(text: str) -> list[str]:
     masked = re.sub(
         r"\b(vs|v|St|Mr|Dr|Jr|Sr|No|approx|e\.g|i\.e)\.", lambda m: m.group(0)[:-1] + "\x01", masked
     )
+    # prose has no literal numbers, so "1." is part of a club name ("1. FC Köln", "1. Fußballclub Heidenheim 1846")
+    masked = re.sub(r"(?<![\w.])(\d)\.(?=\s)", "\\1\x01", masked)
     parts = [p.strip() for p in _BOUNDARY.split(masked.replace("\n", " ")) if p.strip()]
     restore = re.compile("\x00(\\d+)\x00")
     return [restore.sub(lambda m: holes[int(m.group(1))], p).replace("\x01", ".") for p in parts]

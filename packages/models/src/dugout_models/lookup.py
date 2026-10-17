@@ -59,7 +59,7 @@ def outlook_many(mk: Market, pool: pd.DataFrame, club: str, fees: pd.Series) -> 
     sq = mk.squad(club)
     mins, main, games = mk._last_season()
     ls_year = max(y for c, y in mk.league_value.index if c == PL)
-    pl_level = np.log1p(mk.league_value.get((PL, ls_year), np.nan))
+    pl_level = np.log1p(mk.league_value.get((mk.buyer_comp(tm_club), ls_year), np.nan))  # the buyer's league
     group = pool.player_id.map(mk.players.sub_position).map(
         {s: g for g, subs in GROUPS.items() for s in subs}
     )
@@ -126,7 +126,7 @@ def lookup(con: duckdb.DuckDBPyConnection, mk: Market, now: datetime, reep: dict
             years=[years.start, years.stop],
         ).dropna(subset=["target", "age"])
         proj[h] = potential.PotentialModel().fit(train).predict(pool)
-    pl_values = mk.squads.market_value_eur.dropna().astype(float).to_numpy()
+    pl_values = mk.squads.loc[mk.squads.comp == PL, "market_value_eur"].dropna().astype(float).to_numpy()
     names = mk.players.name
     club_names = mk.clubs.set_index("club_id").name  # club of the latest valuation (today's for PL squads)
     rows: list[dict] = []

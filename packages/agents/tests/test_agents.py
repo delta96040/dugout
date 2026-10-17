@@ -290,3 +290,78 @@ def test_evasive_llm_note_is_rejected(con, ledger):
         allowed_names=[],
     )
     assert d.writer == "template" and "too few of the facts" in d.attempts[0]["errors"][-1]
+
+
+def test_rank_gloss_uses_league_places_or_plain_words():
+    from dugout_agents.facts import rank_gloss
+
+    pl = {"teams": 20, "champions_league": 4, "europe": 7, "relegation": 3}
+    assert rank_gloss(4, 20, pl) == "Champions League places"
+    assert rank_gloss(18, 20, pl) == "relegation zone" and rank_gloss(17, 20, pl) == "mid-table"
+    # a league without checked places: no claim about Europe or relegation
+    assert rank_gloss(2, 18) == "top three" and rank_gloss(16, 18) == "bottom three"
+    assert rank_gloss(9, 18) == "top half" and rank_gloss(10, 18) == "bottom half"
+
+
+def test_dossier_rotation_puts_default_league_first_then_oldest(tmp_path, monkeypatch):
+    import json
+
+    from dugout_agents import cli
+
+    monkeypatch.setattr(cli, "CLUBS_DIR", tmp_path)
+    (tmp_path / "ajax.json").write_text(json.dumps({"generated_at": "2026-10-16T02:00:00+00:00"}))
+    (tmp_path / "psv.json").write_text(json.dumps({"generated_at": "2026-10-15T02:00:00+00:00"}))
+    rows = [
+        ("ajax", "eredivisie"),
+        ("psv", "eredivisie"),
+        ("az", "eredivisie"),
+        ("arsenal", "premier_league"),
+    ]
+    assert cli.rotation(rows, "premier_league") == ["arsenal", "az", "psv", "ajax"]
+
+
+def test_register_adds_a_second_spelling_and_suffix_names_match():
+    import re
+
+    from dugout_agents.facts import _person_aliases
+
+    tb = Toolbox.__new__(Toolbox)
+    tb.names, tb.aliases = {"p": "Rassoul Ndiaye"}, {"p": _person_aliases("Rassoul Ndiaye", None)}
+    shared = tb.aliases["p"]
+    tb.register("p", "Rassoul N'Diaye")
+    assert tb.aliases["p"] is shared and "Rassoul N'Diaye" in shared and "Rassoul Ndiaye" in shared
+    al = _person_aliases("Ronald Koeman Jr.", None)
+    assert "Koeman" in al and any(re.search(rf"\b{re.escape(a)}\b", "Ronald Koeman Jr.'s chance") for a in al)
+
+
+def test_rumour_track_record_follows_its_rumour(con, ledger):
+    from dugout_agents import tools
+    from dugout_agents.graph import Section, gate
+
+    url = "https://www.theguardian.com/football/2026/oct/10/rumours"
+    for nid, player, body in (
+        ("n1-p0", "Bob Smith", "Liverpool want Bob Smith."),
+        ("n1-p1", "Carl Jones", "Arsenal want Carl Jones."),  # tagged with Liverpool, but does not say so
+    ):
+        con.execute(
+            "INSERT INTO news_items VALUES (?, 'guardian_rumours', 'The Guardian', ?, ?, ?, NULL, ?, ['liverpool'], 5, ?)",
+            [nid, url, player, NOW - timedelta(days=5), body, NOW],
+        )
+        key = player.lower()
+        con.execute(
+            "INSERT INTO model_outputs VALUES ('rumours', 'r', 'rumour', ?, 'one_in', 'liverpool', 5, NULL, ?)",
+            [f"{nid}:{key}", NOW],
+        )
+    ctx = make_ctx(con, ledger)
+    facts = tools.rumours(ctx.toolbox, "liverpool", "in")
+    assert [f.label for f in facts].count("rumour track record") == 2
+    sec = Section("scout", "Scout", "q", template=" ".join(f.sentence() for f in facts))
+    gate(sec, ctx)
+    assert sec.status == "published"
+    assert "Liverpool have been linked with Bob Smith." in sec.text
+    assert (
+        "Past reports like this one about Bob Smith came true within half a year about one time in 5."
+        in sec.text
+    )
+    assert "Carl Jones" not in sec.text
+    assert any(w["reason"] == "the rumour it is about was not confirmed" for w in sec.withheld)

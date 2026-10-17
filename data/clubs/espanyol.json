@@ -1,0 +1,2324 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "espanyol",
+    "name": "Espanyol",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "la_liga",
+    "name": "La Liga",
+    "country": "Spain"
+  },
+  "generated_at": "2026-10-16T23:54:28+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Espanyol for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Espanyol are "
+          },
+          {
+            "stat": "ev_9087eeca1fefe3e3",
+            "display": "12th"
+          },
+          {
+            "text": " in the La Liga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Espanyol have "
+          },
+          {
+            "stat": "ev_2be8019f09a23177",
+            "display": "8"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Espanyol's next league match is Espanyol v Atlético de Madrid on "
+          },
+          {
+            "stat": "ev_20e3dc5a66d469d1",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Espanyol's biggest squad need is "
+          },
+          {
+            "stat": "ev_73cbad0d67ce8a5a",
+            "display": "goalkeeper"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Espanyol doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Espanyol are "
+            },
+            {
+              "stat": "ev_9087eeca1fefe3e3",
+              "display": "12th"
+            },
+            {
+              "text": " in the La Liga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Espanyol have "
+            },
+            {
+              "stat": "ev_2be8019f09a23177",
+              "display": "8"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Espanyol have scored "
+            },
+            {
+              "stat": "ev_bb72154a64ecf842",
+              "display": "11"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Espanyol have conceded "
+            },
+            {
+              "stat": "ev_e85b57e6a3999712",
+              "display": "11"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Espanyol's most recent league results read "
+            },
+            {
+              "stat": "ev_8899498163f3abc9",
+              "display": "DLLWD"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Manolo González has been Espanyol's head coach since "
+            },
+            {
+              "stat": "ev_5b753052db08e22d",
+              "display": "12 March 2024"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Espanyol expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Espanyol's next league match is Espanyol v Atlético de Madrid on "
+            },
+            {
+              "stat": "ev_20e3dc5a66d469d1",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Espanyol's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Espanyol, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Espanyol players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Unai Núñez's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_b8521b5bd82ef10c",
+              "display": "17%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Tyrhys Dolan's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_a979af04e7e6079a",
+              "display": "16%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Urko González's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_e343fffc3688610f",
+              "display": "15%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Quilindschy Hartman at "
+            },
+            {
+              "stat": "ev_960ebf1b00905821",
+              "display": "€16.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Quilindschy Hartman is "
+            },
+            {
+              "stat": "ev_a3d54e576be82f66",
+              "display": "€9.8m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Urko González at "
+            },
+            {
+              "stat": "ev_579e6958f0b7f052",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Urko González is "
+            },
+            {
+              "stat": "ev_7cab207e718e2bde",
+              "display": "€8.9m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Roberto Fernández at "
+            },
+            {
+              "stat": "ev_047abee2d11b9de3",
+              "display": "€10.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Roberto Fernández is "
+            },
+            {
+              "stat": "ev_d412f816fdddcddc",
+              "display": "€7.6m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Espanyol strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Espanyol's biggest squad need is "
+            },
+            {
+              "stat": "ev_73cbad0d67ce8a5a",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Yehvann Diouf (OGC Nice), who is "
+            },
+            {
+              "stat": "ev_8e012bf843907855",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Yehvann Diouf plays for "
+            },
+            {
+              "stat": "ev_07ac2e873c95a8ab",
+              "display": "OGC Nice"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Yehvann Diouf has a market value of "
+            },
+            {
+              "stat": "ev_bfcc06ba6e977f62",
+              "display": "€7.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Yehvann Diouf is "
+            },
+            {
+              "stat": "ev_451f59b16a3065e1",
+              "display": "€4.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Yehvann Diouf to play "
+            },
+            {
+              "stat": "ev_61a3aac48ebd1aa8",
+              "display": "65%"
+            },
+            {
+              "text": " of Espanyol's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Rome-Jayden Owusu-Oduro (AZ Alkmaar), who is "
+            },
+            {
+              "stat": "ev_0b1756e7f63e4105",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Rome-Jayden Owusu-Oduro plays for "
+            },
+            {
+              "stat": "ev_5afed1913ab09a84",
+              "display": "AZ Alkmaar"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Rome-Jayden Owusu-Oduro has a market value of "
+            },
+            {
+              "stat": "ev_c1710833d1e8a4e3",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Rome-Jayden Owusu-Oduro is "
+            },
+            {
+              "stat": "ev_12c07672526d8fe3",
+              "display": "€5.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Rome-Jayden Owusu-Oduro to play "
+            },
+            {
+              "stat": "ev_ee5be922d5386e96",
+              "display": "45%"
+            },
+            {
+              "text": " of Espanyol's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Leo Kokubo (Sint-Truidense VV), who is "
+            },
+            {
+              "stat": "ev_7f70a3806f94158e",
+              "display": "26"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Leo Kokubo plays for "
+            },
+            {
+              "stat": "ev_f79a6959efa4e4d2",
+              "display": "Sint-Truidense VV"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Leo Kokubo has a market value of "
+            },
+            {
+              "stat": "ev_541490779ce73c5e",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Leo Kokubo is "
+            },
+            {
+              "stat": "ev_7777ccff0c11506d",
+              "display": "€4.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Leo Kokubo to play "
+            },
+            {
+              "stat": "ev_335fa3f1e7db8f15",
+              "display": "55%"
+            },
+            {
+              "text": " of Espanyol's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Bernt Klaverboer (SC Heerenveen), who is "
+            },
+            {
+              "stat": "ev_6dc538a2bfa62418",
+              "display": "21"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Bernt Klaverboer plays for "
+            },
+            {
+              "stat": "ev_df34d56e39dad43c",
+              "display": "SC Heerenveen"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_9d3e0c037e336cea",
+              "display": "36%"
+            },
+            {
+              "text": " chance that SC Heerenveen sell Bernt Klaverboer in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Bernt Klaverboer is "
+            },
+            {
+              "stat": "ev_b4547493e269341f",
+              "display": "€3.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_9e1207cff1ef90e8",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Bernt Klaverboer joins Espanyol in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Ruslan Neshcheret (Dynamo Kyiv), who is "
+            },
+            {
+              "stat": "ev_f01d33032007743c",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ruslan Neshcheret plays for "
+            },
+            {
+              "stat": "ev_91e1ab252d517f6e",
+              "display": "Dynamo Kyiv"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_8f24659640e4ce99",
+              "display": "27%"
+            },
+            {
+              "text": " chance that Dynamo Kyiv sell Ruslan Neshcheret in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ruslan Neshcheret is "
+            },
+            {
+              "stat": "ev_fdc3fb2da34d3af2",
+              "display": "€3.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Espanyol's second squad need is "
+            },
+            {
+              "stat": "ev_e7f60bddc27e56cc",
+              "display": "centre-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Yehvann Diouf has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Rome-Jayden Owusu-Oduro has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Leo Kokubo has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Bernt Klaverboer has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Ruslan Neshcheret has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_002cddb7a94ba760": {
+      "value": 0.0045,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpbf58fb9773f6b9",
+      "entity_name": "Adrián de la Fuente",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_047abee2d11b9de3": {
+      "value": 10000000.0,
+      "display": "10000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp022f37e250aaea",
+      "entity_name": "Roberto Fernández",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_07ac2e873c95a8ab": {
+      "value": "OGC Nice",
+      "display": "OGC Nice",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp8272bc51e16879",
+      "entity_name": "Yehvann Diouf",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0b1756e7f63e4105": {
+      "value": 22.3,
+      "display": "22.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_12c07672526d8fe3": {
+      "value": 5600000.0,
+      "display": "5600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_16f221bc7fe9efc7": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp8272bc51e16879",
+      "entity_name": "Yehvann Diouf",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_20e3dc5a66d469d1": {
+      "value": "2026-10-17T12:00:00+00:00",
+      "display": "2026-10-17T12:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "la_liga:2026-27:espanyol:atletico-de-madrid",
+      "entity_name": "Espanyol v Atlético de Madrid",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:01.268126+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2be8019f09a23177": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_335fa3f1e7db8f15": {
+      "value": 0.55,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpd435512092bae6",
+      "entity_name": "Leo Kokubo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f461a48db0e2c77": {
+      "value": 0.0007,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpff1ab0fad85d21",
+      "entity_name": "Ruslan Neshcheret",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_451f59b16a3065e1": {
+      "value": 4900000.0,
+      "display": "4900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8272bc51e16879",
+      "entity_name": "Yehvann Diouf",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4d401f4b629d3855": {
+      "value": 14.0,
+      "display": "14",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpff1ab0fad85d21",
+      "entity_name": "Ruslan Neshcheret",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4ea7a658ba277f62": {
+      "value": 3800000.0,
+      "display": "3800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb2af17ebb922cb",
+      "entity_name": "Bernardo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_541490779ce73c5e": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd435512092bae6",
+      "entity_name": "Leo Kokubo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_571a9e892fe31ccb": {
+      "value": 27.6,
+      "display": "27.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpbf58fb9773f6b9",
+      "entity_name": "Adrián de la Fuente",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_579e6958f0b7f052": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5afed1913ab09a84": {
+      "value": "AZ Alkmaar",
+      "display": "AZ Alkmaar",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5b753052db08e22d": {
+      "value": "2024-03-12",
+      "display": "2024-03-12",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q107613083",
+      "entity_name": "Manolo González",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q107613083",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_61a3aac48ebd1aa8": {
+      "value": 0.65,
+      "display": "0.65",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp8272bc51e16879",
+      "entity_name": "Yehvann Diouf",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6dc538a2bfa62418": {
+      "value": 21.1,
+      "display": "21.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6f22971c1c761ee2": {
+      "value": 24.2,
+      "display": "24.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb2af17ebb922cb",
+      "entity_name": "Bernardo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_73cbad0d67ce8a5a": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7777ccff0c11506d": {
+      "value": 4100000.0,
+      "display": "4100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd435512092bae6",
+      "entity_name": "Leo Kokubo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7cab207e718e2bde": {
+      "value": 8900000.0,
+      "display": "8900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7e8798a3fce8ffcc": {
+      "value": 24.1,
+      "display": "24.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp205b758e661d09",
+      "entity_name": "Adam Obert",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7f70a3806f94158e": {
+      "value": 25.7,
+      "display": "25.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd435512092bae6",
+      "entity_name": "Leo Kokubo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8554fd2e2c50fa71": {
+      "value": 19.2,
+      "display": "19.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa276701c0c2987",
+      "entity_name": "Kirill Danilov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_886275f400fdf780": {
+      "value": "CD Tondela",
+      "display": "CD Tondela",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpb2af17ebb922cb",
+      "entity_name": "Bernardo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8899498163f3abc9": {
+      "value": "DLLWD",
+      "display": "DLLWD",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8975f574d738cf08": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8e012bf843907855": {
+      "value": 26.9,
+      "display": "26.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp8272bc51e16879",
+      "entity_name": "Yehvann Diouf",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8f24659640e4ce99": {
+      "value": 0.269,
+      "display": "0.27",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpff1ab0fad85d21",
+      "entity_name": "Ruslan Neshcheret",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9087eeca1fefe3e3": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_91e1ab252d517f6e": {
+      "value": "Dynamo Kyiv",
+      "display": "Dynamo Kyiv",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpff1ab0fad85d21",
+      "entity_name": "Ruslan Neshcheret",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_922540bc74697eac": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpbf58fb9773f6b9",
+      "entity_name": "Adrián de la Fuente",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_960ebf1b00905821": {
+      "value": 16000000.0,
+      "display": "16000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd28582408e2d68",
+      "entity_name": "Quilindschy Hartman",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-03T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_9d3e0c037e336cea": {
+      "value": 0.363,
+      "display": "0.36",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e1207cff1ef90e8": {
+      "value": 0.0007,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a3d54e576be82f66": {
+      "value": 9800000.0,
+      "display": "9800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd28582408e2d68",
+      "entity_name": "Quilindschy Hartman",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a979af04e7e6079a": {
+      "value": 0.161,
+      "display": "0.16",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp137c1d9e57b2ef",
+      "entity_name": "Tyrhys Dolan",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b4547493e269341f": {
+      "value": 3900000.0,
+      "display": "3900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b8521b5bd82ef10c": {
+      "value": 0.168,
+      "display": "0.17",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp76d3749bee0640",
+      "entity_name": "Unai Núñez",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b8605c0ac7ad8421": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpb2af17ebb922cb",
+      "entity_name": "Bernardo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b9b76b222958d70d": {
+      "value": 0.0006,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpb2af17ebb922cb",
+      "entity_name": "Bernardo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bb72154a64ecf842": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_bf686709a258a250": {
+      "value": 9000000.0,
+      "display": "9000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpa276701c0c2987",
+      "entity_name": "Kirill Danilov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bfcc06ba6e977f62": {
+      "value": 7000000.0,
+      "display": "7000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp8272bc51e16879",
+      "entity_name": "Yehvann Diouf",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c1710833d1e8a4e3": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c9029bb40c7cc7d7": {
+      "value": 0.445,
+      "display": "0.45",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpb2af17ebb922cb",
+      "entity_name": "Bernardo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d412f816fdddcddc": {
+      "value": 7600000.0,
+      "display": "7600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp022f37e250aaea",
+      "entity_name": "Roberto Fernández",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_de535536bd97e80b": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_df34d56e39dad43c": {
+      "value": "SC Heerenveen",
+      "display": "SC Heerenveen",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp0d383e360bbc0d",
+      "entity_name": "Bernt Klaverboer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e343fffc3688610f": {
+      "value": 0.15,
+      "display": "0.15",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp9f352307c6bd43",
+      "entity_name": "Urko González",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e7f60bddc27e56cc": {
+      "value": "centre-back",
+      "display": "centre-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e832a54f59d586b6": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpd435512092bae6",
+      "entity_name": "Leo Kokubo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e85b57e6a3999712": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "espanyol",
+      "entity_name": "Espanyol",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ee5be922d5386e96": {
+      "value": 0.452,
+      "display": "0.45",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f01d33032007743c": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpff1ab0fad85d21",
+      "entity_name": "Ruslan Neshcheret",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f79a6959efa4e4d2": {
+      "value": "Sint-Truidense VV",
+      "display": "Sint-Truidense VV",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd435512092bae6",
+      "entity_name": "Leo Kokubo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f8ea90c461dd6e93": {
+      "value": 7000000.0,
+      "display": "7000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp205b758e661d09",
+      "entity_name": "Adam Obert",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fdc3fb2da34d3af2": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpff1ab0fad85d21",
+      "entity_name": "Ruslan Neshcheret",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_9087eeca1fefe3e3",
+        "display": "12th",
+        "label": "league position",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_2be8019f09a23177",
+        "display": "8",
+        "label": "league points",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_bb72154a64ecf842",
+        "display": "11",
+        "label": "league goals scored",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_e85b57e6a3999712",
+        "display": "11",
+        "label": "league goals conceded",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_8899498163f3abc9",
+        "display": "DLLWD",
+        "label": "recent league results, oldest first",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_5b753052db08e22d",
+        "display": "12 March 2024",
+        "label": "appointed head coach of Espanyol",
+        "subject": "Manolo González"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_20e3dc5a66d469d1",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Espanyol v Atlético de Madrid"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_b8521b5bd82ef10c",
+        "display": "17%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Unai Núñez"
+      },
+      {
+        "stat": "ev_a979af04e7e6079a",
+        "display": "16%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Tyrhys Dolan"
+      },
+      {
+        "stat": "ev_e343fffc3688610f",
+        "display": "15%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Urko González"
+      },
+      {
+        "stat": "ev_960ebf1b00905821",
+        "display": "€16.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Quilindschy Hartman"
+      },
+      {
+        "stat": "ev_a3d54e576be82f66",
+        "display": "€9.8m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Quilindschy Hartman"
+      },
+      {
+        "stat": "ev_579e6958f0b7f052",
+        "display": "€12.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Urko González"
+      },
+      {
+        "stat": "ev_7cab207e718e2bde",
+        "display": "€8.9m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Urko González"
+      },
+      {
+        "stat": "ev_047abee2d11b9de3",
+        "display": "€10.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Roberto Fernández"
+      },
+      {
+        "stat": "ev_d412f816fdddcddc",
+        "display": "€7.6m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Roberto Fernández"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_73cbad0d67ce8a5a",
+        "display": "goalkeeper",
+        "label": "squad need, priority one",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_8e012bf843907855",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Yehvann Diouf"
+      },
+      {
+        "stat": "ev_07ac2e873c95a8ab",
+        "display": "OGC Nice",
+        "label": "current club",
+        "subject": "Yehvann Diouf"
+      },
+      {
+        "stat": "ev_16f221bc7fe9efc7",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Yehvann Diouf"
+      },
+      {
+        "stat": "ev_bfcc06ba6e977f62",
+        "display": "€7.0m",
+        "label": "market value",
+        "subject": "Yehvann Diouf"
+      },
+      {
+        "stat": "ev_451f59b16a3065e1",
+        "display": "€4.9m",
+        "label": "estimated fair fee",
+        "subject": "Yehvann Diouf"
+      },
+      {
+        "stat": "ev_61a3aac48ebd1aa8",
+        "display": "65%",
+        "label": "expected share of minutes at the club",
+        "subject": "Yehvann Diouf"
+      },
+      {
+        "stat": "ev_0b1756e7f63e4105",
+        "display": "22",
+        "label": "age (best target)",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_5afed1913ab09a84",
+        "display": "AZ Alkmaar",
+        "label": "current club",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_8975f574d738cf08",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_c1710833d1e8a4e3",
+        "display": "€6.0m",
+        "label": "market value",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_12c07672526d8fe3",
+        "display": "€5.6m",
+        "label": "estimated fair fee",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_ee5be922d5386e96",
+        "display": "45%",
+        "label": "expected share of minutes at the club",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_7f70a3806f94158e",
+        "display": "26",
+        "label": "age (best target)",
+        "subject": "Leo Kokubo"
+      },
+      {
+        "stat": "ev_f79a6959efa4e4d2",
+        "display": "Sint-Truidense VV",
+        "label": "current club",
+        "subject": "Leo Kokubo"
+      },
+      {
+        "stat": "ev_e832a54f59d586b6",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Leo Kokubo"
+      },
+      {
+        "stat": "ev_541490779ce73c5e",
+        "display": "€5.0m",
+        "label": "market value",
+        "subject": "Leo Kokubo"
+      },
+      {
+        "stat": "ev_7777ccff0c11506d",
+        "display": "€4.1m",
+        "label": "estimated fair fee",
+        "subject": "Leo Kokubo"
+      },
+      {
+        "stat": "ev_335fa3f1e7db8f15",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Leo Kokubo"
+      },
+      {
+        "stat": "ev_6dc538a2bfa62418",
+        "display": "21",
+        "label": "age (realistic target)",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_df34d56e39dad43c",
+        "display": "SC Heerenveen",
+        "label": "current club",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_9d3e0c037e336cea",
+        "display": "36%",
+        "label": "chance his club sells him in a window",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_de535536bd97e80b",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_b4547493e269341f",
+        "display": "€3.9m",
+        "label": "estimated fair fee",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_9e1207cff1ef90e8",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Bernt Klaverboer"
+      },
+      {
+        "stat": "ev_f01d33032007743c",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Ruslan Neshcheret"
+      },
+      {
+        "stat": "ev_91e1ab252d517f6e",
+        "display": "Dynamo Kyiv",
+        "label": "current club",
+        "subject": "Ruslan Neshcheret"
+      },
+      {
+        "stat": "ev_8f24659640e4ce99",
+        "display": "27%",
+        "label": "chance his club sells him in a window",
+        "subject": "Ruslan Neshcheret"
+      },
+      {
+        "stat": "ev_4d401f4b629d3855",
+        "display": "14",
+        "label": "months left on his contract",
+        "subject": "Ruslan Neshcheret"
+      },
+      {
+        "stat": "ev_fdc3fb2da34d3af2",
+        "display": "€3.0m",
+        "label": "estimated fair fee",
+        "subject": "Ruslan Neshcheret"
+      },
+      {
+        "stat": "ev_3f461a48db0e2c77",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Ruslan Neshcheret"
+      },
+      {
+        "stat": "ev_6f22971c1c761ee2",
+        "display": "24",
+        "label": "age (realistic target)",
+        "subject": "Bernardo"
+      },
+      {
+        "stat": "ev_886275f400fdf780",
+        "display": "CD Tondela",
+        "label": "current club",
+        "subject": "Bernardo"
+      },
+      {
+        "stat": "ev_c9029bb40c7cc7d7",
+        "display": "44%",
+        "label": "chance his club sells him in a window",
+        "subject": "Bernardo"
+      },
+      {
+        "stat": "ev_b8605c0ac7ad8421",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Bernardo"
+      },
+      {
+        "stat": "ev_4ea7a658ba277f62",
+        "display": "€3.8m",
+        "label": "estimated fair fee",
+        "subject": "Bernardo"
+      },
+      {
+        "stat": "ev_b9b76b222958d70d",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Bernardo"
+      },
+      {
+        "stat": "ev_e7f60bddc27e56cc",
+        "display": "centre-back",
+        "label": "squad need, priority two",
+        "subject": "Espanyol"
+      },
+      {
+        "stat": "ev_7e8798a3fce8ffcc",
+        "display": "24",
+        "label": "age (best target, second need)",
+        "subject": "Adam Obert"
+      },
+      {
+        "stat": "ev_f8ea90c461dd6e93",
+        "display": "€7.0m",
+        "label": "market value",
+        "subject": "Adam Obert"
+      },
+      {
+        "stat": "ev_571a9e892fe31ccb",
+        "display": "28",
+        "label": "age (realistic target, second need)",
+        "subject": "Adrián Dela"
+      },
+      {
+        "stat": "ev_922540bc74697eac",
+        "display": "€3.0m",
+        "label": "estimated fair fee",
+        "subject": "Adrián Dela"
+      },
+      {
+        "stat": "ev_002cddb7a94ba760",
+        "display": "0.4%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Adrián Dela"
+      },
+      {
+        "stat": "ev_8554fd2e2c50fa71",
+        "display": "19",
+        "label": "age (gem target, second need)",
+        "subject": "Kirill Danilov"
+      },
+      {
+        "stat": "ev_bf686709a258a250",
+        "display": "€9.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Kirill Danilov"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 46,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 46,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

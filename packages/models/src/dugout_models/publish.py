@@ -53,6 +53,14 @@ def write(con: duckdb.DuckDBPyConnection, model: str, rows: Iterable[dict]) -> i
     return upsert(con, "model_outputs", rows)
 
 
+def backtested(model: str) -> list[str]:
+    """Leagues whose config lists `model` under `backtested`: a model publishes only where it was backtested
+    (the predictor and lineup models train on Premier League data and FPL minutes)."""
+    from dugout_pipeline.clubs import league_config, leagues
+
+    return [lg for lg in leagues() if model in league_config(lg).get("backtested", [])]
+
+
 # ---- match predictor ---------------------------------------------------------------------------------------
 def predictions(con: duckdb.DuckDBPyConnection, now: datetime, days: int = 21) -> list[dict]:
     from dugout_models.backtest import FIRST_TRAIN_SEASON, PRIMARY, build_frame
@@ -66,8 +74,9 @@ def predictions(con: duckdb.DuckDBPyConnection, now: datetime, days: int = 21) -
     model = StackedPredictor().fit(m[m.season >= FIRST_TRAIN_SEASON])
     up = con.execute(
         """SELECT match_id, season, kickoff_utc, home_club_id AS home, away_club_id AS away FROM matches
-           WHERE status = 'scheduled' AND kickoff_utc >= ? AND kickoff_utc < ? ORDER BY kickoff_utc""",
-        [now, now + pd.Timedelta(days=days)],
+           WHERE status = 'scheduled' AND kickoff_utc >= ? AND kickoff_utc < ? AND list_contains(?, league)
+           ORDER BY kickoff_utc""",
+        [now, now + pd.Timedelta(days=days), backtested("predictor")],
     ).df()
     if up.empty:
         return []
@@ -205,10 +214,12 @@ def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
 
     nxt = con.execute(
         """SELECT club, arg_min(match_id, kickoff_utc) AS match_id FROM (
-               SELECT home_club_id AS club, match_id, kickoff_utc FROM matches WHERE status='scheduled' AND kickoff_utc >= ?
-               UNION ALL SELECT away_club_id, match_id, kickoff_utc FROM matches WHERE status='scheduled' AND kickoff_utc >= ?)
-           GROUP BY club""",
-        [now, now],
+               SELECT home_club_id AS club, match_id, kickoff_utc, league FROM matches
+               WHERE status='scheduled' AND kickoff_utc >= ?
+               UNION ALL SELECT away_club_id, match_id, kickoff_utc, league FROM matches
+               WHERE status='scheduled' AND kickoff_utc >= ?)
+           WHERE list_contains(?, league) GROUP BY club""",
+        [now, now, backtested("lineup")],
     ).df()
     stats = con.execute(
         """SELECT s.match_id, CAST(m.kickoff_utc AS DATE) AS date, s.club_id, s.player_id, s.minutes, s.starts,
@@ -402,8 +413,9 @@ def publish(
 ) -> dict:
     now = now or datetime.now(UTC)
     from dugout_models.market import market
+    from dugout_models.rumours import publish as rumours
 
-    registry = {**MODELS, "market": market}
+    registry = {**MODELS, "market": market, "rumours": rumours}
     counts = {}
     for name in models or list(registry):
         rows = registry[name](con, now)

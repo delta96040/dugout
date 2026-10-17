@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import os
 import sys
+import time
 
 from dugout_pipeline.settings import REPO_ROOT
 
@@ -36,22 +38,33 @@ def cmd_ask(args) -> int:
 
 def cmd_dossier(args) -> int:
     from dugout_agents import dossier
+    from dugout_pipeline.clubs import leagues
     from dugout_pipeline.onboard import showcase_clubs
     from dugout_pipeline.settings import get_settings
 
     ctx = _ctx(args)
     clubs = args.clubs
     llm_clubs = set(clubs)
-    if args.all:
-        # every club in the league; the LLM (free tier, small daily quota) writes for the showcase clubs only
-        clubs = [
-            c for (c,) in ctx.toolbox.con.execute("SELECT club_id FROM clubs ORDER BY club_id").fetchall()
-        ]
+    if args.all or args.league:
+        # every club (of --league, if given); the LLM (free tier, small daily quota) writes for the showcase
+        # clubs only, templates for the rest
+        rows = ctx.toolbox.con.execute(
+            """SELECT club_id, league FROM clubs WHERE (? IS NULL OR league = ?)
+               AND season = (SELECT max(season) FROM clubs) ORDER BY league, club_id""",
+            [args.league, args.league],
+        ).fetchall()
+        clubs = rotation(rows, leagues()[0])
         llm_clubs = set(showcase_clubs(get_settings().config_dir))
     llm = ctx.llm
     ok = True
-    for club in clubs:
+    started = time.monotonic()
+    for i, club in enumerate(clubs):
+        if args.budget_minutes and time.monotonic() - started > args.budget_minutes * 60:
+            # the rest keep their previous dossier (data_as_of shows its age) and go first next time
+            print(f"time budget spent: {len(clubs) - i} clubs left for the next run", file=sys.stderr)
+            break
         ctx.llm = llm if club in llm_clubs else None
+        t0 = time.monotonic()
         doc, _ = dossier.build(ctx, club)
         v = doc["verification"]
         if v["sections_published"] == 0 or not v["stat_auditor"]["ok"]:
@@ -59,8 +72,27 @@ def cmd_dossier(args) -> int:
             ok = False
             continue
         path = dossier.write(doc, CLUBS_DIR)
-        print(f"{club}: {path.relative_to(REPO_ROOT)}  {v}")
+        print(f"{club}: {path.relative_to(REPO_ROOT)}  {time.monotonic() - t0:.0f}s  {v}")
+    dossier.write_leagues(REPO_ROOT / "data" / "leagues.json")
     return 0 if ok else 1
+
+
+def rotation(rows: list[tuple[str, str]], default_league: str) -> list[str]:
+    """Build order: the default league's clubs first (every night), then the others, the oldest dossier first
+    (a club without one before any), so a time budget refreshes every club in turn."""
+
+    def age(club: str) -> str:
+        path = CLUBS_DIR / f"{club}.json"
+        if not path.exists():
+            return ""
+        try:
+            return json.loads(path.read_text(encoding="utf-8")).get("generated_at", "")
+        except (OSError, ValueError):
+            return ""
+
+    first = [c for c, lg in rows if lg == default_league]
+    rest = sorted((c for c, lg in rows if lg != default_league), key=lambda c: (age(c), c))
+    return first + rest
 
 
 def cmd_eval(args) -> int:
@@ -101,7 +133,13 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument(
         "--all",
         action="store_true",
-        help="every league club: showcase clubs with the LLM, the rest templates",
+        help="every club in every league: showcase clubs with the LLM, the rest templates",
+    )
+    s.add_argument("--league", help="every club of one league (config/leagues.yaml key)")
+    s.add_argument(
+        "--budget-minutes",
+        type=float,
+        help="stop starting new clubs after this long (default league first, then the oldest dossiers)",
     )
     s.set_defaults(fn=cmd_dossier)
     s = sub.add_parser("eval")

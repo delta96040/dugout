@@ -1,0 +1,2219 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "paris-saint-germain",
+    "name": "Paris Saint-Germain",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "ligue_1",
+    "name": "Ligue 1",
+    "country": "France"
+  },
+  "generated_at": "2026-10-16T21:46:24+00:00",
+  "data_as_of": "2026-10-16T21:39:40+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Paris Saint-Germain for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Paris Saint-Germain are "
+          },
+          {
+            "stat": "ev_07b88677a660323a",
+            "display": "6th"
+          },
+          {
+            "text": " in the Ligue 1 table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Paris Saint-Germain have "
+          },
+          {
+            "stat": "ev_7ac85715e3198b22",
+            "display": "11"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Paris Saint-Germain's next league match is Strasbourg v Paris Saint-Germain on "
+          },
+          {
+            "stat": "ev_d5e2d6e3903aba59",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Paris Saint-Germain's biggest squad need is "
+          },
+          {
+            "stat": "ev_fe2d1d63bae85da2",
+            "display": "defensive midfield"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Paris Saint-Germain doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain are "
+            },
+            {
+              "stat": "ev_07b88677a660323a",
+              "display": "6th"
+            },
+            {
+              "text": " in the Ligue 1 table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain have "
+            },
+            {
+              "stat": "ev_7ac85715e3198b22",
+              "display": "11"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain have scored "
+            },
+            {
+              "stat": "ev_b54dea184d8742af",
+              "display": "11"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain have conceded "
+            },
+            {
+              "stat": "ev_dc67dc5895bb14e4",
+              "display": "8"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain's most recent league results read "
+            },
+            {
+              "stat": "ev_1285a30e68a4583f",
+              "display": "WWWLD"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Luis Enrique has been Paris Saint-Germain's head coach since "
+            },
+            {
+              "stat": "ev_6fec69c8b20a3ebd",
+              "display": "5 July 2023"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Paris Saint-Germain expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain's next league match is Strasbourg v Paris Saint-Germain on "
+            },
+            {
+              "stat": "ev_d5e2d6e3903aba59",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Paris Saint-Germain's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Paris Saint-Germain, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Paris Saint-Germain players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Maghnes Akliouche's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_28b5af68c1dcd36f",
+              "display": "28%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Lucas Beraldo's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_faa6579309a30f67",
+              "display": "20%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Fabián Ruiz's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_d35c58fa8f5955de",
+              "display": "10%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Achraf Hakimi at "
+            },
+            {
+              "stat": "ev_315d77df7271dbe5",
+              "display": "€80.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Achraf Hakimi is "
+            },
+            {
+              "stat": "ev_d7c94cbae69983fd",
+              "display": "€43.4m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Vitinha at "
+            },
+            {
+              "stat": "ev_cb38896f0c299fec",
+              "display": "€140m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Vitinha is "
+            },
+            {
+              "stat": "ev_d13096078a782e75",
+              "display": "€81.7m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Nuno Mendes at "
+            },
+            {
+              "stat": "ev_c1b3bfd1251a9c99",
+              "display": "€80.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Nuno Mendes is "
+            },
+            {
+              "stat": "ev_8f8bd4d3de0fb258",
+              "display": "€48.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Paris Saint-Germain strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain's biggest squad need is "
+            },
+            {
+              "stat": "ev_fe2d1d63bae85da2",
+              "display": "defensive midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Aleksandar Pavlovic (Bayern Munich), who is "
+            },
+            {
+              "stat": "ev_b2b2abd7ea486730",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Aleksandar Pavlovic plays for "
+            },
+            {
+              "stat": "ev_bc81df1cdf9ddf6e",
+              "display": "Bayern Munich"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Aleksandar Pavlovic has a market value of "
+            },
+            {
+              "stat": "ev_4abb7f965cfe78b5",
+              "display": "€90.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Aleksandar Pavlovic is "
+            },
+            {
+              "stat": "ev_de03292e45b38568",
+              "display": "€69.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Aleksandar Pavlovic to play "
+            },
+            {
+              "stat": "ev_c780d978aa2dc480",
+              "display": "50%"
+            },
+            {
+              "text": " of Paris Saint-Germain's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Ryan Gravenberch (Liverpool FC), who is "
+            },
+            {
+              "stat": "ev_b6fcfb737d4b86b2",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ryan Gravenberch plays for "
+            },
+            {
+              "stat": "ev_a6016b4c9f9fb67b",
+              "display": "Liverpool FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Ryan Gravenberch has a market value of "
+            },
+            {
+              "stat": "ev_8244019835fa8ff6",
+              "display": "€75.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ryan Gravenberch is "
+            },
+            {
+              "stat": "ev_9ca351635e5a168e",
+              "display": "€46.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Ryan Gravenberch to play "
+            },
+            {
+              "stat": "ev_b2e852bdbfdaa3fd",
+              "display": "55%"
+            },
+            {
+              "text": " of Paris Saint-Germain's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Adam Wharton (Crystal Palace), who is "
+            },
+            {
+              "stat": "ev_2182788d7d154fe8",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Adam Wharton plays for "
+            },
+            {
+              "stat": "ev_fd4dfec4d39a566a",
+              "display": "Crystal Palace"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Adam Wharton has a market value of "
+            },
+            {
+              "stat": "ev_f5738247a30f0961",
+              "display": "€75.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Adam Wharton is "
+            },
+            {
+              "stat": "ev_5582f2d90c62c0ae",
+              "display": "€56.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Adam Wharton to play "
+            },
+            {
+              "stat": "ev_01f37552f449b7cb",
+              "display": "53%"
+            },
+            {
+              "text": " of Paris Saint-Germain's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Kobbie Mainoo (Manchester United), who is "
+            },
+            {
+              "stat": "ev_8c353be6b0752c91",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Kobbie Mainoo plays for "
+            },
+            {
+              "stat": "ev_facdb7eca2f997b9",
+              "display": "Manchester United"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Kobbie Mainoo has played "
+            },
+            {
+              "stat": "ev_bd94bd82ee8da2ca",
+              "display": "56%"
+            },
+            {
+              "text": " of Manchester United's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Kobbie Mainoo is "
+            },
+            {
+              "stat": "ev_abb575000a825c32",
+              "display": "€65.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Kobbie Mainoo's market value to reach "
+            },
+            {
+              "stat": "ev_d3c1b3c1313c40d1",
+              "display": "€78.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Marc Bernal (FC Barcelona), who is "
+            },
+            {
+              "stat": "ev_247ea11d48157588",
+              "display": "19"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Marc Bernal plays for "
+            },
+            {
+              "stat": "ev_a4396f855b353df2",
+              "display": "FC Barcelona"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Marc Bernal has played "
+            },
+            {
+              "stat": "ev_e63eaa983e60fcff",
+              "display": "30%"
+            },
+            {
+              "text": " of FC Barcelona's minutes over the last year."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Marc Bernal is "
+            },
+            {
+              "stat": "ev_61cb65fcbbc2c65c",
+              "display": "€26.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Marc Bernal's market value to reach "
+            },
+            {
+              "stat": "ev_eca4f90ee056502a",
+              "display": "€69.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Jobe Bellingham (Borussia Dortmund), who is "
+            },
+            {
+              "stat": "ev_a00cba273a4c869e",
+              "display": "21"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paris Saint-Germain's second squad need is "
+            },
+            {
+              "stat": "ev_d26704e8298480a1",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Aleksandar Pavlovic has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Ryan Gravenberch has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Adam Wharton has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_01f37552f449b7cb": {
+      "value": 0.527,
+      "display": "0.53",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_06cf2b20fc1b11e4": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp29ddeed4fefa10",
+      "entity_name": "Aleksandar Pavlović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_07b88677a660323a": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_1285a30e68a4583f": {
+      "value": "WWWLD",
+      "display": "WWWLD",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2182788d7d154fe8": {
+      "value": 22.7,
+      "display": "22.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_247ea11d48157588": {
+      "value": 19.4,
+      "display": "19.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_28b5af68c1dcd36f": {
+      "value": 0.281,
+      "display": "0.28",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpe3cb8ff1cccce3",
+      "entity_name": "Maghnes Akliouche",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_29e1c961a334def1": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_315d77df7271dbe5": {
+      "value": 80000000.0,
+      "display": "80000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp7b3a3244c981a6",
+      "entity_name": "Achraf Hakimi",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4220b55150ef515e": {
+      "value": 34600000.0,
+      "display": "34600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_446b688c0f099019": {
+      "value": "Borussia Dortmund",
+      "display": "Borussia Dortmund",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4abb7f965cfe78b5": {
+      "value": 90000000.0,
+      "display": "90000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp29ddeed4fefa10",
+      "entity_name": "Aleksandar Pavlović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_527e6973dea7c21c": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5582f2d90c62c0ae": {
+      "value": 56900000.0,
+      "display": "56900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6011793bb8b00e46": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpcb4c7add62b601",
+      "entity_name": "Joško Gvardiol",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_61cb65fcbbc2c65c": {
+      "value": 26700000.0,
+      "display": "26700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6fec69c8b20a3ebd": {
+      "value": "2023-07-05",
+      "display": "2023-07-05",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q222789",
+      "entity_name": "Luis Enrique",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q222789",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:56:33.356266+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7ac85715e3198b22": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8244019835fa8ff6": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8532c2956a8e2a8c": {
+      "value": 0.691,
+      "display": "0.69",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8a2c40135905c7bd": {
+      "value": 63900000.0,
+      "display": "63900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8c353be6b0752c91": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8f8bd4d3de0fb258": {
+      "value": 48300000.0,
+      "display": "48300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp20a0c692d62031",
+      "entity_name": "Nuno Mendes",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_991638e521a02c98": {
+      "value": 68.0,
+      "display": "68",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9ca351635e5a168e": {
+      "value": 46800000.0,
+      "display": "46800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a00cba273a4c869e": {
+      "value": 21.1,
+      "display": "21.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4ca2754dc37950",
+      "entity_name": "Jobe Bellingham",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a4396f855b353df2": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a6016b4c9f9fb67b": {
+      "value": "Liverpool FC",
+      "display": "Liverpool FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_abb575000a825c32": {
+      "value": 65200000.0,
+      "display": "65200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b2b2abd7ea486730": {
+      "value": 22.5,
+      "display": "22.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp29ddeed4fefa10",
+      "entity_name": "Aleksandar Pavlović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b2e852bdbfdaa3fd": {
+      "value": 0.548,
+      "display": "0.55",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b54dea184d8742af": {
+      "value": 11.0,
+      "display": "11",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b6fcfb737d4b86b2": {
+      "value": 24.4,
+      "display": "24.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa439c3e46c0e10",
+      "entity_name": "Ryan Gravenberch",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bc81df1cdf9ddf6e": {
+      "value": "Bayern Munich",
+      "display": "Bayern Munich",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp29ddeed4fefa10",
+      "entity_name": "Aleksandar Pavlović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bd94bd82ee8da2ca": {
+      "value": 0.557,
+      "display": "0.56",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c1b3bfd1251a9c99": {
+      "value": 80000000.0,
+      "display": "80000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp20a0c692d62031",
+      "entity_name": "Nuno Mendes",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_c780d978aa2dc480": {
+      "value": 0.499,
+      "display": "0.50",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp29ddeed4fefa10",
+      "entity_name": "Aleksandar Pavlović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cb38896f0c299fec": {
+      "value": 140000000.0,
+      "display": "140000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp1e3846fd696a6e",
+      "entity_name": "Vitinha",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d13096078a782e75": {
+      "value": 81700000.0,
+      "display": "81700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp1e3846fd696a6e",
+      "entity_name": "Vitinha",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d26704e8298480a1": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d35c58fa8f5955de": {
+      "value": 0.102,
+      "display": "0.10",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp792dff202eeab4",
+      "entity_name": "Fabián Ruiz",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d3c1b3c1313c40d1": {
+      "value": 78000000.0,
+      "display": "78000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d5d300c0a35fa9de": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpcb4c7add62b601",
+      "entity_name": "Joško Gvardiol",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d5e2d6e3903aba59": {
+      "value": "2026-10-17T15:15:00+00:00",
+      "display": "2026-10-17T15:15:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:strasbourg:paris-saint-germain",
+      "entity_name": "Strasbourg v Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T18:55:47.288390+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d7c94cbae69983fd": {
+      "value": 43400000.0,
+      "display": "43400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7b3a3244c981a6",
+      "entity_name": "Achraf Hakimi",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dc67dc5895bb14e4": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T18:55:54.450095+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_de03292e45b38568": {
+      "value": 69100000.0,
+      "display": "69100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp29ddeed4fefa10",
+      "entity_name": "Aleksandar Pavlović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e63eaa983e60fcff": {
+      "value": 0.305,
+      "display": "0.30",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ea69b64b4b35d3ed": {
+      "value": 91900000.0,
+      "display": "91900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eca4f90ee056502a": {
+      "value": 69000000.0,
+      "display": "69000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpd53c870cfedbb6",
+      "entity_name": "Marc Bernal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f5738247a30f0961": {
+      "value": 75000000.0,
+      "display": "75000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_faa6579309a30f67": {
+      "value": 0.201,
+      "display": "0.20",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp05c0de17befc7e",
+      "entity_name": "Lucas Beraldo",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_facdb7eca2f997b9": {
+      "value": "Manchester United",
+      "display": "Manchester United",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpee56c1079dbe50",
+      "entity_name": "Kobbie Mainoo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fd4dfec4d39a566a": {
+      "value": "Crystal Palace",
+      "display": "Crystal Palace",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa9a905dd8ddb35",
+      "entity_name": "Adam Wharton",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fe2d1d63bae85da2": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "paris-saint-germain",
+      "entity_name": "Paris Saint-Germain",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T20:26:43.336926+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_07b88677a660323a",
+        "display": "6th",
+        "label": "league position",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_7ac85715e3198b22",
+        "display": "11",
+        "label": "league points",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_b54dea184d8742af",
+        "display": "11",
+        "label": "league goals scored",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_dc67dc5895bb14e4",
+        "display": "8",
+        "label": "league goals conceded",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_1285a30e68a4583f",
+        "display": "WWWLD",
+        "label": "recent league results, oldest first",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_6fec69c8b20a3ebd",
+        "display": "5 July 2023",
+        "label": "appointed head coach of Paris Saint-Germain",
+        "subject": "Luis Enrique"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_d5e2d6e3903aba59",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Strasbourg v Paris Saint-Germain"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_28b5af68c1dcd36f",
+        "display": "28%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Maghnes Akliouche"
+      },
+      {
+        "stat": "ev_faa6579309a30f67",
+        "display": "20%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Lucas Beraldo"
+      },
+      {
+        "stat": "ev_d35c58fa8f5955de",
+        "display": "10%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Fabián Ruiz"
+      },
+      {
+        "stat": "ev_315d77df7271dbe5",
+        "display": "€80.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Achraf Hakimi"
+      },
+      {
+        "stat": "ev_d7c94cbae69983fd",
+        "display": "€43.4m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Achraf Hakimi"
+      },
+      {
+        "stat": "ev_cb38896f0c299fec",
+        "display": "€140m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Vitinha"
+      },
+      {
+        "stat": "ev_d13096078a782e75",
+        "display": "€81.7m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Vitinha"
+      },
+      {
+        "stat": "ev_c1b3bfd1251a9c99",
+        "display": "€80.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Nuno Mendes"
+      },
+      {
+        "stat": "ev_8f8bd4d3de0fb258",
+        "display": "€48.3m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Nuno Mendes"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_fe2d1d63bae85da2",
+        "display": "defensive midfield",
+        "label": "squad need, priority one",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_b2b2abd7ea486730",
+        "display": "22",
+        "label": "age (best target)",
+        "subject": "Aleksandar Pavlovic"
+      },
+      {
+        "stat": "ev_bc81df1cdf9ddf6e",
+        "display": "Bayern Munich",
+        "label": "current club",
+        "subject": "Aleksandar Pavlovic"
+      },
+      {
+        "stat": "ev_06cf2b20fc1b11e4",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Aleksandar Pavlovic"
+      },
+      {
+        "stat": "ev_4abb7f965cfe78b5",
+        "display": "€90.0m",
+        "label": "market value",
+        "subject": "Aleksandar Pavlovic"
+      },
+      {
+        "stat": "ev_de03292e45b38568",
+        "display": "€69.1m",
+        "label": "estimated fair fee",
+        "subject": "Aleksandar Pavlovic"
+      },
+      {
+        "stat": "ev_c780d978aa2dc480",
+        "display": "50%",
+        "label": "expected share of minutes at the club",
+        "subject": "Aleksandar Pavlovic"
+      },
+      {
+        "stat": "ev_b6fcfb737d4b86b2",
+        "display": "24",
+        "label": "age (best target)",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_a6016b4c9f9fb67b",
+        "display": "Liverpool FC",
+        "label": "current club",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_991638e521a02c98",
+        "display": "68",
+        "label": "months left on his contract",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_8244019835fa8ff6",
+        "display": "€75.0m",
+        "label": "market value",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_9ca351635e5a168e",
+        "display": "€46.8m",
+        "label": "estimated fair fee",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_b2e852bdbfdaa3fd",
+        "display": "55%",
+        "label": "expected share of minutes at the club",
+        "subject": "Ryan Gravenberch"
+      },
+      {
+        "stat": "ev_2182788d7d154fe8",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_fd4dfec4d39a566a",
+        "display": "Crystal Palace",
+        "label": "current club",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_29e1c961a334def1",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_f5738247a30f0961",
+        "display": "€75.0m",
+        "label": "market value",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_5582f2d90c62c0ae",
+        "display": "€56.9m",
+        "label": "estimated fair fee",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_01f37552f449b7cb",
+        "display": "53%",
+        "label": "expected share of minutes at the club",
+        "subject": "Adam Wharton"
+      },
+      {
+        "stat": "ev_8c353be6b0752c91",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Kobbie Mainoo"
+      },
+      {
+        "stat": "ev_facdb7eca2f997b9",
+        "display": "Manchester United",
+        "label": "current club",
+        "subject": "Kobbie Mainoo"
+      },
+      {
+        "stat": "ev_bd94bd82ee8da2ca",
+        "display": "56%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Kobbie Mainoo"
+      },
+      {
+        "stat": "ev_abb575000a825c32",
+        "display": "€65.2m",
+        "label": "estimated fair fee",
+        "subject": "Kobbie Mainoo"
+      },
+      {
+        "stat": "ev_d3c1b3c1313c40d1",
+        "display": "€78.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Kobbie Mainoo"
+      },
+      {
+        "stat": "ev_247ea11d48157588",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Marc Bernal"
+      },
+      {
+        "stat": "ev_a4396f855b353df2",
+        "display": "FC Barcelona",
+        "label": "current club",
+        "subject": "Marc Bernal"
+      },
+      {
+        "stat": "ev_e63eaa983e60fcff",
+        "display": "30%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Marc Bernal"
+      },
+      {
+        "stat": "ev_61cb65fcbbc2c65c",
+        "display": "€26.7m",
+        "label": "estimated fair fee",
+        "subject": "Marc Bernal"
+      },
+      {
+        "stat": "ev_eca4f90ee056502a",
+        "display": "€69.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Marc Bernal"
+      },
+      {
+        "stat": "ev_a00cba273a4c869e",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Jobe Bellingham"
+      },
+      {
+        "stat": "ev_446b688c0f099019",
+        "display": "Borussia Dortmund",
+        "label": "current club",
+        "subject": "Jobe Bellingham"
+      },
+      {
+        "stat": "ev_8532c2956a8e2a8c",
+        "display": "69%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Jobe Bellingham"
+      },
+      {
+        "stat": "ev_4220b55150ef515e",
+        "display": "€34.6m",
+        "label": "estimated fair fee",
+        "subject": "Jobe Bellingham"
+      },
+      {
+        "stat": "ev_8a2c40135905c7bd",
+        "display": "€63.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Jobe Bellingham"
+      },
+      {
+        "stat": "ev_d26704e8298480a1",
+        "display": "full-back",
+        "label": "squad need, priority two",
+        "subject": "Paris Saint-Germain"
+      },
+      {
+        "stat": "ev_d5d300c0a35fa9de",
+        "display": "25",
+        "label": "age (best target, second need)",
+        "subject": "Josko Gvardiol"
+      },
+      {
+        "stat": "ev_6011793bb8b00e46",
+        "display": "€75.0m",
+        "label": "market value",
+        "subject": "Josko Gvardiol"
+      },
+      {
+        "stat": "ev_527e6973dea7c21c",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_ea69b64b4b35d3ed",
+        "display": "€91.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Nico O'Reilly"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 48,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 48,
+      "unverified": 3
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Ligue 1"
+  ]
+}

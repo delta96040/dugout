@@ -133,8 +133,18 @@ class TransfermarktRefresher(SourceAdapter):
                         "source_url": res.url,
                     }
                 )
-        write_squads_csv(rows, SQUADS_CSV)
+        # the file holds every league refreshed so far: replace this league's clubs, keep the others
+        mine = {slug for _, slug in clubs}
+        kept = [r for r in read_squads_csv(SQUADS_CSV) if r["club_id"] not in mine]
+        write_squads_csv(kept + rows, SQUADS_CSV)
         return {"transfermarkt_squads_csv": len(rows)}
+
+
+def read_squads_csv(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
 
 
 def write_squads_csv(rows: list[dict], path: Path) -> None:
@@ -150,6 +160,7 @@ class TransfermarktFileAdapter(SourceAdapter):
     """Reads the committed CSV; no network."""
 
     name = "transfermarkt_file"
+    scope = "global"  # one committed file for every league
     tier = TIER_DATA
 
     def ingest(self, path: Path = SQUADS_CSV) -> dict[str, int]:
@@ -209,6 +220,7 @@ class TransfermarktDatasetsLoader(SourceAdapter):
     """Historical transfers & valuations from transfermarkt-datasets (CC0). Frozen at 2026-07-06."""
 
     name = "transfermarkt_datasets"
+    scope = "global"
     tier = TIER_DATA
     ttl = 30 * DAY
     rate, per = 1, 1.0

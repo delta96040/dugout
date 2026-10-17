@@ -1,0 +1,2246 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "hamburger-sv",
+    "name": "Hamburger SV",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "country": "Germany"
+  },
+  "generated_at": "2026-10-17T00:03:16+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Hamburger SV for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Hamburger SV are "
+          },
+          {
+            "stat": "ev_756cd9aa65914605",
+            "display": "13th"
+          },
+          {
+            "text": " in the Bundesliga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Hamburger SV have "
+          },
+          {
+            "stat": "ev_0f16cf4ff7435391",
+            "display": "6"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Hamburger SV's next league match is Hamburger SV v Stuttgart on "
+          },
+          {
+            "stat": "ev_b70ce3d499381995",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Hamburger SV's biggest squad need is "
+          },
+          {
+            "stat": "ev_5b3f213e0f814f08",
+            "display": "winger"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Hamburger SV doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV are "
+            },
+            {
+              "stat": "ev_756cd9aa65914605",
+              "display": "13th"
+            },
+            {
+              "text": " in the Bundesliga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV have "
+            },
+            {
+              "stat": "ev_0f16cf4ff7435391",
+              "display": "6"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV have scored "
+            },
+            {
+              "stat": "ev_1d61024ca4d648e2",
+              "display": "5"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV have conceded "
+            },
+            {
+              "stat": "ev_f9302b8f3f258c34",
+              "display": "15"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV's most recent league results read "
+            },
+            {
+              "stat": "ev_3689b75ba0f63c3e",
+              "display": "WWLLL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Merlin Polzin has been Hamburger SV's head coach since "
+            },
+            {
+              "stat": "ev_0adbfc002fdd76b4",
+              "display": "25 November 2024"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Hamburger SV expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV's next league match is Hamburger SV v Stuttgart on "
+            },
+            {
+              "stat": "ev_b70ce3d499381995",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Hamburger SV's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Hamburger SV, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Hamburger SV players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Alexander Røssing-Lelesiit's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_10ddbe75cc2c039e",
+              "display": "16%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Miro Muheim's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_177bd4610511978b",
+              "display": "12%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Daniel Elfadli's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_acfedc1c7d67133e",
+              "display": "10%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Nicolai Remberg at "
+            },
+            {
+              "stat": "ev_70cc57f7ba0de7c3",
+              "display": "€9.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Nicolai Remberg is "
+            },
+            {
+              "stat": "ev_c6a27fe86dda9e7e",
+              "display": "€6.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Miro Muheim at "
+            },
+            {
+              "stat": "ev_c0b1e76f47007f0d",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Miro Muheim is "
+            },
+            {
+              "stat": "ev_6811f4523d77e067",
+              "display": "€2.9m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Hamburger SV strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV's biggest squad need is "
+            },
+            {
+              "stat": "ev_5b3f213e0f814f08",
+              "display": "winger"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Sebastian Sebulonsen (1.FC Köln), who is "
+            },
+            {
+              "stat": "ev_fb54fb62daf22714",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Sebastian Sebulonsen plays for "
+            },
+            {
+              "stat": "ev_3f377c7c22488195",
+              "display": "1.FC Köln"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Sebastian Sebulonsen has a market value of "
+            },
+            {
+              "stat": "ev_3e73f5994cfbc4d5",
+              "display": "€5.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Sebastian Sebulonsen is "
+            },
+            {
+              "stat": "ev_a387b1cc188cea8d",
+              "display": "€4.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Sebastian Sebulonsen to play "
+            },
+            {
+              "stat": "ev_b8edb30ddbba3306",
+              "display": "61%"
+            },
+            {
+              "text": " of Hamburger SV's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Aron Dønnum (FC Toulouse), who is "
+            },
+            {
+              "stat": "ev_b525b4998d83ada2",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Aron Dønnum plays for "
+            },
+            {
+              "stat": "ev_e66ce7e029014464",
+              "display": "FC Toulouse"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Aron Dønnum has a market value of "
+            },
+            {
+              "stat": "ev_946e3451db6b5062",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Aron Dønnum is "
+            },
+            {
+              "stat": "ev_989c18d1773236a4",
+              "display": "€3.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Aron Dønnum to play "
+            },
+            {
+              "stat": "ev_1fcce4f53c2e7ba6",
+              "display": "60%"
+            },
+            {
+              "text": " of Hamburger SV's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Danil Krugovoy (PFK CSKA Moskva), who is "
+            },
+            {
+              "stat": "ev_4dde062a11364ff7",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Danil Krugovoy plays for "
+            },
+            {
+              "stat": "ev_9f95e3e55f6cdf77",
+              "display": "PFK CSKA Moskva"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Danil Krugovoy has a market value of "
+            },
+            {
+              "stat": "ev_47d60d4ac1a3cee7",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Danil Krugovoy is "
+            },
+            {
+              "stat": "ev_654ea4fefd2a2b52",
+              "display": "€3.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Danil Krugovoy to play "
+            },
+            {
+              "stat": "ev_3b19a0dc565448f4",
+              "display": "57%"
+            },
+            {
+              "text": " of Hamburger SV's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Mathis Suray (Go Ahead Eagles), who is "
+            },
+            {
+              "stat": "ev_f6b6a4235828fb38",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Mathis Suray plays for "
+            },
+            {
+              "stat": "ev_2466aaa3000345b4",
+              "display": "Go Ahead Eagles"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_4b0913ef6fb04f57",
+              "display": "57%"
+            },
+            {
+              "text": " chance that Go Ahead Eagles sell Mathis Suray in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Mathis Suray is "
+            },
+            {
+              "stat": "ev_2dd958e227bc333b",
+              "display": "€3.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_61c9a9b7fbde0905",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Mathis Suray joins Hamburger SV in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Tobias Bech (Aarhus GF), who is "
+            },
+            {
+              "stat": "ev_98a7920dd07c08a2",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Tobias Bech plays for "
+            },
+            {
+              "stat": "ev_86278e1cff51baa4",
+              "display": "Aarhus GF"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_a8ac2c07224193fe",
+              "display": "53%"
+            },
+            {
+              "text": " chance that Aarhus GF sell Tobias Bech in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Tobias Bech is "
+            },
+            {
+              "stat": "ev_705ce03ea585f014",
+              "display": "€3.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hamburger SV's second squad need is "
+            },
+            {
+              "stat": "ev_850bdc0167cadfda",
+              "display": "centre-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Sebastian Sebulonsen has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Aron Dønnum has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Danil Krugovoy has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Mathis Suray has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Tobias Bech has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_0adbfc002fdd76b4": {
+      "value": "2024-11-25",
+      "display": "2024-11-25",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q124514448",
+      "entity_name": "Merlin Polzin",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q124514448",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0f16cf4ff7435391": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_10ddbe75cc2c039e": {
+      "value": 0.162,
+      "display": "0.16",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpd5063934fda13d",
+      "entity_name": "Alexander Røssing-Lelesiit",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_177bd4610511978b": {
+      "value": 0.122,
+      "display": "0.12",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpbf5605a73b48c5",
+      "entity_name": "Miro Muheim",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1d61024ca4d648e2": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_1fcce4f53c2e7ba6": {
+      "value": 0.598,
+      "display": "0.60",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpdea0dc1b5622a9",
+      "entity_name": "Aron Dönnum",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2466aaa3000345b4": {
+      "value": "Go Ahead Eagles",
+      "display": "Go Ahead Eagles",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2dd958e227bc333b": {
+      "value": 3900000.0,
+      "display": "3900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_33b616de97b50a01": {
+      "value": 0.0008,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp4dbccc5ab734ae",
+      "entity_name": "Ilya Rozhkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3689b75ba0f63c3e": {
+      "value": "WWLLL",
+      "display": "WWLLL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_3b19a0dc565448f4": {
+      "value": 0.567,
+      "display": "0.57",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp72bed79dd706ce",
+      "entity_name": "Danil Krugovoy",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3e73f5994cfbc4d5": {
+      "value": 5500000.0,
+      "display": "5500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpdbba92a5fb821d",
+      "entity_name": "Sebastian Sebulonsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3f377c7c22488195": {
+      "value": "1.FC Köln",
+      "display": "1.FC Köln",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpdbba92a5fb821d",
+      "entity_name": "Sebastian Sebulonsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_404fa7015f4cf222": {
+      "value": 0.446,
+      "display": "0.45",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp4dbccc5ab734ae",
+      "entity_name": "Ilya Rozhkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_44f86042605563c6": {
+      "value": 19.2,
+      "display": "19.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa276701c0c2987",
+      "entity_name": "Kirill Danilov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_47d60d4ac1a3cee7": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp72bed79dd706ce",
+      "entity_name": "Danil Krugovoy",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_48924eb0aa73cf78": {
+      "value": 9000000.0,
+      "display": "9000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpa276701c0c2987",
+      "entity_name": "Kirill Danilov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4b0913ef6fb04f57": {
+      "value": 0.567,
+      "display": "0.57",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4dde062a11364ff7": {
+      "value": 28.4,
+      "display": "28.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp72bed79dd706ce",
+      "entity_name": "Danil Krugovoy",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_50fd16ed24683702": {
+      "value": 0.0011,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp3838265c17f953",
+      "entity_name": "Roggerio Nyakossi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5b3f213e0f814f08": {
+      "value": "winger",
+      "display": "winger",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_60b740a2b4dc8955": {
+      "value": 4300000.0,
+      "display": "4300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3838265c17f953",
+      "entity_name": "Roggerio Nyakossi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_61c9a9b7fbde0905": {
+      "value": 0.0009,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_654ea4fefd2a2b52": {
+      "value": 3100000.0,
+      "display": "3100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp72bed79dd706ce",
+      "entity_name": "Danil Krugovoy",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6811f4523d77e067": {
+      "value": 2900000.0,
+      "display": "2900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpbf5605a73b48c5",
+      "entity_name": "Miro Muheim",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6f979307395f5ab6": {
+      "value": 0.0009,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_705ce03ea585f014": {
+      "value": 3900000.0,
+      "display": "3900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_70cc57f7ba0de7c3": {
+      "value": 9000000.0,
+      "display": "9000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd27f1babf161cb",
+      "entity_name": "Nicolai Remberg",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_756cd9aa65914605": {
+      "value": 13.0,
+      "display": "13",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7814230e326ee727": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7f75911874399068": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp72bed79dd706ce",
+      "entity_name": "Danil Krugovoy",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_815661f1e0655763": {
+      "value": 5500000.0,
+      "display": "5500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp4dbccc5ab734ae",
+      "entity_name": "Ilya Rozhkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_850bdc0167cadfda": {
+      "value": "centre-back",
+      "display": "centre-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_86278e1cff51baa4": {
+      "value": "Aarhus GF",
+      "display": "Aarhus GF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_917a56ac91be37b7": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpdea0dc1b5622a9",
+      "entity_name": "Aron Dönnum",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_946e3451db6b5062": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpdea0dc1b5622a9",
+      "entity_name": "Aron Dönnum",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9693afd79e167bb9": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp4dbccc5ab734ae",
+      "entity_name": "Ilya Rozhkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_989c18d1773236a4": {
+      "value": 3200000.0,
+      "display": "3200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpdea0dc1b5622a9",
+      "entity_name": "Aron Dönnum",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_98a7920dd07c08a2": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9f95e3e55f6cdf77": {
+      "value": "PFK CSKA Moskva",
+      "display": "PFK CSKA Moskva",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp72bed79dd706ce",
+      "entity_name": "Danil Krugovoy",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a387b1cc188cea8d": {
+      "value": 4000000.0,
+      "display": "4000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpdbba92a5fb821d",
+      "entity_name": "Sebastian Sebulonsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a8ac2c07224193fe": {
+      "value": 0.533,
+      "display": "0.53",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aac0a560f180b830": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpdbba92a5fb821d",
+      "entity_name": "Sebastian Sebulonsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_acfedc1c7d67133e": {
+      "value": 0.099,
+      "display": "0.10",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp6e8e05db28769f",
+      "entity_name": "Daniel Elfadli",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ae4dad6baf653920": {
+      "value": 22.8,
+      "display": "22.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3838265c17f953",
+      "entity_name": "Roggerio Nyakossi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b525b4998d83ada2": {
+      "value": 28.5,
+      "display": "28.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdea0dc1b5622a9",
+      "entity_name": "Aron Dönnum",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b70ce3d499381995": {
+      "value": "2026-10-17T13:30:00+00:00",
+      "display": "2026-10-17T13:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "bundesliga:2026-27:hamburger-sv:stuttgart",
+      "entity_name": "Hamburger SV v Stuttgart",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:11.210954+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b8edb30ddbba3306": {
+      "value": 0.608,
+      "display": "0.61",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpdbba92a5fb821d",
+      "entity_name": "Sebastian Sebulonsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c0b1e76f47007f0d": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpbf5605a73b48c5",
+      "entity_name": "Miro Muheim",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_c5541734185dd930": {
+      "value": "FC Rubin Kazan",
+      "display": "FC Rubin Kazan",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp4dbccc5ab734ae",
+      "entity_name": "Ilya Rozhkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c6a27fe86dda9e7e": {
+      "value": 6300000.0,
+      "display": "6300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd27f1babf161cb",
+      "entity_name": "Nicolai Remberg",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d31b06fd11260590": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpefca50dd26af0b",
+      "entity_name": "Ayumu Seko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e66ce7e029014464": {
+      "value": "FC Toulouse",
+      "display": "FC Toulouse",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpdea0dc1b5622a9",
+      "entity_name": "Aron Dönnum",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_edfbc4028496ca64": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f2cb089fe7f9c6c7": {
+      "value": 26.4,
+      "display": "26.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpefca50dd26af0b",
+      "entity_name": "Ayumu Seko",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f6b6a4235828fb38": {
+      "value": 25.2,
+      "display": "25.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f9302b8f3f258c34": {
+      "value": 15.0,
+      "display": "15",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "hamburger-sv",
+      "entity_name": "Hamburger SV",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_fb54fb62daf22714": {
+      "value": 26.7,
+      "display": "26.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdbba92a5fb821d",
+      "entity_name": "Sebastian Sebulonsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fce5ebcaad5f2dea": {
+      "value": 21.5,
+      "display": "21.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4dbccc5ab734ae",
+      "entity_name": "Ilya Rozhkov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_756cd9aa65914605",
+        "display": "13th",
+        "label": "league position",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_0f16cf4ff7435391",
+        "display": "6",
+        "label": "league points",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_1d61024ca4d648e2",
+        "display": "5",
+        "label": "league goals scored",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_f9302b8f3f258c34",
+        "display": "15",
+        "label": "league goals conceded",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_3689b75ba0f63c3e",
+        "display": "WWLLL",
+        "label": "recent league results, oldest first",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_0adbfc002fdd76b4",
+        "display": "25 November 2024",
+        "label": "appointed head coach of Hamburger SV",
+        "subject": "Merlin Polzin"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_b70ce3d499381995",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Hamburger SV v Stuttgart"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_10ddbe75cc2c039e",
+        "display": "16%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Alexander Røssing-Lelesiit"
+      },
+      {
+        "stat": "ev_177bd4610511978b",
+        "display": "12%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Miro Muheim"
+      },
+      {
+        "stat": "ev_acfedc1c7d67133e",
+        "display": "10%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Daniel Elfadli"
+      },
+      {
+        "stat": "ev_70cc57f7ba0de7c3",
+        "display": "€9.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Nicolai Remberg"
+      },
+      {
+        "stat": "ev_c6a27fe86dda9e7e",
+        "display": "€6.3m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Nicolai Remberg"
+      },
+      {
+        "stat": "ev_c0b1e76f47007f0d",
+        "display": "€5.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Miro Muheim"
+      },
+      {
+        "stat": "ev_6811f4523d77e067",
+        "display": "€2.9m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Miro Muheim"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_5b3f213e0f814f08",
+        "display": "winger",
+        "label": "squad need, priority one",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_fb54fb62daf22714",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Sebastian Sebulonsen"
+      },
+      {
+        "stat": "ev_3f377c7c22488195",
+        "display": "1.FC Köln",
+        "label": "current club",
+        "subject": "Sebastian Sebulonsen"
+      },
+      {
+        "stat": "ev_aac0a560f180b830",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Sebastian Sebulonsen"
+      },
+      {
+        "stat": "ev_3e73f5994cfbc4d5",
+        "display": "€5.5m",
+        "label": "market value",
+        "subject": "Sebastian Sebulonsen"
+      },
+      {
+        "stat": "ev_a387b1cc188cea8d",
+        "display": "€4.0m",
+        "label": "estimated fair fee",
+        "subject": "Sebastian Sebulonsen"
+      },
+      {
+        "stat": "ev_b8edb30ddbba3306",
+        "display": "61%",
+        "label": "expected share of minutes at the club",
+        "subject": "Sebastian Sebulonsen"
+      },
+      {
+        "stat": "ev_b525b4998d83ada2",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Aron Dønnum"
+      },
+      {
+        "stat": "ev_e66ce7e029014464",
+        "display": "FC Toulouse",
+        "label": "current club",
+        "subject": "Aron Dønnum"
+      },
+      {
+        "stat": "ev_917a56ac91be37b7",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Aron Dønnum"
+      },
+      {
+        "stat": "ev_946e3451db6b5062",
+        "display": "€5.0m",
+        "label": "market value",
+        "subject": "Aron Dønnum"
+      },
+      {
+        "stat": "ev_989c18d1773236a4",
+        "display": "€3.2m",
+        "label": "estimated fair fee",
+        "subject": "Aron Dønnum"
+      },
+      {
+        "stat": "ev_1fcce4f53c2e7ba6",
+        "display": "60%",
+        "label": "expected share of minutes at the club",
+        "subject": "Aron Dønnum"
+      },
+      {
+        "stat": "ev_4dde062a11364ff7",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Danil Krugovoy"
+      },
+      {
+        "stat": "ev_9f95e3e55f6cdf77",
+        "display": "PFK CSKA Moskva",
+        "label": "current club",
+        "subject": "Danil Krugovoy"
+      },
+      {
+        "stat": "ev_7f75911874399068",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Danil Krugovoy"
+      },
+      {
+        "stat": "ev_47d60d4ac1a3cee7",
+        "display": "€5.0m",
+        "label": "market value",
+        "subject": "Danil Krugovoy"
+      },
+      {
+        "stat": "ev_654ea4fefd2a2b52",
+        "display": "€3.1m",
+        "label": "estimated fair fee",
+        "subject": "Danil Krugovoy"
+      },
+      {
+        "stat": "ev_3b19a0dc565448f4",
+        "display": "57%",
+        "label": "expected share of minutes at the club",
+        "subject": "Danil Krugovoy"
+      },
+      {
+        "stat": "ev_f6b6a4235828fb38",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_2466aaa3000345b4",
+        "display": "Go Ahead Eagles",
+        "label": "current club",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_4b0913ef6fb04f57",
+        "display": "57%",
+        "label": "chance his club sells him in a window",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_7814230e326ee727",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_2dd958e227bc333b",
+        "display": "€3.9m",
+        "label": "estimated fair fee",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_61c9a9b7fbde0905",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_98a7920dd07c08a2",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_86278e1cff51baa4",
+        "display": "Aarhus GF",
+        "label": "current club",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_a8ac2c07224193fe",
+        "display": "53%",
+        "label": "chance his club sells him in a window",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_edfbc4028496ca64",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_705ce03ea585f014",
+        "display": "€3.9m",
+        "label": "estimated fair fee",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_6f979307395f5ab6",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_fce5ebcaad5f2dea",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Ilya Rozhkov"
+      },
+      {
+        "stat": "ev_c5541734185dd930",
+        "display": "FC Rubin Kazan",
+        "label": "current club",
+        "subject": "Ilya Rozhkov"
+      },
+      {
+        "stat": "ev_404fa7015f4cf222",
+        "display": "45%",
+        "label": "chance his club sells him in a window",
+        "subject": "Ilya Rozhkov"
+      },
+      {
+        "stat": "ev_9693afd79e167bb9",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Ilya Rozhkov"
+      },
+      {
+        "stat": "ev_815661f1e0655763",
+        "display": "€5.5m",
+        "label": "estimated fair fee",
+        "subject": "Ilya Rozhkov"
+      },
+      {
+        "stat": "ev_33b616de97b50a01",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Ilya Rozhkov"
+      },
+      {
+        "stat": "ev_850bdc0167cadfda",
+        "display": "centre-back",
+        "label": "squad need, priority two",
+        "subject": "Hamburger SV"
+      },
+      {
+        "stat": "ev_f2cb089fe7f9c6c7",
+        "display": "26",
+        "label": "age (best target, second need)",
+        "subject": "Ayumu Seko"
+      },
+      {
+        "stat": "ev_d31b06fd11260590",
+        "display": "€5.0m",
+        "label": "market value",
+        "subject": "Ayumu Seko"
+      },
+      {
+        "stat": "ev_ae4dad6baf653920",
+        "display": "23",
+        "label": "age (realistic target, second need)",
+        "subject": "Roggerio Nyakossi"
+      },
+      {
+        "stat": "ev_60b740a2b4dc8955",
+        "display": "€4.3m",
+        "label": "estimated fair fee",
+        "subject": "Roggerio Nyakossi"
+      },
+      {
+        "stat": "ev_50fd16ed24683702",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Roggerio Nyakossi"
+      },
+      {
+        "stat": "ev_44f86042605563c6",
+        "display": "19",
+        "label": "age (gem target, second need)",
+        "subject": "Kirill Danilov"
+      },
+      {
+        "stat": "ev_48924eb0aa73cf78",
+        "display": "€9.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Kirill Danilov"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 44,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 44,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "1.FC Köln"
+  ]
+}

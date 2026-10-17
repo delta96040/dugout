@@ -1,0 +1,2064 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "le-havre",
+    "name": "Le Havre",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "ligue_1",
+    "name": "Ligue 1",
+    "country": "France"
+  },
+  "generated_at": "2026-10-17T00:05:51+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Le Havre for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Le Havre are "
+          },
+          {
+            "stat": "ev_e4a8738441d15e05",
+            "display": "18th"
+          },
+          {
+            "text": " in the Ligue 1 table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Le Havre have "
+          },
+          {
+            "stat": "ev_5a0916c1421189d6",
+            "display": "2"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Le Havre's next league match is Le Havre v Auxerre on "
+          },
+          {
+            "stat": "ev_64e479c164098799",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Le Havre's biggest squad need is "
+          },
+          {
+            "stat": "ev_4f434fb8f93efe51",
+            "display": "winger"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Le Havre doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Le Havre are "
+            },
+            {
+              "stat": "ev_e4a8738441d15e05",
+              "display": "18th"
+            },
+            {
+              "text": " in the Ligue 1 table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Le Havre have "
+            },
+            {
+              "stat": "ev_5a0916c1421189d6",
+              "display": "2"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Le Havre have scored "
+            },
+            {
+              "stat": "ev_1afbdb7e0a3ad4a6",
+              "display": "4"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Le Havre have conceded "
+            },
+            {
+              "stat": "ev_4b5438d08452d113",
+              "display": "8"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Le Havre's most recent league results read "
+            },
+            {
+              "stat": "ev_d3203966dde31d8c",
+              "display": "LLDLD"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Didier Digard has been Le Havre's head coach since "
+            },
+            {
+              "stat": "ev_4cd258464d285828",
+              "display": "1 July 2024"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Le Havre expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Le Havre's next league match is Le Havre v Auxerre on "
+            },
+            {
+              "stat": "ev_64e479c164098799",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Le Havre's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Le Havre, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Le Havre players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Rassoul N'Diaye's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_905f4336633a7a35",
+              "display": "44%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Simon Ebonog's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_5d29ef334292483d",
+              "display": "22%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Junior Mwanga's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_acd712f791870820",
+              "display": "17%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Rassoul N'Diaye at "
+            },
+            {
+              "stat": "ev_aec588606f5269cd",
+              "display": "€8.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Rassoul N'Diaye is "
+            },
+            {
+              "stat": "ev_b4af0927424b60de",
+              "display": "€5.6m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Ayumu Seko at "
+            },
+            {
+              "stat": "ev_969d5cd78d767d1c",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Ayumu Seko is "
+            },
+            {
+              "stat": "ev_a9313c11078c0642",
+              "display": "€3.4m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Le Havre strengthen, and who fits?",
+      "status": "withheld",
+      "writer": "template",
+      "claims": [],
+      "withheld": [
+        {
+          "text": "Tijjani Noslin has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Hugo Álvarez has [number] months left on his contract.",
+          "status": "conflicting",
+          "reason": "transfer clause: contradicted by a tier 1-2 source"
+        },
+        {
+          "text": "João Batxi has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Gabriel Silva has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Mathis Suray has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_008ba5101cd6f574": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp2357fb49b35ad4",
+      "entity_name": "Hugo Alvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_00fb8cb44fd447ea": {
+      "value": 0.0005,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_04a866c8698fe375": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2357fb49b35ad4",
+      "entity_name": "Hugo Alvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_076261e832894bce": {
+      "value": 0.0006,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpd6077ee6d7fbd2",
+      "entity_name": "Jonathan Fischer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_09538861663b200e": {
+      "value": 0.626,
+      "display": "0.63",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp483996452973b9",
+      "entity_name": "João Batxi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18532cb105518cc1": {
+      "value": "Paris Saint-Germain",
+      "display": "Paris Saint-Germain",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18c0cd007520c7eb": {
+      "value": 3400000.0,
+      "display": "3400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18ee69f3cbb761df": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpa4c7450d2f0eff",
+      "entity_name": "Tijjani Noslin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1afbdb7e0a3ad4a6": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_1fa7d27d9a251e41": {
+      "value": 0.567,
+      "display": "0.57",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_21ad29150303cbbc": {
+      "value": "Società Sportiva Lazio S.p.A.",
+      "display": "Società Sportiva Lazio S.p.A.",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpa4c7450d2f0eff",
+      "entity_name": "Tijjani Noslin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_22c5e0c694c28762": {
+      "value": "Go Ahead Eagles",
+      "display": "Go Ahead Eagles",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26ccc272550b98cf": {
+      "value": 0.0005,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2ced702f585e9601": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2d292f527eb5e6a2": {
+      "value": 180300000.0,
+      "display": "180300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2f4719c5cba0b60b": {
+      "value": 5200000.0,
+      "display": "5200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp483996452973b9",
+      "entity_name": "João Batxi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30fd454cfb7b889e": {
+      "value": 1400000.0,
+      "display": "1400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd6077ee6d7fbd2",
+      "entity_name": "Jonathan Fischer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_43541bce4d3907fc": {
+      "value": 18.6,
+      "display": "18.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_472e5d14d2d76d7e": {
+      "value": 24.9,
+      "display": "24.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd6077ee6d7fbd2",
+      "entity_name": "Jonathan Fischer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_492f5ff03815f49b": {
+      "value": 19.3,
+      "display": "19.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4b5438d08452d113": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4cd258464d285828": {
+      "value": "2024-07-01",
+      "display": "2024-07-01",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q267128",
+      "entity_name": "Didier Digard",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q267128",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4f434fb8f93efe51": {
+      "value": "winger",
+      "display": "winger",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_550e505de16695a6": {
+      "value": 24.6,
+      "display": "24.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5a0916c1421189d6": {
+      "value": 2.0,
+      "display": "2",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5c78cd9f152c012a": {
+      "value": "Aarhus GF",
+      "display": "Aarhus GF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5cb8ab3b3be7238f": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d29ef334292483d": {
+      "value": 0.218,
+      "display": "0.22",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpe7d06428a61a1f",
+      "entity_name": "Simon Ebonog",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_605353b6855b6280": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp483996452973b9",
+      "entity_name": "João Batxi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6151404e70d81e66": {
+      "value": 0.816,
+      "display": "0.82",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_64e479c164098799": {
+      "value": "2026-10-18T15:15:00+00:00",
+      "display": "2026-10-18T15:15:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:le-havre:auxerre",
+      "entity_name": "Le Havre v Auxerre",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:42.581539+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_668ed3c8dc5c8fb3": {
+      "value": 3300000.0,
+      "display": "3300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6b8541f524edecd6": {
+      "value": 28.5,
+      "display": "28.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp483996452973b9",
+      "entity_name": "João Batxi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_753406a01d6f6d42": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp483996452973b9",
+      "entity_name": "João Batxi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7fe9c99ba7abe85e": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpfe8900ecd7a9a2",
+      "entity_name": "Moritz Nicolas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_905f4336633a7a35": {
+      "value": 0.437,
+      "display": "0.44",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpefe18282490f84",
+      "entity_name": "Rassoul N'Diaye",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_90d81493a0b942b9": {
+      "value": 64800000.0,
+      "display": "64800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_91e27bb85c891e43": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_969d5cd78d767d1c": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpefca50dd26af0b",
+      "entity_name": "Ayumu Seko",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_9e2f3579079f1751": {
+      "value": "Bayern Munich",
+      "display": "Bayern Munich",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e59a6eccf03818e": {
+      "value": 0.637,
+      "display": "0.64",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp2357fb49b35ad4",
+      "entity_name": "Hugo Alvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a4de3465ea0ce7ff": {
+      "value": 21.4,
+      "display": "21.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a5d8f30c06652173": {
+      "value": 25.2,
+      "display": "25.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a7061ee0f1e3b082": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp963087cb156671",
+      "entity_name": "Mathis Suray",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a9313c11078c0642": {
+      "value": 3400000.0,
+      "display": "3400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpefca50dd26af0b",
+      "entity_name": "Ayumu Seko",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aada0e7e9c14dd78": {
+      "value": "Celta de Vigo",
+      "display": "Celta de Vigo",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp2357fb49b35ad4",
+      "entity_name": "Hugo Alvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_acd712f791870820": {
+      "value": 0.17,
+      "display": "0.17",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp1a419157643769",
+      "entity_name": "Junior Mwanga",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_adea90b8d525c1f6": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp2357fb49b35ad4",
+      "entity_name": "Hugo Alvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aebb238bc120c4ff": {
+      "value": 0.428,
+      "display": "0.43",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aec588606f5269cd": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpefe18282490f84",
+      "entity_name": "Rassoul N'Diaye",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b16809b539691c91": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpa4c7450d2f0eff",
+      "entity_name": "Tijjani Noslin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b22c3ef0894615dc": {
+      "value": 29.0,
+      "display": "29",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfe8900ecd7a9a2",
+      "entity_name": "Moritz Nicolas",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b4af0927424b60de": {
+      "value": 5600000.0,
+      "display": "5600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpefe18282490f84",
+      "entity_name": "Rassoul N'Diaye",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b66ece384dc385de": {
+      "value": "FK Krasnodar",
+      "display": "FK Krasnodar",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp483996452973b9",
+      "entity_name": "João Batxi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c4c85ec430d5b04f": {
+      "value": 0.533,
+      "display": "0.53",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c7502087e8945b43": {
+      "value": 0.581,
+      "display": "0.58",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cd2d51a1341f5979": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cdf92e008a3d2716": {
+      "value": 0.589,
+      "display": "0.59",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d1f8b164104d474b": {
+      "value": 86200000.0,
+      "display": "86200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d3203966dde31d8c": {
+      "value": "LLDLD",
+      "display": "LLDLD",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d9c66041d1a6f906": {
+      "value": 124000000.0,
+      "display": "124000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e11492d70106e7a2": {
+      "value": 121200000.0,
+      "display": "121200000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e1b28a3191413ec0": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e4a8738441d15e05": {
+      "value": 18.0,
+      "display": "18",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "le-havre",
+      "entity_name": "Le Havre",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:49.642745+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e51f2ccd890f3f54": {
+      "value": 314800000.0,
+      "display": "314800000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e65dbbcddac1e369": {
+      "value": 5500000.0,
+      "display": "5500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpa4c7450d2f0eff",
+      "entity_name": "Tijjani Noslin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e9805d66b6c00076": {
+      "value": "CD Santa Clara",
+      "display": "CD Santa Clara",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp7e7ea274ddc6fc",
+      "entity_name": "Gabriel Silva",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f231b7f74ff748c2": {
+      "value": 23.3,
+      "display": "23.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp2357fb49b35ad4",
+      "entity_name": "Hugo Alvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f87945b50f21dda5": {
+      "value": 0.657,
+      "display": "0.66",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpa4c7450d2f0eff",
+      "entity_name": "Tijjani Noslin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f89b5e2358176c25": {
+      "value": 0.0005,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f94674203feb3ec1": {
+      "value": 27.3,
+      "display": "27.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpa4c7450d2f0eff",
+      "entity_name": "Tijjani Noslin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ff0c254779141d70": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_e4a8738441d15e05",
+        "display": "18th",
+        "label": "league position",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_5a0916c1421189d6",
+        "display": "2",
+        "label": "league points",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_1afbdb7e0a3ad4a6",
+        "display": "4",
+        "label": "league goals scored",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_4b5438d08452d113",
+        "display": "8",
+        "label": "league goals conceded",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_d3203966dde31d8c",
+        "display": "LLDLD",
+        "label": "recent league results, oldest first",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_4cd258464d285828",
+        "display": "1 July 2024",
+        "label": "appointed head coach of Le Havre",
+        "subject": "Didier Digard"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_64e479c164098799",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Le Havre v Auxerre"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_905f4336633a7a35",
+        "display": "44%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Rassoul N'Diaye"
+      },
+      {
+        "stat": "ev_5d29ef334292483d",
+        "display": "22%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Simon Ebonog"
+      },
+      {
+        "stat": "ev_acd712f791870820",
+        "display": "17%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Junior Mwanga"
+      },
+      {
+        "stat": "ev_aec588606f5269cd",
+        "display": "€8.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Rassoul N'Diaye"
+      },
+      {
+        "stat": "ev_b4af0927424b60de",
+        "display": "€5.6m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Rassoul N'Diaye"
+      },
+      {
+        "stat": "ev_969d5cd78d767d1c",
+        "display": "€5.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Ayumu Seko"
+      },
+      {
+        "stat": "ev_a9313c11078c0642",
+        "display": "€3.4m",
+        "label": "estimated fair fee if sold to another Ligue 1 club",
+        "subject": "Ayumu Seko"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_4f434fb8f93efe51",
+        "display": "winger",
+        "label": "squad need, priority one",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_f94674203feb3ec1",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Tijjani Noslin"
+      },
+      {
+        "stat": "ev_21ad29150303cbbc",
+        "display": "Società Sportiva Lazio S.p.A.",
+        "label": "current club",
+        "subject": "Tijjani Noslin"
+      },
+      {
+        "stat": "ev_b16809b539691c91",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Tijjani Noslin"
+      },
+      {
+        "stat": "ev_18ee69f3cbb761df",
+        "display": "€8.0m",
+        "label": "market value",
+        "subject": "Tijjani Noslin"
+      },
+      {
+        "stat": "ev_e65dbbcddac1e369",
+        "display": "€5.5m",
+        "label": "estimated fair fee",
+        "subject": "Tijjani Noslin"
+      },
+      {
+        "stat": "ev_f87945b50f21dda5",
+        "display": "66%",
+        "label": "expected share of minutes at the club",
+        "subject": "Tijjani Noslin"
+      },
+      {
+        "stat": "ev_f231b7f74ff748c2",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Hugo Álvarez"
+      },
+      {
+        "stat": "ev_aada0e7e9c14dd78",
+        "display": "Celta de Vigo",
+        "label": "current club",
+        "subject": "Hugo Álvarez"
+      },
+      {
+        "stat": "ev_adea90b8d525c1f6",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Hugo Álvarez"
+      },
+      {
+        "stat": "ev_008ba5101cd6f574",
+        "display": "€8.0m",
+        "label": "market value",
+        "subject": "Hugo Álvarez"
+      },
+      {
+        "stat": "ev_04a866c8698fe375",
+        "display": "€6.0m",
+        "label": "estimated fair fee",
+        "subject": "Hugo Álvarez"
+      },
+      {
+        "stat": "ev_9e59a6eccf03818e",
+        "display": "64%",
+        "label": "expected share of minutes at the club",
+        "subject": "Hugo Álvarez"
+      },
+      {
+        "stat": "ev_6b8541f524edecd6",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "João Batxi"
+      },
+      {
+        "stat": "ev_b66ece384dc385de",
+        "display": "FK Krasnodar",
+        "label": "current club",
+        "subject": "João Batxi"
+      },
+      {
+        "stat": "ev_753406a01d6f6d42",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "João Batxi"
+      },
+      {
+        "stat": "ev_605353b6855b6280",
+        "display": "€8.0m",
+        "label": "market value",
+        "subject": "João Batxi"
+      },
+      {
+        "stat": "ev_2f4719c5cba0b60b",
+        "display": "€5.2m",
+        "label": "estimated fair fee",
+        "subject": "João Batxi"
+      },
+      {
+        "stat": "ev_09538861663b200e",
+        "display": "63%",
+        "label": "expected share of minutes at the club",
+        "subject": "João Batxi"
+      },
+      {
+        "stat": "ev_550e505de16695a6",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_e9805d66b6c00076",
+        "display": "CD Santa Clara",
+        "label": "current club",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_c7502087e8945b43",
+        "display": "58%",
+        "label": "chance his club sells him in a window",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_2ced702f585e9601",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_e1b28a3191413ec0",
+        "display": "€5.0m",
+        "label": "estimated fair fee",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_00fb8cb44fd447ea",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Gabriel Silva"
+      },
+      {
+        "stat": "ev_a5d8f30c06652173",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_22c5e0c694c28762",
+        "display": "Go Ahead Eagles",
+        "label": "current club",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_1fa7d27d9a251e41",
+        "display": "57%",
+        "label": "chance his club sells him in a window",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_a7061ee0f1e3b082",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_668ed3c8dc5c8fb3",
+        "display": "€3.3m",
+        "label": "estimated fair fee",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_26ccc272550b98cf",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Mathis Suray"
+      },
+      {
+        "stat": "ev_91e27bb85c891e43",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_5c78cd9f152c012a",
+        "display": "Aarhus GF",
+        "label": "current club",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_c4c85ec430d5b04f",
+        "display": "53%",
+        "label": "chance his club sells him in a window",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_cd2d51a1341f5979",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_18c0cd007520c7eb",
+        "display": "€3.4m",
+        "label": "estimated fair fee",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_f89b5e2358176c25",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_492f5ff03815f49b",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_ff0c254779141d70",
+        "display": "FC Barcelona",
+        "label": "current club",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_6151404e70d81e66",
+        "display": "82%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_2d292f527eb5e6a2",
+        "display": "€180m",
+        "label": "estimated fair fee",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_e51f2ccd890f3f54",
+        "display": "€315m",
+        "label": "projected market value in a few seasons",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_a4de3465ea0ce7ff",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_18532cb105518cc1",
+        "display": "Paris Saint-Germain",
+        "label": "current club",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_cdf92e008a3d2716",
+        "display": "59%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_d1f8b164104d474b",
+        "display": "€86.2m",
+        "label": "estimated fair fee",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_d9c66041d1a6f906",
+        "display": "€124m",
+        "label": "projected market value in a few seasons",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_43541bce4d3907fc",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_9e2f3579079f1751",
+        "display": "Bayern Munich",
+        "label": "current club",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_aebb238bc120c4ff",
+        "display": "43%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_90d81493a0b942b9",
+        "display": "€64.8m",
+        "label": "estimated fair fee",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_e11492d70106e7a2",
+        "display": "€121m",
+        "label": "projected market value in a few seasons",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_5cb8ab3b3be7238f",
+        "display": "goalkeeper",
+        "label": "squad need, priority two",
+        "subject": "Le Havre"
+      },
+      {
+        "stat": "ev_b22c3ef0894615dc",
+        "display": "29",
+        "label": "age (best target, second need)",
+        "subject": "Moritz Nicolas"
+      },
+      {
+        "stat": "ev_7fe9c99ba7abe85e",
+        "display": "€8.0m",
+        "label": "market value",
+        "subject": "Moritz Nicolas"
+      },
+      {
+        "stat": "ev_472e5d14d2d76d7e",
+        "display": "25",
+        "label": "age (realistic target, second need)",
+        "subject": "Jonathan Fischer"
+      },
+      {
+        "stat": "ev_30fd454cfb7b889e",
+        "display": "€1.4m",
+        "label": "estimated fair fee",
+        "subject": "Jonathan Fischer"
+      },
+      {
+        "stat": "ev_076261e832894bce",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Jonathan Fischer"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 18,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 44,
+      "unverified": 4,
+      "conflicting": 1
+    },
+    "sections_published": 4,
+    "sections_withheld": 1
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Ligue 1"
+  ]
+}

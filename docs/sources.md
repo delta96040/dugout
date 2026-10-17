@@ -25,6 +25,7 @@ Rules that apply to all sources (enforced in `packages/pipeline/src/dugout_pipel
 | API-Football v3 | `API_FOOTBALL_KEY` | api-sports.io terms; free plan | **100 req/day**. Free plan **only allows seasons 2022–2024**; for the current season only a rolling **yesterday→tomorrow** date window (`"Free plans do not have access to this season, try from 2022 to 2024"`) | 1 h (finished fixtures 30 d) | match-day fixtures, confirmed lineups, injuries (date window), per-fixture statistics incl. **xG**; slow backfill of 2022–2024 for training | 3 |
 | Guardian Open Platform | `GUARDIAN_API_KEY` | Developer key: non-commercial use, link back to the article; do not republish full text | **500/day, 60/min** (`x-ratelimit-limit-day`, `ratelimit-limit`) | 6 h | news + match reports (body text kept locally as Fact-Check evidence only) | 2 |
 | Guardian Rumour Mill (same key) | `GUARDIAN_API_KEY` | As above; the column credits each rumour's original outlet. Shown only as "linked", attributed, in our own words, after Fact-Check | 1 call per run, same budget | 6 h | transfer rumours (incoming and outgoing), tier 5; runs during transfer windows | 5 |
+| Rumour Mill archive (`rumour_archive`, same key) | `GUARDIAN_API_KEY` | As above. Every column since 16 February 2001 (5,238), one row per paragraph naming a player; text kept locally only, to find the clubs and label what happened. Never republished | ~105 calls once (50 columns a page), then the current year's pages daily; same budget, stops and resumes when it runs out | finished years: 10 years; current year: 1 day | the rumour track record (`dugout-models rumours`, docs/backtests/rumours.md); weekly `history` job | 5 |
 | RSS: BBC Sport, Guardian, Sky Sports, ESPN | no | Publisher feeds for personal/non-commercial reading; we store headline, link, summary only | n/a; ≤ 1 req / 2 s | 1 h | news & rumours for News and Fact-Check agents | 2 |
 | Official club websites (`club_news`) | no | Club sites' terms; robots.txt checked per site (liverpoolfc.com: allows all, 2026-10-16); we store text locally as Fact-Check evidence and link out | sitemap + ≤ 1 page / 3 s, ≤ 150 articles per club per run | 6 h (articles 30 d) | the club's own announcements (signings, contracts, injuries). Stories the site *reproduces* from the press are credited to the original outlet | 1 (own announcements); original outlet's tier for reproduced stories |
 | SearXNG (self-hosted, optional) | `SEARXNG_URL` | AGPL software you run yourself | your instance | 6 h | on-demand evidence retrieval for Fact-Check | 2 |
@@ -43,7 +44,15 @@ Rules that apply to all sources (enforced in `packages/pipeline/src/dugout_pipel
 
 FPL's `code` fields are Opta numeric ids (`opta/team_numeric`, `opta/person_numeric`), which the Reep Register
 bridges to every other provider. On 2026-10-15: **20/20 clubs** and **656/667 FPL players** resolved to Reep ids.
-football-data.org is not in Reep; its clubs are matched by name through `config/leagues.yaml` aliases.
+football-data.org is not in Reep. Premier League clubs are matched by name through `config/leagues.yaml` aliases.
+For the other leagues (La Liga, Serie A, Bundesliga, Ligue 1, Eredivisie: no FPL) football-data.org is the source of
+clubs, squads and fixtures: a club is matched by name to transfermarkt-datasets' clubs of that competition, then to
+Reep's men's teams of the league's country (reserve and youth sides excluded; config `transfermarkt_clubs` pins a
+pick), which gives the Transfermarkt and Reep ids; a player is matched to transfermarkt-datasets by date of birth and
+name. On 2026-10-17: **94/94 clubs** (two pinned in config) and **2,248/2,588 squad players** matched; the rest
+(mostly second-division and youth players the dataset does not cover) keep a `football_data_org:<id>` and get no
+value. Values for these leagues are transfermarkt-datasets' latest (June 2026), shown with that date; contracts
+are not shown (no current free source; June's would miss summer renewals).
 Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-resolved on every run.
 
 ### Two sources per key stat (for the Stat Auditor)
@@ -88,7 +97,7 @@ Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-res
 | Source | Nightly | Injuries job (each, ×6/day) | Daily total | Limit |
 |---|---|---|---|---|
 | API-Football | 3 fixture-date calls + ≤ 10 fixture stats + 2 injuries + lineups on match days ≈ 5–25 | ≈ 5 (cached) | ≤ 60 | 90 (100 minus 10 reserve) |
-| football-data.org | 3 | 0 | 3 | 10/min |
+| football-data.org | 18 (3 per league, 6 leagues; ~3.5 min at 8/min) | 0 | 18 | 10/min |
 | Guardian | 20 | 0 | 20 | 500/day |
 | FPL | 3 + finished gameweeks (cached 30 d) | 3 | ≈ 25 | none published |
 | Others | ≤ 15 each | 0 | small | — |

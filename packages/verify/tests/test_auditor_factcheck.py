@@ -97,6 +97,8 @@ def test_sentence_split_keeps_placeholders_and_abbreviations():
     assert [c.type for c in claims(t)] == ["fact", "stat", "analysis"]
     assert classify("Isak could miss the game with a thigh injury.") == "injury"
     assert classify("Liverpool have agreed a fee with Napoli.") == "transfer"
+    club = "Dream target: Jan Schöppner (1. Fußballclub Heidenheim 1846), who is 25. He plays for Mainz 05. Next."
+    assert len(split_sentences(club)) == 3 and split_sentences(club)[1] == "He plays for Mainz 05."
 
 
 class FakeEmbedder:

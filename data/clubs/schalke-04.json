@@ -1,0 +1,1846 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "schalke-04",
+    "name": "Schalke 04",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "country": "Germany"
+  },
+  "generated_at": "2026-10-17T00:04:00+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Schalke 04 for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Schalke 04 are "
+          },
+          {
+            "stat": "ev_cf18afe02ebb00a5",
+            "display": "14th"
+          },
+          {
+            "text": " in the Bundesliga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Schalke 04 have "
+          },
+          {
+            "stat": "ev_0ea48c9f1d854129",
+            "display": "5"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Schalke 04's next league match is Schalke 04 v Mainz 05 on "
+          },
+          {
+            "stat": "ev_b078c46479b5f914",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Schalke 04's biggest squad need is "
+          },
+          {
+            "stat": "ev_9ed1e9096cfeb2a2",
+            "display": "goalkeeper"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Schalke 04 doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Schalke 04 are "
+            },
+            {
+              "stat": "ev_cf18afe02ebb00a5",
+              "display": "14th"
+            },
+            {
+              "text": " in the Bundesliga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Schalke 04 have "
+            },
+            {
+              "stat": "ev_0ea48c9f1d854129",
+              "display": "5"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Schalke 04 have scored "
+            },
+            {
+              "stat": "ev_89e6dcf29094c446",
+              "display": "4"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Schalke 04 have conceded "
+            },
+            {
+              "stat": "ev_cc79bb081885c560",
+              "display": "6"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Schalke 04's most recent league results read "
+            },
+            {
+              "stat": "ev_2b336d4b035f6366",
+              "display": "LDWDL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Schalke 04 expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Schalke 04's next league match is Schalke 04 v Mainz 05 on "
+            },
+            {
+              "stat": "ev_b078c46479b5f914",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Schalke 04's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Schalke 04, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Schalke 04 players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Dina Ebimbe's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_90d2350bccebd00a",
+              "display": "9%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Nikola Katić's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_9040e5ceab67f45f",
+              "display": "1%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Maximilian Wöber's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_95166c14a8798ee6",
+              "display": "0%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Dina Ebimbe at "
+            },
+            {
+              "stat": "ev_020d9af59cece4e1",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Dina Ebimbe is "
+            },
+            {
+              "stat": "ev_12486cce62dc53f0",
+              "display": "€3.4m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Hwang Heechan at "
+            },
+            {
+              "stat": "ev_0086589783bb2c72",
+              "display": "€6.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Hwang Heechan is "
+            },
+            {
+              "stat": "ev_5a53d810f0ef50e1",
+              "display": "€2.7m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Dejan Ljubicic at "
+            },
+            {
+              "stat": "ev_dbefee6880f57ab8",
+              "display": "€5.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Dejan Ljubicic is "
+            },
+            {
+              "stat": "ev_bcd227a4923775e2",
+              "display": "€2.7m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Schalke 04 strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Schalke 04's biggest squad need is "
+            },
+            {
+              "stat": "ev_9ed1e9096cfeb2a2",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Brent Gabriël (Zulte Waregem), who is "
+            },
+            {
+              "stat": "ev_427cd9f732025d1e",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Brent Gabriël plays for "
+            },
+            {
+              "stat": "ev_961028f461392296",
+              "display": "Zulte Waregem"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Brent Gabriël has a market value of "
+            },
+            {
+              "stat": "ev_394825ba8e728d74",
+              "display": "€1.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Brent Gabriël is "
+            },
+            {
+              "stat": "ev_5e780f2f574c16a5",
+              "display": "€0.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Brent Gabriël to play "
+            },
+            {
+              "stat": "ev_376e1d37d452ef93",
+              "display": "54%"
+            },
+            {
+              "text": " of Schalke 04's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Oleksandr Kemkin (Kryvbas Kryvyi Rig), who is "
+            },
+            {
+              "stat": "ev_362a9b6e487ed86c",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Oleksandr Kemkin plays for "
+            },
+            {
+              "stat": "ev_4075ba430e19e8ff",
+              "display": "Kryvbas Kryvyi Rig"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Oleksandr Kemkin has a market value of "
+            },
+            {
+              "stat": "ev_aefea77bfcd0c83e",
+              "display": "€1.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Oleksandr Kemkin is "
+            },
+            {
+              "stat": "ev_28ddf1f7af137b40",
+              "display": "€0.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Oleksandr Kemkin to play "
+            },
+            {
+              "stat": "ev_2026520017cc6d77",
+              "display": "43%"
+            },
+            {
+              "text": " of Schalke 04's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Nikolaos Christogeorgos (Omilos Filathlon Irakliou FC), who is "
+            },
+            {
+              "stat": "ev_149c11ac9a240cff",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nikolaos Christogeorgos plays for "
+            },
+            {
+              "stat": "ev_9ab01cdb6322d1e5",
+              "display": "Omilos Filathlon Irakliou FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nikolaos Christogeorgos has a market value of "
+            },
+            {
+              "stat": "ev_f4066a51faf17ddc",
+              "display": "€1.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Nikolaos Christogeorgos is "
+            },
+            {
+              "stat": "ev_ee34a77cd24f9853",
+              "display": "€0.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Nikolaos Christogeorgos to play "
+            },
+            {
+              "stat": "ev_71e7503424d0f5b4",
+              "display": "42%"
+            },
+            {
+              "text": " of Schalke 04's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Schalke 04's second squad need is "
+            },
+            {
+              "stat": "ev_b5c1ac0f20bf26fe",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Nikolay Rasskazov (PFK Krylya Sovetov Samara), who is "
+            },
+            {
+              "stat": "ev_11b24c84c8a53daf",
+              "display": "29"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Nikolay Rasskazov has a market value of "
+            },
+            {
+              "stat": "ev_6bb972abfa4a6b97",
+              "display": "€1.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Oleksandr Klymets (Epicentr Kamyanets-Podilskyi), who is "
+            },
+            {
+              "stat": "ev_badbb965ee777c6d",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Oleksandr Klymets is "
+            },
+            {
+              "stat": "ev_601328a0e1041de4",
+              "display": "€0.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_3a0ae16345c86c93",
+              "display": "0.0%"
+            },
+            {
+              "text": " chance that Oleksandr Klymets joins Schalke 04 in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Nico O'Reilly (Manchester City), who is "
+            },
+            {
+              "stat": "ev_3089b9e47ea4f4aa",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Nico O'Reilly's market value to reach "
+            },
+            {
+              "stat": "ev_994a9e7fbc392c1f",
+              "display": "€91.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Brent Gabriël has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Oleksandr Kemkin has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Nikolaos Christogeorgos has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_0086589783bb2c72": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp95eca6de620401",
+      "entity_name": "Hwang Heechan",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-03T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_020d9af59cece4e1": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpcecf637e76a626",
+      "entity_name": "Dina Ebimbe",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-01T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0b71496224ee1141": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp09dfa13510957d",
+      "entity_name": "Brent Gabriël",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0ea48c9f1d854129": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_11b24c84c8a53daf": {
+      "value": 28.8,
+      "display": "28.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd67809417cd2e1",
+      "entity_name": "Nikolay Rasskazov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_12486cce62dc53f0": {
+      "value": 3400000.0,
+      "display": "3400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpcecf637e76a626",
+      "entity_name": "Dina Ebimbe",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_149c11ac9a240cff": {
+      "value": 26.8,
+      "display": "26.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp952b3dc6abbb45",
+      "entity_name": "Nikolaos Christogeorgos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2026520017cc6d77": {
+      "value": 0.43,
+      "display": "0.43",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp2b8d5e70bd9a5a",
+      "entity_name": "Oleksandr Kemkin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_28ddf1f7af137b40": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2b8d5e70bd9a5a",
+      "entity_name": "Oleksandr Kemkin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2b336d4b035f6366": {
+      "value": "LDWDL",
+      "display": "LDWDL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_3089b9e47ea4f4aa": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_362a9b6e487ed86c": {
+      "value": 24.2,
+      "display": "24.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp2b8d5e70bd9a5a",
+      "entity_name": "Oleksandr Kemkin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_376e1d37d452ef93": {
+      "value": 0.536,
+      "display": "0.54",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp09dfa13510957d",
+      "entity_name": "Brent Gabriël",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_394825ba8e728d74": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp09dfa13510957d",
+      "entity_name": "Brent Gabriël",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3a0ae16345c86c93": {
+      "value": 0.0004,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpf003da5edd4870",
+      "entity_name": "Oleksandr Klymets",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4075ba430e19e8ff": {
+      "value": "Kryvbas Kryvyi Rig",
+      "display": "Kryvbas Kryvyi Rig",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp2b8d5e70bd9a5a",
+      "entity_name": "Oleksandr Kemkin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_427cd9f732025d1e": {
+      "value": 27.7,
+      "display": "27.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp09dfa13510957d",
+      "entity_name": "Brent Gabriël",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5a53d810f0ef50e1": {
+      "value": 2700000.0,
+      "display": "2700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp95eca6de620401",
+      "entity_name": "Hwang Heechan",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5e780f2f574c16a5": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp09dfa13510957d",
+      "entity_name": "Brent Gabriël",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_601328a0e1041de4": {
+      "value": 200000.0,
+      "display": "200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf003da5edd4870",
+      "entity_name": "Oleksandr Klymets",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6bb972abfa4a6b97": {
+      "value": 1200000.0,
+      "display": "1200000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpd67809417cd2e1",
+      "entity_name": "Nikolay Rasskazov",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_71e7503424d0f5b4": {
+      "value": 0.42,
+      "display": "0.42",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp952b3dc6abbb45",
+      "entity_name": "Nikolaos Christogeorgos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_89e6dcf29094c446": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8e178e13a7c55b62": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp952b3dc6abbb45",
+      "entity_name": "Nikolaos Christogeorgos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9040e5ceab67f45f": {
+      "value": 0.006,
+      "display": "0.01",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpb8d489a2f10cc4",
+      "entity_name": "Nikola Katić",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_90d2350bccebd00a": {
+      "value": 0.094,
+      "display": "0.09",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpcecf637e76a626",
+      "entity_name": "Dina Ebimbe",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_95166c14a8798ee6": {
+      "value": 0.005,
+      "display": "0.01",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpbba48fca2813c9",
+      "entity_name": "Maximilian Wöber",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_961028f461392296": {
+      "value": "Zulte Waregem",
+      "display": "Zulte Waregem",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp09dfa13510957d",
+      "entity_name": "Brent Gabriël",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_994a9e7fbc392c1f": {
+      "value": 91900000.0,
+      "display": "91900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9ab01cdb6322d1e5": {
+      "value": "Omilos Filathlon Irakliou FC",
+      "display": "Omilos Filathlon Irakliou FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp952b3dc6abbb45",
+      "entity_name": "Nikolaos Christogeorgos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9ed1e9096cfeb2a2": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aefea77bfcd0c83e": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp2b8d5e70bd9a5a",
+      "entity_name": "Oleksandr Kemkin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b078c46479b5f914": {
+      "value": "2026-10-17T13:30:00+00:00",
+      "display": "2026-10-17T13:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "bundesliga:2026-27:schalke-04:mainz-05",
+      "entity_name": "Schalke 04 v Mainz 05",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:11.210954+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b5c1ac0f20bf26fe": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_badbb965ee777c6d": {
+      "value": 26.7,
+      "display": "26.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf003da5edd4870",
+      "entity_name": "Oleksandr Klymets",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bcd227a4923775e2": {
+      "value": 2700000.0,
+      "display": "2700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp485b9970a150ae",
+      "entity_name": "Dejan Ljubicic",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cc79bb081885c560": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_cf18afe02ebb00a5": {
+      "value": 14.0,
+      "display": "14",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "schalke-04",
+      "entity_name": "Schalke 04",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_dbefee6880f57ab8": {
+      "value": 5000000.0,
+      "display": "5000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp485b9970a150ae",
+      "entity_name": "Dejan Ljubicic",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2024-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ee34a77cd24f9853": {
+      "value": 500000.0,
+      "display": "500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp952b3dc6abbb45",
+      "entity_name": "Nikolaos Christogeorgos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f4066a51faf17ddc": {
+      "value": 1000000.0,
+      "display": "1000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp952b3dc6abbb45",
+      "entity_name": "Nikolaos Christogeorgos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ff41c8279df470a4": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp2b8d5e70bd9a5a",
+      "entity_name": "Oleksandr Kemkin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_cf18afe02ebb00a5",
+        "display": "14th",
+        "label": "league position",
+        "subject": "Schalke 04"
+      },
+      {
+        "stat": "ev_0ea48c9f1d854129",
+        "display": "5",
+        "label": "league points",
+        "subject": "Schalke 04"
+      },
+      {
+        "stat": "ev_89e6dcf29094c446",
+        "display": "4",
+        "label": "league goals scored",
+        "subject": "Schalke 04"
+      },
+      {
+        "stat": "ev_cc79bb081885c560",
+        "display": "6",
+        "label": "league goals conceded",
+        "subject": "Schalke 04"
+      },
+      {
+        "stat": "ev_2b336d4b035f6366",
+        "display": "LDWDL",
+        "label": "recent league results, oldest first",
+        "subject": "Schalke 04"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_b078c46479b5f914",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Schalke 04 v Mainz 05"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_90d2350bccebd00a",
+        "display": "9%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Dina Ebimbe"
+      },
+      {
+        "stat": "ev_9040e5ceab67f45f",
+        "display": "1%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Nikola Katić"
+      },
+      {
+        "stat": "ev_95166c14a8798ee6",
+        "display": "0%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Maximilian Wöber"
+      },
+      {
+        "stat": "ev_020d9af59cece4e1",
+        "display": "€6.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Dina Ebimbe"
+      },
+      {
+        "stat": "ev_12486cce62dc53f0",
+        "display": "€3.4m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Dina Ebimbe"
+      },
+      {
+        "stat": "ev_0086589783bb2c72",
+        "display": "€6.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Hwang Heechan"
+      },
+      {
+        "stat": "ev_5a53d810f0ef50e1",
+        "display": "€2.7m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Hwang Heechan"
+      },
+      {
+        "stat": "ev_dbefee6880f57ab8",
+        "display": "€5.0m",
+        "label": "market value (Transfermarkt, as of May 2024)",
+        "subject": "Dejan Ljubicic"
+      },
+      {
+        "stat": "ev_bcd227a4923775e2",
+        "display": "€2.7m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Dejan Ljubicic"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_9ed1e9096cfeb2a2",
+        "display": "goalkeeper",
+        "label": "squad need, priority one",
+        "subject": "Schalke 04"
+      },
+      {
+        "stat": "ev_427cd9f732025d1e",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Brent Gabriël"
+      },
+      {
+        "stat": "ev_961028f461392296",
+        "display": "Zulte Waregem",
+        "label": "current club",
+        "subject": "Brent Gabriël"
+      },
+      {
+        "stat": "ev_0b71496224ee1141",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Brent Gabriël"
+      },
+      {
+        "stat": "ev_394825ba8e728d74",
+        "display": "€1.0m",
+        "label": "market value",
+        "subject": "Brent Gabriël"
+      },
+      {
+        "stat": "ev_5e780f2f574c16a5",
+        "display": "€0.6m",
+        "label": "estimated fair fee",
+        "subject": "Brent Gabriël"
+      },
+      {
+        "stat": "ev_376e1d37d452ef93",
+        "display": "54%",
+        "label": "expected share of minutes at the club",
+        "subject": "Brent Gabriël"
+      },
+      {
+        "stat": "ev_362a9b6e487ed86c",
+        "display": "24",
+        "label": "age (best target)",
+        "subject": "Oleksandr Kemkin"
+      },
+      {
+        "stat": "ev_4075ba430e19e8ff",
+        "display": "Kryvbas Kryvyi Rig",
+        "label": "current club",
+        "subject": "Oleksandr Kemkin"
+      },
+      {
+        "stat": "ev_ff41c8279df470a4",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Oleksandr Kemkin"
+      },
+      {
+        "stat": "ev_aefea77bfcd0c83e",
+        "display": "€1.0m",
+        "label": "market value",
+        "subject": "Oleksandr Kemkin"
+      },
+      {
+        "stat": "ev_28ddf1f7af137b40",
+        "display": "€0.6m",
+        "label": "estimated fair fee",
+        "subject": "Oleksandr Kemkin"
+      },
+      {
+        "stat": "ev_2026520017cc6d77",
+        "display": "43%",
+        "label": "expected share of minutes at the club",
+        "subject": "Oleksandr Kemkin"
+      },
+      {
+        "stat": "ev_149c11ac9a240cff",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Nikolaos Christogeorgos"
+      },
+      {
+        "stat": "ev_9ab01cdb6322d1e5",
+        "display": "Omilos Filathlon Irakliou FC",
+        "label": "current club",
+        "subject": "Nikolaos Christogeorgos"
+      },
+      {
+        "stat": "ev_8e178e13a7c55b62",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Nikolaos Christogeorgos"
+      },
+      {
+        "stat": "ev_f4066a51faf17ddc",
+        "display": "€1.0m",
+        "label": "market value",
+        "subject": "Nikolaos Christogeorgos"
+      },
+      {
+        "stat": "ev_ee34a77cd24f9853",
+        "display": "€0.5m",
+        "label": "estimated fair fee",
+        "subject": "Nikolaos Christogeorgos"
+      },
+      {
+        "stat": "ev_71e7503424d0f5b4",
+        "display": "42%",
+        "label": "expected share of minutes at the club",
+        "subject": "Nikolaos Christogeorgos"
+      },
+      {
+        "stat": "ev_b5c1ac0f20bf26fe",
+        "display": "full-back",
+        "label": "squad need, priority two",
+        "subject": "Schalke 04"
+      },
+      {
+        "stat": "ev_11b24c84c8a53daf",
+        "display": "29",
+        "label": "age (best target, second need)",
+        "subject": "Nikolay Rasskazov"
+      },
+      {
+        "stat": "ev_6bb972abfa4a6b97",
+        "display": "€1.2m",
+        "label": "market value",
+        "subject": "Nikolay Rasskazov"
+      },
+      {
+        "stat": "ev_badbb965ee777c6d",
+        "display": "27",
+        "label": "age (realistic target, second need)",
+        "subject": "Oleksandr Klymets"
+      },
+      {
+        "stat": "ev_601328a0e1041de4",
+        "display": "€0.2m",
+        "label": "estimated fair fee",
+        "subject": "Oleksandr Klymets"
+      },
+      {
+        "stat": "ev_3a0ae16345c86c93",
+        "display": "0.0%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Oleksandr Klymets"
+      },
+      {
+        "stat": "ev_3089b9e47ea4f4aa",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_994a9e7fbc392c1f",
+        "display": "€91.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Nico O'Reilly"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 43,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 43,
+      "unverified": 3
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Schalke 04 v Mainz 05",
+    "Schalke 04",
+    "Mainz 05"
+  ]
+}

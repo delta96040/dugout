@@ -18,18 +18,23 @@ def _ctx(args, **overrides):
 
     settings = get_settings()
     path = getattr(args, "db", None) or settings.warehouse_path
-    return IngestContext(con=connect(path), league=getattr(args, "league", "premier_league"), **overrides)
+    from dugout_pipeline.clubs import leagues
+
+    league = getattr(args, "league", None) or leagues()[0]
+    return IngestContext(con=connect(path), league=league, **overrides)
 
 
 def cmd_ingest(args) -> int:
+    from dugout_pipeline.clubs import leagues
     from dugout_pipeline.registry import JOBS
-    from dugout_pipeline.runner import format_report, run
+    from dugout_pipeline.runner import format_report, run, run_leagues
 
     sources = args.only.split(",") if args.only else JOBS[args.job]
     if args.skip:
         sources = [s for s in sources if s not in args.skip.split(",")]
     ctx = _ctx(args)
-    job = run(ctx, sources)
+    # every configured league unless --league names one (then that league runs the sources as given)
+    job = run(ctx, sources) if args.league else run_leagues(ctx, sources, leagues())
     print(format_report(job))
     _write_summary(format_report(job))
     return 0 if job.ok else 1
@@ -76,7 +81,11 @@ def cmd_refresh_values(args) -> int:
         return 2
     from dugout_pipeline.runner import format_report, run
 
-    job = run(_ctx(args), ["fpl", "transfermarkt", "transfermarkt_file"])
+    ctx = _ctx(args)
+    squads = (
+        "fpl" if ctx.league_cfg["provider_ids"].get("fpl") else "football_data_org"
+    )  # clubs + TM ids first
+    job = run(ctx, [squads, "transfermarkt", "transfermarkt_file"])
     print(format_report(job))
     print("Commit data/reference/transfermarkt_squads.csv so CI can use it.")
     return 0 if all(r.ok for r in job.results) else 1
@@ -114,7 +123,7 @@ def cmd_record(args) -> int:
         )
         adapter = build(args.source, ctx)
         try:
-            print(adapter.ingest())
+            print(adapter.ingest(**getattr(adapter, "record_kwargs", {})))
         finally:
             adapter.close()
     print(f"fixtures written to packages/pipeline/tests/fixtures/{args.source}/")
@@ -173,7 +182,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     p = argparse.ArgumentParser(prog="dugout")
     p.add_argument("--db", help="warehouse path (default data/warehouse/dugout.duckdb)")
-    p.add_argument("--league", default="premier_league")
+    p.add_argument("--league", help="one league from config/leagues.yaml (default: all; others: the first)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("ingest", help="run a job (nightly | injuries | history) or selected sources")

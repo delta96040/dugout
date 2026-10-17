@@ -10,7 +10,7 @@ from dugout_pipeline.adapters.football_data_org import FootballDataOrgAdapter
 from dugout_pipeline.adapters.fpl import FPLAdapter
 from dugout_pipeline.adapters.fpl_history import FPLHistoryAdapter
 from dugout_pipeline.adapters.news import ClubNewsAdapter, GuardianAdapter, RSSAdapter
-from dugout_pipeline.adapters.rumours import GuardianRumourMillAdapter
+from dugout_pipeline.adapters.rumours import GuardianRumourMillAdapter, RumourArchiveAdapter
 from dugout_pipeline.adapters.transfermarkt import (
     TransfermarktDatasetsLoader,
     TransfermarktFileAdapter,
@@ -26,6 +26,7 @@ class ReepAdapter(SourceAdapter):
     """Keeps the local Reep Register catalogue current (CC0, ~210 MB; the reep SDK verifies SHA-256)."""
 
     name = "reep"
+    scope = "global"
     ttl = 24 * HOUR
     required = True
 
@@ -46,6 +47,7 @@ ADAPTERS: dict[str, type[SourceAdapter]] = {
         TransfermarktFileAdapter,
         GuardianAdapter,
         GuardianRumourMillAdapter,
+        RumourArchiveAdapter,
         WikipediaTransfersAdapter,
         RSSAdapter,
         ClubNewsAdapter,
@@ -83,6 +85,7 @@ JOBS: dict[str, list[str]] = {
         "transfermarkt_datasets",
         "fpl_history",
         "api_football_history",
+        "rumour_archive",
     ],
 }
 

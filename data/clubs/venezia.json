@@ -1,0 +1,2490 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "venezia",
+    "name": "Venezia",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "serie_a",
+    "name": "Serie A",
+    "country": "Italy"
+  },
+  "generated_at": "2026-10-17T00:01:34+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Venezia for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Venezia are "
+          },
+          {
+            "stat": "ev_3e49b25d83c41109",
+            "display": "20th"
+          },
+          {
+            "text": " in the Serie A table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Venezia have "
+          },
+          {
+            "stat": "ev_134e587fcf07ebf6",
+            "display": "0"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Venezia's next league match is Venezia v Napoli on "
+          },
+          {
+            "stat": "ev_6427b95a9b21d560",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Venezia's biggest squad need is "
+          },
+          {
+            "stat": "ev_03215b546ce7db12",
+            "display": "winger"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Venezia doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Venezia are "
+            },
+            {
+              "stat": "ev_3e49b25d83c41109",
+              "display": "20th"
+            },
+            {
+              "text": " in the Serie A table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Venezia have "
+            },
+            {
+              "stat": "ev_134e587fcf07ebf6",
+              "display": "0"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Venezia have scored "
+            },
+            {
+              "stat": "ev_f5c37b5cc4abe3e4",
+              "display": "5"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Venezia have conceded "
+            },
+            {
+              "stat": "ev_8f1b03b97ad6fca2",
+              "display": "16"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Venezia's most recent league results read "
+            },
+            {
+              "stat": "ev_34f57c1852a851b5",
+              "display": "LLLLL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Giovanni Stroppa has been Venezia's head coach since "
+            },
+            {
+              "stat": "ev_246f3308fadc2391",
+              "display": "1 July 2025"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Venezia expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Venezia's next league match is Venezia v Napoli on "
+            },
+            {
+              "stat": "ev_6427b95a9b21d560",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Venezia's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Venezia, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Venezia players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Akor Adams at "
+            },
+            {
+              "stat": "ev_2aa74eb30dcaa41f",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Akor Adams is "
+            },
+            {
+              "stat": "ev_116161f56e45afeb",
+              "display": "€10.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Simon Sohm at "
+            },
+            {
+              "stat": "ev_c5fa1d783dcba59c",
+              "display": "€8.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Simon Sohm is "
+            },
+            {
+              "stat": "ev_61c02dea8fbd1108",
+              "display": "€5.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Armel Bella Kotchap at "
+            },
+            {
+              "stat": "ev_e298722ce63ec328",
+              "display": "€7.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Armel Bella Kotchap is "
+            },
+            {
+              "stat": "ev_d9ea92523a65b0a4",
+              "display": "€4.8m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Venezia strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Venezia's biggest squad need is "
+            },
+            {
+              "stat": "ev_03215b546ce7db12",
+              "display": "winger"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Josh Doig (US Sassuolo), who is "
+            },
+            {
+              "stat": "ev_3974ffd3029bc95e",
+              "display": "24"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Josh Doig plays for "
+            },
+            {
+              "stat": "ev_dde926984fbd8b0b",
+              "display": "US Sassuolo"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Josh Doig has a market value of "
+            },
+            {
+              "stat": "ev_89766e609c81faa9",
+              "display": "€4.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Josh Doig is "
+            },
+            {
+              "stat": "ev_76c44747fe56988c",
+              "display": "€2.6m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Josh Doig to play "
+            },
+            {
+              "stat": "ev_e77ece08d8e17aec",
+              "display": "53%"
+            },
+            {
+              "text": " of Venezia's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Tobias Bech (Aarhus GF), who is "
+            },
+            {
+              "stat": "ev_658949c422d89bcf",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Tobias Bech plays for "
+            },
+            {
+              "stat": "ev_fba8f132db0accde",
+              "display": "Aarhus GF"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Tobias Bech has a market value of "
+            },
+            {
+              "stat": "ev_aae47a0349a745e7",
+              "display": "€4.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Tobias Bech is "
+            },
+            {
+              "stat": "ev_69c1b5e561d93b06",
+              "display": "€3.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Tobias Bech to play "
+            },
+            {
+              "stat": "ev_9fe04a9c56e16291",
+              "display": "51%"
+            },
+            {
+              "text": " of Venezia's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Samuele Angori (Pisa Sporting Club), who is "
+            },
+            {
+              "stat": "ev_775f69f150fe925a",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Samuele Angori plays for "
+            },
+            {
+              "stat": "ev_7308172b8199cc70",
+              "display": "Pisa Sporting Club"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Samuele Angori has a market value of "
+            },
+            {
+              "stat": "ev_79913e78a2deb218",
+              "display": "€4.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Samuele Angori is "
+            },
+            {
+              "stat": "ev_d5b1cd3e2354a48f",
+              "display": "€3.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Samuele Angori to play "
+            },
+            {
+              "stat": "ev_de27c49f81684412",
+              "display": "51%"
+            },
+            {
+              "text": " of Venezia's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Will Ferry (Dundee United FC), who is "
+            },
+            {
+              "stat": "ev_471561ef7304506e",
+              "display": "26"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Will Ferry plays for "
+            },
+            {
+              "stat": "ev_a6e013d16969c61e",
+              "display": "Dundee United FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_94d53ea4604f3122",
+              "display": "49%"
+            },
+            {
+              "text": " chance that Dundee United FC sell Will Ferry in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Will Ferry is "
+            },
+            {
+              "stat": "ev_76c7baf8533705d2",
+              "display": "€0.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_8984d09a12e1bc59",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Will Ferry joins Venezia in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Jordhy Thompson (FC Orenburg), who is "
+            },
+            {
+              "stat": "ev_0f95ee8e2e0c1783",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Jordhy Thompson plays for "
+            },
+            {
+              "stat": "ev_e865183d296b8eac",
+              "display": "FC Orenburg"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_6bca25140baa7aa4",
+              "display": "48%"
+            },
+            {
+              "text": " chance that FC Orenburg sell Jordhy Thompson in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Jordhy Thompson is "
+            },
+            {
+              "stat": "ev_b98763885759f287",
+              "display": "€1.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Venezia's second squad need is "
+            },
+            {
+              "stat": "ev_3976685436103a53",
+              "display": "defensive midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Josh Doig has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Tobias Bech has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Samuele Angori has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Will Ferry has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Jordhy Thompson has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_03215b546ce7db12": {
+      "value": "winger",
+      "display": "winger",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0b3194662be9c26d": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0e94c7e06b901361": {
+      "value": 0.0009,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp6816792a7a914e",
+      "entity_name": "Jordhy Thompson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0f95ee8e2e0c1783": {
+      "value": 22.2,
+      "display": "22.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp6816792a7a914e",
+      "entity_name": "Jordhy Thompson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_116161f56e45afeb": {
+      "value": 10300000.0,
+      "display": "10300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp557836fc749ca7",
+      "entity_name": "Akor Adams",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_134e587fcf07ebf6": {
+      "value": 0.0,
+      "display": "0",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_157deec2693eb610": {
+      "value": 0.284,
+      "display": "0.28",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp8abc89b14f96d9",
+      "entity_name": "Gleiker Mendoza",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1846bdb1f45c1a57": {
+      "value": 21.4,
+      "display": "21.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_191ab773a87824f6": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpee94b9855c919d",
+      "entity_name": "Samuele Angori",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_246f3308fadc2391": {
+      "value": "2025-07-01",
+      "display": "2025-07-01",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q2656692",
+      "entity_name": "Giovanni Stroppa",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q2656692",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2aa74eb30dcaa41f": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp557836fc749ca7",
+      "entity_name": "Akor Adams",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_3477ece07bba25a9": {
+      "value": 18.6,
+      "display": "18.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_34f57c1852a851b5": {
+      "value": "LLLLL",
+      "display": "LLLLL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_359e81b145722059": {
+      "value": 124000000.0,
+      "display": "124000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3974ffd3029bc95e": {
+      "value": 24.4,
+      "display": "24.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp967dc66cbdc231",
+      "entity_name": "Josh Doig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3976685436103a53": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3af3981536cc6459": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp8abc89b14f96d9",
+      "entity_name": "Gleiker Mendoza",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3e49b25d83c41109": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_471561ef7304506e": {
+      "value": 25.9,
+      "display": "25.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf74356071eab72",
+      "entity_name": "Will Ferry",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_494193036221554b": {
+      "value": 0.816,
+      "display": "0.82",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4dcd6f622420f247": {
+      "value": 121200000.0,
+      "display": "121200000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5295c0e06a233263": {
+      "value": 24.9,
+      "display": "24.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp8abc89b14f96d9",
+      "entity_name": "Gleiker Mendoza",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_61c02dea8fbd1108": {
+      "value": 5300000.0,
+      "display": "5300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3226a7e47743c3",
+      "entity_name": "Simon Sohm",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6427b95a9b21d560": {
+      "value": "2026-10-17T13:00:00+00:00",
+      "display": "2026-10-17T13:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "serie_a:2026-27:venezia:napoli",
+      "entity_name": "Venezia v Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:39.130902+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_658949c422d89bcf": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6989d3b0df8c604e": {
+      "value": 1300000.0,
+      "display": "1300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb54fd5b08cf3bc",
+      "entity_name": "Malcolm Viltard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_69c1b5e561d93b06": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6bca25140baa7aa4": {
+      "value": 0.483,
+      "display": "0.48",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp6816792a7a914e",
+      "entity_name": "Jordhy Thompson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6dcb22dc589921a5": {
+      "value": 19.3,
+      "display": "19.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6fb3113e74c0731f": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8abc89b14f96d9",
+      "entity_name": "Gleiker Mendoza",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_72be6fe14e217124": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7308172b8199cc70": {
+      "value": "Pisa Sporting Club",
+      "display": "Pisa Sporting Club",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpee94b9855c919d",
+      "entity_name": "Samuele Angori",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_76c44747fe56988c": {
+      "value": 2600000.0,
+      "display": "2600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp967dc66cbdc231",
+      "entity_name": "Josh Doig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_76c7baf8533705d2": {
+      "value": 900000.0,
+      "display": "900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf74356071eab72",
+      "entity_name": "Will Ferry",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_775f69f150fe925a": {
+      "value": 23.0,
+      "display": "23",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpee94b9855c919d",
+      "entity_name": "Samuele Angori",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_780614b3f2594ebe": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp6816792a7a914e",
+      "entity_name": "Jordhy Thompson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_79913e78a2deb218": {
+      "value": 4500000.0,
+      "display": "4500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpee94b9855c919d",
+      "entity_name": "Samuele Angori",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7a1a7e6c01ae5ae3": {
+      "value": "Paris Saint-Germain",
+      "display": "Paris Saint-Germain",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7c54f8921be0359a": {
+      "value": 223900000.0,
+      "display": "223900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_89766e609c81faa9": {
+      "value": 4500000.0,
+      "display": "4500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp967dc66cbdc231",
+      "entity_name": "Josh Doig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8984d09a12e1bc59": {
+      "value": 0.001,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpf74356071eab72",
+      "entity_name": "Will Ferry",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8bb64adc88c93bfa": {
+      "value": 0.589,
+      "display": "0.59",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8f1b03b97ad6fca2": {
+      "value": 16.0,
+      "display": "16",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_922e46e57fa189ef": {
+      "value": 72300000.0,
+      "display": "72300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_94d53ea4604f3122": {
+      "value": 0.489,
+      "display": "0.49",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpf74356071eab72",
+      "entity_name": "Will Ferry",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_975aed87ca3cb71e": {
+      "value": 24.0,
+      "display": "24",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb54fd5b08cf3bc",
+      "entity_name": "Malcolm Viltard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9fe04a9c56e16291": {
+      "value": 0.51,
+      "display": "0.51",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a491972daf52e48f": {
+      "value": "Bayern Munich",
+      "display": "Bayern Munich",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a6e013d16969c61e": {
+      "value": "Dundee United FC",
+      "display": "Dundee United FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpf74356071eab72",
+      "entity_name": "Will Ferry",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aae47a0349a745e7": {
+      "value": 4500000.0,
+      "display": "4500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ab9b07b1bc96619e": {
+      "value": 25.3,
+      "display": "25.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpae8fa110084edd",
+      "entity_name": "Thomas van den Belt",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b414346f13689d08": {
+      "value": 0.428,
+      "display": "0.43",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b9407909e0142b76": {
+      "value": "Kryvbas Kryvyi Rig",
+      "display": "Kryvbas Kryvyi Rig",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp8abc89b14f96d9",
+      "entity_name": "Gleiker Mendoza",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b98763885759f287": {
+      "value": 1700000.0,
+      "display": "1700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6816792a7a914e",
+      "entity_name": "Jordhy Thompson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c2713ef7ac3b3019": {
+      "value": 4500000.0,
+      "display": "4500000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpae8fa110084edd",
+      "entity_name": "Thomas van den Belt",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c5fa1d783dcba59c": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3226a7e47743c3",
+      "entity_name": "Simon Sohm",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d3ec4099eb9c7af0": {
+      "value": 0.0006,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp8abc89b14f96d9",
+      "entity_name": "Gleiker Mendoza",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d49aaca243737e93": {
+      "value": 102500000.0,
+      "display": "102500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp786709126ec0ff",
+      "entity_name": "Desire Doue",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d5b1cd3e2354a48f": {
+      "value": 3000000.0,
+      "display": "3000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpee94b9855c919d",
+      "entity_name": "Samuele Angori",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d6b6dc6a31d9421d": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpf74356071eab72",
+      "entity_name": "Will Ferry",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d9ea92523a65b0a4": {
+      "value": 4800000.0,
+      "display": "4800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpec95570eb110dc",
+      "entity_name": "Armel Bella Kotchap",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dde926984fbd8b0b": {
+      "value": "US Sassuolo",
+      "display": "US Sassuolo",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp967dc66cbdc231",
+      "entity_name": "Josh Doig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_de27c49f81684412": {
+      "value": 0.51,
+      "display": "0.51",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpee94b9855c919d",
+      "entity_name": "Samuele Angori",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e0a0c026241949a1": {
+      "value": 0.0009,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpb54fd5b08cf3bc",
+      "entity_name": "Malcolm Viltard",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e11d95689bbdded8": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp967dc66cbdc231",
+      "entity_name": "Josh Doig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e298722ce63ec328": {
+      "value": 7000000.0,
+      "display": "7000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpec95570eb110dc",
+      "entity_name": "Armel Bella Kotchap",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e77ece08d8e17aec": {
+      "value": 0.528,
+      "display": "0.53",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp967dc66cbdc231",
+      "entity_name": "Josh Doig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e865183d296b8eac": {
+      "value": "FC Orenburg",
+      "display": "FC Orenburg",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp6816792a7a914e",
+      "entity_name": "Jordhy Thompson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f5c37b5cc4abe3e4": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "venezia",
+      "entity_name": "Venezia",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f85ac6511e19870b": {
+      "value": 314800000.0,
+      "display": "314800000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpcc53a150fa2413",
+      "entity_name": "Lamine Yamal",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fba8f132db0accde": {
+      "value": "Aarhus GF",
+      "display": "Aarhus GF",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp63da7655f25214",
+      "entity_name": "Tobias Bech",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_3e49b25d83c41109",
+        "display": "20th",
+        "label": "league position",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_134e587fcf07ebf6",
+        "display": "0",
+        "label": "league points",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_f5c37b5cc4abe3e4",
+        "display": "5",
+        "label": "league goals scored",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_8f1b03b97ad6fca2",
+        "display": "16",
+        "label": "league goals conceded",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_34f57c1852a851b5",
+        "display": "LLLLL",
+        "label": "recent league results, oldest first",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_246f3308fadc2391",
+        "display": "1 July 2025",
+        "label": "appointed head coach of Venezia",
+        "subject": "Giovanni Stroppa"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_6427b95a9b21d560",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Venezia v Napoli"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_2aa74eb30dcaa41f",
+        "display": "€15.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Akor Adams"
+      },
+      {
+        "stat": "ev_116161f56e45afeb",
+        "display": "€10.3m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Akor Adams"
+      },
+      {
+        "stat": "ev_c5fa1d783dcba59c",
+        "display": "€8.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Simon Sohm"
+      },
+      {
+        "stat": "ev_61c02dea8fbd1108",
+        "display": "€5.3m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Simon Sohm"
+      },
+      {
+        "stat": "ev_e298722ce63ec328",
+        "display": "€7.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Armel Bella Kotchap"
+      },
+      {
+        "stat": "ev_d9ea92523a65b0a4",
+        "display": "€4.8m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Armel Bella Kotchap"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_03215b546ce7db12",
+        "display": "winger",
+        "label": "squad need, priority one",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_3974ffd3029bc95e",
+        "display": "24",
+        "label": "age (best target)",
+        "subject": "Josh Doig"
+      },
+      {
+        "stat": "ev_dde926984fbd8b0b",
+        "display": "US Sassuolo",
+        "label": "current club",
+        "subject": "Josh Doig"
+      },
+      {
+        "stat": "ev_e11d95689bbdded8",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Josh Doig"
+      },
+      {
+        "stat": "ev_89766e609c81faa9",
+        "display": "€4.5m",
+        "label": "market value",
+        "subject": "Josh Doig"
+      },
+      {
+        "stat": "ev_76c44747fe56988c",
+        "display": "€2.6m",
+        "label": "estimated fair fee",
+        "subject": "Josh Doig"
+      },
+      {
+        "stat": "ev_e77ece08d8e17aec",
+        "display": "53%",
+        "label": "expected share of minutes at the club",
+        "subject": "Josh Doig"
+      },
+      {
+        "stat": "ev_658949c422d89bcf",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_fba8f132db0accde",
+        "display": "Aarhus GF",
+        "label": "current club",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_72be6fe14e217124",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_aae47a0349a745e7",
+        "display": "€4.5m",
+        "label": "market value",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_69c1b5e561d93b06",
+        "display": "€3.0m",
+        "label": "estimated fair fee",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_9fe04a9c56e16291",
+        "display": "51%",
+        "label": "expected share of minutes at the club",
+        "subject": "Tobias Bech"
+      },
+      {
+        "stat": "ev_775f69f150fe925a",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Samuele Angori"
+      },
+      {
+        "stat": "ev_7308172b8199cc70",
+        "display": "Pisa Sporting Club",
+        "label": "current club",
+        "subject": "Samuele Angori"
+      },
+      {
+        "stat": "ev_191ab773a87824f6",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Samuele Angori"
+      },
+      {
+        "stat": "ev_79913e78a2deb218",
+        "display": "€4.5m",
+        "label": "market value",
+        "subject": "Samuele Angori"
+      },
+      {
+        "stat": "ev_d5b1cd3e2354a48f",
+        "display": "€3.0m",
+        "label": "estimated fair fee",
+        "subject": "Samuele Angori"
+      },
+      {
+        "stat": "ev_de27c49f81684412",
+        "display": "51%",
+        "label": "expected share of minutes at the club",
+        "subject": "Samuele Angori"
+      },
+      {
+        "stat": "ev_471561ef7304506e",
+        "display": "26",
+        "label": "age (realistic target)",
+        "subject": "Will Ferry"
+      },
+      {
+        "stat": "ev_a6e013d16969c61e",
+        "display": "Dundee United FC",
+        "label": "current club",
+        "subject": "Will Ferry"
+      },
+      {
+        "stat": "ev_94d53ea4604f3122",
+        "display": "49%",
+        "label": "chance his club sells him in a window",
+        "subject": "Will Ferry"
+      },
+      {
+        "stat": "ev_d6b6dc6a31d9421d",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Will Ferry"
+      },
+      {
+        "stat": "ev_76c7baf8533705d2",
+        "display": "€0.9m",
+        "label": "estimated fair fee",
+        "subject": "Will Ferry"
+      },
+      {
+        "stat": "ev_8984d09a12e1bc59",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Will Ferry"
+      },
+      {
+        "stat": "ev_0f95ee8e2e0c1783",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Jordhy Thompson"
+      },
+      {
+        "stat": "ev_e865183d296b8eac",
+        "display": "FC Orenburg",
+        "label": "current club",
+        "subject": "Jordhy Thompson"
+      },
+      {
+        "stat": "ev_6bca25140baa7aa4",
+        "display": "48%",
+        "label": "chance his club sells him in a window",
+        "subject": "Jordhy Thompson"
+      },
+      {
+        "stat": "ev_780614b3f2594ebe",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Jordhy Thompson"
+      },
+      {
+        "stat": "ev_b98763885759f287",
+        "display": "€1.7m",
+        "label": "estimated fair fee",
+        "subject": "Jordhy Thompson"
+      },
+      {
+        "stat": "ev_0e94c7e06b901361",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Jordhy Thompson"
+      },
+      {
+        "stat": "ev_5295c0e06a233263",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Gleiker Mendoza"
+      },
+      {
+        "stat": "ev_b9407909e0142b76",
+        "display": "Kryvbas Kryvyi Rig",
+        "label": "current club",
+        "subject": "Gleiker Mendoza"
+      },
+      {
+        "stat": "ev_157deec2693eb610",
+        "display": "28%",
+        "label": "chance his club sells him in a window",
+        "subject": "Gleiker Mendoza"
+      },
+      {
+        "stat": "ev_3af3981536cc6459",
+        "display": "56",
+        "label": "months left on his contract",
+        "subject": "Gleiker Mendoza"
+      },
+      {
+        "stat": "ev_6fb3113e74c0731f",
+        "display": "€3.0m",
+        "label": "estimated fair fee",
+        "subject": "Gleiker Mendoza"
+      },
+      {
+        "stat": "ev_d3ec4099eb9c7af0",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Gleiker Mendoza"
+      },
+      {
+        "stat": "ev_6dcb22dc589921a5",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_0b3194662be9c26d",
+        "display": "FC Barcelona",
+        "label": "current club",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_494193036221554b",
+        "display": "82%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_7c54f8921be0359a",
+        "display": "€224m",
+        "label": "estimated fair fee",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_f85ac6511e19870b",
+        "display": "€315m",
+        "label": "projected market value in a few seasons",
+        "subject": "Lamine Yamal"
+      },
+      {
+        "stat": "ev_1846bdb1f45c1a57",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_7a1a7e6c01ae5ae3",
+        "display": "Paris Saint-Germain",
+        "label": "current club",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_8bb64adc88c93bfa",
+        "display": "59%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_d49aaca243737e93",
+        "display": "€102m",
+        "label": "estimated fair fee",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_359e81b145722059",
+        "display": "€124m",
+        "label": "projected market value in a few seasons",
+        "subject": "Désiré Doué"
+      },
+      {
+        "stat": "ev_3477ece07bba25a9",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_a491972daf52e48f",
+        "display": "Bayern Munich",
+        "label": "current club",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_b414346f13689d08",
+        "display": "43%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_922e46e57fa189ef",
+        "display": "€72.3m",
+        "label": "estimated fair fee",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_4dcd6f622420f247",
+        "display": "€121m",
+        "label": "projected market value in a few seasons",
+        "subject": "Lennart Karl"
+      },
+      {
+        "stat": "ev_3976685436103a53",
+        "display": "defensive midfield",
+        "label": "squad need, priority two",
+        "subject": "Venezia"
+      },
+      {
+        "stat": "ev_ab9b07b1bc96619e",
+        "display": "25",
+        "label": "age (best target, second need)",
+        "subject": "Thomas van den Belt"
+      },
+      {
+        "stat": "ev_c2713ef7ac3b3019",
+        "display": "€4.5m",
+        "label": "market value",
+        "subject": "Thomas van den Belt"
+      },
+      {
+        "stat": "ev_975aed87ca3cb71e",
+        "display": "24",
+        "label": "age (realistic target, second need)",
+        "subject": "Malcolm Viltard"
+      },
+      {
+        "stat": "ev_6989d3b0df8c604e",
+        "display": "€1.3m",
+        "label": "estimated fair fee",
+        "subject": "Malcolm Viltard"
+      },
+      {
+        "stat": "ev_e0a0c026241949a1",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Malcolm Viltard"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 43,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 43,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

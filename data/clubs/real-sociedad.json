@@ -1,0 +1,2579 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "real-sociedad",
+    "name": "Real Sociedad",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "la_liga",
+    "name": "La Liga",
+    "country": "Spain"
+  },
+  "generated_at": "2026-10-16T23:55:42+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Real Sociedad for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Real Sociedad are "
+          },
+          {
+            "stat": "ev_c60c553b0bcebc3d",
+            "display": "6th"
+          },
+          {
+            "text": " in the La Liga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Real Sociedad have "
+          },
+          {
+            "stat": "ev_fc6ee1e5f5aa39ea",
+            "display": "13"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Real Sociedad's next league match is Málaga v Real Sociedad on "
+          },
+          {
+            "stat": "ev_b9d99b935230a266",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Real Sociedad's biggest squad need is "
+          },
+          {
+            "stat": "ev_5c4e5b7da57895cf",
+            "display": "central midfield"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Real Sociedad doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad are "
+            },
+            {
+              "stat": "ev_c60c553b0bcebc3d",
+              "display": "6th"
+            },
+            {
+              "text": " in the La Liga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad have "
+            },
+            {
+              "stat": "ev_fc6ee1e5f5aa39ea",
+              "display": "13"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad have scored "
+            },
+            {
+              "stat": "ev_6206a6d7e5d87a66",
+              "display": "12"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad have conceded "
+            },
+            {
+              "stat": "ev_e5e640773e68fadd",
+              "display": "15"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad's most recent league results read "
+            },
+            {
+              "stat": "ev_30df720c3e1c9746",
+              "display": "WWLWD"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Pellegrino Matarazzo has been Real Sociedad's head coach since "
+            },
+            {
+              "stat": "ev_f690e098c0807a8c",
+              "display": "20 December 2025"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Real Sociedad expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad's next league match is Málaga v Real Sociedad on "
+            },
+            {
+              "stat": "ev_b9d99b935230a266",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Real Sociedad's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Real Sociedad, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Real Sociedad players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Jon Martín's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_04bc7b3e90669d98",
+              "display": "25%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Jon Gorrotxategi's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_352b824c7b77510e",
+              "display": "20%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Orri Steinn Óskarsson's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_85593156a992b4f8",
+              "display": "19%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Jon Martín at "
+            },
+            {
+              "stat": "ev_7fbd9acde91d481b",
+              "display": "€25.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Jon Martín is "
+            },
+            {
+              "stat": "ev_effc70a29fd31e58",
+              "display": "€20.5m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Jon Gorrotxategi at "
+            },
+            {
+              "stat": "ev_76d33e0c6be8c2d2",
+              "display": "€25.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Jon Gorrotxategi is "
+            },
+            {
+              "stat": "ev_56006341496a6737",
+              "display": "€16.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Mikel Oyarzabal at "
+            },
+            {
+              "stat": "ev_2430f3d29995c904",
+              "display": "€25.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Mikel Oyarzabal is "
+            },
+            {
+              "stat": "ev_b4ac27f3ba17372f",
+              "display": "€18.1m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Real Sociedad strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad's biggest squad need is "
+            },
+            {
+              "stat": "ev_5c4e5b7da57895cf",
+              "display": "central midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Yuito Suzuki (SC Freiburg), who is "
+            },
+            {
+              "stat": "ev_ccf61306bc375166",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Yuito Suzuki plays for "
+            },
+            {
+              "stat": "ev_e944c876de315548",
+              "display": "SC Freiburg"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Yuito Suzuki has a market value of "
+            },
+            {
+              "stat": "ev_bb08ff46b9a83328",
+              "display": "€24.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Yuito Suzuki is "
+            },
+            {
+              "stat": "ev_538e2ceabf1b742c",
+              "display": "€20.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Yuito Suzuki to play "
+            },
+            {
+              "stat": "ev_87158d58f806cbe1",
+              "display": "45%"
+            },
+            {
+              "text": " of Real Sociedad's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Daniel Svensson (Borussia Dortmund), who is "
+            },
+            {
+              "stat": "ev_cd77de502b7144f5",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Daniel Svensson plays for "
+            },
+            {
+              "stat": "ev_1f1421f4d8885395",
+              "display": "Borussia Dortmund"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Daniel Svensson has a market value of "
+            },
+            {
+              "stat": "ev_644b0c83d80a86b4",
+              "display": "€22.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Daniel Svensson is "
+            },
+            {
+              "stat": "ev_011e6027c447ef85",
+              "display": "€16.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Daniel Svensson to play "
+            },
+            {
+              "stat": "ev_92b07264b66dabe5",
+              "display": "58%"
+            },
+            {
+              "text": " of Real Sociedad's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Paul Wanner (PSV Eindhoven), who is "
+            },
+            {
+              "stat": "ev_5d08b97bad6e5e81",
+              "display": "21"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paul Wanner plays for "
+            },
+            {
+              "stat": "ev_3e6305f9614e4cb5",
+              "display": "PSV Eindhoven"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Paul Wanner has a market value of "
+            },
+            {
+              "stat": "ev_78d72e215d65a7a3",
+              "display": "€22.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Paul Wanner is "
+            },
+            {
+              "stat": "ev_4cf17061b92fb074",
+              "display": "€19.4m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Paul Wanner to play "
+            },
+            {
+              "stat": "ev_f9282a7241502b3f",
+              "display": "49%"
+            },
+            {
+              "text": " of Real Sociedad's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Carlos Álvarez (Levante UD), who is "
+            },
+            {
+              "stat": "ev_4c2fc723cabd13b8",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Carlos Álvarez plays for "
+            },
+            {
+              "stat": "ev_ace381c7bf97102d",
+              "display": "Levante UD"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_e413723a18d8b751",
+              "display": "56%"
+            },
+            {
+              "text": " chance that Levante UD sell Carlos Álvarez in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Carlos Álvarez is "
+            },
+            {
+              "stat": "ev_bffaa5efc3b6a3ed",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_41ef04116e81a2f5",
+              "display": "1.1%"
+            },
+            {
+              "text": " chance that Carlos Álvarez joins Real Sociedad in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Samú Costa (RCD Mallorca), who is "
+            },
+            {
+              "stat": "ev_47b2cedd45af3589",
+              "display": "26"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Samú Costa plays for "
+            },
+            {
+              "stat": "ev_ee7b4dbddc028071",
+              "display": "RCD Mallorca"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_8e4d8b255f3faf68",
+              "display": "51%"
+            },
+            {
+              "text": " chance that RCD Mallorca sell Samú Costa in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Samú Costa is "
+            },
+            {
+              "stat": "ev_cf539a43b8712812",
+              "display": "€11.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Fer López (Celta de Vigo), who is "
+            },
+            {
+              "stat": "ev_82603163318ab5e7",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Real Sociedad's second squad need is "
+            },
+            {
+              "stat": "ev_b216555beee08a18",
+              "display": "defensive midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Daniel Svensson has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Paul Wanner has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Carlos Álvarez has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Samú Costa has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_011e6027c447ef85": {
+      "value": 16000000.0,
+      "display": "16000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp81814f3f107d49",
+      "entity_name": "Daniel Svensson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_04bc7b3e90669d98": {
+      "value": 0.25,
+      "display": "0.25",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp417f3d4def5c4c",
+      "entity_name": "Jon Martín",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_05afc567d095bc8e": {
+      "value": "Celta de Vigo",
+      "display": "Celta de Vigo",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp102f60c18982dc",
+      "entity_name": "Fer López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_087dbcf5e54177f4": {
+      "value": 20000000.0,
+      "display": "20000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpf31a71151754f8",
+      "entity_name": "Wouter Burger",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_15dfd60a85e4b239": {
+      "value": 0.0088,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp068d09db9a7937",
+      "entity_name": "Samú Costa",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1f1421f4d8885395": {
+      "value": "Borussia Dortmund",
+      "display": "Borussia Dortmund",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp81814f3f107d49",
+      "entity_name": "Daniel Svensson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_211f65dc3bc68c3f": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpe8a2aa47460516",
+      "entity_name": "Carlos Álvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2430f3d29995c904": {
+      "value": 25000000.0,
+      "display": "25000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp348993f63328ca",
+      "entity_name": "Mikel Oyarzabal",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2a055f3d408452e2": {
+      "value": 12800000.0,
+      "display": "12800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp102f60c18982dc",
+      "entity_name": "Fer López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2c20b3f1e8586e56": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp81814f3f107d49",
+      "entity_name": "Daniel Svensson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30df720c3e1c9746": {
+      "value": "WWLWD",
+      "display": "WWLWD",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_352b824c7b77510e": {
+      "value": 0.201,
+      "display": "0.20",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp25e8abfa2a4a10",
+      "entity_name": "Jon Gorrotxategi",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3ca8d15e08e58832": {
+      "value": 20.7,
+      "display": "20.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp423d0c97eec0d9",
+      "entity_name": "Diogo Lobão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3e6305f9614e4cb5": {
+      "value": "PSV Eindhoven",
+      "display": "PSV Eindhoven",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp9759e56f80cc06",
+      "entity_name": "Paul Wanner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_41ef04116e81a2f5": {
+      "value": 0.0109,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpe8a2aa47460516",
+      "entity_name": "Carlos Álvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_47b2cedd45af3589": {
+      "value": 25.9,
+      "display": "25.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp068d09db9a7937",
+      "entity_name": "Samú Costa",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4c2fc723cabd13b8": {
+      "value": 23.2,
+      "display": "23.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpe8a2aa47460516",
+      "entity_name": "Carlos Álvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4cf17061b92fb074": {
+      "value": 19400000.0,
+      "display": "19400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp9759e56f80cc06",
+      "entity_name": "Paul Wanner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4ed8d03ec98deb13": {
+      "value": 0.485,
+      "display": "0.48",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp423d0c97eec0d9",
+      "entity_name": "Diogo Lobão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_538e2ceabf1b742c": {
+      "value": 20700000.0,
+      "display": "20700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_545b565238c50c44": {
+      "value": 0.514,
+      "display": "0.51",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_55b112c83e4439ea": {
+      "value": 9700000.0,
+      "display": "9700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_56006341496a6737": {
+      "value": 16300000.0,
+      "display": "16300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp25e8abfa2a4a10",
+      "entity_name": "Jon Gorrotxategi",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_58311a67e0602672": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp102f60c18982dc",
+      "entity_name": "Fer López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59efd0b204066422": {
+      "value": 18100000.0,
+      "display": "18100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5a8ba34e317dbdac": {
+      "value": "RC Lens",
+      "display": "RC Lens",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5c4e5b7da57895cf": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5d08b97bad6e5e81": {
+      "value": 20.8,
+      "display": "20.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9759e56f80cc06",
+      "entity_name": "Paul Wanner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6206a6d7e5d87a66": {
+      "value": 12.0,
+      "display": "12",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_644b0c83d80a86b4": {
+      "value": 22000000.0,
+      "display": "22000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp81814f3f107d49",
+      "entity_name": "Daniel Svensson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_67f79c0667966d83": {
+      "value": 11200000.0,
+      "display": "11200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_76d33e0c6be8c2d2": {
+      "value": 25000000.0,
+      "display": "25000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp25e8abfa2a4a10",
+      "entity_name": "Jon Gorrotxategi",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_787f9b4c6a5d8753": {
+      "value": "RC Strasbourg Alsace",
+      "display": "RC Strasbourg Alsace",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp423d0c97eec0d9",
+      "entity_name": "Diogo Lobão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_78d72e215d65a7a3": {
+      "value": 22000000.0,
+      "display": "22000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp9759e56f80cc06",
+      "entity_name": "Paul Wanner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7fbd9acde91d481b": {
+      "value": 25000000.0,
+      "display": "25000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp417f3d4def5c4c",
+      "entity_name": "Jon Martín",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-06-05T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_82603163318ab5e7": {
+      "value": 22.4,
+      "display": "22.40",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp102f60c18982dc",
+      "entity_name": "Fer López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_85593156a992b4f8": {
+      "value": 0.188,
+      "display": "0.19",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpae7fc332e354a4",
+      "entity_name": "Orri Steinn Óskarsson",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_87158d58f806cbe1": {
+      "value": 0.454,
+      "display": "0.45",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_892578e2a30df168": {
+      "value": 7700000.0,
+      "display": "7700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp423d0c97eec0d9",
+      "entity_name": "Diogo Lobão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8cc91bab145a4922": {
+      "value": 25.7,
+      "display": "25.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf31a71151754f8",
+      "entity_name": "Wouter Burger",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8e4d8b255f3faf68": {
+      "value": 0.51,
+      "display": "0.51",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp068d09db9a7937",
+      "entity_name": "Samú Costa",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_92b07264b66dabe5": {
+      "value": 0.577,
+      "display": "0.58",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp81814f3f107d49",
+      "entity_name": "Daniel Svensson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_966d44278938ed9f": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp9759e56f80cc06",
+      "entity_name": "Paul Wanner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e0a9d5938114e0a": {
+      "value": 20500000.0,
+      "display": "20500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpdb6b821adbee70",
+      "entity_name": "Oscar Højlund",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a07b8f64ec39337f": {
+      "value": 21.8,
+      "display": "21.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdb6b821adbee70",
+      "entity_name": "Oscar Højlund",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a8c3b99e9a70ea10": {
+      "value": 16600000.0,
+      "display": "16600000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aa215cfe8875f23f": {
+      "value": "Ajax Amsterdam",
+      "display": "Ajax Amsterdam",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ace381c7bf97102d": {
+      "value": "Levante UD",
+      "display": "Levante UD",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpe8a2aa47460516",
+      "entity_name": "Carlos Álvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_af942a208d9438f5": {
+      "value": 0.309,
+      "display": "0.31",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b0a99bcfa56114ad": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp068d09db9a7937",
+      "entity_name": "Samú Costa",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b216555beee08a18": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b4ac27f3ba17372f": {
+      "value": 18100000.0,
+      "display": "18100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp348993f63328ca",
+      "entity_name": "Mikel Oyarzabal",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b9d99b935230a266": {
+      "value": "2026-10-18T16:30:00+00:00",
+      "display": "2026-10-18T16:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "la_liga:2026-27:malaga:real-sociedad",
+      "entity_name": "Málaga v Real Sociedad",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:01.268126+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_bb08ff46b9a83328": {
+      "value": 24000000.0,
+      "display": "24000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bc90831af0631f4a": {
+      "value": 19.8,
+      "display": "19.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3edfaf7562d3a6",
+      "entity_name": "Andrija Bulatović",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bffaa5efc3b6a3ed": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe8a2aa47460516",
+      "entity_name": "Carlos Álvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c60c553b0bcebc3d": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ccf61306bc375166": {
+      "value": 25.0,
+      "display": "25",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cd77de502b7144f5": {
+      "value": 24.7,
+      "display": "24.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp81814f3f107d49",
+      "entity_name": "Daniel Svensson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cf539a43b8712812": {
+      "value": 11100000.0,
+      "display": "11100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp068d09db9a7937",
+      "entity_name": "Samú Costa",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dd82fa73507d56db": {
+      "value": 12800000.0,
+      "display": "12800000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp423d0c97eec0d9",
+      "entity_name": "Diogo Lobão",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e413723a18d8b751": {
+      "value": 0.561,
+      "display": "0.56",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpe8a2aa47460516",
+      "entity_name": "Carlos Álvarez",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e5e640773e68fadd": {
+      "value": 15.0,
+      "display": "15",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e6f0ab82989f266f": {
+      "value": 0.0028,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp102f60c18982dc",
+      "entity_name": "Fer López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e944c876de315548": {
+      "value": "SC Freiburg",
+      "display": "SC Freiburg",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ee7b4dbddc028071": {
+      "value": "RCD Mallorca",
+      "display": "RCD Mallorca",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp068d09db9a7937",
+      "entity_name": "Samú Costa",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_effc70a29fd31e58": {
+      "value": 20500000.0,
+      "display": "20500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp417f3d4def5c4c",
+      "entity_name": "Jon Martín",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f399200f21f45f2f": {
+      "value": 0.117,
+      "display": "0.12",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp102f60c18982dc",
+      "entity_name": "Fer López",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f690e098c0807a8c": {
+      "value": "2025-12-20",
+      "display": "2025-12-20",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q80310717",
+      "entity_name": "Pellegrino Matarazzo",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q80310717",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f9282a7241502b3f": {
+      "value": 0.489,
+      "display": "0.49",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp9759e56f80cc06",
+      "entity_name": "Paul Wanner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f9c34cc8d6ed6f44": {
+      "value": 18.6,
+      "display": "18.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfebc5546696de6",
+      "entity_name": "Jorthy Mokio",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fc6ee1e5f5aa39ea": {
+      "value": 13.0,
+      "display": "13",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "real-sociedad",
+      "entity_name": "Real Sociedad",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_c60c553b0bcebc3d",
+        "display": "6th",
+        "label": "league position",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_fc6ee1e5f5aa39ea",
+        "display": "13",
+        "label": "league points",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_6206a6d7e5d87a66",
+        "display": "12",
+        "label": "league goals scored",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_e5e640773e68fadd",
+        "display": "15",
+        "label": "league goals conceded",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_30df720c3e1c9746",
+        "display": "WWLWD",
+        "label": "recent league results, oldest first",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_f690e098c0807a8c",
+        "display": "20 December 2025",
+        "label": "appointed head coach of Real Sociedad",
+        "subject": "Pellegrino Matarazzo"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_b9d99b935230a266",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Málaga v Real Sociedad"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_04bc7b3e90669d98",
+        "display": "25%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Jon Martín"
+      },
+      {
+        "stat": "ev_352b824c7b77510e",
+        "display": "20%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Jon Gorrotxategi"
+      },
+      {
+        "stat": "ev_85593156a992b4f8",
+        "display": "19%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Orri Steinn Óskarsson"
+      },
+      {
+        "stat": "ev_7fbd9acde91d481b",
+        "display": "€25.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Jon Martín"
+      },
+      {
+        "stat": "ev_effc70a29fd31e58",
+        "display": "€20.5m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Jon Martín"
+      },
+      {
+        "stat": "ev_76d33e0c6be8c2d2",
+        "display": "€25.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Jon Gorrotxategi"
+      },
+      {
+        "stat": "ev_56006341496a6737",
+        "display": "€16.3m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Jon Gorrotxategi"
+      },
+      {
+        "stat": "ev_2430f3d29995c904",
+        "display": "€25.0m",
+        "label": "market value (Transfermarkt, as of June 2026)",
+        "subject": "Mikel Oyarzabal"
+      },
+      {
+        "stat": "ev_b4ac27f3ba17372f",
+        "display": "€18.1m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Mikel Oyarzabal"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_5c4e5b7da57895cf",
+        "display": "central midfield",
+        "label": "squad need, priority one",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_ccf61306bc375166",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_e944c876de315548",
+        "display": "SC Freiburg",
+        "label": "current club",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_bb08ff46b9a83328",
+        "display": "€24.0m",
+        "label": "market value",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_538e2ceabf1b742c",
+        "display": "€20.7m",
+        "label": "estimated fair fee",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_87158d58f806cbe1",
+        "display": "45%",
+        "label": "expected share of minutes at the club",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_cd77de502b7144f5",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Daniel Svensson"
+      },
+      {
+        "stat": "ev_1f1421f4d8885395",
+        "display": "Borussia Dortmund",
+        "label": "current club",
+        "subject": "Daniel Svensson"
+      },
+      {
+        "stat": "ev_2c20b3f1e8586e56",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Daniel Svensson"
+      },
+      {
+        "stat": "ev_644b0c83d80a86b4",
+        "display": "€22.0m",
+        "label": "market value",
+        "subject": "Daniel Svensson"
+      },
+      {
+        "stat": "ev_011e6027c447ef85",
+        "display": "€16.0m",
+        "label": "estimated fair fee",
+        "subject": "Daniel Svensson"
+      },
+      {
+        "stat": "ev_92b07264b66dabe5",
+        "display": "58%",
+        "label": "expected share of minutes at the club",
+        "subject": "Daniel Svensson"
+      },
+      {
+        "stat": "ev_5d08b97bad6e5e81",
+        "display": "21",
+        "label": "age (best target)",
+        "subject": "Paul Wanner"
+      },
+      {
+        "stat": "ev_3e6305f9614e4cb5",
+        "display": "PSV Eindhoven",
+        "label": "current club",
+        "subject": "Paul Wanner"
+      },
+      {
+        "stat": "ev_966d44278938ed9f",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Paul Wanner"
+      },
+      {
+        "stat": "ev_78d72e215d65a7a3",
+        "display": "€22.0m",
+        "label": "market value",
+        "subject": "Paul Wanner"
+      },
+      {
+        "stat": "ev_4cf17061b92fb074",
+        "display": "€19.4m",
+        "label": "estimated fair fee",
+        "subject": "Paul Wanner"
+      },
+      {
+        "stat": "ev_f9282a7241502b3f",
+        "display": "49%",
+        "label": "expected share of minutes at the club",
+        "subject": "Paul Wanner"
+      },
+      {
+        "stat": "ev_4c2fc723cabd13b8",
+        "display": "23",
+        "label": "age (realistic target)",
+        "subject": "Carlos Álvarez"
+      },
+      {
+        "stat": "ev_ace381c7bf97102d",
+        "display": "Levante UD",
+        "label": "current club",
+        "subject": "Carlos Álvarez"
+      },
+      {
+        "stat": "ev_e413723a18d8b751",
+        "display": "56%",
+        "label": "chance his club sells him in a window",
+        "subject": "Carlos Álvarez"
+      },
+      {
+        "stat": "ev_211f65dc3bc68c3f",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Carlos Álvarez"
+      },
+      {
+        "stat": "ev_bffaa5efc3b6a3ed",
+        "display": "€12.0m",
+        "label": "estimated fair fee",
+        "subject": "Carlos Álvarez"
+      },
+      {
+        "stat": "ev_41ef04116e81a2f5",
+        "display": "1.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Carlos Álvarez"
+      },
+      {
+        "stat": "ev_47b2cedd45af3589",
+        "display": "26",
+        "label": "age (realistic target)",
+        "subject": "Samú Costa"
+      },
+      {
+        "stat": "ev_ee7b4dbddc028071",
+        "display": "RCD Mallorca",
+        "label": "current club",
+        "subject": "Samú Costa"
+      },
+      {
+        "stat": "ev_8e4d8b255f3faf68",
+        "display": "51%",
+        "label": "chance his club sells him in a window",
+        "subject": "Samú Costa"
+      },
+      {
+        "stat": "ev_b0a99bcfa56114ad",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Samú Costa"
+      },
+      {
+        "stat": "ev_cf539a43b8712812",
+        "display": "€11.1m",
+        "label": "estimated fair fee",
+        "subject": "Samú Costa"
+      },
+      {
+        "stat": "ev_15dfd60a85e4b239",
+        "display": "0.9%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Samú Costa"
+      },
+      {
+        "stat": "ev_82603163318ab5e7",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Fer López"
+      },
+      {
+        "stat": "ev_05afc567d095bc8e",
+        "display": "Celta de Vigo",
+        "label": "current club",
+        "subject": "Fer López"
+      },
+      {
+        "stat": "ev_f399200f21f45f2f",
+        "display": "12%",
+        "label": "chance his club sells him in a window",
+        "subject": "Fer López"
+      },
+      {
+        "stat": "ev_58311a67e0602672",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Fer López"
+      },
+      {
+        "stat": "ev_2a055f3d408452e2",
+        "display": "€12.8m",
+        "label": "estimated fair fee",
+        "subject": "Fer López"
+      },
+      {
+        "stat": "ev_e6f0ab82989f266f",
+        "display": "0.3%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Fer López"
+      },
+      {
+        "stat": "ev_f9c34cc8d6ed6f44",
+        "display": "19",
+        "label": "age (gem target)",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_aa215cfe8875f23f",
+        "display": "Ajax Amsterdam",
+        "label": "current club",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_545b565238c50c44",
+        "display": "51%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_67f79c0667966d83",
+        "display": "€11.2m",
+        "label": "estimated fair fee",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_59efd0b204066422",
+        "display": "€18.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "Jorthy Mokio"
+      },
+      {
+        "stat": "ev_bc90831af0631f4a",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Andrija Bulatovic"
+      },
+      {
+        "stat": "ev_5a8ba34e317dbdac",
+        "display": "RC Lens",
+        "label": "current club",
+        "subject": "Andrija Bulatovic"
+      },
+      {
+        "stat": "ev_af942a208d9438f5",
+        "display": "31%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Andrija Bulatovic"
+      },
+      {
+        "stat": "ev_55b112c83e4439ea",
+        "display": "€9.7m",
+        "label": "estimated fair fee",
+        "subject": "Andrija Bulatovic"
+      },
+      {
+        "stat": "ev_a8c3b99e9a70ea10",
+        "display": "€16.6m",
+        "label": "projected market value in a few seasons",
+        "subject": "Andrija Bulatovic"
+      },
+      {
+        "stat": "ev_3ca8d15e08e58832",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Diogo Sousa"
+      },
+      {
+        "stat": "ev_787f9b4c6a5d8753",
+        "display": "RC Strasbourg Alsace",
+        "label": "current club",
+        "subject": "Diogo Sousa"
+      },
+      {
+        "stat": "ev_4ed8d03ec98deb13",
+        "display": "48%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Diogo Sousa"
+      },
+      {
+        "stat": "ev_892578e2a30df168",
+        "display": "€7.7m",
+        "label": "estimated fair fee",
+        "subject": "Diogo Sousa"
+      },
+      {
+        "stat": "ev_dd82fa73507d56db",
+        "display": "€12.8m",
+        "label": "projected market value in a few seasons",
+        "subject": "Diogo Sousa"
+      },
+      {
+        "stat": "ev_b216555beee08a18",
+        "display": "defensive midfield",
+        "label": "squad need, priority two",
+        "subject": "Real Sociedad"
+      },
+      {
+        "stat": "ev_8cc91bab145a4922",
+        "display": "26",
+        "label": "age (best target, second need)",
+        "subject": "Wouter Burger"
+      },
+      {
+        "stat": "ev_087dbcf5e54177f4",
+        "display": "€20.0m",
+        "label": "market value",
+        "subject": "Wouter Burger"
+      },
+      {
+        "stat": "ev_a07b8f64ec39337f",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Oscar Højlund"
+      },
+      {
+        "stat": "ev_9e0a9d5938114e0a",
+        "display": "€20.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Oscar Højlund"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 47,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 47,
+      "unverified": 4
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

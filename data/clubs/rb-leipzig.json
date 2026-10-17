@@ -1,0 +1,2637 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "rb-leipzig",
+    "name": "RB Leipzig",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "country": "Germany"
+  },
+  "generated_at": "2026-10-17T00:03:56+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on RB Leipzig for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "RB Leipzig are "
+          },
+          {
+            "stat": "ev_b67efb257ed5d5e5",
+            "display": "5th"
+          },
+          {
+            "text": " in the Bundesliga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "RB Leipzig have "
+          },
+          {
+            "stat": "ev_7d51f8d51832fe1c",
+            "display": "9"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "RB Leipzig's next league match is Bayern München v RB Leipzig on "
+          },
+          {
+            "stat": "ev_5de68b36c19f1866",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "RB Leipzig's biggest squad need is "
+          },
+          {
+            "stat": "ev_7b18b12a5e59c363",
+            "display": "goalkeeper"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are RB Leipzig doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig are "
+            },
+            {
+              "stat": "ev_b67efb257ed5d5e5",
+              "display": "5th"
+            },
+            {
+              "text": " in the Bundesliga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig have "
+            },
+            {
+              "stat": "ev_7d51f8d51832fe1c",
+              "display": "9"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig have scored "
+            },
+            {
+              "stat": "ev_de4904d1641d417a",
+              "display": "15"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig have conceded "
+            },
+            {
+              "stat": "ev_eb8f3fd477681410",
+              "display": "5"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig's most recent league results read "
+            },
+            {
+              "stat": "ev_e6d369383941d519",
+              "display": "WLWLW"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Martín Demichelis has been RB Leipzig's head coach since "
+            },
+            {
+              "stat": "ev_ecac7719c07bb671",
+              "display": "22 June 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should RB Leipzig expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig's next league match is Bayern München v RB Leipzig on "
+            },
+            {
+              "stat": "ev_5de68b36c19f1866",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is RB Leipzig's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for RB Leipzig, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which RB Leipzig players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Castello Lukeba's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_3a4bc4603eaaf18c",
+              "display": "22%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Tidiam Gomis's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_2fd2973590d49061",
+              "display": "19%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Christoph Baumgartner's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_ddd413f3b57722db",
+              "display": "17%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Christoph Baumgartner at "
+            },
+            {
+              "stat": "ev_03caf67d727449fd",
+              "display": "€40.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Christoph Baumgartner is "
+            },
+            {
+              "stat": "ev_6673464ea340b38a",
+              "display": "€25.1m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Nicolas  Seiwald at "
+            },
+            {
+              "stat": "ev_8eafd33c20a468a6",
+              "display": "€25.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Nicolas  Seiwald is "
+            },
+            {
+              "stat": "ev_42aab4430ade8375",
+              "display": "€16.7m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Maarten Vandevoordt at "
+            },
+            {
+              "stat": "ev_7853af7842e2ea26",
+              "display": "€15.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Maarten Vandevoordt is "
+            },
+            {
+              "stat": "ev_248ee3aa189ba134",
+              "display": "€10.2m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should RB Leipzig strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig's biggest squad need is "
+            },
+            {
+              "stat": "ev_7b18b12a5e59c363",
+              "display": "goalkeeper"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Gianluigi Donnarumma (Manchester City), who is "
+            },
+            {
+              "stat": "ev_0211a1a118815f8d",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Gianluigi Donnarumma plays for "
+            },
+            {
+              "stat": "ev_c261c43235c951a8",
+              "display": "Manchester City"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Gianluigi Donnarumma has a market value of "
+            },
+            {
+              "stat": "ev_59215d7d759b3cad",
+              "display": "€45.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Gianluigi Donnarumma is "
+            },
+            {
+              "stat": "ev_cdf99011d47da259",
+              "display": "€27.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Gianluigi Donnarumma to play "
+            },
+            {
+              "stat": "ev_63594e5f831781d5",
+              "display": "59%"
+            },
+            {
+              "text": " of RB Leipzig's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Joan García (FC Barcelona), who is "
+            },
+            {
+              "stat": "ev_7ec44d58ed6b14bf",
+              "display": "26"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Joan García plays for "
+            },
+            {
+              "stat": "ev_9e1fa7063e74f9a4",
+              "display": "FC Barcelona"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Joan García has a market value of "
+            },
+            {
+              "stat": "ev_4f9057feed6e71b0",
+              "display": "€45.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Joan García is "
+            },
+            {
+              "stat": "ev_149f0bd68113d8d7",
+              "display": "€31.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Joan García to play "
+            },
+            {
+              "stat": "ev_c6dd6bc165f80ca5",
+              "display": "56%"
+            },
+            {
+              "text": " of RB Leipzig's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Gregor Kobel (Borussia Dortmund), who is "
+            },
+            {
+              "stat": "ev_0b9dfa59578d207f",
+              "display": "29"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Gregor Kobel plays for "
+            },
+            {
+              "stat": "ev_4dc3d5b9d5570b74",
+              "display": "Borussia Dortmund"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Gregor Kobel has a market value of "
+            },
+            {
+              "stat": "ev_fc75c5b7b873105e",
+              "display": "€40.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Gregor Kobel is "
+            },
+            {
+              "stat": "ev_b62c0da526a435b6",
+              "display": "€25.7m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Gregor Kobel to play "
+            },
+            {
+              "stat": "ev_1e72f68d9a8770ca",
+              "display": "68%"
+            },
+            {
+              "text": " of RB Leipzig's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Guillaume Restes (FC Toulouse), who is "
+            },
+            {
+              "stat": "ev_e25a558af04e19f4",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Guillaume Restes plays for "
+            },
+            {
+              "stat": "ev_6add697b27fe96ac",
+              "display": "FC Toulouse"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_8445af1ac55af0c4",
+              "display": "43%"
+            },
+            {
+              "text": " chance that FC Toulouse sell Guillaume Restes in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Guillaume Restes is "
+            },
+            {
+              "stat": "ev_2afe96a35849210a",
+              "display": "€17.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_382f1cdaf733a7e9",
+              "display": "0.1%"
+            },
+            {
+              "text": " chance that Guillaume Restes joins RB Leipzig in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Anatoliy Trubin (SL Benfica), who is "
+            },
+            {
+              "stat": "ev_f4bfdc72e878174a",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "RB Leipzig's second squad need is "
+            },
+            {
+              "stat": "ev_6709c4b7ca247fc4",
+              "display": "central midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "According to The Guardian, RB Leipzig have been linked with James Scanlon.",
+          "status": "unverified",
+          "reason": "The Guardian's text does not support it"
+        },
+        {
+          "text": "According to The Guardian, RB Leipzig have been linked with Habeeb Ogunneye.",
+          "status": "unverified",
+          "reason": "The Guardian's text does not support it"
+        },
+        {
+          "text": "According to The Guardian, RB Leipzig have been linked with Ethan Nwaneri.",
+          "status": "unverified",
+          "reason": "The Guardian's text does not support it"
+        },
+        {
+          "text": "Past reports like this one about Ethan Nwaneri came true within half a year about one time in [number].",
+          "status": "unverified",
+          "reason": "the rumour it is about was not confirmed"
+        },
+        {
+          "text": "Gianluigi Donnarumma has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Joan García has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Gregor Kobel has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Guillaume Restes has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_0087369b5a84f888": {
+      "value": 28.3,
+      "display": "28.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp81c8e86b70acf0",
+      "entity_name": "Eberechi Eze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0211a1a118815f8d": {
+      "value": 27.6,
+      "display": "27.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_03caf67d727449fd": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_0864b69abd1fcca9": {
+      "value": 19.1,
+      "display": "19.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp8419fabb282453",
+      "entity_name": "Mateus Mané",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_08d6c1c165f376fa": {
+      "value": 60000000.0,
+      "display": "60000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp81c8e86b70acf0",
+      "entity_name": "Eberechi Eze",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0923987769a1a503": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0b9dfa59578d207f": {
+      "value": 28.9,
+      "display": "28.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp394d4e00c9e377",
+      "entity_name": "Gregor Kobel",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_10cb67f3608e01ce": {
+      "value": 20700000.0,
+      "display": "20700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp46ccc57e12cc14",
+      "entity_name": "Anatoliy Trubin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_13bf2c49cc27529d": {
+      "value": 10000000.0,
+      "display": "10000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_149f0bd68113d8d7": {
+      "value": 31900000.0,
+      "display": "31900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1984b54746d3fcee": {
+      "value": "AZ Alkmaar",
+      "display": "AZ Alkmaar",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1e72f68d9a8770ca": {
+      "value": 0.683,
+      "display": "0.68",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp394d4e00c9e377",
+      "entity_name": "Gregor Kobel",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_23851bd46ba236b6": {
+      "value": 26.3,
+      "display": "26.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_248ee3aa189ba134": {
+      "value": 10200000.0,
+      "display": "10200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf805a503c3fcd9",
+      "entity_name": "Maarten Vandevoordt",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2afe96a35849210a": {
+      "value": 17500000.0,
+      "display": "17500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf78e8f4d70fb8f",
+      "entity_name": "Guillaume Restes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2fb35e6c957d79ad": {
+      "value": 5900000.0,
+      "display": "5900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2fd2973590d49061": {
+      "value": 0.19,
+      "display": "0.19",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp3d1011f91ebe44",
+      "entity_name": "Tidiam Gomis",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_33443e54e57291ed": {
+      "value": 0.203,
+      "display": "0.20",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_347267358bb69756": {
+      "value": 0.682,
+      "display": "0.68",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_35f7d01d057a33b0": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpd5f60b7ce9298a",
+      "entity_name": "Nazar Domchak",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_382f1cdaf733a7e9": {
+      "value": 0.0008,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpf78e8f4d70fb8f",
+      "entity_name": "Guillaume Restes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_38b50273bed0f1f9": {
+      "value": 21.7,
+      "display": "21.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3a4bc4603eaaf18c": {
+      "value": 0.22,
+      "display": "0.22",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp6fab9d1e209e02",
+      "entity_name": "Castello Lukeba",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3ba2ac2b8fd7525c": {
+      "value": 19.5,
+      "display": "19.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpd5f60b7ce9298a",
+      "entity_name": "Nazar Domchak",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3dc2375f11cb1a4f": {
+      "value": 0.0006,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp46ccc57e12cc14",
+      "entity_name": "Anatoliy Trubin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_41db7aa5c50ebb40": {
+      "value": 1.0,
+      "display": "1",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpd5f60b7ce9298a",
+      "entity_name": "Nazar Domchak",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_42aab4430ade8375": {
+      "value": 16700000.0,
+      "display": "16700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf60a9e36bff51c",
+      "entity_name": "Nicolas  Seiwald",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_447c7a4dfa28dca0": {
+      "value": 5800000.0,
+      "display": "5800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpd5f60b7ce9298a",
+      "entity_name": "Nazar Domchak",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_45aa3b19540086cf": {
+      "value": 0.633,
+      "display": "0.63",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4b6ccf9bde4e7abb": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp394d4e00c9e377",
+      "entity_name": "Gregor Kobel",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4dc3d5b9d5570b74": {
+      "value": "Borussia Dortmund",
+      "display": "Borussia Dortmund",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp394d4e00c9e377",
+      "entity_name": "Gregor Kobel",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4f9057feed6e71b0": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59215d7d759b3cad": {
+      "value": 45000000.0,
+      "display": "45000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5de68b36c19f1866": {
+      "value": "2026-10-17T16:30:00+00:00",
+      "display": "2026-10-17T16:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "bundesliga:2026-27:bayern-munchen:rb-leipzig",
+      "entity_name": "Bayern München v RB Leipzig",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:11.210954+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_63594e5f831781d5": {
+      "value": 0.586,
+      "display": "0.59",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6673464ea340b38a": {
+      "value": 25100000.0,
+      "display": "25100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6709c4b7ca247fc4": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6add697b27fe96ac": {
+      "value": "FC Toulouse",
+      "display": "FC Toulouse",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpf78e8f4d70fb8f",
+      "entity_name": "Guillaume Restes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c450882be61cf08": {
+      "value": 0.187,
+      "display": "0.19",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp46ccc57e12cc14",
+      "entity_name": "Anatoliy Trubin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7853af7842e2ea26": {
+      "value": 15000000.0,
+      "display": "15000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpf805a503c3fcd9",
+      "entity_name": "Maarten Vandevoordt",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7b18b12a5e59c363": {
+      "value": "goalkeeper",
+      "display": "goalkeeper",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7d51f8d51832fe1c": {
+      "value": 9.0,
+      "display": "9",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_7ec44d58ed6b14bf": {
+      "value": 25.5,
+      "display": "25.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_829f4f9feceb5268": {
+      "value": "Atalanta BC",
+      "display": "Atalanta BC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8445af1ac55af0c4": {
+      "value": 0.432,
+      "display": "0.43",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpf78e8f4d70fb8f",
+      "entity_name": "Guillaume Restes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8c93073f3695c7fe": {
+      "value": 22200000.0,
+      "display": "22200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8ceb8c7a8a86e7bf": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d80ae1c0d320b7d": {
+      "value": 0.005,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp4da25d25d6d9ec",
+      "entity_name": "Felix Kalu Nmecha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8eafd33c20a468a6": {
+      "value": 25000000.0,
+      "display": "25000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpf60a9e36bff51c",
+      "entity_name": "Nicolas  Seiwald",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_91bb20f21d907040": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpf78e8f4d70fb8f",
+      "entity_name": "Guillaume Restes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_97e2530499526f7d": {
+      "value": "Karpaty Lviv",
+      "display": "Karpaty Lviv",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpd5f60b7ce9298a",
+      "entity_name": "Nazar Domchak",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9a1e2d1d8fd90649": {
+      "value": 39600000.0,
+      "display": "39600000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp8419fabb282453",
+      "entity_name": "Mateus Mané",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9c80597e469518f1": {
+      "value": 8900000.0,
+      "display": "8900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9e1fa7063e74f9a4": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a0d0c9ecba07c46f": {
+      "value": 8100000.0,
+      "display": "8100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a5dabdb74880837d": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp46ccc57e12cc14",
+      "entity_name": "Anatoliy Trubin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b52b83a205e3a7aa": {
+      "value": 0.0006,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b62c0da526a435b6": {
+      "value": 25700000.0,
+      "display": "25700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp394d4e00c9e377",
+      "entity_name": "Gregor Kobel",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b67efb257ed5d5e5": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_c261c43235c951a8": {
+      "value": "Manchester City",
+      "display": "Manchester City",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c6dd6bc165f80ca5": {
+      "value": 0.561,
+      "display": "0.56",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp11bc4736b8a553",
+      "entity_name": "Joan García",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c96d864d60d00e3e": {
+      "value": 26.0,
+      "display": "26",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp4da25d25d6d9ec",
+      "entity_name": "Felix Kalu Nmecha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cdf99011d47da259": {
+      "value": 27800000.0,
+      "display": "27800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp53404b1f2684d4",
+      "entity_name": "Gianluigi Donnarumma",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d3fb910d60f3340a": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "one_in",
+      "entity_type": "rumour",
+      "entity_id": "a3e88f05f3945fe5-p1:ethan nwaneri",
+      "entity_name": "Ethan Nwaneri",
+      "source": "dugout_model:rumours",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d7220d41ddfafa0b": {
+      "value": "SL Benfica",
+      "display": "SL Benfica",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp46ccc57e12cc14",
+      "entity_name": "Anatoliy Trubin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ddd413f3b57722db": {
+      "value": 0.17,
+      "display": "0.17",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp993245a5ee9bab",
+      "entity_name": "Christoph Baumgartner",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_de4904d1641d417a": {
+      "value": 15.0,
+      "display": "15",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_de91c673f870d582": {
+      "value": 34900000.0,
+      "display": "34900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp4da25d25d6d9ec",
+      "entity_name": "Felix Kalu Nmecha",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e25a558af04e19f4": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpf78e8f4d70fb8f",
+      "entity_name": "Guillaume Restes",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e6d369383941d519": {
+      "value": "WLWLW",
+      "display": "WLWLW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_e89bedaf9427735b": {
+      "value": 22.3,
+      "display": "22.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpc31f961ffa59e7",
+      "entity_name": "Rome Owusu-Oduro",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_eb8f3fd477681410": {
+      "value": 5.0,
+      "display": "5",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "rb-leipzig",
+      "entity_name": "RB Leipzig",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_ebba1305454f9b23": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpf25f369279a389",
+      "entity_name": "Marco Carnesecchi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ecac7719c07bb671": {
+      "value": "2026-06-22",
+      "display": "2026-06-22",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q150947",
+      "entity_name": "Martín Demichelis",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q150947",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_eecc571de79b1c23": {
+      "value": "Standard Liège",
+      "display": "Standard Liège",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp750689f843e56a",
+      "entity_name": "Matthieu Epolo",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f4bfdc72e878174a": {
+      "value": 25.2,
+      "display": "25.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp46ccc57e12cc14",
+      "entity_name": "Anatoliy Trubin",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fc75c5b7b873105e": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp394d4e00c9e377",
+      "entity_name": "Gregor Kobel",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_b67efb257ed5d5e5",
+        "display": "5th",
+        "label": "league position",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_7d51f8d51832fe1c",
+        "display": "9",
+        "label": "league points",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_de4904d1641d417a",
+        "display": "15",
+        "label": "league goals scored",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_eb8f3fd477681410",
+        "display": "5",
+        "label": "league goals conceded",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_e6d369383941d519",
+        "display": "WLWLW",
+        "label": "recent league results, oldest first",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_ecac7719c07bb671",
+        "display": "22 June 2026",
+        "label": "appointed head coach of RB Leipzig",
+        "subject": "Martín Demichelis"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_5de68b36c19f1866",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Bayern München v RB Leipzig"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_3a4bc4603eaaf18c",
+        "display": "22%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Castello Lukeba"
+      },
+      {
+        "stat": "ev_2fd2973590d49061",
+        "display": "19%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Tidiam Gomis"
+      },
+      {
+        "stat": "ev_ddd413f3b57722db",
+        "display": "17%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Christoph Baumgartner"
+      },
+      {
+        "stat": "ev_03caf67d727449fd",
+        "display": "€40.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Christoph Baumgartner"
+      },
+      {
+        "stat": "ev_6673464ea340b38a",
+        "display": "€25.1m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Christoph Baumgartner"
+      },
+      {
+        "stat": "ev_8eafd33c20a468a6",
+        "display": "€25.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Nicolas  Seiwald"
+      },
+      {
+        "stat": "ev_42aab4430ade8375",
+        "display": "€16.7m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Nicolas  Seiwald"
+      },
+      {
+        "stat": "ev_7853af7842e2ea26",
+        "display": "€15.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Maarten Vandevoordt"
+      },
+      {
+        "stat": "ev_248ee3aa189ba134",
+        "display": "€10.2m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Maarten Vandevoordt"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_d3fb910d60f3340a",
+        "display": "7",
+        "label": "rumour track record",
+        "subject": "Ethan Nwaneri"
+      },
+      {
+        "stat": "ev_7b18b12a5e59c363",
+        "display": "goalkeeper",
+        "label": "squad need, priority one",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_0211a1a118815f8d",
+        "display": "28",
+        "label": "age (best target)",
+        "subject": "Gianluigi Donnarumma"
+      },
+      {
+        "stat": "ev_c261c43235c951a8",
+        "display": "Manchester City",
+        "label": "current club",
+        "subject": "Gianluigi Donnarumma"
+      },
+      {
+        "stat": "ev_8ceb8c7a8a86e7bf",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Gianluigi Donnarumma"
+      },
+      {
+        "stat": "ev_59215d7d759b3cad",
+        "display": "€45.0m",
+        "label": "market value",
+        "subject": "Gianluigi Donnarumma"
+      },
+      {
+        "stat": "ev_cdf99011d47da259",
+        "display": "€27.8m",
+        "label": "estimated fair fee",
+        "subject": "Gianluigi Donnarumma"
+      },
+      {
+        "stat": "ev_63594e5f831781d5",
+        "display": "59%",
+        "label": "expected share of minutes at the club",
+        "subject": "Gianluigi Donnarumma"
+      },
+      {
+        "stat": "ev_7ec44d58ed6b14bf",
+        "display": "26",
+        "label": "age (best target)",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_9e1fa7063e74f9a4",
+        "display": "FC Barcelona",
+        "label": "current club",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_0923987769a1a503",
+        "display": "56",
+        "label": "months left on his contract",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_4f9057feed6e71b0",
+        "display": "€45.0m",
+        "label": "market value",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_149f0bd68113d8d7",
+        "display": "€31.9m",
+        "label": "estimated fair fee",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_c6dd6bc165f80ca5",
+        "display": "56%",
+        "label": "expected share of minutes at the club",
+        "subject": "Joan García"
+      },
+      {
+        "stat": "ev_0b9dfa59578d207f",
+        "display": "29",
+        "label": "age (best target)",
+        "subject": "Gregor Kobel"
+      },
+      {
+        "stat": "ev_4dc3d5b9d5570b74",
+        "display": "Borussia Dortmund",
+        "label": "current club",
+        "subject": "Gregor Kobel"
+      },
+      {
+        "stat": "ev_4b6ccf9bde4e7abb",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Gregor Kobel"
+      },
+      {
+        "stat": "ev_fc75c5b7b873105e",
+        "display": "€40.0m",
+        "label": "market value",
+        "subject": "Gregor Kobel"
+      },
+      {
+        "stat": "ev_b62c0da526a435b6",
+        "display": "€25.7m",
+        "label": "estimated fair fee",
+        "subject": "Gregor Kobel"
+      },
+      {
+        "stat": "ev_1e72f68d9a8770ca",
+        "display": "68%",
+        "label": "expected share of minutes at the club",
+        "subject": "Gregor Kobel"
+      },
+      {
+        "stat": "ev_e25a558af04e19f4",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Guillaume Restes"
+      },
+      {
+        "stat": "ev_6add697b27fe96ac",
+        "display": "FC Toulouse",
+        "label": "current club",
+        "subject": "Guillaume Restes"
+      },
+      {
+        "stat": "ev_8445af1ac55af0c4",
+        "display": "43%",
+        "label": "chance his club sells him in a window",
+        "subject": "Guillaume Restes"
+      },
+      {
+        "stat": "ev_91bb20f21d907040",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Guillaume Restes"
+      },
+      {
+        "stat": "ev_2afe96a35849210a",
+        "display": "€17.5m",
+        "label": "estimated fair fee",
+        "subject": "Guillaume Restes"
+      },
+      {
+        "stat": "ev_382f1cdaf733a7e9",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Guillaume Restes"
+      },
+      {
+        "stat": "ev_f4bfdc72e878174a",
+        "display": "25",
+        "label": "age (realistic target)",
+        "subject": "Anatoliy Trubin"
+      },
+      {
+        "stat": "ev_d7220d41ddfafa0b",
+        "display": "SL Benfica",
+        "label": "current club",
+        "subject": "Anatoliy Trubin"
+      },
+      {
+        "stat": "ev_6c450882be61cf08",
+        "display": "19%",
+        "label": "chance his club sells him in a window",
+        "subject": "Anatoliy Trubin"
+      },
+      {
+        "stat": "ev_a5dabdb74880837d",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Anatoliy Trubin"
+      },
+      {
+        "stat": "ev_10cb67f3608e01ce",
+        "display": "€20.7m",
+        "label": "estimated fair fee",
+        "subject": "Anatoliy Trubin"
+      },
+      {
+        "stat": "ev_3dc2375f11cb1a4f",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Anatoliy Trubin"
+      },
+      {
+        "stat": "ev_23851bd46ba236b6",
+        "display": "26",
+        "label": "age (realistic target)",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_829f4f9feceb5268",
+        "display": "Atalanta BC",
+        "label": "current club",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_33443e54e57291ed",
+        "display": "20%",
+        "label": "chance his club sells him in a window",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_ebba1305454f9b23",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_8c93073f3695c7fe",
+        "display": "€22.2m",
+        "label": "estimated fair fee",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_b52b83a205e3a7aa",
+        "display": "0.1%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Marco Carnesecchi"
+      },
+      {
+        "stat": "ev_38b50273bed0f1f9",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Matthieu Epolo"
+      },
+      {
+        "stat": "ev_eecc571de79b1c23",
+        "display": "Standard Liège",
+        "label": "current club",
+        "subject": "Matthieu Epolo"
+      },
+      {
+        "stat": "ev_45aa3b19540086cf",
+        "display": "63%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Matthieu Epolo"
+      },
+      {
+        "stat": "ev_9c80597e469518f1",
+        "display": "€8.9m",
+        "label": "estimated fair fee",
+        "subject": "Matthieu Epolo"
+      },
+      {
+        "stat": "ev_13bf2c49cc27529d",
+        "display": "€10.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Matthieu Epolo"
+      },
+      {
+        "stat": "ev_3ba2ac2b8fd7525c",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Nazar Domchak"
+      },
+      {
+        "stat": "ev_97e2530499526f7d",
+        "display": "Karpaty Lviv",
+        "label": "current club",
+        "subject": "Nazar Domchak"
+      },
+      {
+        "stat": "ev_41db7aa5c50ebb40",
+        "display": "100%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Nazar Domchak"
+      },
+      {
+        "stat": "ev_447c7a4dfa28dca0",
+        "display": "€5.8m",
+        "label": "estimated fair fee",
+        "subject": "Nazar Domchak"
+      },
+      {
+        "stat": "ev_35f7d01d057a33b0",
+        "display": "€8.0m",
+        "label": "projected market value in a few seasons",
+        "subject": "Nazar Domchak"
+      },
+      {
+        "stat": "ev_e89bedaf9427735b",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_1984b54746d3fcee",
+        "display": "AZ Alkmaar",
+        "label": "current club",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_347267358bb69756",
+        "display": "68%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_a0d0c9ecba07c46f",
+        "display": "€8.1m",
+        "label": "estimated fair fee",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_2fb35e6c957d79ad",
+        "display": "€5.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Rome-Jayden Owusu-Oduro"
+      },
+      {
+        "stat": "ev_6709c4b7ca247fc4",
+        "display": "central midfield",
+        "label": "squad need, priority two",
+        "subject": "RB Leipzig"
+      },
+      {
+        "stat": "ev_0087369b5a84f888",
+        "display": "28",
+        "label": "age (best target, second need)",
+        "subject": "Eberechi Eze"
+      },
+      {
+        "stat": "ev_08d6c1c165f376fa",
+        "display": "€60.0m",
+        "label": "market value",
+        "subject": "Eberechi Eze"
+      },
+      {
+        "stat": "ev_c96d864d60d00e3e",
+        "display": "26",
+        "label": "age (realistic target, second need)",
+        "subject": "Felix Nmecha"
+      },
+      {
+        "stat": "ev_de91c673f870d582",
+        "display": "€34.9m",
+        "label": "estimated fair fee",
+        "subject": "Felix Nmecha"
+      },
+      {
+        "stat": "ev_8d80ae1c0d320b7d",
+        "display": "0.5%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Felix Nmecha"
+      },
+      {
+        "stat": "ev_0864b69abd1fcca9",
+        "display": "19",
+        "label": "age (gem target, second need)",
+        "subject": "Mateus Mané"
+      },
+      {
+        "stat": "ev_9a1e2d1d8fd90649",
+        "display": "€39.6m",
+        "label": "projected market value in a few seasons",
+        "subject": "Mateus Mané"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 43,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 43,
+      "unverified": 8
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

@@ -39,6 +39,7 @@ def parse_date(s: str) -> date:
 
 class FootballDataCoUkAdapter(SourceAdapter):
     name = "football_data_couk"
+    requires = "football_data_couk"
     tier = TIER_DATA
     ttl = 12 * 60 * 60
     rate, per = 1, 3.0

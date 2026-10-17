@@ -1,0 +1,2658 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "napoli",
+    "name": "Napoli",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "serie_a",
+    "name": "Serie A",
+    "country": "Italy"
+  },
+  "generated_at": "2026-10-17T00:00:24+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Napoli for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Napoli are "
+          },
+          {
+            "stat": "ev_8206da24abd03335",
+            "display": "9th"
+          },
+          {
+            "text": " in the Serie A table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Napoli have "
+          },
+          {
+            "stat": "ev_d8db33ac164615e4",
+            "display": "10"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Napoli's next league match is Venezia v Napoli on "
+          },
+          {
+            "stat": "ev_6427b95a9b21d560",
+            "display": "17 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Napoli's biggest squad need is "
+          },
+          {
+            "stat": "ev_313482a366f827cc",
+            "display": "full-back"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Napoli doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Napoli are "
+            },
+            {
+              "stat": "ev_8206da24abd03335",
+              "display": "9th"
+            },
+            {
+              "text": " in the Serie A table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Napoli have "
+            },
+            {
+              "stat": "ev_d8db33ac164615e4",
+              "display": "10"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Napoli have scored "
+            },
+            {
+              "stat": "ev_466428f80f66467b",
+              "display": "10"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Napoli have conceded "
+            },
+            {
+              "stat": "ev_cdf0547e62a6e7aa",
+              "display": "6"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Napoli's most recent league results read "
+            },
+            {
+              "stat": "ev_10286df4faf86458",
+              "display": "WDWLL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Massimiliano Allegri has been Napoli's head coach since "
+            },
+            {
+              "stat": "ev_7f6daa86e4d0638c",
+              "display": "3 July 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Napoli expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Napoli's next league match is Venezia v Napoli on "
+            },
+            {
+              "stat": "ev_6427b95a9b21d560",
+              "display": "17 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Napoli's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Napoli, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Napoli players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Antonio Vergara's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_8bb84ec46fca9e8d",
+              "display": "13%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate André Zambo Anguissa's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_a7a9ea96982b99f6",
+              "display": "12%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Matteo Politano's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_0de6ff14c47e3acf",
+              "display": "12%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Rasmus Højlund at "
+            },
+            {
+              "stat": "ev_30c9135fc961aefb",
+              "display": "€60.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Rasmus Højlund is "
+            },
+            {
+              "stat": "ev_f591c7966a1323f5",
+              "display": "€51.9m"
+            },
+            {
+              "text": ", in line with his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Scott McTominay at "
+            },
+            {
+              "stat": "ev_717054de1d6521ab",
+              "display": "€40.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Scott McTominay is "
+            },
+            {
+              "stat": "ev_1484e2d4557a0247",
+              "display": "€24.1m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Alessandro Buongiorno at "
+            },
+            {
+              "stat": "ev_8e8e3ede1a667426",
+              "display": "€30.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Alessandro Buongiorno is "
+            },
+            {
+              "stat": "ev_7b0afa22d20e6698",
+              "display": "€20.6m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Napoli strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "According to The Guardian, Napoli have been linked with Nick Woltemade."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by The Guardian",
+          "sources": [
+            {
+              "outlet": "The Guardian",
+              "tier": 5,
+              "url": "https://www.theguardian.com/football/2026/aug/28/football-transfer-rumours-rafael-leao-to-aston-villa-harvey-elliott-to-napoli-or-lazio",
+              "official": false
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "text": "Past reports like this one about Nick Woltemade came true within half a year about one time in "
+            },
+            {
+              "stat": "ev_aa2394f2e43eb464",
+              "display": "15"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "According to The Guardian, Napoli have been linked with Harvey Elliot."
+            }
+          ],
+          "type": "attributed",
+          "status": "verified",
+          "reason": "published by The Guardian",
+          "sources": [
+            {
+              "outlet": "The Guardian",
+              "tier": 5,
+              "url": "https://www.theguardian.com/football/2026/aug/28/football-transfer-rumours-rafael-leao-to-aston-villa-harvey-elliott-to-napoli-or-lazio",
+              "official": false
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "text": "Napoli's biggest squad need is "
+            },
+            {
+              "stat": "ev_313482a366f827cc",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Federico Dimarco (Inter Milan), who is "
+            },
+            {
+              "stat": "ev_44c4fc3800328b51",
+              "display": "29"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Federico Dimarco plays for "
+            },
+            {
+              "stat": "ev_d87fa260e899324b",
+              "display": "Inter Milan"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Federico Dimarco has a market value of "
+            },
+            {
+              "stat": "ev_f4b052880c89aef6",
+              "display": "€50.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Federico Dimarco is "
+            },
+            {
+              "stat": "ev_d5e06ab8cd61421d",
+              "display": "€30.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Federico Dimarco to play "
+            },
+            {
+              "stat": "ev_8b57927a2f5b5ca5",
+              "display": "58%"
+            },
+            {
+              "text": " of Napoli's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Álvaro Carreras (Real Madrid), who is "
+            },
+            {
+              "stat": "ev_68a30d53a5d33d94",
+              "display": "24"
+            },
+            {
+              "text": " years old. Álvaro Carreras plays for "
+            },
+            {
+              "stat": "ev_fb1aa76600536413",
+              "display": "Real Madrid"
+            },
+            {
+              "text": ". Álvaro Carreras has "
+            },
+            {
+              "stat": "ev_0503e1c3da3b560f",
+              "display": "56"
+            },
+            {
+              "text": " months left on his contract. Álvaro Carreras has a market value of "
+            },
+            {
+              "stat": "ev_c9e1d24f1a5cd7a2",
+              "display": "€50.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Álvaro Carreras is "
+            },
+            {
+              "stat": "ev_f73c076ff0717410",
+              "display": "€34.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Álvaro Carreras to play "
+            },
+            {
+              "stat": "ev_02e137d50b0f24e6",
+              "display": "58%"
+            },
+            {
+              "text": " of Napoli's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Alejandro Balde (FC Barcelona), who is "
+            },
+            {
+              "stat": "ev_50a989ef061f8214",
+              "display": "23"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Alejandro Balde plays for "
+            },
+            {
+              "stat": "ev_3daaab7cea2381d0",
+              "display": "FC Barcelona"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Alejandro Balde has a market value of "
+            },
+            {
+              "stat": "ev_3fa37862ef481d4d",
+              "display": "€50.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Alejandro Balde is "
+            },
+            {
+              "stat": "ev_73ee11b624480327",
+              "display": "€34.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Alejandro Balde to play "
+            },
+            {
+              "stat": "ev_c6c20f2e5d88d81a",
+              "display": "57%"
+            },
+            {
+              "text": " of Napoli's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Dodô (ACF Fiorentina), who is "
+            },
+            {
+              "stat": "ev_87eda2592bb453e4",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dodô plays for "
+            },
+            {
+              "stat": "ev_0c1ea805bc350cb1",
+              "display": "ACF Fiorentina"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_6896a598537c37e6",
+              "display": "25%"
+            },
+            {
+              "text": " chance that ACF Fiorentina sell Dodô in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Dodô is "
+            },
+            {
+              "stat": "ev_3c0765b4f4d9f0eb",
+              "display": "€11.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_21d264f3fe806ed4",
+              "display": "0.6%"
+            },
+            {
+              "text": " chance that Dodô joins Napoli in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Juan Miranda (Bologna Football Club 1909), who is "
+            },
+            {
+              "stat": "ev_dbd0bdcc4dfdae93",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Napoli's second squad need is "
+            },
+            {
+              "stat": "ev_8b96d2d4c173b280",
+              "display": "defensive midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "According to The Guardian, Napoli have been linked with Matias Fernandez-Pardo.",
+          "status": "unverified",
+          "reason": "The Guardian's text does not support it"
+        },
+        {
+          "text": "Federico Dimarco has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Alejandro Balde has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Dodô has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_02e137d50b0f24e6": {
+      "value": 0.578,
+      "display": "0.58",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp786ad1c0988337",
+      "entity_name": "Álvaro Carreras",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0503e1c3da3b560f": {
+      "value": 56.0,
+      "display": "56",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp786ad1c0988337",
+      "entity_name": "Álvaro Carreras",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_063b48afda55e206": {
+      "value": 21.8,
+      "display": "21.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdb6b821adbee70",
+      "entity_name": "Oscar Højlund",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0c1ea805bc350cb1": {
+      "value": "ACF Fiorentina",
+      "display": "ACF Fiorentina",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0c6e5a36851fa815": {
+      "value": 0.106,
+      "display": "0.11",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0de6ff14c47e3acf": {
+      "value": 0.121,
+      "display": "0.12",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp060e54ce18174e",
+      "entity_name": "Matteo Politano",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_10286df4faf86458": {
+      "value": "WDWLL",
+      "display": "WDWLL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_10f8e236c8547588": {
+      "value": 7600000.0,
+      "display": "7600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp18f6a04e3cf33b",
+      "entity_name": "Mahamadou Nagida",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_135757c2fc59a923": {
+      "value": 11800000.0,
+      "display": "11800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1484e2d4557a0247": {
+      "value": 24100000.0,
+      "display": "24100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp652030ab6ed1f0",
+      "entity_name": "Scott McTominay",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_21d264f3fe806ed4": {
+      "value": 0.0063,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26daa1e6c9116be6": {
+      "value": 0.0031,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2769d63fd66f6454": {
+      "value": 8200000.0,
+      "display": "8200000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp83f0f1a9beaa76",
+      "entity_name": "Diogo Travassos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30c9135fc961aefb": {
+      "value": 60000000.0,
+      "display": "60000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp1d82458fa35eea",
+      "entity_name": "Rasmus Højlund",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_313482a366f827cc": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3232a64cbbf21dbb": {
+      "value": 21.3,
+      "display": "21.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp18f6a04e3cf33b",
+      "entity_name": "Mahamadou Nagida",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_33f6dfeb9b7d9a46": {
+      "value": 20500000.0,
+      "display": "20500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpdb6b821adbee70",
+      "entity_name": "Oscar Højlund",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3549baf24760f18b": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3a60e44d0ab66dcc": {
+      "value": "Bologna Football Club 1909",
+      "display": "Bologna Football Club 1909",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3c0765b4f4d9f0eb": {
+      "value": 11200000.0,
+      "display": "11200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3d8143aa4e8dde87": {
+      "value": 8100000.0,
+      "display": "8100000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpdd4c3b1b9c185b",
+      "entity_name": "Elijah Dijkstra",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3daaab7cea2381d0": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp862f6279e213f8",
+      "entity_name": "Álex Balde",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3fa37862ef481d4d": {
+      "value": 50000000.0,
+      "display": "50000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp862f6279e213f8",
+      "entity_name": "Álex Balde",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_44c4fc3800328b51": {
+      "value": 28.9,
+      "display": "28.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpe1bdced607cf61",
+      "entity_name": "Federico Dimarco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_466428f80f66467b": {
+      "value": 10.0,
+      "display": "10",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_4779385ff65f1126": {
+      "value": 0.945,
+      "display": "0.94",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp83f0f1a9beaa76",
+      "entity_name": "Diogo Travassos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_47a9d3705d786e06": {
+      "value": 50000000.0,
+      "display": "50000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpab43139b9b80f8",
+      "entity_name": "James Garner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_47ec141871c1fce0": {
+      "value": 0.006,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpfef44d17bfd941",
+      "entity_name": "Maximo Perrone",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4f13ffd927909384": {
+      "value": 0.523,
+      "display": "0.52",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rpdd4c3b1b9c185b",
+      "entity_name": "Elijah Dijkstra",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_50a989ef061f8214": {
+      "value": 23.0,
+      "display": "23",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp862f6279e213f8",
+      "entity_name": "Álex Balde",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_52b7357164a45572": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5c60fc70feec93ce": {
+      "value": 0.0023,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5c97878cb66894af": {
+      "value": 23.8,
+      "display": "23.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpfef44d17bfd941",
+      "entity_name": "Maximo Perrone",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6401fd8b4130d223": {
+      "value": "Stade Rennais FC",
+      "display": "Stade Rennais FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp18f6a04e3cf33b",
+      "entity_name": "Mahamadou Nagida",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_64220890122feb74": {
+      "value": 8000000.0,
+      "display": "8000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp83f0f1a9beaa76",
+      "entity_name": "Diogo Travassos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6427b95a9b21d560": {
+      "value": "2026-10-17T13:00:00+00:00",
+      "display": "2026-10-17T13:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "serie_a:2026-27:venezia:napoli",
+      "entity_name": "Venezia v Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:39.130902+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_6896a598537c37e6": {
+      "value": 0.252,
+      "display": "0.25",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_68a30d53a5d33d94": {
+      "value": 23.6,
+      "display": "23.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp786ad1c0988337",
+      "entity_name": "Álvaro Carreras",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6a3a846ae0275bcd": {
+      "value": "Parma Calcio 1913",
+      "display": "Parma Calcio 1913",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_717054de1d6521ab": {
+      "value": 40000000.0,
+      "display": "40000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp652030ab6ed1f0",
+      "entity_name": "Scott McTominay",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_73ee11b624480327": {
+      "value": 34000000.0,
+      "display": "34000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp862f6279e213f8",
+      "entity_name": "Álex Balde",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_779a4fd3f90db428": {
+      "value": 28200000.0,
+      "display": "28200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpfef44d17bfd941",
+      "entity_name": "Maximo Perrone",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7b0afa22d20e6698": {
+      "value": 20600000.0,
+      "display": "20600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp437888aec2123a",
+      "entity_name": "Alessandro Buongiorno",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7b5ce3b32972222b": {
+      "value": 20.2,
+      "display": "20.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpdd4c3b1b9c185b",
+      "entity_name": "Elijah Dijkstra",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7d92cee3a6ea3b7f": {
+      "value": 22.5,
+      "display": "22.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp83f0f1a9beaa76",
+      "entity_name": "Diogo Travassos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7f6daa86e4d0638c": {
+      "value": "2026-07-03",
+      "display": "2026-07-03",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q354529",
+      "entity_name": "Massimiliano Allegri",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q354529",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8206da24abd03335": {
+      "value": 9.0,
+      "display": "9",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_87e9473cccb081f5": {
+      "value": 11700000.0,
+      "display": "11700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_87eda2592bb453e4": {
+      "value": 27.9,
+      "display": "27.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp44e6f38bda2c64",
+      "entity_name": "Dodô",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8b281690daffe843": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp862f6279e213f8",
+      "entity_name": "Álex Balde",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8b57927a2f5b5ca5": {
+      "value": 0.582,
+      "display": "0.58",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpe1bdced607cf61",
+      "entity_name": "Federico Dimarco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8b96d2d4c173b280": {
+      "value": "defensive midfield",
+      "display": "defensive midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8bb84ec46fca9e8d": {
+      "value": 0.13,
+      "display": "0.13",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp8ff88417a4bf50",
+      "entity_name": "Antonio Vergara",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8c9974a8be52bb58": {
+      "value": "Moreirense FC",
+      "display": "Moreirense FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp83f0f1a9beaa76",
+      "entity_name": "Diogo Travassos",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8e8e3ede1a667426": {
+      "value": 30000000.0,
+      "display": "30000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp437888aec2123a",
+      "entity_name": "Alessandro Buongiorno",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_92dedea0bd5ebb57": {
+      "value": "AZ Alkmaar",
+      "display": "AZ Alkmaar",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpdd4c3b1b9c185b",
+      "entity_name": "Elijah Dijkstra",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9596fa85c33bb478": {
+      "value": 0.396,
+      "display": "0.40",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp18f6a04e3cf33b",
+      "entity_name": "Mahamadou Nagida",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a1e13a44c2f58916": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpe1bdced607cf61",
+      "entity_name": "Federico Dimarco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a7a9ea96982b99f6": {
+      "value": 0.124,
+      "display": "0.12",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp0795e3e881fec2",
+      "entity_name": "André Zambo Anguissa",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_aa2394f2e43eb464": {
+      "value": 15.0,
+      "display": "15",
+      "unit": null,
+      "metric": "one_in",
+      "entity_type": "rumour",
+      "entity_id": "e025e90ede033e5c-p5:nick woltemade",
+      "entity_name": "Nick Woltemade",
+      "source": "dugout_model:rumours",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ab01bf912c3d0dbc": {
+      "value": 20.1,
+      "display": "20.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b2067afba8485fdf": {
+      "value": 25.6,
+      "display": "25.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpab43139b9b80f8",
+      "entity_name": "James Garner",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c1d7d9beceb6682a": {
+      "value": 10700000.0,
+      "display": "10700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpdd4c3b1b9c185b",
+      "entity_name": "Elijah Dijkstra",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c6c20f2e5d88d81a": {
+      "value": 0.573,
+      "display": "0.57",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp862f6279e213f8",
+      "entity_name": "Álex Balde",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c6c5d3ecc4b366da": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp718468cd5afc4c",
+      "entity_name": "Sascha Britschgi",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c6fcbf9bb98874c3": {
+      "value": 9500000.0,
+      "display": "9500000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp18f6a04e3cf33b",
+      "entity_name": "Mahamadou Nagida",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c9e1d24f1a5cd7a2": {
+      "value": 50000000.0,
+      "display": "50000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp786ad1c0988337",
+      "entity_name": "Álvaro Carreras",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cdf0547e62a6e7aa": {
+      "value": 6.0,
+      "display": "6",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d5e06ab8cd61421d": {
+      "value": 30200000.0,
+      "display": "30200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe1bdced607cf61",
+      "entity_name": "Federico Dimarco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d87fa260e899324b": {
+      "value": "Inter Milan",
+      "display": "Inter Milan",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpe1bdced607cf61",
+      "entity_name": "Federico Dimarco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d8db33ac164615e4": {
+      "value": 10.0,
+      "display": "10",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "napoli",
+      "entity_name": "Napoli",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/SA/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:45.886949+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_daae18e51a82aaf3": {
+      "value": 0.117,
+      "display": "0.12",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dbd0bdcc4dfdae93": {
+      "value": 26.7,
+      "display": "26.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp20680f0a8a9167",
+      "entity_name": "Juan Miranda",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f4b052880c89aef6": {
+      "value": 50000000.0,
+      "display": "50000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpe1bdced607cf61",
+      "entity_name": "Federico Dimarco",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f591c7966a1323f5": {
+      "value": 51900000.0,
+      "display": "51900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp1d82458fa35eea",
+      "entity_name": "Rasmus Højlund",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f73c076ff0717410": {
+      "value": 34500000.0,
+      "display": "34500000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp786ad1c0988337",
+      "entity_name": "Álvaro Carreras",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fb1aa76600536413": {
+      "value": "Real Madrid",
+      "display": "Real Madrid",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp786ad1c0988337",
+      "entity_name": "Álvaro Carreras",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_8206da24abd03335",
+        "display": "9th",
+        "label": "league position",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_d8db33ac164615e4",
+        "display": "10",
+        "label": "league points",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_466428f80f66467b",
+        "display": "10",
+        "label": "league goals scored",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_cdf0547e62a6e7aa",
+        "display": "6",
+        "label": "league goals conceded",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_10286df4faf86458",
+        "display": "WDWLL",
+        "label": "recent league results, oldest first",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_7f6daa86e4d0638c",
+        "display": "3 July 2026",
+        "label": "appointed head coach of Napoli",
+        "subject": "Massimiliano Allegri"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_6427b95a9b21d560",
+        "display": "17 October 2026",
+        "label": "kick-off date",
+        "subject": "Venezia v Napoli"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_8bb84ec46fca9e8d",
+        "display": "13%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Antonio Vergara"
+      },
+      {
+        "stat": "ev_a7a9ea96982b99f6",
+        "display": "12%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "André Zambo Anguissa"
+      },
+      {
+        "stat": "ev_0de6ff14c47e3acf",
+        "display": "12%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Matteo Politano"
+      },
+      {
+        "stat": "ev_30c9135fc961aefb",
+        "display": "€60.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Rasmus Højlund"
+      },
+      {
+        "stat": "ev_f591c7966a1323f5",
+        "display": "€51.9m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Rasmus Højlund"
+      },
+      {
+        "stat": "ev_717054de1d6521ab",
+        "display": "€40.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Scott McTominay"
+      },
+      {
+        "stat": "ev_1484e2d4557a0247",
+        "display": "€24.1m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Scott McTominay"
+      },
+      {
+        "stat": "ev_8e8e3ede1a667426",
+        "display": "€30.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Alessandro Buongiorno"
+      },
+      {
+        "stat": "ev_7b0afa22d20e6698",
+        "display": "€20.6m",
+        "label": "estimated fair fee if sold to another Serie A club",
+        "subject": "Alessandro Buongiorno"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_aa2394f2e43eb464",
+        "display": "15",
+        "label": "rumour track record",
+        "subject": "Nick Woltemade"
+      },
+      {
+        "stat": "ev_313482a366f827cc",
+        "display": "full-back",
+        "label": "squad need, priority one",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_44c4fc3800328b51",
+        "display": "29",
+        "label": "age (best target)",
+        "subject": "Federico Dimarco"
+      },
+      {
+        "stat": "ev_d87fa260e899324b",
+        "display": "Inter Milan",
+        "label": "current club",
+        "subject": "Federico Dimarco"
+      },
+      {
+        "stat": "ev_a1e13a44c2f58916",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Federico Dimarco"
+      },
+      {
+        "stat": "ev_f4b052880c89aef6",
+        "display": "€50.0m",
+        "label": "market value",
+        "subject": "Federico Dimarco"
+      },
+      {
+        "stat": "ev_d5e06ab8cd61421d",
+        "display": "€30.2m",
+        "label": "estimated fair fee",
+        "subject": "Federico Dimarco"
+      },
+      {
+        "stat": "ev_8b57927a2f5b5ca5",
+        "display": "58%",
+        "label": "expected share of minutes at the club",
+        "subject": "Federico Dimarco"
+      },
+      {
+        "stat": "ev_68a30d53a5d33d94",
+        "display": "24",
+        "label": "age (best target)",
+        "subject": "Álvaro Carreras"
+      },
+      {
+        "stat": "ev_fb1aa76600536413",
+        "display": "Real Madrid",
+        "label": "current club",
+        "subject": "Álvaro Carreras"
+      },
+      {
+        "stat": "ev_0503e1c3da3b560f",
+        "display": "56",
+        "label": "months left on his contract",
+        "subject": "Álvaro Carreras"
+      },
+      {
+        "stat": "ev_c9e1d24f1a5cd7a2",
+        "display": "€50.0m",
+        "label": "market value",
+        "subject": "Álvaro Carreras"
+      },
+      {
+        "stat": "ev_f73c076ff0717410",
+        "display": "€34.5m",
+        "label": "estimated fair fee",
+        "subject": "Álvaro Carreras"
+      },
+      {
+        "stat": "ev_02e137d50b0f24e6",
+        "display": "58%",
+        "label": "expected share of minutes at the club",
+        "subject": "Álvaro Carreras"
+      },
+      {
+        "stat": "ev_50a989ef061f8214",
+        "display": "23",
+        "label": "age (best target)",
+        "subject": "Alejandro Balde"
+      },
+      {
+        "stat": "ev_3daaab7cea2381d0",
+        "display": "FC Barcelona",
+        "label": "current club",
+        "subject": "Alejandro Balde"
+      },
+      {
+        "stat": "ev_8b281690daffe843",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Alejandro Balde"
+      },
+      {
+        "stat": "ev_3fa37862ef481d4d",
+        "display": "€50.0m",
+        "label": "market value",
+        "subject": "Alejandro Balde"
+      },
+      {
+        "stat": "ev_73ee11b624480327",
+        "display": "€34.0m",
+        "label": "estimated fair fee",
+        "subject": "Alejandro Balde"
+      },
+      {
+        "stat": "ev_c6c20f2e5d88d81a",
+        "display": "57%",
+        "label": "expected share of minutes at the club",
+        "subject": "Alejandro Balde"
+      },
+      {
+        "stat": "ev_87eda2592bb453e4",
+        "display": "28",
+        "label": "age (realistic target)",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_0c1ea805bc350cb1",
+        "display": "ACF Fiorentina",
+        "label": "current club",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_6896a598537c37e6",
+        "display": "25%",
+        "label": "chance his club sells him in a window",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_52b7357164a45572",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_3c0765b4f4d9f0eb",
+        "display": "€11.2m",
+        "label": "estimated fair fee",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_21d264f3fe806ed4",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Dodô"
+      },
+      {
+        "stat": "ev_dbd0bdcc4dfdae93",
+        "display": "27",
+        "label": "age (realistic target)",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_3a60e44d0ab66dcc",
+        "display": "Bologna Football Club 1909",
+        "label": "current club",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_daae18e51a82aaf3",
+        "display": "12%",
+        "label": "chance his club sells him in a window",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_3549baf24760f18b",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_135757c2fc59a923",
+        "display": "€11.8m",
+        "label": "estimated fair fee",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_26daa1e6c9116be6",
+        "display": "0.3%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Juan Miranda"
+      },
+      {
+        "stat": "ev_ab01bf912c3d0dbc",
+        "display": "20",
+        "label": "age (realistic target)",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_6a3a846ae0275bcd",
+        "display": "Parma Calcio 1913",
+        "label": "current club",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_0c6e5a36851fa815",
+        "display": "11%",
+        "label": "chance his club sells him in a window",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_c6c5d3ecc4b366da",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_87e9473cccb081f5",
+        "display": "€11.7m",
+        "label": "estimated fair fee",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_5c60fc70feec93ce",
+        "display": "0.2%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Sascha Britschgi"
+      },
+      {
+        "stat": "ev_3232a64cbbf21dbb",
+        "display": "21",
+        "label": "age (gem target)",
+        "subject": "Mahamadou Nagida"
+      },
+      {
+        "stat": "ev_6401fd8b4130d223",
+        "display": "Stade Rennais FC",
+        "label": "current club",
+        "subject": "Mahamadou Nagida"
+      },
+      {
+        "stat": "ev_9596fa85c33bb478",
+        "display": "40%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Mahamadou Nagida"
+      },
+      {
+        "stat": "ev_10f8e236c8547588",
+        "display": "€7.6m",
+        "label": "estimated fair fee",
+        "subject": "Mahamadou Nagida"
+      },
+      {
+        "stat": "ev_c6fcbf9bb98874c3",
+        "display": "€9.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Mahamadou Nagida"
+      },
+      {
+        "stat": "ev_7d92cee3a6ea3b7f",
+        "display": "22",
+        "label": "age (gem target)",
+        "subject": "Diogo Travassos"
+      },
+      {
+        "stat": "ev_8c9974a8be52bb58",
+        "display": "Moreirense FC",
+        "label": "current club",
+        "subject": "Diogo Travassos"
+      },
+      {
+        "stat": "ev_4779385ff65f1126",
+        "display": "94%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Diogo Travassos"
+      },
+      {
+        "stat": "ev_64220890122feb74",
+        "display": "€8.0m",
+        "label": "estimated fair fee",
+        "subject": "Diogo Travassos"
+      },
+      {
+        "stat": "ev_2769d63fd66f6454",
+        "display": "€8.2m",
+        "label": "projected market value in a few seasons",
+        "subject": "Diogo Travassos"
+      },
+      {
+        "stat": "ev_7b5ce3b32972222b",
+        "display": "20",
+        "label": "age (gem target)",
+        "subject": "Elijah Dijkstra"
+      },
+      {
+        "stat": "ev_92dedea0bd5ebb57",
+        "display": "AZ Alkmaar",
+        "label": "current club",
+        "subject": "Elijah Dijkstra"
+      },
+      {
+        "stat": "ev_4f13ffd927909384",
+        "display": "52%",
+        "label": "share of his club's minutes over the last year",
+        "subject": "Elijah Dijkstra"
+      },
+      {
+        "stat": "ev_c1d7d9beceb6682a",
+        "display": "€10.7m",
+        "label": "estimated fair fee",
+        "subject": "Elijah Dijkstra"
+      },
+      {
+        "stat": "ev_3d8143aa4e8dde87",
+        "display": "€8.1m",
+        "label": "projected market value in a few seasons",
+        "subject": "Elijah Dijkstra"
+      },
+      {
+        "stat": "ev_8b96d2d4c173b280",
+        "display": "defensive midfield",
+        "label": "squad need, priority two",
+        "subject": "Napoli"
+      },
+      {
+        "stat": "ev_b2067afba8485fdf",
+        "display": "26",
+        "label": "age (best target, second need)",
+        "subject": "James Garner"
+      },
+      {
+        "stat": "ev_47a9d3705d786e06",
+        "display": "€50.0m",
+        "label": "market value",
+        "subject": "James Garner"
+      },
+      {
+        "stat": "ev_5c97878cb66894af",
+        "display": "24",
+        "label": "age (realistic target, second need)",
+        "subject": "Máximo Perrone"
+      },
+      {
+        "stat": "ev_779a4fd3f90db428",
+        "display": "€28.2m",
+        "label": "estimated fair fee",
+        "subject": "Máximo Perrone"
+      },
+      {
+        "stat": "ev_47ec141871c1fce0",
+        "display": "0.6%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Máximo Perrone"
+      },
+      {
+        "stat": "ev_063b48afda55e206",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Oscar Højlund"
+      },
+      {
+        "stat": "ev_33f6dfeb9b7d9a46",
+        "display": "€20.5m",
+        "label": "projected market value in a few seasons",
+        "subject": "Oscar Højlund"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 45,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 44,
+      "unverified": 4
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Bologna Football Club 1909"
+  ]
+}

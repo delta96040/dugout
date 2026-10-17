@@ -31,6 +31,7 @@ MODEL_DOCS = {
     "realism": f"{REPO}/docs/backtests/realism.md",
     "scout": f"{REPO}/packages/models/src/dugout_models/market.py",
     "potential": f"{REPO}/docs/backtests/potential.md",
+    "rumours": f"{REPO}/docs/backtests/rumours.md",
     "fit": f"{REPO}/docs/backtests/opportunity.md",
     "lookup": f"{REPO}/packages/models/src/dugout_models/lookup.py",
 }
@@ -84,6 +85,7 @@ class Toolbox:
         self.con, self.ledger = con, ledger
         self.now = now or datetime.now(UTC)
         self.season = con.execute("SELECT max(season) FROM matches").fetchone()[0]
+        self.club_league: dict[str, str] = dict(con.execute("SELECT club_id, league FROM clubs").fetchall())
         self.names: dict[str, str] = {}
         self.aliases: dict[str, list[str]] = {}
         self._load_names()
@@ -96,13 +98,20 @@ class Toolbox:
         extra: dict[str, list[str]] = {}
         for alias, slug in (cfg.get("club_aliases") or {}).items():
             extra.setdefault(slug, []).append(alias.title())
-        for cid, name in self.con.execute("SELECT club_id, name FROM clubs").fetchall():
+        clubs = self.con.execute("SELECT club_id, name FROM clubs").fetchall()
+        firsts = [name.split()[0] for _, name in clubs]
+        for cid, name in clubs:
             self.names[cid] = name
             words = [name, cid.replace("-", " ").title(), *extra.get(cid, [])]
             first = name.split()[0]
-            if len(first) > 4 and first not in ("Manchester",):
-                words.append(first)  # "Brighton", "Newcastle", "Tottenham"
+            if len(first) > 4 and firsts.count(first) == 1:
+                words.append(first)  # "Brighton", "Newcastle"; not "Manchester", "Borussia", "Olympique"
             self.aliases[cid] = sorted(set(words), key=len, reverse=True)
+        # league names are proper names too ("Ligue 1": the Stat Auditor allows its digit)
+        for key, block in cfg.items():
+            if isinstance(block, dict) and "provider_ids" in block:
+                self.names[f"league:{key}"] = block["name"]
+                self.aliases[f"league:{key}"] = [block["name"]]
         for pid, name, web in self.con.execute("SELECT player_id, name, web_name FROM players").fetchall():
             self.names[pid] = name
             self.aliases[pid] = _person_aliases(name, web)
@@ -133,10 +142,21 @@ class Toolbox:
             return f"{self.name(h)} v {self.name(a)}"
         return entity_id
 
+    def league(self, club: str) -> dict[str, Any]:
+        """The club's league block from config/leagues.yaml, with its key under `key`."""
+        from dugout_pipeline.clubs import league_config
+
+        key = self.club_league.get(club, "premier_league")
+        return {"key": key, **league_config(key)}
+
     def register(self, entity_id: str, name: str) -> None:
-        """Entities outside the warehouse tables (e.g. scouting candidates from other leagues)."""
+        """Entities outside the warehouse tables (e.g. scouting candidates from other leagues). A player already
+        known under another spelling ("Rassoul Ndiaye" in a squad, "Rassoul N'Diaye" on a shortlist) gets this one
+        as an alias too, in place: Fact-Check holds the same alias lists."""
         self.names.setdefault(entity_id, name)
-        self.aliases.setdefault(entity_id, _person_aliases(name, None))
+        known = self.aliases.setdefault(entity_id, [])
+        known += [a for a in _person_aliases(name, None) if a not in known]
+        known.sort(key=len, reverse=True)
 
     def match_aliases(self, match_id: str) -> None:
         _, _, h, a = match_id.split(":")
@@ -219,9 +239,15 @@ class Toolbox:
         return self.ledger.get(row[0]) if row else None
 
 
+_SUFFIX = {"jr", "jr.", "sr", "sr.", "junior", "júnior"}
+
+
 def _person_aliases(name: str, web: str | None) -> list[str]:
     parts = name.split()
-    out = {name, ascii_fold(name)}
+    out = {name, ascii_fold(name), name.rstrip(".")}  # "Koeman Jr." must still match before "'s"
+    if len(parts) > 2 and parts[-1].lower() in _SUFFIX:  # "Ronald Koeman Jr." -> "Ronald Koeman", "Koeman"
+        parts = parts[:-1]
+        out.add(" ".join(parts))
     if web:
         out |= {web, ascii_fold(web)}
     if len(parts) > 1:
@@ -259,11 +285,19 @@ def prob_gloss(p: float) -> str:
     return "long shot"
 
 
-def rank_gloss(pos: float, n: int = 20) -> str:
-    if pos <= 4:
-        return "Champions League places"
-    if pos <= 7:
-        return "European places"
-    if pos >= n - 2:
-        return "relegation zone"
-    return "mid-table"
+def rank_gloss(pos: float, n: int = 20, table: dict[str, int] | None = None) -> str:
+    """Words for a league position. Qualification and relegation places come from the league's `table` config;
+    a league without one gets plain words (top three, top half...) rather than places we have not checked."""
+    if table:
+        if pos <= table["champions_league"]:
+            return "Champions League places"
+        if pos <= table["europe"]:
+            return "European places"
+        if pos > n - table["relegation"]:
+            return "relegation zone"
+        return "mid-table"
+    if pos <= 3:
+        return "top three"
+    if pos > n - 3:
+        return "bottom three"
+    return "top half" if pos <= n / 2 else "bottom half"

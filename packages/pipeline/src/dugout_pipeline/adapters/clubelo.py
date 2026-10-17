@@ -12,6 +12,7 @@ from dugout_pipeline.db import upsert
 
 class ClubEloAdapter(SourceAdapter):
     name = "clubelo"
+    requires = "clubelo_country"
     tier = TIER_DATA
     ttl = 12 * HOUR
     rate, per = 1, 2.0

@@ -87,9 +87,11 @@ jobs:
           git push origin HEAD:main
 
       # Every section passes the Stat Auditor and Fact-Check or is withheld; a club with nothing verified keeps
-      # yesterday's dossier (its data_as_of shows the age).
+      # yesterday's dossier (its data_as_of shows the age). Premier League clubs every night, then the other leagues'
+      # clubs oldest dossier first until the budget is spent (the rest go first tomorrow), so the job stays well
+      # inside its 150-minute timeout (2026-10-16 run: ingest 32 min, publish 5, 20 dossiers 14).
       - name: Club dossiers
-        run: uv run dugout-agents dossier --all || echo "::warning::some clubs had nothing pass verification; kept their previous dossier"
+        run: uv run dugout-agents dossier --all --budget-minutes 60 || echo "::warning::some clubs had nothing pass verification; kept their previous dossier"
 
       - name: Scoreboard
         run: uv run dugout-models scoreboard
@@ -109,7 +111,7 @@ jobs:
 
       - name: Commit site data
         run: |
-          git add data/clubs data/scoreboard.json
+          git add data/clubs data/leagues.json data/scoreboard.json
           if git diff --cached --quiet; then echo "site data unchanged"; exit 0; fi
           git commit -m "Nightly data $(date -u +%F)"
           git pull --rebase origin main

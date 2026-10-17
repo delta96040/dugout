@@ -141,7 +141,10 @@ def find_players(tb: Toolbox, question: str, club: str | None = None) -> list[st
     """Player ids named in the question (longest alias first; current-club players preferred)."""
     found: dict[str, int] = {}
     for pid, aliases in tb.aliases.items():
-        if pid.startswith(("wikidata:", "football_data_org:", "club_name:")) or pid.count(":") == 3:
+        if (
+            pid.startswith(("wikidata:", "football_data_org:", "club_name:", "league:"))
+            or pid.count(":") == 3
+        ):
             continue  # managers, display-only names and matches
         if pid in tb.names and pid in _club_ids(tb):
             continue

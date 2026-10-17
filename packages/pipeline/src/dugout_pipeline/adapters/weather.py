@@ -67,8 +67,8 @@ class OpenMeteoAdapter(SourceAdapter):
         rows = []
         matches = con.execute(
             """SELECT m.match_id, m.kickoff_utc, c.lat, c.lon FROM matches m JOIN clubs c ON c.club_id = m.home_club_id
-               WHERE c.lat IS NOT NULL AND m.kickoff_utc BETWEEN ? AND ?""",
-            [now - timedelta(days=lookback_days), now + timedelta(days=horizon_days)],
+               WHERE c.lat IS NOT NULL AND m.league = ? AND m.kickoff_utc BETWEEN ? AND ?""",
+            [self.ctx.league, now - timedelta(days=lookback_days), now + timedelta(days=horizon_days)],
         ).fetchall()
         for mid, ko, lat, lon in matches:
             past = ko < now - timedelta(days=2)

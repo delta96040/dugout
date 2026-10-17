@@ -487,6 +487,7 @@ def fx_lookup(rates: dict[str, list[tuple[date, float]]], currency: str, on: dat
 
 class WikipediaTransfersAdapter(SourceAdapter):
     name = "wikipedia_transfers"
+    scope = "global"
     tier = TIER_DATA
     ttl = 1 * DAY
     rate, per = 1, 2.0  # polite: a handful of pages a night

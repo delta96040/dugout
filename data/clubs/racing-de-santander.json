@@ -1,0 +1,839 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "racing-de-santander",
+    "name": "Racing de Santander",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "la_liga",
+    "name": "La Liga",
+    "country": "Spain"
+  },
+  "generated_at": "2026-10-16T23:54:39+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Racing de Santander for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Racing de Santander are "
+          },
+          {
+            "stat": "ev_a2bcd0c4f2a43bb6",
+            "display": "15th"
+          },
+          {
+            "text": " in the La Liga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Racing de Santander have "
+          },
+          {
+            "stat": "ev_2730cb9170f2ac90",
+            "display": "8"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Racing de Santander's next league match is Osasuna v Racing de Santander on "
+          },
+          {
+            "stat": "ev_eb7de89043c09a49",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Racing de Santander's biggest squad need is "
+          },
+          {
+            "stat": "ev_7ebec435fe59368b",
+            "display": "winger"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Racing de Santander doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander are "
+            },
+            {
+              "stat": "ev_a2bcd0c4f2a43bb6",
+              "display": "15th"
+            },
+            {
+              "text": " in the La Liga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander have "
+            },
+            {
+              "stat": "ev_2730cb9170f2ac90",
+              "display": "8"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander have scored "
+            },
+            {
+              "stat": "ev_02fd806e0a64180b",
+              "display": "13"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander have conceded "
+            },
+            {
+              "stat": "ev_4e16f0738bed60e2",
+              "display": "23"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander's most recent league results read "
+            },
+            {
+              "stat": "ev_39cb2c527298bf7d",
+              "display": "DLLWL"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "José Alberto López Menéndez has been Racing de Santander's head coach since "
+            },
+            {
+              "stat": "ev_e37aba1a4000a80d",
+              "display": "13 December 2022"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Racing de Santander expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander's next league match is Osasuna v Racing de Santander on "
+            },
+            {
+              "stat": "ev_eb7de89043c09a49",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Racing de Santander's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Racing de Santander, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Racing de Santander players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Iván Martín's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_83f3e59e94075dad",
+              "display": "15%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate André Almeida's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_a61c40be1768962a",
+              "display": "12%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Pedro Felipe's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_44ba3cf65cf6adf0",
+              "display": "8%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Matteo Prati at "
+            },
+            {
+              "stat": "ev_5e1bcbaff87e360b",
+              "display": "€5.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Matteo Prati is "
+            },
+            {
+              "stat": "ev_633dec273da11bb9",
+              "display": "€3.3m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Racing de Santander strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander's biggest squad need is "
+            },
+            {
+              "stat": "ev_7ebec435fe59368b",
+              "display": "winger"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Racing de Santander's second squad need is "
+            },
+            {
+              "stat": "ev_e2c11bc380fb3ba8",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Hidden gem: Nico O'Reilly (Manchester City), who is "
+            },
+            {
+              "stat": "ev_7a4479be3133fa71",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Nico O'Reilly's market value to reach "
+            },
+            {
+              "stat": "ev_c86a746efaf821ae",
+              "display": "€91.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    }
+  ],
+  "stats": {
+    "ev_02fd806e0a64180b": {
+      "value": 13.0,
+      "display": "13",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_2730cb9170f2ac90": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_39cb2c527298bf7d": {
+      "value": "DLLWL",
+      "display": "DLLWL",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_44ba3cf65cf6adf0": {
+      "value": 0.079,
+      "display": "0.08",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpb0c15a334bc1da",
+      "entity_name": "Pedro Felipe",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4e16f0738bed60e2": {
+      "value": 23.0,
+      "display": "23",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_5e1bcbaff87e360b": {
+      "value": 5500000.0,
+      "display": "5500000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp16062cf0b91361",
+      "entity_name": "Matteo Prati",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-29T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_633dec273da11bb9": {
+      "value": 3300000.0,
+      "display": "3300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp16062cf0b91361",
+      "entity_name": "Matteo Prati",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7a4479be3133fa71": {
+      "value": 21.6,
+      "display": "21.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7ebec435fe59368b": {
+      "value": "winger",
+      "display": "winger",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_83f3e59e94075dad": {
+      "value": 0.146,
+      "display": "0.15",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpd1772f75e58eae",
+      "entity_name": "Iván Martín",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a2bcd0c4f2a43bb6": {
+      "value": 15.0,
+      "display": "15",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:32:08.332439+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_a61c40be1768962a": {
+      "value": 0.12,
+      "display": "0.12",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpcd01e38b1a7255",
+      "entity_name": "André Almeida",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c86a746efaf821ae": {
+      "value": 91900000.0,
+      "display": "91900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp9a708a0a6d58fe",
+      "entity_name": "Nico O'Reilly",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e2c11bc380fb3ba8": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "racing-de-santander",
+      "entity_name": "Racing de Santander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e37aba1a4000a80d": {
+      "value": "2022-12-13",
+      "display": "2022-12-13",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q58839682",
+      "entity_name": "José Alberto López Menéndez",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q58839682",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_eb7de89043c09a49": {
+      "value": "2026-10-18T12:00:00+00:00",
+      "display": "2026-10-18T12:00:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "la_liga:2026-27:osasuna:racing-de-santander",
+      "entity_name": "Osasuna v Racing de Santander",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/PD/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:32:01.268126+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_a2bcd0c4f2a43bb6",
+        "display": "15th",
+        "label": "league position",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_2730cb9170f2ac90",
+        "display": "8",
+        "label": "league points",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_02fd806e0a64180b",
+        "display": "13",
+        "label": "league goals scored",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_4e16f0738bed60e2",
+        "display": "23",
+        "label": "league goals conceded",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_39cb2c527298bf7d",
+        "display": "DLLWL",
+        "label": "recent league results, oldest first",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_e37aba1a4000a80d",
+        "display": "13 December 2022",
+        "label": "appointed head coach of Racing de Santander",
+        "subject": "José Alberto López Menéndez"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_eb7de89043c09a49",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Osasuna v Racing de Santander"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_83f3e59e94075dad",
+        "display": "15%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Iván Martín"
+      },
+      {
+        "stat": "ev_a61c40be1768962a",
+        "display": "12%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "André Almeida"
+      },
+      {
+        "stat": "ev_44ba3cf65cf6adf0",
+        "display": "8%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Pedro Felipe"
+      },
+      {
+        "stat": "ev_5e1bcbaff87e360b",
+        "display": "€5.5m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Matteo Prati"
+      },
+      {
+        "stat": "ev_633dec273da11bb9",
+        "display": "€3.3m",
+        "label": "estimated fair fee if sold to another La Liga club",
+        "subject": "Matteo Prati"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_7ebec435fe59368b",
+        "display": "winger",
+        "label": "squad need, priority one",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_e2c11bc380fb3ba8",
+        "display": "full-back",
+        "label": "squad need, priority two",
+        "subject": "Racing de Santander"
+      },
+      {
+        "stat": "ev_7a4479be3133fa71",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Nico O'Reilly"
+      },
+      {
+        "stat": "ev_c86a746efaf821ae",
+        "display": "€91.9m",
+        "label": "projected market value in a few seasons",
+        "subject": "Nico O'Reilly"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 20,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 20
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": []
+}

@@ -17,6 +17,7 @@ from dugout_agents import writer
 from dugout_agents.facts import Fact, Toolbox
 from dugout_agents.llm import LLM
 from dugout_agents.specialists import SPECIALISTS, find_club, find_players, route
+from dugout_agents.tools import RUMOUR_RECORD
 from dugout_verify.auditor import audit
 from dugout_verify.factcheck import FactChecker
 from dugout_verify.ledger import EvidenceLedger, render
@@ -175,6 +176,12 @@ def gate(sec: Section, ctx: Context) -> None:
             if c.status in ("conflicting", "unverified")
         ] + [{"text": f.message, "status": "audit_error", "reason": f.check} for f in rep.errors]
         return
+    # a rumour's track record ("past reports like this one about X") goes only where the rumour itself is published
+    rumours = " ".join(c.text for c in fc.claims if c.type == "attributed" and c.status == "verified")
+    for c in fc.claims:
+        if c.status == "verified" and (m := RUMOUR_RECORD.match(c.text)) and m.group(1) not in rumours:
+            c.status, c.reason = "unverified", "the rumour it is about was not confirmed"
+    sec.factcheck = fc.as_dict()
     keep = [c for c in fc.claims if c.status in ("verified", "analysis")]
     sec.withheld = [
         {"text": c.text, "status": c.status, "reason": c.reason}

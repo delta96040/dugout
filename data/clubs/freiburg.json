@@ -1,0 +1,2327 @@
+{
+  "schema": "dugout.club/1",
+  "club": {
+    "slug": "freiburg",
+    "name": "Freiburg",
+    "season": "2026-27"
+  },
+  "league": {
+    "key": "bundesliga",
+    "name": "Bundesliga",
+    "country": "Germany"
+  },
+  "generated_at": "2026-10-17T00:02:58+00:00",
+  "data_as_of": "2026-10-16T23:07:04+00:00",
+  "llm": null,
+  "summary": {
+    "agent": "director",
+    "title": "Sporting Director",
+    "question": "Summarise the dossier on Freiburg for the board.",
+    "status": "published",
+    "writer": "template",
+    "claims": [
+      {
+        "segments": [
+          {
+            "text": "Freiburg are "
+          },
+          {
+            "stat": "ev_530c04eb26a86cc5",
+            "display": "1st"
+          },
+          {
+            "text": " in the Bundesliga table."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Freiburg have "
+          },
+          {
+            "stat": "ev_8d4addc3cac380fd",
+            "display": "13"
+          },
+          {
+            "text": " points."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Freiburg's next league match is Bayer Leverkusen v Freiburg on "
+          },
+          {
+            "stat": "ev_b09252871a607984",
+            "display": "18 October 2026"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      },
+      {
+        "segments": [
+          {
+            "text": "Freiburg's biggest squad need is "
+          },
+          {
+            "stat": "ev_9847df3c72f90f93",
+            "display": "central midfield"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "type": "stat",
+        "status": "verified",
+        "reason": "bound to ledger rows",
+        "sources": []
+      }
+    ],
+    "withheld": []
+  },
+  "sections": [
+    {
+      "agent": "club",
+      "title": "Club & Tactics",
+      "question": "How are Freiburg doing this season, and how do they play under their head coach?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Freiburg are "
+            },
+            {
+              "stat": "ev_530c04eb26a86cc5",
+              "display": "1st"
+            },
+            {
+              "text": " in the Bundesliga table."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Freiburg have "
+            },
+            {
+              "stat": "ev_8d4addc3cac380fd",
+              "display": "13"
+            },
+            {
+              "text": " points."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Freiburg have scored "
+            },
+            {
+              "stat": "ev_94a6e92ae4999d22",
+              "display": "14"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Freiburg have conceded "
+            },
+            {
+              "stat": "ev_a6fc983091119d30",
+              "display": "4"
+            },
+            {
+              "text": " league goals."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Freiburg's most recent league results read "
+            },
+            {
+              "stat": "ev_7494490d6e40f4d3",
+              "display": "WDWWW"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Julian Schuster has been Freiburg's head coach since "
+            },
+            {
+              "stat": "ev_d1a6996c90a97e0f",
+              "display": "1 July 2024"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "match",
+      "title": "Next Match",
+      "question": "What should Freiburg expect from their next league match?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Freiburg's next league match is Bayer Leverkusen v Freiburg on "
+            },
+            {
+              "stat": "ev_b09252871a607984",
+              "display": "18 October 2026"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "lineup",
+      "title": "Predicted XI",
+      "question": "What is Freiburg's predicted lineup for the next match?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "news",
+      "title": "Team News",
+      "question": "Who is unavailable for Freiburg, and what is the latest news?",
+      "status": "empty",
+      "writer": "template",
+      "claims": [],
+      "withheld": []
+    },
+    {
+      "agent": "transfer",
+      "title": "Transfers & Values",
+      "question": "Which Freiburg players could be sold, and what are the key players worth?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "We estimate Max Rosenfelder's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_467e8774de0147f3",
+              "display": "17%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Matthias Ginter's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_dae4d1dc5b6df881",
+              "display": "16%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate Ifechukwu Ogbus's chance of being sold in a transfer window at "
+            },
+            {
+              "stat": "ev_18b2770ddc61cf5f",
+              "display": "14%"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Yuito Suzuki at "
+            },
+            {
+              "stat": "ev_90b2ab2353ed523f",
+              "display": "€24.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Yuito Suzuki is "
+            },
+            {
+              "stat": "ev_87b325b2ed7b18e8",
+              "display": "€19.9m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Patrick Osterhage at "
+            },
+            {
+              "stat": "ev_2606bf9a690ad56a",
+              "display": "€12.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Patrick Osterhage is "
+            },
+            {
+              "stat": "ev_27400e5deb6218f9",
+              "display": "€7.6m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Derry Scherhant at "
+            },
+            {
+              "stat": "ev_3e9491cf3f3cab4d",
+              "display": "€7.5m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Derry Scherhant is "
+            },
+            {
+              "stat": "ev_8aca23158eae0915",
+              "display": "€6.0m"
+            },
+            {
+              "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": []
+    },
+    {
+      "agent": "scout",
+      "title": "Recruitment",
+      "question": "Where should Freiburg strengthen, and who fits?",
+      "status": "published",
+      "writer": "template",
+      "claims": [
+        {
+          "segments": [
+            {
+              "text": "Freiburg's biggest squad need is "
+            },
+            {
+              "stat": "ev_9847df3c72f90f93",
+              "display": "central midfield"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Teun Koopmeiners (Juventus FC), who is "
+            },
+            {
+              "stat": "ev_546bba56d2e6b16a",
+              "display": "29"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Teun Koopmeiners plays for "
+            },
+            {
+              "stat": "ev_c2293fb9baf25428",
+              "display": "Juventus FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Teun Koopmeiners has a market value of "
+            },
+            {
+              "stat": "ev_c8d7ea81ee0f6c58",
+              "display": "€14.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Teun Koopmeiners is "
+            },
+            {
+              "stat": "ev_6fb13c6c80a9faaf",
+              "display": "€7.9m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Teun Koopmeiners to play "
+            },
+            {
+              "stat": "ev_2c9fde37f4fa3490",
+              "display": "56%"
+            },
+            {
+              "text": " of Freiburg's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Lewis Ferguson (Bologna Football Club 1909), who is "
+            },
+            {
+              "stat": "ev_b2ba2124fbfbaa42",
+              "display": "27"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lewis Ferguson plays for "
+            },
+            {
+              "stat": "ev_fc51125192f5323b",
+              "display": "Bologna Football Club 1909"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Lewis Ferguson has a market value of "
+            },
+            {
+              "stat": "ev_93bb7f496c43f77f",
+              "display": "€14.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Lewis Ferguson is "
+            },
+            {
+              "stat": "ev_c2ca677b5110177c",
+              "display": "€10.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Lewis Ferguson to play "
+            },
+            {
+              "stat": "ev_a65f58a53558c812",
+              "display": "54%"
+            },
+            {
+              "text": " of Freiburg's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Dream target: Benjamin Nygren (Celtic FC), who is "
+            },
+            {
+              "stat": "ev_acfca98d049e86f5",
+              "display": "25"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Benjamin Nygren plays for "
+            },
+            {
+              "stat": "ev_f49638664f45885e",
+              "display": "Celtic FC"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Benjamin Nygren has a market value of "
+            },
+            {
+              "stat": "ev_56c6ed9bbad4cd4e",
+              "display": "€14.0m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Benjamin Nygren is "
+            },
+            {
+              "stat": "ev_8ea567ece90cd631",
+              "display": "€12.1m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We project Benjamin Nygren to play "
+            },
+            {
+              "stat": "ev_97282db8c2d9f1d1",
+              "display": "47%"
+            },
+            {
+              "text": " of Freiburg's minutes."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: Aljoscha Kemlein (1.FC Union Berlin), who is "
+            },
+            {
+              "stat": "ev_ad0d7f2aec429b52",
+              "display": "22"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Aljoscha Kemlein plays for "
+            },
+            {
+              "stat": "ev_f1dadbb89785b0b8",
+              "display": "1.FC Union Berlin"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_cd18acb621aba2a6",
+              "display": "32%"
+            },
+            {
+              "text": " chance that 1.FC Union Berlin sell Aljoscha Kemlein in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Aljoscha Kemlein is "
+            },
+            {
+              "stat": "ev_a11373168aa3c015",
+              "display": "€8.2m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_746349bbbfee6302",
+              "display": "0.7%"
+            },
+            {
+              "text": " chance that Aljoscha Kemlein joins Freiburg in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Realistic target: András Schäfer (1.FC Union Berlin), who is "
+            },
+            {
+              "stat": "ev_e4ac1f01a6cba3a7",
+              "display": "28"
+            },
+            {
+              "text": " years old."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "András Schäfer plays for "
+            },
+            {
+              "stat": "ev_1ae2c2714e96b505",
+              "display": "1.FC Union Berlin"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "We estimate a "
+            },
+            {
+              "stat": "ev_a1ff7a8b6cacb7ee",
+              "display": "21%"
+            },
+            {
+              "text": " chance that 1.FC Union Berlin sell András Schäfer in a transfer window."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for András Schäfer is "
+            },
+            {
+              "stat": "ev_19ebee77ba0c308f",
+              "display": "€2.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Freiburg's second squad need is "
+            },
+            {
+              "stat": "ev_80d2f26b29304dc9",
+              "display": "full-back"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        }
+      ],
+      "withheld": [
+        {
+          "text": "Teun Koopmeiners has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: 0 independent source(s); need 2"
+        },
+        {
+          "text": "Lewis Ferguson has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Benjamin Nygren has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "Aljoscha Kemlein has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        },
+        {
+          "text": "András Schäfer has [number] months left on his contract.",
+          "status": "unverified",
+          "reason": "transfer clause: no relevant source found"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "ev_04db19e4ed562ee8": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpbbd803fc14975d",
+      "entity_name": "Teun Koopmeiners",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_06ff95bc33d1b0f9": {
+      "value": "Borussia Mönchengladbach",
+      "display": "Borussia Mönchengladbach",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpeb494c8e1ef40b",
+      "entity_name": "Philipp Sander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_10062700409568bb": {
+      "value": 0.15,
+      "display": "0.15",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rpeb494c8e1ef40b",
+      "entity_name": "Philipp Sander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_18b2770ddc61cf5f": {
+      "value": 0.141,
+      "display": "0.14",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp732ae62deb39e7",
+      "entity_name": "Ifechukwu Ogbus",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_19ebee77ba0c308f": {
+      "value": 2800000.0,
+      "display": "2800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp086fd74c0881d0",
+      "entity_name": "András Schafer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1ae2c2714e96b505": {
+      "value": "1.FC Union Berlin",
+      "display": "1.FC Union Berlin",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp086fd74c0881d0",
+      "entity_name": "András Schafer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2606bf9a690ad56a": {
+      "value": 12000000.0,
+      "display": "12000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpe2171e3d0f4a3e",
+      "entity_name": "Patrick Osterhage",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_27400e5deb6218f9": {
+      "value": 7600000.0,
+      "display": "7600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpe2171e3d0f4a3e",
+      "entity_name": "Patrick Osterhage",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2c9fde37f4fa3490": {
+      "value": 0.56,
+      "display": "0.56",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpbbd803fc14975d",
+      "entity_name": "Teun Koopmeiners",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2d37275748adb55b": {
+      "value": 0.0044,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp086fd74c0881d0",
+      "entity_name": "András Schafer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3e9491cf3f3cab4d": {
+      "value": 7500000.0,
+      "display": "7500000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp865957c3e2b89d",
+      "entity_name": "Derry Scherhant",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_467e8774de0147f3": {
+      "value": 0.171,
+      "display": "0.17",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp0c8fc36ee436a5",
+      "entity_name": "Max Rosenfelder",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4fd57cb2372cca60": {
+      "value": 0.0034,
+      "display": "0.00",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpeb494c8e1ef40b",
+      "entity_name": "Philipp Sander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_530c04eb26a86cc5": {
+      "value": 1.0,
+      "display": "1",
+      "unit": null,
+      "metric": "league_position",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_546bba56d2e6b16a": {
+      "value": 28.6,
+      "display": "28.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpbbd803fc14975d",
+      "entity_name": "Teun Koopmeiners",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_56c6ed9bbad4cd4e": {
+      "value": 14000000.0,
+      "display": "14000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp01c29fb65f0abf",
+      "entity_name": "Benjamin Nygren",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_59129f17a9b2011f": {
+      "value": 32.0,
+      "display": "32",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6053888435808974": {
+      "value": 21.8,
+      "display": "21.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6a59b72c28eaa34b": {
+      "value": 0.0099,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rpb55e023a72f26b",
+      "entity_name": "Joseph Scally",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6c72476c5c8b936e": {
+      "value": 23.6,
+      "display": "23.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpbbc7de576dd670",
+      "entity_name": "Samuel Dahl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_6fb13c6c80a9faaf": {
+      "value": 7900000.0,
+      "display": "7900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpbbd803fc14975d",
+      "entity_name": "Teun Koopmeiners",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_746349bbbfee6302": {
+      "value": 0.0067,
+      "display": "0.01",
+      "unit": null,
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7494490d6e40f4d3": {
+      "value": "WDWWW",
+      "display": "WDWWW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_80d2f26b29304dc9": {
+      "value": "full-back",
+      "display": "full-back",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_818e052fc6f584f5": {
+      "value": 44.0,
+      "display": "44",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp01c29fb65f0abf",
+      "entity_name": "Benjamin Nygren",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_87b325b2ed7b18e8": {
+      "value": 19900000.0,
+      "display": "19900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8aca23158eae0915": {
+      "value": 6000000.0,
+      "display": "6000000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp865957c3e2b89d",
+      "entity_name": "Derry Scherhant",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d4addc3cac380fd": {
+      "value": 13.0,
+      "display": "13",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_8ea567ece90cd631": {
+      "value": 12100000.0,
+      "display": "12100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp01c29fb65f0abf",
+      "entity_name": "Benjamin Nygren",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_90b2ab2353ed523f": {
+      "value": 24000000.0,
+      "display": "24000000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpb6fdef099094f8",
+      "entity_name": "Yuito Suzuki",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-27T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_93bb7f496c43f77f": {
+      "value": 14000000.0,
+      "display": "14000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp39d16a95739328",
+      "entity_name": "Lewis Ferguson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_94a6e92ae4999d22": {
+      "value": 14.0,
+      "display": "14",
+      "unit": null,
+      "metric": "league_goalsFor",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_97282db8c2d9f1d1": {
+      "value": 0.471,
+      "display": "0.47",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp01c29fb65f0abf",
+      "entity_name": "Benjamin Nygren",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_9847df3c72f90f93": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a11373168aa3c015": {
+      "value": 8200000.0,
+      "display": "8200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a1ff7a8b6cacb7ee": {
+      "value": 0.212,
+      "display": "0.21",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp086fd74c0881d0",
+      "entity_name": "András Schafer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a28610107527e186": {
+      "value": 3100000.0,
+      "display": "3100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpeb494c8e1ef40b",
+      "entity_name": "Philipp Sander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a65f58a53558c812": {
+      "value": 0.542,
+      "display": "0.54",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp39d16a95739328",
+      "entity_name": "Lewis Ferguson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a6fc983091119d30": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "freiburg",
+      "entity_name": "Freiburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:33:18.266267+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_acfca98d049e86f5": {
+      "value": 25.3,
+      "display": "25.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp01c29fb65f0abf",
+      "entity_name": "Benjamin Nygren",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ad0d7f2aec429b52": {
+      "value": 22.2,
+      "display": "22.20",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_af061d7b0ad4b4c7": {
+      "value": 8.0,
+      "display": "8",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp086fd74c0881d0",
+      "entity_name": "András Schafer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b09252871a607984": {
+      "value": "2026-10-18T13:30:00+00:00",
+      "display": "2026-10-18T13:30:00+00:00",
+      "unit": null,
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "bundesliga:2026-27:bayer-leverkusen:freiburg",
+      "entity_name": "Bayer Leverkusen v Freiburg",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/BL1/matches",
+      "source_tier": 2,
+      "fetched_at": "2026-10-16T22:33:11.210954+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_b2ba2124fbfbaa42": {
+      "value": 27.1,
+      "display": "27.10",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp39d16a95739328",
+      "entity_name": "Lewis Ferguson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b51d772a286fd2bb": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rp39d16a95739328",
+      "entity_name": "Lewis Ferguson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bd56f0ce8e14a0db": {
+      "value": 20.0,
+      "display": "20",
+      "unit": null,
+      "metric": "contract_months",
+      "entity_type": "player",
+      "entity_id": "rpeb494c8e1ef40b",
+      "entity_name": "Philipp Sander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c2293fb9baf25428": {
+      "value": "Juventus FC",
+      "display": "Juventus FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpbbd803fc14975d",
+      "entity_name": "Teun Koopmeiners",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c2ca677b5110177c": {
+      "value": 10200000.0,
+      "display": "10200000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp39d16a95739328",
+      "entity_name": "Lewis Ferguson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c8d7ea81ee0f6c58": {
+      "value": 14000000.0,
+      "display": "14000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpbbd803fc14975d",
+      "entity_name": "Teun Koopmeiners",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cd18acb621aba2a6": {
+      "value": 0.32,
+      "display": "0.32",
+      "unit": null,
+      "metric": "p_sold",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cd3e88e96b41e2de": {
+      "value": 23.8,
+      "display": "23.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpb55e023a72f26b",
+      "entity_name": "Joseph Scally",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d0c9337ed6939564": {
+      "value": 5400000.0,
+      "display": "5400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpb55e023a72f26b",
+      "entity_name": "Joseph Scally",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d1a6996c90a97e0f": {
+      "value": "2024-07-01",
+      "display": "2024-07-01",
+      "unit": null,
+      "metric": "appointed",
+      "entity_type": "manager",
+      "entity_id": "wikidata:Q66301",
+      "entity_name": "Julian Schuster",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q66301",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:34:21.269827+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_dae4d1dc5b6df881": {
+      "value": 0.158,
+      "display": "0.16",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp9c7908408e3364",
+      "entity_name": "Matthias Ginter",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dc18f72fe2be23b1": {
+      "value": 28.6,
+      "display": "28.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpeb494c8e1ef40b",
+      "entity_name": "Philipp Sander",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e408b0d01a772e1a": {
+      "value": 6400000.0,
+      "display": "6400000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp911a70d98a78b3",
+      "entity_name": "Thérence Koudou",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e4ac1f01a6cba3a7": {
+      "value": 27.5,
+      "display": "27.50",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp086fd74c0881d0",
+      "entity_name": "András Schafer",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f1dadbb89785b0b8": {
+      "value": "1.FC Union Berlin",
+      "display": "1.FC Union Berlin",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp8d483c836aa773",
+      "entity_name": "Aljoscha Kemlein",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f48e1e8851caf709": {
+      "value": 13000000.0,
+      "display": "13000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rpbbc7de576dd670",
+      "entity_name": "Samuel Dahl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f49638664f45885e": {
+      "value": "Celtic FC",
+      "display": "Celtic FC",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp01c29fb65f0abf",
+      "entity_name": "Benjamin Nygren",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fc51125192f5323b": {
+      "value": "Bologna Football Club 1909",
+      "display": "Bologna Football Club 1909",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp39d16a95739328",
+      "entity_name": "Lewis Ferguson",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-16T22:58:30.179697+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    }
+  },
+  "key_stats": {
+    "club": [
+      {
+        "stat": "ev_530c04eb26a86cc5",
+        "display": "1st",
+        "label": "league position",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_8d4addc3cac380fd",
+        "display": "13",
+        "label": "league points",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_94a6e92ae4999d22",
+        "display": "14",
+        "label": "league goals scored",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_a6fc983091119d30",
+        "display": "4",
+        "label": "league goals conceded",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_7494490d6e40f4d3",
+        "display": "WDWWW",
+        "label": "recent league results, oldest first",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_d1a6996c90a97e0f",
+        "display": "1 July 2024",
+        "label": "appointed head coach of Freiburg",
+        "subject": "Julian Schuster"
+      }
+    ],
+    "match": [
+      {
+        "stat": "ev_b09252871a607984",
+        "display": "18 October 2026",
+        "label": "kick-off date",
+        "subject": "Bayer Leverkusen v Freiburg"
+      }
+    ],
+    "lineup": [],
+    "news": [],
+    "transfer": [
+      {
+        "stat": "ev_467e8774de0147f3",
+        "display": "17%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Max Rosenfelder"
+      },
+      {
+        "stat": "ev_dae4d1dc5b6df881",
+        "display": "16%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Matthias Ginter"
+      },
+      {
+        "stat": "ev_18b2770ddc61cf5f",
+        "display": "14%",
+        "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
+        "subject": "Ifechukwu Ogbus"
+      },
+      {
+        "stat": "ev_90b2ab2353ed523f",
+        "display": "€24.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_87b325b2ed7b18e8",
+        "display": "€19.9m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Yuito Suzuki"
+      },
+      {
+        "stat": "ev_2606bf9a690ad56a",
+        "display": "€12.0m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Patrick Osterhage"
+      },
+      {
+        "stat": "ev_27400e5deb6218f9",
+        "display": "€7.6m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Patrick Osterhage"
+      },
+      {
+        "stat": "ev_3e9491cf3f3cab4d",
+        "display": "€7.5m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Derry Scherhant"
+      },
+      {
+        "stat": "ev_8aca23158eae0915",
+        "display": "€6.0m",
+        "label": "estimated fair fee if sold to another Bundesliga club",
+        "subject": "Derry Scherhant"
+      }
+    ],
+    "scout": [
+      {
+        "stat": "ev_9847df3c72f90f93",
+        "display": "central midfield",
+        "label": "squad need, priority one",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_546bba56d2e6b16a",
+        "display": "29",
+        "label": "age (best target)",
+        "subject": "Teun Koopmeiners"
+      },
+      {
+        "stat": "ev_c2293fb9baf25428",
+        "display": "Juventus FC",
+        "label": "current club",
+        "subject": "Teun Koopmeiners"
+      },
+      {
+        "stat": "ev_04db19e4ed562ee8",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Teun Koopmeiners"
+      },
+      {
+        "stat": "ev_c8d7ea81ee0f6c58",
+        "display": "€14.0m",
+        "label": "market value",
+        "subject": "Teun Koopmeiners"
+      },
+      {
+        "stat": "ev_6fb13c6c80a9faaf",
+        "display": "€7.9m",
+        "label": "estimated fair fee",
+        "subject": "Teun Koopmeiners"
+      },
+      {
+        "stat": "ev_2c9fde37f4fa3490",
+        "display": "56%",
+        "label": "expected share of minutes at the club",
+        "subject": "Teun Koopmeiners"
+      },
+      {
+        "stat": "ev_b2ba2124fbfbaa42",
+        "display": "27",
+        "label": "age (best target)",
+        "subject": "Lewis Ferguson"
+      },
+      {
+        "stat": "ev_fc51125192f5323b",
+        "display": "Bologna Football Club 1909",
+        "label": "current club",
+        "subject": "Lewis Ferguson"
+      },
+      {
+        "stat": "ev_b51d772a286fd2bb",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Lewis Ferguson"
+      },
+      {
+        "stat": "ev_93bb7f496c43f77f",
+        "display": "€14.0m",
+        "label": "market value",
+        "subject": "Lewis Ferguson"
+      },
+      {
+        "stat": "ev_c2ca677b5110177c",
+        "display": "€10.2m",
+        "label": "estimated fair fee",
+        "subject": "Lewis Ferguson"
+      },
+      {
+        "stat": "ev_a65f58a53558c812",
+        "display": "54%",
+        "label": "expected share of minutes at the club",
+        "subject": "Lewis Ferguson"
+      },
+      {
+        "stat": "ev_acfca98d049e86f5",
+        "display": "25",
+        "label": "age (best target)",
+        "subject": "Benjamin Nygren"
+      },
+      {
+        "stat": "ev_f49638664f45885e",
+        "display": "Celtic FC",
+        "label": "current club",
+        "subject": "Benjamin Nygren"
+      },
+      {
+        "stat": "ev_818e052fc6f584f5",
+        "display": "44",
+        "label": "months left on his contract",
+        "subject": "Benjamin Nygren"
+      },
+      {
+        "stat": "ev_56c6ed9bbad4cd4e",
+        "display": "€14.0m",
+        "label": "market value",
+        "subject": "Benjamin Nygren"
+      },
+      {
+        "stat": "ev_8ea567ece90cd631",
+        "display": "€12.1m",
+        "label": "estimated fair fee",
+        "subject": "Benjamin Nygren"
+      },
+      {
+        "stat": "ev_97282db8c2d9f1d1",
+        "display": "47%",
+        "label": "expected share of minutes at the club",
+        "subject": "Benjamin Nygren"
+      },
+      {
+        "stat": "ev_ad0d7f2aec429b52",
+        "display": "22",
+        "label": "age (realistic target)",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_f1dadbb89785b0b8",
+        "display": "1.FC Union Berlin",
+        "label": "current club",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_cd18acb621aba2a6",
+        "display": "32%",
+        "label": "chance his club sells him in a window",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_59129f17a9b2011f",
+        "display": "32",
+        "label": "months left on his contract",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_a11373168aa3c015",
+        "display": "€8.2m",
+        "label": "estimated fair fee",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_746349bbbfee6302",
+        "display": "0.7%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Aljoscha Kemlein"
+      },
+      {
+        "stat": "ev_e4ac1f01a6cba3a7",
+        "display": "28",
+        "label": "age (realistic target)",
+        "subject": "András Schäfer"
+      },
+      {
+        "stat": "ev_1ae2c2714e96b505",
+        "display": "1.FC Union Berlin",
+        "label": "current club",
+        "subject": "András Schäfer"
+      },
+      {
+        "stat": "ev_a1ff7a8b6cacb7ee",
+        "display": "21%",
+        "label": "chance his club sells him in a window",
+        "subject": "András Schäfer"
+      },
+      {
+        "stat": "ev_af061d7b0ad4b4c7",
+        "display": "8",
+        "label": "months left on his contract",
+        "subject": "András Schäfer"
+      },
+      {
+        "stat": "ev_19ebee77ba0c308f",
+        "display": "€2.8m",
+        "label": "estimated fair fee",
+        "subject": "András Schäfer"
+      },
+      {
+        "stat": "ev_2d37275748adb55b",
+        "display": "0.4%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "András Schäfer"
+      },
+      {
+        "stat": "ev_dc18f72fe2be23b1",
+        "display": "29",
+        "label": "age (realistic target)",
+        "subject": "Philipp Sander"
+      },
+      {
+        "stat": "ev_06ff95bc33d1b0f9",
+        "display": "Borussia Mönchengladbach",
+        "label": "current club",
+        "subject": "Philipp Sander"
+      },
+      {
+        "stat": "ev_10062700409568bb",
+        "display": "15%",
+        "label": "chance his club sells him in a window",
+        "subject": "Philipp Sander"
+      },
+      {
+        "stat": "ev_bd56f0ce8e14a0db",
+        "display": "20",
+        "label": "months left on his contract",
+        "subject": "Philipp Sander"
+      },
+      {
+        "stat": "ev_a28610107527e186",
+        "display": "€3.1m",
+        "label": "estimated fair fee",
+        "subject": "Philipp Sander"
+      },
+      {
+        "stat": "ev_4fd57cb2372cca60",
+        "display": "0.3%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Philipp Sander"
+      },
+      {
+        "stat": "ev_80d2f26b29304dc9",
+        "display": "full-back",
+        "label": "squad need, priority two",
+        "subject": "Freiburg"
+      },
+      {
+        "stat": "ev_6c72476c5c8b936e",
+        "display": "24",
+        "label": "age (best target, second need)",
+        "subject": "Samuel Dahl"
+      },
+      {
+        "stat": "ev_f48e1e8851caf709",
+        "display": "€13.0m",
+        "label": "market value",
+        "subject": "Samuel Dahl"
+      },
+      {
+        "stat": "ev_cd3e88e96b41e2de",
+        "display": "24",
+        "label": "age (realistic target, second need)",
+        "subject": "Joe Scally"
+      },
+      {
+        "stat": "ev_d0c9337ed6939564",
+        "display": "€5.4m",
+        "label": "estimated fair fee",
+        "subject": "Joe Scally"
+      },
+      {
+        "stat": "ev_6a59b72c28eaa34b",
+        "display": "1.0%",
+        "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
+        "subject": "Joe Scally"
+      },
+      {
+        "stat": "ev_6053888435808974",
+        "display": "22",
+        "label": "age (gem target, second need)",
+        "subject": "Thérence Koudou"
+      },
+      {
+        "stat": "ev_e408b0d01a772e1a",
+        "display": "€6.4m",
+        "label": "projected market value in a few seasons",
+        "subject": "Thérence Koudou"
+      }
+    ]
+  },
+  "verification": {
+    "stat_auditor": {
+      "ok": true,
+      "numbers_total": 46,
+      "numbers_untraceable": 0
+    },
+    "fact_check_claims": {
+      "verified": 46,
+      "unverified": 5
+    },
+    "sections_published": 5,
+    "sections_withheld": 0
+  },
+  "methods": {
+    "predictor": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+    "lineup": "https://github.com/delta96040/dugout/blob/main/docs/backtests/lineup.md",
+    "injury": "https://github.com/delta96040/dugout/blob/main/docs/backtests/injury.md",
+    "roles": "https://github.com/delta96040/dugout/blob/main/docs/backtests/roles.md",
+    "fingerprint": "https://github.com/delta96040/dugout/blob/main/docs/backtests/fingerprint.md",
+    "valuation": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+    "realism": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+    "scout": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+    "potential": "https://github.com/delta96040/dugout/blob/main/docs/backtests/potential.md",
+    "rumours": "https://github.com/delta96040/dugout/blob/main/docs/backtests/rumours.md",
+    "fit": "https://github.com/delta96040/dugout/blob/main/docs/backtests/opportunity.md",
+    "lookup": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/lookup.py"
+  },
+  "names": [
+    "Bologna Football Club 1909",
+    "1.FC Union Berlin"
+  ]
+}
