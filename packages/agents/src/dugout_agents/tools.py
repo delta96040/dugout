@@ -800,7 +800,7 @@ def rumour_record(tb: Toolbox, club: str, rumour_id: str, player: str) -> Fact |
 
 LEADS = {"best": "Dream target", "realistic": "Realistic target", "gem": "Hidden gem"}
 # What each pick shows for the top need: who, where, price (fair fee) and the numbers behind "why this player".
-# The second need gets one pick per list with its headline number only (KIND_HEADLINE).
+# Both needs get the same lists (the site shows a fix for each position).
 KIND_METRICS = {
     "best": {
         "age",
@@ -822,11 +822,6 @@ KIND_METRICS = {
         "contract_months",
     },
     "gem": {"age", "candidate_club", "fair_fee", "market_value", "proj_value_4y", "minutes_share_now"},
-}
-KIND_HEADLINE = {
-    "best": {"age", "market_value"},
-    "realistic": {"age", "fair_fee", "realism"},
-    "gem": {"age", "proj_value_4y"},
 }
 
 
@@ -923,8 +918,7 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
         # three lists per need: the best fit whatever the odds, the moves most likely to happen, young players
         # who should grow into the role; several names each for the top need, the leading name for the second
         picked: list[tuple[str, str, str, str]] = []
-        n_kind = per_need if rank == 1 else 1
-        metrics = KIND_METRICS if rank == 1 else KIND_HEADLINE
+        n_kind, metrics = per_need, KIND_METRICS  # both needs get full lists (the site shows a fix for each)
         which = "" if rank == 1 else ", second need"
         for kind in ("best", "realistic", "gem"):
             cands = tb.con.execute(

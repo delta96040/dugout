@@ -39,6 +39,8 @@ export interface StoryData {
 /** One name on one of the scout's lists, with the verified numbers behind "why him" (absent ones are omitted). */
 export interface Target {
   kind: "best" | "realistic" | "gem";
+  /** which squad need the list is for: 0 = the biggest, 1 = the second */
+  need: 0 | 1;
   name: string;
   club?: string;
   age?: StatRef;

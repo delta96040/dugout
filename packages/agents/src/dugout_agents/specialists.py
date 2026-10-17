@@ -21,6 +21,7 @@ class Specialist:
     dossier_question: str
     max_facts: int = 8  # sentences when writing from templates (a lineup needs all eleven)
     prose: bool = True  # False: always the templates (a lineup is a list; an LLM summary drops players)
+    writer_facts: int | None = None  # facts the writer sees (the rest still reach the site's key stats)
 
 
 def _club(tb: Toolbox, club: str, focus: list[str]) -> list[Fact]:
@@ -121,6 +122,9 @@ SPECIALISTS: dict[str, Specialist] = {
 for _name, _n in (("lineup", 14), ("news", 12), ("transfer", 15), ("scout", 31), ("club", 10)):
     SPECIALISTS[_name] = dataclasses.replace(SPECIALISTS[_name], max_facts=_n)
 SPECIALISTS["lineup"] = dataclasses.replace(SPECIALISTS["lineup"], prose=False)
+# the scout lists two needs x three lists x three names: the prose covers the top need, so the LLM prompt stays
+# within the free tier's tokens per minute; every name still reaches the site through the key stats
+SPECIALISTS["scout"] = dataclasses.replace(SPECIALISTS["scout"], writer_facts=60)
 
 # specialists that only answer about a named player; the dossier runs the six club-level ones
 PLAYER_ONLY = ("potential", "fit")

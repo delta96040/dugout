@@ -71,8 +71,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
                 <Shortlists
                   targets={targets}
                   buyer={d.club.name}
-                  need={need}
-                  gap={gaps(d)[0]}
+                  gaps={gaps(d)}
                   n={(x) => <Num stat={x.stat} display={x.display} />}
                 />
               </div>

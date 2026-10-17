@@ -91,82 +91,120 @@ function Why({
   );
 }
 
-/** The scout's three lists for the top need. Native <details> (one open at a time) keeps it short on a phone. */
+function Pick({
+  t,
+  rank,
+  buyer,
+  gap,
+  n,
+  compact,
+}: {
+  t: Target;
+  rank: number;
+  buyer: string;
+  gap?: Gap;
+  n: (s: StatRef) => ReactNode;
+  compact: boolean;
+}) {
+  const need = gap ? String(gap.need.stat.value) : undefined;
+  return (
+    <li>
+      <p className={`font-display leading-tight ${compact ? "text-xl" : "text-2xl"}`}>{t.name}</p>
+      <dl className="mt-0.5 flex flex-wrap gap-x-4 font-mono text-xs sm:text-sm">
+        {t.club && (
+          <div className="flex gap-1">
+            <dt className="sr-only">Club</dt>
+            <dd data-name>{t.club}</dd>
+          </div>
+        )}
+        {t.age && (
+          <div className="flex gap-1">
+            <dt className="text-pencil">Age</dt>
+            <dd>{n(t.age)}</dd>
+          </div>
+        )}
+        {t.price && (
+          <div className="flex gap-1">
+            <dt className="text-pencil">Price</dt>
+            <dd>{n(t.price)}</dd>
+          </div>
+        )}
+        {t.contract && (
+          <div className="flex gap-1">
+            <dt className="text-pencil">Contract</dt>
+            <dd>
+              {n(t.contract)} <span data-meta>months left</span>
+            </dd>
+          </div>
+        )}
+      </dl>
+      {compact ? (
+        <details className="mt-0.5 text-sm">
+          <summary className="mono-label cursor-pointer">Why him</summary>
+          <p className="mt-0.5">
+            <Why t={t} rank={rank} buyer={buyer} need={need} gap={gap} n={n} />
+          </p>
+        </details>
+      ) : (
+        <p className="mt-1 text-sm">
+          <span className="mono-label">Why · </span>
+          <Why t={t} rank={rank} buyer={buyer} need={need} gap={gap} n={n} />
+        </p>
+      )}
+    </li>
+  );
+}
+
+/** The scout's three lists for each of the club's two biggest needs. Native <details> (one open at a time across
+ *  both positions) keeps it short on a phone. */
 export default function Shortlists({
   targets,
   buyer,
-  need,
-  gap,
+  gaps,
   n,
   compact = false,
 }: {
   targets: Target[];
   buyer: string;
-  need?: string;
-  /** the top need's numbers: who a signing has to beat */
-  gap?: Gap;
+  /** the needs in order: their positions and who a signing has to beat */
+  gaps: Gap[];
   n: (s: StatRef) => ReactNode;
   compact?: boolean;
 }) {
+  const needs = ([0, 1] as const).filter((k) => targets.some((t) => t.need === k));
   return (
-    <div className="space-y-2">
-      {KINDS.map((kind, i) => {
-        const list = targets.filter((t) => t.kind === kind);
-        if (!list.length) return null;
+    <div className="space-y-4">
+      {needs.map((k) => {
+        const gap = gaps[k];
         return (
-          <details key={kind} name={`shortlist-${buyer}`} open={i === 0} className="border-t-2 border-ink pt-1">
-            <summary className={`mono-label cursor-pointer ${kind === "realistic" ? "text-red" : ""}`}>
-              {LIST_LABEL[kind]}
-            </summary>
-            <ol className={`mt-2 ${compact ? "space-y-2" : "space-y-4"}`}>
-              {list.map((t, j) => (
-                <li key={t.name}>
-                  <p className={`font-display leading-tight ${compact ? "text-xl" : "text-2xl"}`}>{t.name}</p>
-                  <dl className="mt-0.5 flex flex-wrap gap-x-4 font-mono text-xs sm:text-sm">
-                    {t.club && (
-                      <div className="flex gap-1">
-                        <dt className="sr-only">Club</dt>
-                        <dd data-name>{t.club}</dd>
-                      </div>
-                    )}
-                    {t.age && (
-                      <div className="flex gap-1">
-                        <dt className="text-pencil">Age</dt>
-                        <dd>{n(t.age)}</dd>
-                      </div>
-                    )}
-                    {t.price && (
-                      <div className="flex gap-1">
-                        <dt className="text-pencil">Price</dt>
-                        <dd>{n(t.price)}</dd>
-                      </div>
-                    )}
-                    {t.contract && (
-                      <div className="flex gap-1">
-                        <dt className="text-pencil">Contract</dt>
-                        <dd>
-                          {n(t.contract)} <span data-meta>months left</span>
-                        </dd>
-                      </div>
-                    )}
-                  </dl>
-                  {compact ? (
-                    <details className="mt-0.5 text-sm">
-                      <summary className="mono-label cursor-pointer">Why him</summary>
-                      <p className="mt-0.5">
-                        <Why t={t} rank={j} buyer={buyer} need={need} gap={gap} n={n} />
-                      </p>
-                    </details>
-                  ) : (
-                    <p className="mt-1 text-sm">
-                      <span className="mono-label">Why · </span>
-                      <Why t={t} rank={j} buyer={buyer} need={need} gap={gap} n={n} />
-                    </p>
-                  )}
-                </li>
-              ))}
-            </ol>
-          </details>
+          <section key={k} className="space-y-1">
+            {gap && (
+              <p className="font-display text-xl leading-tight sm:text-2xl">
+                {k === 0 ? "Biggest need" : "Second need"}: <span className="italic">{String(gap.need.stat.value)}</span>
+              </p>
+            )}
+            {KINDS.map((kind, i) => {
+              const list = targets.filter((t) => t.need === k && t.kind === kind);
+              if (!list.length) return null;
+              return (
+                <details
+                  key={kind}
+                  name={`shortlist-${buyer}`}
+                  open={k === 0 && i === 0}
+                  className="border-t-2 border-ink pt-1"
+                >
+                  <summary className={`mono-label cursor-pointer ${kind === "realistic" ? "text-red" : ""}`}>
+                    {LIST_LABEL[kind]}
+                  </summary>
+                  <ol className={`mt-2 ${compact ? "space-y-2" : "space-y-4"}`}>
+                    {list.map((t, j) => (
+                      <Pick key={t.name} t={t} rank={j} buyer={buyer} gap={gap} n={n} compact={compact} />
+                    ))}
+                  </ol>
+                </details>
+              );
+            })}
+          </section>
         );
       })}
       <p className="mono-label text-pencil">

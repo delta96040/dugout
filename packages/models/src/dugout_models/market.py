@@ -293,6 +293,7 @@ class Market:
             features=realism.MOBILITY,  # a feature change rebuilds the cached frame
             clubs="dated",  # the club on 1 June from the club timeline (realism.md, 2026-10-17)
             covered_only=realism.COVERED_ONLY,
+            tables="raw",  # frames built from Market's string-id tables (broken, maybe cached) are not reused
         )
         snap = snap.dropna(subset=realism.MOBILITY)
         self.mob = realism.mobility_model().fit(snap[realism.MOBILITY], snap.moved)
@@ -303,7 +304,10 @@ class Market:
             years=[2015, 2025],
             features=realism.DESTINATION,
             clubs="dated",
+            tables="raw",
         )
+        if len(pairs.dropna(subset=realism.DESTINATION)) == 0 or len(snap) == 0:
+            raise ValueError("realism training frames are empty: check club id types (market.py tables())")
         pairs = pairs.dropna(subset=realism.DESTINATION)
         self.dest = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)).fit(
             pairs[realism.DESTINATION], pairs.label

@@ -97,7 +97,7 @@ def build_graph(ctx: Context):
                 role=spec.role,
                 club=tb.name(club),
                 question=question,
-                facts=facts,
+                facts=facts[: spec.writer_facts] if spec.writer_facts else facts,
                 ledger=ctx.ledger,
                 checker=ctx.checker,
                 allowed_names=ctx.allowed_names(),
