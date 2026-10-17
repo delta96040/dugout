@@ -8,8 +8,78 @@ export const LIST_LABEL: Record<Target["kind"], string> = {
   gem: "Hidden gems · young, rising",
 };
 
-/** Why this name is on this list, specific to him and to the buyer: the player he would have to beat, what he has
- *  played, his contract, how his odds compare. Every number is a verified figure. */
+const ATTACKING = new Set(["centre-forward", "winger", "central midfield"]);
+
+/** What he produces, in the numbers that matter for the position (free data has goals, assists and minutes for
+ *  every league; no passing or defending figures). */
+function Output({ t, need, seller, n }: { t: Target; need?: string; seller: ReactNode; n: (s: StatRef) => ReactNode }) {
+  const league = t.gaLeague ? <span data-name>{t.gaLeague}</span> : "his league";
+  const r = t.gaRank ? Number(t.gaRank.stat.value) : NaN;
+  // a ranking is a selling point only above the middle; below it, say so plainly
+  const rank =
+    t.gaRank &&
+    (r >= 0.5 ? (
+      <>
+        , more goal involvement than {n(t.gaRank)} of players at his position in {league}
+      </>
+    ) : (
+      <>
+        ; for goals and assists he is behind most players at his position in {league} (ahead of {n(t.gaRank)})
+      </>
+    ));
+  const some = (s?: StatRef) => !!s && Number(s.stat.value) > 0;
+  if (need && ATTACKING.has(need) && (some(t.goals) || some(t.assists)))
+    return (
+      <>
+        {" "}
+        He scores {n(t.goals!)} and sets up {n(t.assists!)} league goals per full match{rank}.
+      </>
+    );
+  if (need === "full-back" && t.assists)
+    return some(t.assists) ? (
+      <>
+        {" "}
+        From full-back he sets up {n(t.assists)} league goals per full match{rank}.
+      </>
+    ) : (
+      <> He has not set up a league goal in the matches on record{rank}.</>
+    );
+  if (t.minutesLastYear)
+    return (
+      <>
+        {" "}
+        A regular: {n(t.minutesLastYear)} minutes for {seller} in the past year&apos;s matches on record
+        {t.caps && Number(t.caps.stat.value) > 0 ? <>, and {n(t.caps)} international caps</> : null}.
+      </>
+    );
+  return null;
+}
+
+/** How he compares with the player he would replace, and what he adds to the side. */
+function Complement({ t, gap, buyer, n }: { t: Target; gap?: Gap; buyer: string; n: (s: StatRef) => ReactNode }) {
+  if (!gap?.barPlayer) return null;
+  const mine = Number(t.goals?.stat.value ?? NaN) + Number(t.assists?.stat.value ?? NaN);
+  const theirs = Number(gap.barGa?.stat.value ?? NaN);
+  const bar = <span data-name>{gap.barPlayer}</span>;
+  if (mine === mine && theirs === theirs && gap.barGa && mine > theirs * 1.2 + 0.02)
+    return (
+      <>
+        {" "}
+        That is more than {bar}, the last of {buyer}&apos;s regular starters there ({n(gap.barGa)} goals and assists per
+        full match), so he would add end product.
+      </>
+    );
+  return (
+    <>
+      {" "}
+      He would compete with {bar}
+      {gap.barValue && <> ({n(gap.barValue)})</>} for a starting place.
+    </>
+  );
+}
+
+/** Why this name is on this list: how he plays and produces, how he compares with the player he would replace, and
+ *  the list's own reason (the best available, a gettable move, a rising player). Every number is a verified figure. */
 const MOST = ["The most", "The second most", "The third most", "The fourth most", "The fifth most"];
 const LIKELIEST = ["The likeliest", "The second likeliest", "The third likeliest", "The fourth likeliest"];
 
@@ -30,64 +100,80 @@ function Why({
 }) {
   // club names can carry digits ("Parma Calcio 1913"): marked as names for the site's number check
   const seller = t.club ? <span data-name>{t.club}</span> : "his club";
-  const bar = gap?.barPlayer ? (
-    <>
-      <span data-name>{gap.barPlayer}</span>
-      {gap.barValue && <> ({n(gap.barValue)})</>}
-    </>
-  ) : null;
-  const played = t.minutesLastYear && (
-    <> In the matches on record for the past year he played {n(t.minutesLastYear)} minutes for {seller}.</>
-  );
   const months = t.contract ? Number(t.contract.stat.value) : NaN;
   const contract =
     t.contract && months <= 18 ? (
       <> Only {n(t.contract)} months are left on his contract, which brings the price down.</>
     ) : null;
-  if (t.kind === "best")
-    return (
+  const lead =
+    t.kind === "best" ? (
       <>
         {MOST[rank] ? `${MOST[rank]} valuable regular starter` : "One of the most valuable regular starters"} we found
         {need ? ` at ${need}` : ""}
-        {t.marketValue && <> (market value {n(t.marketValue)})</>}.{played}
-        {t.minutesThere && (
-          <>
-            {" "}
-            He would start ahead of {bar ?? <>{buyer}&apos;s current options</>}: we expect him to play{" "}
-            {n(t.minutesThere)} of {buyer}&apos;s minutes.
-          </>
-        )}
-        {contract}
+        {t.marketValue && <> (market value {n(t.marketValue)})</>}.
       </>
-    );
-  if (t.kind === "realistic")
-    return (
+    ) : t.kind === "realistic" ? (
       <>
-        Worth {t.marketValue ? n(t.marketValue) : "more"}, more than {bar ?? <>{buyer}&apos;s last regular starter there</>}
-        , so he would be an upgrade.{played} {seller} sell players like him more often than most
+        A move that can happen: {seller} sell players like him more often than most
         {t.pSold && <> ({n(t.pSold)} chance in a window)</>}, and players tend to move up to richer clubs like {buyer}.
-        {contract}
-        {t.chance && (
-          <>
-            {" "}
-            {LIKELIEST[rank] ?? "One of the likeliest"} move of those we checked ({n(t.chance)} in a window; any one move
-            is a long shot).
-          </>
-        )}
+      </>
+    ) : (
+      <>
+        {t.age ? <>Aged {n(t.age)} and</> : "Young and"} already a regular
+        {t.minutesNow && <> ({n(t.minutesNow)} of {seller}&apos;s minutes)</>}
+        {t.projected && <>, projected to be worth {n(t.projected)} in a few seasons</>}.
       </>
     );
   return (
     <>
-      {t.age ? <>Aged {n(t.age)} and</> : "Young and"} already a regular
-      {t.minutesNow && <> ({n(t.minutesNow)} of {seller}&apos;s minutes over the past year)</>}.
-      {t.marketValue && (
+      {lead}
+      <Output t={t} need={need} seller={seller} n={n} />
+      <Complement t={t} gap={gap} buyer={buyer} n={n} />
+      {t.kind === "best" && t.minutesThere && (
         <>
           {" "}
-          Worth {n(t.marketValue)} today{bar ? <>, less than {bar}</> : null}
-          {t.projected && <>, and projected to reach {n(t.projected)} in a few seasons</>}.
+          We expect him to play {n(t.minutesThere)} of {buyer}&apos;s minutes.
+        </>
+      )}
+      {contract}
+      {t.kind === "realistic" && t.chance && (
+        <>
+          {" "}
+          {LIKELIEST[rank] ?? "One of the likeliest"} move of those we checked ({n(t.chance)} in a window; any one move
+          is a long shot).
         </>
       )}
     </>
+  );
+}
+
+/** One line on how he plays: where he starts, his stronger foot, height, caps. */
+function Profile({ t, n }: { t: Target; n: (s: StatRef) => ReactNode }) {
+  const bits: ReactNode[] = [];
+  if (t.positions) bits.push(<span key="p">Plays {t.positions}</span>);
+  if (t.foot) bits.push(<span key="f">{t.foot === "both" ? "two-footed" : `${t.foot}-footed`}</span>);
+  if (t.height)
+    bits.push(
+      <span key="h">
+        {n(t.height)} <span data-meta>cm</span>
+      </span>,
+    );
+  if (t.caps && Number(t.caps.stat.value) > 0)
+    bits.push(
+      <span key="c">
+        {n(t.caps)} <span data-meta>caps</span>
+      </span>,
+    );
+  if (!bits.length) return null;
+  return (
+    <p className="mt-0.5 font-mono text-xs text-pencil">
+      {bits.map((b, i) => (
+        <span key={i}>
+          {i > 0 && " · "}
+          {b}
+        </span>
+      ))}
+    </p>
   );
 }
 
@@ -138,6 +224,7 @@ function Pick({
           </div>
         )}
       </dl>
+      <Profile t={t} n={n} />
       {compact ? (
         <details className="mt-0.5 text-sm">
           <summary className="mono-label cursor-pointer">Why him</summary>

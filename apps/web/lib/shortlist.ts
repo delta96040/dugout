@@ -5,6 +5,8 @@ import { displays, type Dossier } from "@/lib/data";
 
 export const KINDS: Target["kind"][] = ["best", "realistic", "gem"];
 
+const text = (s?: StatRef) => (s ? String(s.stat.value) : undefined);
+
 export function shortlists(d: Dossier): Target[] {
   const disp = displays(d);
   const ref = (id: string): StatRef => ({ id, stat: d.stats[id], display: disp[id] ?? d.stats[id].display });
@@ -31,6 +33,14 @@ export function shortlists(d: Dossier): Target[] {
         minutesThere: fact("expected share of minutes at the club"),
         minutesNow: fact("share of his club's minutes"),
         minutesLastYear: fact("minutes played in the past year"),
+        goals: fact("league goals per full match"),
+        assists: fact("league assists per full match"),
+        gaRank: fact("share of players at his position in his league"),
+        gaLeague: text(fact("league of that comparison")),
+        foot: text(fact("stronger foot")),
+        height: fact("height in centimetres"),
+        caps: fact("international caps"),
+        positions: text(fact("positions he starts at")),
         pSold: fact("chance his club sells him"),
         chance: fact("chance the move happens"),
         projected: fact("projected market value"),
@@ -53,6 +63,8 @@ export interface Gap {
   /** the last regular starter there: who a signing has to beat to start */
   barPlayer?: string;
   barValue?: StatRef;
+  /** the last regular starter's league goals and assists per full match */
+  barGa?: StatRef;
 }
 
 export function gaps(d: Dossier): Gap[] {
@@ -82,6 +94,7 @@ export function gaps(d: Dossier): Gap[] {
       veterans: fact("share of the options who are veterans"),
       barPlayer: bar ? String(bar.stat.value) : undefined,
       barValue: fact("last regular starter's market value"),
+      barGa: fact("last regular starter's goals and assists per full match"),
     });
   }
   return out;

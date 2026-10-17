@@ -54,6 +54,16 @@ export interface Target {
   minutesNow?: StatRef;
   /** minutes in the past year's matches on record */
   minutesLastYear?: StatRef;
+  /** league goals and assists per full match, and his rank for both at his position in his league */
+  goals?: StatRef;
+  assists?: StatRef;
+  gaRank?: StatRef;
+  gaLeague?: string;
+  foot?: string;
+  height?: StatRef;
+  caps?: StatRef;
+  /** positions he starts at (Transfermarkt line-ups) */
+  positions?: string;
   /** chance his club sells him in a window */
   pSold?: StatRef;
   /** chance this move happens in a window */
