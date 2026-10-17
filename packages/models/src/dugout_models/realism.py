@@ -131,8 +131,12 @@ def snapshots(
         mins = season.groupby("player_id").minutes_played.sum()
         club_games = season.groupby("player_club_id").date.nunique()
         if dated and as_of is None:
-            v["club_id"] = pd.array(
-                [_club(people.club_on(int(p), d0)[0]) for p in v.player_id], dtype="Int64"
+            ids = pd.array([_club(people.club_on(int(p), d0)[0]) for p in v.player_id], dtype="Int64")
+            # the same id type as the tables it is compared with: Market passes string ids (market.py)
+            v["club_id"] = (
+                ids
+                if ap.player_club_id.dtype != object
+                else pd.Series(ids, index=v.index).astype(str).where(lambda s: s != "<NA>", None)
             )
         else:
             v["club_id"] = v.current_club_id
