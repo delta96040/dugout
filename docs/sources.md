@@ -96,7 +96,7 @@ Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-res
 
 | Source | Nightly | Injuries job (each, ×6/day) | Daily total | Limit |
 |---|---|---|---|---|
-| API-Football | 3 fixture-date calls + ≤ 10 fixture stats + 2 injuries + lineups on match days ≈ 5–25 | ≈ 5 (cached) | ≤ 60 | 90 (100 minus 10 reserve) |
+| API-Football | 3 fixture-date calls + ≤ 10 fixture stats + 2 injuries + lineups on match days ≈ 5–25; other leagues: 1 lineup call per finished match (≈ 20–25 after a Saturday), date and injury lists shared | ≈ 5 (cached) | ≤ 75 | 90 (100 minus 10 reserve; other leagues stop at 30 left) |
 | football-data.org | 18 (3 per league, 6 leagues; ~3.5 min at 8/min) | 0 | 18 | 10/min |
 | Guardian | 20 | 0 | 20 | 500/day |
 | FPL | 3 + finished gameweeks (cached 30 d) | 3 | ≈ 25 | none published |
@@ -111,3 +111,13 @@ Players without a Reep id keep a provider-scoped id (`opta:<id>`) and are re-res
   challenge (403) or disallowing; soccerdata's own releases describe CAPTCHA and anti-bot workarounds.
 - **Lineups and positions**: transfermarkt-datasets `game_lineups` (CC0) gives every starter's position up to July
   2026; API-Football's free daily window covers lineups (with formation) from this season on.
+
+### Other leagues (2026-10-17)
+
+- football-data.co.uk: SP1, I1, D1, F1, N1 results and closing odds, 2015-16 onward (forecast history and benchmark).
+- API-Football (free plan): the `fixtures?date` and `injuries?date` lists the Premier League already fetches cover
+  every league; lineups cost one call per finished match (the `ids` batch parameter is not on the free plan).
+  football-data.org's free tier has no lineups.
+- News: BBC Sport European football RSS. Guardian pages are not used for these leagues: theguardian.com's robots.txt
+  says its content may not be used for LLM, machine-learning or AI purposes (the Premier League's existing Guardian
+  API and RSS use predates this check and should be reviewed).

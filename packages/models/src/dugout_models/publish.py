@@ -62,78 +62,97 @@ def backtested(model: str) -> list[str]:
 
 
 # ---- match predictor ---------------------------------------------------------------------------------------
+def forecast_leagues() -> dict[str, str]:
+    """League -> forecast it publishes: "predictor" (the stack) where it beat Elo on every score in both test
+    seasons, "elo" (the Elo baseline, the simpler of the two) where the stack did not (docs/backtests/predictor_*)."""
+    out = {lg: "elo" for lg in backtested("elo_forecast")}
+    out.update({lg: "predictor" for lg in backtested("predictor")})
+    return out
+
+
 def predictions(con: duckdb.DuckDBPyConnection, now: datetime, days: int = 21) -> list[dict]:
+    rows: list[dict] = []
+    for league, kind in forecast_leagues().items():
+        rows += _league_predictions(con, now, days, league, kind)
+    return rows
+
+
+def _league_predictions(
+    con: duckdb.DuckDBPyConnection, now: datetime, days: int, league: str, kind: str
+) -> list[dict]:
     from dugout_models.backtest import FIRST_TRAIN_SEASON, PRIMARY, build_frame
     from dugout_models.dixon_coles import fit_map
-    from dugout_models.elo import elo_state
+    from dugout_models.elo import EloOutcomeModel, elo_state
     from dugout_models.features import XG_WEIGHT, promoted_priors
     from dugout_models.predictor import StackedPredictor
 
     assert PRIMARY == "stack_pre_lineup"
-    m = build_frame(con)
-    model = StackedPredictor().fit(m[m.season >= FIRST_TRAIN_SEASON])
     up = con.execute(
         """SELECT match_id, season, kickoff_utc, home_club_id AS home, away_club_id AS away FROM matches
-           WHERE status = 'scheduled' AND kickoff_utc >= ? AND kickoff_utc < ? AND list_contains(?, league)
+           WHERE status = 'scheduled' AND kickoff_utc >= ? AND kickoff_utc < ? AND league = ?
            ORDER BY kickoff_utc""",
-        [now, now + pd.Timedelta(days=days), backtested("predictor")],
+        [now, now + pd.Timedelta(days=days), league],
     ).df()
     if up.empty:
         return []
+    m = build_frame(con, league)
+    train = m[m.season >= FIRST_TRAIN_SEASON]
     elo = elo_state(m)
-    t0 = pd.Timestamp(now.date())
-    mm = m.copy()
-    hx, ax = mm.home_xg.notna(), mm.away_xg.notna()
-    mm["home_t"] = np.where(
-        hx, (1 - XG_WEIGHT) * mm.home_goals + XG_WEIGHT * mm.home_xg.fillna(0), mm.home_goals
-    )
-    mm["away_t"] = np.where(
-        ax, (1 - XG_WEIGHT) * mm.away_goals + XG_WEIGHT * mm.away_xg.fillna(0), mm.away_goals
-    )
-    season = up.season.iloc[0]
-    start = mm.loc[mm.season == season, "date"].min()
-    hist_start = mm[(mm.date < start) & (mm.date >= start - pd.Timedelta(days=3 * 365))]
-    priors = (
-        promoted_priors(mm, season, hist_start, start)
-        if season in set(mm.season)
-        else {"goals": {}, "blend": {}}
-    )
-    hist = mm[(mm.date < t0) & (mm.date >= t0 - pd.Timedelta(days=3 * 365))]
-    dc = fit_map(hist, t0, prior_mean=priors["goals"])
-    dcx = fit_map(hist, t0, target=("home_t", "away_t"), prior_mean=priors["blend"])
     f = up.copy()
     f["elo_home"] = [elo.ratings.get(h, elo.initial) for h in f.home]
     f["elo_away"] = [elo.ratings.get(a, elo.initial) for a in f.away]
     f["elo_diff"] = f.elo_home + elo.home_adv - f.elo_away
-    for prefix, params in (("dc", dc), ("dcx", dcx)):
-        p = np.array([params.probs(h, a) for h, a in zip(f.home, f.away, strict=True)])
-        f[f"{prefix}_ph"], f[f"{prefix}_pd"], f[f"{prefix}_pa"] = p.T
-    for c in (
-        "home_xgf_l10",
-        "away_xgf_l10",
-        "home_gf_l10",
-        "away_gf_l10",
-        "home_xga_l10",
-        "away_xga_l10",
-        "home_ga_l10",
-        "away_ga_l10",
-        "home_pts_l5",
-        "away_pts_l5",
-        "home_rest_days",
-        "away_rest_days",
-    ):
-        f[c] = np.nan
-    probs = model.predict(f)
+    dcx = None
+    if kind == "elo":
+        probs = EloOutcomeModel().fit(train.elo_diff, train.result.to_numpy()).predict(f.elo_diff)
+    else:
+        model = StackedPredictor().fit(train)
+        t0 = pd.Timestamp(now.date())
+        mm = m.copy()
+        hx, ax = mm.home_xg.notna(), mm.away_xg.notna()
+        mm["home_t"] = np.where(
+            hx, (1 - XG_WEIGHT) * mm.home_goals + XG_WEIGHT * mm.home_xg.fillna(0), mm.home_goals
+        )
+        mm["away_t"] = np.where(
+            ax, (1 - XG_WEIGHT) * mm.away_goals + XG_WEIGHT * mm.away_xg.fillna(0), mm.away_goals
+        )
+        season = up.season.iloc[0]
+        start = mm.loc[mm.season == season, "date"].min()
+        hist_start = mm[(mm.date < start) & (mm.date >= start - pd.Timedelta(days=3 * 365))]
+        priors = (
+            promoted_priors(mm, season, hist_start, start)
+            if season in set(mm.season)
+            else {"goals": {}, "blend": {}}
+        )
+        hist = mm[(mm.date < t0) & (mm.date >= t0 - pd.Timedelta(days=3 * 365))]
+        dc = fit_map(hist, t0, prior_mean=priors["goals"])
+        dcx = fit_map(hist, t0, target=("home_t", "away_t"), prior_mean=priors["blend"])
+        for prefix, params in (("dc", dc), ("dcx", dcx)):
+            p = np.array([params.probs(h, a) for h, a in zip(f.home, f.away, strict=True)])
+            f[f"{prefix}_ph"], f[f"{prefix}_pd"], f[f"{prefix}_pa"] = p.T
+        for c in (
+            "home_xgf_l10",
+            "away_xgf_l10",
+            "home_gf_l10",
+            "away_gf_l10",
+            "home_xga_l10",
+            "away_xga_l10",
+            "home_ga_l10",
+            "away_ga_l10",
+            "home_pts_l5",
+            "away_pts_l5",
+            "home_rest_days",
+            "away_rest_days",
+        ):
+            f[c] = np.nan
+        probs = model.predict(f)
     rows = []
     for r, p in zip(f.itertuples(), probs, strict=True):
-        lam, mu = dcx.rates(r.home, r.away)
-        for metric, v in (
-            ("p_home_win", p[0]),
-            ("p_draw", p[1]),
-            ("p_away_win", p[2]),
-            ("exp_home_goals", lam),
-            ("exp_away_goals", mu),
-        ):
+        metrics = [("p_home_win", p[0]), ("p_draw", p[1]), ("p_away_win", p[2])]
+        if dcx is not None:  # expected goals come from the stack's Dixon-Coles part
+            lam, mu = dcx.rates(r.home, r.away)
+            metrics += [("exp_home_goals", lam), ("exp_away_goals", mu)]
+        for metric, v in metrics:
             rows.append(_row("predictor", "match", r.match_id, metric, round(float(v), 4), now))
         rows.append(_row("predictor", "match", r.match_id, "kickoff_utc", r.kickoff_utc.isoformat(), now))
     for club, rating in elo.ratings.items():
@@ -147,7 +166,7 @@ def predictions(con: duckdb.DuckDBPyConnection, now: datetime, days: int = 21) -
                 r.match_id,
                 now,
                 r.kickoff_utc,
-                f"predictor@{VERSION}",
+                f"{kind}@{VERSION}",
                 round(float(p[0]), 4),
                 round(float(p[1]), 4),
                 round(float(p[2]), 4),
@@ -279,6 +298,78 @@ def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
     return rows
 
 
+def last_xi_lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
+    """Leagues without FPL minutes (config `backtested: lineup_last_xi`): the club's last league XI from
+    API-Football lineups, players API-Football lists as missing replaced by the most recent other starter
+    (lineup_recent.md: about 77% of starters right). Slots from Transfermarkt positions in the formation the
+    club last used. A club appears once one of its league matches this season has a recorded lineup."""
+    from dugout_models.lineup import FORMATIONS, best_formation, optimise
+    from dugout_models.lineup_recent import predict
+
+    leagues = backtested("lineup_last_xi")
+    if not leagues:
+        return []
+    nxt = con.execute(
+        """SELECT club, arg_min(match_id, kickoff_utc) AS match_id FROM (
+               SELECT home_club_id AS club, match_id, kickoff_utc, league FROM matches
+               WHERE status='scheduled' AND kickoff_utc >= ?
+               UNION ALL SELECT away_club_id, match_id, kickoff_utc, league FROM matches
+               WHERE status='scheduled' AND kickoff_utc >= ?)
+           WHERE list_contains(?, league) GROUP BY club""",
+        [now, now, leagues],
+    ).df()
+    lu = con.execute(
+        """SELECT l.club_id, l.player_id, l.formation, m.kickoff_utc FROM lineups l JOIN matches m USING (match_id)
+           WHERE l.source = 'api_football' AND l.starter AND list_contains(?, m.league)
+             AND m.season = (SELECT max(season) FROM matches) AND m.kickoff_utc < ?""",
+        [leagues, now],
+    ).df()
+    if lu.empty or nxt.empty:
+        return []
+    absent = set(
+        con.execute(
+            """SELECT player_id FROM injuries WHERE source = 'api_football'
+               AND snapshot_date = (SELECT max(snapshot_date) FROM injuries WHERE source = 'api_football')"""
+        )
+        .df()
+        .player_id
+    )
+    squads = con.execute("SELECT player_id, club_id, position FROM players WHERE club_id IS NOT NULL").df()
+    squads = squads.merge(tm_positions(con), on="player_id", how="left")
+    squads["slot"] = squads.slot.fillna(squads.position.map(FPL_SLOT))
+    rows = []
+    for r in nxt.itertuples():
+        mine = squads[squads.club_id == r.club]
+        g = lu[(lu.club_id == r.club) & lu.player_id.isin(mine.player_id)].copy()
+        if g.empty:
+            continue
+        order = {k: i for i, k in enumerate(sorted(g.kickoff_utc.unique(), reverse=True))}
+        g["back"] = g.kickoff_utc.map(order)
+        g["gk"] = g.player_id.map(dict(zip(mine.player_id, mine.position == "GK", strict=True)))
+        xi = predict(g[["back", "player_id", "gk"]], absent)
+        if len(xi) != 11:
+            continue
+        sq = mine[mine.player_id.isin(xi)].assign(available=True, rating=0.0, fatigue=0.0)
+        sq = sq.assign(fpl_pos=sq.position).reset_index(drop=True)
+        last = g.loc[g.back == 0, "formation"].dropna()
+        try:
+            sel = (
+                optimise(sq, last.iloc[0]) if len(last) and last.iloc[0] in FORMATIONS else best_formation(sq)
+            )
+        except ValueError:
+            try:
+                sel = best_formation(sq)
+            except ValueError:
+                log.warning("last-XI lineup %s: no formation fits", r.club)
+                continue
+        rows.append(_row("lineup", "club", r.club, "predicted_formation", sel.formation, now, r.match_id))
+        for pid, slot in sel.xi:
+            rows.append(_row("lineup", "player", pid, "predicted_xi_slot", slot, now, r.match_id))
+        for pid in mine.player_id[mine.player_id.isin(absent)]:
+            rows.append(_row("lineup", "player", pid, "unavailable", "unavailable", now, r.match_id))
+    return rows
+
+
 # ---- injury risk -------------------------------------------------------------------------------------------
 TIERS = [(0.5, "low"), (0.8, "moderate"), (0.95, "elevated"), (1.01, "high")]
 
@@ -404,7 +495,7 @@ def fingerprints(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
 
 MODELS = {
     "predictor": predictions,
-    "lineup": lineups,
+    "lineup": lambda con, now: lineups(con, now) + last_xi_lineups(con, now),
     "injury": injury_risk,
     "roles": roles,
     "fingerprint": fingerprints,

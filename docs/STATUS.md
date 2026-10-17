@@ -182,9 +182,33 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
     warm; 94 template dossiers 40 min (~25 s a club). Nightly: `dossier --all --budget-minutes 60`: PL every
     night, then other clubs oldest dossier first until the budget is spent; the rest go first next night.
     Check the first nightly's step times (2026-10-16 PL-only: ingest 32, publish 5, dossiers 14 min).
-  - Next: injuries/news for other leagues (API-Football budget is PL-only; club sites via `setup-club`), predictor
-    backtests per league (football-data.co.uk has SP1/I1/D1/F1/N1 results + odds), LLM prose for a showcase club
-    per league if Groq's token cap allows, refresh-values for other leagues (merges per league; local only).
+  - Gaps filled 2026-10-17 (branch `league-gaps`), see below.
+
+- **Other leagues' gaps (2026-10-17, branch `league-gaps`):**
+  - Forecasts: football-data.co.uk SP1/I1/D1/F1/N1 (12 seasons, closing odds; names resolve within the league
+    first, then `club_aliases`). Same walk-forward backtest per league (`dugout-models backtest predictor --league
+    X`, docs/backtests/predictor_<league>.md). No xG outside the PL, so the stack and Elo are near level: the stack
+    beat Elo on every score in both seasons only in La Liga. Config `backtested`: la_liga `predictor`, the other four
+    `elo_forecast` (Elo, the simpler model). All far behind closing odds. Each forecast links its league's report.
+    prediction_log now logs every league (model `predictor@`/`elo@`); the scoreboard stays PL-only.
+  - Predicted XI (`lineup_last_xi`): API-Football lineups of yesterday's finished matches (one call each; free plan
+    has no `ids` batching and football-data.org's free tier has no lineups). lineup_recent.md on TM lineups
+    2023-26: recency-weighted starts never beat "the last league XI" (76.9% / 76.6% of starters; PL optimiser with
+    FPL 78%), so the rule is the last XI with API-Football's listed absentees replaced by the most recent other
+    starter. No backfill (date window): a club gets an XI once one league match this season has a lineup.
+    API-Football club/player ids missing from Reep are matched by name within the league / the club's squad
+    (unique match only) and remembered. Budget: other leagues stop with 30 requests left (`OTHER_LEAGUES_RESERVE`).
+  - Team news: API-Football absentee lists (fetched for every league by date anyway), attributed ("According to
+    API-Football, X is listed as missing ...", Fact-Check against the same list); BBC Sport European football RSS.
+    Not used: Guardian pages for these leagues (theguardian.com robots.txt bars ML/AI uses of its content; the PL
+    already uses the Guardian API and RSS: the user should review that). Club tagging: longest names first, short
+    one-word names ("Nice", "Lens", "Paris") must be capitalised.
+  - Valuation: per-buyer-league offsets learned out of sample (fit before 2022-07, scored 2022-07..2024-06,
+    shrunk n/(n+50)), applied to all six leagues: all 0.577 -> 0.575; Bundesliga buyers 0.589 -> 0.563 (fee/estimate
+    0.80 -> 0.99); Eredivisie 0.536 -> 0.522; Serie A 0.501 -> 0.498; La Liga 0.529 -> 0.531 and Ligue 1 0.482 ->
+    0.485 slightly worse (kept: no picking on the test set). Serie A to Serie A still no better than market value.
+  - Next: LLM prose for one showcase club per league if Groq's token cap allows; refresh-values for other leagues
+    (local only); xG for other leagues would need a source (API-Football statistics cost a call per match).
 
 - **Site fixes from user review (2026-10-17, branch `site-fixes`):**
   - Chapter four and provenance cards use readable labels (`metricName`, key-stat labels), not metric codes.

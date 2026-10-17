@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-10-17T07:59:21+00:00",
+  "seasons": [
+    "2024-25",
+    "2025-26"
+  ],
+  "protocol": "walk-forward, refit every ~4 gameweeks (40 matches) on data strictly before the block",
+  "training_from": "2016-17",
+  "features_pre_lineup": [
+    "elo_home",
+    "elo_away",
+    "elo_diff",
+    "dc_ph",
+    "dc_pd",
+    "dc_pa",
+    "dc_lam",
+    "dc_mu",
+    "dcx_ph",
+    "dcx_pd",
+    "dcx_pa",
+    "dcx_lam",
+    "dcx_mu",
+    "home_gf_l5",
+    "home_gf_l10",
+    "home_ga_l5",
+    "home_ga_l10",
+    "home_pts_l5",
+    "home_pts_l10",
+    "home_xgf_l5",
+    "home_xgf_l10",
+    "home_xga_l5",
+    "home_xga_l10",
+    "away_gf_l5",
+    "away_gf_l10",
+    "away_ga_l5",
+    "away_ga_l10",
+    "away_pts_l5",
+    "away_pts_l10",
+    "away_xgf_l5",
+    "away_xgf_l10",
+    "away_xga_l5",
+    "away_xga_l10",
+    "home_rest_days",
+    "away_rest_days"
+  ],
+  "features_lineup": [
+    "elo_home",
+    "elo_away",
+    "elo_diff",
+    "dc_ph",
+    "dc_pd",
+    "dc_pa",
+    "dc_lam",
+    "dc_mu",
+    "dcx_ph",
+    "dcx_pd",
+    "dcx_pa",
+    "dcx_lam",
+    "dcx_mu",
+    "home_gf_l5",
+    "home_gf_l10",
+    "home_ga_l5",
+    "home_ga_l10",
+    "home_pts_l5",
+    "home_pts_l10",
+    "home_xgf_l5",
+    "home_xgf_l10",
+    "home_xga_l5",
+    "home_xga_l10",
+    "away_gf_l5",
+    "away_gf_l10",
+    "away_ga_l5",
+    "away_ga_l10",
+    "away_pts_l5",
+    "away_pts_l10",
+    "away_xgf_l5",
+    "away_xgf_l10",
+    "away_xga_l5",
+    "away_xga_l10",
+    "home_rest_days",
+    "away_rest_days",
+    "home_missing",
+    "away_missing"
+  ],
+  "results": {
+    "2024-25": {
+      "elo": {
+        "rps": 0.1933690732838282,
+        "log_loss": 0.9645300087468263,
+        "brier": 0.574068941758133,
+        "n": 306
+      },
+      "dixon_coles_map": {
+        "rps": 0.19777816545436822,
+        "log_loss": 0.9741216252543726,
+        "brier": 0.5822093556862538,
+        "n": 306
+      },
+      "dixon_coles_xg": {
+        "rps": 0.1979819962071641,
+        "log_loss": 0.9759785193031228,
+        "brier": 0.5830936258039991,
+        "n": 306
+      },
+      "stack_pre_lineup": {
+        "rps": 0.19365630725228652,
+        "log_loss": 0.9629700475861463,
+        "brier": 0.5741759433711864,
+        "n": 306
+      },
+      "stack_all_features": {
+        "rps": 0.19360968311385648,
+        "log_loss": 0.962129686612353,
+        "brier": 0.5740312167109485,
+        "n": 306
+      },
+      "stack_lineup": {
+        "rps": 0.19365630725228652,
+        "log_loss": 0.9629700475861463,
+        "brier": 0.5741759433711864,
+        "n": 306
+      },
+      "boosted_pre_lineup": {
+        "rps": 0.19278493872379693,
+        "log_loss": 0.9618692420883387,
+        "brier": 0.5738503009091315,
+        "n": 306
+      },
+      "trees_pre_lineup": {
+        "rps": 0.19736296919517093,
+        "log_loss": 0.9843744793174576,
+        "brier": 0.589012700809819,
+        "n": 306
+      },
+      "bookmaker_closing": {
+        "rps": 0.18465388645448613,
+        "log_loss": 0.9375676516570721,
+        "brier": 0.5561270121166367,
+        "n": 306
+      }
+    },
+    "2025-26": {
+      "elo": {
+        "rps": 0.19698924775712362,
+        "log_loss": 0.9847888968694949,
+        "brier": 0.5844397296199527,
+        "n": 306
+      },
+      "dixon_coles_map": {
+        "rps": 0.19513224722337202,
+        "log_loss": 0.979111210883694,
+        "brier": 0.5829593077301926,
+        "n": 306
+      },
+      "dixon_coles_xg": {
+        "rps": 0.19520171486590046,
+        "log_loss": 0.9807326003800803,
+        "brier": 0.5835027229832109,
+        "n": 306
+      },
+      "stack_pre_lineup": {
+        "rps": 0.19650784403235314,
+        "log_loss": 0.9833858009039715,
+        "brier": 0.5836657425616493,
+        "n": 306
+      },
+      "stack_all_features": {
+        "rps": 0.1978820887203571,
+        "log_loss": 0.9889360043046937,
+        "brier": 0.5873523036641729,
+        "n": 306
+      },
+      "stack_lineup": {
+        "rps": 0.19650784403235314,
+        "log_loss": 0.9833858009039715,
+        "brier": 0.5836657425616493,
+        "n": 306
+      },
+      "boosted_pre_lineup": {
+        "rps": 0.19647751416343875,
+        "log_loss": 0.9814776829291887,
+        "brier": 0.5827920381485595,
+        "n": 306
+      },
+      "trees_pre_lineup": {
+        "rps": 0.19930915969602067,
+        "log_loss": 0.9985543835168065,
+        "brier": 0.590828011059536,
+        "n": 306
+      },
+      "bookmaker_closing": {
+        "rps": 0.19537398744603277,
+        "log_loss": 0.9775907513320432,
+        "brier": 0.5811558152036946,
+        "n": 306
+      }
+    }
+  },
+  "primary_model": "stack_pre_lineup",
+  "beats_elo": {
+    "2024-25": {
+      "rps": false,
+      "log_loss": true,
+      "brier": false
+    },
+    "2025-26": {
+      "rps": true,
+      "log_loss": true,
+      "brier": true
+    }
+  },
+  "runtime_seconds": 92
+}

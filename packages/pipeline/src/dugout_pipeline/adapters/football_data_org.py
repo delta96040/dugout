@@ -17,7 +17,7 @@ from dugout_pipeline.adapters.fpl import _eid, _ts, match_id
 from dugout_pipeline.adapters.transfermarkt import TM_DIR
 from dugout_pipeline.clubs import slugify
 from dugout_pipeline.db import upsert
-from dugout_pipeline.ids import CLUB_PROVIDERS
+from dugout_pipeline.ids import CLUB_PROVIDERS, PLAYER_PROVIDERS
 from dugout_pipeline.matching import best_club, best_player
 
 POSITIONS = {"Goalkeeper": "GK", "Defence": "DEF", "Midfield": "MID", "Offence": "FWD"}
@@ -204,6 +204,10 @@ class FootballDataOrgAdapter(SourceAdapter):
             ids.append(_eid("player", pid, "football_data_org", "person", p["id"], m))
             if tm:
                 ids.append(_eid("player", pid, "transfermarkt", "spieler", tm, m))
+            if m:  # API-Football ids among them: lineups and absentee lists attach to the same player
+                for prov, ns in PLAYER_PROVIDERS.items():
+                    if (ext := m.ids.get(f"{prov}/{ns}")) and prov != "transfermarkt":
+                        ids.append(_eid("player", pid, prov, ns, ext, m))
         return players, ids
 
     def release_departed(self, current: set[str]) -> None:

@@ -53,3 +53,16 @@ def test_xt_values_rise_towards_goal_and_converge():
     assert grid[:, -1].mean() > grid[:, 0].mean()  # final third worth more than own third
     vals = xt.rate(_actions(rows[:50]))
     assert np.isnan(vals[[r[2] == "shot" for r in rows[:50]]]).all()
+
+
+def test_last_xi_replaces_listed_absentees_with_recent_starters():
+    import pandas as pd
+    from dugout_models.lineup_recent import predict
+
+    last = [("gk1", True)] + [(f"o{i}", False) for i in range(10)]
+    older = [("gk2", True)] + [(f"o{i}", False) for i in range(9)] + [("o10", False)]
+    rows = [(0, p, g) for p, g in last] + [(1, p, g) for p, g in older]
+    hist = pd.DataFrame(rows, columns=["back", "player_id", "gk"])
+    xi = predict(hist, absent={"gk1", "o3"})
+    assert len(xi) == 11 and "gk2" in xi and "o10" in xi and "gk1" not in xi and "o3" not in xi
+    assert predict(hist, absent=set()) == [p for p, _ in last]

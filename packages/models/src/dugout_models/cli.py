@@ -18,7 +18,9 @@ def _run_one(model: str, args, con) -> bool:
     if model == "predictor":
         from dugout_models.backtest import run
 
-        r = run(con, args.seasons, bayes=not args.no_bayes, out_dir=BACKTESTS, name=args.name)
+        league = args.league or "premier_league"
+        name = args.name if args.name != "predictor" or league == "premier_league" else f"predictor_{league}"
+        r = run(con, args.seasons, bayes=not args.no_bayes, out_dir=BACKTESTS, name=name, league=league)
         print("predictor beats Elo:", r["beats_elo"])
         return all(all(v.values()) for v in r["beats_elo"].values())
     if model == "ratings":
@@ -65,6 +67,12 @@ def _run_one(model: str, args, con) -> bool:
         r = run_backtest(con, out_dir=BACKTESTS, trust_weights=(0.0, PREDICTED_XI_TRUST))
         print("lineup:", r)
         return r["optimiser_overlap"][str(PREDICTED_XI_TRUST)] > r["recent_minutes_baseline_overlap"]
+    if model == "lineup_recent":
+        from dugout_models.lineup_recent import backtest
+
+        r = backtest(BACKTESTS)
+        print("lineup_recent:", r["chosen"], r["test"])
+        return all(v["last_xi_overlap"] >= 0.7 for v in r["test"].values())  # the shipped rule is the last XI
     if model == "opportunity":
         from dugout_models.opportunity import backtest
 
@@ -93,6 +101,7 @@ def _run_one(model: str, args, con) -> bool:
 
 MODELS = [
     "predictor",
+    "lineup_recent",
     "ratings",
     "roles",
     "fingerprint",
@@ -150,6 +159,7 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--seasons", nargs="+", default=["2024-25", "2025-26"])
     s.add_argument("--no-bayes", action="store_true", help="skip the (slow) NUTS Dixon–Coles baseline")
     s.add_argument("--name", default="predictor", help="report file name in docs/backtests/")
+    s.add_argument("--league", help="predictor: a config/leagues.yaml key (report predictor_<league>)")
     s.set_defaults(fn=cmd_backtest)
     s = sub.add_parser(
         "publish", help="fit shipped models on all data; write current outputs to model_outputs"

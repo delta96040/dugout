@@ -14,10 +14,11 @@ import pandas as pd
 
 from dugout_pipeline.adapters.base import DAY, HOUR, TIER_DATA, SourceAdapter
 from dugout_pipeline.adapters.fpl import match_id
-from dugout_pipeline.clubs import ClubResolver
+from dugout_pipeline.clubs import ClubResolver, normalise
 from dugout_pipeline.db import upsert
 from dugout_pipeline.http import BudgetExceeded
 from dugout_pipeline.ids import attach_catalogue
+from dugout_pipeline.matching import best_club
 from dugout_pipeline.settings import REPO_ROOT
 
 INJURY_DIR = REPO_ROOT / "data" / "raw" / "api_football"
@@ -36,6 +37,10 @@ STATUS = {
     "TBD": "scheduled",
 }
 BUDGET_RESERVE = 10  # leave headroom for manual debugging and the 4-hourly injuries job
+# Leagues without FPL take only the lineups of yesterday's finished matches (one call each) and the absentee
+# lists (already fetched for every league by date): they stop while this many requests are left for the
+# Premier League's 4-hourly injuries runs.
+OTHER_LEAGUES_RESERVE = 30
 
 
 class ApiFootballAdapter(SourceAdapter):
@@ -66,6 +71,7 @@ class ApiFootballAdapter(SourceAdapter):
         today = today or ctx.now.date()
         league_id = ctx.league_cfg["provider_ids"]["api_football"]
         counts = {"match_observations": 0, "lineups": 0, "injuries": 0, "evidence_ledger": 0}
+        light = not ctx.league_cfg["provider_ids"].get("fpl")  # other leagues: lineups + absentees only
 
         for d in (today - timedelta(days=1), today, today + timedelta(days=1)):
             ttl = 7 * DAY if d < today else 1 * HOUR
@@ -78,6 +84,22 @@ class ApiFootballAdapter(SourceAdapter):
                 status = f["fixture"]["status"]["short"]
                 mid = self._match_id(f)
                 if mid is None:
+                    continue
+                if light:
+                    if STATUS.get(status) == "finished" and self._lineups_affordable():
+                        try:
+                            lu, lres = self.call(
+                                "fixtures/lineups", {"fixture": f["fixture"]["id"]}, ttl=30 * DAY
+                            )
+                        except BudgetExceeded:
+                            continue
+                        # a re-parse may name players it could not name before: replace, do not add
+                        ctx.con.execute(
+                            "DELETE FROM lineups WHERE match_id = ? AND source = ?", [mid, self.name]
+                        )
+                        counts["lineups"] += upsert(
+                            ctx.con, "lineups", self.parse_lineups(mid, lu, lres.fetched_at)
+                        )
                     continue
                 if STATUS.get(status) == "finished":
                     stats, sres = self.call(
@@ -105,6 +127,10 @@ class ApiFootballAdapter(SourceAdapter):
             counts["injuries"] += upsert(ctx.con, "injuries", rows)
         return counts
 
+    def _lineups_affordable(self) -> bool:
+        left = self.client.budget.remaining()
+        return left is None or left > OTHER_LEAGUES_RESERVE
+
     def _near_kickoff(self, f: dict[str, Any]) -> bool:
         ko = datetime.fromisoformat(f["fixture"]["date"])
         return timedelta(minutes=-90) <= ko - self.ctx.now <= timedelta(minutes=75)
@@ -112,7 +138,52 @@ class ApiFootballAdapter(SourceAdapter):
     resolver: ClubResolver | None = None
 
     def _slug(self, team: dict[str, Any]) -> str | None:
-        return (self.resolver or self.ctx.clubs).resolve(team["name"], "api_football/team", team["id"])
+        hit = (self.resolver or self.ctx.clubs).resolve(team["name"], "api_football/team", team["id"])
+        if hit or self.ctx.league_cfg["provider_ids"].get("fpl"):
+            return hit
+        # leagues whose clubs come from football-data.org: Reep lacks some API-Football ids ("1. FC Köln",
+        # "Deportivo La Coruna"); match the name against the league's clubs and remember the id
+        clubs = self.ctx.con.execute(
+            "SELECT club_id, name, club_id FROM clubs WHERE league = ?", [self.ctx.league]
+        ).fetchall()
+        best = best_club([team["name"]], clubs)
+        if best:
+            self._remember("club", best[0], "team", team["id"])
+            self.ctx.clubs.add(best[0], "api_football/team", team["id"])
+        return best[0] if best else None
+
+    def _remember(self, entity_type: str, dugout_id: str, ns: str, ext: Any) -> None:
+        upsert(
+            self.ctx.con,
+            "entity_ids",
+            [
+                {
+                    "entity_type": entity_type,
+                    "dugout_id": dugout_id,
+                    "provider": "api_football",
+                    "namespace": ns,
+                    "external_id": str(ext),
+                    "reep_id": None,
+                }
+            ],
+        )
+
+    def _squad_player(self, club: str | None, api_id: int | None, name: str) -> str | None:
+        """A lineup or absentee name matched within the club's own squad: every word of the name (initials aside,
+        "J. Bellingham") must be in exactly one squad player's name. Remembered as an id."""
+        if not club or not api_id or self.ctx.league_cfg["provider_ids"].get("fpl"):
+            return None
+        words = [w for w in normalise(name).split() if len(w) > 1]
+        if not words:
+            return None
+        squad = self.ctx.con.execute(
+            "SELECT player_id, name FROM players WHERE club_id = ?", [club]
+        ).fetchall()
+        hits = [pid for pid, n in squad if set(words) <= set(normalise(n).split())]
+        if len(hits) != 1:
+            return None
+        self._remember("player", hits[0], "player", api_id)
+        return hits[0]
 
     def _match_id(self, f: dict[str, Any]) -> str | None:
         home, away = self._slug(f["teams"]["home"]), self._slug(f["teams"]["away"])
@@ -121,7 +192,7 @@ class ApiFootballAdapter(SourceAdapter):
         season = f"{f['league']['season']}-{(f['league']['season'] + 1) % 100:02d}"
         return match_id(self.ctx.league, season, home, away)
 
-    def _player(self, api_id: int | None, name: str) -> str:
+    def _player(self, api_id: int | None, name: str, club: str | None = None) -> str:
         if api_id:
             row = self.ctx.con.execute(
                 "SELECT dugout_id FROM entity_ids WHERE entity_type='player' AND provider='api_football' AND external_id=?",
@@ -129,7 +200,7 @@ class ApiFootballAdapter(SourceAdapter):
             ).fetchone()
             if row:
                 return row[0]
-        return f"api_football:{api_id or name}"
+        return self._squad_player(club, api_id, name) or f"api_football:{api_id or name}"
 
     def parse_fixtures(self, fixtures: list[dict], fetched_at: datetime) -> list[dict]:
         rows = []
@@ -183,7 +254,7 @@ class ApiFootballAdapter(SourceAdapter):
                             "club_id": slug,
                             "source": self.name,
                             "formation": team.get("formation"),
-                            "player_id": self._player(pl.get("id"), pl["name"]),
+                            "player_id": self._player(pl.get("id"), pl["name"], slug),
                             "starter": starter,
                             "position": pl.get("pos"),
                             "grid": pl.get("grid"),
@@ -196,10 +267,11 @@ class ApiFootballAdapter(SourceAdapter):
         rows = []
         for i in items:
             kind = (i["player"].get("type") or "").lower()
+            club = self._slug(i["team"])
             rows.append(
                 {
-                    "player_id": self._player(i["player"].get("id"), i["player"]["name"]),
-                    "club_id": self._slug(i["team"]),
+                    "player_id": self._player(i["player"].get("id"), i["player"]["name"], club),
+                    "club_id": club,
                     "source": self.name,
                     "snapshot_date": fetched_at.date(),
                     "status": "doubtful" if "questionable" in kind else "unavailable",

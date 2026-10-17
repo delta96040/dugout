@@ -52,6 +52,11 @@ class FootballDataCoUkAdapter(SourceAdapter):
         resolver = ClubResolver(
             aliases=self.ctx.clubs.aliases
         )  # historical clubs: permissive name resolution
+        if not cfg["provider_ids"].get("fpl"):
+            # leagues whose clubs come from football-data.org: "Sociedad", "Celta", "M'gladbach" resolve by prefix or
+            # suffix against the league's own clubs first, so this season's results join their history
+            self.ctx.load_clubs()
+            resolver = _LeagueFirst(self.ctx.clubs, resolver)
         n = 0
         for s in seasons:
             past = s != cfg["season"]
@@ -97,6 +102,19 @@ class FootballDataCoUkAdapter(SourceAdapter):
                 }
             )
         return rows
+
+
+class _LeagueFirst(ClubResolver):
+    """The league's clubs first; any other name (a club since relegated) as the permissive resolver has it."""
+
+    def __init__(self, league: ClubResolver, fallback: ClubResolver):
+        super().__init__(set(league.slugs), dict(league.aliases), dict(league.by_provider))
+        self.fallback = fallback
+
+    def resolve(
+        self, name: str, provider: str | None = None, external_id: str | int | None = None
+    ) -> str | None:
+        return super().resolve(name, provider, external_id) or self.fallback.resolve(name)
 
 
 def _int(x):

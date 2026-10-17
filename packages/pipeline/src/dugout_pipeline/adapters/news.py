@@ -10,6 +10,7 @@ import hashlib
 import html as html_lib
 import logging
 import re
+import unicodedata
 from datetime import UTC, datetime, timedelta
 from email.utils import parsedate_to_datetime
 from typing import Any
@@ -42,9 +43,22 @@ def news_id(url: str) -> str:
 
 
 def tag_clubs(text: str, names: dict[str, str]) -> list[str]:
-    """names: normalised club name/alias -> slug. Whole-word match on normalised text."""
+    """names: normalised club name/alias -> slug. Whole-word match on normalised text, longest names first (a
+    match is used up: "Paris Saint-Germain" does not also tag "Paris"). A short one-word name that is also an
+    ordinary word ("Nice", "Lens", "Paris") must be capitalised in the text."""
     t = f" {normalise(text)} "
-    return sorted({slug for name, slug in names.items() if f" {name} " in t})
+    folded = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    out = set()
+    for name, slug in sorted(names.items(), key=lambda kv: -len(kv[0])):
+        if f" {name} " not in t:
+            continue
+        if " " not in name and len(name) <= 5:
+            words = re.findall(r"\b" + re.escape(name) + r"\b", folded, re.I)
+            if not any(w[0].isupper() for w in words):
+                continue
+        out.add(slug)
+        t = t.replace(f" {name} ", " | ")
+    return sorted(out)
 
 
 def club_names(con, aliases: dict[str, str]) -> dict[str, str]:

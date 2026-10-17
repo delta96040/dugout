@@ -191,13 +191,46 @@ class ValuationModel:
         self.q10, self.q90 = float(np.quantile(res, 0.1)), float(np.quantile(res, 0.9))
         return self
 
+    offsets: ClassVar[dict[str, float]] = {}
+
+    def calibrate(self, df: pd.DataFrame, cutoff: pd.Timestamp) -> ValuationModel:
+        """Per-buyer-league offsets (configured leagues), learned out of sample: a model fitted on transfers more
+        than two years before `cutoff` is scored on the two years before it; each league's median log error,
+        shrunk towards zero by n / (n + 50), corrects its buyers' estimates (fees for Bundesliga buyers came in a
+        fifth under the estimate: valuation.md)."""
+        self.offsets = league_offsets(df, cutoff)
+        return self
+
     def predict(self, df: pd.DataFrame) -> pd.DataFrame:
-        """df needs FEATURES and `mv` (market value today, > 0)."""
+        """df needs FEATURES and `mv` (market value today, > 0); `to_comp` (buyer league) applies its offset."""
         mu = np.log(df.mv.to_numpy(float)) + self.model.predict(df[FEATURES])
+        if self.offsets and "to_comp" in df:
+            mu = mu + df.to_comp.map(self.offsets).fillna(0.0).to_numpy(float)
         return pd.DataFrame(
             {"fair_fee": np.exp(mu), "low": np.exp(mu + self.q10), "high": np.exp(mu + self.q90)},
             index=df.index,
         )
+
+
+OFFSET_YEARS, OFFSET_SHRINK, OFFSET_MIN_N = 2, 50, 20
+
+
+def league_offsets(df: pd.DataFrame, cutoff: pd.Timestamp) -> dict[str, float]:
+    from dugout_pipeline.clubs import league_config, leagues
+
+    comps = {league_config(lg)["provider_ids"].get("transfermarkt") for lg in leagues()} - {None}
+    start = cutoff - pd.DateOffset(years=OFFSET_YEARS)
+    early, cal = df[df.date < start], df[(df.date >= start) & (df.date < cutoff)]
+    if early.empty or cal.empty:
+        return {}
+    pred = np.log(ValuationModel().fit(early).predict(cal).fair_fee.to_numpy())
+    res = cal.log_fee.to_numpy() - pred
+    out = {}
+    for c in sorted(comps):
+        r = res[(cal.to_comp == c).to_numpy()]
+        if len(r) >= OFFSET_MIN_N:
+            out[c] = float(np.median(r) * len(r) / (len(r) + OFFSET_SHRINK))
+    return out
 
 
 def _metrics(y_log: np.ndarray, pred_log: np.ndarray) -> dict:
@@ -217,6 +250,8 @@ def backtest(out_dir: Path | None = None) -> dict:
     df = df[df.mv > 0]
     train, test = df[df.date < SPLIT], df[(df.date >= SPLIT) & (df.date <= today)]
     model = ValuationModel().fit(train)
+    pred_raw = np.log(model.predict(test).fair_fee.to_numpy())
+    model.calibrate(df, SPLIT)  # offsets from transfers before the split only
     pred = np.log(model.predict(test).fair_fee.to_numpy())
     has_mv = test.mv.to_numpy() > 0
     prev = lgb.LGBMRegressor(**ValuationModel.params).fit(train[FEATURES_V1], train.log_fee)
@@ -243,6 +278,7 @@ def backtest(out_dir: Path | None = None) -> dict:
         name: {
             "n": int(m.sum()),
             "model": _metrics(y[m], pred[m]),
+            "model_without_league_offsets": _metrics(y[m], pred_raw[m]),
             "previous_model": _metrics(y[m], pred_prev[m]),
             "market_value": _metrics(y[m], np.log(test.mv.to_numpy()[m])),
             "median_fee_over_estimate": float(np.exp(np.median(y[m] - pred[m]))),
@@ -260,6 +296,7 @@ def backtest(out_dir: Path | None = None) -> dict:
         ),
         "model_on_baseline_rows": _metrics(test.log_fee.to_numpy()[has_mv], pred[has_mv]),
         "segments": seg,
+        "league_offsets": model.offsets,
         "importance": dict(
             sorted(
                 zip(FEATURES, model.model.feature_importances_.tolist(), strict=True), key=lambda kv: -kv[1]
@@ -286,14 +323,20 @@ def backtest(out_dir: Path | None = None) -> dict:
             "",
             "By segment (MAE of log fee; fee / estimate is the median ratio, 1.00 = unbiased):",
             "",
-            "| Segment | Transfers | dugout | previous model | market value | fee / estimate (previous) |",
-            "|---|---|---|---|---|---|",
+            "| Segment | Transfers | dugout | without league offsets | previous model | market value | fee / estimate (previous) |",
+            "|---|---|---|---|---|---|---|",
             *[
-                f"| {k} | {v['n']} | {v['model']['mae_log']:.3f} | {v['previous_model']['mae_log']:.3f} | "
+                f"| {k} | {v['n']} | {v['model']['mae_log']:.3f} | {v['model_without_league_offsets']['mae_log']:.3f} | "
+                f"{v['previous_model']['mae_log']:.3f} | "
                 f"{v['market_value']['mae_log']:.3f} | {v['median_fee_over_estimate']:.2f} "
                 f"({v['median_fee_over_previous']:.2f}) |"
                 for k, v in report["segments"].items()
             ],
+            "",
+            "League offsets (log fee, buyers in each configured league; learned on 2022-07..2024-06 from a model "
+            "fitted before 2022-07, shrunk by n / (n + 50); applied to every configured league, including the two "
+            "where they made the test slightly worse): "
+            + ", ".join(f"{c} {v:+.3f}" for c, v in report["league_offsets"].items()),
             "",
             "The previous model regressed log(fee) on the transfer year; trees cannot extrapolate a year they have not "
             "seen, so it underpriced recent Premier League deals. Nationality (an English or homegrown premium) was "

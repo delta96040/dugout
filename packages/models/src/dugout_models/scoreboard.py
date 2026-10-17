@@ -72,7 +72,7 @@ def build(con: duckdb.DuckDBPyConnection, seasons: list[str], out: Path) -> dict
         """SELECT l.match_id, l.as_of, l.model, l.p_home, l.p_draw, l.p_away, m.home_goals, m.away_goals,
                   m.home_club_id, m.away_club_id, CAST(m.kickoff_utc AS DATE) AS date
            FROM prediction_log l JOIN matches m USING (match_id)
-           WHERE m.status = 'finished' AND l.as_of < m.kickoff_utc
+           WHERE m.status = 'finished' AND l.as_of < m.kickoff_utc AND m.league = 'premier_league'
            QUALIFY row_number() OVER (PARTITION BY l.match_id ORDER BY l.as_of DESC) = 1"""
     ).df()
     rows = []
