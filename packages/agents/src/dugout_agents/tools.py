@@ -12,7 +12,7 @@ import unicodedata
 from datetime import date, datetime, timedelta
 from typing import Any
 
-from dugout_agents.facts import MODEL_DOCS, Fact, Toolbox, prob_gloss, rank_gloss, z_gloss
+from dugout_agents.facts import MODEL_DOCS, REPO, Fact, Toolbox, prob_gloss, rank_gloss, z_gloss
 from dugout_pipeline.settings import REPO_ROOT
 
 FDO_URL = "https://api.football-data.org/v4/competitions/{comp}/standings"
@@ -275,9 +275,15 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
     is_home = home == club
     me, opp = (h, a) if is_home else (a, h)
     facts: list[Fact] = []
-    ko = tb.model("predictor", "match", mid, "kickoff_utc")
-    if ko is None:  # a league without a backtested forecast: the fixture itself, from football-data.org
-        lg = tb.league(club)
+    lg = tb.league(club)
+    # each league's forecast links to its own backtest (the stack, or the Elo forecast where the stack did not win)
+    doc = (
+        MODEL_DOCS["predictor"]
+        if lg["key"] == "premier_league"
+        else f"{REPO}/docs/backtests/predictor_{lg['key']}.md"
+    )
+    ko = tb.model("predictor", "match", mid, "kickoff_utc", doc=doc)
+    if ko is None:  # no forecast for this fixture: the fixture itself, from football-data.org
         ko = tb.sql(
             "SELECT strftime(kickoff_utc, '%Y-%m-%dT%H:%M:%S+00:00') FROM matches WHERE match_id = ?",
             [mid],
@@ -301,7 +307,7 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
         )
     )
     for metric, side in (("p_home_win", h), ("p_draw", None), ("p_away_win", a)):
-        rec = tb.model("predictor", "match", mid, metric)
+        rec = tb.model("predictor", "match", mid, metric, doc=doc)
         if rec is None:
             continue
         if side:
@@ -312,7 +318,7 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
             label = "probability of a draw"
         facts.append(_fact(tb, side or f"{h} v {a}", label, tmpl, rec, "pct", prob_gloss(float(rec[1])), mid))
     for metric, side in (("exp_home_goals", h), ("exp_away_goals", a)):
-        rec = tb.model("predictor", "match", mid, metric)
+        rec = tb.model("predictor", "match", mid, metric, doc=doc)
         facts.append(
             _fact(
                 tb,
@@ -325,7 +331,7 @@ def next_match(tb: Toolbox, club: str) -> list[Fact]:
             )
         )
     for c in (club, away if is_home else home):
-        rec = tb.model("predictor", "club", c, "elo")
+        rec = tb.model("predictor", "club", c, "elo", doc=doc)
         facts.append(
             _fact(
                 tb,
@@ -371,13 +377,15 @@ def predicted_xi(tb: Toolbox, club: str) -> list[Fact]:
         return []
     mid = row[0]
     name = tb.name(club)
+    # leagues without FPL minutes: the last-XI rule, with its own backtest
+    doc = None if tb.league(club)["provider_ids"].get("fpl") else f"{REPO}/docs/backtests/lineup_recent.md"
     facts = _keep(
         _fact(
             tb,
             name,
             "predicted formation for the next match",
             f"We expect {name} to line up in a {{p}} for the next match.",
-            tb.model("lineup", "club", club, "predicted_formation", mid),
+            tb.model("lineup", "club", club, "predicted_formation", mid, doc=doc),
             entity_id=club,
         )
     )
@@ -389,7 +397,7 @@ def predicted_xi(tb: Toolbox, club: str) -> list[Fact]:
     xi.sort(key=lambda r: SLOT_ORDER.index(r[1]) if r[1] in SLOT_ORDER else 99)
     for pid, slot in xi:
         pname = tb.name(pid)
-        rec = tb.model("lineup", "player", pid, "predicted_xi_slot", mid)
+        rec = tb.model("lineup", "player", pid, "predicted_xi_slot", mid, doc=doc)
         facts += _keep(
             _fact(
                 tb,
@@ -426,7 +434,10 @@ STATUS_WORDS = {
 
 
 def availability(tb: Toolbox, club: str, player_id: str | None = None) -> list[Fact]:
-    """FPL availability flags (official, tier 1). Statements are text facts verified against the same flags."""
+    """FPL availability flags (official, tier 1). Statements are text facts verified against the same flags.
+    Leagues without FPL: API-Football's absentee list, attributed to API-Football (not an official source)."""
+    if not tb.league(club)["provider_ids"].get("fpl"):
+        return _listed_absent(tb, club, player_id)
     rows = tb.con.execute(
         """SELECT i.player_id, i.status, i.reason, i.chance_next FROM injuries i
            WHERE i.source = 'fpl' AND i.snapshot_date = (SELECT max(snapshot_date) FROM injuries WHERE source = 'fpl')
@@ -472,6 +483,31 @@ def availability(tb: Toolbox, club: str, player_id: str | None = None) -> list[F
             )
         )
     return facts
+
+
+def _listed_absent(tb: Toolbox, club: str, player_id: str | None = None) -> list[Fact]:
+    from dugout_agents.runtime import absent_text
+
+    rows = tb.con.execute(
+        """SELECT player_id, reason, news FROM injuries WHERE source = 'api_football' AND club_id = ?
+           AND (? IS NULL OR player_id = ?)
+           AND snapshot_date = (SELECT max(snapshot_date) FROM injuries WHERE source = 'api_football')
+           ORDER BY player_id""",
+        [club, player_id, player_id],
+    ).fetchall()
+    return _keep(
+        *[
+            _fact(
+                tb,
+                "API-Football",
+                "absentee list for the next match (API-Football)",
+                "According to API-Football, " + absent_text(tb.name(pid), tb.name(club), reason, kind),
+                entity_id=pid,
+            )
+            for pid, reason, kind in rows
+            if not pid.startswith("api_football:")  # a player we cannot name with certainty is left out
+        ]
+    )
 
 
 def _clean(text: str) -> str:

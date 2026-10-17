@@ -1003,6 +1003,9 @@ def publish(con: duckdb.DuckDBPyConnection, now: datetime, recent_days: int = 12
     links = links[links.season >= FIRST_SEASON]
     y = f"joined_{SHIPPED_HORIZON}m"
     lab = links[links[y].notna()].copy()
+    if lab.empty:  # recent rumours only (no archive yet): nothing has had time to come true
+        log.warning("rumours: no rumour old enough to be labelled; skipped")
+        return []
     lab[y] = lab[y].astype(bool)
     model = RumourModel.fit(lab, y)
     rows = [_row("rumours", "overall", "all", "hit_rate", float(lab[y].mean()), now, f"{SHIPPED_HORIZON}m"),

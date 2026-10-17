@@ -32,8 +32,13 @@ def test_config_leagues():
     for k in keys[1:]:
         cfg = league_config(k)
         assert cfg["provider_ids"]["football_data_org"] and cfg["provider_ids"]["transfermarkt"]
-        assert "fpl" not in cfg["provider_ids"] and cfg["sources"] == ["football_data_org"]
+        assert "fpl" not in cfg["provider_ids"] and cfg["sources"][0] == "football_data_org"
+        assert set(cfg["sources"]) <= {"football_data_org", "football_data_couk", "api_football", "rss"}
         assert cfg["slug_suffix"] and cfg["country"]
+        # forecasts and XIs only where backtested on the league
+        assert {"lineup_last_xi"} <= set(cfg["backtested"]) and {"predictor", "elo_forecast"} & set(
+            cfg["backtested"]
+        )
 
 
 def test_best_club_uses_short_name_and_skips_youth_sides():
@@ -247,3 +252,52 @@ def test_wikidata_year_only_appointment_is_not_a_date(ctx):
     _, managers = a.parse({"results": {"bindings": [b]}}, {"418": "real-madrid"}, ctx.now)
     a.close()
     assert managers[0]["start_date"] is None
+
+
+def test_tag_clubs_prefers_longest_names_and_capitalised_short_ones():
+    from dugout_pipeline.adapters.news import tag_clubs
+
+    names = {"paris saint germain": "psg", "paris": "paris", "nice": "nice", "lens": "lens"}
+    assert tag_clubs("Paris Saint-Germain beat Nice", names) == ["nice", "psg"]
+    assert tag_clubs("a nice goal through the lens of Paris FC", names) == ["paris"]
+
+
+def test_football_data_couk_names_resolve_within_the_league(la_liga):
+    from dugout_pipeline.adapters.football_data_couk import _LeagueFirst
+    from dugout_pipeline.clubs import ClubResolver
+    from dugout_pipeline.db import upsert
+
+    a = fdo.FootballDataOrgAdapter(la_liga)
+    clubs, _ = a.parse_new_clubs(_teams_doc())
+    a.close()
+    upsert(la_liga.con, "clubs", clubs)
+    la_liga.load_clubs()
+    r = _LeagueFirst(la_liga.clubs, ClubResolver())
+    assert r.resolve("Santander") == "racing-de-santander"  # suffix within the league
+    assert r.resolve("Espanol") == "espanyol"  # config alias
+    assert r.resolve("Sp Gijon") == "sp-gijon"  # a club no longer in the league keeps its own name
+
+
+def test_api_football_names_match_within_the_squad(la_liga):
+    from dugout_pipeline.adapters.api_football import ApiFootballAdapter
+    from dugout_pipeline.db import upsert
+
+    upsert(
+        la_liga.con,
+        "players",
+        [
+            {
+                "player_id": "p1",
+                "name": "Hugo Duro Perales",
+                "club_id": "valencia-esp",
+                "updated_at": la_liga.now,
+            },
+            {"player_id": "p2", "name": "José Gayà", "club_id": "valencia-esp", "updated_at": la_liga.now},
+        ],
+    )
+    la_liga.settings = la_liga.settings.model_copy(update={"api_football_key": "test"})
+    a = ApiFootballAdapter(la_liga)
+    assert a._player(777, "H. Duro", "valencia-esp") == "p1"
+    assert a._player(777, "H. Duro", None) == "p1"  # remembered by id
+    assert a._player(778, "J. Smith", "valencia-esp") == "api_football:778"  # no unique match: no guess
+    a.close()

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T21:49:20+00:00",
+  "generated_at": "2026-10-17T08:41:19+00:00",
   "train": {
     "n": 11770,
     "from": "2005-01-01",
@@ -10,9 +10,9 @@
     "to": "2026-09-03"
   },
   "model": {
-    "mae_log": 0.5772527383209118,
-    "median_ape": 0.41810646358283216,
-    "within_25pct": 0.31475967673330496,
+    "mae_log": 0.5752447592416107,
+    "median_ape": 0.41451238657103884,
+    "within_25pct": 0.31646108039132287,
     "n": 4702
   },
   "baseline_market_value": {
@@ -22,15 +22,21 @@
     "n": 4702
   },
   "model_on_baseline_rows": {
-    "mae_log": 0.5772527383209118,
-    "median_ape": 0.41810646358283216,
-    "within_25pct": 0.31475967673330496,
+    "mae_log": 0.5752447592416107,
+    "median_ape": 0.41451238657103884,
+    "within_25pct": 0.31646108039132287,
     "n": 4702
   },
   "segments": {
     "all": {
       "n": 4702,
       "model": {
+        "mae_log": 0.5752447592416107,
+        "median_ape": 0.41451238657103884,
+        "within_25pct": 0.31646108039132287,
+        "n": 4702
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5772527383209118,
         "median_ape": 0.41810646358283216,
         "within_25pct": 0.31475967673330496,
@@ -48,12 +54,18 @@
         "within_25pct": 0.2990216928966397,
         "n": 4702
       },
-      "median_fee_over_estimate": 0.9856610392779751,
+      "median_fee_over_estimate": 1.0013280357539347,
       "median_fee_over_previous": 1.0828724766710327
     },
     "Premier League buyer": {
       "n": 371,
       "model": {
+        "mae_log": 0.411867946218345,
+        "median_ape": 0.29542977814682436,
+        "within_25pct": 0.4339622641509434,
+        "n": 371
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.4126460784892478,
         "median_ape": 0.294492964564883,
         "within_25pct": 0.431266846361186,
@@ -71,12 +83,18 @@
         "within_25pct": 0.42048517520215634,
         "n": 371
       },
-      "median_fee_over_estimate": 0.9510323240027717,
+      "median_fee_over_estimate": 0.9588143880025042,
       "median_fee_over_previous": 1.336249867821596
     },
     "Premier League to Premier League": {
       "n": 111,
       "model": {
+        "mae_log": 0.3505258267348581,
+        "median_ape": 0.23067106270350823,
+        "within_25pct": 0.5495495495495496,
+        "n": 111
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.34993550950967145,
         "median_ape": 0.2341304269482166,
         "within_25pct": 0.5585585585585585,
@@ -94,12 +112,18 @@
         "within_25pct": 0.36036036036036034,
         "n": 111
       },
-      "median_fee_over_estimate": 1.0566933400034417,
+      "median_fee_over_estimate": 1.06534000215409,
       "median_fee_over_previous": 1.6480456318759082
     },
     "Premier League buyer, age 24 or under": {
       "n": 215,
       "model": {
+        "mae_log": 0.4256292860233279,
+        "median_ape": 0.3129936137951348,
+        "within_25pct": 0.4232558139534884,
+        "n": 215
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.42557108466580124,
         "median_ape": 0.3127633102507153,
         "within_25pct": 0.4232558139534884,
@@ -117,12 +141,18 @@
         "within_25pct": 0.3627906976744186,
         "n": 215
       },
-      "median_fee_over_estimate": 0.9995322882489404,
+      "median_fee_over_estimate": 1.0077112155478716,
       "median_fee_over_previous": 1.3779398130302023
     },
     "La Liga buyer": {
       "n": 175,
       "model": {
+        "mae_log": 0.5313364785526801,
+        "median_ape": 0.33229862798936516,
+        "within_25pct": 0.37714285714285717,
+        "n": 175
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5292689894330919,
         "median_ape": 0.3728018246955055,
         "within_25pct": 0.37142857142857144,
@@ -140,12 +170,18 @@
         "within_25pct": 0.3142857142857143,
         "n": 175
       },
-      "median_fee_over_estimate": 0.9635486363773564,
+      "median_fee_over_estimate": 1.0746203130200522,
       "median_fee_over_previous": 0.8475638099083749
     },
     "La Liga to La Liga": {
       "n": 63,
       "model": {
+        "mae_log": 0.6971298860527266,
+        "median_ape": 0.3904441410662145,
+        "within_25pct": 0.3333333333333333,
+        "n": 63
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.6940794823333326,
         "median_ape": 0.41052304747475565,
         "within_25pct": 0.3333333333333333,
@@ -163,12 +199,18 @@
         "within_25pct": 0.2857142857142857,
         "n": 63
       },
-      "median_fee_over_estimate": 0.9812228106038184,
+      "median_fee_over_estimate": 1.094331852139673,
       "median_fee_over_previous": 0.8409017314468994
     },
     "Serie A buyer": {
       "n": 345,
       "model": {
+        "mae_log": 0.49768407154126254,
+        "median_ape": 0.3198947216016562,
+        "within_25pct": 0.3826086956521739,
+        "n": 345
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5014210418543015,
         "median_ape": 0.3305227486316666,
         "within_25pct": 0.39710144927536234,
@@ -186,12 +228,18 @@
         "within_25pct": 0.391304347826087,
         "n": 345
       },
-      "median_fee_over_estimate": 1.0808618335841993,
+      "median_fee_over_estimate": 1.0248633742964774,
       "median_fee_over_previous": 1.039252554074368
     },
     "Serie A to Serie A": {
       "n": 128,
       "model": {
+        "mae_log": 0.5134017681205414,
+        "median_ape": 0.30631863540885806,
+        "within_25pct": 0.390625,
+        "n": 128
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5202460660813273,
         "median_ape": 0.32036749046425883,
         "within_25pct": 0.40625,
@@ -209,12 +257,18 @@
         "within_25pct": 0.4140625,
         "n": 128
       },
-      "median_fee_over_estimate": 1.0976244520758116,
+      "median_fee_over_estimate": 1.04075753691335,
       "median_fee_over_previous": 1.0654321707239098
     },
     "Bundesliga buyer": {
       "n": 269,
       "model": {
+        "mae_log": 0.5630816622714861,
+        "median_ape": 0.4095711741776143,
+        "within_25pct": 0.3271375464684015,
+        "n": 269
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5891962017040663,
         "median_ape": 0.4206224997259803,
         "within_25pct": 0.2936802973977695,
@@ -232,12 +286,18 @@
         "within_25pct": 0.31970260223048325,
         "n": 269
       },
-      "median_fee_over_estimate": 0.8003314687444888,
+      "median_fee_over_estimate": 0.9867857967130085,
       "median_fee_over_previous": 0.7755459961503848
     },
     "Bundesliga to Bundesliga": {
       "n": 82,
       "model": {
+        "mae_log": 0.5786692952104509,
+        "median_ape": 0.37441285877738534,
+        "within_25pct": 0.36585365853658536,
+        "n": 82
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.626887705358049,
         "median_ape": 0.4137514557172054,
         "within_25pct": 0.3048780487804878,
@@ -255,12 +315,18 @@
         "within_25pct": 0.2804878048780488,
         "n": 82
       },
-      "median_fee_over_estimate": 0.7936262582065283,
+      "median_fee_over_estimate": 0.9785184640124585,
       "median_fee_over_previous": 0.7288561015243468
     },
     "Ligue 1 buyer": {
       "n": 213,
       "model": {
+        "mae_log": 0.48503380897207904,
+        "median_ape": 0.3289599278206322,
+        "within_25pct": 0.3474178403755869,
+        "n": 213
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.481547197441969,
         "median_ape": 0.32993174571834466,
         "within_25pct": 0.3427230046948357,
@@ -278,12 +344,18 @@
         "within_25pct": 0.37089201877934275,
         "n": 213
       },
-      "median_fee_over_estimate": 1.1689089318821626,
+      "median_fee_over_estimate": 1.1873390397383687,
       "median_fee_over_previous": 1.0673956722068527
     },
     "Ligue 1 to Ligue 1": {
       "n": 53,
       "model": {
+        "mae_log": 0.507877666829505,
+        "median_ape": 0.38570150747323123,
+        "within_25pct": 0.3018867924528302,
+        "n": 53
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5040404775848023,
         "median_ape": 0.4075497691663984,
         "within_25pct": 0.3018867924528302,
@@ -301,12 +373,18 @@
         "within_25pct": 0.33962264150943394,
         "n": 53
       },
-      "median_fee_over_estimate": 1.1878093701684482,
+      "median_fee_over_estimate": 1.206537479953331,
       "median_fee_over_previous": 1.127617257782841
     },
     "Eredivisie buyer": {
       "n": 141,
       "model": {
+        "mae_log": 0.5220509291982511,
+        "median_ape": 0.39168728054086227,
+        "within_25pct": 0.3191489361702128,
+        "n": 141
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5358326564666767,
         "median_ape": 0.4376864252871438,
         "within_25pct": 0.3120567375886525,
@@ -324,12 +402,18 @@
         "within_25pct": 0.2907801418439716,
         "n": 141
       },
-      "median_fee_over_estimate": 0.7821490671034022,
+      "median_fee_over_estimate": 0.8384596282030594,
       "median_fee_over_previous": 1.132989618944118
     },
     "Eredivisie to Eredivisie": {
       "n": 46,
       "model": {
+        "mae_log": 0.5122707391933846,
+        "median_ape": 0.41934499762943556,
+        "within_25pct": 0.2826086956521739,
+        "n": 46
+      },
+      "model_without_league_offsets": {
         "mae_log": 0.5164169557095117,
         "median_ape": 0.4712785388338532,
         "within_25pct": 0.30434782608695654,
@@ -347,9 +431,17 @@
         "within_25pct": 0.21739130434782608,
         "n": 46
       },
-      "median_fee_over_estimate": 0.9275623147880458,
+      "median_fee_over_estimate": 0.9943418541334615,
       "median_fee_over_previous": 1.118524808824178
     }
+  },
+  "league_offsets": {
+    "ES1": -0.10909971554630188,
+    "FR1": -0.015643925382248857,
+    "GB1": -0.008149457252640832,
+    "IT1": 0.05319940663086661,
+    "L1": -0.20942701348824283,
+    "NL1": -0.06952108718972176
   },
   "importance": {
     "log_to_cv": 3091,

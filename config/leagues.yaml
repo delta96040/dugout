@@ -42,10 +42,19 @@ la_liga:
   season: "2026-27"
   season_start_year: 2026
   slug_suffix: esp
+  # match forecasts (docs/backtests/predictor_<league>.md): the stack where it beat Elo on every score in both
+  # test seasons, else the Elo forecast
+  backtested: [predictor, lineup_last_xi]
   provider_ids:
     football_data_org: PD
+    api_football: 140       # lineups of finished matches + absentee lists (date window)
+    football_data_couk: SP1  # results + closing odds (predictor history and benchmark)
     transfermarkt: ES1
-  sources: [football_data_org]
+  sources: [football_data_org, football_data_couk, api_football, rss]
+  news_feeds:  # robots.txt allows; Guardian pages not used here (its robots.txt bars AI uses)
+    - {outlet: BBC Sport, url: "https://feeds.bbci.co.uk/sport/football/european/rss.xml", tier: 2}
+  history_seasons: ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21",
+                    "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
   transfermarkt_clubs:
     5335: 630    # Real Racing Club de Santander -> Racing de Santander
 
@@ -55,10 +64,17 @@ serie_a:
   season: "2026-27"
   season_start_year: 2026
   slug_suffix: ita
+  backtested: [elo_forecast, lineup_last_xi]
   provider_ids:
     football_data_org: SA
+    api_football: 135       # lineups of finished matches + absentee lists (date window)
+    football_data_couk: I1  # results + closing odds (predictor history and benchmark)
     transfermarkt: IT1
-  sources: [football_data_org]
+  sources: [football_data_org, football_data_couk, api_football, rss]
+  news_feeds:  # robots.txt allows; Guardian pages not used here (its robots.txt bars AI uses)
+    - {outlet: BBC Sport, url: "https://feeds.bbci.co.uk/sport/football/european/rss.xml", tier: 2}
+  history_seasons: ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21",
+                    "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
   transfermarkt_clubs:
     108: 46      # FC Internazionale Milano -> Inter (Transfermarkt "Inter Milan")
 
@@ -68,10 +84,17 @@ bundesliga:
   season: "2026-27"
   season_start_year: 2026
   slug_suffix: ger
+  backtested: [elo_forecast, lineup_last_xi]
   provider_ids:
     football_data_org: BL1
+    api_football: 78       # lineups of finished matches + absentee lists (date window)
+    football_data_couk: D1  # results + closing odds (predictor history and benchmark)
     transfermarkt: L1
-  sources: [football_data_org]
+  sources: [football_data_org, football_data_couk, api_football, rss]
+  news_feeds:  # robots.txt allows; Guardian pages not used here (its robots.txt bars AI uses)
+    - {outlet: BBC Sport, url: "https://feeds.bbci.co.uk/sport/football/european/rss.xml", tier: 2}
+  history_seasons: ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21",
+                    "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
 
 ligue_1:
   name: Ligue 1
@@ -79,10 +102,17 @@ ligue_1:
   season: "2026-27"
   season_start_year: 2026
   slug_suffix: fra
+  backtested: [elo_forecast, lineup_last_xi]
   provider_ids:
     football_data_org: FL1
+    api_football: 61       # lineups of finished matches + absentee lists (date window)
+    football_data_couk: F1  # results + closing odds (predictor history and benchmark)
     transfermarkt: FR1
-  sources: [football_data_org]
+  sources: [football_data_org, football_data_couk, api_football, rss]
+  news_feeds:  # robots.txt allows; Guardian pages not used here (its robots.txt bars AI uses)
+    - {outlet: BBC Sport, url: "https://feeds.bbci.co.uk/sport/football/european/rss.xml", tier: 2}
+  history_seasons: ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21",
+                    "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
 
 eredivisie:
   name: Eredivisie
@@ -90,13 +120,32 @@ eredivisie:
   season: "2026-27"
   season_start_year: 2026
   slug_suffix: ned
+  backtested: [elo_forecast, lineup_last_xi]
   provider_ids:
     football_data_org: DED
+    api_football: 88       # lineups of finished matches + absentee lists (date window)
+    football_data_couk: N1  # results + closing odds (predictor history and benchmark)
     transfermarkt: NL1
-  sources: [football_data_org]
+  sources: [football_data_org, football_data_couk, api_football, rss]
+  news_feeds:  # robots.txt allows; Guardian pages not used here (its robots.txt bars AI uses)
+    - {outlet: BBC Sport, url: "https://feeds.bbci.co.uk/sport/football/european/rss.xml", tier: 2}
+  history_seasons: ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21",
+                    "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
 
 # Names providers use that a generic normaliser cannot reconcile. Keys are normalised names.
 club_aliases:
+  # football-data.co.uk names for other leagues' clubs (the rest resolve by prefix/suffix within the league)
+  ath bilbao: athletic-club
+  ath madrid: atletico-de-madrid
+  espanol: espanyol
+  bayern munich: bayern-munchen
+  ein frankfurt: eintracht-frankfurt
+  lyon: olympique-lyonnais
+  paris sg: paris-saint-germain
+  az alkmaar: az
+  for sittard: fortuna-sittard
+  nijmegen: nec
+  psv eindhoven: psv
   man utd: manchester-united
   man united: manchester-united
   manchester utd: manchester-united

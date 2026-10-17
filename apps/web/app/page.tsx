@@ -11,8 +11,8 @@ export default function Home() {
       <p className="hang mt-8 max-w-2xl text-lg">
         Every night dugout reads the latest football data, updates its forecasts and writes a scouting dossier for each
         club in the Premier League, La Liga, Serie A, the Bundesliga, <span data-name>Ligue 1</span> and the Eredivisie: where the side stands,
-        what the squad is worth, the gap in it and who could fill it, from the dream target to the realistic one and
-        the hidden gem. Premier League clubs also get the next-match forecast and the likely XI.
+        the next match, the likely XI, who is missing, what the squad is worth, the gap in it and who could fill it,
+        from the dream target to the realistic one and the hidden gem.
       </p>
       <p className="hang mt-8">
         <Link

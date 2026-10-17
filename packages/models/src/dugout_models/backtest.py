@@ -37,19 +37,25 @@ FIRST_TRAIN_SEASON = "2016-17"  # 2015-16 is burn-in for Elo / Dixon–Coles
 PRIMARY = "stack_pre_lineup"
 
 
-def build_frame(con) -> pd.DataFrame:
-    m = data.matches(con)
+def build_frame(con, league: str = "premier_league") -> pd.DataFrame:
+    m = data.matches(con, league)
     m = pre_match_elo(m)
     m = rolling_form(m)
-    m = missing_impact(m, data.player_minutes(con))
+    # player minutes come from FPL: other leagues have no missing-regulars feature (NaN), only the pre-lineup stack
+    m = missing_impact(m, data.player_minutes(con) if league == "premier_league" else pd.DataFrame())
     return dixon_coles_walkforward(m, FIRST_TRAIN_SEASON)
 
 
 def run(
-    con, seasons: list[str], bayes: bool = True, out_dir: Path | None = None, name: str = "predictor"
+    con,
+    seasons: list[str],
+    bayes: bool = True,
+    out_dir: Path | None = None,
+    name: str = "predictor",
+    league: str = "premier_league",
 ) -> dict:
     t_start = time.time()
-    m = build_frame(con)
+    m = build_frame(con, league)
     preds: dict[str, list[np.ndarray]] = {}
     seats: dict[str, dict] = {}
     rows_seen: list[int] = []

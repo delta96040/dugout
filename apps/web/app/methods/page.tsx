@@ -39,6 +39,14 @@ function Row({ name, children, verdict }: { name: string; children: React.ReactN
   );
 }
 
+const OTHER_LEAGUES: [string, string][] = [
+  ["la_liga", "La Liga"],
+  ["serie_a", "Serie A"],
+  ["bundesliga", "Bundesliga"],
+  ["ligue_1", "Ligue 1"],
+  ["eredivisie", "Eredivisie"],
+];
+
 export default function MethodsPage() {
   const pred = readBacktest<J>("predictor");
   const val = readBacktest<J>("valuation");
@@ -47,6 +55,13 @@ export default function MethodsPage() {
   const rum6 = rum?.horizons?.["6"];
   const inj = readBacktest<J>("injury");
   const lin = readBacktest<J>("lineup");
+  const linOther = readBacktest<J>("lineup_recent");
+  // each league's own forecast backtest: the stack is published where it beat Elo on every score in both seasons
+  const others = OTHER_LEAGUES.map(([key, name]) => {
+    const j = readBacktest<J>(`predictor_${key}`);
+    const stack = !!j && Object.values(j.beats_elo as Record<string, Record<string, boolean>>).every((v) => Object.values(v).every(Boolean));
+    return { key, name, j, stack };
+  });
   const opp = readBacktest<J>("opportunity");
   const pot = readBacktest<J>("potential");
   const rat = readBacktest<J>("player_ratings");
@@ -111,6 +126,17 @@ export default function MethodsPage() {
               </span>
             ))}
           </Row>
+          <Row name="Forecasts in other leagues" verdict="the stack where it wins · Elo elsewhere">
+            Same replay, each league&apos;s own history (no expected goals outside the Premier League, so the stack and
+            Elo come out almost level). Ranked probability score, last season:
+            {others.map(({ key, name, j, stack }) => (
+              <span key={key} className="block font-mono text-sm">
+                <span data-name>{name}</span>: stack <B file={`predictor_${key}`} j={j} value={j?.results?.["2025-26"]?.stack_pre_lineup?.rps} label={`RPS ${name} stack`} /> · Elo{" "}
+                <B file={`predictor_${key}`} j={j} value={j?.results?.["2025-26"]?.elo?.rps} label={`RPS ${name} Elo`} /> · closing odds{" "}
+                <B file={`predictor_${key}`} j={j} value={j?.results?.["2025-26"]?.bookmaker_closing?.rps} label={`RPS ${name} bookmaker`} /> · shown: {stack ? "stack" : "Elo"}
+              </span>
+            ))}
+          </Row>
           <Row name="Valuation" verdict="beats market value">
             Gradient boosting on past fees. Median error on test transfers{" "}
             <B file="valuation" j={val} value={val?.model_on_baseline_rows?.median_ape} label="median error, model" fmt="pct" /> vs{" "}
@@ -152,6 +178,12 @@ export default function MethodsPage() {
             CP-SAT integer programme. Predicted XI overlap with the real XI{" "}
             <B file="lineup" j={lin} value={lin ? (Object.values(lin.optimiser_overlap as Record<string, number>).at(-1) as number) : undefined} label="XI overlap" fmt="pct" /> vs{" "}
             <B file="lineup" j={lin} value={lin?.recent_minutes_baseline_overlap} label="XI overlap, heuristic" fmt="pct" /> for recent minutes.
+          </Row>
+          <Row name="Predicted XI in other leagues" verdict="the last XI, absentees replaced">
+            Without FPL minutes, the best rule found is the club&apos;s last league XI (recency-weighted starts did not
+            beat it). Share of the real XI predicted last season{" "}
+            <B file="lineup_recent" j={linOther} value={linOther?.test?.["2025"]?.last_xi_overlap} label="XI overlap, last XI" fmt="pct" />; players
+            API-Football lists as missing are replaced by the most recent other starter.
           </Row>
           <Row name="Player quality (VAEP)" verdict="beats base rate">
             Action values on open event data. Scoring-model AUC <B file="player_ratings" j={rat} value={rat?.vaep_holdout?.scores?.auc} label="VAEP AUC" />.

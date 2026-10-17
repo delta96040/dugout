@@ -270,7 +270,7 @@ class Market:
 
     def fit(self) -> None:
         df = self.frame("valuation", lambda: valuation.build(self.t), features=valuation.FEATURES)
-        self.val = valuation.ValuationModel().fit(df[df.date <= self.now])
+        self.val = valuation.ValuationModel().fit(df[df.date <= self.now]).calibrate(df, self.now)
         raw, people = None, None
 
         # The realism training frames are built from freshly loaded tables, exactly as their backtest builds them:
@@ -371,6 +371,7 @@ class Market:
         df["year"] = year
         df["mv"] = df.player_id.map(self.latest_value)
         df["to_pl"] = float(to == PL)
+        df["to_comp"] = to  # the buyer league's offset (valuation.league_offsets)
         df["pl_to_pl"] = ((df.from_comp == PL) & (to == PL)).astype(float)
         if seller_club is None:  # each player's current club in the dataset
             seller_club = df.player_id.map(self.players.current_club_id).astype(str).tolist()

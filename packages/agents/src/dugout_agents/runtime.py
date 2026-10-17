@@ -20,6 +20,23 @@ from dugout_verify.nli import NLI, BgeEmbedder, CachedEmbedder, CachedNLI, Deber
 
 log = logging.getLogger(__name__)
 NEWS_DAYS = 60
+AF_URL = "https://www.api-football.com/"
+
+
+def _af_leagues() -> list[str]:
+    from dugout_pipeline.clubs import league_config, leagues
+
+    return [lg for lg in leagues() if not league_config(lg)["provider_ids"].get("fpl")]
+
+
+AF_LEAGUES = _af_leagues()
+
+
+def absent_text(player: str, club: str, reason: str | None, kind: str | None) -> str:
+    """What API-Football's absentee list says, as one sentence (the passage and the dossier use the same words)."""
+    why = (reason or kind or "").strip()
+    why = "" if any(ch.isdigit() for ch in why) else why  # dates in reasons are not ledgered
+    return f"{player} is listed as missing for {club}'s next match" + (f" ({why.lower()})." if why else ".")
 
 
 def body_resolver(cache_dir=None):
@@ -46,6 +63,23 @@ def passages(con: duckdb.DuckDBPyConnection, tb: Toolbox, now: datetime) -> list
         name = tb.name(pid)
         text = f"Fantasy Premier League status for {name}: {status}. {news or ''}".strip()
         out.append(Passage(text, "Fantasy Premier League", 1, FPL_URL, fetched or now, official=True))
+    # leagues without FPL: API-Football's absentee lists for today's and tomorrow's matches (tier 3, not official:
+    # the dossier attributes them, "According to API-Football, ...")
+    for pid, club, reason, kind, fetched in con.execute(
+        """SELECT i.player_id, i.club_id, i.reason, i.news, i.fetched_at FROM injuries i JOIN clubs c USING (club_id)
+           WHERE i.source = 'api_football' AND c.league IN (SELECT unnest(?))
+           AND i.snapshot_date = (SELECT max(snapshot_date) FROM injuries WHERE source = 'api_football')""",
+        [AF_LEAGUES],
+    ).fetchall():
+        out.append(
+            Passage(
+                absent_text(tb.name(pid), tb.name(club), reason, kind),
+                "API-Football",
+                3,
+                AF_URL,
+                fetched or now,
+            )
+        )
     # head coaches: Wikidata and football-data.org are separate sources (tier 3 / tier 2)
     for name, club, source in con.execute(
         "SELECT name, club_id, source FROM managers WHERE club_id IS NOT NULL"

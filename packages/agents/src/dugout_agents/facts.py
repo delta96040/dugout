@@ -203,8 +203,9 @@ class Toolbox:
         metric: str,
         context: str = "",
         unit: str | None = None,
+        doc: str | None = None,
     ) -> tuple[str, Any] | None:
-        """Cites a published model output (`dugout-models publish`)."""
+        """Cites a published model output (`dugout-models publish`); `doc` overrides the report link (per league)."""
         where = "model = ? AND entity_type = ? AND entity_id = ? AND metric = ? AND context = ?"
         row = self.con.execute(
             f"SELECT as_of, value_num, value_text FROM model_outputs WHERE {where}",
@@ -222,7 +223,7 @@ class Toolbox:
             source=f"dugout_model:{model}",
             source_tier=3,
             fetched_at=row[0],
-            source_url=MODEL_DOCS.get(model),
+            source_url=doc or MODEL_DOCS.get(model),
             unit=unit,
         )
 
