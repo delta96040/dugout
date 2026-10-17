@@ -143,8 +143,17 @@ def default_index() -> ReepIndex:
 
 
 def sync_catalogue() -> str:
+    """Fetch the latest Reep release. If the upstream release is broken or unreachable but a previously synced
+    catalogue is on disk (CI keeps it in its cache), keep using that one: the ids change slowly, and one bad
+    upstream publish should not stop the whole nightly (2026-10-17: "latest.json has no valid stamp")."""
     import reep
 
-    result = reep.catalog.sync()
+    try:
+        result = reep.catalog.sync()
+    except Exception as exc:
+        if not catalogue_path().is_file():
+            raise
+        log.warning("reep sync failed (%s: %s); keeping the cached catalogue", type(exc).__name__, exc)
+        return "cached"
     default_index.cache_clear()
     return str(getattr(result, "release", result))

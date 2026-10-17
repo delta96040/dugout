@@ -31,7 +31,8 @@ class ReepAdapter(SourceAdapter):
     required = True
 
     def ingest(self) -> dict[str, int]:
-        return {"reep_release": 1 if sync_catalogue() else 0}
+        release = sync_catalogue()
+        return {"reep_release": 0 if release == "cached" else 1}  # 0 = upstream broken, cached copy in use
 
 
 ADAPTERS: dict[str, type[SourceAdapter]] = {
