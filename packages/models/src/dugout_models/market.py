@@ -271,17 +271,24 @@ class Market:
     def fit(self) -> None:
         df = self.frame("valuation", lambda: valuation.build(self.t), features=valuation.FEATURES)
         self.val = valuation.ValuationModel().fit(df[df.date <= self.now]).calibrate(df, self.now)
-        people = None
+        raw, people = None, None
+
+        # The realism training frames are built from freshly loaded tables, exactly as their backtest builds them:
+        # self.t carries string ids (_with_current_values) while the club timeline uses integer ones, which left
+        # the destination pairs empty. self.t's extra rows are today's squad values, outside the 2015-2025 years.
+        def tables():
+            nonlocal raw
+            raw = raw or valuation.load()
+            return raw
 
         def timeline():  # built once, only when a cached frame has to be rebuilt
             nonlocal people
-            # from freshly loaded tables: self.t carries string ids (_with_current_values), the timeline integer ones
-            people = people or realism.club_people(valuation.load())
+            people = people or realism.club_people(tables())
             return people
 
         snap = self.frame(
             "mobility",
-            lambda: realism.snapshots(self.t, range(2015, 2026), people=timeline()),
+            lambda: realism.snapshots(tables(), range(2015, 2026), people=timeline()),
             years=[2015, 2025],
             features=realism.MOBILITY,  # a feature change rebuilds the cached frame
             clubs="dated",  # the club on 1 June from the club timeline (realism.md, 2026-10-17)
@@ -292,7 +299,7 @@ class Market:
         self.mob_base = float(snap.moved.mean())
         pairs = self.frame(
             "destination",
-            lambda: realism.destination_pairs(self.t, range(2015, 2026), people=timeline()),
+            lambda: realism.destination_pairs(tables(), range(2015, 2026), people=timeline()),
             years=[2015, 2025],
             features=realism.DESTINATION,
             clubs="dated",
