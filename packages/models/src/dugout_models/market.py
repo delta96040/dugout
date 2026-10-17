@@ -560,9 +560,72 @@ class Market:
                     "best_name": top.name.iloc[0] if len(top) else None,
                     "bar_name": bar["name"] if bar is not None else None,
                     "bar_value": float(bar.market_value_eur) if bar is not None else np.nan,
+                    "bar_ga_p90": (
+                        (lambda pr: pr.get("goals_p90", np.nan) + pr.get("assists_p90", np.nan))(
+                            self.profile(bar.tm_player_id, g)
+                        )
+                        if bar is not None
+                        else np.nan
+                    ),
                 }
             )
         return pd.DataFrame(rows).sort_values("score", ascending=False).reset_index(drop=True)
+
+    PROFILE_MIN_MINUTES = 900  # league minutes before per-90 figures and rankings mean anything
+
+    def _league_window(self) -> pd.DataFrame:
+        """League appearances (each player's domestic league) over the last year on record, cached."""
+        if not hasattr(self, "_league_ap"):
+            ap = self.ap[(self.ap.date < self.now) & (self.ap.date >= self.now - pd.Timedelta(days=365))]
+            dom = self.comps.loc[self.comps.sub_type.isin(["first_tier", "second_tier"]), "competition_id"]
+            self._league_ap = ap[ap.competition_id.isin(dom)]
+        return self._league_ap
+
+    def _peers(self, comp: str, group: str) -> np.ndarray:
+        """Goal involvements per 90 of everyone in `comp` who plays `group` with enough league minutes."""
+        key = (comp, group)
+        cache = self.__dict__.setdefault("_peer_cache", {})
+        if key not in cache:
+            ap = self._league_window()
+            g = (
+                ap[ap.competition_id == comp]
+                .groupby("player_id")[["minutes_played", "goals", "assists"]]
+                .sum()
+            )
+            g = g[g.minutes_played >= self.PROFILE_MIN_MINUTES]
+            ids = pd.Series(g.index.astype(str), index=g.index)
+            sub = ids.map(self.players.sub_position)
+            g = g[self.plays(ids, sub, group).to_numpy()]
+            cache[key] = ((g.goals + g.assists) / g.minutes_played * 90).to_numpy()
+        return cache[key]
+
+    def profile(self, pid: str, group: str) -> dict:
+        """How a player plays and produces, from free data: league goals and assists per 90 over the last year on
+        record, his rank for goal involvement among players at the position in his league, the positions he
+        starts at, his stronger foot, height and caps. (No passing or defending data is free for most leagues.)"""
+        pid = str(pid)
+        ap = self._league_window()
+        mine = ap[ap.player_id.astype(str) == pid]
+        out: dict = {"league_minutes": float(mine.minutes_played.sum())}
+        if out["league_minutes"] >= self.PROFILE_MIN_MINUTES and len(mine):
+            m = out["league_minutes"]
+            out["goals_p90"] = float(mine.goals.sum() / m * 90)
+            out["assists_p90"] = float(mine.assists.sum() / m * 90)
+            comp = mine.competition_id.mode().iloc[0]
+            peers = self._peers(comp, group)
+            if len(peers) >= 10:
+                out["ga_pctile"] = float((peers < out["goals_p90"] + out["assists_p90"]).mean())
+                slug = str(self.comps.set_index("competition_id").name.get(comp) or "")
+                out["ga_league"] = {"laliga": "La Liga"}.get(slug, slug.replace("-", " ").title()) or None
+        pl = self.players
+        if pid in pl.index:
+            foot, height, caps = pl.foot.get(pid), pl.height_in_cm.get(pid), pl.international_caps.get(pid)
+            out["foot"] = foot if isinstance(foot, str) and foot in ("left", "right", "both") else None
+            out["height_cm"] = float(height) if height == height and height else None
+            out["caps"] = float(caps) if caps == caps and caps is not None else None
+        played = self.played.get(pid)
+        out["positions"] = ", ".join(sorted(p.lower() for p in played)) if isinstance(played, set) else None
+        return out
 
     def plays(self, ids: pd.Series, primary: pd.Series, group: str) -> pd.Series:
         """Players listed at a position of `group`, or who start there in a quarter of their games."""
@@ -644,6 +707,7 @@ class Market:
                     "fair_fee": fee,
                     "minutes_share": share,
                     "minutes_365": float(r.minutes_365),
+                    **self.profile(r.player_id, group),
                     **rs,
                 }
             )
@@ -682,6 +746,31 @@ def _tm_to_reep(con: duckdb.DuckDBPyConnection) -> dict[str, str]:
         "SELECT external_id, reep_id FROM reep.bridges WHERE provider='transfermarkt' AND namespace='spieler'"
     ).fetchall()
     return {str(a): b for a, b in rows}
+
+
+PROFILE_METRICS = {  # profile key -> (published metric, rounding); text values are published as they are
+    "goals_p90": ("goals_p90", 2),
+    "assists_p90": ("assists_p90", 2),
+    "ga_pctile": ("ga_pctile", 2),
+    "ga_league": ("ga_league", None),
+    "foot": ("foot", None),
+    "height_cm": ("height_cm", 0),
+    "caps": ("caps", 0),
+    "positions": ("positions_played", None),
+}
+
+
+def profile_rows(c: dict, pid: str, now: datetime, ctx: str) -> list[dict]:
+    """model_outputs rows for a candidate's profile (Market.profile), skipping what is unknown."""
+    rows = []
+    for key, (metric, nd) in PROFILE_METRICS.items():
+        v = c.get(key)
+        if v is None or (isinstance(v, float) and v != v):
+            continue
+        if isinstance(v, float) and nd is not None:
+            v = round(v, nd) if nd else round(v)
+        rows.append(_row("scout", "player", pid, metric, v, now, ctx))
+    return rows
 
 
 def recent_moves(con: duckdb.DuckDBPyConnection) -> set[str]:
@@ -754,6 +843,10 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
             if isinstance(n.bar_name, str) and n.bar_value == n.bar_value:
                 rows.append(_row("scout", "club", slug, "need_bar_player", n.bar_name, now, ctx))
                 rows.append(_row("scout", "club", slug, "need_bar_value", float(n.bar_value), now, ctx))
+            if n.bar_ga_p90 == n.bar_ga_p90:
+                rows.append(
+                    _row("scout", "club", slug, "need_bar_ga_p90", round(float(n.bar_ga_p90), 2), now, ctx)
+                )
             short = mk.shortlist(slug, n.group, str(tm_club))
             for c in short.itertuples():
                 k = int((short.kind[: c.Index] == c.kind).sum())  # position within its list, from 0
@@ -770,6 +863,7 @@ def market(con: duckdb.DuckDBPyConnection, now: datetime, clubs: list[str] | Non
                         "scout", "player", pid, "expected_minutes_share", round(c.minutes_share, 3), now, ctx
                     ),
                     _row("scout", "player", pid, "minutes_last_year", int(c.minutes_365), now, ctx),
+                    *profile_rows(c._asdict(), pid, now, ctx),
                     _row("scout", "player", pid, "realism", round(c.p_move, 4), now, ctx),
                     _row("scout", "player", pid, "p_sold", round(c.p_sold, 3), now, ctx),
                     _row("scout", "player", pid, "p_this_club", round(c.p_this_club, 4), now, ctx),

@@ -823,6 +823,19 @@ KIND_METRICS = {
     },
     "gem": {"age", "candidate_club", "fair_fee", "market_value", "proj_value_4y", "minutes_share_now"},
 }
+# how each candidate plays and produces (dugout_models.market.Market.profile), for every list
+PROFILE_METRICS = {
+    "goals_p90",
+    "assists_p90",
+    "ga_pctile",
+    "ga_league",
+    "foot",
+    "height_cm",
+    "caps",
+    "positions_played",
+}
+for _kind in KIND_METRICS:
+    KIND_METRICS[_kind] |= PROFILE_METRICS
 
 
 def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
@@ -884,6 +897,13 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
                 "last regular starter there",
                 f"The last of {name}'s regular starters at {group} is {{p}}.",
                 None,
+            ),
+            (
+                "need_bar_ga_p90",
+                "last regular starter's goals and assists per full match",
+                f"The last of {name}'s regular starters at {group} averages {{p}} league goals and assists per "
+                "full match.",
+                ".2f",
             ),
             (
                 "need_bar_value",
@@ -952,6 +972,30 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
                     f"{cname} has played {{p}} of {cclub}'s minutes over the last year.",
                     "pct",
                 ),
+                (
+                    "goals_p90",
+                    "league goals per full match",
+                    f"{cname} averages {{p}} league goals per full match.",
+                    ".2f",
+                ),
+                (
+                    "assists_p90",
+                    "league assists per full match",
+                    f"{cname} averages {{p}} league assists per full match.",
+                    ".2f",
+                ),
+                (
+                    "ga_pctile",
+                    "share of players at his position in his league he beats for goals and assists per full match",
+                    f"{cname} has more league goals and assists per full match than {{p}} of players at his "
+                    "position in his league.",
+                    "pct",
+                ),
+                ("ga_league", "league of that comparison", f"{cname}'s comparison is within {{p}}.", None),
+                ("foot", "stronger foot", f"{cname}'s stronger foot is his {{p}}.", None),
+                ("height_cm", "height in centimetres", f"{cname} stands {{p}} centimetres tall.", "int"),
+                ("caps", "international caps", f"{cname} has won {{p}} international caps.", "int"),
+                ("positions_played", "positions he starts at", f"{cname} starts at {{p}}.", None),
                 (
                     "minutes_last_year",
                     "minutes played in the past year's matches on record",

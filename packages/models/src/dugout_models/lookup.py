@@ -24,7 +24,7 @@ import pandas as pd
 from dugout_pipeline.settings import get_settings
 
 from dugout_models import potential
-from dugout_models.market import GROUPS, PL, SHORTLIST, STARTERS, Market
+from dugout_models.market import GROUPS, PL, SHORTLIST, STARTERS, Market, profile_rows
 from dugout_models.opportunity import FEATURES as OPP_FEATURES
 from dugout_models.publish import _row
 
@@ -226,6 +226,7 @@ def gems(mk: Market, pool: pd.DataFrame, proj: dict, ids: list[str], now: dateti
                     _row("scout", "player", r.pid, "market_value", r.mv, now, ctx),
                     _row("scout", "player", r.pid, "proj_value_4y", round(r.proj4, -5), now, ctx),
                     _row("scout", "player", r.pid, "minutes_share_now", round(r.minutes_share, 3), now, ctx),
+                    *profile_rows(mk.profile(r.player_id, n.group), r.pid, now, ctx),
                 ]
                 if fee == fee:
                     rows.append(_row("scout", "player", r.pid, "fair_fee", round(fee, -5), now, ctx))
