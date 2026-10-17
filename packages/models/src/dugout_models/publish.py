@@ -206,6 +206,7 @@ def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
     from dugout_models.lineup import (
         LINE,
         PREDICTED_XI_TRUST,
+        UNUSED_FACTOR,
         best_formation,
         ratings_from_history,
         recent_shape,
@@ -260,6 +261,7 @@ def lineups(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
         squad["available"] = ~squad.player_id.isin(out_ids)
         squad["fatigue"] = (squad.player_id.map(last7).fillna(0) - 135).clip(lower=0) / 90 * 0.5
         squad["rating"] = (1 - PREDICTED_XI_TRUST) * quality + PREDICTED_XI_TRUST * trust
+        squad["weight"] = np.where(share.to_numpy() > 0, 1.0, UNUSED_FACTOR)  # out of the rotation lately
         squad = squad.reset_index(drop=True)
         # the shape the manager actually starts (docs/backtests/lineup_shape.md), then the best XI within it
         club_xis = stats[(stats.club_id == r.club) & (stats.starts == 1)]

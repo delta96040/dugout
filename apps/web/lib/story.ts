@@ -1,7 +1,7 @@
 // The scroll story's data for one club (/story/<club>/), built from its verified dossier.
 import type { StatRef, StoryData } from "@/components/story/types";
 import { claimText, displays, section, type Dossier } from "@/lib/data";
-import { shortlists } from "@/lib/shortlist";
+import { gaps, shortlists } from "@/lib/shortlist";
 import { FORMATION_SLOTS, GAP_ZONES, opposition, scatter, slotPositions } from "@/lib/formations";
 
 
@@ -43,12 +43,14 @@ export function storyData(d: Dossier): StoryData {
   const matchId = match?.stat.entity_id;
   // six numbers with different metrics, cross-checked ones first, then re-checked single-source and model outputs
   const rank: Record<string, number> = { verified: 0, single_source: 1, model_output: 2 };
+  const labels: Record<string, string> = {};
+  for (const r of Object.values(d.key_stats ?? {}).flat()) labels[r.stat] ??= r.label;
   const verifiedSamples = ordered
     .filter((id, i) => d.stats[id] && ordered.indexOf(id) === i && d.stats[id].status in rank)
     .sort((a, b) => rank[d.stats[a].status] - rank[d.stats[b].status])
     .filter((id, i, all) => all.findIndex((j) => d.stats[j].metric === d.stats[id].metric) === i)
     .slice(0, 6)
-    .map(ref);
+    .map((id) => ({ ...ref(id), label: labels[id] }));
 
   return {
     club: d.club.name,
@@ -60,6 +62,7 @@ export function storyData(d: Dossier): StoryData {
     defActions: find("def_actions"),
     need,
     needGroup,
+    gaps: gaps(d),
     // announced signings come from the club's own site (official); press talk is a rumour, listed separately
     signings: attributed
       .filter((c) => c.sources.some((s) => s.official))

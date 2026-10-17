@@ -5,7 +5,7 @@ import Num from "@/components/Num";
 import Shortlists from "@/components/Shortlists";
 import { ordinal, plainReason, when } from "@/lib/format";
 import { clubSlugs, dossier, firstStat, leagueOf } from "@/lib/data";
-import { shortlists } from "@/lib/shortlist";
+import { gaps, shortlists } from "@/lib/shortlist";
 
 export function generateStaticParams() {
   return clubSlugs().map((slug) => ({ slug }));
@@ -29,7 +29,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
   const need = d.key_stats?.scout?.find((r) => r.label === "squad need, priority one")?.display;
   return (
     <article>
-      <section className="grid12 relative overflow-hidden pt-10 pb-6">
+      <section className="grid12 relative overflow-x-clip pt-10 pb-6">
         <p className="hang mono-label">Confidential · scouting dossier · <span data-name>{leagueOf(d).name}</span> · season <span data-meta>{d.club.season}</span></p>
         <h1 className="hang mt-3 font-display text-[clamp(3.5rem,11vw,9rem)] leading-[0.9]" data-name>{d.club.name}</h1>
         {pos && (
@@ -72,6 +72,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
                   targets={targets}
                   buyer={d.club.name}
                   need={need}
+                  gap={gaps(d)[0]}
                   n={(x) => <Num stat={x.stat} display={x.display} />}
                 />
               </div>

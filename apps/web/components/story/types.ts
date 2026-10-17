@@ -1,10 +1,13 @@
 import type { Stat } from "@/lib/data";
 import type { XY } from "@/lib/formations";
+import type { Gap } from "@/lib/shortlist";
 
 export interface StatRef {
   id: string;
   stat: Stat;
   display: string;
+  /** what the number measures, in words (the dossier's key-stat label) */
+  label?: string;
 }
 
 export interface StoryData {
@@ -17,6 +20,8 @@ export interface StoryData {
   defActions?: StatRef;
   need?: StatRef;
   needGroup?: string;
+  /** the two biggest needs with their reasons */
+  gaps: Gap[];
   signings: { title: string; url: string | null }[];
   /** the scout's three lists for the top need: dream, realistic, hidden gem (up to three names each) */
   targets: Target[];
@@ -45,6 +50,8 @@ export interface Target {
   minutesThere?: StatRef;
   /** share of his current club's minutes over the last year */
   minutesNow?: StatRef;
+  /** minutes in the past year's matches on record */
+  minutesLastYear?: StatRef;
   /** chance his club sells him in a window */
   pSold?: StatRef;
   /** chance this move happens in a window */

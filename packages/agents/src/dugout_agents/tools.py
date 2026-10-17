@@ -484,6 +484,12 @@ def headlines(tb: Toolbox, club: str, days: int = 7, limit: int = 4) -> list[Fac
            ORDER BY published_at DESC""",
         [club, tb.now - __import__("datetime").timedelta(days=days)],
     ).fetchall()
+    # an article tagged with the club may only mention it in passing (a Fulham piece naming a past Liverpool
+    # match): the headline itself must name the club or one of its players
+    names = {_fold_name(n) for n in tb.aliases.get(club, [tb.name(club)])} | {_fold_name(tb.name(club))}
+    for (pname,) in tb.con.execute("SELECT name FROM players WHERE club_id = ?", [club]).fetchall():
+        if pname and len(pname.split()[-1]) >= 4:
+            names.add(_fold_name(pname.split()[-1]))
     out, seen = [], set()
     for outlet, title in rows:
         if (
@@ -491,6 +497,8 @@ def headlines(tb: Toolbox, club: str, days: int = 7, limit: int = 4) -> list[Fac
             or any(ch.isdigit() for ch in title)
             or title in seen
             or "as it happened" in title.lower()
+            or title.rstrip().endswith("?")  # a question is not a fact to report
+            or not any(re.search(rf"\b{re.escape(n)}\b", _fold_name(title)) for n in names if n)
         ):
             continue  # titles with numbers would put unledgered digits into prose
         seen.add(title)
@@ -764,10 +772,20 @@ KIND_METRICS = {
         "fair_fee",
         "market_value",
         "expected_minutes_share",
+        "minutes_last_year",
         "contract_months",
     },
-    "realistic": {"age", "candidate_club", "fair_fee", "realism", "p_sold", "contract_months"},
-    "gem": {"age", "candidate_club", "fair_fee", "proj_value_4y", "minutes_share_now"},
+    "realistic": {
+        "age",
+        "candidate_club",
+        "fair_fee",
+        "market_value",
+        "realism",
+        "p_sold",
+        "minutes_last_year",
+        "contract_months",
+    },
+    "gem": {"age", "candidate_club", "fair_fee", "market_value", "proj_value_4y", "minutes_share_now"},
 }
 KIND_HEADLINE = {
     "best": {"age", "market_value"},
@@ -813,6 +831,59 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
                 entity_id=club,
             )
         )
+        # why it is a need: depth against what a squad carries, the best option against similar squads' best
+        # options, and how many of the options are veterans (labels name the need so the site can group them)
+        group, which_need = str(need[1]), "need one" if rank == 1 else "need two"
+        for metric, label, tmpl, fmt in (
+            (
+                "need_depth",
+                "players for the position, veterans aside",
+                f"{name} have {{p}} players for {group}, leaving veterans aside.",
+                "int",
+            ),
+            (
+                "need_wanted",
+                "players a squad carries there",
+                f"A squad carries {{p}} players for {group}.",
+                "int",
+            ),
+            ("need_best_player", "best option there", f"{name}'s best option for {group} is {{p}}.", None),
+            (
+                "need_bar_player",
+                "last regular starter there",
+                f"The last of {name}'s regular starters at {group} is {{p}}.",
+                None,
+            ),
+            (
+                "need_bar_value",
+                "last regular starter's market value",
+                f"The last of {name}'s regular starters at {group} has a market value of {{p}}.",
+                "eur_m",
+            ),
+            (
+                "need_best_value",
+                "best option's market value",
+                f"{name}'s best option for {group} has a market value of {{p}}.",
+                "eur_m",
+            ),
+            (
+                "need_peer_best_value",
+                "similar squads' best option's market value",
+                f"At the squads closest to {name} in strength, the best option for {group} is typically worth {{p}}.",
+                "eur_m",
+            ),
+            (
+                "need_ageing_share",
+                "share of the options who are veterans",
+                f"{{p}} of {name}'s options for {group} are veterans.",
+                "pct",
+            ),
+        ):
+            rec = tb.model("scout", "club", club, metric, f"need:{rank}")
+            if rec is not None and not (metric == "need_ageing_share" and float(rec[1]) == 0):
+                if metric in ("need_best_player", "need_bar_player"):
+                    tb.register(f"need_best:{rec[1]}", str(rec[1]))
+                facts += _keep(_fact(tb, name, f"{label} ({which_need})", tmpl, rec, fmt, entity_id=club))
         # three lists per need: the best fit whatever the odds, the moves most likely to happen, young players
         # who should grow into the role; several names each for the top need, the leading name for the second
         picked: list[tuple[str, str, str, str]] = []
@@ -850,6 +921,12 @@ def shortlist(tb: Toolbox, club: str, per_need: int = 3) -> list[Fact]:
                     "share of his club's minutes over the last year",
                     f"{cname} has played {{p}} of {cclub}'s minutes over the last year.",
                     "pct",
+                ),
+                (
+                    "minutes_last_year",
+                    "minutes played in the past year's matches on record",
+                    f"In the matches on record for the past year, {cname} played {{p}} minutes.",
+                    "int",
                 ),
                 (
                     "p_sold",

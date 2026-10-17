@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { StatRef, Target } from "@/components/story/types";
-import { KINDS } from "@/lib/shortlist";
+import { type Gap, KINDS } from "@/lib/shortlist";
 
 export const LIST_LABEL: Record<Target["kind"], string> = {
   best: "Dream targets · whatever the cost",
@@ -8,47 +8,85 @@ export const LIST_LABEL: Record<Target["kind"], string> = {
   gem: "Hidden gems · young, rising",
 };
 
-/** Why this name is on this list, in words, with every number a verified figure. */
-const RANK = ["The most", "The second most", "The third most", "The fourth most", "The fifth most"];
+/** Why this name is on this list, specific to him and to the buyer: the player he would have to beat, what he has
+ *  played, his contract, how his odds compare. Every number is a verified figure. */
+const MOST = ["The most", "The second most", "The third most", "The fourth most", "The fifth most"];
+const LIKELIEST = ["The likeliest", "The second likeliest", "The third likeliest", "The fourth likeliest"];
 
 function Why({
   t,
   rank,
   buyer,
   need,
+  gap,
   n,
 }: {
   t: Target;
   rank: number;
   buyer: string;
   need?: string;
+  gap?: Gap;
   n: (s: StatRef) => ReactNode;
 }) {
   // club names can carry digits ("Parma Calcio 1913"): marked as names for the site's number check
   const seller = t.club ? <span data-name>{t.club}</span> : "his club";
+  const bar = gap?.barPlayer ? (
+    <>
+      <span data-name>{gap.barPlayer}</span>
+      {gap.barValue && <> ({n(gap.barValue)})</>}
+    </>
+  ) : null;
+  const played = t.minutesLastYear && (
+    <> In the matches on record for the past year he played {n(t.minutesLastYear)} minutes for {seller}.</>
+  );
+  const months = t.contract ? Number(t.contract.stat.value) : NaN;
+  const contract =
+    t.contract && months <= 18 ? (
+      <> Only {n(t.contract)} months are left on his contract, which brings the price down.</>
+    ) : null;
   if (t.kind === "best")
     return (
       <>
-        {RANK[rank] ?? "One of the most"} valuable regular starter we found{need ? ` at ${need}` : ""}
-        {t.marketValue && <> (market value {n(t.marketValue)})</>}.
-        {t.minutesThere && <> We expect him to play {n(t.minutesThere)} of {buyer}&apos;s minutes.</>}
+        {MOST[rank] ? `${MOST[rank]} valuable regular starter` : "One of the most valuable regular starters"} we found
+        {need ? ` at ${need}` : ""}
+        {t.marketValue && <> (market value {n(t.marketValue)})</>}.{played}
+        {t.minutesThere && (
+          <>
+            {" "}
+            He would start ahead of {bar ?? <>{buyer}&apos;s current options</>}: we expect him to play{" "}
+            {n(t.minutesThere)} of {buyer}&apos;s minutes.
+          </>
+        )}
+        {contract}
       </>
     );
   if (t.kind === "realistic")
     return (
       <>
-        {seller} sell players like him more often than most
-        {t.pSold && <> ({n(t.pSold)} chance in a window)</>}, players tend to move up to richer clubs like {buyer}, and
-        he would be an upgrade on {buyer}&apos;s current option.
-        {t.chance && <> Chance this move happens: {n(t.chance)}.</>}
+        Worth {t.marketValue ? n(t.marketValue) : "more"}, more than {bar ?? <>{buyer}&apos;s last regular starter there</>}
+        , so he would be an upgrade.{played} {seller} sell players like him more often than most
+        {t.pSold && <> ({n(t.pSold)} chance in a window)</>}, and players tend to move up to richer clubs like {buyer}.
+        {contract}
+        {t.chance && (
+          <>
+            {" "}
+            {LIKELIEST[rank] ?? "One of the likeliest"} move of those we checked ({n(t.chance)} in a window; any one move
+            is a long shot).
+          </>
+        )}
       </>
     );
   return (
     <>
-      Young and already a regular
-      {t.minutesNow && <> ({n(t.minutesNow)} of {seller}&apos;s minutes over the last year)</>}, and cheaper today than{" "}
-      {buyer}&apos;s current option.
-      {t.projected && <> Projected to be worth {n(t.projected)} in a few seasons.</>}
+      {t.age ? <>Aged {n(t.age)} and</> : "Young and"} already a regular
+      {t.minutesNow && <> ({n(t.minutesNow)} of {seller}&apos;s minutes over the past year)</>}.
+      {t.marketValue && (
+        <>
+          {" "}
+          Worth {n(t.marketValue)} today{bar ? <>, less than {bar}</> : null}
+          {t.projected && <>, and projected to reach {n(t.projected)} in a few seasons</>}.
+        </>
+      )}
     </>
   );
 }
@@ -58,12 +96,15 @@ export default function Shortlists({
   targets,
   buyer,
   need,
+  gap,
   n,
   compact = false,
 }: {
   targets: Target[];
   buyer: string;
   need?: string;
+  /** the top need's numbers: who a signing has to beat */
+  gap?: Gap;
   n: (s: StatRef) => ReactNode;
   compact?: boolean;
 }) {
@@ -113,13 +154,13 @@ export default function Shortlists({
                     <details className="mt-0.5 text-sm">
                       <summary className="mono-label cursor-pointer">Why him</summary>
                       <p className="mt-0.5">
-                        <Why t={t} rank={j} buyer={buyer} need={need} n={n} />
+                        <Why t={t} rank={j} buyer={buyer} need={need} gap={gap} n={n} />
                       </p>
                     </details>
                   ) : (
                     <p className="mt-1 text-sm">
                       <span className="mono-label">Why · </span>
-                      <Why t={t} rank={j} buyer={buyer} need={need} n={n} />
+                      <Why t={t} rank={j} buyer={buyer} need={need} gap={gap} n={n} />
                     </p>
                   )}
                 </li>
