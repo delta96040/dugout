@@ -10,8 +10,8 @@
     "name": "Eredivisie",
     "country": "Netherlands"
   },
-  "generated_at": "2026-10-17T08:36:52+00:00",
-  "data_as_of": "2026-10-17T08:18:37+00:00",
+  "generated_at": "2026-10-17T09:26:22+00:00",
+  "data_as_of": "2026-10-17T09:17:39+00:00",
   "llm": null,
   "summary": {
     "agent": "director",
@@ -80,7 +80,7 @@
             "text": "Excelsior's biggest squad need is "
           },
           {
-            "stat": "ev_922cfdc0ca9a0527",
+            "stat": "ev_c2191d85d70d05d8",
             "display": "winger"
           },
           {
@@ -273,7 +273,7 @@
               "text": "We estimate Noah Naujoks's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_db3bbe12e6d82a54",
+              "stat": "ev_5576e77b5994559c",
               "display": "18%"
             },
             {
@@ -291,7 +291,7 @@
               "text": "We estimate Daniël van Vianen's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_97b3fac04618f9d6",
+              "stat": "ev_d9e4e8a6fc3f9acf",
               "display": "18%"
             },
             {
@@ -309,7 +309,7 @@
               "text": "We estimate Casper Widell's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_6018cd0a2e545377",
+              "stat": "ev_9f97af25a4cd08db",
               "display": "18%"
             },
             {
@@ -345,11 +345,47 @@
               "text": "Our fair-fee estimate for Casper Widell is "
             },
             {
-              "stat": "ev_bd4170ffd3e536eb",
+              "stat": "ev_2ada1dfc084fa874",
               "display": "€1.1m"
             },
             {
               "text": ", below his market value."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Transfermarkt valued Lennard Hartjes at "
+            },
+            {
+              "stat": "ev_daf05f81a8a8f7c1",
+              "display": "€0.8m"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our fair-fee estimate for Lennard Hartjes is "
+            },
+            {
+              "stat": "ev_334daf73b80b32b5",
+              "display": "€0.7m"
+            },
+            {
+              "text": ", in line with his market value."
             }
           ],
           "type": "stat",
@@ -381,47 +417,11 @@
               "text": "Our fair-fee estimate for Daniël van Vianen is "
             },
             {
-              "stat": "ev_becff86f7bdfc513",
+              "stat": "ev_110b54ea340473a2",
               "display": "€1.3m"
             },
             {
               "text": ", below his market value."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Transfermarkt valued Aymen Sliti at "
-            },
-            {
-              "stat": "ev_56b1ec451d3ed223",
-              "display": "€2.0m"
-            },
-            {
-              "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our fair-fee estimate for Aymen Sliti is "
-            },
-            {
-              "stat": "ev_3a66d9b0fa097728",
-              "display": "€2.1m"
-            },
-            {
-              "text": ", in line with his market value."
             }
           ],
           "type": "stat",
@@ -449,50 +449,18 @@
     }
   ],
   "stats": {
-    "ev_057d14ec9c287db2": {
-      "value": 200000.0,
-      "display": "200000",
+    "ev_0bd555819c475c5a": {
+      "value": 2000000.0,
+      "display": "2000000",
       "unit": null,
-      "metric": "need_best_value",
+      "metric": "need_peer_best_value",
       "entity_type": "club",
       "entity_id": "excelsior",
       "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_062ce3b24bef8881": {
-      "value": 500000.0,
-      "display": "500000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp3482b7c12642c7",
-      "entity_name": "Anton Salabay",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_09e424044e101718": {
-      "value": 2.0,
-      "display": "2",
-      "unit": null,
-      "metric": "need_depth",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -513,71 +481,183 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_10582aa6c332b34a": {
-      "value": 500000.0,
-      "display": "500000",
+    "ev_0e2a0b12ba10abec": {
+      "value": 2.0,
+      "display": "2",
       "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp3482b7c12642c7",
-      "entity_name": "Anton Salabay",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1e8c5a1b970c6961": {
-      "value": 0.0003,
-      "display": "0.00",
-      "unit": null,
-      "metric": "realism",
-      "entity_type": "player",
-      "entity_id": "rp3482b7c12642c7",
-      "entity_name": "Anton Salabay",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_268a6516d650bc34": {
-      "value": 1576.0,
-      "display": "1576",
-      "unit": null,
-      "metric": "minutes_last_year",
-      "entity_type": "player",
-      "entity_id": "rpf788c77e6a6cde",
-      "entity_name": "Denzel Jubitana",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2fef222a8c506bae": {
-      "value": 0.5,
-      "display": "0.50",
-      "unit": null,
-      "metric": "need_ageing_share",
+      "metric": "need_depth",
       "entity_type": "club",
       "entity_id": "excelsior",
       "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_3373f4e73b90dc6b": {
+    "ev_110b54ea340473a2": {
+      "value": 1300000.0,
+      "display": "1300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpce78fa11de7fbc",
+      "entity_name": "Daniël van Vianen",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_12f08b276895482f": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp2275fdcb0fcee9",
+      "entity_name": "Lubomir Tupta",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_1fb0887d4fdc17b5": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_223da93f6a6474ad": {
+      "value": 1750000.0,
+      "display": "1750000",
+      "unit": null,
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_27833ae1cc7a314d": {
+      "value": "APS Atromitos Athinon",
+      "display": "APS Atromitos Athinon",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpf788c77e6a6cde",
+      "entity_name": "Denzel Jubitana",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2ada1dfc084fa874": {
+      "value": 1100000.0,
+      "display": "1100000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_334daf73b80b32b5": {
+      "value": 700000.0,
+      "display": "700000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_35fe9ad84184d8d7": {
+      "value": 2000000.0,
+      "display": "2000000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3875b243a2f302d1": {
+      "value": 0.402,
+      "display": "0.40",
+      "unit": null,
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rp3482b7c12642c7",
+      "entity_name": "Anton Salabay",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3cad72ae04cae3fc": {
+      "value": 300000.0,
+      "display": "300000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rpf788c77e6a6cde",
+      "entity_name": "Denzel Jubitana",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_44e20ac3d3943fbe": {
       "value": 27.4,
       "display": "27.40",
       "unit": null,
@@ -588,55 +668,23 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_3673c0eaeb6b88b5": {
-      "value": 0.426,
-      "display": "0.43",
+    "ev_44fdb2f9007c536b": {
+      "value": "Aymen Sliti",
+      "display": "Aymen Sliti",
       "unit": null,
-      "metric": "expected_minutes_share",
-      "entity_type": "player",
-      "entity_id": "rpf788c77e6a6cde",
-      "entity_name": "Denzel Jubitana",
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3a66d9b0fa097728": {
-      "value": 2100000.0,
-      "display": "2100000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp86917ec64f2356",
-      "entity_name": "Aymen Sliti",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3fee2479b45187f7": {
-      "value": 600000.0,
-      "display": "600000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp3482b7c12642c7",
-      "entity_name": "Anton Salabay",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -657,82 +705,82 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_56b1ec451d3ed223": {
-      "value": 2000000.0,
-      "display": "2000000",
-      "unit": "EUR",
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp86917ec64f2356",
-      "entity_name": "Aymen Sliti",
-      "source": "transfermarkt_datasets",
-      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
-      "source_tier": 3,
-      "fetched_at": "2026-05-28T00:00:00+00:00",
-      "query_kind": "sql",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_5f1883c08410a4e3": {
-      "value": 600000.0,
-      "display": "600000",
+    "ev_47251a2bdd48a4db": {
+      "value": 500000.0,
+      "display": "500000",
       "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpf788c77e6a6cde",
-      "entity_name": "Denzel Jubitana",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6018cd0a2e545377": {
-      "value": 0.175,
-      "display": "0.17",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp7d4dd29e04141e",
-      "entity_name": "Casper Widell",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6608b206f5805d8e": {
-      "value": 24.3,
-      "display": "24.30",
-      "unit": null,
-      "metric": "age",
+      "metric": "fair_fee",
       "entity_type": "player",
       "entity_id": "rp3482b7c12642c7",
       "entity_name": "Anton Salabay",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_691bd1c2340ed5fc": {
-      "value": "Aymen Sliti",
-      "display": "Aymen Sliti",
+    "ev_544244b00447748d": {
+      "value": 2.0,
+      "display": "2",
       "unit": null,
-      "metric": "need_best_player",
+      "metric": "need_wanted",
       "entity_type": "club",
       "entity_id": "excelsior",
       "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5576e77b5994559c": {
+      "value": 0.181,
+      "display": "0.18",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp29d0b26681140e",
+      "entity_name": "Noah Naujoks",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_57b1b8f7a10510fd": {
+      "value": 600000.0,
+      "display": "600000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3482b7c12642c7",
+      "entity_name": "Anton Salabay",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_610c0cf0327cf430": {
+      "value": 1.0,
+      "display": "1",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -753,50 +801,34 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_758f1838532a2b86": {
-      "value": 200000.0,
-      "display": "200000",
+    "ev_7caad6a7768b3006": {
+      "value": "Mario Dominguez",
+      "display": "Mario Dominguez",
       "unit": null,
-      "metric": "need_bar_value",
+      "metric": "need_best_player",
       "entity_type": "club",
       "entity_id": "excelsior",
       "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_77995f5b4cd77810": {
-      "value": 1470.0,
-      "display": "1470",
+    "ev_7dd357d9115958fc": {
+      "value": 1576.0,
+      "display": "1576",
       "unit": null,
       "metric": "minutes_last_year",
-      "entity_type": "player",
-      "entity_id": "rp3482b7c12642c7",
-      "entity_name": "Anton Salabay",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_83550fd62af021b8": {
-      "value": "APS Atromitos Athinon",
-      "display": "APS Atromitos Athinon",
-      "unit": null,
-      "metric": "candidate_club",
       "entity_type": "player",
       "entity_id": "rpf788c77e6a6cde",
       "entity_name": "Denzel Jubitana",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -817,34 +849,18 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_86a2621fb795ef9c": {
-      "value": 2000000.0,
-      "display": "2000000",
+    "ev_89c620e4a8c1fe0f": {
+      "value": "Kolos Kovalivka",
+      "display": "Kolos Kovalivka",
       "unit": null,
-      "metric": "need_best_value",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_885d4551abb01d51": {
-      "value": 24.3,
-      "display": "24.30",
-      "unit": null,
-      "metric": "age",
+      "metric": "candidate_club",
       "entity_type": "player",
       "entity_id": "rp3482b7c12642c7",
       "entity_name": "Anton Salabay",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -865,66 +881,34 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_8c4c6739b914417e": {
-      "value": "Mario Dominguez",
-      "display": "Mario Dominguez",
-      "unit": null,
-      "metric": "need_best_player",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_922cfdc0ca9a0527": {
-      "value": "winger",
-      "display": "winger",
-      "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_97b3fac04618f9d6": {
-      "value": 0.179,
-      "display": "0.18",
+    "ev_9f97af25a4cd08db": {
+      "value": 0.175,
+      "display": "0.17",
       "unit": null,
       "metric": "sale_likelihood",
       "entity_type": "player",
-      "entity_id": "rpce78fa11de7fbc",
-      "entity_name": "Daniël van Vianen",
+      "entity_id": "rp7d4dd29e04141e",
+      "entity_name": "Casper Widell",
       "source": "dugout_model:realism",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_a0576e88a2e0a239": {
-      "value": "centre-forward",
-      "display": "centre-forward",
+    "ev_a4e96d120f5531e7": {
+      "value": 0.0003,
+      "display": "0.00",
       "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
+      "metric": "realism",
+      "entity_type": "player",
+      "entity_id": "rp3482b7c12642c7",
+      "entity_name": "Anton Salabay",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -945,66 +929,34 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_aa07e10ea964f396": {
-      "value": 4.0,
-      "display": "4",
+    "ev_b230ed960ed709f8": {
+      "value": -4.0,
+      "display": "-4",
       "unit": null,
-      "metric": "need_wanted",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_abe29ef0f0e54cb8": {
-      "value": 28.6,
-      "display": "28.60",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp2275fdcb0fcee9",
-      "entity_name": "Lubomir Tupta",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b434b186aa8db36f": {
-      "value": "Mario Dominguez",
-      "display": "Mario Dominguez",
-      "unit": null,
-      "metric": "need_bar_player",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b60e7b09d89c1d9d": {
-      "value": "Kolos Kovalivka",
-      "display": "Kolos Kovalivka",
-      "unit": null,
-      "metric": "candidate_club",
+      "metric": "contract_months",
       "entity_type": "player",
       "entity_id": "rp3482b7c12642c7",
       "entity_name": "Anton Salabay",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b501adc2e79ce118": {
+      "value": 200000.0,
+      "display": "200000",
+      "unit": null,
+      "metric": "need_bar_value",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -1025,98 +977,50 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_b82079225148be92": {
-      "value": 1750000.0,
-      "display": "1750000",
+    "ev_bf2d89944564eba4": {
+      "value": "Mario Dominguez",
+      "display": "Mario Dominguez",
       "unit": null,
-      "metric": "need_peer_best_value",
+      "metric": "need_bar_player",
       "entity_type": "club",
       "entity_id": "excelsior",
       "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_bd4170ffd3e536eb": {
-      "value": 1100000.0,
-      "display": "1100000",
+    "ev_c11ed80d895b097c": {
+      "value": 500000.0,
+      "display": "500000",
       "unit": null,
       "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp7d4dd29e04141e",
-      "entity_name": "Casper Widell",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_becff86f7bdfc513": {
-      "value": 1300000.0,
-      "display": "1300000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpce78fa11de7fbc",
-      "entity_name": "Daniël van Vianen",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_bf6236c46df405a4": {
-      "value": 2000000.0,
-      "display": "2000000",
-      "unit": null,
-      "metric": "need_peer_best_value",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c112a4425bdfeb6c": {
-      "value": 0.402,
-      "display": "0.40",
-      "unit": null,
-      "metric": "expected_minutes_share",
       "entity_type": "player",
       "entity_id": "rp3482b7c12642c7",
       "entity_name": "Anton Salabay",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_c752cebf9708ae3a": {
-      "value": 2.0,
-      "display": "2",
+    "ev_c2191d85d70d05d8": {
+      "value": "winger",
+      "display": "winger",
       "unit": null,
-      "metric": "need_wanted",
+      "metric": "need",
       "entity_type": "club",
       "entity_id": "excelsior",
       "entity_name": "Excelsior",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -1137,38 +1041,6 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_cc56dac963b080f2": {
-      "value": 1.0,
-      "display": "1",
-      "unit": null,
-      "metric": "need_depth",
-      "entity_type": "club",
-      "entity_id": "excelsior",
-      "entity_name": "Excelsior",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_cd50d2f74bd520ba": {
-      "value": 300000.0,
-      "display": "300000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpf788c77e6a6cde",
-      "entity_name": "Denzel Jubitana",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
     "ev_cdf4e1ebd1244047": {
       "value": "LLDLD",
       "display": "LLDLD",
@@ -1185,50 +1057,178 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_db3bbe12e6d82a54": {
-      "value": 0.181,
-      "display": "0.18",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp29d0b26681140e",
-      "entity_name": "Noah Naujoks",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ede7533c20074b2e": {
+    "ev_d49693495eae16ea": {
       "value": 600000.0,
       "display": "600000",
       "unit": null,
       "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rp2275fdcb0fcee9",
-      "entity_name": "Lubomir Tupta",
+      "entity_id": "rpf788c77e6a6cde",
+      "entity_name": "Denzel Jubitana",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_fea87965c6d84fa9": {
-      "value": -4.0,
-      "display": "-4",
+    "ev_d54ba4e9783e0853": {
+      "value": 0.426,
+      "display": "0.43",
       "unit": null,
-      "metric": "contract_months",
+      "metric": "expected_minutes_share",
+      "entity_type": "player",
+      "entity_id": "rpf788c77e6a6cde",
+      "entity_name": "Denzel Jubitana",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d9e4e8a6fc3f9acf": {
+      "value": 0.179,
+      "display": "0.18",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpce78fa11de7fbc",
+      "entity_name": "Daniël van Vianen",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_daf05f81a8a8f7c1": {
+      "value": 800000.0,
+      "display": "800000",
+      "unit": "EUR",
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp7fb75bfa7bd77a",
+      "entity_name": "Lennard Hartjes",
+      "source": "transfermarkt_datasets",
+      "source_url": "https://github.com/dcaribou/transfermarkt-datasets",
+      "source_tier": 3,
+      "fetched_at": "2026-05-28T00:00:00+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_db17099821c86a4d": {
+      "value": 200000.0,
+      "display": "200000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_df4ff0ecc0b8704c": {
+      "value": "centre-forward",
+      "display": "centre-forward",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e45014463b49f25e": {
+      "value": 0.5,
+      "display": "0.50",
+      "unit": null,
+      "metric": "need_ageing_share",
+      "entity_type": "club",
+      "entity_id": "excelsior",
+      "entity_name": "Excelsior",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e7f611fda23eff86": {
+      "value": 24.3,
+      "display": "24.30",
+      "unit": null,
+      "metric": "age",
       "entity_type": "player",
       "entity_id": "rp3482b7c12642c7",
       "entity_name": "Anton Salabay",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-17T08:10:13.571645+00:00",
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ea8310dd1e7180c1": {
+      "value": 28.6,
+      "display": "28.60",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp2275fdcb0fcee9",
+      "entity_name": "Lubomir Tupta",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f018f592ef71995d": {
+      "value": 24.3,
+      "display": "24.30",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3482b7c12642c7",
+      "entity_name": "Anton Salabay",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f0a0223627d08e59": {
+      "value": 1470.0,
+      "display": "1470",
+      "unit": null,
+      "metric": "minutes_last_year",
+      "entity_type": "player",
+      "entity_id": "rp3482b7c12642c7",
+      "entity_name": "Anton Salabay",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-10-17T09:09:58.567294+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -1285,19 +1285,19 @@
     "news": [],
     "transfer": [
       {
-        "stat": "ev_db3bbe12e6d82a54",
+        "stat": "ev_5576e77b5994559c",
         "display": "18%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Noah Naujoks"
       },
       {
-        "stat": "ev_97b3fac04618f9d6",
+        "stat": "ev_d9e4e8a6fc3f9acf",
         "display": "18%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Daniël van Vianen"
       },
       {
-        "stat": "ev_6018cd0a2e545377",
+        "stat": "ev_9f97af25a4cd08db",
         "display": "18%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Casper Widell"
@@ -1309,10 +1309,22 @@
         "subject": "Casper Widell"
       },
       {
-        "stat": "ev_bd4170ffd3e536eb",
+        "stat": "ev_2ada1dfc084fa874",
         "display": "€1.1m",
         "label": "estimated fair fee if sold to another Eredivisie club",
         "subject": "Casper Widell"
+      },
+      {
+        "stat": "ev_daf05f81a8a8f7c1",
+        "display": "€0.8m",
+        "label": "market value (Transfermarkt, as of May 2026)",
+        "subject": "Lennard Hartjes"
+      },
+      {
+        "stat": "ev_334daf73b80b32b5",
+        "display": "€0.7m",
+        "label": "estimated fair fee if sold to another Eredivisie club",
+        "subject": "Lennard Hartjes"
       },
       {
         "stat": "ev_83b9918030acc67d",
@@ -1321,219 +1333,207 @@
         "subject": "Daniël van Vianen"
       },
       {
-        "stat": "ev_becff86f7bdfc513",
+        "stat": "ev_110b54ea340473a2",
         "display": "€1.3m",
         "label": "estimated fair fee if sold to another Eredivisie club",
         "subject": "Daniël van Vianen"
-      },
-      {
-        "stat": "ev_56b1ec451d3ed223",
-        "display": "€2.0m",
-        "label": "market value (Transfermarkt, as of May 2026)",
-        "subject": "Aymen Sliti"
-      },
-      {
-        "stat": "ev_3a66d9b0fa097728",
-        "display": "€2.1m",
-        "label": "estimated fair fee if sold to another Eredivisie club",
-        "subject": "Aymen Sliti"
       }
     ],
     "scout": [
       {
-        "stat": "ev_922cfdc0ca9a0527",
+        "stat": "ev_c2191d85d70d05d8",
         "display": "winger",
         "label": "squad need, priority one",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_cc56dac963b080f2",
+        "stat": "ev_610c0cf0327cf430",
         "display": "1",
         "label": "players for the position, veterans aside (need one)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_aa07e10ea964f396",
+        "stat": "ev_1fb0887d4fdc17b5",
         "display": "4",
         "label": "players a squad carries there (need one)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_691bd1c2340ed5fc",
+        "stat": "ev_44fdb2f9007c536b",
         "display": "Aymen Sliti",
         "label": "best option there (need one)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_86a2621fb795ef9c",
+        "stat": "ev_35fe9ad84184d8d7",
         "display": "€2.0m",
         "label": "best option's market value (need one)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_b82079225148be92",
+        "stat": "ev_223da93f6a6474ad",
         "display": "€1.8m",
         "label": "similar squads' best option's market value (need one)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_2fef222a8c506bae",
+        "stat": "ev_e45014463b49f25e",
         "display": "50%",
         "label": "share of the options who are veterans (need one)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_3373f4e73b90dc6b",
+        "stat": "ev_44e20ac3d3943fbe",
         "display": "27",
         "label": "age (best target)",
         "subject": "Denzel Jubitana"
       },
       {
-        "stat": "ev_83550fd62af021b8",
+        "stat": "ev_27833ae1cc7a314d",
         "display": "APS Atromitos Athinon",
         "label": "current club",
         "subject": "Denzel Jubitana"
       },
       {
-        "stat": "ev_268a6516d650bc34",
+        "stat": "ev_7dd357d9115958fc",
         "display": "1576",
         "label": "minutes played in the past year's matches on record",
         "subject": "Denzel Jubitana"
       },
       {
-        "stat": "ev_5f1883c08410a4e3",
+        "stat": "ev_d49693495eae16ea",
         "display": "€0.6m",
         "label": "market value",
         "subject": "Denzel Jubitana"
       },
       {
-        "stat": "ev_cd50d2f74bd520ba",
+        "stat": "ev_3cad72ae04cae3fc",
         "display": "€0.3m",
         "label": "estimated fair fee",
         "subject": "Denzel Jubitana"
       },
       {
-        "stat": "ev_3673c0eaeb6b88b5",
+        "stat": "ev_d54ba4e9783e0853",
         "display": "43%",
         "label": "expected share of minutes at the club",
         "subject": "Denzel Jubitana"
       },
       {
-        "stat": "ev_6608b206f5805d8e",
+        "stat": "ev_e7f611fda23eff86",
         "display": "24",
         "label": "age (best target)",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_b60e7b09d89c1d9d",
+        "stat": "ev_89c620e4a8c1fe0f",
         "display": "Kolos Kovalivka",
         "label": "current club",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_77995f5b4cd77810",
+        "stat": "ev_f0a0223627d08e59",
         "display": "1470",
         "label": "minutes played in the past year's matches on record",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_fea87965c6d84fa9",
+        "stat": "ev_b230ed960ed709f8",
         "display": "-4",
         "label": "months left on his contract",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_3fee2479b45187f7",
+        "stat": "ev_57b1b8f7a10510fd",
         "display": "€0.6m",
         "label": "market value",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_062ce3b24bef8881",
+        "stat": "ev_c11ed80d895b097c",
         "display": "€0.5m",
         "label": "estimated fair fee",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_c112a4425bdfeb6c",
+        "stat": "ev_3875b243a2f302d1",
         "display": "40%",
         "label": "expected share of minutes at the club",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_a0576e88a2e0a239",
+        "stat": "ev_df4ff0ecc0b8704c",
         "display": "centre-forward",
         "label": "squad need, priority two",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_09e424044e101718",
+        "stat": "ev_0e2a0b12ba10abec",
         "display": "2",
         "label": "players for the position, veterans aside (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_c752cebf9708ae3a",
+        "stat": "ev_544244b00447748d",
         "display": "2",
         "label": "players a squad carries there (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_8c4c6739b914417e",
+        "stat": "ev_7caad6a7768b3006",
         "display": "Mario Dominguez",
         "label": "best option there (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_b434b186aa8db36f",
+        "stat": "ev_bf2d89944564eba4",
         "display": "Mario Dominguez",
         "label": "last regular starter there (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_758f1838532a2b86",
+        "stat": "ev_b501adc2e79ce118",
         "display": "€0.2m",
         "label": "last regular starter's market value (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_057d14ec9c287db2",
+        "stat": "ev_db17099821c86a4d",
         "display": "€0.2m",
         "label": "best option's market value (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_bf6236c46df405a4",
+        "stat": "ev_0bd555819c475c5a",
         "display": "€2.0m",
         "label": "similar squads' best option's market value (need two)",
         "subject": "Excelsior"
       },
       {
-        "stat": "ev_abe29ef0f0e54cb8",
+        "stat": "ev_ea8310dd1e7180c1",
         "display": "29",
         "label": "age (best target, second need)",
         "subject": "Lubomir Tupta"
       },
       {
-        "stat": "ev_ede7533c20074b2e",
+        "stat": "ev_12f08b276895482f",
         "display": "€0.6m",
         "label": "market value",
         "subject": "Lubomir Tupta"
       },
       {
-        "stat": "ev_885d4551abb01d51",
+        "stat": "ev_f018f592ef71995d",
         "display": "24",
         "label": "age (realistic target, second need)",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_10582aa6c332b34a",
+        "stat": "ev_47251a2bdd48a4db",
         "display": "€0.5m",
         "label": "estimated fair fee",
         "subject": "Anton Salabay"
       },
       {
-        "stat": "ev_1e8c5a1b970c6961",
+        "stat": "ev_a4e96d120f5531e7",
         "display": "0.0%",
         "label": "chance the move happens in a window (sale likelihood x this club's share of buyers)",
         "subject": "Anton Salabay"
