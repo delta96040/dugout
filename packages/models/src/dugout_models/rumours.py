@@ -310,6 +310,18 @@ class People:
         )
         return (None if club == "0" else club), parent
 
+    def since(self, pid: int, d: pd.Timestamp) -> pd.Timestamp | None:
+        """When his spell at his club on day d began (its first observation), or None."""
+        if pid not in self.days:
+            return None
+        i = int(np.searchsorted(self.days[pid], _day(d), side="right")) - 1
+        if i < 0:
+            return None
+        cs, club = self.clubs[pid], self.clubs[pid][i]
+        while i > 0 and cs[i - 1] == club:
+            i -= 1
+        return EPOCH + pd.Timedelta(days=int(self.days[pid][i]))
+
     def arrivals(self) -> pd.DataFrame:
         """(player, club, date) each time the timeline shows him at a new club; the date is the first sighting."""
         rows = []
