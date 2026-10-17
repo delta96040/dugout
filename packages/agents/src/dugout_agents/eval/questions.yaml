@@ -228,3 +228,19 @@
   question: What is Michael Kayode's potential and how would he fit in at Liverpool?
   agents: [potential, fit]
   expect: [{metric: proj_value_4y, entity: Kayode}, {metric: expected_minutes_share, entity: Kayode}]
+# from PR #7 (tuned on, so not held out)
+- id: q57
+  question: Will Brentford score against Liverpool this weekend?
+  club: brentford
+  agents: [match]
+  expect: [{metric: [exp_home_goals, exp_away_goals], entity: Brentford}]
+- id: q58
+  question: How many goals could Liverpool score in their next game?
+  club: liverpool
+  agents: [match]
+  expect: [{metric: [exp_home_goals, exp_away_goals], entity: Liverpool}]
+- id: q59
+  question: Would Liverpool score against Brentford at Anfield?
+  club: liverpool
+  agents: [match]
+  expect: [{metric: [exp_home_goals, exp_away_goals], entity: Liverpool}]
