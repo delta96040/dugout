@@ -82,7 +82,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
                 <ul className="mt-2 space-y-1 text-sm text-pencil">
                   {s.withheld.map((w, j) => (
                     <li key={j}>
-                      <span className="line-through">{w.text}</span> — <span data-meta>{plainReason(w.status, w.reason)}</span>
+                      <span className="line-through" data-meta>{w.text}</span> — <span data-meta>{plainReason(w.status, w.reason)}</span>
                     </li>
                   ))}
                 </ul>

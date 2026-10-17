@@ -201,7 +201,7 @@ export function chapterContent(d: StoryData) {
             {d.verifiedSamples.map((s) => (
               <li key={s.id} className="flex justify-between gap-4 border-b border-ink/30 py-1">
                 <span className="text-pencil">
-                  {s.label ?? metricName(s.stat.metric)} · {s.stat.entity_name}
+                  <span data-meta>{s.label ?? metricName(s.stat.metric)}</span> · <span data-name>{s.stat.entity_name}</span>
                 </span>
                 <Scramble s={s} chapter={3} />
               </li>
