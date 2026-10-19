@@ -1,11 +1,12 @@
 """Kaggle round trip for the writer fine-tune: upload data, push the training kernel, fetch its outputs.
 
     uv run python tools/finetune/push.py data                 # data/finetune/{train,val}.jsonl -> private dataset
-    uv run python tools/finetune/push.py kernel [--base M]    # tools/finetune/train.py -> GPU kernel (T4)
+    uv run python tools/finetune/push.py kernel [--base M] [--public]  # train.py -> GPU kernel (T4), private
     uv run python tools/finetune/push.py status
     uv run python tools/finetune/push.py output               # -> data/finetune/kaggle/<kernel>/
 
-Credentials: KAGGLE_USERNAME / KAGGLE_KEY from .env (or the environment); never printed. The Kaggle CLI runs
+Credentials: KAGGLE_USERNAME + KAGGLE_API_TOKEN (or the legacy KAGGLE_KEY) from .env or the environment; never
+printed. The Kaggle CLI runs
 pinned through `uvx`, not as a workspace dependency. The dataset stays private: teacher notes quote headlines.
 """
 
@@ -19,9 +20,10 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-KAGGLE = ["uvx", "--from", "kaggle==1.7.4.5", "kaggle"]
+KAGGLE = ["uvx", "--from", "kaggle==2.2.4", "kaggle"]
 DATASET = "dugout-writer-sft"
 BUILD = ROOT / ".cache" / "kaggle"
+CRED_KEYS = ("KAGGLE_USERNAME", "KAGGLE_API_TOKEN", "KAGGLE_KEY")
 
 
 def env() -> dict[str, str]:
@@ -30,10 +32,10 @@ def env() -> dict[str, str]:
     if path.exists():
         for line in path.read_text(encoding="utf-8").splitlines():
             key, sep, value = line.partition("=")
-            if sep and key.strip() in ("KAGGLE_USERNAME", "KAGGLE_KEY") and key.strip() not in out:
+            if sep and key.strip() in CRED_KEYS and key.strip() not in out:
                 out[key.strip()] = value.strip().strip('"')
-    if not out.get("KAGGLE_USERNAME") or not out.get("KAGGLE_KEY"):
-        raise SystemExit("KAGGLE_USERNAME / KAGGLE_KEY missing (add them to .env)")
+    if not out.get("KAGGLE_USERNAME") or not (out.get("KAGGLE_API_TOKEN") or out.get("KAGGLE_KEY")):
+        raise SystemExit("KAGGLE_USERNAME / KAGGLE_API_TOKEN missing (add them to .env)")
     return out
 
 
@@ -62,7 +64,7 @@ def push_data() -> None:
         kaggle("datasets", "create", "-p", str(d), "-r", "zip")  # private unless --public
 
 
-def push_kernel(base: str) -> None:
+def push_kernel(base: str, smoke: bool = False, public: bool = False) -> None:
     user = env()["KAGGLE_USERNAME"]
     slug = kernel_slug(base)
     d = BUILD / slug
@@ -70,6 +72,8 @@ def push_kernel(base: str) -> None:
     d.mkdir(parents=True)
     code = (ROOT / "tools" / "finetune" / "train.py").read_text(encoding="utf-8")
     code = code.replace('os.environ.get("BASE_MODEL", "Qwen/Qwen2.5-1.5B-Instruct")', repr(base))
+    if smoke:  # a few steps on a slice: checks installs, training, merge and GGUF export before the real run
+        code = code.replace("SMOKE = False", "SMOKE = True")
     (d / "train.py").write_text(code, encoding="utf-8")
     meta = {
         "id": f"{user}/{slug}",
@@ -77,7 +81,7 @@ def push_kernel(base: str) -> None:
         "code_file": "train.py",
         "language": "python",
         "kernel_type": "script",
-        "is_private": True,
+        "is_private": not public,  # --public once the owner agrees (no secrets in it); the dataset stays private
         "enable_gpu": True,
         "enable_internet": True,  # pip pins, the base model from the Hub, llama.cpp's converter
         "machine_shape": "NvidiaTeslaT4",
@@ -93,13 +97,15 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("what", choices=["data", "kernel", "status", "output"])
     p.add_argument("--base", default="Qwen/Qwen2.5-1.5B-Instruct")
+    p.add_argument("--smoke", action="store_true", help="tiny run to test the kernel end to end")
+    p.add_argument("--public", action="store_true", help="publish the notebook (default private)")
     a = p.parse_args()
     user = env()["KAGGLE_USERNAME"]
     slug = kernel_slug(a.base)
     if a.what == "data":
         push_data()
     elif a.what == "kernel":
-        push_kernel(a.base)
+        push_kernel(a.base, a.smoke, a.public)
     elif a.what == "status":
         kaggle("kernels", "status", f"{user}/{slug}")
     else:

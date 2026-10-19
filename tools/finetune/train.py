@@ -31,16 +31,18 @@ CONFIG = {
     "seed": 7,
     "epochs": 3,
     "lr": 2e-4,
-    "batch_size": 2,
-    "grad_accum": 8,
+    "batch_size": 1,
+    "grad_accum": 16,
     "max_len": 4096,
     "lora_r": 16,
     "lora_alpha": 32,
     "lora_dropout": 0.05,
     "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
     "warmup_ratio": 0.05,
+    "eval_every": 10,  # optimizer steps between validation losses (the curve in docs/backtests/writer_finetune/)
 }
 OUT = Path("/kaggle/working")
+SMOKE = False  # push.py --smoke: 16 examples, a few steps
 
 
 def sh(*cmd: str) -> None:
@@ -54,8 +56,51 @@ def find_data() -> Path:
     raise SystemExit("train.jsonl not found under /kaggle/input")
 
 
+def curves(history: list[dict], before: float) -> None:
+    """loss_curve.csv (step, epoch, train_loss, val_loss) and loss_curve.png from the trainer's log."""
+    import csv
+
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    rows = [{"step": 0, "epoch": 0.0, "train_loss": "", "val_loss": before}]
+    for h in history:
+        if "loss" in h or "eval_loss" in h:
+            rows.append(
+                {
+                    "step": h["step"],
+                    "epoch": round(h["epoch"], 3),
+                    "train_loss": h.get("loss", ""),
+                    "val_loss": h.get("eval_loss", ""),
+                }
+            )
+    with (OUT / "loss_curve.csv").open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=["step", "epoch", "train_loss", "val_loss"])
+        w.writeheader()
+        w.writerows(rows)
+    tr = [(r["step"], r["train_loss"]) for r in rows if r["train_loss"] != ""]
+    va = [(r["step"], r["val_loss"]) for r in rows if r["val_loss"] != ""]
+    fig, ax = plt.subplots(figsize=(7, 4), dpi=150)
+    ax.plot(*zip(*tr, strict=True), label="train (assistant tokens)", color="#1f6feb", linewidth=1.5)
+    ax.plot(
+        *zip(*va, strict=True), label="validation (held-out clubs)", color="#d97706", marker="o", markersize=3
+    )
+    ax.set_xlabel("optimizer step")
+    ax.set_ylabel("cross-entropy loss")
+    ax.set_title(f"LoRA fine-tune of {CONFIG['base_model'].split('/')[-1]} on dugout writer notes")
+    ax.grid(alpha=0.3)
+    ax.legend()
+    fig.tight_layout()
+    fig.savefig(OUT / "loss_curve.png")
+
+
 def main() -> None:
     sh(sys.executable, "-m", "pip", "install", "-q", *PINS)
+    os.environ["CUDA_VISIBLE_DEVICES"] = (
+        "0"  # Kaggle's "T4 x2": one GPU, no DataParallel (simpler, deterministic)
+    )
     import torch
     import transformers
     from peft import LoraConfig, get_peft_model
@@ -67,6 +112,9 @@ def main() -> None:
         s: [json.loads(x) for x in (data / f"{s}.jsonl").read_text("utf-8").splitlines() if x.strip()]
         for s in ("train", "val")
     }
+    if SMOKE:
+        rows = {"train": rows["train"][:16], "val": (rows["val"] or rows["train"])[:4]}
+        CONFIG.update(epochs=1, grad_accum=2, eval_every=2)
     print({k: len(v) for k, v in rows.items()}, flush=True)
 
     tok = AutoTokenizer.from_pretrained(CONFIG["base_model"])
@@ -97,7 +145,7 @@ def main() -> None:
         }
 
     model = AutoModelForCausalLM.from_pretrained(
-        CONFIG["base_model"], torch_dtype=torch.float16, device_map={"": 0}
+        CONFIG["base_model"], dtype=torch.float16, device_map={"": 0}
     )
     model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
     model.enable_input_require_grads()
@@ -124,8 +172,9 @@ def main() -> None:
         warmup_ratio=CONFIG["warmup_ratio"],
         lr_scheduler_type="cosine",
         fp16=True,
-        logging_steps=5,
-        eval_strategy="epoch",
+        logging_steps=2,
+        eval_strategy="steps",
+        eval_steps=max(1, CONFIG["eval_every"]),
         save_strategy="no",
         report_to=[],
         seed=CONFIG["seed"],
@@ -185,6 +234,7 @@ def main() -> None:
         "versions": {"torch": torch.__version__, "pins": PINS, "llama.cpp": LLAMA_CPP_TAG},
     }
     (OUT / "metrics.json").write_text(json.dumps(metrics, indent=1))
+    curves(trainer.state.log_history, before)
     print(json.dumps({k: v for k, v in metrics.items() if k != "log_history"}, indent=1))
 
 
