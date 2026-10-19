@@ -5,13 +5,13 @@ Two jobs:
   train  tools/finetune/train.py: LoRA on data/finetune/{train,val}.jsonl
 
     uv run python tools/finetune/push.py data   --job teach|train      # inputs -> a private Kaggle dataset
-    uv run python tools/finetune/push.py kernel --job teach|train [--smoke] [--public] [--base M]
+    uv run python tools/finetune/push.py kernel --job teach|train [--smoke] [--private] [--base M]
     uv run python tools/finetune/push.py status --job ...
     uv run python tools/finetune/push.py output --job ...              # -> data/finetune/kaggle/<kernel>/
 
 Credentials: KAGGLE_USERNAME + KAGGLE_API_TOKEN (or the legacy KAGGLE_KEY) from .env or the environment; never
 printed. The Kaggle CLI runs pinned through `uvx`, not as a workspace dependency. Datasets stay private (teacher
-notes quote headlines); notebooks are private unless --public.
+notes quote headlines); notebooks are public unless --private.
 """
 
 from __future__ import annotations
@@ -94,7 +94,7 @@ def push_kernel(job: str, base: str, smoke: bool = False, public: bool = False) 
         "code_file": script,
         "language": "python",
         "kernel_type": "script",
-        "is_private": not public,  # --public once the owner agrees (no secrets in it); the dataset stays private
+        "is_private": not public,  # public notebooks (owner's choice; no secrets in them); datasets stay private
         "enable_gpu": True,
         "enable_internet": True,  # pip pins, models from the Hub, llama.cpp releases
         "machine_shape": "NvidiaTeslaT4",  # "T4 x2": the teacher splits its layers over both
@@ -112,14 +112,14 @@ def main() -> None:
     p.add_argument("--job", choices=list(JOBS), default="train")
     p.add_argument("--base", default="Qwen/Qwen2.5-1.5B-Instruct")
     p.add_argument("--smoke", action="store_true", help="tiny run to test the kernel end to end")
-    p.add_argument("--public", action="store_true", help="publish the notebook (default private)")
+    p.add_argument("--private", action="store_true", help="keep the notebook private (default public)")
     a = p.parse_args()
     user = env()["KAGGLE_USERNAME"]
     slug = kernel_slug(a.job, a.base)
     if a.what == "data":
         push_data(a.job)
     elif a.what == "kernel":
-        push_kernel(a.job, a.base, a.smoke, a.public)
+        push_kernel(a.job, a.base, a.smoke, public=not a.private)
     elif a.what == "status":
         kaggle("kernels", "status", f"{user}/{slug}")
     else:
