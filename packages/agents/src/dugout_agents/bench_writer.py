@@ -34,14 +34,19 @@ def sections(ctx: Context, clubs: list[str]) -> list[dict]:
     for club in clubs:
         for name in CLUB_LEVEL:
             spec = SPECIALISTS[name]
+            if not spec.prose:  # the lineup is always templated in production
+                continue
             facts = spec.gather(ctx.toolbox, club, [])
+            facts = facts[: spec.writer_facts] if spec.writer_facts else facts  # as graph.specialist does
             if facts:
                 q = spec.dossier_question.format(club=ctx.toolbox.name(club))
                 out.append({"club": club, "agent": name, "role": spec.role, "question": q, "facts": facts})
     return out
 
 
-def run(ctx: Context, models: list[str], clubs: list[str], out_dir: Path | None = None) -> dict:
+def run(
+    ctx: Context, models: list[str], clubs: list[str], out_dir: Path | None = None, name: str = "writer_llm"
+) -> dict:
     secs = sections(ctx, clubs)
     results: dict[str, dict] = {}
     for spec in models:
@@ -58,6 +63,7 @@ def run(ctx: Context, models: list[str], clubs: list[str], out_dir: Path | None 
                 ledger=ctx.ledger,
                 checker=ctx.checker,
                 allowed_names=ctx.allowed_names(),
+                template_limit=SPECIALISTS[s["agent"]].max_facts,
             )
             ok = d.writer.startswith("llm")
             rows.append(
@@ -92,15 +98,13 @@ def run(ctx: Context, models: list[str], clubs: list[str], out_dir: Path | None 
         "results": results,
     }
     if out_dir:
-        write_report(report, out_dir)
+        write_report(report, out_dir, name)
     return report
 
 
-def write_report(report: dict, out_dir: Path) -> None:
+def write_report(report: dict, out_dir: Path, name: str = "writer_llm") -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "writer_llm.json").write_text(
-        json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    (out_dir / f"{name}.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     lines = [
         "# Writer benchmark: which LLM writes notes that pass the publish gate",
         "",
@@ -126,4 +130,4 @@ def write_report(report: dict, out_dir: Path) -> None:
                 f"> {sample['text']}",
                 "",
             ]
-    (out_dir / "writer_llm.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (out_dir / f"{name}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

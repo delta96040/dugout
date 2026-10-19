@@ -112,9 +112,39 @@ def cmd_bench_writer(args) -> int:
     from dugout_agents.bench_writer import run
 
     ctx = _ctx(argparse.Namespace(no_llm=True, db=args.db))
-    r = run(ctx, args.models.split(","), args.clubs.split(","), out_dir=REPO_ROOT / "docs" / "backtests")
+    clubs = args.clubs.split(",")
+    if args.clubs == "heldout":  # the fine-tune's test clubs (data/finetune/split.json)
+        split = json.loads((REPO_ROOT / "data" / "finetune" / "split.json").read_text(encoding="utf-8"))
+        clubs = sorted(c for c, s in split.items() if s == "test")
+    r = run(ctx, args.models.split(","), clubs, out_dir=REPO_ROOT / "docs" / "backtests", name=args.name)
     for m, x in r["results"].items():
         print(m, {k: v for k, v in x.items() if k != "rows"})
+    return 0
+
+
+def cmd_finetune_data(args) -> int:
+    from dugout_agents import finetune
+
+    out = REPO_ROOT / "data" / "finetune"
+    if not args.finalise:
+        from dugout_agents.bench_writer import make_llm
+
+        llm = make_llm(args.teacher)
+        watch = finetune.RateWatch()
+        llm._http.event_hooks["response"].append(watch)  # reads the provider's remaining-requests header
+        ctx = _ctx(argparse.Namespace(no_llm=True, db=args.db))
+        stats = finetune.generate(
+            ctx,
+            llm,
+            args.teacher,
+            out,
+            max_calls=args.max_calls,
+            floor=args.floor,
+            players_per_club=args.players,
+            watch=watch,
+        )
+        print(dict(stats))
+    print(json.dumps(finetune.finalise(out), indent=1))
     return 0
 
 
@@ -151,8 +181,20 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument(
         "--models", required=True, help="comma list of <provider>:<model> (groq, openrouter, local)"
     )
-    s.add_argument("--clubs", default="liverpool,arsenal")
+    s.add_argument(
+        "--clubs", default="liverpool,arsenal", help="comma list, or 'heldout' (fine-tune test clubs)"
+    )
+    s.add_argument("--name", default="writer_llm", help="report name in docs/backtests")
     s.set_defaults(fn=cmd_bench_writer)
+    s = sub.add_parser(
+        "finetune-data", help="teacher notes that pass the publish gate -> data/finetune (SFT pairs)"
+    )
+    s.add_argument("--teacher", default="groq:qwen/qwen3.8-27b")
+    s.add_argument("--max-calls", type=int, default=300, help="teacher calls this run (the run resumes)")
+    s.add_argument("--floor", type=int, default=200, help="slow down below this many requests left today")
+    s.add_argument("--players", type=int, default=4, help="squad players per club with player questions")
+    s.add_argument("--finalise", action="store_true", help="only dedupe and write train/val files")
+    s.set_defaults(fn=cmd_finetune_data)
     args = p.parse_args(argv)
     return args.fn(args)
 
