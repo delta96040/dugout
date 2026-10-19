@@ -1,6 +1,7 @@
 """Fine-tuning data for the writer: fact cards -> notes that passed the publish gate.
 
-A teacher LLM (Groq Qwen, the best writer in docs/backtests/writer_llm.md) gets each prompt exactly as production
+A teacher LLM (Groq Qwen, the best writer in docs/backtests/writer_llm.md; when its daily token cap is reached,
+the next open-weight model in the `--teacher` chain, recorded per example) gets each prompt exactly as production
 builds it (`writer.SYSTEM`, `writer.USER`, `writer.card`). A pair is kept only when the draft passes the writer's
 checks *and* the full publish gate (Stat Auditor + Fact-Check, nothing withheld). The target is the teacher's raw
 reply: prose with fact codes ([F3]) and no numbers, so a student learns the same contract. A draft accepted after
@@ -185,6 +186,11 @@ class Recorder:
         self.replies.append(out)
         return out
 
+    @property
+    def used(self) -> str:
+        """The model that wrote the last reply (a FallbackLLM records it; a single LLM is itself)."""
+        return getattr(self.llm, "used", self.llm.name)
+
 
 def has_digits(target: str) -> bool:
     """A digit anywhere but inside a fact code: never a training target (the student must not learn numbers)."""
@@ -238,7 +244,7 @@ def teach(ctx: Context, llm: LLM, prompt: Prompt, teacher: str) -> Outcome:
         "question": s.question,
         "messages": [*prompt.messages(), {"role": "assistant", "content": target}],
         "first_try": len(draft.attempts) == 1,
-        "teacher": teacher,
+        "teacher": draft.writer.removeprefix("llm:"),  # the chain member that wrote the accepted note
         "created_at": datetime.now(UTC).isoformat(timespec="seconds"),
     }
     return Outcome("accepted", example, errors, calls)
@@ -377,7 +383,7 @@ def finalise(out_dir: Path) -> dict:
                 fh.write(json.dumps({"messages": e["messages"], **meta}, ensure_ascii=False) + "\n")
     log_rows = [json.loads(x) for x in (out_dir / "log.jsonl").read_text(encoding="utf-8").splitlines()]
     stats = {
-        "teacher": sorted({e["teacher"] for e in kept}),
+        "teacher": Counter(e["teacher"] for e in kept),
         "clubs": Counter(split.values()),
         "examples": Counter(split[e["club"]] for e in kept),
         "by_agent": Counter(e["agent"] for e in kept),

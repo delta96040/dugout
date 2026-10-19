@@ -53,6 +53,7 @@ def test_accepted_target_keeps_codes_and_first_prompt(con, ledger):  # noqa: F81
     ex = out.example
     assert ex["messages"][2]["content"] == good and not ex["first_try"]
     assert "rejected" not in ex["messages"][1]["content"]  # paired with the first prompt, not the retry
+    assert ex["teacher"] == "scripted"
     assert not finetune.has_digits(good) and finetune.has_digits("Liverpool have 13 points [F2].")
 
 
