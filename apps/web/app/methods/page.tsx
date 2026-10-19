@@ -70,6 +70,14 @@ export default function MethodsPage() {
   const nli = readBacktest<J>("factcheck_nli");
   const hold = readBacktest<J>("agents_eval_templates_holdout");
   const holdLlm = readBacktest<J>("agents_eval_llm_holdout");
+  const wft = readBacktest<J>("writer_finetune");
+  const wm = wft?.models ?? {};
+  const [ft, ftBase, fallback, hosted] = [
+    wm["local:dugout-writer-1.5b"],
+    wm["local:qwen2.5-1.5b-8k"],
+    wm["local:qwen2.5:3b"],
+    wm["groq:qwen/qwen3.8-27b"],
+  ];
   const seasons = pred ? Object.keys(pred.results) : [];
   return (
     <article className="grid12 pt-10">
@@ -231,6 +239,24 @@ export default function MethodsPage() {
             Gaussian mixtures on <span data-meta>per-90</span> profiles. Role stability (adjusted Rand){" "}
             <B file="roles" j={roles} value={roles?.role_stability_ari} label="role stability ARI" />.
           </Row>
+          {ft && (
+            <Row
+              name="Fine-tuned writer"
+              verdict={fallback && ft.accepted > fallback.accepted ? "beats the local fallback" : "does not beat the local fallback"}
+            >
+              A small open model (<span data-name>Qwen2.5-1.5B</span>, LoRA) trained on{" "}
+              <B file="writer_finetune" j={wft} value={wft.dataset?.examples?.train} label="training notes" fmt="int" /> notes that
+              passed this gate, written by the larger open model dugout uses on Groq. On clubs it never saw, its notes passed every
+              check <B file="writer_finetune" j={wft} value={ft.accepted} label="accepted, fine-tuned" fmt="pct" /> of the time vs{" "}
+              <B file="writer_finetune" j={wft} value={ftBase?.accepted} label="accepted, base model" fmt="pct" /> before fine-tuning,{" "}
+              <B file="writer_finetune" j={wft} value={fallback?.accepted} label="accepted, local fallback" fmt="pct" /> for the
+              current local fallback and{" "}
+              <B file="writer_finetune" j={wft} value={hosted?.accepted} label="accepted, hosted writer" fmt="pct" /> for the hosted
+              writer. Drafts that tried to write a number:{" "}
+              <B file="writer_finetune" j={wft} value={ft.stray_number_drafts} label="stray-number drafts, fine-tuned" fmt="int" /> vs{" "}
+              <B file="writer_finetune" j={wft} value={ftBase?.stray_number_drafts} label="stray-number drafts, base model" fmt="int" />.
+            </Row>
+          )}
         </ul>
         <p className="mono-label mt-6">
           Full reports, including what did not work (FootballBERT embeddings were not adopted: the signal was leakage):{" "}
