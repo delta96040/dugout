@@ -2,8 +2,9 @@
 
 Runs as a Kaggle script kernel (`tools/finetune/push.py` uploads the data and this file). Input: the dataset
 `<user>/dugout-writer-sft` (train.jsonl / val.jsonl from `dugout-agents finetune-data`, chat format). Loss is on
-the assistant reply only. Writes to /kaggle/working: the LoRA adapter, the merged model as a GGUF (f16, for
-`ollama create --quantize q4_K_M`), metrics.json (train/val loss before and after, timings, versions, seed).
+the assistant reply only. Writes to /kaggle/working: the LoRA adapter, the merged model as a q4_K_M GGUF (what
+`ollama pull qwen2.5:1.5b` serves for the base, so local comparisons are like for like), metrics.json (val loss
+before and after, timings, versions, seed) and the loss curve (CSV + PNG).
 
 Kaggle's T4 has no bf16: the base is loaded in fp16, LoRA weights train in fp32 under fp16 autocast.
 """
@@ -24,7 +25,7 @@ PINS = [
     "sentencepiece==0.2.1",
     "mistral-common==1.8.5",  # imported by convert_hf_to_gguf.py
 ]
-LLAMA_CPP_TAG = "b6550"  # convert_hf_to_gguf.py only (pure Python), pinned
+LLAMA_CPP_TAG = "b6550"  # convert_hf_to_gguf.py + llama-quantize (CPU build), pinned
 
 CONFIG = {
     "base_model": os.environ.get("BASE_MODEL", "Qwen/Qwen2.5-1.5B-Instruct"),
@@ -191,6 +192,19 @@ def main() -> None:
     after = trainer.evaluate()["eval_loss"]
     train_s = time.time() - t0
 
+    metrics = {
+        "config": CONFIG,
+        "examples": {s: len(e) for s, e in enc.items()},
+        "val_loss_base": before,
+        "val_loss_finetuned": after,
+        "train_seconds": round(train_s),
+        "log_history": trainer.state.log_history,
+        "gpu": torch.cuda.get_device_name(0),
+        "versions": {"torch": torch.__version__, "pins": PINS, "llama.cpp": LLAMA_CPP_TAG},
+    }
+    (OUT / "metrics.json").write_text(json.dumps(metrics, indent=1))
+    curves(trainer.state.log_history, before)
+
     adapter = OUT / "adapter"
     model.save_pretrained(adapter)
     tok.save_pretrained(adapter)
@@ -221,20 +235,22 @@ def main() -> None:
         "--outfile",
         str(gguf),
     )
-    sh("rm", "-rf", str(merged), str(OUT / "checkpoints"))  # keep the download small: adapter + GGUF
+    # Ollama quantizes safetensors imports only: quantize here (CPU build of the one tool, a few minutes)
+    sh("cmake", "-S", "/tmp/llama.cpp", "-B", "/tmp/llama.cpp/build", "-DGGML_CUDA=OFF", "-DLLAMA_CURL=OFF")
+    sh(
+        "cmake",
+        "--build",
+        "/tmp/llama.cpp/build",
+        "--target",
+        "llama-quantize",
+        "-j",
+        str(os.cpu_count() or 2),
+    )
+    q4 = OUT / "dugout-writer-q4_K_M.gguf"
+    sh("/tmp/llama.cpp/build/bin/llama-quantize", str(gguf), str(q4), "Q4_K_M")
+    # keep the download small: adapter + q4 GGUF
+    sh("rm", "-rf", str(merged), str(gguf), str(OUT / "checkpoints"))
 
-    metrics = {
-        "config": CONFIG,
-        "examples": {s: len(e) for s, e in enc.items()},
-        "val_loss_base": before,
-        "val_loss_finetuned": after,
-        "train_seconds": round(train_s),
-        "log_history": trainer.state.log_history,
-        "gpu": torch.cuda.get_device_name(0),
-        "versions": {"torch": torch.__version__, "pins": PINS, "llama.cpp": LLAMA_CPP_TAG},
-    }
-    (OUT / "metrics.json").write_text(json.dumps(metrics, indent=1))
-    curves(trainer.state.log_history, before)
     print(json.dumps({k: v for k, v in metrics.items() if k != "log_history"}, indent=1))
 
 
