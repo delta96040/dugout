@@ -33,6 +33,7 @@ from dugout_agents.specialists import CLUB_LEVEL, SPECIALISTS
 log = logging.getLogger(__name__)
 
 SEED = "dugout-writer-sft-v1"
+THINK = re.compile(r"<think>.*?</think>", re.S)  # a reasoning model's scratchpad, never part of the note
 # writer prompts per club: the prose specialists' dossier questions, the director's summary, questions about a player
 PLAYER_QUESTIONS: dict[str, tuple[str, tuple[str, ...]]] = {
     # kind: (specialist, question templates); {player} is the focus player, {club} the club asked about
@@ -227,15 +228,29 @@ def teach(ctx: Context, llm: LLM, prompt: Prompt, teacher: str) -> Outcome:
         return Outcome("error", errors=[a["error"] for a in draft.attempts if "error" in a], calls=calls)
     if not draft.writer.startswith("llm"):
         return Outcome("rejected", errors=errors, calls=calls)
-    sec = Section(prompt.spec.agent, prompt.spec.agent, prompt.spec.question, prompt.facts, draft.template)
-    gate(sec, ctx)  # the publish gate itself: the note must go out whole
-    if sec.status != "published" or sec.withheld:
-        return Outcome("gate_failed", errors=[w["reason"] for w in sec.withheld], calls=calls)
+    withheld = publish_gate(ctx, prompt, draft.template)
+    if withheld is not None:
+        return Outcome("gate_failed", errors=withheld, calls=calls)
     target = rec.replies[-1].strip()
     if has_digits(target):
         return Outcome("digits", calls=calls)
+    # the chain member that wrote the accepted note
+    ex = example(prompt, target, len(draft.attempts) == 1, draft.writer.removeprefix("llm:"))
+    return Outcome("accepted", ex, errors, calls)
+
+
+def publish_gate(ctx: Context, prompt: Prompt, template: str) -> list[str] | None:
+    """The publish gate itself (Stat Auditor + Fact-Check): None when the note goes out whole, else the reasons."""
+    sec = Section(prompt.spec.agent, prompt.spec.agent, prompt.spec.question, prompt.facts, template)
+    gate(sec, ctx)
+    if sec.status != "published" or sec.withheld:
+        return [w["reason"] for w in sec.withheld] or [sec.status]
+    return None
+
+
+def example(prompt: Prompt, target: str, first_try: bool, teacher: str) -> dict:
     s = prompt.spec
-    example = {
+    return {
         "id": s.id,
         "club": s.club,
         "league": s.league,
@@ -243,11 +258,28 @@ def teach(ctx: Context, llm: LLM, prompt: Prompt, teacher: str) -> Outcome:
         "kind": s.kind,
         "question": s.question,
         "messages": [*prompt.messages(), {"role": "assistant", "content": target}],
-        "first_try": len(draft.attempts) == 1,
-        "teacher": draft.writer.removeprefix("llm:"),  # the chain member that wrote the accepted note
+        "first_try": first_try,
+        "teacher": teacher,
         "created_at": datetime.now(UTC).isoformat(timespec="seconds"),
     }
-    return Outcome("accepted", example, errors, calls)
+
+
+def judge(ctx: Context, prompt: Prompt, raw: str) -> tuple[str, list[str]]:
+    """One reply through the same checks as `writer.write` (codes, stray numbers, binding, Fact-Check, enough
+    facts) and then the publish gate: what an offline teacher's sample must pass."""
+    raw = THINK.sub("", raw).strip()
+    text, errors = writer.substitute(raw, prompt.facts)
+    errors += writer.validate(
+        text, prompt.facts, ctx.ledger, ctx.checker, ctx.allowed_names(), prompt.sentences
+    )
+    if errors:
+        return "rejected", errors
+    withheld = publish_gate(ctx, prompt, text)
+    if withheld is not None:
+        return "gate_failed", withheld
+    if has_digits(raw):
+        return "digits", []
+    return "accepted", []
 
 
 class RateWatch:
@@ -346,6 +378,84 @@ def generate(
             calls,
             watch.remaining if watch else "?",
         )
+    return stats
+
+
+# -- offline teacher (the same open weights on a Kaggle GPU, tools/finetune/teach.py) ------------------------------
+
+
+def _todo(ctx: Context, out_dir: Path, players_per_club: int, fit_per_club: int) -> tuple[list[Spec], dict]:
+    clubs = league_clubs(ctx)
+    split = json.loads((out_dir / "split.json").read_text(encoding="utf-8"))
+    done = done_ids(out_dir / "log.jsonl")
+    train_val = {c: lg for c, lg in clubs.items() if split.get(c) in ("train", "val")}
+    return [s for s in specs(ctx, train_val, players_per_club, fit_per_club) if s.id not in done], split
+
+
+def export_prompts(
+    ctx: Context, out_dir: Path, players_per_club: int = 4, fit_per_club: int = 2, limit: int | None = None
+) -> int:
+    """prompts.jsonl: every train/val prompt not taught yet, as chat messages (prompts without facts are logged and
+    skipped). The warehouse must not change before the replies are imported: they are judged on rebuilt prompts."""
+    todo, _ = _todo(ctx, out_dir, players_per_club, fit_per_club)
+    n = 0
+    with (out_dir / "prompts.jsonl").open("w", encoding="utf-8") as fh:
+        for spec in todo[:limit]:
+            prompt = build(ctx, spec)
+            if not prompt.facts:
+                continue
+            fh.write(json.dumps({"id": spec.id, "messages": prompt.messages()}, ensure_ascii=False) + "\n")
+            n += 1
+    return n
+
+
+def import_replies(
+    ctx: Context, out_dir: Path, replies: Path, teacher: str, players_per_club: int = 4, fit_per_club: int = 2
+) -> Counter:
+    """Judge an offline teacher's samples (replies.jsonl: id, sample, content) with `judge`; the first sample that
+    passes (in sample order: sample 0 is production's temperature) becomes the example."""
+    by_id: dict[str, list[dict]] = {}
+    for r in read_examples(replies):
+        by_id.setdefault(r["id"], []).append(r)
+    todo, split = _todo(ctx, out_dir, players_per_club, fit_per_club)
+    stats: Counter = Counter()
+    for spec in todo:
+        samples = sorted(by_id.get(spec.id, []), key=lambda r: r["sample"])
+        if not samples:
+            continue
+        prompt = build(ctx, spec)
+        exported = next((r["messages"] for r in samples if "messages" in r), None)
+        if exported is not None and exported != prompt.messages():
+            status, errors, ex = "stale", ["prompt changed since export"], None
+        else:
+            status, errors, ex = "rejected", [], None
+            for r in samples:
+                verdict, why = judge(ctx, prompt, r["content"] or "")
+                errors += why
+                if verdict == "accepted":
+                    target = THINK.sub("", r["content"]).strip()
+                    status, ex = "accepted", example(prompt, target, r["sample"] == 0, teacher)
+                    ex["sample"] = r["sample"]
+                    break
+                if verdict != "rejected":
+                    status = verdict
+        stats[status] += 1
+        row = {
+            "id": spec.id,
+            "club": spec.club,
+            "kind": spec.kind,
+            "status": status,
+            "calls": 0,
+            "samples": len(samples),
+            "teacher": teacher,
+            "errors": errors[:4],
+        }
+        with (out_dir / "log.jsonl").open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+        if ex:
+            ex["split"] = split[spec.club]
+            with (out_dir / "examples.jsonl").open("a", encoding="utf-8") as fh:
+                fh.write(json.dumps(ex, ensure_ascii=False) + "\n")
     return stats
 
 

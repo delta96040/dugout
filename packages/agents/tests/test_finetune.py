@@ -103,3 +103,41 @@ def test_generate_resumes_and_finalise_dedupes(con, ledger, tmp_path):  # noqa: 
     split = json.loads((tmp_path / "split.json").read_text(encoding="utf-8"))
     out = [json.loads(x) for x in (tmp_path / f"{split['liverpool']}.jsonl").read_text("utf-8").splitlines()]
     assert out and all(r["messages"][2]["role"] == "assistant" for r in out)
+
+
+def test_offline_teacher_round_trip(con, ledger, tmp_path):  # noqa: F811
+    import re
+
+    ctx = make_ctx(con, ledger)
+    finetune.generate(
+        ctx, ScriptedLLM([]), "s", tmp_path, max_calls=0, test_per_league=0
+    )  # writes split.json
+    n = finetune.export_prompts(ctx, tmp_path, players_per_club=1)
+    prompts = [json.loads(x) for x in (tmp_path / "prompts.jsonl").read_text("utf-8").splitlines()]
+    assert n == len(prompts) > 0
+    replies = []
+    for p in prompts:
+        user = p["messages"][1]["content"]
+        keys = dict(re.findall(r"- \[(F\d+)\] [^\n]* — (league position|league points)", user))
+        inv = {v: k for k, v in keys.items()}
+        good = (
+            f"<think>scratch</think>Liverpool are [{inv.get('league position')}] in the table. "
+            f"Liverpool have [{inv.get('league points')}] league points."
+        )
+        replies += [
+            {
+                "id": p["id"],
+                "sample": 0,
+                "content": "Liverpool are 3rd with 13 points.",
+                "messages": p["messages"],
+            },
+            {"id": p["id"], "sample": 1, "content": good, "messages": p["messages"]},
+        ]
+    (tmp_path / "replies.jsonl").write_text("".join(json.dumps(r) + "\n" for r in replies), encoding="utf-8")
+    stats = finetune.import_replies(ctx, tmp_path, tmp_path / "replies.jsonl", "offline", players_per_club=1)
+    assert stats["accepted"] >= 1
+    ex = [json.loads(x) for x in (tmp_path / "examples.jsonl").read_text("utf-8").splitlines()]
+    assert all(e["sample"] == 1 and not e["first_try"] and e["teacher"] == "offline" for e in ex)
+    assert all("<think>" not in e["messages"][2]["content"] for e in ex)
+    # imported prompts are done: a second import adds nothing
+    assert sum(finetune.import_replies(ctx, tmp_path, tmp_path / "replies.jsonl", "o", 1).values()) == 0

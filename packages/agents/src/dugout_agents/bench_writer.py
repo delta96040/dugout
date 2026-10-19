@@ -21,11 +21,23 @@ from dugout_agents.specialists import CLUB_LEVEL, SPECIALISTS
 from dugout_pipeline.settings import get_settings
 
 
-def make_llm(spec: str) -> LLM:
-    """`<provider>:<model>` as in LLM_CHAIN (groq, openrouter, local)."""
+def make_llm(spec: str, patient: bool = False) -> LLM:
+    """`<provider>:<model>` as in LLM_CHAIN (groq, openrouter, local).
+
+    patient: wait out free-tier rate limits (Groq's rolling tokens-per-day cap) instead of failing after three
+    retries; the time spent waiting is kept apart (`waited`) so seconds per note measure the model, not the quota."""
     llm = llm_mod.make_llm(spec, get_settings().llm_local_base_url)
     if llm is None:
         raise SystemExit(f"{spec}: the provider's API key is not set in .env")
+    llm.waited = 0.0
+    if patient:
+        llm.retries = 500
+
+        def sleep(seconds: float, _sleep=llm._sleep) -> None:
+            llm.waited += seconds
+            _sleep(seconds)
+
+        llm._sleep = sleep
     return llm
 
 
@@ -45,15 +57,20 @@ def sections(ctx: Context, clubs: list[str]) -> list[dict]:
 
 
 def run(
-    ctx: Context, models: list[str], clubs: list[str], out_dir: Path | None = None, name: str = "writer_llm"
+    ctx: Context,
+    models: list[str],
+    clubs: list[str],
+    out_dir: Path | None = None,
+    name: str = "writer_llm",
+    patient: bool = False,
 ) -> dict:
     secs = sections(ctx, clubs)
     results: dict[str, dict] = {}
     for spec in models:
-        llm = make_llm(spec)
+        llm = make_llm(spec, patient)
         rows = []
         for s in secs:
-            t0 = time.time()
+            t0, waited = time.time(), llm.waited
             d = writer.write(
                 llm,
                 role=s["role"],
@@ -72,7 +89,8 @@ def run(
                     "agent": s["agent"],
                     "accepted": ok,
                     "first_try": ok and len(d.attempts) == 1,
-                    "seconds": round(time.time() - t0, 1),
+                    "seconds": round(time.time() - t0 - (llm.waited - waited), 1),
+                    "rate_limit_wait": round(llm.waited - waited, 1),
                     "llm_error": any("error" in a for a in d.attempts),
                     "stray": sum(
                         any("numbers written directly" in e for e in a.get("errors", [])) for a in d.attempts
@@ -90,6 +108,7 @@ def run(
             "stray_number_drafts": sum(r["stray"] for r in rows),
             "seconds_per_section": round(sum(r["seconds"] for r in rows) / n, 1),
             "api_calls": getattr(llm, "calls", None),
+            "rate_limit_wait_seconds": round(llm.waited),
             "rows": rows,
         }
     report = {
