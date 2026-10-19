@@ -245,7 +245,7 @@ export default function MethodsPage() {
               verdict={fallback && ft.accepted > fallback.accepted ? "beats the local fallback" : "does not beat the local fallback"}
             >
               A small open model (<span data-name>Qwen2.5-1.5B</span>, LoRA) trained on{" "}
-              <B file="writer_finetune" j={wft} value={wft.dataset?.examples?.train} label="training notes" fmt="int" /> notes that
+              <B file="writer_finetune" j={wft} value={wft?.dataset?.examples?.train} label="training notes" fmt="int" /> notes that
               passed this gate, written by the larger open model dugout uses on Groq. On clubs it never saw, its notes passed every
               check <B file="writer_finetune" j={wft} value={ft.accepted} label="accepted, fine-tuned" fmt="pct" /> of the time vs{" "}
               <B file="writer_finetune" j={wft} value={ftBase?.accepted} label="accepted, base model" fmt="pct" /> before fine-tuning,{" "}
