@@ -23,7 +23,10 @@ from pathlib import Path
 
 LLAMA_TAG = "b11330"  # 2026-10-02, after the GGUF's last conversion
 LLAMA_URL = f"https://github.com/ggml-org/llama.cpp/releases/download/{LLAMA_TAG}"
-ASSETS = [f"llama-{LLAMA_TAG}-bin-ubuntu-cuda-12.8-x64.tar.gz", f"cudart-llama-{LLAMA_TAG}-bin-ubuntu-cuda-12.8-x64.tar.gz"]
+ASSETS = [
+    f"llama-{LLAMA_TAG}-bin-ubuntu-cuda-12.8-x64.tar.gz",
+    f"cudart-llama-{LLAMA_TAG}-bin-ubuntu-cuda-12.8-x64.tar.gz",
+]
 MODEL = ("ggml-org/Qwen3.8-27B-GGUF", "Qwen3.8-27B-Q4_K_M.gguf", "71bc7b627595")  # repo, file, revision
 SAMPLES = [(0, 0.2), (1, 0.7)]  # (sample, temperature)
 SLOTS = 4  # parallel sequences in llama-server (continuous batching)
@@ -69,7 +72,8 @@ def serve(server: Path, model: Path) -> subprocess.Popen:
         "--no-webui",
     ]  # fmt: skip
     print("+", " ".join(cmd), flush=True)
-    proc = subprocess.Popen(cmd, env=env, stdout=open(OUT / "server.log", "w"), stderr=subprocess.STDOUT)
+    log = (OUT / "server.log").open("w")
+    proc = subprocess.Popen(cmd, env=env, stdout=log, stderr=subprocess.STDOUT)
     for _ in range(900):
         try:
             with urllib.request.urlopen("http://127.0.0.1:8080/health", timeout=5) as r:
@@ -109,7 +113,8 @@ def main() -> None:
     ready = time.time()
     lock_path = OUT / "replies.jsonl"
     fh = lock_path.open("a", encoding="utf-8")
-    jobs = [(p, s, t) for p in prompts for s, t in SAMPLES]
+    # every prompt's sample 0 (production's temperature) before any sample 1: the time budget cuts sample 1 only
+    jobs = [(p, s, t) for s, t in SAMPLES for p in prompts]
     tokens = {"prompt": 0, "completion": 0}
     done = 0
 

@@ -20,7 +20,7 @@ import re
 import time
 from collections import Counter
 from collections.abc import Iterator
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -300,7 +300,7 @@ def done_ids(log_path: Path) -> set[str]:
     out = set()
     for line in log_path.read_text(encoding="utf-8").splitlines():
         row = json.loads(line)
-        if row["status"] != "error":  # errors (rate limits, outages) are retried on the next run
+        if row["status"] not in ("error", "stale"):  # rate limits, outages, changed prompts: retried next run
             out.add(row["id"])
     return out
 
@@ -392,11 +392,26 @@ def _todo(ctx: Context, out_dir: Path, players_per_club: int, fit_per_club: int)
     return [s for s in specs(ctx, train_val, players_per_club, fit_per_club) if s.id not in done], split
 
 
+def prompt_json(prompt: Prompt) -> dict:
+    return {k: getattr(prompt, k) for k in ("role", "club_name", "sentences", "template_limit")} | {
+        "facts": [asdict(f) for f in prompt.facts]
+    }
+
+
+def prompt_from_json(spec: Spec, d: dict) -> Prompt:
+    facts = []
+    for f in d["facts"]:
+        f = dict(f, when=tuple(f["when"]) if f.get("when") else None)
+        facts.append(Fact(**dict(f, range=tuple(f["range"]) if f.get("range") else None)))
+    return Prompt(spec, d["role"], d["club_name"], facts, d["sentences"], d["template_limit"])
+
+
 def export_prompts(
     ctx: Context, out_dir: Path, players_per_club: int = 4, fit_per_club: int = 2, limit: int | None = None
 ) -> int:
-    """prompts.jsonl: every train/val prompt not taught yet, as chat messages (prompts without facts are logged and
-    skipped). The warehouse must not change before the replies are imported: they are judged on rebuilt prompts."""
+    """prompts.jsonl: every train/val prompt not taught yet, as chat messages plus its fact cards (prompts without
+    facts are skipped). The cards are kept because a prompt is not rebuilt identically later: tools read the
+    evidence ledger, which grows as prompts are built. Their ledger rows stay in this warehouse."""
     todo, _ = _todo(ctx, out_dir, players_per_club, fit_per_club)
     n = 0
     with (out_dir / "prompts.jsonl").open("w", encoding="utf-8") as fh:
@@ -404,7 +419,8 @@ def export_prompts(
             prompt = build(ctx, spec)
             if not prompt.facts:
                 continue
-            fh.write(json.dumps({"id": spec.id, "messages": prompt.messages()}, ensure_ascii=False) + "\n")
+            row = {"id": spec.id, "messages": prompt.messages(), "prompt": prompt_json(prompt)}
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
             n += 1
     return n
 
@@ -412,20 +428,25 @@ def export_prompts(
 def import_replies(
     ctx: Context, out_dir: Path, replies: Path, teacher: str, players_per_club: int = 4, fit_per_club: int = 2
 ) -> Counter:
-    """Judge an offline teacher's samples (replies.jsonl: id, sample, content) with `judge`; the first sample that
-    passes (in sample order: sample 0 is production's temperature) becomes the example."""
+    """Judge an offline teacher's samples (replies.jsonl: id, sample, content) with `judge` on the exported prompt
+    (prompts.jsonl); the first sample that passes (in sample order: sample 0 is production's temperature) becomes
+    the example."""
     by_id: dict[str, list[dict]] = {}
     for r in read_examples(replies):
         by_id.setdefault(r["id"], []).append(r)
+    exported = {r["id"]: r for r in read_examples(out_dir / "prompts.jsonl")}
     todo, split = _todo(ctx, out_dir, players_per_club, fit_per_club)
     stats: Counter = Counter()
     for spec in todo:
         samples = sorted(by_id.get(spec.id, []), key=lambda r: r["sample"])
         if not samples:
             continue
-        prompt = build(ctx, spec)
-        exported = next((r["messages"] for r in samples if "messages" in r), None)
-        if exported is not None and exported != prompt.messages():
+        sent = next((r["messages"] for r in samples if "messages" in r), None)
+        if spec.id in exported and "prompt" in exported[spec.id]:
+            prompt = prompt_from_json(spec, exported[spec.id]["prompt"])
+        else:
+            prompt = build(ctx, spec)
+        if sent is not None and sent != prompt.messages():
             status, errors, ex = "stale", ["prompt changed since export"], None
         else:
             status, errors, ex = "rejected", [], None
