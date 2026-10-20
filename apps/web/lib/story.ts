@@ -26,7 +26,7 @@ export function storyData(d: Dossier): StoryData {
     const id = ordered.find((i) => d.stats[i] && d.stats[i].metric === metric && pred(d.stats[i].entity_id));
     return id ? ref(id) : undefined;
   };
-  const formation = find("predicted_formation");
+  const formation = find("confirmed_formation") ?? find("predicted_formation");
   const slots = FORMATION_SLOTS[String(formation?.stat.value ?? "4-3-3")] ?? FORMATION_SLOTS["4-3-3"];
   const need = find("need");
   const needGroup = need ? String(need.stat.value) : undefined;

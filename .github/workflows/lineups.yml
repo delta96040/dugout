@@ -1,0 +1,98 @@
+name: kickoff lineups
+
+# Cheap 15-minute schedule; match-day guard avoids networking or installs.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CI: "true"
+      API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Offline match-day preflight
+        id: due
+        run: python3 scripts/kickoff_lineups_due.py >> "$GITHUB_OUTPUT"
+      - if: steps.due.outputs.due == 'true'
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: true
+      - if: steps.due.outputs.due == 'true'
+        run: uv python install 3.12
+      - if: steps.due.outputs.due == 'true'
+        run: uv sync --frozen
+      - name: Restore shared request budget and warehouse
+        if: steps.due.outputs.due == 'true'
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            ~/.cache/reep
+            ~/.cache/huggingface
+            .cache
+            data/warehouse
+            data/raw
+          key: pipeline-${{ github.run_id }}
+          restore-keys: pipeline-
+      - name: Require the nightly warehouse before refreshing
+        if: steps.due.outputs.due == 'true'
+        run: test -f data/warehouse/dugout.duckdb
+      - name: Refresh only due Premier League confirmed lineups
+        if: steps.due.outputs.due == 'true'
+        id: lineups
+        run: uv run dugout --league premier_league kickoff-lineups >> "$GITHUB_OUTPUT"
+      - name: Rebuild affected dossiers without LLM quota
+        if: steps.lineups.outputs.confirmed == 'true'
+        env:
+          DUE_CLUBS: ${{ steps.lineups.outputs.clubs }}
+        run: |
+          read -r -a clubs <<< "$DUE_CLUBS"
+          uv run dugout-agents --no-llm dossier "${clubs[@]}"
+      - name: Set up site validation
+        if: steps.lineups.outputs.confirmed == 'true'
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Build and verify the refreshed dossiers
+        if: steps.lineups.outputs.confirmed == 'true'
+        run: |
+          npm --prefix apps/web ci
+          npm --prefix apps/web run build
+          npm --prefix apps/web run banned
+          python3 tools/check_site_numbers.py
+      - name: Publish verified dossiers
+        if: steps.lineups.outputs.confirmed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/clubs data/leagues.json data/prediction_log.csv
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Update confirmed lineups before kickoff"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Save shared API usage and warehouse
+        # Persist usage even after an ingest failure; losing the counter would
+        # let the next 15-minute run overspend the provider's real quota.
+        if: always() && steps.due.outputs.due == 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            ~/.cache/reep
+            ~/.cache/huggingface
+            .cache
+            data/warehouse
+            data/raw
+          key: pipeline-${{ github.run_id }}

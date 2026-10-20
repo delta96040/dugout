@@ -7,14 +7,16 @@ season only a rolling date window of yesterday..tomorrow. So nightly we use date
 
 from __future__ import annotations
 
+import json
 import logging
-from datetime import date, datetime, timedelta
+import re
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
 import pandas as pd
 
-from dugout_pipeline.adapters.base import DAY, HOUR, TIER_DATA, SourceAdapter
+from dugout_pipeline.adapters.base import DAY, HOUR, TIER_DATA, IngestContext, SourceAdapter
 from dugout_pipeline.adapters.fpl import match_id
 from dugout_pipeline.adapters.transfermarkt import TM_DIR
 from dugout_pipeline.clubs import ClubResolver, normalise
@@ -45,6 +47,21 @@ BUDGET_RESERVE = 10  # leave headroom for manual debugging and the 4-hourly inju
 # lists (already fetched for every league by date): they stop while this many requests are left for the
 # Premier League's 4-hourly injuries runs.
 OTHER_LEAGUES_RESERVE = 30
+KICKOFF_RESERVE = 15
+
+
+def kickoff_fixtures(ctx: IngestContext) -> list[tuple[str, str | None, str, str, datetime]]:
+    """Upcoming PL fixtures only; reuse the provider IDs already discovered by the nightly."""
+    if ctx.league != "premier_league":
+        raise ValueError("kickoff-lineups only supports premier_league")
+    return ctx.con.execute(
+        """SELECT m.match_id, o.external_id, m.home_club_id, m.away_club_id, m.kickoff_utc
+           FROM matches m LEFT JOIN match_observations o
+             ON m.match_id = o.match_id AND o.source = 'api_football'
+           WHERE m.league = 'premier_league' AND m.status = 'scheduled'
+             AND m.kickoff_utc > ? AND m.kickoff_utc <= ? ORDER BY m.kickoff_utc, m.match_id""",
+        [ctx.now, ctx.now + timedelta(minutes=60)],
+    ).fetchall()
 
 
 class ApiFootballAdapter(SourceAdapter):
@@ -137,6 +154,105 @@ class ApiFootballAdapter(SourceAdapter):
             )
             counts["injuries"] += upsert(ctx.con, "injuries", rows)
         return counts
+
+    def refresh_kickoff_lineups(self) -> list[str]:
+        """Fetch only due XIs, keep the shared reserve, and propagate every refresh failure."""
+        fixtures = kickoff_fixtures(self.ctx)
+        if not fixtures:
+            return []
+        if any(not fid or not fid.isdigit() or int(fid) <= 0 for _, fid, *_ in fixtures):
+            raise ValueError("due fixture missing API-Football ID; refresh the nightly warehouse first")
+        self.ctx.load_clubs()
+        # CachedClient accounts once per request, not per retry. Retry on the next scheduled run instead.
+        self.client.max_retries = 0
+        confirmed: set[str] = set()
+        for mid, fid, home, away, kickoff in fixtures:
+            clubs = {home, away}
+            old = (
+                self.ctx.con.execute(
+                    "SELECT * FROM lineups WHERE match_id = ? AND source = ?", [mid, self.name]
+                )
+                .df()
+                .to_dict("records")
+            )
+            if self._complete_kickoff_lineup(old, clubs, kickoff):
+                confirmed.update(clubs)
+                continue
+            params = {"fixture": fid}
+            # A cached provider error can be discarded and re-fetched by call(), so reserve before it too.
+            self._check_kickoff_budget()
+            body, res = self.call("fixtures/lineups", params, ttl=10 * 60)
+            if body.get("response") == []:  # expected before the teams release their XIs
+                continue
+            rows = self.parse_lineups(mid, body, res.fetched_at)
+            if not self._complete_kickoff_lineup(rows, clubs, kickoff):
+                self.client.forget(res)
+                raise ValueError(f"incomplete confirmed lineup for {mid}")
+            self.ctx.con.execute("BEGIN TRANSACTION")
+            try:
+                self.ctx.con.execute(
+                    "DELETE FROM lineups WHERE match_id = ? AND source = ?", [mid, self.name]
+                )
+                upsert(self.ctx.con, "lineups", rows)
+                self.ctx.con.execute("COMMIT")
+            except Exception:
+                self.ctx.con.execute("ROLLBACK")
+                raise
+            confirmed.update(clubs)
+        return sorted(confirmed)
+
+    def _check_kickoff_budget(self) -> None:
+        try:
+            usage = json.loads(self.client.budget.path.read_text())
+            if not isinstance(usage, dict) or not usage:
+                raise ValueError("missing shared request counter")
+            for day, used in usage.items():
+                date.fromisoformat(day)
+                if not isinstance(used, int) or isinstance(used, bool) or used < 0:
+                    raise ValueError("invalid shared request counter")
+        except (OSError, TypeError, ValueError) as exc:
+            raise ValueError("cannot trust shared API-Football request counter") from exc
+        if self.client.budget.remaining() <= KICKOFF_RESERVE:
+            raise BudgetExceeded("kickoff refresh preserves 15 requests for other jobs")
+
+    def _complete_kickoff_lineup(self, rows: list[dict], clubs: set[str], kickoff: datetime) -> bool:
+        starters = [r for r in rows if r["starter"]]
+        if len(starters) != 22 or {r["club_id"] for r in rows} != clubs:
+            return False
+        if len({(r["club_id"], r["player_id"]) for r in rows}) != len(rows):
+            return False
+        known = {
+            pid: club
+            for pid, club, name in self.ctx.con.execute(
+                "SELECT player_id, club_id, name FROM players"
+            ).fetchall()
+            if name
+        }
+        if any(known.get(r["player_id"]) != r["club_id"] for r in starters):
+            return False
+        for club in clubs:
+            xi = [r for r in starters if r["club_id"] == club]
+            if (
+                len(xi) != 11
+                or len({r["player_id"] for r in xi}) != 11
+                or any(r["position"] not in ("G", "D", "M", "F") for r in xi)
+                or sum(r["position"] == "G" for r in xi) != 1
+                or len({r["fetched_at"] for r in xi}) != 1
+                or len({r["formation"] for r in xi}) != 1
+                or not xi[0]["formation"]
+            ):
+                return False
+            formation = xi[0]["formation"]
+            if (
+                not re.fullmatch(r"[1-5](?:-[1-5]){1,4}", formation)
+                or sum(map(int, formation.split("-"))) != 10
+            ):
+                return False
+            fetched = xi[0]["fetched_at"]
+            # ctx.now precedes the HTTP fetch; use the current clock for the completed response too.
+            if not kickoff - timedelta(minutes=75) <= fetched <= max(self.ctx.now, datetime.now(UTC)):
+                return False
+        return True
 
     def _lineups_affordable(self) -> bool:
         left = self.client.budget.remaining()

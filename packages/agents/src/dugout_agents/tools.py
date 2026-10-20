@@ -367,7 +367,95 @@ SLOT_NAMES = {
 SLOT_ORDER = list(SLOT_NAMES)
 
 
+def confirmed_xi(tb: Toolbox, club: str) -> list[Fact]:
+    """Prefer a complete provider snapshot for this club's exact next fixture."""
+    match = tb.con.execute(
+        "SELECT match_id, kickoff_utc FROM matches WHERE status = 'scheduled' AND kickoff_utc > ? "
+        "AND (home_club_id = ? OR away_club_id = ?) ORDER BY kickoff_utc, match_id LIMIT 1",
+        [tb.now, club, club],
+    ).fetchone()
+    if not match or match[1] > tb.now + timedelta(minutes=60):
+        return []
+    mid, kickoff = match
+    starters = tb.con.execute(
+        "SELECT l.player_id, p.name, p.club_id, l.position, l.formation, l.fetched_at FROM lineups l "
+        "LEFT JOIN players p USING (player_id) "
+        "WHERE l.match_id = ? AND l.club_id = ? AND l.source = 'api_football' AND l.starter",
+        [mid, club],
+    ).fetchall()
+    if len(starters) != 11 or len({r[0] for r in starters}) != 11:
+        return []
+    if any(not r[1] or r[2] != club or r[3] not in ("G", "D", "M", "F") for r in starters):
+        return []
+    if sum(r[3] == "G" for r in starters) != 1:
+        return []
+    formations, timestamps = {r[4] for r in starters}, {r[5] for r in starters}
+    if len(formations) != 1 or len(timestamps) != 1:
+        return []
+    formation, fetched = starters[0][4:]
+    if not formation or not re.fullmatch(r"[1-5](?:-[1-5]){1,4}", formation):
+        return []
+    if sum(map(int, formation.split("-"))) != 10 or not kickoff - timedelta(minutes=75) <= fetched <= tb.now:
+        return []
+    provider = tb.con.execute(
+        "SELECT external_id FROM match_observations WHERE match_id = ? AND source = 'api_football'",
+        [mid],
+    ).fetchone()
+    if not provider or not provider[0] or not provider[0].isdigit() or int(provider[0]) <= 0:
+        return []
+    url = f"https://v3.football.api-sports.io/fixtures/lineups?fixture={provider[0]}"
+    where = "match_id = ? AND club_id = ? AND source = 'api_football' AND starter AND fetched_at = ?"
+    params = [mid, club, fetched.isoformat()]
+    rec = tb.sql(
+        f"SELECT formation FROM lineups WHERE {where} ORDER BY player_id LIMIT 1",
+        params,
+        entity_type="club",
+        entity_id=club,
+        metric="confirmed_formation",
+        source="api_football",
+        tier=3,
+        fetched_at=fetched,
+        url=url,
+    )
+    facts = _keep(
+        _fact(
+            tb,
+            tb.name(club),
+            "confirmed formation for the next match",
+            f"{tb.name(club)}'s confirmed formation is {{p}} for the next match.",
+            rec,
+            entity_id=club,
+        )
+    )
+    for pid, *_ in sorted(starters, key=lambda r: (("G", "D", "M", "F").index(r[3]), r[0])):
+        rec = tb.sql(
+            f"SELECT CASE position WHEN 'G' THEN 'goalkeeper' WHEN 'D' THEN 'defence' "
+            f"WHEN 'M' THEN 'midfield' WHEN 'F' THEN 'attack' END FROM lineups WHERE {where} AND player_id = ?",
+            [*params, pid],
+            entity_type="player",
+            entity_id=pid,
+            metric="confirmed_starting_position",
+            source="api_football",
+            tier=3,
+            fetched_at=fetched,
+            url=url,
+        )
+        facts += _keep(
+            _fact(
+                tb,
+                tb.name(pid),
+                "confirmed starting position",
+                f"Confirmed to start: {tb.name(pid)} in {{p}}.",
+                rec,
+                entity_id=pid,
+            )
+        )
+    return facts
+
+
 def predicted_xi(tb: Toolbox, club: str) -> list[Fact]:
+    if confirmed := confirmed_xi(tb, club):
+        return confirmed
     row = tb.con.execute(
         "SELECT context FROM model_outputs WHERE model='lineup' AND entity_type='club' AND entity_id=? "
         "AND metric='predicted_formation'",

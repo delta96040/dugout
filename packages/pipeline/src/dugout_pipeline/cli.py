@@ -59,6 +59,29 @@ def cmd_status(args) -> int:
     return 0
 
 
+def cmd_kickoff_lineups(args) -> int:
+    from dugout_pipeline.adapters.api_football import ApiFootballAdapter, kickoff_fixtures
+
+    ctx = _ctx(args)
+    adapter = None
+    try:
+        # No due fixture means no credential check or networking, even on a cold warehouse.
+        clubs = []
+        if kickoff_fixtures(ctx):
+            adapter = ApiFootballAdapter(ctx)
+            clubs = adapter.refresh_kickoff_lineups()
+        print(f"confirmed={str(bool(clubs)).lower()}")
+        print(f"clubs={' '.join(clubs)}")
+        return 0
+    except Exception as exc:
+        print(f"Kickoff lineup refresh failed: {exc}", file=sys.stderr)
+        return 1
+    finally:
+        if adapter:
+            adapter.close()
+        ctx.con.close()
+
+
 def cmd_load_open(args) -> int:
     from dugout_pipeline.loaders.open_data import LOADERS
 
@@ -198,6 +221,11 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--only", help="comma-separated sources")
     s.add_argument("--skip", help="comma-separated sources to skip")
     s.set_defaults(fn=cmd_ingest)
+
+    s = sub.add_parser(
+        "kickoff-lineups", help="refresh only confirmed Premier League XIs due in the next hour"
+    )
+    s.set_defaults(fn=cmd_kickoff_lineups)
 
     s = sub.add_parser("status", help="table counts, API budgets, last run per source")
     s.set_defaults(fn=cmd_status)
