@@ -100,3 +100,17 @@ def test_only_models_with_a_fallback_fall_through(settings, monkeypatch):
     monkeypatch.setattr(llm_mod, "_reachable", lambda llm: True)
     chain = llm_mod.from_settings()
     assert [x.max_wait for x in chain.chain] == [llm_mod.FALLTHROUGH_WAIT, None]
+
+
+def test_missing_local_model_falls_through_to_the_next():
+    """The fine-tuned writer is first among the local models; without it installed Ollama answers 404."""
+    calls = []
+
+    def not_pulled(request):
+        calls.append(1)
+        return httpx.Response(404, json={"error": "model 'dugout-writer-1.5b' not found"})
+
+    first = _llm(not_pulled, sleep=lambda s: None, max_wait=10)
+    chain = FallbackLLM([first, ScriptedLLM(["from qwen2.5:3b"], name="qwen2.5:3b")])
+    assert chain.complete("s", "u") == "from qwen2.5:3b" and chain.used == "qwen2.5:3b"
+    assert len(calls) == 1  # a 404 is not retried
