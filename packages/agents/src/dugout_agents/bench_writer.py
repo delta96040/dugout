@@ -127,7 +127,7 @@ def write_report(report: dict, out_dir: Path, name: str = "writer_llm") -> None:
     lines = [
         "# Writer benchmark: which LLM writes notes that pass the publish gate",
         "",
-        f"Generated {report['generated_at']}. Sections: the six club specialists' dossier questions for "
+        f"Generated {report['generated_at']}. Sections: the written club specialists' dossier questions for "
         f"{', '.join(report['clubs'])}. A draft counts only if it passes every gate check; otherwise the section falls "
         "back to deterministic templates (numbers are never affected either way).",
         "",

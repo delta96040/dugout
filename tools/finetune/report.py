@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 from datetime import UTC, datetime
 from pathlib import Path
@@ -23,6 +24,9 @@ LABELS = {
     "local:dugout-writer-1.5b": "dugout-writer-1.5b (fine-tuned, local)",
     "local:qwen2.5:3b": "Qwen2.5-3B-Instruct (current local fallback)",
 }
+# accepted notes that copy the fact-card layout instead of writing prose: the gate passes them (every sentence is
+# bound and verified) but nobody would publish them by choice
+CARD_ECHO = re.compile(r"Facts:|\(code |Example:|statement\)|reading:")
 KEYS = ("sections", "accepted", "first_try", "stray_number_drafts", "llm_errors", "seconds_per_section")
 
 
@@ -35,10 +39,13 @@ def main() -> None:
         rep = json.loads(f.read_text(encoding="utf-8"))
         clubs.update(rep["clubs"])
         for spec, r in rep["results"].items():
+            accepted = [x["text"] for x in r["rows"] if x["accepted"]]
             models[spec] = {
                 "label": LABELS.get(spec, spec),
                 "run": rep["generated_at"],
                 **{k: r[k] for k in KEYS},
+                "card_echo_notes": sum(bool(CARD_ECHO.search(t)) for t in accepted),
+                "rate_limit_wait_seconds": r.get("rate_limit_wait_seconds", 0),
             }
     kdir = ROOT / "data" / "finetune" / "kaggle" / a.kernel
     metrics = (
@@ -84,12 +91,14 @@ def main() -> None:
         },
     }
     (BT / "writer_finetune.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print("| Writer | Accepted | First try | Drafts with stray numbers | LLM errors | s / note |")
-    print("|---|---|---|---|---|---|")
+    print(
+        "| Writer | Accepted | First try | Drafts with stray numbers | Accepted notes copying the card layout | LLM errors | s / note |"
+    )
+    print("|---|---|---|---|---|---|---|")
     for m in models.values():
         print(
             f"| {m['label']} | {m['accepted']:.0%} | {m['first_try']:.0%} | {m['stray_number_drafts']} | "
-            f"{m['llm_errors']} | {m['seconds_per_section']} |"
+            f"{m['card_echo_notes']} | {m['llm_errors']} | {m['seconds_per_section']} |"
         )
     print(
         f"\n{len(clubs)} held-out clubs, {next(iter(models.values()))['sections'] if models else 0} notes each"
