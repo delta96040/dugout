@@ -139,6 +139,53 @@ CREATE TABLE IF NOT EXISTS events (
     PRIMARY KEY (dataset, game_id, event_id)
 );
 
+-- API-Football season statistics per player, club and competition (free plan: seasons 2022-2024). Raw counts as
+-- the provider reports them; the role model (dugout_models.style) turns them into per-90 percentiles.
+CREATE TABLE IF NOT EXISTS player_season_stats (
+    api_player_id    INTEGER NOT NULL,
+    season           INTEGER NOT NULL,           -- start year: 2024 = 2024-25
+    league_id        INTEGER NOT NULL,           -- API-Football competition id
+    team_id          INTEGER NOT NULL,
+    player_name      VARCHAR,
+    birth_date       DATE,
+    team_name        VARCHAR,
+    league_name      VARCHAR,
+    league_country   VARCHAR,
+    domestic         BOOLEAN,                    -- the club's league (not a cup or a European competition)
+    position         VARCHAR,                    -- Goalkeeper | Defender | Midfielder | Attacker
+    appearances      INTEGER,
+    lineups          INTEGER,
+    minutes          INTEGER,
+    rating           DOUBLE,
+    shots            INTEGER,
+    shots_on         INTEGER,
+    goals            INTEGER,
+    assists          INTEGER,
+    passes           INTEGER,
+    key_passes       INTEGER,
+    pass_accuracy    INTEGER,                    -- as reported; not a percentage in season totals (unused)
+    tackles          INTEGER,
+    blocks           INTEGER,
+    interceptions    INTEGER,
+    duels            INTEGER,
+    duels_won        INTEGER,
+    dribbles         INTEGER,
+    dribbles_won     INTEGER,
+    dribbled_past    INTEGER,
+    fouls_drawn      INTEGER,
+    fouls_committed  INTEGER,
+    yellow           INTEGER,
+    red              INTEGER,
+    saves            INTEGER,
+    conceded         INTEGER,
+    reep_id          VARCHAR,
+    tm_player_id     VARCHAR,
+    match_how        VARCHAR,                    -- reep | birth_date | name_in_club
+    source_url       VARCHAR,
+    fetched_at       TIMESTAMPTZ NOT NULL,
+    PRIMARY KEY (api_player_id, season, league_id, team_id)
+);
+
 CREATE TABLE IF NOT EXISTS injuries (
     player_id       VARCHAR NOT NULL,
     club_id         VARCHAR,

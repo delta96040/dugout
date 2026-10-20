@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { type ReactNode, useId } from "react";
 import type { Stat } from "@/lib/data";
 import { metricName, sourceName, when } from "@/lib/format";
 
@@ -10,8 +10,20 @@ const STATUS: Record<string, string> = {
 };
 
 /** A number on the site: shows its value; hover, focus or tap reveals where it came from and how it was checked.
- *  No client state: the card is CSS (`.tip` in globals.css) plus one page-wide listener (components/Tips.tsx). */
-export default function Num({ stat, display, className = "" }: { stat: Stat; display: string; className?: string }) {
+ *  No client state: the card is CSS (`.tip` in globals.css) plus one page-wide listener (components/Tips.tsx).
+ *  `detail`: what the card adds above the provenance (e.g. the raw record behind a source's credibility label);
+ *  any figures in it must be verified displays too. */
+export default function Num({
+  stat,
+  display,
+  className = "",
+  detail,
+}: {
+  stat: Stat;
+  display: string;
+  className?: string;
+  detail?: ReactNode;
+}) {
   const id = useId();
   const verified = stat.status === "verified";
   return (
@@ -31,6 +43,7 @@ export default function Num({ stat, display, className = "" }: { stat: Stat; dis
         className="tip-card absolute left-0 top-full z-40 mt-2 w-72 border-l-4 border-red bg-chalk p-3 text-left font-mono text-xs leading-relaxed text-ink"
         style={{ boxShadow: "6px 6px 0 rgba(20,20,20,0.85)" }}
       >
+        {detail && <span className="mb-2 block border-b border-ink/20 pb-2 normal-case">{detail}</span>}
         <CardBody stat={stat} />
       </span>
     </span>

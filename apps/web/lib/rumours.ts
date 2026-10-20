@@ -18,6 +18,11 @@ export interface Outlet {
   came_true: number;
   raw: number;
   shrunk: number;
+  /** reliable / about average / speculative / unproven: its record against what similar reports did */
+  label?: string;
+  /** share of similar reports (the rumour model, which never sees the outlet) that came true */
+  expected_rate?: number;
+  ratio?: number;
 }
 
 export interface RumourRecord {

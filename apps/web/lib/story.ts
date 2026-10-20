@@ -1,6 +1,7 @@
 // The scroll story's data for one club (/story/<club>/), built from its verified dossier.
 import type { StatRef, StoryData } from "@/components/story/types";
 import { claimText, displays, section, type Dossier } from "@/lib/data";
+import { rumourBriefs } from "@/lib/rumourBrief";
 import { gaps, injuryCoverage, shortlists } from "@/lib/shortlist";
 import { FORMATION_SLOTS, GAP_ZONES, opposition, scatter, slotPositions } from "@/lib/formations";
 
@@ -35,8 +36,6 @@ export function storyData(d: Dossier): StoryData {
   const scout = section(d, "scout");
   const targets = shortlists(d);
   const attributed = (scout?.claims ?? []).filter((c) => c.type === "attributed");
-  // "one time in N" for each rumour (subject = the player), audited like every key stat
-  const records = (d.key_stats?.scout ?? []).filter((k) => k.label === "rumour track record");
 
   const match = find("p_home_win") ?? find("p_away_win");
   const [homeName, awayName] = (match?.stat.entity_name ?? " v ").split(" v ");
@@ -68,13 +67,7 @@ export function storyData(d: Dossier): StoryData {
     signings: attributed
       .filter((c) => c.sources.some((s) => s.official))
       .map((c) => ({ title: claimText(c).replace(/^According to [^,]+, /, ""), url: c.sources[0]?.url ?? null })),
-    rumours: attributed
-      .filter((c) => !c.sources.some((s) => s.official))
-      .map((c) => {
-        const text = claimText(c).replace(/^According to [^,]+, /, "");
-        const rec = records.find((k) => text.includes(k.subject));
-        return { text, url: c.sources[0]?.url ?? null, record: rec ? ref(rec.stat) : undefined };
-      }),
+    rumours: rumourBriefs(d),
     targets,
     verifiedSamples,
     numbersTotal: d.verification.stat_auditor.numbers_total,

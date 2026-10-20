@@ -96,6 +96,16 @@ def _run_one(model: str, args, con) -> bool:
         h = r["horizons"][str(SHIPPED_HORIZON)]
         print("rumours:", {k: h[k]["brier"] for k in ("recent_rate", "outlet_only", "model")})
         return h["model"]["brier"] < h["recent_rate"]["brier"]
+    if model == "style":
+        from dugout_models.style import backtest
+
+        r = backtest(con, BACKTESTS)
+        fitted = [g for g in r["groups"].values() if g.get("fitted")]
+        print("style:", {k: (v.get("silhouette"), v.get("bootstrap_ari")) for k, v in r["groups"].items()})
+        # pass mark: in every fitted group the roles separate better than shuffled labels and survive resampling
+        return bool(fitted) and all(
+            g["silhouette"] > g["silhouette_shuffled"] and g["bootstrap_ari"] >= 0.5 for g in fitted
+        )
     if model == "needs":
         from dugout_models.needs_backtest import backtest
 
@@ -110,6 +120,7 @@ MODELS = [
     "lineup_recent",
     "ratings",
     "roles",
+    "style",
     "fingerprint",
     "opportunity",
     "valuation",

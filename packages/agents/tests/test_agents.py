@@ -337,37 +337,102 @@ def test_register_adds_a_second_spelling_and_suffix_names_match():
     assert "Koeman" in al and any(re.search(rf"\b{re.escape(a)}\b", "Ronald Koeman Jr.'s chance") for a in al)
 
 
-def test_rumour_track_record_follows_its_rumour(con, ledger):
+def test_rumour_brief_goes_to_key_stats_most_credible_and_heated_first(con, ledger):
+    """Each incoming rumour carries a brief (credibility, heat, reality check, track record) as key stats only;
+    the prose keeps the attributed rumour. Rumours come most credible x most reported first, not newest first."""
     from dugout_agents import tools
     from dugout_agents.graph import Section, gate
 
     url = "https://www.theguardian.com/football/2026/oct/10/rumours"
-    for nid, player, body in (
-        ("n1-p0", "Bob Smith", "Liverpool want Bob Smith."),
-        ("n1-p1", "Carl Jones", "Arsenal want Carl Jones."),  # tagged with Liverpool, but does not say so
+    for nid, player, body, days, prio in (
+        ("n1-p0", "Bob Smith", "Liverpool want Bob Smith.", 2, 1.01),  # newest, but one outlet
+        ("n1-p1", "Carl Jones", "Liverpool want Carl Jones.", 5, 3.02),  # three independent outlets
     ):
         con.execute(
             "INSERT INTO news_items VALUES (?, 'guardian_rumours', 'The Guardian', ?, ?, ?, NULL, ?, ['liverpool'], 5, ?)",
-            [nid, url, player, NOW - timedelta(days=5), body, NOW],
+            [nid, url, player, NOW - timedelta(days=days), body, NOW],
         )
-        key = player.lower()
+        eid = f"{nid}:{player.lower()}"
+        rows = [
+            ("rumours", "rumour", eid, "outlet", "liverpool", None, "The Guardian"),
+            ("rumours", "rumour", eid, "priority", "liverpool", prio, None),
+            ("rumours", "rumour", eid, "heat_outlets", "liverpool", round(prio), None),
+            ("rumours", "rumour", eid, "heat_reports", "liverpool", 4, None),
+            ("rumours", "rumour", eid, "heat_since", "liverpool", None, "2026-08-04"),
+            ("rumours", "rumour", eid, "past_1_player", "liverpool", None, "Dan Old"),
+            ("rumours", "rumour", eid, "past_1_club", "liverpool", None, "Liverpool"),
+            ("rumours", "rumour", eid, "past_1_date", "liverpool", None, "2026-01-20"),
+            (
+                "rumours",
+                "rumour",
+                eid,
+                "past_1_outcome",
+                "liverpool",
+                None,
+                "did not join within half a year",
+            ),
+            ("scout", "rumour", eid, "realism", "liverpool", 0.04, None),
+            ("scout", "rumour", eid, "contract_months", "liverpool", 20, None),
+            ("scout", "rumour", eid, "seller", "liverpool", None, "990"),
+        ]
+        for m, et, e, metric, ctx, num, text in rows:
+            con.execute(
+                "INSERT INTO model_outputs VALUES (?, 'r', ?, ?, ?, ?, ?, ?, ?)",
+                [m, et, e, metric, ctx, num, text, NOW],
+            )
+    for metric, num, text in (
+        ("credibility", None, "about average"),
+        ("raw_rate", 0.098, None),
+        ("links", 30010, None),
+    ):
         con.execute(
-            "INSERT INTO model_outputs VALUES ('rumours', 'r', 'rumour', ?, 'one_in', 'liverpool', 5, NULL, ?)",
-            [f"{nid}:{key}", NOW],
+            "INSERT INTO model_outputs VALUES ('rumours', 'r', 'outlet', 'The Guardian', ?, '6m', ?, ?, ?)",
+            [metric, num, text, NOW],
+        )
+    for metric, num, text in (
+        ("name", None, "Coventry City"),
+        ("fee_sales", 9, None),
+        ("fee_sales_since", None, "2023-07-01"),
+    ):
+        con.execute(
+            "INSERT INTO model_outputs VALUES ('scout', 'r', 'seller', '990', ?, '', ?, ?, ?)",
+            [metric, num, text, NOW],
         )
     ctx = make_ctx(con, ledger)
     facts = tools.rumours(ctx.toolbox, "liverpool", "in")
-    assert [f.label for f in facts].count("rumour track record") == 2
-    sec = Section("scout", "Scout", "q", template=" ".join(f.sentence() for f in facts))
-    gate(sec, ctx)
-    assert sec.status == "published"
-    assert "Liverpool have been linked with Bob Smith." in sec.text
-    assert (
-        "Past reports like this one about Bob Smith came true within half a year about one time in 5."
-        in sec.text
+    rumours = [f for f in facts if f.label.startswith("transfer rumour")]
+    assert [f.template.split("with ")[-1] for f in rumours] == [
+        "Carl Jones.",
+        "Bob Smith.",
+    ]  # credibility x heat
+    brief = [f for f in facts if f.brief]
+    assert {f.label for f in brief} >= {
+        "rumour source credibility",
+        "rumour source record",
+        "rumour independent outlets",
+        "rumour first reported",
+        "rumour move estimate",
+        "rumour contract months",
+        "rumour seller fee sales",
+        "rumour earlier report 1",
+    }
+    assert all(
+        f.label.startswith(tools.BRIEF_LABEL) and f.subject in ("Bob Smith", "Carl Jones") for f in brief
     )
-    assert "Carl Jones" not in sec.text
-    assert any(w["reason"] == "the rumour it is about was not confirmed" for w in sec.withheld)
+    sales = next(f for f in brief if f.label == "rumour seller fee sales")
+    assert sales.when is not None and "Coventry City have sold" in sales.template
+    # the prose (writer input) is the rumours themselves; the brief never reaches it
+    sec = Section("scout", "Scout", "q", template=" ".join(f.sentence() for f in facts if not f.brief))
+    gate(sec, ctx)
+    assert sec.status == "published" and "Liverpool have been linked with Carl Jones." in sec.text
+    assert not any(ch.isdigit() for ch in sec.text)
+    # the brief's figures pass the Stat Auditor as key stats, with readable values
+    rows, _, _ = dossier.key_stats(ctx, [Section("scout", "Scout", "q", facts)])
+    shown = {(r["label"], r["subject"]): r["display"] for r in rows["scout"]}
+    assert shown[("rumour source credibility", "Carl Jones")] == "about average"
+    assert shown[("rumour source record", "Carl Jones")] == "10%"
+    assert shown[("rumour move estimate", "Bob Smith")] == "4%"
+    assert shown[("rumour first reported", "Bob Smith")] == "4 August 2026"
 
 
 def test_fair_fee_range_is_cited_and_bound(con, ledger):

@@ -613,11 +613,52 @@ def fingerprints(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
     return rows
 
 
+# ---- playing style (API-Football season totals) -----------------------------------------------------------
+def style(con: duckdb.DuckDBPyConnection, now: datetime) -> list[dict]:
+    """Every player with a style profile (dugout_models.style), his newest season: role (when one clearly leads),
+    the season and pool he is measured in, his percentile for each of his group's features and up to two similar
+    players. Context = the season ("2024-25")."""
+    from dugout_models.market import _tm_to_reep
+    from dugout_models.style import GROUP_PLURAL, TIER_NAMES, StyleModel, season_label, tm_groups
+
+    m = StyleModel.from_warehouse(con, tm_groups())
+    if m.profiles.empty:
+        return []
+    reep = _tm_to_reep(con)
+    rows: list[dict] = []
+    newest = m.profiles.sort_values(["season", "minutes"]).drop_duplicates("tm_player_id", keep="last")
+    for r in newest.itertuples(index=False):
+        row = pd.Series(r._asdict())
+        pid, ctx = reep.get(r.tm_player_id, f"transfermarkt:{r.tm_player_id}"), season_label(int(r.season))
+        rows.append(_row("style", "player", pid, "style_group", r.group, now, ctx))
+        rows.append(
+            _row(
+                "style",
+                "player",
+                pid,
+                "style_pool",
+                f"{GROUP_PLURAL[r.group]} in {TIER_NAMES[r.tier]}",
+                now,
+                ctx,
+            )
+        )
+        rows.append(_row("style", "player", pid, "league_minutes", int(r.minutes), now, ctx))
+        if isinstance(r.role, str):
+            rows.append(_row("style", "player", pid, "style_role", r.role, now, ctx))
+        for f, v in m.percentiles(row, r.group).items():
+            rows.append(_row("style", "player", pid, f"pct:{f}", round(v, 2), now, ctx))
+        for i, (_, name, cos) in enumerate(m.similar(row, 2), 1):
+            if cos >= 0.8:
+                rows.append(_row("style", "player", pid, f"similar_{i}", name, now, ctx))
+    return rows
+
+
 MODELS = {
     "predictor": predictions,
     "lineup": lambda con, now: lineups(con, now) + last_xi_lineups(con, now),
     "injury": injury_risk,
     "roles": roles,
+    "style": style,
     "fingerprint": fingerprints,
 }
 

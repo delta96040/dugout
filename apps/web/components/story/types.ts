@@ -1,5 +1,6 @@
 import type { Stat } from "@/lib/data";
 import type { XY } from "@/lib/formations";
+import type { RumourBrief } from "@/lib/rumourBrief";
 import type { Gap, InjuryCoverage } from "@/lib/shortlist";
 
 export interface StatRef {
@@ -27,9 +28,9 @@ export interface StoryData {
   signings: { title: string; url: string | null }[];
   /** the scout's three lists for the top need: dream, realistic, hidden gem (up to three names each) */
   targets: Target[];
-  /** transfer talk the Fact-Check confirmed in the Guardian's Rumour Mill (attributed, unverified as fact) */
-  /** with how often reports like it came true (one time in N), when the item links a player with this club */
-  rumours: { text: string; url: string | null; record?: StatRef }[];
+  /** transfer talk the Fact-Check confirmed in the Guardian's Rumour Mill (attributed, unverified as fact), each
+   *  with its brief (source credibility, heat, our estimate, track record), most credible and most reported first */
+  rumours: RumourBrief[];
   verifiedSamples: StatRef[];
   numbersTotal: number;
   untraceable: number;
@@ -82,4 +83,19 @@ export interface Target {
   projected?: StatRef;
   /** injury-risk tier (low / moderate / elevated / high), where his league is scored */
   injury?: StatRef;
+  /** how he plays (docs/backtests/roles_api.md): the season and the players he is measured against */
+  style?: Style;
+  /** the feature he adds most over the starter he would replace: his percentile and the starter's */
+  adds?: { feature: string; mine: StatRef; theirs?: StatRef };
+  /** players closest to him in style */
+  similar?: string;
+}
+
+/** A player's style: role (when one clearly leads), his strongest features as top shares ("top 10%"), against
+ *  a named pool ("full-backs in Europe's biggest leagues") in one season. */
+export interface Style {
+  season: StatRef;
+  pool: string;
+  role?: string;
+  tops: { feature: string; top: StatRef }[];
 }

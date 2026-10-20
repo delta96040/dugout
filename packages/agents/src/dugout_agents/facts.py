@@ -26,6 +26,7 @@ MODEL_DOCS = {
     "lineup": f"{REPO}/docs/backtests/lineup.md",
     "injury": f"{REPO}/docs/backtests/injury.md",
     "roles": f"{REPO}/docs/backtests/roles.md",
+    "style": f"{REPO}/docs/backtests/roles_api.md",
     "fingerprint": f"{REPO}/docs/backtests/fingerprint.md",
     "valuation": f"{REPO}/docs/backtests/valuation.md",
     "realism": f"{REPO}/docs/backtests/realism.md",
@@ -50,6 +51,8 @@ class Fact:
     when: tuple[str, str | None] | None = None  # optional second slot "{d}" (ledger id, format), e.g. a date
     # optional likely range "{lo}" / "{hi}" around the value (ledger ids, same format), e.g. a fee range
     range: tuple[str, str] | None = None
+    # brief: a structured figure for the site's cards (key_stats, e.g. the rumour brief), never written as prose
+    brief: bool = False
 
     @property
     def placeholder(self) -> str:

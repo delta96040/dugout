@@ -166,14 +166,17 @@ export default function MethodsPage() {
             <B file="realism" j={real} value={real?.mobility?.auc} label="mobility AUC" />; destination AUC{" "}
             <B file="realism" j={real} value={real?.destination?.auc} label="destination AUC" />.
           </Row>
-          <Row name="Rumour track record" verdict="beats the base rate · outlets barely differ">
-            What became of every rumour in the Guardian&apos;s Rumour Mill archive: each one checked against the move
-            that did or did not happen within half a year. On the latest season Brier{" "}
+          <Row name="Rumour brief" verdict="beats the base rate · few sources stand out">
+            Every rumour on a club page comes with its source&apos;s label, how many independent outlets (one per media
+            group) carry the link and since when, our estimate of the move (the transfer realism above), his contract, how
+            often his club sells, and what became of the source&apos;s earlier reports on the same club. A source is rated
+            against what similar reports did: on the latest season that estimate scored a Brier of{" "}
             <B file="rumours" j={rum} value={rum6?.model?.brier} label="Brier, rumour track record" /> vs{" "}
             <B file="rumours" j={rum} value={rum6?.recent_rate?.brier} label="Brier, recent base rate" /> for the recent base rate; AUC{" "}
-            <B file="rumours" j={rum} value={rum6?.model?.auc} label="AUC, rumour track record" />. Outlets&apos; records barely differ once
-            shrunk to the average, so a rumour is judged on its own signs: repeat reports, how many clubs it names, the window.{" "}
-            <a className="underline" href="/rumours/">The record by outlet and season</a>.
+            <B file="rumours" j={rum} value={rum6?.model?.auc} label="AUC, rumour track record" />. Reliable or speculative needs a
+            record clearly apart from that, beyond luck; almost every outlet, and the column&apos;s own round-ups, come out about
+            average.{" "}
+            <a className="underline" href="/rumours/">The labels by outlet</a>.
           </Row>
           <Row name="Player potential" verdict="beats age curve · wide bands">
             Projected market value. Median error two years ahead{" "}

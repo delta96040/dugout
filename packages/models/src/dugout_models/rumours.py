@@ -35,8 +35,11 @@ import pandas as pd
 from dugout_pipeline.clubs import normalise
 from dugout_pipeline.db import upsert
 from dugout_pipeline.settings import REPO_ROOT
+from dugout_verify.claims import TRANSFER
+from dugout_verify.factcheck import ownership_group
 from scipy.optimize import minimize
 from scipy.special import betaln, expit, logit
+from scipy.stats import chi2
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
@@ -715,6 +718,85 @@ class RumourModel:
         return expit(_outlet_logit(x, self.rates, self.prior))
 
 
+# ---- source credibility ------------------------------------------------------------------------------------
+# An outlet's record set against what the same reports would have done from anyone: the reports it is credited
+# with came true `hits` times where the rumour model (which never sees the outlet) expected `expected`. The
+# label comes from the 80% interval of hits / expected (Poisson, exact): above 1 throughout = reliable, below 1
+# throughout = speculative, otherwise about average; too few traced reports = unproven (rumours.md).
+CREDIBILITY_LEVEL = 0.8
+RELIABLE, AVERAGE, SPECULATIVE, UNPROVEN = "reliable", "about average", "speculative", "unproven"
+# how the site and the dossiers order rumours: credibility x heat (independent outlets reporting the link)
+CREDIBILITY_WEIGHT = {RELIABLE: 1.5, AVERAGE: 1.0, UNPROVEN: 0.8, SPECULATIVE: 0.5}
+LABEL_CHECK_FROM = 2023  # labels from the seasons before, checked on this season onwards
+
+
+def ratio_interval(hits: float, expected: float, level: float = CREDIBILITY_LEVEL) -> tuple[float, float]:
+    """Exact (Garwood) interval for a Poisson count's ratio to its expectation."""
+    if expected <= 0:
+        return 0.0, float("inf")
+    a = (1 - level) / 2
+    lo = chi2.ppf(a, 2 * hits) / 2 if hits > 0 else 0.0
+    return float(lo / expected), float(chi2.ppf(1 - a, 2 * hits + 2) / 2 / expected)
+
+
+def credibility_label(n: int, lo: float, hi: float) -> str:
+    if n < MIN_OUTLET_LINKS:
+        return UNPROVEN
+    return RELIABLE if lo > 1 else SPECULATIVE if hi < 1 else AVERAGE
+
+
+def expected_out_of_fold(lab: pd.DataFrame, y: str) -> np.ndarray:
+    """Each link's chance from the rumour model fitted on the other seasons (no outlet among its features)."""
+    p = np.zeros(len(lab))
+    season = lab.season.to_numpy()
+    for s in np.unique(season):
+        m = season == s
+        p[m] = RumourModel.fit(lab[~m], y).predict(lab[m])
+    return p
+
+
+def outlet_credibility(lab: pd.DataFrame, y: str, expected: np.ndarray) -> dict[str, dict[str, Any]]:
+    g = lab.assign(_e=expected).groupby("outlet").agg(n=(y, "size"), hits=(y, "sum"), expected=("_e", "sum"))
+    out = {}
+    for o, r in g.iterrows():
+        lo, hi = ratio_interval(float(r.hits), float(r.expected))
+        out[o] = {
+            "n": int(r.n),
+            "hits": int(r.hits),
+            "raw": float(r.hits / r.n),
+            "expected_rate": float(r.expected / r.n),
+            "ratio": float(r.hits / r.expected) if r.expected > 0 else float("nan"),
+            "low": lo,
+            "high": hi,
+            "label": credibility_label(int(r.n), lo, hi),
+        }
+    return out
+
+
+def label_check(lab: pd.DataFrame, y: str, start: int = LABEL_CHECK_FROM) -> dict[str, Any]:
+    """Do the labels hold up? Labels from the seasons before `start` (out of fold within them), then how the
+    outlets' later reports did against a model fitted on those earlier seasons, by label."""
+    before, after = lab[lab.season < start], lab[lab.season >= start]
+    if before.empty or after.empty:
+        return {}
+    cred = outlet_credibility(before, y, expected_out_of_fold(before, y))
+    p = RumourModel.fit(before, y).predict(after)
+    a = after.assign(_p=p, _label=after.outlet.map(lambda o: cred.get(o, {}).get("label", UNPROVEN)))
+    rows = {}
+    for lbl, g in a.groupby("_label"):
+        lo, hi = ratio_interval(float(g[y].sum()), float(g._p.sum()))
+        rows[lbl] = {
+            "outlets": int(g.outlet.nunique()),
+            "n": len(g),
+            "hits": int(g[y].sum()),
+            "expected": float(g._p.sum()),
+            "ratio": float(g[y].sum() / g._p.sum()),
+            "low": lo,
+            "high": hi,
+        }
+    return {"from": f"{start}-{start + 1 - 2000:02d}", "labels": rows}
+
+
 def scores(p: np.ndarray, y: np.ndarray) -> dict[str, float]:
     p = np.clip(p, 1e-6, 1 - 1e-6)
     out = {
@@ -761,13 +843,16 @@ def load_tm(tm_dir: Path = TM_DIR) -> dict[str, pd.DataFrame]:
 
 
 def build(
-    con: duckdb.DuckDBPyConnection, t: dict[str, pd.DataFrame] | None = None
+    con: duckdb.DuckDBPyConnection, t: dict[str, pd.DataFrame] | None = None, keep: dict | None = None
 ) -> tuple[pd.DataFrame, dict]:
-    """All links with labels and features, plus match statistics."""
+    """All links with labels and features, plus match statistics. `keep` receives the gazetteer (publish uses
+    it to find the clubs other press names)."""
     t = t or load_tm()
     rumours = load_rumours(con)
     wiki = con.execute("SELECT * FROM wiki_transfers").df() if _has(con, "wiki_transfers") else None
     gaz = Gazetteer.build(t["transfers"], t["clubs"])
+    if keep is not None:
+        keep["gazetteer"] = gaz
     people = People.build(t, gaz)
     links, stats = links_from(rumours, gaz, people)
     stats["paragraphs"] = len(rumours)
@@ -858,11 +943,42 @@ def backtest(
                 for s, r in by_season.iterrows()
             },
         }
+    y = f"joined_{SHIPPED_HORIZON}m"
+    lab = links[links[y].notna()].copy()
+    lab[y] = lab[y].astype(bool)
+    report["credibility"] = {
+        "outlets": {
+            o: c
+            for o, c in sorted(
+                outlet_credibility(lab, y, expected_out_of_fold(lab, y)).items(), key=lambda kv: -kv[1]["n"]
+            )
+            if c["n"] >= MIN_OUTLET_LINKS
+        },
+        "check": label_check(lab, y),
+    }
     if out_dir:
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "rumours.json").write_text(json.dumps(report, indent=2, default=float), encoding="utf-8")
         (out_dir / "rumours.md").write_text(report_md(report), encoding="utf-8")
     return report
+
+
+def _label_check_md(chk: dict) -> list[str]:
+    if not chk:
+        return []
+    lines = [
+        f"Do the labels hold? Labels from the seasons before {chk['from']} (out of fold within them), then each label's",
+        f"later reports ({chk['from']} onwards) against a model fitted on the earlier seasons:",
+        "",
+        "| Label (earlier seasons) | Outlets | Later links | Came true | Expected | Ratio (80% interval) |",
+        "|---|---|---|---|---|---|",
+    ]
+    for lbl, c in chk["labels"].items():
+        lines.append(
+            f"| {lbl} | {c['outlets']} | {c['n']} | {c['hits']} | {c['expected']:.1f} |"
+            f" {c['ratio']:.2f} ({c['low']:.2f}-{c['high']:.2f}) |"
+        )
+    return [*lines, ""]
 
 
 def report_md(r: dict) -> str:
@@ -948,6 +1064,24 @@ def report_md(r: dict) -> str:
         "|---|---|---|",
         *[f"| {s} | {v['n']} | {v['rate']:.1%} |" for s, v in h["by_season"].items()],
         "",
+        "## Source credibility labels (the rumour brief)",
+        "",
+        "Each outlet's record is set against what the same reports would have done from anyone: the shipped rumour",
+        "model (which never sees the outlet), fitted on the other seasons, gives each report's chance; their sum is",
+        "what the outlet *should* have got right. The label comes from the exact Poisson 80% interval of came true /",
+        "expected: wholly above 1 = **reliable**, wholly below 1 = **speculative**, otherwise **about average**;",
+        f"fewer than {MIN_OUTLET_LINKS} traced reports = **unproven**. Raw rates mislead: outlets credited mostly in",
+        "recent seasons look good because the column's later items come true twice as often.",
+        "",
+        "| Outlet | Links | Came true | Raw rate | Similar reports | Ratio (80% interval) | Label |",
+        "|---|---|---|---|---|---|---|",
+        *[
+            f"| {o} | {c['n']} | {c['hits']} | {c['raw']:.1%} | {c['expected_rate']:.1%} |"
+            f" {c['ratio']:.2f} ({c['low']:.2f}-{c['high']:.2f}) | {c['label']} |"
+            for o, c in r.get("credibility", {}).get("outlets", {}).items()
+        ],
+        "",
+        *_label_check_md(r.get("credibility", {}).get("check", {})),
         "## Reading this honestly",
         "",
         "- **Outlets barely differ (a negative result).** The fitted prior is strong, so even outlets with hundreds",
@@ -957,6 +1091,11 @@ def report_md(r: dict) -> str:
         "  Most items (the column's own summaries) credit no outlet; outlets are known only when the column links",
         "  to or names them. What separates rumours is the rumour itself: how often the same link was reported",
         "  before, how many clubs the item names, the transfer window, and how valuable the player is.",
+        "- **Source labels are descriptive, not yet confirmed.** Set against similar reports, a handful of outlets stand",
+        "  apart (the table above); the rest, and the column's own round-ups, are about average. Too few later reports",
+        "  from the labelled outlets exist to show the labels hold out of sample (the check above), so the site says so.",
+        "  Since 2020-21 the column credits an outlet for only a few percent of its items, so most live rumours carry",
+        "  the column's own label.",
         f"- **The column changed.** From {MODERN_SEASON}-{MODERN_SEASON + 1 - 2000:02d} it runs fewer, shorter items"
         " and about twice as many come true; a base rate from all years badly underestimates today's rumours. The era flag handles",
         "  it; the base rate since then is the fair baseline to beat.",
@@ -972,6 +1111,107 @@ def report_md(r: dict) -> str:
         "",
     ]
     return "\n".join(lines) + "\n"
+
+
+# ---- the rumour brief: heat and track record ---------------------------------------------------------------
+HEAT_DAYS = 365  # Rumour Mill reports of the same link: the year before (the window realism's news uses)
+PRESS_DAYS = 60  # other press in the news corpus (it keeps this long: agents runtime.NEWS_DAYS)
+TRACK_RECORD = 2  # earlier reports shown with each rumour
+CAME_TRUE, DID_NOT = "joined within half a year", "did not join within half a year"
+
+
+def column_of(rumour_id: str) -> str:
+    """The column a paragraph belongs to (rumour ids are '<column news id>-p<paragraph>')."""
+    return rumour_id.rsplit("-p", 1)[0]
+
+
+def press_items(con: duckdb.DuckDBPyConnection, now: datetime, gaz: Gazetteer) -> pd.DataFrame:
+    """Other press in the news corpus (RSS feeds, club sites' reproduced press credited to the original outlet;
+    not the clubs' own articles): outlet, date and its transfer sentences (a transfer word, as Fact-Check reads
+    one), each with the clubs it names (gazetteer) and its folded text. A match report naming a player and a
+    club is not transfer talk."""
+    df = con.execute(
+        """SELECT outlet, published_at, coalesce(title, '') || '. ' || coalesce(body_text, summary, '') AS text
+           FROM news_items WHERE source <> 'guardian_rumours' AND outlet IS NOT NULL AND source_tier > 1
+           AND published_at >= ?""",
+        [now - pd.Timedelta(days=PRESS_DAYS)],
+    ).df()
+    df["sentences"] = [
+        [({c for c, _ in gaz.find(x)}, f" {person_key(x)} ") for x in SENTENCE.split(t) if TRANSFER.search(x)]
+        for t in df.text
+    ]
+    df["published_at"] = pd.to_datetime(df.published_at, utc=True).dt.tz_convert(None)
+    return df[df.sentences.map(len) > 0].drop(columns="text")
+
+
+def _names_player(folded: str, name: str) -> bool:
+    key = person_key(name)
+    parts = key.split()
+    return f" {key} " in folded or (len(parts) > 1 and len(parts[-1]) >= 5 and f" {parts[-1]} " in folded)
+
+
+def heat(links: pd.DataFrame, press: pd.DataFrame, r: Any, now: pd.Timestamp) -> dict[str, Any]:
+    """How hot a player-club link is: Rumour Mill columns that carried it in the past year, other press with a
+    transfer sentence naming both, the ownership groups behind them (one vote per group, as in Fact-Check) and
+    the first report. `links` are this pair's links."""
+    past = links[(links.published_at >= now - pd.Timedelta(days=HEAT_DAYS)) & (links.published_at <= now)]
+    reports: dict[str, tuple[pd.Timestamp, str]] = {}
+    for rid, when, outlet in zip(past.rumour_id, past.published_at, past.outlet, strict=True):
+        col = column_of(rid)
+        if col not in reports or when < reports[col][0]:
+            reports[col] = (when, outlet)
+    hits = press[
+        [
+            any(r.tm_club_id in clubs and _names_player(f, r.player_name) for clubs, f in sentences)
+            for sentences in press.sentences
+        ]
+    ]
+    items = sorted([*reports.values(), *zip(hits.published_at, hits.outlet, strict=True)], key=lambda x: x[0])
+    groups: dict[str, str] = {}
+    for _, outlet in items:
+        g = ownership_group(outlet)
+        if g is not None:
+            groups.setdefault(g, outlet)
+    return {
+        "reports": len(items),
+        "outlets": len(groups),
+        "outlet_names": ", ".join(groups.values()),
+        "since": items[0][0].date().isoformat() if items else None,
+    }
+
+
+def track_record(lab: pd.DataFrame, r: Any, k: int = TRACK_RECORD) -> list[dict[str, Any]]:
+    """The latest labelled reports from the same outlet about the same buying club (other players), then about
+    players leaving the same club, and what became of each."""
+    same = lab[(lab.outlet == r.outlet) & (lab.tm_player_id != r.tm_player_id)]
+    picks = pd.concat(
+        [
+            same[same.tm_club_id == r.tm_club_id].assign(kind="same buyer"),
+            same[(same.from_tm_club == r.from_tm_club) & same.from_tm_club.notna()].assign(
+                kind="same seller"
+            ),
+        ]
+    )
+    picks = picks.sort_values(["kind", "published_at"], ascending=[True, False]).drop_duplicates(
+        "tm_player_id"
+    )
+    out = []
+    for p in picks.head(k).itertuples():
+        out.append(
+            {
+                "player": p.player_name,
+                "club": p.club_name,
+                "date": pd.Timestamp(p.published_at).date().isoformat(),
+                "outcome": CAME_TRUE if bool(p.joined_6m) else DID_NOT,
+                "kind": p.kind,
+            }
+        )
+    return out
+
+
+def priority(label: str, outlets: int, reports: int) -> float:
+    """Credibility x heat: how the brief orders rumours (ties: more reports first)."""
+    return CREDIBILITY_WEIGHT.get(label, 1.0) * max(outlets, 1) + 0.01 * min(reports, 99)
 
 
 # ---- publishing --------------------------------------------------------------------------------------------
@@ -994,9 +1234,14 @@ MIN_OUTLET_LINKS = (
 )
 
 
-def site_summary(lab: pd.DataFrame, model: RumourModel, y: str, now: datetime) -> dict[str, Any]:
+def site_summary(
+    lab: pd.DataFrame, model: RumourModel, y: str, now: datetime, cred: dict[str, dict] | None = None
+) -> dict[str, Any]:
     """The rumour track record page's numbers (data/rumours.json): every one an aggregate of rumour_links or a
-    backtest score, so the site can show its source (docs/backtests/rumours.md) and when it was computed."""
+    backtest score, so the site can show its source (docs/backtests/rumours.md) and when it was computed.
+    `cred`: outlet credibility (outlet_credibility); each outlet then carries its label, the rate similar
+    reports came true at and the ratio."""
+    cred = cred or {}
     modern = lab[lab.season >= MODERN_SEASON]
     seasons = lab.groupby("season")[y].agg(["sum", "count"])
     bt_path = REPO_ROOT / "docs" / "backtests" / "rumours.json"
@@ -1030,6 +1275,15 @@ def site_summary(lab: pd.DataFrame, model: RumourModel, y: str, now: datetime) -
                 "came_true": r["hits"],
                 "raw": float(r["raw"]),
                 "shrunk": float(r["shrunk"]),
+                **(
+                    {
+                        "label": cred[o]["label"],
+                        "expected_rate": cred[o]["expected_rate"],
+                        "ratio": cred[o]["ratio"],
+                    }
+                    if o in cred
+                    else {}
+                ),
             }
             for o, r in sorted(model.rates.items(), key=lambda kv: -kv[1]["n"])
             if r["n"] >= MIN_OUTLET_LINKS
@@ -1054,17 +1308,21 @@ def write_site_summary(doc: dict[str, Any], path: Path = SITE_SUMMARY) -> None:
 
 
 def publish(con: duckdb.DuckDBPyConnection, now: datetime, recent_days: int = 120) -> list[dict]:
-    """Outlet track records (all labelled links) and the chance each recent rumour comes true, for the site.
+    """Outlet track records (all labelled links) and a brief on each recent rumour, for the site.
 
-    Rows: entity_type 'outlet' (metrics links / came_true / hit_rate, shrunk) and entity_type 'rumour' with
-    entity_id '<paragraph news_id>:<folded player name>' and context = the dugout club the item links him with
-    (metrics p_true, one_in). Also rewrites the rumour_links table."""
+    Rows: entity_type 'outlet' (links / came_true / raw_rate / expected_rate / credibility, and the shrunk
+    hit_rate) and entity_type 'rumour' with entity_id '<paragraph news_id>:<folded player name>' and context =
+    the dugout club the item links him with: outlet, p_true, heat_* (independent outlets, reports, first report),
+    past_<k>_* (earlier reports from the same outlet and what became of them) and priority (credibility x heat).
+    The move's own odds, contract and seller's record come from the market model (market.rumour_reality).
+    Also rewrites the rumour_links table."""
     from dugout_models.publish import _row
 
     if not (TM_DIR / "transfers.parquet").exists() or not len(load_rumours(con)):
         log.warning("rumours: no archive or no transfermarkt-datasets tables yet (history job); skipped")
         return []
-    links, _ = build(con)
+    keep: dict[str, Any] = {}
+    links, _ = build(con, keep=keep)
     write_links(con, links, now)
     links = links[links.season >= FIRST_SEASON]
     y = f"joined_{SHIPPED_HORIZON}m"
@@ -1074,34 +1332,52 @@ def publish(con: duckdb.DuckDBPyConnection, now: datetime, recent_days: int = 12
         return []
     lab[y] = lab[y].astype(bool)
     model = RumourModel.fit(lab, y)
-    write_site_summary(site_summary(lab, model, y, now))
-    rows = [_row("rumours", "overall", "all", "hit_rate", float(lab[y].mean()), now, f"{SHIPPED_HORIZON}m"),
-            _row("rumours", "overall", "all", "links", len(lab), now, f"{SHIPPED_HORIZON}m")]  # fmt: skip
+    cred = outlet_credibility(lab, y, expected_out_of_fold(lab, y))
+    write_site_summary(site_summary(lab, model, y, now, cred))
+    ctx = f"{SHIPPED_HORIZON}m"
+    rows = [_row("rumours", "overall", "all", "hit_rate", float(lab[y].mean()), now, ctx),
+            _row("rumours", "overall", "all", "links", len(lab), now, ctx)]  # fmt: skip
     for outlet, r in model.rates.items():
-        for metric, v in (("links", r["n"]), ("came_true", r["hits"]), ("hit_rate", r["shrunk"])):
-            rows.append(_row("rumours", "outlet", outlet, metric, v, now, f"{SHIPPED_HORIZON}m"))
+        c = cred[outlet]
+        for metric, v in (
+            ("links", r["n"]),
+            ("came_true", r["hits"]),
+            ("hit_rate", r["shrunk"]),
+            ("raw_rate", round(c["raw"], 4)),
+            ("expected_rate", round(c["expected_rate"], 4)),
+            ("credibility", c["label"]),
+        ):
+            rows.append(_row("rumours", "outlet", outlet, metric, v, now, ctx))
     slugs = dict(
         con.execute(
             "SELECT external_id, dugout_id FROM entity_ids WHERE entity_type = 'club' AND provider = 'transfermarkt'"
         ).fetchall()
     )
-    cutoff = pd.Timestamp(now).tz_convert(None) - pd.Timedelta(days=recent_days)
+    now_ts = pd.Timestamp(now).tz_convert(None)
+    cutoff = now_ts - pd.Timedelta(days=recent_days)
     recent = links[(links.published_at >= cutoff) & links.tm_club_id.isin(slugs)].copy()
-    if len(recent):
-        recent["p"] = model.predict(recent)
-        for r in recent.itertuples():
-            # one entity per player named in the paragraph; context = the dugout club he is linked with
-            eid, ctx = f"{r.rumour_id}:{fold(r.player_name)}", slugs[r.tm_club_id]
-            rows.append(_row("rumours", "rumour", eid, "p_true", float(r.p), now, ctx))
-            rows.append(
-                _row(
-                    "rumours",
-                    "rumour",
-                    eid,
-                    "one_in",
-                    int(max(1, round(1 / max(r.p, 1e-3)))),
-                    now,
-                    ctx,
-                )
-            )
+    if not len(recent):
+        return rows
+    recent["p"] = model.predict(recent)
+    press = press_items(con, pd.Timestamp(now), keep["gazetteer"])
+    wanted = set(zip(recent.tm_player_id, recent.tm_club_id, strict=True))
+    pair = links[[k in wanted for k in zip(links.tm_player_id, links.tm_club_id, strict=True)]]
+    pairs = dict(iter(pair.groupby(["tm_player_id", "tm_club_id"])))
+    for r in recent.itertuples():
+        # one entity per player named in the paragraph; context = the dugout club he is linked with
+        eid, club = f"{r.rumour_id}:{fold(r.player_name)}", slugs[r.tm_club_id]
+        h = heat(pairs[(r.tm_player_id, r.tm_club_id)], press, r, now_ts)
+        label = cred.get(r.outlet, {}).get("label", UNPROVEN)
+        out = [
+            ("outlet", r.outlet),
+            ("p_true", float(r.p)),
+            ("heat_outlets", h["outlets"]),
+            ("heat_reports", h["reports"]),
+            ("heat_outlet_names", h["outlet_names"] or None),
+            ("heat_since", h["since"]),
+            ("priority", round(priority(label, h["outlets"], h["reports"]), 3)),
+        ]
+        for k, past in enumerate(track_record(lab, r), 1):
+            out += [(f"past_{k}_{f}", past[f]) for f in ("player", "club", "date", "outcome", "kind")]
+        rows += [_row("rumours", "rumour", eid, m, v, now, club) for m, v in out if v is not None]
     return rows

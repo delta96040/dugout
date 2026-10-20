@@ -1,0 +1,287 @@
+{
+  "generated_at": "2026-10-19T15:16:10+00:00",
+  "min_minutes": 900,
+  "coverage": [
+    {
+      "season": 2024,
+      "league_name": "Premier League",
+      "clubs": 18,
+      "rows": 444,
+      "matched": 443,
+      "enough": 257.0
+    }
+  ],
+  "groups": {
+    "centre-back": {
+      "players": 53,
+      "fitted": true,
+      "roles": {
+        "no clear role": 19,
+        "ball-playing centre-back": 15,
+        "covering centre-back": 11,
+        "front-foot defender": 8
+      },
+      "named_share": 0.6415094339622641,
+      "silhouette": 0.1073624427222909,
+      "silhouette_shuffled": -0.048307872782367256,
+      "bootstrap_ari": 0.6362189787787786,
+      "mixture": {
+        "k": 2,
+        "roles": {
+          "front-foot defender": 35,
+          "covering centre-back": 18
+        },
+        "mean_posterior": 0.9594028237477663,
+        "silhouette": 0.16438014876210238,
+        "silhouette_shuffled": -0.014063148458249386,
+        "bootstrap_ari": 0.2086323300350846
+      },
+      "seasons": [
+        2024
+      ],
+      "across_seasons": null
+    },
+    "full-back": {
+      "players": 37,
+      "fitted": true,
+      "roles": {
+        "no clear role": 9,
+        "defensive full-back": 9,
+        "overlapping dribbler": 7,
+        "possession full-back": 7,
+        "creative full-back": 5
+      },
+      "named_share": 0.7567567567567568,
+      "silhouette": 0.16605955163324798,
+      "silhouette_shuffled": -0.08266026096015908,
+      "bootstrap_ari": 0.6860911826437575,
+      "mixture": {
+        "k": 2,
+        "roles": {
+          "creative full-back": 20,
+          "defensive full-back": 17
+        },
+        "mean_posterior": 0.9816499899275481,
+        "silhouette": 0.1315575876932102,
+        "silhouette_shuffled": 0.02245820667263491,
+        "bootstrap_ari": 0.21376393625670378
+      },
+      "seasons": [
+        2024
+      ],
+      "across_seasons": null
+    },
+    "midfielder": {
+      "players": 66,
+      "fitted": true,
+      "roles": {
+        "no clear role": 22,
+        "deep-lying playmaker": 17,
+        "creative midfielder": 13,
+        "ball-winning midfielder": 9,
+        "box-to-box midfielder": 5
+      },
+      "named_share": 0.6666666666666666,
+      "silhouette": 0.1279105010907343,
+      "silhouette_shuffled": -0.06122827814094733,
+      "bootstrap_ari": 0.6955924406715562,
+      "mixture": {
+        "k": 2,
+        "roles": {
+          "ball-winning midfielder": 39,
+          "creative midfielder": 27
+        },
+        "mean_posterior": 0.9746082973976192,
+        "silhouette": 0.22415843119087753,
+        "silhouette_shuffled": -0.00936250996472661,
+        "bootstrap_ari": 0.4416948539352636
+      },
+      "seasons": [
+        2024
+      ],
+      "across_seasons": null
+    },
+    "winger": {
+      "players": 48,
+      "fitted": true,
+      "roles": {
+        "inside forward": 12,
+        "no clear role": 11,
+        "creative winger": 10,
+        "hard-working winger": 9,
+        "direct dribbler": 6
+      },
+      "named_share": 0.7708333333333334,
+      "silhouette": 0.20149736685900535,
+      "silhouette_shuffled": -0.06778223749988742,
+      "bootstrap_ari": 0.792801137535799,
+      "mixture": {
+        "k": 4,
+        "roles": {
+          "creative winger": 32,
+          "direct dribbler": 8,
+          "hard-working winger": 7,
+          "inside forward": 1
+        },
+        "mean_posterior": 0.9835687637246702,
+        "silhouette": 0.21656698371705582,
+        "silhouette_shuffled": -0.07050483867766841,
+        "bootstrap_ari": 0.4275335303137406
+      },
+      "seasons": [
+        2024
+      ],
+      "across_seasons": null
+    },
+    "centre-forward": {
+      "players": 27,
+      "fitted": false
+    }
+  },
+  "sanity": [
+    {
+      "player": "W. Saliba",
+      "season": "2024-25",
+      "group": "centre-back",
+      "role": "ball-playing centre-back",
+      "score": 1.18,
+      "standouts": "passes 90%, share of duels won 84%, dribbles completed 78%",
+      "similar": "C. Bassey, T. Adarabioyo, E. Agbadou"
+    },
+    {
+      "player": "J. Gvardiol",
+      "season": "2024-25",
+      "group": "full-back",
+      "role": "possession full-back",
+      "score": 2.02,
+      "standouts": "passes 96%, shots 93%, share of duels won 91%",
+      "similar": "R. James, R. Lewis, K. Walker"
+    },
+    {
+      "player": "T. Alexander-Arnold",
+      "season": "2024-25",
+      "group": "full-back",
+      "role": "creative full-back",
+      "score": 3.32,
+      "standouts": "chances created 99%, shots 99%, passes 88%",
+      "similar": "Pedro Porro, M. Gusto, A. Robertson"
+    },
+    {
+      "player": "A. Robertson",
+      "season": "2024-25",
+      "group": "full-back",
+      "role": "creative full-back",
+      "score": 1.29,
+      "standouts": "chances created 88%, passes 80%, shots 72%",
+      "similar": "Y. Sugawara, K. Walker, B. White"
+    },
+    {
+      "player": "D. Udogie",
+      "season": "2024-25",
+      "group": "full-back",
+      "role": "defensive full-back",
+      "score": 1.56,
+      "standouts": "tackles 96%, duels contested 91%, share of duels won 85%",
+      "similar": "N. Mazraoui, J. Veltman, V. Kristiansen"
+    },
+    {
+      "player": "D. Rice",
+      "season": "2024-25",
+      "group": "midfielder",
+      "role": null,
+      "score": 0.47,
+      "standouts": "chances created 86%, shots 75%, passes 61%",
+      "similar": "C. Eriksen, D. Szoboszlai, J. Hinshelwood"
+    },
+    {
+      "player": "M. Caicedo",
+      "season": "2024-25",
+      "group": "midfielder",
+      "role": null,
+      "score": 1.77,
+      "standouts": "share of duels won 96%, passes 92%, tackles 86%",
+      "similar": "Andr\u00e9, T. Partey, R. Gravenberch"
+    },
+    {
+      "player": "R. Gravenberch",
+      "season": "2024-25",
+      "group": "midfielder",
+      "role": "deep-lying playmaker",
+      "score": 1.47,
+      "standouts": "interceptions 95%, share of duels won 90%, dribbles completed 83%",
+      "similar": "M. Caicedo, B. Soumar\u00e9, S. Tonali"
+    },
+    {
+      "player": "M. \u00d8degaard",
+      "season": "2024-25",
+      "group": "midfielder",
+      "role": "creative midfielder",
+      "score": 1.86,
+      "standouts": "chances created 93%, shots 81%, passes 81%",
+      "similar": "D. Szoboszlai, K. De Bruyne, Andreas Pereira"
+    },
+    {
+      "player": "C. Palmer",
+      "season": "2024-25",
+      "group": "midfielder",
+      "role": "creative midfielder",
+      "score": 2.79,
+      "standouts": "shots 99%, chances created 98%, dribbles completed 92%",
+      "similar": "E. Eze, M. O&apos;Riley, J. Kluivert"
+    },
+    {
+      "player": "Mohamed Salah",
+      "season": "2024-25",
+      "group": "winger",
+      "role": "inside forward",
+      "score": 3.61,
+      "standouts": "shots 99%, goals 99%, chances created 93%",
+      "similar": "C. Gakpo, L. D\u00edaz, H. Barnes"
+    },
+    {
+      "player": "B. Saka",
+      "season": "2024-25",
+      "group": "winger",
+      "role": "creative winger",
+      "score": 2.74,
+      "standouts": "chances created 99%, fouls won 91%, shots 84%",
+      "similar": "D. Kulusevski, D. Brooks, L. D\u00edaz"
+    },
+    {
+      "player": "J. Doku",
+      "season": "2024-25",
+      "group": "winger",
+      "role": "direct dribbler",
+      "score": 5.21,
+      "standouts": "dribbles completed 99%, duels contested 97%, passes 95%",
+      "similar": "M. Kudus, E. Nwaneri, S\u00e1vio"
+    },
+    {
+      "player": "E. Haaland",
+      "season": "2024-25",
+      "group": "centre-forward",
+      "role": "penalty-box striker",
+      "score": 2.99,
+      "standouts": "",
+      "similar": "A. Isak, J. Mateta, N. Jackson"
+    },
+    {
+      "player": "A. Isak",
+      "season": "2024-25",
+      "group": "centre-forward",
+      "role": "penalty-box striker",
+      "score": 1.89,
+      "standouts": "",
+      "similar": "E. Haaland, Omar Marmoush, J. Mateta"
+    },
+    {
+      "player": "J. Mateta",
+      "season": "2024-25",
+      "group": "centre-forward",
+      "role": null,
+      "score": 0.3,
+      "standouts": "",
+      "similar": "J. Strand Larsen, R. H\u00f8jlund, E. Haaland"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Transfer rumour track record backtest
 
-Generated 2026-10-16T21:34:24+00:00. Rumours: the Guardian's Rumour Mill archive (Guardian Open Platform), every
+Generated 2026-10-19T15:04:10+00:00. Rumours: the Guardian's Rumour Mill archive (Guardian Open Platform), every
 column since February 2001. What happened: transfermarkt-datasets (CC0) to 2026-07-06, then Wikipedia's
 summer-2026 transfer lists (CC BY-SA) to 2026-09-02. A rumour *came true* when the player
 joined the club it linked him with within the horizon; links whose horizon is not over are left out.
@@ -139,6 +139,56 @@ Rate by season (all labelled links):
 | 2024-25 | 694 | 17.6% |
 | 2025-26 | 618 | 18.4% |
 
+## Source credibility labels (the rumour brief)
+
+Each outlet's record is set against what the same reports would have done from anyone: the shipped rumour
+model (which never sees the outlet), fitted on the other seasons, gives each report's chance; their sum is
+what the outlet *should* have got right. The label comes from the exact Poisson 80% interval of came true /
+expected: wholly above 1 = **reliable**, wholly below 1 = **speculative**, otherwise **about average**;
+fewer than 20 traced reports = **unproven**. Raw rates mislead: outlets credited mostly in
+recent seasons look good because the column's later items come true twice as often.
+
+| Outlet | Links | Came true | Raw rate | Similar reports | Ratio (80% interval) | Label |
+|---|---|---|---|---|---|---|
+| The Guardian | 30010 | 2929 | 9.8% | 9.7% | 1.01 (0.98-1.03) | about average |
+| The Mirror | 890 | 74 | 8.3% | 8.2% | 1.01 (0.86-1.18) | about average |
+| Daily Mail | 707 | 50 | 7.1% | 8.0% | 0.88 (0.73-1.06) | about average |
+| The Sun | 561 | 54 | 9.6% | 9.7% | 0.99 (0.82-1.18) | about average |
+| Daily Star | 302 | 19 | 6.3% | 9.1% | 0.69 (0.50-0.94) | speculative |
+| Daily Express | 175 | 13 | 7.4% | 9.2% | 0.80 (0.53-1.17) | about average |
+| L'Equipe | 146 | 13 | 8.9% | 10.7% | 0.83 (0.55-1.22) | about average |
+| The Times | 144 | 15 | 10.4% | 10.8% | 0.96 (0.66-1.37) | about average |
+| The Telegraph | 135 | 13 | 9.6% | 12.3% | 0.78 (0.52-1.14) | about average |
+| La Gazzetta dello Sport | 134 | 13 | 9.7% | 8.4% | 1.16 (0.77-1.69) | about average |
+| Tuttosport | 128 | 8 | 6.2% | 6.3% | 0.99 (0.57-1.60) | about average |
+| Bild | 117 | 13 | 11.1% | 6.9% | 1.62 (1.08-2.36) | reliable |
+| a reporter on X | 105 | 13 | 12.4% | 11.1% | 1.12 (0.74-1.63) | about average |
+| Sky Sports | 102 | 10 | 9.8% | 11.6% | 0.84 (0.52-1.30) | about average |
+| Marca | 86 | 5 | 5.8% | 9.3% | 0.63 (0.31-1.16) | about average |
+| AS | 61 | 5 | 8.2% | 8.0% | 1.02 (0.50-1.89) | about average |
+| Corriere dello Sport | 58 | 6 | 10.3% | 8.3% | 1.24 (0.65-2.18) | about average |
+| The Independent | 58 | 5 | 8.6% | 8.0% | 1.08 (0.52-2.00) | about average |
+| talkSPORT | 58 | 5 | 8.6% | 6.7% | 1.30 (0.63-2.40) | about average |
+| Evening Standard | 53 | 2 | 3.8% | 9.4% | 0.40 (0.11-1.07) | about average |
+| Mundo Deportivo | 49 | 2 | 4.1% | 7.3% | 0.56 (0.15-1.49) | about average |
+| Daily Record | 43 | 7 | 16.3% | 7.7% | 2.12 (1.18-3.56) | reliable |
+| Calciomercato | 37 | 4 | 10.8% | 8.0% | 1.34 (0.59-2.69) | about average |
+| Sky Italia | 33 | 4 | 12.1% | 12.5% | 0.97 (0.42-1.94) | about average |
+| Kicker | 29 | 2 | 6.9% | 8.0% | 0.86 (0.23-2.30) | about average |
+| The Athletic | 24 | 6 | 25.0% | 15.4% | 1.62 (0.85-2.85) | about average |
+| A Bola | 23 | 6 | 26.1% | 7.2% | 3.63 (1.91-6.37) | reliable |
+| BBC Sport | 21 | 4 | 19.0% | 11.7% | 1.63 (0.71-3.26) | about average |
+
+Do the labels hold? Labels from the seasons before 2023-24 (out of fold within them), then each label's
+later reports (2023-24 onwards) against a model fitted on the earlier seasons:
+
+| Label (earlier seasons) | Outlets | Later links | Came true | Expected | Ratio (80% interval) |
+|---|---|---|---|---|---|
+| about average | 17 | 2173 | 388 | 363.4 | 1.07 (1.00-1.14) |
+| reliable | 1 | 4 | 0 | 0.5 | 0.00 (0.00-4.70) |
+| speculative | 1 | 3 | 0 | 0.5 | 0.00 (0.00-4.98) |
+| unproven | 6 | 22 | 3 | 3.5 | 0.87 (0.32-1.94) |
+
 ## Reading this honestly
 
 - **Outlets barely differ (a negative result).** The fitted prior is strong, so even outlets with hundreds
@@ -148,6 +198,11 @@ Rate by season (all labelled links):
   Most items (the column's own summaries) credit no outlet; outlets are known only when the column links
   to or names them. What separates rumours is the rumour itself: how often the same link was reported
   before, how many clubs the item names, the transfer window, and how valuable the player is.
+- **Source labels are descriptive, not yet confirmed.** Set against similar reports, a handful of outlets stand
+  apart (the table above); the rest, and the column's own round-ups, are about average. Too few later reports
+  from the labelled outlets exist to show the labels hold out of sample (the check above), so the site says so.
+  Since 2020-21 the column credits an outlet for only a few percent of its items, so most live rumours carry
+  the column's own label.
 - **The column changed.** From 2020-21 it runs fewer, shorter items and about twice as many come true; a base rate from all years badly underestimates today's rumours. The era flag handles
   it; the base rate since then is the fair baseline to beat.
 - **Labels are a lower bound.** A move counts only if it is in transfermarkt-datasets or, after July 2026,

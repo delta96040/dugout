@@ -17,7 +17,6 @@ from dugout_agents import writer
 from dugout_agents.facts import Fact, Toolbox
 from dugout_agents.llm import LLM
 from dugout_agents.specialists import SPECIALISTS, find_club, find_players, route
-from dugout_agents.tools import RUMOUR_RECORD
 from dugout_verify.auditor import audit
 from dugout_verify.factcheck import FactChecker
 from dugout_verify.ledger import EvidenceLedger, render
@@ -91,13 +90,14 @@ def build_graph(ctx: Context):
         with ctx.lock:  # one DuckDB connection, one local LLM: specialists take turns
             facts = spec.gather(tb, club, state.get("focus") or [])
         question = state["question"] or spec.dossier_question.format(club=tb.name(club))
+        prose = [f for f in facts if not f.brief]  # brief facts go to the site's cards (key_stats) only
         with ctx.lock:
             draft = writer.write(
                 ctx.llm if spec.prose else None,
                 role=spec.role,
                 club=tb.name(club),
                 question=question,
-                facts=facts[: spec.writer_facts] if spec.writer_facts else facts,
+                facts=prose[: spec.writer_facts] if spec.writer_facts else prose,
                 ledger=ctx.ledger,
                 checker=ctx.checker,
                 allowed_names=ctx.allowed_names(),
@@ -113,7 +113,11 @@ def build_graph(ctx: Context):
         question = state["question"] or f"Summarise the dossier on {club} for the board."
         if len(sections) < 2:  # a one-specialist answer needs no summary on top
             return {"summary": Section("director", "Sporting Director", question)}
-        facts = [f for s in sections for f in [x for x in s.facts if x.eid][:SUMMARY_FACTS_PER_SECTION]]
+        facts = [
+            f
+            for s in sections
+            for f in [x for x in s.facts if x.eid and not x.brief][:SUMMARY_FACTS_PER_SECTION]
+        ]
         with ctx.lock:
             draft = writer.write(
                 ctx.llm,
@@ -176,12 +180,6 @@ def gate(sec: Section, ctx: Context) -> None:
             if c.status in ("conflicting", "unverified")
         ] + [{"text": f.message, "status": "audit_error", "reason": f.check} for f in rep.errors]
         return
-    # a rumour's track record ("past reports like this one about X") goes only where the rumour itself is published
-    rumours = " ".join(c.text for c in fc.claims if c.type == "attributed" and c.status == "verified")
-    for c in fc.claims:
-        if c.status == "verified" and (m := RUMOUR_RECORD.match(c.text)) and m.group(1) not in rumours:
-            c.status, c.reason = "unverified", "the rumour it is about was not confirmed"
-    sec.factcheck = fc.as_dict()
     keep = [c for c in fc.claims if c.status in ("verified", "analysis")]
     sec.withheld = [
         {"text": c.text, "status": c.status, "reason": c.reason}

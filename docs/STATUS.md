@@ -350,6 +350,107 @@ Read this first in a new session, then `PLAN.md`, `CLAUDE.md`, `docs/sources.md`
   - Trap: the main checkout's warehouse had an empty `rumours` table (history job never ran locally) and `.cache`
     was empty; `dugout ingest --job history --only rumour_archive` (~105 Guardian calls, 2.5 min) fills it.
 
+- **Why him = how he plays (2026-10-19, branch `claude/style-why-him`):** user feedback: the shortlists' "why him"
+  read as price and playing time.
+  - Data: `api_football_stats` (nightly, global, last in the job): API-Football player season totals per club,
+    `players?team=&league=&season=` (key passes, dribbles, shots, passes, tackles, interceptions, blocks, duels, fouls,
+    cards; no aerial split; `pass_accuracy` is not a percentage in season totals, unused). The free plan caps `page`
+    at 3 ("Free plans are limited to a maximum value of 3 for the Page parameter"), so a whole league stops after 60
+    players: club by club (~3 requests a club). Queue: one `teams` call per league, the six leagues' 2024-25 clubs,
+    then candidates' 2024-25 clubs in other leagues (TM appearances -> Reep team id, league ids in `LEAGUES`), then
+    2023-24. Cached a year. At most 70 requests a UTC day (`DAILY_CAP`, own counter) and stops while 15 of the
+    adapter's 90 are left (= 25 of the account's 100); re-reads the account's count every 10 calls. Table
+    `player_season_stats`; Transfermarkt ids by Reep, else date of birth + name, else name in the club's season squad
+    (437 of 438 matched). Man City and Brighton list more than 60 league players: a few are out of reach.
+  - Local run 2026-10-19: 16 of 20 PL clubs (47 requests; account 75/100 after). The rest (~330 requests) arrives
+    over ~5 nights in CI (CI's cache starts from zero: the local pages are not shared), then 2023-24 (~5 more).
+  - Model `dugout_models/style.py`: per-90 features, percentiles within style group (centre-back, full-back,
+    midfielder, winger, centre-forward; goalkeepers left out), season and tier (top five leagues / the rest),
+    900+ minutes, pools of 30+. Roles by transparent archetype scores (claimed only with a clear lead); a Gaussian
+    mixture was tried first and rejected (bootstrap ARI 0.21-0.44 vs 0.64-0.79; silhouettes 0.1-0.2 either way:
+    styles are a continuum). Similar players: cosine on standardised features. roles_api.md: sanity table reads right
+    (Alexander-Arnold creative full-back, Salah inside forward, Doku direct dribbler, Haaland penalty-box striker; Gravenberch comes out a deep-lying playmaker, Caicedo and Rice without a clear role);
+    stability across seasons not measurable until 2023-24 is in (re-run `dugout-models backtest style`).
+    Centre-forwards: under 30 with 900+ minutes so far, no percentiles yet.
+  - Published: `style` model (every profiled player: role, pool, `pct:<feature>`, similar players) and `scout` rows
+    per candidate (`style_role`, `style_top:<f>` top share rounded up to 5%, `style_adds:<f>` / `style_adds_bar:<f>`
+    = the feature he adds most over the last regular starter at the need, `style_similar`) and per need
+    (`need_bar_style_*`, `need_bar_top:<f>`, `need_bar_low:<f>` = what the side lacks there).
+  - Site (components/Shortlists.tsx): why = style line ("A creative full-back: in the top 5% of full-backs in
+    Europe's biggest leagues for chances created ... (2024-25 league season)"), then fit vs the starter ("Next to
+    X, the last of <club>'s regular starters there, he would add chances created: he is ahead of 75% of ... , X ahead
+    of 23%"), similar players, the list's reason, press/contract, market value last; the card shows Price after
+    Contract. Players without style data yet keep the goals/assists line.
+  - Not done: the manager fingerprint is not used (FPL-based, PL only, defensive actions from 2025-26 only; a
+    follow-up could order the standouts by what the manager's side does most).
+
+- **Rumour brief (2026-10-19, branch `claude/intelligent-archimedes-a65c5e`, PR #40; user: the rumour block was "just
+  useless percentages"):** the bare "one time in N" line is gone (site, agents, graph gate). Each incoming rumour
+  now carries a brief, as `brief` facts (key_stats only, never prose: `Fact.brief`, writer and summary skip them):
+  - **Source credibility** (`rumours.outlet_credibility`): an outlet's reports vs what the same reports would have done
+    from anyone (shipped rumour model, out of fold by season, never sees the outlet). Exact Poisson 80% interval of
+    came true / expected: wholly above 1 = reliable, below = speculative, else about average; < 20 traced = unproven.
+    Result (rumours.md): Bild, Daily Record, A Bola reliable; Daily Star speculative; everyone else (and the column's
+    own round-ups) about average. Label check (labels from seasons before 2023-24, scored after): only 7 later reports
+    from labelled outlets, so the labels cannot be confirmed yet (said on the site). Raw rate only on hover
+    (`Num detail`). Live caveat: ~95% of 2025-26 items credit no outlet, so most rumours show the column's label.
+  - **Heat** (`rumours.heat`): Rumour Mill columns carrying the same player-club link in the past year + other press
+    in the news corpus (RSS, club sites' reproduced press; not the clubs' own articles) with a transfer sentence
+    naming both; independent outlets = ownership groups (`dugout_verify.factcheck.ownership_group`, GROUPS gained
+    Mirror/Star/Record/talkSPORT/Standard/MailOnline), first report date, outlet names.
+  - **Reality check** (`market.rumour_reality`, model 'scout', entity 'rumour'): realism_score for this player and
+    buyer (move in a window, his club selling, this buyer), contract months, and `seller` rows: players his club
+    sold for a fee since 1 July three summers back (TM transfers + Wikipedia summer-2026 fees).
+  - **Track record** (`rumours.track_record`): the same outlet's latest labelled reports about this buying club
+    (then about his club's players), with "joined / did not join within half a year".
+  - Order: `rumours.priority` = credibility weight (1.5 / 1 / 0.8 / 0.5) x independent outlets (+ reports as a
+    tie-break); agents pick the top 3 by it, the site sorts the same way (`lib/rumourBrief.briefScore`).
+  - Site: `components/RumourBriefs.tsx` (Source / Heat / Reality / Track record rows) in the dossier's scout section
+    (the rumour sentences leave the prose there), story chapter three (two, compact) and /rumours/ (top 12 across
+    clubs; outlet table shows labels, record on hover). Methods row rewritten. Old dossiers (no brief facts) still
+    render: the rumour text with "no record yet" until the nightly rebuilds them.
+
+## Handoff (2026-10-19, evening) — read this first
+
+**Next steps for a new chat, in order:**
+1. #40 and #41 are live (nightly 39293427611 passed; deploy 7cf466e checked 2026-10-19 18:30 UTC): /rumours/ and
+   club pages show credibility cards. No why-him leads with style yet: that night `api_football_stats` got only 4
+   calls (1 club, 13 phases pending) because local work had already used the shared account quota (75/90). The
+   "16/20 PL clubs" was the style session's local DB, not CI. A quiet night leaves ~45-60 calls (~15-20 clubs), so
+   the ~350-call backfill takes about a week; check `phases_pending` in the nightly log falls and style lines appear
+   (grep "plays as a" data/clubs/*.json). Avoid local API-Football runs meanwhile. Seen once: "team 33 has more
+   than 3 pages; the rest is out of reach" (the free plan's page cap; fringe players may be missing).
+2. Fine-tune session (local_395c27d4-1841-4b23-9219-ecb07fad5294, branch claude/blissful-snyder-9c4294, no PR yet):
+   Kaggle pipeline works end to end (QLoRA Qwen2.5-1.5B -> merge -> q4_K_M GGUF, 935 MiB). Teacher = Qwen3.8-27B run
+   on Kaggle's two T4s (~220 samples/h; Groq's Qwen cap was the bottleneck); 1,505 prompts uploaded, full teacher
+   run queued (`uv run python tools/finetune/push.py status --job teach` in that worktree: still QUEUED at
+   2026-10-19 18:35 UTC; 10.5 h budget, every prompt's sample 0 before any sample 1). gpt-oss-120b recorded as a
+   second teacher. Benches (publish gate pass rate): untuned 1.5B 32%, local qwen2.5:3b 44% (uncommitted files in
+   the worktree); Groq Qwen bench still running. The session is idle: when the kernel finishes, someone has to tell
+   it to fetch `output --job teach`, import replies and train. Kaggle notebooks push PUBLIC by default
+   (user approved). HF publish script ready; `.env` HF_TOKEN is write-scoped. When it reports: merge its PR on the
+   user's say-so, run the nightly, and write résumé bullets from the real metrics
+   (docs/backtests/writer_finetune.md).
+
+**Live (2026-10-19):** six leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1, Eredivisie); two gaps with reasons;
+three lists per gap; why-him with TM per-90 stats, league rank, profile and comparison with the starter to beat;
+fee ranges; injury tiers in all leagues; played-position needs; Championship targets; /rumours/ page; rumour
+credibility cards (#40); style-led why-him (#41) as the style backfill fills in. Nightly ~25-40 min with warm caches.
+
+**Rules from the user:** commit as `delta96040 <115036752+delta96040@users.noreply.github.com>` (repo git config),
+no `Co-Authored-By: Claude` trailer, no "Generated with Claude Code" footer; merge only when the user says so
+("merge" / "merge everything which is done"); after merging, run a nightly and check the live site; keep GitHub to
+`main` only (delete merged branches). Main's history was rewritten 2026-10-17; never force-push main without asking.
+
+**Keys in `.env` (never print):** GROQ_API_KEY, API_FOOTBALL_KEY (new account; old one suspended), GUARDIAN_API_KEY,
+FOOTBALL_DATA_ORG_KEY, OPENROUTER_API_KEY, HF_TOKEN (write), KAGGLE_USERNAME + KAGGLE_API_TOKEN (KGAT_ style, Bearer
+auth; verified). GitHub secrets set for Groq and API-Football.
+
+**API-Football:** free plan = current season only yesterday..tomorrow, so other leagues' predicted XIs appear after
+each club's next match; error replies are never cached (#28). Skipped: Le Havre (8/11 matched), Hamburg and
+Paderborn (no formation fits). Keep total calls well under 100/day (code caps at 90).
+
+**Usage guard:** scheduled task `dugout-usage-guard` (every 20 min) stops all sessions at 93% weekly usage.
 - **Fine-tuned writer (2026-10-20, branch `writer-finetune`):** docs/backtests/writer_finetune.md (résumé summary on top).
   - `dugout-agents finetune-data`: production writer prompts (5 written sections, director summary, player
     questions; 2,448 for 102 train/val clubs, 12 test clubs held out by league) -> teacher notes kept only if they

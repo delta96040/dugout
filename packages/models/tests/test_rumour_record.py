@@ -225,3 +225,98 @@ def test_site_summary_adds_up(tmp_path):
     assert "Tiny Gazette" not in {o["outlet"] for o in doc["outlets"]}  # too few rumours to show a record
     R.write_site_summary(doc, tmp_path / "rumours.json")
     assert json.loads((tmp_path / "rumours.json").read_text())["horizon_months"] == R.SHIPPED_HORIZON
+
+
+def test_credibility_labels_need_the_whole_interval_on_one_side():
+    lo, hi = R.ratio_interval(30, 15.0)  # twice as many came true as similar reports would have
+    assert lo > 1 and R.credibility_label(200, lo, hi) == R.RELIABLE
+    lo, hi = R.ratio_interval(5, 15.0)
+    assert hi < 1 and R.credibility_label(200, lo, hi) == R.SPECULATIVE
+    lo, hi = R.ratio_interval(16, 15.0)
+    assert lo < 1 < hi and R.credibility_label(200, lo, hi) == R.AVERAGE
+    assert R.credibility_label(R.MIN_OUTLET_LINKS - 1, 2.0, 3.0) == R.UNPROVEN  # too few to judge
+    assert R.ratio_interval(0, 2.0)[0] == 0.0
+
+
+def test_outlet_credibility_compares_with_what_similar_reports_did():
+    lab = pd.DataFrame(
+        {
+            "outlet": ["Sharp"] * 100 + ["Loud"] * 100,
+            "joined_6m": [True] * 30 + [False] * 70 + [True] * 2 + [False] * 98,
+        }
+    )
+    # the same expected chance for every report: Sharp beat it, Loud fell short
+    cred = R.outlet_credibility(lab, "joined_6m", np.full(200, 0.12))
+    assert cred["Sharp"]["label"] == R.RELIABLE and cred["Loud"]["label"] == R.SPECULATIVE
+    assert cred["Sharp"]["raw"] == 0.3 and abs(cred["Sharp"]["expected_rate"] - 0.12) < 1e-9
+
+
+def _brief_links() -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "rumour_id": ["c1-p0", "c1-p3", "c2-p1", "old-p0", "c3-p0"],
+            "published_at": pd.to_datetime(
+                ["2026-08-01", "2026-08-01", "2026-08-20", "2024-01-10", "2026-08-25"]
+            ),
+            "outlet": ["The Guardian", "The Guardian", "The Sun", "The Guardian", "The Times"],
+            "player_name": ["Ann Able"] * 5,
+            "tm_player_id": ["1"] * 5,
+            "tm_club_id": ["31"] * 5,
+        }
+    )
+
+
+def test_heat_counts_columns_and_ownership_groups_since_the_first_report():
+    links = _brief_links()
+    press = pd.DataFrame(
+        {
+            "outlet": ["BBC Sport", "BBC Sport", "ESPN"],
+            "published_at": pd.to_datetime(["2026-08-10", "2026-08-11", "2026-08-12"]),
+            # a transfer sentence naming both; another naming her with a different club; one without her
+            "sentences": [
+                [({"31"}, " liverpool are in talks to sign ann able ")],
+                [({"631"}, " chelsea want able ")],
+                [({"31"}, " liverpool sign someone else ")],
+            ],
+        }
+    )
+    r = links.iloc[-1]
+    h = R.heat(links, press, r, pd.Timestamp("2026-09-01"))
+    # columns c1, c2, c3 (two paragraphs of c1 are one report; the 2024 one is too old) + one BBC article;
+    # The Sun and The Times are both News UK: one vote
+    assert h["reports"] == 4 and h["since"] == "2026-08-01"
+    assert h["outlets"] == 3 and h["outlet_names"] == "The Guardian, BBC Sport, The Sun"
+
+
+def test_track_record_takes_the_same_outlets_latest_reports_on_this_buyer_first():
+    lab = pd.DataFrame(
+        {
+            "outlet": ["The Sun"] * 4 + ["The Mirror"],
+            "tm_player_id": ["2", "3", "4", "1", "5"],
+            "player_name": ["Ben", "Cy", "Di", "Ann", "Ed"],
+            "tm_club_id": ["31", "31", "99", "31", "31"],
+            "club_name": ["Liverpool", "Liverpool", "Leeds", "Liverpool", "Liverpool"],
+            "from_tm_club": ["7", "8", "10", "10", "9"],
+            "published_at": pd.to_datetime(
+                ["2025-01-02", "2025-08-01", "2026-01-05", "2024-01-01", "2026-02-01"]
+            ),
+            "joined_6m": [True, False, True, True, True],
+        }
+    )
+    r = pd.Series({"outlet": "The Sun", "tm_player_id": "1", "tm_club_id": "31", "from_tm_club": "10"})
+    past = R.track_record(lab, r)
+    # not her own earlier rumour, not another outlet's; this buyer first (newest first), then her club's sales
+    assert [p["player"] for p in past] == ["Cy", "Ben"]
+    assert past[0]["outcome"] == R.DID_NOT and past[1]["outcome"] == R.CAME_TRUE
+    assert R.track_record(lab, r, k=3)[2] == {
+        "player": "Di",
+        "club": "Leeds",
+        "date": "2026-01-05",
+        "outcome": R.CAME_TRUE,
+        "kind": "same seller",
+    }
+
+
+def test_priority_is_credibility_times_heat():
+    assert R.priority(R.RELIABLE, 2, 3) > R.priority(R.AVERAGE, 2, 9) > R.priority(R.AVERAGE, 1, 50)
+    assert R.priority(R.SPECULATIVE, 2, 1) < R.priority(R.AVERAGE, 1, 1) + 0.01

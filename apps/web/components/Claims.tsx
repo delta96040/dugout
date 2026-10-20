@@ -22,14 +22,15 @@ function withNames(text: string, names: string[]) {
   return text.split(re).map((part, i) => (i % 2 ? <span key={i} data-name>{part}</span> : part));
 }
 
-/** A published section: verified claims as prose; analysis marked; sources listed for news claims. */
-export function SectionProse({ section, d }: { section: Section; d: Dossier }) {
+/** A published section: verified claims as prose; analysis marked; sources listed for news claims.
+ *  `skip`: claims shown elsewhere on the page (the rumour cards). */
+export function SectionProse({ section, d, skip }: { section: Section; d: Dossier; skip?: (c: Claim) => boolean }) {
   if (section.status !== "published") {
     return <p className="text-pencil">Nothing in this section passed verification today.</p>;
   }
   return (
     <div className="space-y-3">
-      {section.claims.map((c, i) => (
+      {section.claims.filter((c) => !skip?.(c)).map((c, i) => (
         <p key={i} className={c.status === "analysis" ? "border-l-2 border-pencil pl-3 italic text-ink/80" : ""}>
           {c.status === "analysis" && <span className="mono-label mr-2 not-italic">Our view</span>}
           <ClaimText claim={c} d={d} />

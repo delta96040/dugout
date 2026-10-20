@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { SectionProse } from "@/components/Claims";
+import RumourBriefs from "@/components/RumourBriefs";
 import MetaNum from "@/components/MetaNum";
 import Num from "@/components/Num";
 import Shortlists from "@/components/Shortlists";
 import { ordinal, plainReason, when } from "@/lib/format";
-import { clubSlugs, dossier, firstStat, leagueOf } from "@/lib/data";
+import { claimText, clubSlugs, dossier, firstStat, leagueOf } from "@/lib/data";
+import { isRumourClaim, rumourBriefs } from "@/lib/rumourBrief";
 import { gaps, injuryCoverage, shortlists } from "@/lib/shortlist";
 
 export function generateStaticParams() {
@@ -26,6 +28,7 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
   const v = d.verification;
   const sections = ORDER.map((a) => d.sections.find((s) => s.agent === a)).filter((s) => s !== undefined);
   const targets = shortlists(d);
+  const briefs = rumourBriefs(d);
   const need = d.key_stats?.scout?.find((r) => r.label === "squad need, priority one")?.display;
   return (
     <article>
@@ -65,7 +68,20 @@ export default async function ClubPage({ params }: { params: Promise<{ slug: str
             <p className="mt-3 text-sm italic text-pencil">“{s.question}”</p>
           </div>
           <div className={`col-span-12 mt-4 sm:col-span-6 sm:mt-0 ${i % 2 ? "sm:col-start-2 sm:row-start-1" : "sm:col-start-6"}`}>
-            <SectionProse section={s} d={d} />
+            <SectionProse
+              section={s}
+              d={d}
+              skip={s.agent === "scout" && briefs.length > 0 ? (c) => isRumourClaim(claimText(c)) : undefined}
+            />
+            {s.agent === "scout" && briefs.length > 0 && (
+              <div className="mt-6">
+                <h3 className="mono-label">
+                  Linked in the press · most credible and most reported first · rumours, not facts ·{" "}
+                  <a className="underline" href="/rumours/">how sources compare</a>
+                </h3>
+                <RumourBriefs briefs={briefs} n={(x) => <Num stat={x.stat} display={x.display} />} />
+              </div>
+            )}
             {s.agent === "scout" && targets.length > 0 && (
               <div className="mt-6">
                 <Shortlists

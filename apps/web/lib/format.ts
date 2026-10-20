@@ -21,6 +21,7 @@ const DUGOUT: Record<string, string> = {
   potential: "dugout development projection",
   fit: "dugout fit analysis",
   lookup: "dugout player profile",
+  rumours: "dugout rumour track record",
   market: "dugout valuation",
 };
 
@@ -92,10 +93,26 @@ const METRIC_NAMES: Record<string, string> = {
   caps: "international caps",
   positions_played: "positions he starts at",
   need_bar_ga_p90: "last regular starter's goals and assists per full match",
+  // the rumour brief (dugout_models.rumours, market.rumour_reality)
+  credibility: "source credibility, from its record",
+  raw_rate: "share of its traced reports that came true within half a year",
+  links: "reports traced",
+  came_true: "reports that came true within half a year",
+  expected_rate: "share of similar reports that came true, whoever made them",
+  heat_outlets: "independent outlets reporting the link",
+  heat_outlet_names: "outlets reporting the link",
+  heat_reports: "reports of the link",
+  heat_since: "first report of the link",
+  p_this_club: "chance this club is the buyer, if he is sold",
+  name: "his club",
+  fee_sales: "players his club sold for a fee",
+  fee_sales_since: "counting sales from",
 };
 
 export function metricName(metric: string): string {
   if (METRIC_NAMES[metric]) return METRIC_NAMES[metric];
+  const past = /^past_\d+_(\w+)$/.exec(metric); // an earlier report from the same outlet
+  if (past) return `earlier report: ${{ player: "player", club: "club", date: "date", outcome: "what became of it" }[past[1]] ?? past[1]}`;
   return metric
     .replaceAll("_", " ")
     .replace(/([a-z])([A-Z])/g, "$1 $2")
