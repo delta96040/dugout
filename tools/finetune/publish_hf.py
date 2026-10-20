@@ -26,13 +26,22 @@ def pct(x: float | None) -> str:
     return "n/a" if x is None else f"{x:.0%}"
 
 
+def ci(m: dict) -> str:
+    lo, hi = m.get("accepted_ci95", [None, None])
+    return "n/a" if lo is None else f"{lo:.0%}-{hi:.0%}"
+
+
 def card(r: dict, repo_id: str) -> str:
     rows = "\n".join(
         f"| {m['label']} | {pct(m['accepted'])} | {pct(m['first_try'])} | {m['stray_number_drafts']} | "
-        f"{m['seconds_per_section']} |"
+        f"{m['card_echo_notes']} | {m['seconds_per_section']} |"
         for m in r["models"].values()
     )
     t, d = r["training"], r["dataset"]
+    ft, teacher = (
+        r["models"].get("local:dugout-writer-1.5b", {}),
+        r["models"].get("groq:qwen/qwen3.8-27b", {}),
+    )
     ex = d["examples"]
     return f"""---
 license: apache-2.0
@@ -57,11 +66,18 @@ subject and metric, and an NLI Fact-Check of every sentence.
 written sections each. *Accepted* = passed every gate check (with production's one retry); *first try* = without
 it; *stray numbers* = drafts that wrote a digit or number word (rejected by the auditor).
 
-| Writer | Accepted | First try | Drafts with stray numbers | s / note |
-|---|---|---|---|---|
+| Writer | Accepted | First try | Drafts with stray numbers | Accepted notes copying the card layout | s / note |
+|---|---|---|---|---|---|
 {rows}
 
 Local models ran on a laptop CPU through Ollama (q4_K_M, 8k context); Groq's time excludes free-tier rate-limit waits.
+
+Why can the student beat its teacher on this gate? It was trained only on the teacher's notes that *passed*
+(rejection sampling), so it learned the gate's contract without the teacher's misses. It is not just copying the
+cards' example sentences (about a third of its sentences are verbatim template sentences, against about half for
+the teacher), but its notes cite about one value fewer. With 50 notes per writer the gap is wide but the intervals
+are too: {ci(ft)} (95% Wilson) for the fine-tune, {ci(teacher)} for the teacher. Acceptance means "safe to
+publish", not "well written".
 Full report: [writer_finetune.md]({REPO_URL}/blob/main/docs/backtests/writer_finetune.md).
 
 ## Training
@@ -83,8 +99,11 @@ Full report: [writer_finetune.md]({REPO_URL}/blob/main/docs/backtests/writer_fin
 - `dugout-writer-q4_K_M.gguf`: the merged model, quantized for llama.cpp / Ollama.
 
 ```bash
-ollama create dugout-writer -f Modelfile   # FROM ./dugout-writer-q4_K_M.gguf + Qwen2.5's chat template
+# from a dugout checkout: Qwen2.5's chat template and an 8k context, as benchmarked
+uv run python tools/finetune/ollama_create.py dugout-writer-q4_K_M.gguf   # -> ollama model dugout-writer-1.5b
 ```
+
+dugout's `LLM_CHAIN` then uses it as the local writer (`local:dugout-writer-1.5b`).
 
 ## Limits
 
@@ -97,23 +116,35 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--repo", default="dugout-writer-qwen2.5-1.5b")
     p.add_argument("--private", action="store_true")
+    p.add_argument("--card-only", action="store_true", help="only re-upload the model card")
     a = p.parse_args()
     api = HfApi(token=get_settings().secret("hf_token"))
     repo_id = f"{api.whoami()['name']}/{a.repo}"
     report = json.loads((ROOT / "docs" / "backtests" / "writer_finetune.json").read_text(encoding="utf-8"))
     api.create_repo(repo_id, private=a.private, exist_ok=True)
-    with tempfile.TemporaryDirectory() as d:
+    if not a.card_only:
+        api.upload_folder(
+            folder_path=str(KERNEL / "adapter"),
+            repo_id=repo_id,
+            ignore_patterns=["README.md"],  # PEFT's empty template; the card below replaces it
+            commit_message="LoRA adapter",
+        )
+        api.upload_file(
+            path_or_fileobj=str(KERNEL / "dugout-writer-q4_K_M.gguf"),
+            path_in_repo="dugout-writer-q4_K_M.gguf",
+            repo_id=repo_id,
+            commit_message="q4_K_M GGUF",
+        )
+        for name in ("loss_curve.png", "metrics.json"):
+            api.upload_file(path_or_fileobj=str(KERNEL / name), path_in_repo=name, repo_id=repo_id)
+    with tempfile.TemporaryDirectory() as d:  # last, so nothing overwrites it
         (Path(d) / "README.md").write_text(card(report, repo_id), encoding="utf-8")
-        api.upload_file(path_or_fileobj=str(Path(d) / "README.md"), path_in_repo="README.md", repo_id=repo_id)
-    api.upload_folder(folder_path=str(KERNEL / "adapter"), repo_id=repo_id, commit_message="LoRA adapter")
-    api.upload_file(
-        path_or_fileobj=str(KERNEL / "dugout-writer-q4_K_M.gguf"),
-        path_in_repo="dugout-writer-q4_K_M.gguf",
-        repo_id=repo_id,
-        commit_message="q4_K_M GGUF",
-    )
-    for name in ("loss_curve.png", "metrics.json"):
-        api.upload_file(path_or_fileobj=str(KERNEL / name), path_in_repo=name, repo_id=repo_id)
+        api.upload_file(
+            path_or_fileobj=str(Path(d) / "README.md"),
+            path_in_repo="README.md",
+            repo_id=repo_id,
+            commit_message="Model card",
+        )
     print(f"https://huggingface.co/{repo_id}")
 
 

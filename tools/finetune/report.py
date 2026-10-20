@@ -30,6 +30,15 @@ CARD_ECHO = re.compile(r"Facts:|\(code |Example:|statement\)|reading:")
 KEYS = ("sections", "accepted", "first_try", "stray_number_drafts", "llm_errors", "seconds_per_section")
 
 
+def wilson(k: int, n: int, z: float = 1.96) -> list[float]:
+    """95% Wilson interval for k successes in n."""
+    if not n:
+        return [0.0, 0.0]
+    p, d = k / n, 1 + z * z / n
+    c, h = (p + z * z / (2 * n)) / d, z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / d
+    return [round(c - h, 3), round(c + h, 3)]
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--kernel", default="dugout-writer-lora-1-5b")
@@ -45,6 +54,7 @@ def main() -> None:
                 "run": rep["generated_at"],
                 **{k: r[k] for k in KEYS},
                 "card_echo_notes": sum(bool(CARD_ECHO.search(t)) for t in accepted),
+                "accepted_ci95": wilson(len(accepted), r["sections"]),
                 "rate_limit_wait_seconds": r.get("rate_limit_wait_seconds", 0),
             }
     kdir = ROOT / "data" / "finetune" / "kaggle" / a.kernel
@@ -101,7 +111,8 @@ def main() -> None:
             f"{m['card_echo_notes']} | {m['llm_errors']} | {m['seconds_per_section']} |"
         )
     print(
-        f"\n{len(clubs)} held-out clubs, {next(iter(models.values()))['sections'] if models else 0} notes each"
+        f"\n{len(clubs)} held-out clubs, "
+        f"{next(iter(models.values()))['sections'] if models else 0} notes per writer"
     )
 
 
