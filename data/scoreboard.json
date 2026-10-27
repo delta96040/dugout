@@ -1,17 +1,277 @@
 {
- "generated_at": "2026-10-26T08:34:02+00:00",
+ "generated_at": "2026-10-27T09:09:11+00:00",
  "model": "Elo + xG Dixon–Coles stack (pre-lineup)",
  "seasons": [
   "2025-26",
   "2026-27"
  ],
  "summary": {
-  "matches": 450,
-  "live": 10,
-  "hit_rate": 0.4866666666666667,
-  "rps": 0.2089695186777778
+  "matches": 460,
+  "live": 20,
+  "hit_rate": 0.4826086956521739,
+  "rps": 0.20967310695652175
  },
  "rows": [
+  {
+   "match_id": "premier_league:2026-27:hull-city:brentford",
+   "date": "2026-10-25",
+   "home": "Hull City",
+   "away": "Brentford",
+   "probs": [
+    0.2746,
+    0.263,
+    0.4624
+   ],
+   "pick": "A",
+   "home_goals": 1,
+   "away_goals": 1,
+   "outcome": "D",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-25T07:57:51.219244+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:liverpool:brighton-hove-albion",
+   "date": "2026-10-25",
+   "home": "Liverpool",
+   "away": "Brighton & Hove Albion",
+   "probs": [
+    0.4928,
+    0.2512,
+    0.256
+   ],
+   "pick": "H",
+   "home_goals": 2,
+   "away_goals": 0,
+   "outcome": "H",
+   "hit": true,
+   "kind": "live",
+   "predicted_at": "2026-10-25T07:57:51.219244+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:sunderland:leeds-united",
+   "date": "2026-10-25",
+   "home": "Sunderland",
+   "away": "Leeds United",
+   "probs": [
+    0.3433,
+    0.2756,
+    0.3811
+   ],
+   "pick": "A",
+   "home_goals": 0,
+   "away_goals": 0,
+   "outcome": "D",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-25T07:57:51.219244+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:crystal-palace:newcastle-united",
+   "date": "2026-10-25",
+   "home": "Crystal Palace",
+   "away": "Newcastle United",
+   "probs": [
+    0.407,
+    0.2622,
+    0.3308
+   ],
+   "pick": "H",
+   "home_goals": 0,
+   "away_goals": 2,
+   "outcome": "A",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-25T07:57:51.219244+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:manchester-united:bournemouth",
+   "date": "2026-10-25",
+   "home": "Manchester United",
+   "away": "AFC Bournemouth",
+   "probs": [
+    0.444,
+    0.2613,
+    0.2947
+   ],
+   "pick": "H",
+   "home_goals": 0,
+   "away_goals": 3,
+   "outcome": "A",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-25T07:57:51.219244+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:coventry-city:fulham",
+   "date": "2026-10-24",
+   "home": "Coventry City",
+   "away": "Fulham",
+   "probs": [
+    0.3006,
+    0.2709,
+    0.4284
+   ],
+   "pick": "A",
+   "home_goals": 0,
+   "away_goals": 1,
+   "outcome": "A",
+   "hit": true,
+   "kind": "live",
+   "predicted_at": "2026-10-24T07:44:52.471795+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:arsenal:everton",
+   "date": "2026-10-24",
+   "home": "Arsenal",
+   "away": "Everton",
+   "probs": [
+    0.6622,
+    0.2216,
+    0.1162
+   ],
+   "pick": "H",
+   "home_goals": 2,
+   "away_goals": 0,
+   "outcome": "H",
+   "hit": true,
+   "kind": "live",
+   "predicted_at": "2026-10-24T07:44:52.471795+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:chelsea:tottenham-hotspur",
+   "date": "2026-10-24",
+   "home": "Chelsea",
+   "away": "Tottenham Hotspur",
+   "probs": [
+    0.5758,
+    0.2355,
+    0.1887
+   ],
+   "pick": "H",
+   "home_goals": 0,
+   "away_goals": 2,
+   "outcome": "A",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-24T07:44:52.471795+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:aston-villa:manchester-city",
+   "date": "2026-10-24",
+   "home": "Aston Villa",
+   "away": "Manchester City",
+   "probs": [
+    0.2461,
+    0.248,
+    0.5059
+   ],
+   "pick": "A",
+   "home_goals": 2,
+   "away_goals": 1,
+   "outcome": "H",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-24T07:44:52.471795+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
+  {
+   "match_id": "premier_league:2026-27:ipswich-town:nottingham-forest",
+   "date": "2026-10-23",
+   "home": "Ipswich Town",
+   "away": "Nottingham Forest",
+   "probs": [
+    0.2839,
+    0.2635,
+    0.4526
+   ],
+   "pick": "A",
+   "home_goals": 1,
+   "away_goals": 1,
+   "outcome": "D",
+   "hit": false,
+   "kind": "live",
+   "predicted_at": "2026-10-23T07:57:39.820014+00:00",
+   "result": {
+    "sources": [
+     "football_data_org",
+     "fpl"
+    ],
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
+    "status": "verified"
+   }
+  },
   {
    "match_id": "premier_league:2026-27:tottenham-hotspur:coventry-city",
    "date": "2026-10-19",
@@ -35,7 +295,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -62,7 +322,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -89,7 +349,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -116,7 +376,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -143,7 +403,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -170,7 +430,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -197,7 +457,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -224,7 +484,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -251,7 +511,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -278,7 +538,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -304,7 +564,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -330,7 +590,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -356,7 +616,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -382,7 +642,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -408,7 +668,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -434,7 +694,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -460,7 +720,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -486,7 +746,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -498,7 +758,7 @@
    "probs": [
     0.5688,
     0.2439,
-    0.1874
+    0.1873
    ],
    "pick": "H",
    "home_goals": 1,
@@ -512,7 +772,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -538,7 +798,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -564,7 +824,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -576,7 +836,7 @@
    "probs": [
     0.3401,
     0.2657,
-    0.3942
+    0.3943
    ],
    "pick": "A",
    "home_goals": 1,
@@ -590,7 +850,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -616,7 +876,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -642,7 +902,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -668,7 +928,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -694,7 +954,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -720,7 +980,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -746,7 +1006,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -772,7 +1032,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -782,7 +1042,7 @@
    "home": "Brentford",
    "away": "Chelsea",
    "probs": [
-    0.4125,
+    0.4126,
     0.2604,
     0.3271
    ],
@@ -798,7 +1058,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -824,7 +1084,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -850,7 +1110,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -876,7 +1136,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -902,7 +1162,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -928,7 +1188,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -954,7 +1214,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -980,7 +1240,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1006,7 +1266,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1032,7 +1292,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1058,7 +1318,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1084,7 +1344,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1110,7 +1370,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1136,7 +1396,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1162,7 +1422,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1188,7 +1448,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1200,7 +1460,7 @@
    "probs": [
     0.3395,
     0.2561,
-    0.4043
+    0.4044
    ],
    "pick": "A",
    "home_goals": 0,
@@ -1214,7 +1474,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1240,7 +1500,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1266,7 +1526,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1292,7 +1552,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1318,7 +1578,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1344,7 +1604,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1370,7 +1630,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1382,7 +1642,7 @@
    "probs": [
     0.3791,
     0.2579,
-    0.363
+    0.3631
    ],
    "pick": "H",
    "home_goals": 1,
@@ -1396,7 +1656,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1422,7 +1682,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1448,7 +1708,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1474,7 +1734,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1500,7 +1760,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1526,7 +1786,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1552,7 +1812,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1578,7 +1838,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1604,7 +1864,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1630,7 +1890,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1656,7 +1916,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1682,7 +1942,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1708,7 +1968,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1734,7 +1994,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1760,7 +2020,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1786,7 +2046,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1812,7 +2072,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -1838,7 +2098,7 @@
      "football_data_org",
      "fpl"
     ],
-    "fetched_at": "2026-10-26T08:01:09.273822+00:00",
+    "fetched_at": "2026-10-27T08:12:39.627702+00:00",
     "status": "verified"
    }
   },
@@ -2073,7 +2333,7 @@
    "home": "west-ham-united",
    "away": "Leeds United",
    "probs": [
-    0.3825,
+    0.3826,
     0.2706,
     0.3468
    ],
@@ -2373,7 +2633,7 @@
    "home": "Tottenham Hotspur",
    "away": "Leeds United",
    "probs": [
-    0.425,
+    0.4251,
     0.2612,
     0.3137
    ],
@@ -2423,7 +2683,7 @@
    "home": "Crystal Palace",
    "away": "Everton",
    "probs": [
-    0.4418,
+    0.4417,
     0.2623,
     0.2959
    ],
@@ -2675,7 +2935,7 @@
    "probs": [
     0.5263,
     0.2555,
-    0.2182
+    0.2181
    ],
    "pick": "H",
    "home_goals": 1,
@@ -2950,7 +3210,7 @@
    "probs": [
     0.5722,
     0.2365,
-    0.1913
+    0.1912
    ],
    "pick": "H",
    "home_goals": 3,
@@ -3248,7 +3508,7 @@
    "home": "Brentford",
    "away": "Fulham",
    "probs": [
-    0.4979,
+    0.498,
     0.2467,
     0.2554
    ],
@@ -3624,8 +3884,8 @@
    "away": "west-ham-united",
    "probs": [
     0.5655,
-    0.2409,
-    0.1937
+    0.2408,
+    0.1936
    ],
    "pick": "H",
    "home_goals": 2,
@@ -3998,7 +4258,7 @@
    "home": "Chelsea",
    "away": "Newcastle United",
    "probs": [
-    0.4892,
+    0.4893,
     0.2523,
     0.2585
    ],
@@ -4198,9 +4458,9 @@
    "home": "Newcastle United",
    "away": "Manchester United",
    "probs": [
-    0.4607,
+    0.4606,
     0.2406,
-    0.2987
+    0.2988
    ],
    "pick": "H",
    "home_goals": 2,
@@ -4275,7 +4535,7 @@
    "probs": [
     0.473,
     0.2608,
-    0.2662
+    0.2663
    ],
    "pick": "H",
    "home_goals": 0,
@@ -5098,7 +5358,7 @@
    "home": "Brighton & Hove Albion",
    "away": "Crystal Palace",
    "probs": [
-    0.4543,
+    0.4544,
     0.2587,
     0.287
    ],
@@ -5773,7 +6033,7 @@
    "home": "Fulham",
    "away": "Brighton & Hove Albion",
    "probs": [
-    0.3817,
+    0.3818,
     0.2582,
     0.36
    ],
@@ -6498,7 +6758,7 @@
    "home": "Aston Villa",
    "away": "Nottingham Forest",
    "probs": [
-    0.5539,
+    0.554,
     0.2452,
     0.2009
    ],
@@ -6675,7 +6935,7 @@
    "probs": [
     0.1332,
     0.205,
-    0.6618
+    0.6619
    ],
    "pick": "A",
    "home_goals": 0,
@@ -6800,7 +7060,7 @@
    "probs": [
     0.3973,
     0.2729,
-    0.3297
+    0.3298
    ],
    "pick": "H",
    "home_goals": 0,
@@ -7450,7 +7710,7 @@
    "probs": [
     0.2111,
     0.2463,
-    0.5425
+    0.5426
    ],
    "pick": "A",
    "home_goals": 1,
@@ -7725,7 +7985,7 @@
    "probs": [
     0.4302,
     0.2741,
-    0.2958
+    0.2957
    ],
    "pick": "H",
    "home_goals": 3,
@@ -7750,7 +8010,7 @@
    "probs": [
     0.134,
     0.1822,
-    0.6838
+    0.6839
    ],
    "pick": "A",
    "home_goals": 3,
@@ -8023,7 +8283,7 @@
    "home": "AFC Bournemouth",
    "away": "Everton",
    "probs": [
-    0.4724,
+    0.4723,
     0.2594,
     0.2682
    ],
@@ -8124,7 +8384,7 @@
    "away": "Arsenal",
    "probs": [
     0.2965,
-    0.257,
+    0.2571,
     0.4464
    ],
    "pick": "A",
@@ -8423,7 +8683,7 @@
    "home": "AFC Bournemouth",
    "away": "west-ham-united",
    "probs": [
-    0.5816,
+    0.5815,
     0.2273,
     0.1912
    ],
@@ -8550,7 +8810,7 @@
    "probs": [
     0.3146,
     0.241,
-    0.4443
+    0.4444
    ],
    "pick": "A",
    "home_goals": 2,
@@ -8648,7 +8908,7 @@
    "home": "Crystal Palace",
    "away": "Brighton & Hove Albion",
    "probs": [
-    0.4705,
+    0.4704,
     0.2459,
     0.2837
    ],
@@ -8798,7 +9058,7 @@
    "home": "Tottenham Hotspur",
    "away": "Manchester United",
    "probs": [
-    0.4467,
+    0.4466,
     0.2424,
     0.311
    ],
@@ -8824,7 +9084,7 @@
    "away": "burnley",
    "probs": [
     0.5719,
-    0.2328,
+    0.2329,
     0.1953
    ],
    "pick": "H",
@@ -9125,7 +9385,7 @@
    "probs": [
     0.2702,
     0.2455,
-    0.4842
+    0.4843
    ],
    "pick": "A",
    "home_goals": 1,
@@ -9174,7 +9434,7 @@
    "away": "Tottenham Hotspur",
    "probs": [
     0.4286,
-    0.2631,
+    0.2632,
     0.3083
    ],
    "pick": "H",
@@ -9248,7 +9508,7 @@
    "home": "Chelsea",
    "away": "Sunderland",
    "probs": [
-    0.6787,
+    0.6786,
     0.21,
     0.1113
    ],
@@ -9275,7 +9535,7 @@
    "probs": [
     0.3868,
     0.2439,
-    0.3693
+    0.3694
    ],
    "pick": "H",
    "home_goals": 4,
@@ -9325,7 +9585,7 @@
    "probs": [
     0.3615,
     0.2546,
-    0.3839
+    0.384
    ],
    "pick": "A",
    "home_goals": 2,
@@ -9549,7 +9809,7 @@
    "away": "Chelsea",
    "probs": [
     0.2901,
-    0.249,
+    0.2491,
     0.4609
    ],
    "pick": "A",
@@ -11250,7 +11510,7 @@
    "probs": [
     0.3517,
     0.2412,
-    0.407
+    0.4071
    ],
    "pick": "A",
    "home_goals": 3,
