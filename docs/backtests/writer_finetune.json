@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-10-20T06:24:01+00:00",
+  "heldout_clubs": [
+    "bayern-munchen",
+    "chelsea",
+    "elche",
+    "elversberg",
+    "espanyol",
+    "heerenveen",
+    "internazionale",
+    "manchester-city",
+    "monza",
+    "olympique-lyonnais",
+    "rennes",
+    "utrecht"
+  ],
+  "models": {
+    "local:dugout-writer-1.5b": {
+      "label": "dugout-writer-1.5b (fine-tuned, local)",
+      "run": "2026-10-20T06:18:01+00:00",
+      "sections": 50,
+      "accepted": 0.96,
+      "first_try": 0.82,
+      "stray_number_drafts": 0,
+      "llm_errors": 0,
+      "seconds_per_section": 19.0,
+      "card_echo_notes": 0,
+      "accepted_ci95": [
+        0.865,
+        0.989
+      ],
+      "rate_limit_wait_seconds": 0
+    },
+    "groq:qwen/qwen3.8-27b": {
+      "label": "Groq Qwen3.8-27B (teacher, hosted)",
+      "run": "2026-10-20T05:24:37+00:00",
+      "sections": 50,
+      "accepted": 0.66,
+      "first_try": 0.4,
+      "stray_number_drafts": 1,
+      "llm_errors": 0,
+      "seconds_per_section": 14.0,
+      "card_echo_notes": 0,
+      "accepted_ci95": [
+        0.522,
+        0.776
+      ],
+      "rate_limit_wait_seconds": 43434
+    },
+    "local:qwen2.5-1.5b-8k": {
+      "label": "Qwen2.5-1.5B-Instruct (base, local)",
+      "run": "2026-10-19T17:08:34+00:00",
+      "sections": 50,
+      "accepted": 0.32,
+      "first_try": 0.24,
+      "stray_number_drafts": 24,
+      "llm_errors": 0,
+      "seconds_per_section": 33.2,
+      "card_echo_notes": 0,
+      "accepted_ci95": [
+        0.208,
+        0.458
+      ],
+      "rate_limit_wait_seconds": 0
+    },
+    "local:qwen2.5:3b": {
+      "label": "Qwen2.5-3B-Instruct (current local fallback)",
+      "run": "2026-10-19T18:02:24+00:00",
+      "sections": 50,
+      "accepted": 0.44,
+      "first_try": 0.2,
+      "stray_number_drafts": 10,
+      "llm_errors": 0,
+      "seconds_per_section": 62.5,
+      "card_echo_notes": 4,
+      "accepted_ci95": [
+        0.312,
+        0.577
+      ],
+      "rate_limit_wait_seconds": 0
+    }
+  },
+  "dataset": {
+    "examples": {
+      "train": 705,
+      "val": 40
+    },
+    "clubs": {
+      "test": 12,
+      "train": 96,
+      "val": 6
+    },
+    "by_agent": {
+      "club": 114,
+      "director": 18,
+      "fit": 2,
+      "match": 33,
+      "news": 11,
+      "potential": 189,
+      "scout": 77,
+      "transfer": 301
+    },
+    "by_league": {
+      "bundesliga": 110,
+      "eredivisie": 109,
+      "la_liga": 135,
+      "ligue_1": 96,
+      "premier_league": 167,
+      "serie_a": 128
+    },
+    "first_try": 546,
+    "duplicates_dropped": 0,
+    "attempted": {
+      "accepted": 745,
+      "digits": 13,
+      "error": 74,
+      "gate_failed": 123,
+      "no_facts": 46,
+      "rejected": 771,
+      "stale": 2
+    },
+    "teacher_calls": 236,
+    "teacher": {
+      "openai/gpt-oss-120b": 6,
+      "qwen/qwen3.8-27b": 81,
+      "qwen/qwen3.8-27b@Q4_K_M (llama.cpp, Kaggle)": 658
+    }
+  },
+  "training": {
+    "examples": {
+      "train": 705,
+      "val": 40
+    },
+    "val_loss_base": 0.7614257335662842,
+    "val_loss_finetuned": 0.23454046249389648,
+    "train_seconds": 3292,
+    "gpu": "Tesla T4",
+    "config": {
+      "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "seed": 7,
+      "epochs": 3,
+      "lr": 0.0002,
+      "batch_size": 1,
+      "grad_accum": 16,
+      "max_len": 4096,
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "warmup_ratio": 0.05,
+      "eval_every": 10
+    },
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "pins": [
+        "transformers==4.56.2",
+        "peft==0.17.1",
+        "accelerate==1.10.1",
+        "sentencepiece==0.2.1",
+        "mistral-common==1.8.5"
+      ],
+      "llama.cpp": "b6550"
+    }
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "generated_at": "2026-10-19T18:02:24+00:00",
+  "clubs": [
+    "bayern-munchen",
+    "chelsea",
+    "elche",
+    "elversberg",
+    "espanyol",
+    "heerenveen",
+    "internazionale",
+    "manchester-city",
+    "monza",
+    "olympique-lyonnais",
+    "rennes",
+    "utrecht"
+  ],
+  "results": {
+    "local:qwen2.5:3b": {
+      "sections": 50,
+      "accepted": 0.44,
+      "first_try": 0.2,
+      "llm_errors": 0,
+      "stray_number_drafts": 10,
+      "seconds_per_section": 62.5,
+      "api_calls": 90,
+      "rate_limit_wait_seconds": 0,
+      "rows": [
+        {
+          "club": "bayern-munchen",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 43.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Bayern Munchen, who is not named here",
+            "sentence 3 conflicting: league_form belongs to Bayern Munchen, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "bayern-munchen",
+          "agent": "match",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 13.0,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": "Facts: - {{stat:ev_33f576ddd32b76e7|date}} Freiburg v Bayern München — kick-off date (code {{stat:ev_33f576ddd32b76e7|date}}). We recommend Bayern München should prepare for a competitive match, considering Freiburg's recent form and their own readiness."
+        },
+        {
+          "club": "bayern-munchen",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 75.7,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "bayern-munchen",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 116.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: need_best_player of Bayern Munchen is placed next to another name",
+            "sentence 5 conflicting: injury_risk_tier belongs to Cody Gakpo, who is not named here",
+            "sentence 3 conflicting: injury_risk_tier belongs to Matheus Santos Carneiro da Cunha, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 30.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Chelsea are {{stat:ev_f2ebb1f5c2ba7b2a|ord}} in the Premier League table and have {{stat:ev_5bcdb6748f500d15}} points. Xabi Alonso, appointed head coach, has a style profile covering {{stat:ev_5e128de36c509f8f|int}} Premier League matches, where teams under his guidance are more territorial than average, taking {{stat:ev_1aba1e305e46d4d5|pct}} of the match threat. Teams managed by Alonso average {{stat:ev_314d02eae3b9ddf1|.0f}} defensive actions per match, close to the league average, and create {{stat:ev_5c7431c7d376b9bf|.2f}} expected goals per match, also close to the league average. However, they concede {{stat:ev_91611a765167e4e6|.2f}} expected goals per match, close to the league average, and account for {{stat:ev_25b87b27000357d1|pct}} of the chance creation in their matches, more creative than average. We recommend Chelsea should continue to focus on maintaining their defensive actions and expected goals creation, while improving their goalkeeping to reduce expected goals conceded."
+        },
+        {
+          "club": "chelsea",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 36.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "too many sentences",
+            "numbers written directly: two"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "news",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 154.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 unverified: injury clause: 0 independent source(s); need 2",
+            "sentence 3 unverified: The Guardian's text does not support it (state it with a fact code, or in the wording of a statement fact)",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 62.8,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 87.2,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: market_value of Joan Garcia is placed next to another name",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": "We recommend that Chelsea strengthen at the position of goalkeeper, where they carry {{stat:ev_5fe94ba63d8099b6|int}} players. The best option for goalkeeper is {{stat:ev_572211d66c0a32cd}}, who has a market value of {{stat:ev_76b94eccc605797d|eur_m}}. Additionally, Joan García, who is {{stat:ev_d3edfe7b98ac1984|int}} years old and plays for FC Barcelona, has a market value of {{stat:ev_cf59107191205e61|eur_m}} and is projected to play {{stat:ev_ee0d17e8a455c5d0|pct}} of Chelsea's minutes. Considering his market value and expected minutes, Joan García could be a strong candidate to strengthen Chelsea's squad."
+        },
+        {
+          "club": "elche",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 32.2,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: three",
+            "too many sentences",
+            "sentence 3 conflicting: league_form belongs to Elche, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elche",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 8.1,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Elche's next league match is Rayo Vallecano v Elche on {{stat:ev_2fe39534a2c8d6ca|date}}. We recommend Elche should prepare for a competitive match, considering Rayo Vallecano's recent form."
+        },
+        {
+          "club": "elche",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 57.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: 0, 2, 6",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elche",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 68.8,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Elche should strengthen their squad need {{stat:ev_f06e1f6b73faf8f7}}, as they lack players for goalkeeper. Leo Kokubo, currently at {{stat:ev_0190e58893885571}}, fits this need with a market value of {{stat:ev_f0403a7bfc56338c|eur_m}}. Considering his age {{stat:ev_088b233bbbe13f55|int}}, strong performance {{stat:ev_7736fd390f795972|.2f}} and {{stat:ev_bd45bec9eea2d6f8|.2f}}, and his market value, he is a realistic option. Nazar Domchak, at {{stat:ev_5615ccbb3570c93c}}, also fits the need with a market value of {{stat:ev_8537b57e786c0471|.2f}}, but his performance {{stat:ev_8537b57e786c0471|.2f}} and {{stat:ev_1068dd509ff858cd|.2f}} is slightly lower, making him a more affordable option."
+        },
+        {
+          "club": "elversberg",
+          "agent": "club",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 22.1,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Elversberg, who is not named here",
+            "sentence 4 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": "Elversberg are {{stat:ev_3c80ae554ccdd17c|ord}} in the Bundesliga table and have {{stat:ev_4b4bda88fdc230b1}} league points. They have scored {{stat:ev_8542cf3ac1165247}} league goals and conceded {{stat:ev_1a935ff4081701fb}} goals. {{stat:ev_d4ba36d06f5d5fb3}} shows their recent league results. We recommend Elversberg play a possession-based style under their head coach, given their strong goal-scoring record."
+        },
+        {
+          "club": "elversberg",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 51.8,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "more than one recommendation sentence",
+            "more than one recommendation sentence"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elversberg",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 27.7,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "We estimate Cole Campbell's chance of being sold in a transfer window at {{stat:ev_e07694f928d5f696|pct}}. Noah Darvich's chance of being sold in a transfer window is estimated at {{stat:ev_36acbb989a82bef9|pct}}. Transfermarkt valued Noah Darvich at {{stat:ev_3c749e1b44219659|eur_m}}, and his estimated fair fee if sold to another Bundesliga club is {{stat:ev_74eb4066df73d222|eur_m}} (likely between {{stat:ev_72f8b25f57f1cfd0|eur_m}} and {{stat:ev_df1d1629b8998d2e|eur_m}}). Cole Campbell's market value is {{stat:ev_225692410eec39e7|eur_m}}, and his estimated fair fee if sold to another Bundesliga club is {{stat:ev_ba4b209a10b52661|eur_m}} (likely between {{stat:ev_f0026ca15f145e3c|eur_m}} and {{stat:ev_fde9cc64135197f7|eur_m}}). Francis Onyeka's market value is {{stat:ev_8a416642c928855e|eur_m}}, and his estimated fair fee if sold to another Bundesliga club is {{stat:ev_c7a55053d56f17b1|eur_m}} (likely between {{stat:ev_c591bae7faed589a|eur_m}} and {{stat:ev_aa2c9e5bd1305423|eur_m}})."
+        },
+        {
+          "club": "elversberg",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 105.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "espanyol",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 27.2,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Espanyol, who is not named here",
+            "sentence 3 conflicting: league_form belongs to Espanyol, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "espanyol",
+          "agent": "match",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 13.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": "Facts: - {{stat:ev_0f38146d39d6e7c3|date}} Racing de Santander v Espanyol — kick-off date (code {{stat:ev_0f38146d39d6e7c3|date}}). Example: Espanyol's next league match is Racing de Santander v Espanyol on {{stat:ev_0f38146d39d6e7c3|date}}. We recommend Espanyol should prepare for a competitive match, considering Racing de Santander's recent form and Espanyol's current squad strength."
+        },
+        {
+          "club": "espanyol",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 47.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 conflicting: sale_likelihood belongs to Roberto Fernandez, who is not named here",
+            "sentence 5 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": "We estimate Urko González's chance of being sold in a transfer window at {{stat:ev_8af60d617b524cc2|pct}}. We estimate Tyrhys Dolan's chance of being sold in a transfer window at {{stat:ev_9d64b7facb0b96d0|pct}}. We estimate Roberto Fernández's chance of being sold in a transfer window at {{stat:ev_03f4743c49d64075|pct}}. Transfermarkt valued Urko González at {{stat:ev_579e6958f0b7f052|eur_m}} and estimated his fair fee if sold to another La Liga club at {{stat:ev_1cd632b99f8f1b8c|eur_m}}. Transfermarkt valued Tyrhys Dolan at {{stat:ev_4b0b8c9f9ef48e2d|eur_m}} and estimated his fair fee if sold to another La Liga club at {{stat:ev_49888e75bb2efb58|eur_m}}. Transfermarkt valued Quilindschy Hartman at {{stat:ev_960ebf1b00905821|eur_m}} and estimated his fair fee if sold to another La Liga club at {{stat:ev_5a24af2c04810dca|eur_m}}."
+        },
+        {
+          "club": "espanyol",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 72.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Espanyol should strengthen their squad need {{stat:ev_c3e428588c5c7c10}}, which is the goalkeeper position. Yehvann Diouf, who is {{stat:ev_578738ac91b95cd6|int}} years old and plays for {{stat:ev_c578c43ad929caf8}}, is the best option with a market value of {{stat:ev_bf613a2cf8dd5db8|eur_m}}. Given his league goals and assists per full match, he is {{stat:ev_7a5339df93157654|pct}} of his league's players at his position. Nazar Domchak, who is {{stat:ev_4b2367c934a93bce|int}} years old and plays for {{stat:ev_49c060e6cdea6e4e}}, is a realistic target with a market value of {{stat:ev_fed7cfe008d5f1be|.2f}}. Both Diouf and Domchak have a lower injury risk tier {{stat:ev_936dfcb763b72bee}}."
+        },
+        {
+          "club": "heerenveen",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 19.8,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Heerenveen are {{stat:ev_ee3146e6a9518f79|ord}} in the Eredivisie table, indicating they are in the top half. They have {{stat:ev_32291ec8eb649752}} points, suggesting they are performing well. In terms of goal difference, Heerenveen have scored {{stat:ev_5f1d417f78c9d49b}} league goals and conceded {{stat:ev_e7db558d60e48e3b}} goals, maintaining a positive balance. Recent league results {{stat:ev_73b233f91db7f814}} show their consistent performance. Under the guidance of head coach {{stat:ev_57798993853cbfa8|date}}, Robin Veldman, Heerenveen play a tactical approach that emphasizes possession and counter-attacks, aiming to control the game and exploit their opponents' weaknesses. We recommend Heerenveen maintain their current strategy and focus on improving their defensive solidity to secure a higher league position."
+        },
+        {
+          "club": "heerenveen",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 7.8,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Heerenveen's next league match is ADO Den Haag v Heerenveen on {{stat:ev_0487e0e49411e7b9|date}}. We recommend Heerenveen prepare for a competitive match, considering ADO Den Haag's recent form."
+        },
+        {
+          "club": "heerenveen",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 52.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 3 conflicting: sale_likelihood belongs to Maas Willemsen, who is not named here",
+            "sentence 4 conflicting: fair_fee belongs to Jacob Trenskow, who is not named here; no word for fair_fee near its number",
+            "sentence 5 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "unknown fact code [F1277lo]"
+          ],
+          "text": ""
+        },
+        {
+          "club": "heerenveen",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 127.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 5 conflicting: expected_minutes_share belongs to Iker Muñoz, who is not named here",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "internazionale",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 25.5,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: three",
+            "numbers written directly: three"
+          ],
+          "text": ""
+        },
+        {
+          "club": "internazionale",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 16.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence",
+            "unknown fact code [F1517]",
+            "unknown fact code [F1516]"
+          ],
+          "text": ""
+        },
+        {
+          "club": "internazionale",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 31.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "We estimate Alessandro Bastoni's chance of being sold in a transfer window at {{stat:ev_46670232d3f7c1e6|pct}}. Nicolò Barella's chance of being sold in a transfer window is also estimated at {{stat:ev_de824d6849267942|pct}}. Federico Dimarco's market value as per Transfermarkt is {{stat:ev_cc999d322891a27f|eur_m}}, and our fair-fee estimate for him if sold to another Serie A club is {{stat:ev_8a2bce16be2749aa|eur_m}} (likely between {{stat:ev_868e3cb419ae7a19|eur_m}} and {{stat:ev_b3e4a5d8419bdcf8|eur_m}}), below his market value. Similarly, Francesco Esposito's market value is {{stat:ev_b58386d77f152378|eur_m}}, and our fair-fee estimate for him if sold to another Serie A club is {{stat:ev_7dab7c6bac28f1c1|eur_m}} (likely between {{stat:ev_bca844acc399f2d3|eur_m}} and {{stat:ev_c6a2f118dccdf03b|eur_m}}), in line with his market value. Carlos's market value as per Transfermarkt is {{stat:ev_9a00a09c6d667ce2|eur_m}}, and our fair-fee estimate for him if sold to another Serie A club is {{stat:ev_bae73880a64f3e60|eur_m}} (likely between {{stat:ev_17d6af5eca33b0cc|eur_m}} and {{stat:ev_27a9fac28f6454da|eur_m}}), below his market value."
+        },
+        {
+          "club": "internazionale",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 95.7,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "unknown fact code [F1588]",
+            "malformed or unresolved fact code",
+            "numbers written directly: 1, 5, 8",
+            "sentence 2 conflicting: need_best_player of Internazionale is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 32.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Manchester City are {{stat:ev_d0abfe55f8171d0c|ord}} in the Premier League table with {{stat:ev_0157b7e5c8b93d0d}} points. Under head coach Enzo Maresca, who took over {{stat:ev_2eeae873692c7770|date}}, the team is more territorial than average, taking {{stat:ev_f73f070deafddd09|pct}} of the match threat. However, they are less active without the ball than almost any Premier League manager's side, averaging {{stat:ev_70493881d0b2193d|.0f}} defensive actions per match. Teams under Maresca are more creative than average, accounting for {{stat:ev_a564789130d8c72f|pct}} of the chance creation. They also create more dangerous attacks, with {{stat:ev_84df3321196e4854|.2f}} expected goals for per match, and are tighter defensively, conceding {{stat:ev_43bd102468a74d53|.2f}} expected goals against per match. We recommend that Manchester City maintain their style of play and continue to focus on creating chances and reducing the number of expected goals conceded."
+        },
+        {
+          "club": "manchester-city",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 32.0,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "sentence 6 conflicting: elo of Manchester City is placed next to another name; no word for elo near its number"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "news",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 223.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 unverified: 1 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 133.0,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 5 conflicting: contract_expires belongs to Mateo Kovacic, who is not named here",
+            "sentence 6 unverified: The Guardian's text does not support it (state it with a fact code, or in the wording of a statement fact)",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 135.2,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 unverified: transfer clause: 0 independent source(s); need 2",
+            "sentence 4 conflicting: market_value belongs to Adam Wharton, who is not named here; expected_minutes_share belongs to Adam Wharton, who is not named here",
+            "sentence 5 conflicting: injury_risk_tier belongs to Adam Wharton, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "monza",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 66.2,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "more than one recommendation sentence",
+            "sentence 3 conflicting: league_form belongs to Monza, who is not named here",
+            "more than one recommendation sentence"
+          ],
+          "text": ""
+        },
+        {
+          "club": "monza",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 35.3,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "more than one recommendation sentence",
+            "sentence 3 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": ""
+        },
+        {
+          "club": "monza",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 44.5,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 6 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": "Transfermarkt valued Cyril Ngonge at {{stat:ev_5ae2b9529819af6d|eur_m}}. Transfermarkt valued Jan Ziółkowski at {{stat:ev_f219456a6525cb90|eur_m}}. Transfermarkt valued Jay Robinson at {{stat:ev_3b270fab3316311b|eur_m}}. We recommend selling Cyril Ngonge, whose fair-fee estimate is {{stat:ev_9ea34d6364ec0af8|eur_m}} (likely between {{stat:ev_536ec14481cb5966|eur_m}} and {{stat:ev_089a6dfa0acf4d5a|eur_m}}), below his market value. Jan Ziółkowski's fair-fee estimate is {{stat:ev_026dbbd9ee6825e5|eur_m}} (likely between {{stat:ev_fa355ec1f6d97661|eur_m}} and {{stat:ev_40f6358f518a52de|eur_m}}), below his market value. Jay Robinson is not worth selling as his fair-fee estimate is {{stat:ev_5302409e5bb1cdb8|eur_m}} (likely between {{stat:ev_828446ade175590c|eur_m}} and {{stat:ev_7fc943ea0f213554|eur_m}}), in line with his market value."
+        },
+        {
+          "club": "monza",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 123.1,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences"
+          ],
+          "text": "Monza's biggest squad need is for a defensive midfielder, as they are short of players in that position (code {{stat:ev_8f38932da86883dd}}). We recommend targeting Nail Umyarov (FK Spartak Moskva), who is {{stat:ev_3322670c1cb9aa9b|int}} years old and has a market value of {{stat:ev_708f999309c5de9b|eur_m}}. His market value is {{stat:ev_ffa5e8687c331e28}} of similar squads, indicating he is a strong fit for Monza's budget. Joris Chotard (Stade Brestois 29) is also a viable option, with a market value of {{stat:ev_8dd4ed97bdb94873|eur_m}} and {{stat:ev_92263f0f288b553f|pct}} of expected minutes at the club. However, Umyarov's injury risk is rated {{stat:ev_0092659c3674ec51}}, which may affect his availability."
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 78.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 conflicting: league_form belongs to Olympique Lyonnais, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 21.5,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence"
+          ],
+          "text": ""
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 45.0,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: sale_likelihood belongs to Kail Boudache, who is not named here",
+            "sentence 5 conflicting: sale_likelihood belongs to Felix Bacher, who is not named here"
+          ],
+          "text": "We estimate Felix Bacher's chance of being sold in a transfer window at {{stat:ev_76b8070acf349b7a|pct}}. We estimate Tyler Morton's chance of being sold in a transfer window at {{stat:ev_c9c3424341a098d4|pct}}. We estimate Kaïl Boudache's chance of being sold in a transfer window at {{stat:ev_726df42d92210375|pct}}. Transfermarkt valued Tyler Morton at {{stat:ev_29d8a43cc83597f8|eur_m}}, and our fair-fee estimate for him is {{stat:ev_cde3f43b7dd5b4fc|eur_m}} (likely between {{stat:ev_e2c436be26866265|eur_m}} and {{stat:ev_9b753763820ec5db|eur_m}}), below his market value. We recommend considering Felix Bacher and Kaïl Boudache for potential sales, as they have estimated chances of being sold."
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 95.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Olympique Lyonnais should strengthen at centre-back, where they have a squad need as veterans are excluded. Giorgio Scalvini, with {{stat:ev_df1362d0a183d281|int}} years old, has a market value of {{stat:ev_7a12bb702947c8b6|eur_m}} and is expected to play {{stat:ev_a7bc3a4af9d23070|pct}} of the club's minutes, making him a realistic target. Edmond Tapsoba, also {{stat:ev_e7f534108236330d|int}} years old, has a market value of {{stat:ev_ad787932f21aed1f|eur_m}} and is expected to play {{stat:ev_e9265d217c4981d3|pct}} of the club's minutes, offering a similar profile. Evan Ndicka, {{stat:ev_25b1de60211f0ea5|int}} years old, has a market value of {{stat:ev_9e43a6b538e40bb4|eur_m}} and is expected to play {{stat:ev_bf14383c91139fae|pct}} of the club's minutes, providing another option."
+        },
+        {
+          "club": "rennes",
+          "agent": "club",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 31.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Rennes, who is not named here",
+            "sentence 4 conflicting: appointed belongs to Franck Haise, who is not named here"
+          ],
+          "text": "Rennes are {{stat:ev_1e96a342e57a45b5|ord}} in the Ligue 1 table and have {{stat:ev_5f53d46f8a07e099}} points. They have scored {{stat:ev_65ced2cd2b8fa999}} league goals and conceded {{stat:ev_c9f1b5672b6af08a}} goals. {{stat:ev_d0b055305457e0a5}} shows their recent league results. Franck Haise, {{stat:ev_d5fb8aac83d70c39|date}}, is Rennes's head coach. We recommend Rennes play a possession-based style under Haise's guidance."
+        },
+        {
+          "club": "rennes",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 16.4,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence"
+          ],
+          "text": ""
+        },
+        {
+          "club": "rennes",
+          "agent": "transfer",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 48.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 6 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": "We estimate Charlie Cresswell's chance of being sold in a transfer window at {{stat:ev_36cf5c93634bfa20|pct}}. We estimate Esteban Lepaul's chance of being sold in a transfer window at {{stat:ev_e82cf7954a823c62|pct}}. We estimate Bryan Reynolds's chance of being sold in a transfer window at {{stat:ev_5cff4aa0e2bce186|pct}}. Transfermarkt valued Mahamadou Nagida at {{stat:ev_1509fe7681644be9|eur_m}}. Our fair-fee estimate for Mahamadou Nagida is {{stat:ev_8827db548050166b|eur_m}} (likely between {{stat:ev_cc5e2d2dd7470e72|eur_m}} and {{stat:ev_035d3b7a9f246873|eur_m}}), in line with his market value. We recommend assessing other players for potential sale based on their performance and market value."
+        },
+        {
+          "club": "rennes",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 118.3,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "sentence 2 unverified: transfer clause: no relevant source found"
+          ],
+          "text": ""
+        },
+        {
+          "club": "utrecht",
+          "agent": "club",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 37.6,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Utrecht, who is not named here"
+          ],
+          "text": "Utrecht are {{stat:ev_58167a24798c2dc7|ord}} in the Eredivisie table. They have {{stat:ev_99119f80cd058344}} league points and have scored {{stat:ev_c559247e392f8f0b}} league goals, while conceding {{stat:ev_bfdc528f060cca54}} goals. Utrecht's recent league results read {{stat:ev_692f3f9558419719}}. Anthony Correia, who was appointed head coach {{stat:ev_5ca076e879531304|date}}, has been shaping the team's style of play."
+        },
+        {
+          "club": "utrecht",
+          "agent": "match",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 20.1,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence"
+          ],
+          "text": "Facts: - {{stat:ev_7f7e515695d7d2e5|date}} Utrecht's next league match is Utrecht v PEC Zwolle on {{stat:ev_7f7e515695d7d2e5|date}}. We recommend Utrecht should prepare for a competitive match against PEC Zwolle, considering their recent form and the importance of the league standings."
+        },
+        {
+          "club": "utrecht",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 82.9,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "utrecht",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 169.8,
+          "rate_limit_wait": 0.0,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "unknown fact code [F3056]",
+            "malformed or unresolved fact code",
+            "numbers written directly: 0, 3, 5, 6",
+            "too many sentences"
+          ],
+          "text": ""
+        }
+      ]
+    }
+  }
+}
