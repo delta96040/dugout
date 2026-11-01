@@ -10,8 +10,8 @@
     "name": "Ligue 1",
     "country": "France"
   },
-  "generated_at": "2026-10-31T09:06:00+00:00",
-  "data_as_of": "2026-10-31T09:01:36+00:00",
+  "generated_at": "2026-11-01T10:22:38+00:00",
+  "data_as_of": "2026-11-01T10:09:40+00:00",
   "llm": null,
   "summary": {
     "agent": "director",
@@ -26,8 +26,8 @@
             "text": "Le Mans are "
           },
           {
-            "stat": "ev_f8fa5293161d076c",
-            "display": "15th"
+            "stat": "ev_52b96b96126b04d0",
+            "display": "17th"
           },
           {
             "text": " in the Ligue 1 table."
@@ -44,7 +44,7 @@
             "text": "Le Mans have "
           },
           {
-            "stat": "ev_800370298a652eb1",
+            "stat": "ev_30bd11b45c269b0b",
             "display": "7"
           },
           {
@@ -59,11 +59,11 @@
       {
         "segments": [
           {
-            "text": "Le Mans's next league match is Troyes v Le Mans on "
+            "text": "Le Mans's next league match is Le Mans v Monaco on "
           },
           {
-            "stat": "ev_27e5f7ef68ef86dc",
-            "display": "31 October 2026"
+            "stat": "ev_a578587aa6d36db6",
+            "display": "8 November 2026"
           },
           {
             "text": "."
@@ -77,14 +77,14 @@
       {
         "segments": [
           {
-            "text": "Le Mans's biggest squad need is "
+            "text": "Our forecast gives Le Mans a "
           },
           {
-            "stat": "ev_b7c2ecd0de03a721",
-            "display": "central midfield"
+            "stat": "ev_0c2fff3fd3a8e2f7",
+            "display": "17%"
           },
           {
-            "text": "."
+            "text": " chance of winning against Monaco."
           }
         ],
         "type": "stat",
@@ -109,8 +109,8 @@
               "text": "Le Mans are "
             },
             {
-              "stat": "ev_f8fa5293161d076c",
-              "display": "15th"
+              "stat": "ev_52b96b96126b04d0",
+              "display": "17th"
             },
             {
               "text": " in the Ligue 1 table."
@@ -127,7 +127,7 @@
               "text": "Le Mans have "
             },
             {
-              "stat": "ev_800370298a652eb1",
+              "stat": "ev_30bd11b45c269b0b",
               "display": "7"
             },
             {
@@ -145,7 +145,7 @@
               "text": "Le Mans have scored "
             },
             {
-              "stat": "ev_d844a43d1917738b",
+              "stat": "ev_6a07120ee2eee8e6",
               "display": "11"
             },
             {
@@ -163,8 +163,8 @@
               "text": "Le Mans have conceded "
             },
             {
-              "stat": "ev_45a9e5db22d80ee5",
-              "display": "16"
+              "stat": "ev_d5e433d23fde4f25",
+              "display": "18"
             },
             {
               "text": " league goals."
@@ -181,8 +181,8 @@
               "text": "Le Mans's most recent league results read "
             },
             {
-              "stat": "ev_6078cecbf707b806",
-              "display": "DLLWD"
+              "stat": "ev_f6b4e82f4e0a495a",
+              "display": "LDLLW"
             },
             {
               "text": "."
@@ -199,8 +199,8 @@
               "text": "Le Mans's Elo rating is "
             },
             {
-              "stat": "ev_3ced65f3e3942977",
-              "display": "1351"
+              "stat": "ev_bb7d70e3610e3f69",
+              "display": "1338"
             },
             {
               "text": "."
@@ -224,50 +224,14 @@
         {
           "segments": [
             {
-              "text": "Le Mans's next league match is Troyes v Le Mans on "
+              "text": "Le Mans's next league match is Le Mans v Monaco on "
             },
             {
-              "stat": "ev_27e5f7ef68ef86dc",
-              "display": "31 October 2026"
+              "stat": "ev_a578587aa6d36db6",
+              "display": "8 November 2026"
             },
             {
               "text": "."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our forecast gives Troyes a "
-            },
-            {
-              "stat": "ev_0fd7ec861a0b5067",
-              "display": "41%"
-            },
-            {
-              "text": " chance of winning against Le Mans."
-            }
-          ],
-          "type": "stat",
-          "status": "verified",
-          "reason": "bound to ledger rows",
-          "sources": []
-        },
-        {
-          "segments": [
-            {
-              "text": "Our forecast gives Troyes v Le Mans a "
-            },
-            {
-              "stat": "ev_422860b38fc21c30",
-              "display": "27%"
-            },
-            {
-              "text": " chance of ending in a draw."
             }
           ],
           "type": "stat",
@@ -281,11 +245,47 @@
               "text": "Our forecast gives Le Mans a "
             },
             {
-              "stat": "ev_82920d564828ba5b",
-              "display": "32%"
+              "stat": "ev_0c2fff3fd3a8e2f7",
+              "display": "17%"
             },
             {
-              "text": " chance of winning against Troyes."
+              "text": " chance of winning against Monaco."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our forecast gives Le Mans v Monaco a "
+            },
+            {
+              "stat": "ev_8d5367f940277ba8",
+              "display": "25%"
+            },
+            {
+              "text": " chance of ending in a draw."
+            }
+          ],
+          "type": "stat",
+          "status": "verified",
+          "reason": "bound to ledger rows",
+          "sources": []
+        },
+        {
+          "segments": [
+            {
+              "text": "Our forecast gives Monaco a "
+            },
+            {
+              "stat": "ev_ac1627f41a4d4c08",
+              "display": "58%"
+            },
+            {
+              "text": " chance of winning against Le Mans."
             }
           ],
           "type": "stat",
@@ -299,8 +299,8 @@
               "text": "Le Mans's Elo rating is "
             },
             {
-              "stat": "ev_3ced65f3e3942977",
-              "display": "1351"
+              "stat": "ev_bb7d70e3610e3f69",
+              "display": "1338"
             },
             {
               "text": "."
@@ -314,11 +314,11 @@
         {
           "segments": [
             {
-              "text": "Troyes's Elo rating is "
+              "text": "Monaco's Elo rating is "
             },
             {
-              "stat": "ev_e2fcbd8bceb43091",
-              "display": "1325"
+              "stat": "ev_745f73e73a16cd1b",
+              "display": "1612"
             },
             {
               "text": "."
@@ -363,7 +363,7 @@
               "text": "We estimate Raúl Torrente's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_515095a05a2c176f",
+              "stat": "ev_b589e0297b9d6aeb",
               "display": "14%"
             },
             {
@@ -381,7 +381,7 @@
               "text": "We estimate Yasser Larouci's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_676ac60ca5caa7a4",
+              "stat": "ev_f62ea80dc2a25322",
               "display": "13%"
             },
             {
@@ -399,7 +399,7 @@
               "text": "We estimate Bilal Brahimi's chance of being sold in a transfer window at "
             },
             {
-              "stat": "ev_0e5c56f98cb26702",
+              "stat": "ev_437bff58e5ee4ecc",
               "display": "10%"
             },
             {
@@ -435,21 +435,21 @@
               "text": "Our fair-fee estimate for Yasser Larouci is "
             },
             {
-              "stat": "ev_765e3d1d6c7ec36f",
+              "stat": "ev_7de747e0f5990ac8",
               "display": "€1.8m"
             },
             {
               "text": " (likely between "
             },
             {
-              "stat": "ev_4402a16129abf60d",
+              "stat": "ev_a8f5087057f6c901",
               "display": "€0.5m"
             },
             {
               "text": " and "
             },
             {
-              "stat": "ev_8eaa4eae291e91e0",
+              "stat": "ev_988d85672e5a45b8",
               "display": "€4.8m"
             },
             {
@@ -485,21 +485,21 @@
               "text": "Our fair-fee estimate for Habib Diallo is "
             },
             {
-              "stat": "ev_49c4b520e0d86a13",
+              "stat": "ev_e81922a26e851de6",
               "display": "€2.6m"
             },
             {
               "text": " (likely between "
             },
             {
-              "stat": "ev_989423867c421e38",
+              "stat": "ev_f96a3684b04aea8a",
               "display": "€1.1m"
             },
             {
               "text": " and "
             },
             {
-              "stat": "ev_514782d33a2a6f55",
+              "stat": "ev_4ac3de6bfbee9991",
               "display": "€5.5m"
             },
             {
@@ -535,21 +535,21 @@
               "text": "Our fair-fee estimate for Raúl Torrente is "
             },
             {
-              "stat": "ev_26c0d935c3897f34",
+              "stat": "ev_670416ed971cc372",
               "display": "€2.7m"
             },
             {
               "text": " (likely between "
             },
             {
-              "stat": "ev_07ab28a8a759160e",
+              "stat": "ev_b07655e9d9b0846e",
               "display": "€1.1m"
             },
             {
               "text": " and "
             },
             {
-              "stat": "ev_cabf88ea2ac6462a",
+              "stat": "ev_57450f78d4b2405f",
               "display": "€5.7m"
             },
             {
@@ -577,7 +577,7 @@
               "text": "Le Mans's biggest squad need is "
             },
             {
-              "stat": "ev_b7c2ecd0de03a721",
+              "stat": "ev_03f78ba7ffbd1a10",
               "display": "central midfield"
             },
             {
@@ -595,7 +595,7 @@
               "text": "Counted by where they start, Le Mans's options for central midfield add up to "
             },
             {
-              "stat": "ev_3d46dcc29336ee05",
+              "stat": "ev_9bbb7ca919d6f360",
               "display": "0"
             },
             {
@@ -613,7 +613,7 @@
               "text": "A squad carries "
             },
             {
-              "stat": "ev_d2cabecf38d57a59",
+              "stat": "ev_504dddac7d7d7bd7",
               "display": "4"
             },
             {
@@ -631,7 +631,7 @@
               "text": "At the squads closest to Le Mans in strength, the best option for central midfield is typically worth "
             },
             {
-              "stat": "ev_aa76a7d0300a24e5",
+              "stat": "ev_26e9214528016422",
               "display": "€8.5m"
             },
             {
@@ -649,7 +649,7 @@
               "text": "Hidden gem: João Neves (Paris Saint-Germain), who is "
             },
             {
-              "stat": "ev_dedc8f257e4c5193",
+              "stat": "ev_cc8dcbb53e6d2f32",
               "display": "22"
             },
             {
@@ -667,7 +667,7 @@
               "text": "João Neves plays for "
             },
             {
-              "stat": "ev_0ba787ee3d7cd5ab",
+              "stat": "ev_7980fab790eac96b",
               "display": "Paris Saint-Germain"
             },
             {
@@ -685,7 +685,7 @@
               "text": "João Neves has played "
             },
             {
-              "stat": "ev_9ccd3e2bc2add8de",
+              "stat": "ev_5e2cf9e6a96a0350",
               "display": "68%"
             },
             {
@@ -703,7 +703,7 @@
               "text": "João Neves averages "
             },
             {
-              "stat": "ev_0cbd0c7aa9b95837",
+              "stat": "ev_8d70d4706d106471",
               "display": "0.17"
             },
             {
@@ -721,7 +721,7 @@
               "text": "João Neves averages "
             },
             {
-              "stat": "ev_6f6821d4b30526aa",
+              "stat": "ev_58a55ad3e4a1f96a",
               "display": "0.08"
             },
             {
@@ -739,7 +739,7 @@
               "text": "João Neves has more league goals and assists per full match than "
             },
             {
-              "stat": "ev_a91788fd34ca4028",
+              "stat": "ev_153fe5712fbfdb60",
               "display": "56%"
             },
             {
@@ -757,7 +757,7 @@
               "text": "João Neves's comparison is within "
             },
             {
-              "stat": "ev_c2ea47503826a05c",
+              "stat": "ev_3d92de6d1a82d2ba",
               "display": "Ligue 1"
             },
             {
@@ -775,7 +775,7 @@
               "text": "João Neves's stronger foot is his "
             },
             {
-              "stat": "ev_68185a0eedac57c3",
+              "stat": "ev_0517dbae3d540e74",
               "display": "right"
             },
             {
@@ -793,7 +793,7 @@
               "text": "João Neves stands "
             },
             {
-              "stat": "ev_9cc8159efbf226e6",
+              "stat": "ev_fe893da50bc176bd",
               "display": "171"
             },
             {
@@ -811,7 +811,7 @@
               "text": "João Neves has won "
             },
             {
-              "stat": "ev_f0346877bc2eee67",
+              "stat": "ev_bc1cbbd5dfb1e2b8",
               "display": "27"
             },
             {
@@ -829,7 +829,7 @@
               "text": "João Neves starts at "
             },
             {
-              "stat": "ev_350e1f4cad365e44",
+              "stat": "ev_d73e8cddea0fefa3",
               "display": "central midfield, defensive midfield"
             },
             {
@@ -847,7 +847,7 @@
               "text": "João Neves has a market value of "
             },
             {
-              "stat": "ev_ad6be8a4f459cfaa",
+              "stat": "ev_603b6af7bd4fdb82",
               "display": "€140m"
             },
             {
@@ -865,21 +865,21 @@
               "text": "Our fair-fee estimate for João Neves is "
             },
             {
-              "stat": "ev_31e7a22ed3b9a8db",
+              "stat": "ev_bff6dbe2cbb02d39",
               "display": "€108m"
             },
             {
               "text": " (likely between "
             },
             {
-              "stat": "ev_131193da0c7bba99",
+              "stat": "ev_dce42b9b83e4718a",
               "display": "€58.2m"
             },
             {
               "text": " and "
             },
             {
-              "stat": "ev_6584214b5100d21a",
+              "stat": "ev_22d2235e0fa2f8be",
               "display": "€178m"
             },
             {
@@ -897,7 +897,7 @@
               "text": "We project João Neves's market value to reach "
             },
             {
-              "stat": "ev_3627682db28c3d78",
+              "stat": "ev_2e948c75f52ab3f9",
               "display": "€120m"
             },
             {
@@ -915,7 +915,7 @@
               "text": "Hidden gem: Lennart Karl (Bayern Munich), who is "
             },
             {
-              "stat": "ev_20815a9f01faf7c6",
+              "stat": "ev_d6ce2e232ae7a477",
               "display": "19"
             },
             {
@@ -933,7 +933,7 @@
               "text": "Lennart Karl plays for "
             },
             {
-              "stat": "ev_5d921c7a3a17151c",
+              "stat": "ev_62ecbb4588fa4c7e",
               "display": "Bayern Munich"
             },
             {
@@ -951,7 +951,7 @@
               "text": "Lennart Karl has played "
             },
             {
-              "stat": "ev_88810ff53a14c058",
+              "stat": "ev_38c128002f09767e",
               "display": "44%"
             },
             {
@@ -969,7 +969,7 @@
               "text": "Lennart Karl averages "
             },
             {
-              "stat": "ev_28005665a10388d8",
+              "stat": "ev_86e9e7d2aee2e1d5",
               "display": "0.31"
             },
             {
@@ -987,7 +987,7 @@
               "text": "Lennart Karl averages "
             },
             {
-              "stat": "ev_4061570a917a5483",
+              "stat": "ev_ab65d9bd9b80cf25",
               "display": "0.39"
             },
             {
@@ -1005,7 +1005,7 @@
               "text": "Lennart Karl has more league goals and assists per full match than "
             },
             {
-              "stat": "ev_5622b4adf363c387",
+              "stat": "ev_bd0ab9ff94f53f2f",
               "display": "97%"
             },
             {
@@ -1023,7 +1023,7 @@
               "text": "Le Mans's second squad need is "
             },
             {
-              "stat": "ev_416f7fe4b33911c4",
+              "stat": "ev_32aca4c65b45c7d7",
               "display": "centre-back"
             },
             {
@@ -1041,7 +1041,7 @@
               "text": "Counted by where they start, Le Mans's options for centre-back add up to "
             },
             {
-              "stat": "ev_b2a3ac8daf979a40",
+              "stat": "ev_2e840f54ae30ee7c",
               "display": "1"
             },
             {
@@ -1059,7 +1059,7 @@
               "text": "A squad carries "
             },
             {
-              "stat": "ev_0b3b8d13d18e525f",
+              "stat": "ev_171f4cab7cec31cc",
               "display": "4"
             },
             {
@@ -1077,7 +1077,7 @@
               "text": "Le Mans's best option for centre-back is "
             },
             {
-              "stat": "ev_20292d9062f65f87",
+              "stat": "ev_720c37a96ddfe6a5",
               "display": "Raúl Torrente"
             },
             {
@@ -1095,7 +1095,7 @@
               "text": "Le Mans's best option for centre-back has a market value of "
             },
             {
-              "stat": "ev_18a848dca385c6d8",
+              "stat": "ev_b6ee80657af7dc1a",
               "display": "€2.5m"
             },
             {
@@ -1113,14 +1113,14 @@
               "text": "At the squads closest to Le Mans in strength, the best option for centre-back is typically worth "
             },
             {
-              "stat": "ev_d4540f5992004b09",
+              "stat": "ev_a350e9d67c57cd73",
               "display": "€7.0m"
             },
             {
               "text": ". "
             },
             {
-              "stat": "ev_967647700e09667f",
+              "stat": "ev_a167bf202d5d11c4",
               "display": "59%"
             },
             {
@@ -1137,87 +1137,199 @@
     }
   ],
   "stats": {
-    "ev_003917f2379ab868": {
-      "value": "central midfield",
-      "display": "central midfield",
+    "ev_00eca9eeb1543aba": {
+      "value": 130500000.0,
+      "display": "130500000",
       "unit": null,
-      "metric": "positions_played",
+      "metric": "fair_fee",
       "entity_type": "player",
       "entity_id": "rp360a26a0fc1f7f",
       "entity_name": "Pedri",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_023816e029d0ee3a": {
+    "ev_03f78ba7ffbd1a10": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "need",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0517dbae3d540e74": {
+      "value": "right",
+      "display": "right",
+      "unit": null,
+      "metric": "foot",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_080ca10868906ea5": {
       "value": "centre-back",
       "display": "centre-back",
       "unit": null,
       "metric": "positions_played",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_05c14e90ce2c8548": {
-      "value": 197.0,
-      "display": "197",
-      "unit": null,
-      "metric": "height_cm",
       "entity_type": "player",
       "entity_id": "rp6fcca4e313f494",
       "entity_name": "Dean Huijsen",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_07ab28a8a759160e": {
-      "value": 1100000.0,
-      "display": "1100000",
+    "ev_0c2fff3fd3a8e2f7": {
+      "value": 0.1701,
+      "display": "0.17",
       "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp2cb5ef52d7883f",
-      "entity_name": "Raúl Torrente",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "metric": "p_home_win",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:le-mans:monaco",
+      "entity_name": "Le Mans v Monaco",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_09c1490ba6e79ebf": {
-      "value": "FC Barcelona",
-      "display": "FC Barcelona",
+    "ev_0e1064227574b1aa": {
+      "value": 0.559,
+      "display": "0.56",
       "unit": null,
-      "metric": "candidate_club",
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_0e4033ee369f4dce": {
+      "value": 55400000.0,
+      "display": "55400000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_12c9587c49794258": {
+      "value": "La Liga",
+      "display": "La Liga",
+      "unit": null,
+      "metric": "ga_league",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_12dc4bc47a63ce7e": {
+      "value": 0.04,
+      "display": "0.04",
+      "unit": null,
+      "metric": "goals_p90",
       "entity_type": "player",
       "entity_id": "rpcad5f86e137dd1",
       "entity_name": "Pau Cubarsí",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_0b3b8d13d18e525f": {
+    "ev_153fe5712fbfdb60": {
+      "value": 0.56,
+      "display": "0.56",
+      "unit": null,
+      "metric": "ga_pctile",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_158256fce9d9e9b0": {
+      "value": 0.0,
+      "display": "0",
+      "unit": null,
+      "metric": "goals_p90",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_15f205bcbdf8e4c1": {
+      "value": 0.13,
+      "display": "0.13",
+      "unit": null,
+      "metric": "goals_p90",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_171f4cab7cec31cc": {
       "value": 4.0,
       "display": "4",
       "unit": null,
@@ -1228,236 +1340,12 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_0ba787ee3d7cd5ab": {
-      "value": "Paris Saint-Germain",
-      "display": "Paris Saint-Germain",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0cb4ac1a3279713b": {
-      "value": "Real Madrid",
-      "display": "Real Madrid",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0cbd0c7aa9b95837": {
-      "value": 0.17,
-      "display": "0.17",
-      "unit": null,
-      "metric": "goals_p90",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0e5c56f98cb26702": {
-      "value": 0.096,
-      "display": "0.10",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rp3a203d7f1e13ca",
-      "entity_name": "Bilal Brahimi",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0f347d212f66569f": {
-      "value": 114900000.0,
-      "display": "114900000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_0fd7ec861a0b5067": {
-      "value": 0.4082,
-      "display": "0.41",
-      "unit": null,
-      "metric": "p_home_win",
-      "entity_type": "match",
-      "entity_id": "ligue_1:2026-27:troyes:le-mans",
-      "entity_name": "Troyes v Le Mans",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_109141aeb6fba59f": {
-      "value": 150000000.0,
-      "display": "150000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_131193da0c7bba99": {
-      "value": 58200000.0,
-      "display": "58200000",
-      "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_15384d122ab60b08": {
-      "value": "La Liga",
-      "display": "La Liga",
-      "unit": null,
-      "metric": "ga_league",
-      "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_162c975f004b2f2f": {
-      "value": 0.568,
-      "display": "0.57",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_18a848dca385c6d8": {
-      "value": 2500000.0,
-      "display": "2500000",
-      "unit": null,
-      "metric": "need_best_value",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_19c95bee0cfde13a": {
-      "value": 12800000.0,
-      "display": "12800000",
-      "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1a40c328ded106a7": {
-      "value": 70300000.0,
-      "display": "70300000",
-      "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1baa9c709db7e888": {
-      "value": 23.9,
-      "display": "23.90",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_1d4f996c34ddfa85": {
+    "ev_17d5f5578e951cff": {
       "value": "right",
       "display": "right",
       "unit": null,
@@ -1468,153 +1356,185 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_1f4762ab8e2818fe": {
-      "value": 19.8,
-      "display": "19.80",
+    "ev_1ddc6d5dc9c2b9ac": {
+      "value": "left",
+      "display": "left",
       "unit": null,
-      "metric": "age",
+      "metric": "foot",
       "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_20292d9062f65f87": {
-      "value": "Raúl Torrente",
-      "display": "Raúl Torrente",
-      "unit": null,
-      "metric": "need_best_player",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_20815a9f01faf7c6": {
-      "value": 18.7,
-      "display": "18.70",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_25b254d25bd2e061": {
-      "value": 58000000.0,
-      "display": "58000000",
-      "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_26c0d935c3897f34": {
-      "value": 2700000.0,
-      "display": "2700000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp2cb5ef52d7883f",
-      "entity_name": "Raúl Torrente",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_27e5f7ef68ef86dc": {
-      "value": "2026-10-31T19:45:00+00:00",
-      "display": "2026-10-31T19:45:00+00:00",
-      "unit": null,
-      "metric": "kickoff_utc",
-      "entity_type": "match",
-      "entity_id": "ligue_1:2026-27:troyes:le-mans",
-      "entity_name": "Troyes v Le Mans",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_28005665a10388d8": {
-      "value": 0.31,
-      "display": "0.31",
-      "unit": null,
-      "metric": "goals_p90",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_2eef01f3aa9450bf": {
-      "value": 134800000.0,
-      "display": "134800000",
+    "ev_22d2235e0fa2f8be": {
+      "value": 177800000.0,
+      "display": "177800000",
       "unit": null,
       "metric": "fair_fee_high",
       "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_2f353cd6c0cfe95d": {
-      "value": 21.5,
-      "display": "21.50",
+    "ev_25e967acf3416b41": {
+      "value": "centre-back",
+      "display": "centre-back",
       "unit": null,
-      "metric": "age",
+      "metric": "positions_played",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26048f6190a95e25": {
+      "value": 60000000.0,
+      "display": "60000000",
+      "unit": null,
+      "metric": "market_value",
       "entity_type": "player",
       "entity_id": "rp6fcca4e313f494",
       "entity_name": "Dean Huijsen",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_262490e5174b2141": {
+      "value": 0.0,
+      "display": "0",
+      "unit": null,
+      "metric": "goals_p90",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_26e9214528016422": {
+      "value": 8500000.0,
+      "display": "8500000",
+      "unit": null,
+      "metric": "need_peer_best_value",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2ce75dcdc6ab1818": {
+      "value": 91300000.0,
+      "display": "91300000",
+      "unit": null,
+      "metric": "fair_fee_high",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2e5e0019aa5b1ece": {
+      "value": 23800000.0,
+      "display": "23800000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2e840f54ae30ee7c": {
+      "value": 1.0,
+      "display": "1",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_2e948c75f52ab3f9": {
+      "value": 120200000.0,
+      "display": "120200000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_30bd11b45c269b0b": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "league_points",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:33:29.411697+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
       "cross_checks": []
     },
     "ev_31412aa8bd74f20f": {
@@ -1633,183 +1553,7 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_31e7a22ed3b9a8db": {
-      "value": 107900000.0,
-      "display": "107900000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_34474abf0f98db1b": {
-      "value": 0.32,
-      "display": "0.32",
-      "unit": null,
-      "metric": "ga_pctile",
-      "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_350e1f4cad365e44": {
-      "value": "central midfield, defensive midfield",
-      "display": "central midfield, defensive midfield",
-      "unit": null,
-      "metric": "positions_played",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3544fb9879a7178a": {
-      "value": 91300000.0,
-      "display": "91300000",
-      "unit": null,
-      "metric": "fair_fee_high",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3627682db28c3d78": {
-      "value": 120200000.0,
-      "display": "120200000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_369eee3d5b6a6d45": {
-      "value": "Ligue 1",
-      "display": "Ligue 1",
-      "unit": null,
-      "metric": "ga_league",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_36b74b9337079510": {
-      "value": 0.0,
-      "display": "0",
-      "unit": null,
-      "metric": "goals_p90",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3ced65f3e3942977": {
-      "value": 1351.2,
-      "display": "1351.20",
-      "unit": null,
-      "metric": "elo",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3d46dcc29336ee05": {
-      "value": 0.0,
-      "display": "0",
-      "unit": null,
-      "metric": "need_depth",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_3ea4c2bc2d6f3710": {
-      "value": "La Liga",
-      "display": "La Liga",
-      "unit": null,
-      "metric": "ga_league",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4061570a917a5483": {
-      "value": 0.39,
-      "display": "0.39",
-      "unit": null,
-      "metric": "assists_p90",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_416f7fe4b33911c4": {
+    "ev_32aca4c65b45c7d7": {
       "value": "centre-back",
       "display": "centre-back",
       "unit": null,
@@ -1820,60 +1564,92 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_422860b38fc21c30": {
-      "value": 0.2736,
-      "display": "0.27",
+    "ev_33beffa7ef81339d": {
+      "value": 25000000.0,
+      "display": "25000000",
       "unit": null,
-      "metric": "p_draw",
-      "entity_type": "match",
-      "entity_id": "ligue_1:2026-27:troyes:le-mans",
-      "entity_name": "Troyes v Le Mans",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_4402a16129abf60d": {
-      "value": 500000.0,
-      "display": "500000",
-      "unit": null,
-      "metric": "fair_fee_low",
+      "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rpbc9c6ffe21ee25",
-      "entity_name": "Yasser Larouci",
-      "source": "dugout_model:valuation",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_38c128002f09767e": {
+      "value": 0.444,
+      "display": "0.44",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3914fc64ab928fba": {
+      "value": "attacking midfield, right winger",
+      "display": "attacking midfield, right winger",
+      "unit": null,
+      "metric": "positions_played",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_3d92de6d1a82d2ba": {
+      "value": "Ligue 1",
+      "display": "Ligue 1",
+      "unit": null,
+      "metric": "ga_league",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_4008e9a8c2463613": {
+      "value": 134800000.0,
+      "display": "134800000",
+      "unit": null,
+      "metric": "fair_fee_high",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_45a9e5db22d80ee5": {
-      "value": 16.0,
-      "display": "16",
-      "unit": null,
-      "metric": "league_goalsAgainst",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:41:52.228981+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_4867d73d0da17c0b": {
+    "ev_4279b7dbf7ee964f": {
       "value": "FC Barcelona",
       "display": "FC Barcelona",
       "unit": null,
@@ -1884,92 +1660,44 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_49c4b520e0d86a13": {
-      "value": 2600000.0,
-      "display": "2600000",
+    "ev_42cfa199133a635c": {
+      "value": 18.8,
+      "display": "18.80",
       "unit": null,
-      "metric": "fair_fee",
+      "metric": "age",
       "entity_type": "player",
-      "entity_id": "rp242e3ea2a18037",
-      "entity_name": "Habib Diallo",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_49d778c492618313": {
-      "value": 103700000.0,
-      "display": "103700000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_4fc4daae32b395c5": {
-      "value": 0.57,
-      "display": "0.57",
-      "unit": null,
-      "metric": "assists_p90",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_514782d33a2a6f55": {
-      "value": 5500000.0,
-      "display": "5500000",
-      "unit": null,
-      "metric": "fair_fee_high",
-      "entity_type": "player",
-      "entity_id": "rp242e3ea2a18037",
-      "entity_name": "Habib Diallo",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_515095a05a2c176f": {
-      "value": 0.135,
-      "display": "0.14",
+    "ev_437bff58e5ee4ecc": {
+      "value": 0.1,
+      "display": "0.10",
       "unit": null,
       "metric": "sale_likelihood",
       "entity_type": "player",
-      "entity_id": "rp2cb5ef52d7883f",
-      "entity_name": "Raúl Torrente",
+      "entity_id": "rp3a203d7f1e13ca",
+      "entity_name": "Bilal Brahimi",
       "source": "dugout_model:realism",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_51ea402c99f1ec78": {
+    "ev_486cf325a5c7bbfb": {
       "value": 0.07,
       "display": "0.07",
       "unit": null,
@@ -1980,103 +1708,215 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_5622b4adf363c387": {
-      "value": 0.97,
-      "display": "0.97",
+    "ev_4ac3de6bfbee9991": {
+      "value": 5500000.0,
+      "display": "5500000",
       "unit": null,
-      "metric": "ga_pctile",
+      "metric": "fair_fee_high",
       "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
+      "entity_id": "rp242e3ea2a18037",
+      "entity_name": "Habib Diallo",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_504dddac7d7d7bd7": {
+      "value": 4.0,
+      "display": "4",
+      "unit": null,
+      "metric": "need_wanted",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_5bc3cd19b9856b0d": {
-      "value": 81800000.0,
-      "display": "81800000",
+    "ev_51990a2689af879e": {
+      "value": 0.0,
+      "display": "0",
       "unit": null,
-      "metric": "fair_fee",
+      "metric": "ga_pctile",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_52b84def4549f843": {
+      "value": 184.0,
+      "display": "184",
+      "unit": null,
+      "metric": "height_cm",
       "entity_type": "player",
       "entity_id": "rpcad5f86e137dd1",
       "entity_name": "Pau Cubarsí",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_5c3a407a40a421de": {
-      "value": 0.559,
-      "display": "0.56",
+    "ev_52b96b96126b04d0": {
+      "value": 17.0,
+      "display": "17",
       "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_5d921c7a3a17151c": {
-      "value": "Bayern Munich",
-      "display": "Bayern Munich",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6078cecbf707b806": {
-      "value": "DLLWD",
-      "display": "DLLWD",
-      "unit": null,
-      "metric": "league_form",
+      "metric": "league_position",
       "entity_type": "club",
       "entity_id": "le-mans",
       "entity_name": "Le Mans",
       "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
-      "source_tier": 2,
-      "fetched_at": "2026-10-31T08:41:52.228981+00:00",
-      "query_kind": "sql",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:33:29.411697+00:00",
+      "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_628212aa0d8632cd": {
-      "value": 0.94,
-      "display": "0.94",
+    "ev_57450f78d4b2405f": {
+      "value": 5700000.0,
+      "display": "5700000",
       "unit": null,
-      "metric": "ga_pctile",
+      "metric": "fair_fee_high",
       "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
+      "entity_id": "rp2cb5ef52d7883f",
+      "entity_name": "Raúl Torrente",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_575c32efc1d6689d": {
+      "value": 58000000.0,
+      "display": "58000000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_58a55ad3e4a1f96a": {
+      "value": 0.08,
+      "display": "0.08",
+      "unit": null,
+      "metric": "assists_p90",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_58b5f79e1080aed5": {
+      "value": 7.0,
+      "display": "7",
+      "unit": null,
+      "metric": "caps",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5bd24a9bc1f3ae92": {
+      "value": 0.453,
+      "display": "0.45",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_5e2cf9e6a96a0350": {
+      "value": 0.682,
+      "display": "0.68",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_602bd39edb2ed453": {
+      "value": "both",
+      "display": "both",
+      "unit": null,
+      "metric": "foot",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_603b6af7bd4fdb82": {
+      "value": 140000000.0,
+      "display": "140000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -2097,295 +1937,151 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_6469399879a5f581": {
-      "value": 80000000.0,
-      "display": "80000000",
+    "ev_62ddc9b2ec64c5b5": {
+      "value": 47.0,
+      "display": "47",
       "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6584214b5100d21a": {
-      "value": 177800000.0,
-      "display": "177800000",
-      "unit": null,
-      "metric": "fair_fee_high",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_65b5ada4da70d644": {
-      "value": 174.0,
-      "display": "174",
-      "unit": null,
-      "metric": "height_cm",
+      "metric": "caps",
       "entity_type": "player",
       "entity_id": "rp360a26a0fc1f7f",
       "entity_name": "Pedri",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_66af3e081e4ddd7f": {
-      "value": 0.0,
-      "display": "0",
+    "ev_62ecbb4588fa4c7e": {
+      "value": "Bayern Munich",
+      "display": "Bayern Munich",
       "unit": null,
-      "metric": "ga_pctile",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_676ac60ca5caa7a4": {
-      "value": 0.126,
-      "display": "0.13",
-      "unit": null,
-      "metric": "sale_likelihood",
-      "entity_type": "player",
-      "entity_id": "rpbc9c6ffe21ee25",
-      "entity_name": "Yasser Larouci",
-      "source": "dugout_model:realism",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_68185a0eedac57c3": {
-      "value": "right",
-      "display": "right",
-      "unit": null,
-      "metric": "foot",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6858ffb73886feb3": {
-      "value": "Bundesliga",
-      "display": "Bundesliga",
-      "unit": null,
-      "metric": "ga_league",
+      "metric": "candidate_club",
       "entity_type": "player",
       "entity_id": "rp3ddbd83f931315",
       "entity_name": "Lennart Karl",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_69c93ffeac4b5f38": {
-      "value": 130500000.0,
-      "display": "130500000",
+    "ev_670416ed971cc372": {
+      "value": 2700000.0,
+      "display": "2700000",
       "unit": null,
       "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp2cb5ef52d7883f",
+      "entity_name": "Raúl Torrente",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_67e8d165d0f2a443": {
+      "value": 103700000.0,
+      "display": "103700000",
+      "unit": null,
+      "metric": "proj_value_4y",
       "entity_type": "player",
       "entity_id": "rp360a26a0fc1f7f",
       "entity_name": "Pedri",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_69f9bd95c0fc9d1d": {
-      "value": "both",
-      "display": "both",
+    "ev_68917672728f82d4": {
+      "value": 21.5,
+      "display": "21.50",
       "unit": null,
-      "metric": "foot",
+      "metric": "age",
       "entity_type": "player",
       "entity_id": "rp6fcca4e313f494",
       "entity_name": "Dean Huijsen",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_6a46a6ef50e83710": {
-      "value": 0.0,
-      "display": "0",
+    "ev_69465255ea891be8": {
+      "value": 81800000.0,
+      "display": "81800000",
       "unit": null,
-      "metric": "goals_p90",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_6c26a13a10d2ee41": {
-      "value": 95200000.0,
-      "display": "95200000",
-      "unit": null,
-      "metric": "proj_value_4y",
+      "metric": "fair_fee",
       "entity_type": "player",
       "entity_id": "rpcad5f86e137dd1",
       "entity_name": "Pau Cubarsí",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_6f6821d4b30526aa": {
-      "value": 0.08,
-      "display": "0.08",
+    "ev_6a07120ee2eee8e6": {
+      "value": 11.0,
+      "display": "11",
       "unit": null,
-      "metric": "assists_p90",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_741f6698b23044b4": {
-      "value": 59100000.0,
-      "display": "59100000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_765e3d1d6c7ec36f": {
-      "value": 1800000.0,
-      "display": "1800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rpbc9c6ffe21ee25",
-      "entity_name": "Yasser Larouci",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_800370298a652eb1": {
-      "value": 7.0,
-      "display": "7",
-      "unit": null,
-      "metric": "league_points",
+      "metric": "league_goalsFor",
       "entity_type": "club",
       "entity_id": "le-mans",
       "entity_name": "Le Mans",
       "source": "football_data_org",
       "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:41:52.228981+00:00",
+      "fetched_at": "2026-11-01T09:33:29.411697+00:00",
       "query_kind": "http_json",
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_81bb3823dc586be1": {
-      "value": 3.0,
-      "display": "3",
+    "ev_6b70b3219dabe09e": {
+      "value": 150000000.0,
+      "display": "150000000",
       "unit": null,
-      "metric": "caps",
+      "metric": "market_value",
       "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_82920d564828ba5b": {
-      "value": 0.3182,
-      "display": "0.32",
+    "ev_6bac34376fc392f2": {
+      "value": 0.0,
+      "display": "0",
       "unit": null,
-      "metric": "p_away_win",
-      "entity_type": "match",
-      "entity_id": "ligue_1:2026-27:troyes:le-mans",
-      "entity_name": "Troyes v Le Mans",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_83978617ae8806a3": {
-      "value": 184.0,
-      "display": "184",
-      "unit": null,
-      "metric": "height_cm",
+      "metric": "assists_p90",
       "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_854e8decdd527ca2": {
+    "ev_6c588a5b2270b2a7": {
       "value": 39200000.0,
       "display": "39200000",
       "unit": null,
@@ -2396,71 +2092,279 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_86fa67e4327b7fdf": {
-      "value": 60000000.0,
-      "display": "60000000",
+    "ev_6e3936e91a21de23": {
+      "value": 74400000.0,
+      "display": "74400000",
       "unit": null,
-      "metric": "market_value",
+      "metric": "proj_value_4y",
       "entity_type": "player",
       "entity_id": "rp6fcca4e313f494",
       "entity_name": "Dean Huijsen",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_88810ff53a14c058": {
-      "value": 0.444,
-      "display": "0.44",
+    "ev_720c37a96ddfe6a5": {
+      "value": "Raúl Torrente",
+      "display": "Raúl Torrente",
       "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
+      "metric": "need_best_player",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_8eaa4eae291e91e0": {
-      "value": 4800000.0,
-      "display": "4800000",
+    "ev_745f73e73a16cd1b": {
+      "value": 1611.9,
+      "display": "1611.90",
       "unit": null,
-      "metric": "fair_fee_high",
+      "metric": "elo",
+      "entity_type": "club",
+      "entity_id": "monaco",
+      "entity_name": "Monaco",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7980fab790eac96b": {
+      "value": "Paris Saint-Germain",
+      "display": "Paris Saint-Germain",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7b15886c9d76b16e": {
+      "value": 95200000.0,
+      "display": "95200000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7b3c95e17132e5ec": {
+      "value": "right",
+      "display": "right",
+      "unit": null,
+      "metric": "foot",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7b8ce9eb517865a9": {
+      "value": 192.0,
+      "display": "192",
+      "unit": null,
+      "metric": "height_cm",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7bae43194464db60": {
+      "value": 197.0,
+      "display": "197",
+      "unit": null,
+      "metric": "height_cm",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7ce8ec29ba9cca12": {
+      "value": 0.94,
+      "display": "0.94",
+      "unit": null,
+      "metric": "ga_pctile",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_7de747e0f5990ac8": {
+      "value": 1800000.0,
+      "display": "1800000",
+      "unit": null,
+      "metric": "fair_fee",
       "entity_type": "player",
       "entity_id": "rpbc9c6ffe21ee25",
       "entity_name": "Yasser Larouci",
       "source": "dugout_model:valuation",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_8ed6633ef38c082b": {
-      "value": 214900000.0,
-      "display": "214900000",
+    "ev_7e5faa8be5603935": {
+      "value": 168.0,
+      "display": "168",
+      "unit": null,
+      "metric": "height_cm",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_800038ba478a0f70": {
+      "value": 177300000.0,
+      "display": "177300000",
       "unit": null,
       "metric": "fair_fee_high",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_86e9e7d2aee2e1d5": {
+      "value": 0.31,
+      "display": "0.31",
+      "unit": null,
+      "metric": "goals_p90",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8b5ba82373ad1d6b": {
+      "value": "central midfield",
+      "display": "central midfield",
+      "unit": null,
+      "metric": "positions_played",
       "entity_type": "player",
       "entity_id": "rp360a26a0fc1f7f",
       "entity_name": "Pedri",
       "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8c7c71a78bb70646": {
+      "value": "FC Nantes",
+      "display": "FC Nantes",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d5367f940277ba8": {
+      "value": 0.2451,
+      "display": "0.25",
+      "unit": null,
+      "metric": "p_draw",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:le-mans:monaco",
+      "entity_name": "Le Mans v Monaco",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_8d70d4706d106471": {
+      "value": 0.17,
+      "display": "0.17",
+      "unit": null,
+      "metric": "goals_p90",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -2481,71 +2385,55 @@
       "status": "single_source",
       "cross_checks": []
     },
-    "ev_8f0c6f15d913efba": {
-      "value": 177300000.0,
-      "display": "177300000",
+    "ev_988d85672e5a45b8": {
+      "value": 4800000.0,
+      "display": "4800000",
       "unit": null,
       "metric": "fair_fee_high",
       "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
+      "entity_id": "rpbc9c6ffe21ee25",
+      "entity_name": "Yasser Larouci",
+      "source": "dugout_model:valuation",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_8fd2db749ffddb23": {
-      "value": "right",
-      "display": "right",
+    "ev_9acf443ac215ac41": {
+      "value": 80000000.0,
+      "display": "80000000",
       "unit": null,
-      "metric": "foot",
-      "entity_type": "player",
-      "entity_id": "rp360a26a0fc1f7f",
-      "entity_name": "Pedri",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9425f1fd04901052": {
-      "value": 168.0,
-      "display": "168",
-      "unit": null,
-      "metric": "height_cm",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_963319b46f28e4f0": {
-      "value": 0.0,
-      "display": "0",
-      "unit": null,
-      "metric": "assists_p90",
+      "metric": "market_value",
       "entity_type": "player",
       "entity_id": "rpcad5f86e137dd1",
       "entity_name": "Pau Cubarsí",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_967647700e09667f": {
+    "ev_9bbb7ca919d6f360": {
+      "value": 0.0,
+      "display": "0",
+      "unit": null,
+      "metric": "need_depth",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_a167bf202d5d11c4": {
       "value": 0.588,
       "display": "0.59",
       "unit": null,
@@ -2556,444 +2444,28 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_982fcfeca355e51b": {
-      "value": "attacking midfield, right winger",
-      "display": "attacking midfield, right winger",
-      "unit": null,
-      "metric": "positions_played",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_989423867c421e38": {
-      "value": 1100000.0,
-      "display": "1100000",
-      "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp242e3ea2a18037",
-      "entity_name": "Habib Diallo",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_98c93dc561810ee0": {
-      "value": "left",
-      "display": "left",
-      "unit": null,
-      "metric": "foot",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9cc8159efbf226e6": {
-      "value": 171.0,
-      "display": "171",
+    "ev_a1f79a0a55b60467": {
+      "value": 174.0,
+      "display": "174",
       "unit": null,
       "metric": "height_cm",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9ccd3e2bc2add8de": {
-      "value": 0.682,
-      "display": "0.68",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_9ea16cd849ec61bc": {
-      "value": 18.0,
-      "display": "18",
-      "unit": null,
-      "metric": "caps",
-      "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a2f9dd9969d9c0e9": {
-      "value": 107600000.0,
-      "display": "107600000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_a91788fd34ca4028": {
-      "value": 0.56,
-      "display": "0.56",
-      "unit": null,
-      "metric": "ga_pctile",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_aa76a7d0300a24e5": {
-      "value": 8500000.0,
-      "display": "8500000",
-      "unit": null,
-      "metric": "need_peer_best_value",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_aaf4d57529a12596": {
-      "value": "left",
-      "display": "left",
-      "unit": null,
-      "metric": "foot",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ad6be8a4f459cfaa": {
-      "value": 140000000.0,
-      "display": "140000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b168623ca3ed5560": {
-      "value": "La Liga",
-      "display": "La Liga",
-      "unit": null,
-      "metric": "ga_league",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b2a3ac8daf979a40": {
-      "value": 1.0,
-      "display": "1",
-      "unit": null,
-      "metric": "need_depth",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b2b065af004aedd1": {
-      "value": 0.453,
-      "display": "0.45",
-      "unit": null,
-      "metric": "minutes_share_now",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_b611153c507bfbd0": {
-      "value": 47.0,
-      "display": "47",
-      "unit": null,
-      "metric": "caps",
       "entity_type": "player",
       "entity_id": "rp360a26a0fc1f7f",
       "entity_name": "Pedri",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_b7c2ecd0de03a721": {
-      "value": "central midfield",
-      "display": "central midfield",
-      "unit": null,
-      "metric": "need",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ba08cf669a46efbd": {
-      "value": 25000000.0,
-      "display": "25000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ba564b05782f3ae4": {
-      "value": 18.8,
-      "display": "18.80",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c16a3dca7f7c89c1": {
-      "value": 60000000.0,
-      "display": "60000000",
-      "unit": null,
-      "metric": "market_value",
-      "entity_type": "player",
-      "entity_id": "rp3ddbd83f931315",
-      "entity_name": "Lennart Karl",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c2ea47503826a05c": {
-      "value": "Ligue 1",
-      "display": "Ligue 1",
-      "unit": null,
-      "metric": "ga_league",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c6294611d3bdfc40": {
-      "value": 0.04,
-      "display": "0.04",
-      "unit": null,
-      "metric": "goals_p90",
-      "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_c90f6e1f0a88286a": {
-      "value": 74400000.0,
-      "display": "74400000",
-      "unit": null,
-      "metric": "proj_value_4y",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ca76d4255ca7bf7a": {
-      "value": "FC Nantes",
-      "display": "FC Nantes",
-      "unit": null,
-      "metric": "candidate_club",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_cabf88ea2ac6462a": {
-      "value": 5700000.0,
-      "display": "5700000",
-      "unit": null,
-      "metric": "fair_fee_high",
-      "entity_type": "player",
-      "entity_id": "rp2cb5ef52d7883f",
-      "entity_name": "Raúl Torrente",
-      "source": "dugout_model:valuation",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_cba6e692e9d80879": {
-      "value": 23800000.0,
-      "display": "23800000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_d2cabecf38d57a59": {
-      "value": 4.0,
-      "display": "4",
-      "unit": null,
-      "metric": "need_wanted",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_d2edfbe5a1c067d1": {
-      "value": 0.0,
-      "display": "0",
-      "unit": null,
-      "metric": "assists_p90",
-      "entity_type": "player",
-      "entity_id": "rp524164ecc008ff",
-      "entity_name": "Tylel Tati",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_d4540f5992004b09": {
+    "ev_a350e9d67c57cd73": {
       "value": 7000000.0,
       "display": "7000000",
       "unit": null,
@@ -3004,156 +2476,60 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_d844a43d1917738b": {
-      "value": 11.0,
-      "display": "11",
+    "ev_a578587aa6d36db6": {
+      "value": "2026-11-08T16:15:00+00:00",
+      "display": "2026-11-08T16:15:00+00:00",
       "unit": null,
-      "metric": "league_goalsFor",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "metric": "kickoff_utc",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:le-mans:monaco",
+      "entity_name": "Le Mans v Monaco",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:41:52.228981+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
       "cross_checks": []
     },
-    "ev_d99629688b0a856a": {
-      "value": 192.0,
-      "display": "192",
+    "ev_a65249577877d2f9": {
+      "value": 59100000.0,
+      "display": "59100000",
       "unit": null,
-      "metric": "height_cm",
+      "metric": "proj_value_4y",
       "entity_type": "player",
       "entity_id": "rp524164ecc008ff",
       "entity_name": "Tylel Tati",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_dedc8f257e4c5193": {
-      "value": 22.1,
-      "display": "22.10",
-      "unit": null,
-      "metric": "age",
-      "entity_type": "player",
-      "entity_id": "rp8e5a5bb72faf75",
-      "entity_name": "Joao Neves",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_dfa2a34fe79b1222": {
-      "value": 44100000.0,
-      "display": "44100000",
+    "ev_a8f5087057f6c901": {
+      "value": 500000.0,
+      "display": "500000",
       "unit": null,
       "metric": "fair_fee_low",
       "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
+      "entity_id": "rpbc9c6ffe21ee25",
+      "entity_name": "Yasser Larouci",
+      "source": "dugout_model:valuation",
       "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_e2fcbd8bceb43091": {
-      "value": 1325.2,
-      "display": "1325.20",
-      "unit": null,
-      "metric": "elo",
-      "entity_type": "club",
-      "entity_id": "troyes",
-      "entity_name": "Troyes",
-      "source": "dugout_model:predictor",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_e6a40388e4980cf9": {
-      "value": 55400000.0,
-      "display": "55400000",
-      "unit": null,
-      "metric": "fair_fee",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ea59e8c0d3edad5a": {
-      "value": 29800000.0,
-      "display": "29800000",
-      "unit": null,
-      "metric": "fair_fee_low",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_eb24db64a0e37890": {
-      "value": "centre-back",
-      "display": "centre-back",
-      "unit": null,
-      "metric": "positions_played",
-      "entity_type": "player",
-      "entity_id": "rpcad5f86e137dd1",
-      "entity_name": "Pau Cubarsí",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ed2e8f9f0860f22e": {
-      "value": "centre-back",
-      "display": "centre-back",
-      "unit": null,
-      "metric": "positions_played",
-      "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
-      "source": "dugout_model:scout",
-      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
-      "query_kind": "sql",
-      "status": "model_output",
-      "cross_checks": []
-    },
-    "ev_ed9f3eeac8ff6e58": {
+    "ev_a9afda3b54b8790b": {
       "value": 4.0,
       "display": "4",
       "unit": null,
@@ -3164,12 +2540,188 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f0346877bc2eee67": {
+    "ev_ab65d9bd9b80cf25": {
+      "value": 0.39,
+      "display": "0.39",
+      "unit": null,
+      "metric": "assists_p90",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ac1627f41a4d4c08": {
+      "value": 0.5848,
+      "display": "0.58",
+      "unit": null,
+      "metric": "p_away_win",
+      "entity_type": "match",
+      "entity_id": "ligue_1:2026-27:le-mans:monaco",
+      "entity_name": "Le Mans v Monaco",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor_ligue_1.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_af0ae1a33a3b0338": {
+      "value": 29800000.0,
+      "display": "29800000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_afd340048bf60f64": {
+      "value": "left",
+      "display": "left",
+      "unit": null,
+      "metric": "foot",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b07655e9d9b0846e": {
+      "value": 1100000.0,
+      "display": "1100000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp2cb5ef52d7883f",
+      "entity_name": "Raúl Torrente",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b44d6616cc97b180": {
+      "value": "Ligue 1",
+      "display": "Ligue 1",
+      "unit": null,
+      "metric": "ga_league",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b589e0297b9d6aeb": {
+      "value": 0.135,
+      "display": "0.14",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rp2cb5ef52d7883f",
+      "entity_name": "Raúl Torrente",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b6ee80657af7dc1a": {
+      "value": 2500000.0,
+      "display": "2500000",
+      "unit": null,
+      "metric": "need_best_value",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_b719b50c7d694ce1": {
+      "value": 44100000.0,
+      "display": "44100000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bb7d70e3610e3f69": {
+      "value": 1337.6,
+      "display": "1337.60",
+      "unit": null,
+      "metric": "elo",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "dugout_model:predictor",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/predictor.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bbc340f7ec336053": {
+      "value": 0.0,
+      "display": "0",
+      "unit": null,
+      "metric": "assists_p90",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bc1cbbd5dfb1e2b8": {
       "value": 27.0,
       "display": "27",
       "unit": null,
@@ -3180,12 +2732,108 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f599412e175d2b16": {
+    "ev_bd0ab9ff94f53f2f": {
+      "value": 0.97,
+      "display": "0.97",
+      "unit": null,
+      "metric": "ga_pctile",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_bff6dbe2cbb02d39": {
+      "value": 107900000.0,
+      "display": "107900000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c1c71c2703d95cff": {
+      "value": 23.9,
+      "display": "23.90",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c46ac92cc7848201": {
+      "value": "centre-back",
+      "display": "centre-back",
+      "unit": null,
+      "metric": "positions_played",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_c9ccbcb6db6b641c": {
+      "value": 214900000.0,
+      "display": "214900000",
+      "unit": null,
+      "metric": "fair_fee_high",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ca9392cd79c0e007": {
+      "value": 12800000.0,
+      "display": "12800000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp524164ecc008ff",
+      "entity_name": "Tylel Tati",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ca99e86bc452fb0f": {
       "value": 0.97,
       "display": "0.97",
       "unit": null,
@@ -3196,60 +2844,60 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f77bb47890b0d110": {
-      "value": 0.13,
-      "display": "0.13",
+    "ev_cab022c7cbebaf3a": {
+      "value": "La Liga",
+      "display": "La Liga",
       "unit": null,
-      "metric": "goals_p90",
+      "metric": "ga_league",
       "entity_type": "player",
       "entity_id": "rp6fcca4e313f494",
       "entity_name": "Dean Huijsen",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_f8fa5293161d076c": {
-      "value": 15.0,
-      "display": "15",
+    "ev_cc8dcbb53e6d2f32": {
+      "value": 22.1,
+      "display": "22.10",
       "unit": null,
-      "metric": "league_position",
-      "entity_type": "club",
-      "entity_id": "le-mans",
-      "entity_name": "Le Mans",
-      "source": "football_data_org",
-      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
-      "source_tier": 3,
-      "fetched_at": "2026-10-31T08:41:52.228981+00:00",
-      "query_kind": "http_json",
-      "status": "single_source",
-      "cross_checks": []
-    },
-    "ev_fc9a60b3de6909d2": {
-      "value": 7.0,
-      "display": "7",
-      "unit": null,
-      "metric": "caps",
+      "metric": "age",
       "entity_type": "player",
-      "entity_id": "rp6fcca4e313f494",
-      "entity_name": "Dean Huijsen",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
     },
-    "ev_ffd4f7f4156daea1": {
+    "ev_ccd25fcd6420c1fa": {
+      "value": 0.57,
+      "display": "0.57",
+      "unit": null,
+      "metric": "assists_p90",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_cdbc9509da42f9ce": {
       "value": 0.858,
       "display": "0.86",
       "unit": null,
@@ -3260,7 +2908,359 @@
       "source": "dugout_model:scout",
       "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
       "source_tier": 3,
-      "fetched_at": "2026-10-31T08:47:16.149282+00:00",
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d0bc6f9e1fbf8155": {
+      "value": 114900000.0,
+      "display": "114900000",
+      "unit": null,
+      "metric": "proj_value_4y",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d184e0b23ea15ffe": {
+      "value": 19.8,
+      "display": "19.80",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d5e433d23fde4f25": {
+      "value": 18.0,
+      "display": "18",
+      "unit": null,
+      "metric": "league_goalsAgainst",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings?season=2026",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:33:29.411697+00:00",
+      "query_kind": "http_json",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_d68e8d60808e4c41": {
+      "value": 107600000.0,
+      "display": "107600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d6ce2e232ae7a477": {
+      "value": 18.7,
+      "display": "18.70",
+      "unit": null,
+      "metric": "age",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_d73e8cddea0fefa3": {
+      "value": "central midfield, defensive midfield",
+      "display": "central midfield, defensive midfield",
+      "unit": null,
+      "metric": "positions_played",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_dce42b9b83e4718a": {
+      "value": 58200000.0,
+      "display": "58200000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e15837dd20609e34": {
+      "value": "La Liga",
+      "display": "La Liga",
+      "unit": null,
+      "metric": "ga_league",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e1a3961d4786e22d": {
+      "value": 0.32,
+      "display": "0.32",
+      "unit": null,
+      "metric": "ga_pctile",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e290c7fe425d2f81": {
+      "value": 0.568,
+      "display": "0.57",
+      "unit": null,
+      "metric": "minutes_share_now",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e30ad4c28d21b1ea": {
+      "value": 3.0,
+      "display": "3",
+      "unit": null,
+      "metric": "caps",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e57a8ada729a4697": {
+      "value": 18.0,
+      "display": "18",
+      "unit": null,
+      "metric": "caps",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e81922a26e851de6": {
+      "value": 2600000.0,
+      "display": "2600000",
+      "unit": null,
+      "metric": "fair_fee",
+      "entity_type": "player",
+      "entity_id": "rp242e3ea2a18037",
+      "entity_name": "Habib Diallo",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_e97000d1c6b2e26a": {
+      "value": "Bundesliga",
+      "display": "Bundesliga",
+      "unit": null,
+      "metric": "ga_league",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_efad01d8f8ae3d2a": {
+      "value": 60000000.0,
+      "display": "60000000",
+      "unit": null,
+      "metric": "market_value",
+      "entity_type": "player",
+      "entity_id": "rp3ddbd83f931315",
+      "entity_name": "Lennart Karl",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f2ae05c96907a9f3": {
+      "value": 70300000.0,
+      "display": "70300000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp360a26a0fc1f7f",
+      "entity_name": "Pedri",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f62ea80dc2a25322": {
+      "value": 0.126,
+      "display": "0.13",
+      "unit": null,
+      "metric": "sale_likelihood",
+      "entity_type": "player",
+      "entity_id": "rpbc9c6ffe21ee25",
+      "entity_name": "Yasser Larouci",
+      "source": "dugout_model:realism",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/realism.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_f6b4e82f4e0a495a": {
+      "value": "LDLLW",
+      "display": "LDLLW",
+      "unit": null,
+      "metric": "league_form",
+      "entity_type": "club",
+      "entity_id": "le-mans",
+      "entity_name": "Le Mans",
+      "source": "football_data_org",
+      "source_url": "https://api.football-data.org/v4/competitions/FL1/standings",
+      "source_tier": 2,
+      "fetched_at": "2026-11-01T09:33:29.411697+00:00",
+      "query_kind": "sql",
+      "status": "single_source",
+      "cross_checks": []
+    },
+    "ev_f96a3684b04aea8a": {
+      "value": 1100000.0,
+      "display": "1100000",
+      "unit": null,
+      "metric": "fair_fee_low",
+      "entity_type": "player",
+      "entity_id": "rp242e3ea2a18037",
+      "entity_name": "Habib Diallo",
+      "source": "dugout_model:valuation",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/docs/backtests/valuation.md",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fa60aa2baae9ae48": {
+      "value": "FC Barcelona",
+      "display": "FC Barcelona",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rpcad5f86e137dd1",
+      "entity_name": "Pau Cubarsí",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_fe893da50bc176bd": {
+      "value": 171.0,
+      "display": "171",
+      "unit": null,
+      "metric": "height_cm",
+      "entity_type": "player",
+      "entity_id": "rp8e5a5bb72faf75",
+      "entity_name": "Joao Neves",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
+      "query_kind": "sql",
+      "status": "model_output",
+      "cross_checks": []
+    },
+    "ev_ffb1de46d5e22e16": {
+      "value": "Real Madrid",
+      "display": "Real Madrid",
+      "unit": null,
+      "metric": "candidate_club",
+      "entity_type": "player",
+      "entity_id": "rp6fcca4e313f494",
+      "entity_name": "Dean Huijsen",
+      "source": "dugout_model:scout",
+      "source_url": "https://github.com/delta96040/dugout/blob/main/packages/models/src/dugout_models/market.py",
+      "source_tier": 3,
+      "fetched_at": "2026-11-01T09:49:57.072770+00:00",
       "query_kind": "sql",
       "status": "model_output",
       "cross_checks": []
@@ -3269,97 +3269,97 @@
   "key_stats": {
     "club": [
       {
-        "stat": "ev_f8fa5293161d076c",
-        "display": "15th",
+        "stat": "ev_52b96b96126b04d0",
+        "display": "17th",
         "label": "league position",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_800370298a652eb1",
+        "stat": "ev_30bd11b45c269b0b",
         "display": "7",
         "label": "league points",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_d844a43d1917738b",
+        "stat": "ev_6a07120ee2eee8e6",
         "display": "11",
         "label": "league goals scored",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_45a9e5db22d80ee5",
-        "display": "16",
+        "stat": "ev_d5e433d23fde4f25",
+        "display": "18",
         "label": "league goals conceded",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_6078cecbf707b806",
-        "display": "DLLWD",
+        "stat": "ev_f6b4e82f4e0a495a",
+        "display": "LDLLW",
         "label": "recent league results, oldest first",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_3ced65f3e3942977",
-        "display": "1351",
+        "stat": "ev_bb7d70e3610e3f69",
+        "display": "1338",
         "label": "Elo rating (dugout's own)",
         "subject": "Le Mans"
       }
     ],
     "match": [
       {
-        "stat": "ev_27e5f7ef68ef86dc",
-        "display": "31 October 2026",
+        "stat": "ev_a578587aa6d36db6",
+        "display": "8 November 2026",
         "label": "kick-off date",
-        "subject": "Troyes v Le Mans"
+        "subject": "Le Mans v Monaco"
       },
       {
-        "stat": "ev_0fd7ec861a0b5067",
-        "display": "41%",
-        "label": "probability Troyes win",
-        "subject": "Troyes"
-      },
-      {
-        "stat": "ev_422860b38fc21c30",
-        "display": "27%",
-        "label": "probability of a draw",
-        "subject": "Troyes v Le Mans"
-      },
-      {
-        "stat": "ev_82920d564828ba5b",
-        "display": "32%",
+        "stat": "ev_0c2fff3fd3a8e2f7",
+        "display": "17%",
         "label": "probability Le Mans win",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_3ced65f3e3942977",
-        "display": "1351",
+        "stat": "ev_8d5367f940277ba8",
+        "display": "25%",
+        "label": "probability of a draw",
+        "subject": "Le Mans v Monaco"
+      },
+      {
+        "stat": "ev_ac1627f41a4d4c08",
+        "display": "58%",
+        "label": "probability Monaco win",
+        "subject": "Monaco"
+      },
+      {
+        "stat": "ev_bb7d70e3610e3f69",
+        "display": "1338",
         "label": "Elo rating (dugout's own)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_e2fcbd8bceb43091",
-        "display": "1325",
+        "stat": "ev_745f73e73a16cd1b",
+        "display": "1612",
         "label": "Elo rating (dugout's own)",
-        "subject": "Troyes"
+        "subject": "Monaco"
       }
     ],
     "lineup": [],
     "news": [],
     "transfer": [
       {
-        "stat": "ev_515095a05a2c176f",
+        "stat": "ev_b589e0297b9d6aeb",
         "display": "14%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Raúl Torrente"
       },
       {
-        "stat": "ev_676ac60ca5caa7a4",
+        "stat": "ev_f62ea80dc2a25322",
         "display": "13%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Yasser Larouci"
       },
       {
-        "stat": "ev_0e5c56f98cb26702",
+        "stat": "ev_437bff58e5ee4ecc",
         "display": "10%",
         "label": "estimated chance of being sold for a fee in a window (no academy or contract-length signal)",
         "subject": "Bilal Brahimi"
@@ -3371,19 +3371,19 @@
         "subject": "Yasser Larouci"
       },
       {
-        "stat": "ev_765e3d1d6c7ec36f",
+        "stat": "ev_7de747e0f5990ac8",
         "display": "€1.8m",
         "label": "estimated fair fee if sold to another Ligue 1 club",
         "subject": "Yasser Larouci"
       },
       {
-        "stat": "ev_4402a16129abf60d",
+        "stat": "ev_a8f5087057f6c901",
         "display": "€0.5m",
         "label": "likely low end of the estimated fair fee if sold to another Ligue 1 club",
         "subject": "Yasser Larouci"
       },
       {
-        "stat": "ev_8eaa4eae291e91e0",
+        "stat": "ev_988d85672e5a45b8",
         "display": "€4.8m",
         "label": "likely high end of the estimated fair fee if sold to another Ligue 1 club",
         "subject": "Yasser Larouci"
@@ -3395,19 +3395,19 @@
         "subject": "Habib Diallo"
       },
       {
-        "stat": "ev_49c4b520e0d86a13",
+        "stat": "ev_e81922a26e851de6",
         "display": "€2.6m",
         "label": "estimated fair fee if sold to another Ligue 1 club",
         "subject": "Habib Diallo"
       },
       {
-        "stat": "ev_989423867c421e38",
+        "stat": "ev_f96a3684b04aea8a",
         "display": "€1.1m",
         "label": "likely low end of the estimated fair fee if sold to another Ligue 1 club",
         "subject": "Habib Diallo"
       },
       {
-        "stat": "ev_514782d33a2a6f55",
+        "stat": "ev_4ac3de6bfbee9991",
         "display": "€5.5m",
         "label": "likely high end of the estimated fair fee if sold to another Ligue 1 club",
         "subject": "Habib Diallo"
@@ -3419,19 +3419,19 @@
         "subject": "Raúl Torrente"
       },
       {
-        "stat": "ev_26c0d935c3897f34",
+        "stat": "ev_670416ed971cc372",
         "display": "€2.7m",
         "label": "estimated fair fee if sold to another Ligue 1 club",
         "subject": "Raúl Torrente"
       },
       {
-        "stat": "ev_07ab28a8a759160e",
+        "stat": "ev_b07655e9d9b0846e",
         "display": "€1.1m",
         "label": "likely low end of the estimated fair fee if sold to another Ligue 1 club",
         "subject": "Raúl Torrente"
       },
       {
-        "stat": "ev_cabf88ea2ac6462a",
+        "stat": "ev_57450f78d4b2405f",
         "display": "€5.7m",
         "label": "likely high end of the estimated fair fee if sold to another Ligue 1 club",
         "subject": "Raúl Torrente"
@@ -3439,643 +3439,643 @@
     ],
     "scout": [
       {
-        "stat": "ev_b7c2ecd0de03a721",
+        "stat": "ev_03f78ba7ffbd1a10",
         "display": "central midfield",
         "label": "squad need, priority one",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_3d46dcc29336ee05",
+        "stat": "ev_9bbb7ca919d6f360",
         "display": "0",
         "label": "players for the position, veterans aside (need one)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_d2cabecf38d57a59",
+        "stat": "ev_504dddac7d7d7bd7",
         "display": "4",
         "label": "players a squad carries there (need one)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_aa76a7d0300a24e5",
+        "stat": "ev_26e9214528016422",
         "display": "€8.5m",
         "label": "similar squads' best option's market value (need one)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_dedc8f257e4c5193",
+        "stat": "ev_cc8dcbb53e6d2f32",
         "display": "22",
         "label": "age (gem target)",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_0ba787ee3d7cd5ab",
+        "stat": "ev_7980fab790eac96b",
         "display": "Paris Saint-Germain",
         "label": "current club",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_9ccd3e2bc2add8de",
+        "stat": "ev_5e2cf9e6a96a0350",
         "display": "68%",
         "label": "share of his club's minutes over the last year",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_0cbd0c7aa9b95837",
+        "stat": "ev_8d70d4706d106471",
         "display": "0.17",
         "label": "league goals per full match",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_6f6821d4b30526aa",
+        "stat": "ev_58a55ad3e4a1f96a",
         "display": "0.08",
         "label": "league assists per full match",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_a91788fd34ca4028",
+        "stat": "ev_153fe5712fbfdb60",
         "display": "56%",
         "label": "share of players at his position in his league he beats for goals and assists per full match",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_c2ea47503826a05c",
+        "stat": "ev_3d92de6d1a82d2ba",
         "display": "Ligue 1",
         "label": "league of that comparison",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_68185a0eedac57c3",
+        "stat": "ev_0517dbae3d540e74",
         "display": "right",
         "label": "stronger foot",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_9cc8159efbf226e6",
+        "stat": "ev_fe893da50bc176bd",
         "display": "171",
         "label": "height in centimetres",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_f0346877bc2eee67",
+        "stat": "ev_bc1cbbd5dfb1e2b8",
         "display": "27",
         "label": "international caps",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_350e1f4cad365e44",
+        "stat": "ev_d73e8cddea0fefa3",
         "display": "central midfield, defensive midfield",
         "label": "positions he starts at",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_ad6be8a4f459cfaa",
+        "stat": "ev_603b6af7bd4fdb82",
         "display": "€140m",
         "label": "market value",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_31e7a22ed3b9a8db",
+        "stat": "ev_bff6dbe2cbb02d39",
         "display": "€108m",
         "label": "estimated fair fee",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_131193da0c7bba99",
+        "stat": "ev_dce42b9b83e4718a",
         "display": "€58.2m",
         "label": "likely low end of the estimated fair fee",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_6584214b5100d21a",
+        "stat": "ev_22d2235e0fa2f8be",
         "display": "€178m",
         "label": "likely high end of the estimated fair fee",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_3627682db28c3d78",
+        "stat": "ev_2e948c75f52ab3f9",
         "display": "€120m",
         "label": "projected market value in a few seasons",
         "subject": "João Neves"
       },
       {
-        "stat": "ev_20815a9f01faf7c6",
+        "stat": "ev_d6ce2e232ae7a477",
         "display": "19",
         "label": "age (gem target)",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_5d921c7a3a17151c",
+        "stat": "ev_62ecbb4588fa4c7e",
         "display": "Bayern Munich",
         "label": "current club",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_88810ff53a14c058",
+        "stat": "ev_38c128002f09767e",
         "display": "44%",
         "label": "share of his club's minutes over the last year",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_28005665a10388d8",
+        "stat": "ev_86e9e7d2aee2e1d5",
         "display": "0.31",
         "label": "league goals per full match",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_4061570a917a5483",
+        "stat": "ev_ab65d9bd9b80cf25",
         "display": "0.39",
         "label": "league assists per full match",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_5622b4adf363c387",
+        "stat": "ev_bd0ab9ff94f53f2f",
         "display": "97%",
         "label": "share of players at his position in his league he beats for goals and assists per full match",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_6858ffb73886feb3",
+        "stat": "ev_e97000d1c6b2e26a",
         "display": "Bundesliga",
         "label": "league of that comparison",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_aaf4d57529a12596",
+        "stat": "ev_afd340048bf60f64",
         "display": "left",
         "label": "stronger foot",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_9425f1fd04901052",
+        "stat": "ev_7e5faa8be5603935",
         "display": "168",
         "label": "height in centimetres",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_81bb3823dc586be1",
+        "stat": "ev_e30ad4c28d21b1ea",
         "display": "3",
         "label": "international caps",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_982fcfeca355e51b",
+        "stat": "ev_3914fc64ab928fba",
         "display": "attacking midfield, right winger",
         "label": "positions he starts at",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_c16a3dca7f7c89c1",
+        "stat": "ev_efad01d8f8ae3d2a",
         "display": "€60.0m",
         "label": "market value",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_a2f9dd9969d9c0e9",
+        "stat": "ev_d68e8d60808e4c41",
         "display": "€108m",
         "label": "estimated fair fee",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_25b254d25bd2e061",
+        "stat": "ev_575c32efc1d6689d",
         "display": "€58.0m",
         "label": "likely low end of the estimated fair fee",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_8f0c6f15d913efba",
+        "stat": "ev_800038ba478a0f70",
         "display": "€177m",
         "label": "likely high end of the estimated fair fee",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_0f347d212f66569f",
+        "stat": "ev_d0bc6f9e1fbf8155",
         "display": "€115m",
         "label": "projected market value in a few seasons",
         "subject": "Lennart Karl"
       },
       {
-        "stat": "ev_1baa9c709db7e888",
+        "stat": "ev_c1c71c2703d95cff",
         "display": "24",
         "label": "age (gem target)",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_4867d73d0da17c0b",
+        "stat": "ev_4279b7dbf7ee964f",
         "display": "FC Barcelona",
         "label": "current club",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_5c3a407a40a421de",
+        "stat": "ev_0e1064227574b1aa",
         "display": "56%",
         "label": "share of his club's minutes over the last year",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_6a46a6ef50e83710",
+        "stat": "ev_158256fce9d9e9b0",
         "display": "0.00",
         "label": "league goals per full match",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_4fc4daae32b395c5",
+        "stat": "ev_ccd25fcd6420c1fa",
         "display": "0.57",
         "label": "league assists per full match",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_628212aa0d8632cd",
+        "stat": "ev_7ce8ec29ba9cca12",
         "display": "94%",
         "label": "share of players at his position in his league he beats for goals and assists per full match",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_3ea4c2bc2d6f3710",
+        "stat": "ev_12c9587c49794258",
         "display": "La Liga",
         "label": "league of that comparison",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_8fd2db749ffddb23",
+        "stat": "ev_7b3c95e17132e5ec",
         "display": "right",
         "label": "stronger foot",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_65b5ada4da70d644",
+        "stat": "ev_a1f79a0a55b60467",
         "display": "174",
         "label": "height in centimetres",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_b611153c507bfbd0",
+        "stat": "ev_62ddc9b2ec64c5b5",
         "display": "47",
         "label": "international caps",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_003917f2379ab868",
+        "stat": "ev_8b5ba82373ad1d6b",
         "display": "central midfield",
         "label": "positions he starts at",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_109141aeb6fba59f",
+        "stat": "ev_6b70b3219dabe09e",
         "display": "€150m",
         "label": "market value",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_69c93ffeac4b5f38",
+        "stat": "ev_00eca9eeb1543aba",
         "display": "€130m",
         "label": "estimated fair fee",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_1a40c328ded106a7",
+        "stat": "ev_f2ae05c96907a9f3",
         "display": "€70.3m",
         "label": "likely low end of the estimated fair fee",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_8ed6633ef38c082b",
+        "stat": "ev_c9ccbcb6db6b641c",
         "display": "€215m",
         "label": "likely high end of the estimated fair fee",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_49d778c492618313",
+        "stat": "ev_67e8d165d0f2a443",
         "display": "€104m",
         "label": "projected market value in a few seasons",
         "subject": "Pedri"
       },
       {
-        "stat": "ev_416f7fe4b33911c4",
+        "stat": "ev_32aca4c65b45c7d7",
         "display": "centre-back",
         "label": "squad need, priority two",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_b2a3ac8daf979a40",
+        "stat": "ev_2e840f54ae30ee7c",
         "display": "1",
         "label": "players for the position, veterans aside (need two)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_0b3b8d13d18e525f",
+        "stat": "ev_171f4cab7cec31cc",
         "display": "4",
         "label": "players a squad carries there (need two)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_20292d9062f65f87",
+        "stat": "ev_720c37a96ddfe6a5",
         "display": "Raúl Torrente",
         "label": "best option there (need two)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_18a848dca385c6d8",
+        "stat": "ev_b6ee80657af7dc1a",
         "display": "€2.5m",
         "label": "best option's market value (need two)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_d4540f5992004b09",
+        "stat": "ev_a350e9d67c57cd73",
         "display": "€7.0m",
         "label": "similar squads' best option's market value (need two)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_967647700e09667f",
+        "stat": "ev_a167bf202d5d11c4",
         "display": "59%",
         "label": "share of the options who are veterans (need two)",
         "subject": "Le Mans"
       },
       {
-        "stat": "ev_1f4762ab8e2818fe",
+        "stat": "ev_d184e0b23ea15ffe",
         "display": "20",
         "label": "age (gem target, second need)",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_09c1490ba6e79ebf",
+        "stat": "ev_fa60aa2baae9ae48",
         "display": "FC Barcelona",
         "label": "current club",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_ffd4f7f4156daea1",
+        "stat": "ev_cdbc9509da42f9ce",
         "display": "86%",
         "label": "share of his club's minutes over the last year",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_c6294611d3bdfc40",
+        "stat": "ev_12dc4bc47a63ce7e",
         "display": "0.04",
         "label": "league goals per full match",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_963319b46f28e4f0",
+        "stat": "ev_bbc340f7ec336053",
         "display": "0.00",
         "label": "league assists per full match",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_34474abf0f98db1b",
+        "stat": "ev_e1a3961d4786e22d",
         "display": "32%",
         "label": "share of players at his position in his league he beats for goals and assists per full match",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_15384d122ab60b08",
+        "stat": "ev_e15837dd20609e34",
         "display": "La Liga",
         "label": "league of that comparison",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_1d4f996c34ddfa85",
+        "stat": "ev_17d5f5578e951cff",
         "display": "right",
         "label": "stronger foot",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_83978617ae8806a3",
+        "stat": "ev_52b84def4549f843",
         "display": "184",
         "label": "height in centimetres",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_9ea16cd849ec61bc",
+        "stat": "ev_e57a8ada729a4697",
         "display": "18",
         "label": "international caps",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_eb24db64a0e37890",
+        "stat": "ev_c46ac92cc7848201",
         "display": "centre-back",
         "label": "positions he starts at",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_6469399879a5f581",
+        "stat": "ev_9acf443ac215ac41",
         "display": "€80.0m",
         "label": "market value",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_5bc3cd19b9856b0d",
+        "stat": "ev_69465255ea891be8",
         "display": "€81.8m",
         "label": "estimated fair fee",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_dfa2a34fe79b1222",
+        "stat": "ev_b719b50c7d694ce1",
         "display": "€44.1m",
         "label": "likely low end of the estimated fair fee",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_2eef01f3aa9450bf",
+        "stat": "ev_4008e9a8c2463613",
         "display": "€135m",
         "label": "likely high end of the estimated fair fee",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_6c26a13a10d2ee41",
+        "stat": "ev_7b15886c9d76b16e",
         "display": "€95.2m",
         "label": "projected market value in a few seasons",
         "subject": "Pau Cubarsí"
       },
       {
-        "stat": "ev_2f353cd6c0cfe95d",
+        "stat": "ev_68917672728f82d4",
         "display": "22",
         "label": "age (gem target, second need)",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_0cb4ac1a3279713b",
+        "stat": "ev_ffb1de46d5e22e16",
         "display": "Real Madrid",
         "label": "current club",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_162c975f004b2f2f",
+        "stat": "ev_e290c7fe425d2f81",
         "display": "57%",
         "label": "share of his club's minutes over the last year",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_f77bb47890b0d110",
+        "stat": "ev_15f205bcbdf8e4c1",
         "display": "0.13",
         "label": "league goals per full match",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_51ea402c99f1ec78",
+        "stat": "ev_486cf325a5c7bbfb",
         "display": "0.07",
         "label": "league assists per full match",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_f599412e175d2b16",
+        "stat": "ev_ca99e86bc452fb0f",
         "display": "97%",
         "label": "share of players at his position in his league he beats for goals and assists per full match",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_b168623ca3ed5560",
+        "stat": "ev_cab022c7cbebaf3a",
         "display": "La Liga",
         "label": "league of that comparison",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_69f9bd95c0fc9d1d",
+        "stat": "ev_602bd39edb2ed453",
         "display": "both",
         "label": "stronger foot",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_05c14e90ce2c8548",
+        "stat": "ev_7bae43194464db60",
         "display": "197",
         "label": "height in centimetres",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_fc9a60b3de6909d2",
+        "stat": "ev_58b5f79e1080aed5",
         "display": "7",
         "label": "international caps",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_ed2e8f9f0860f22e",
+        "stat": "ev_080ca10868906ea5",
         "display": "centre-back",
         "label": "positions he starts at",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_86fa67e4327b7fdf",
+        "stat": "ev_26048f6190a95e25",
         "display": "€60.0m",
         "label": "market value",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_e6a40388e4980cf9",
+        "stat": "ev_0e4033ee369f4dce",
         "display": "€55.4m",
         "label": "estimated fair fee",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_ea59e8c0d3edad5a",
+        "stat": "ev_af0ae1a33a3b0338",
         "display": "€29.8m",
         "label": "likely low end of the estimated fair fee",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_3544fb9879a7178a",
+        "stat": "ev_2ce75dcdc6ab1818",
         "display": "€91.3m",
         "label": "likely high end of the estimated fair fee",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_c90f6e1f0a88286a",
+        "stat": "ev_6e3936e91a21de23",
         "display": "€74.4m",
         "label": "projected market value in a few seasons",
         "subject": "Dean Huijsen"
       },
       {
-        "stat": "ev_ba564b05782f3ae4",
+        "stat": "ev_42cfa199133a635c",
         "display": "19",
         "label": "age (gem target, second need)",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_ca76d4255ca7bf7a",
+        "stat": "ev_8c7c71a78bb70646",
         "display": "FC Nantes",
         "label": "current club",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_b2b065af004aedd1",
+        "stat": "ev_5bd24a9bc1f3ae92",
         "display": "45%",
         "label": "share of his club's minutes over the last year",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_36b74b9337079510",
+        "stat": "ev_262490e5174b2141",
         "display": "0.00",
         "label": "league goals per full match",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_d2edfbe5a1c067d1",
+        "stat": "ev_6bac34376fc392f2",
         "display": "0.00",
         "label": "league assists per full match",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_66af3e081e4ddd7f",
+        "stat": "ev_51990a2689af879e",
         "display": "0%",
         "label": "share of players at his position in his league he beats for goals and assists per full match",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_369eee3d5b6a6d45",
+        "stat": "ev_b44d6616cc97b180",
         "display": "Ligue 1",
         "label": "league of that comparison",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_98c93dc561810ee0",
+        "stat": "ev_1ddc6d5dc9c2b9ac",
         "display": "left",
         "label": "stronger foot",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_d99629688b0a856a",
+        "stat": "ev_7b8ce9eb517865a9",
         "display": "192",
         "label": "height in centimetres",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_ed9f3eeac8ff6e58",
+        "stat": "ev_a9afda3b54b8790b",
         "display": "4",
         "label": "international caps",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_023816e029d0ee3a",
+        "stat": "ev_25e967acf3416b41",
         "display": "centre-back",
         "label": "positions he starts at",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_ba08cf669a46efbd",
+        "stat": "ev_33beffa7ef81339d",
         "display": "€25.0m",
         "label": "market value",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_cba6e692e9d80879",
+        "stat": "ev_2e5e0019aa5b1ece",
         "display": "€23.8m",
         "label": "estimated fair fee",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_19c95bee0cfde13a",
+        "stat": "ev_ca9392cd79c0e007",
         "display": "€12.8m",
         "label": "likely low end of the estimated fair fee",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_854e8decdd527ca2",
+        "stat": "ev_6c588a5b2270b2a7",
         "display": "€39.2m",
         "label": "likely high end of the estimated fair fee",
         "subject": "Tylel Tati"
       },
       {
-        "stat": "ev_741f6698b23044b4",
+        "stat": "ev_a65249577877d2f9",
         "display": "€59.1m",
         "label": "projected market value in a few seasons",
         "subject": "Tylel Tati"
