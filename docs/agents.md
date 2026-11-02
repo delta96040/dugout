@@ -28,8 +28,10 @@ question ─► Sporting Director: route (keywords) ─┬─► Club & Tactics 
    unknown code, or a cited number in a sentence that does not name its subject and metric. One retry with the
    errors, then the deterministic template sentences. The site records which sections an LLM wrote.
 3. **The LLM** is any OpenAI-compatible endpoint serving an open-weight model. `LLM_CHAIN` lists
-   `<provider>:<model>` entries tried in order: Groq's free tier, then OpenRouter's, then a local Ollama model
-   (`qwen2.5:3b`). Entries without a key are skipped; the choice is benchmarked in docs/backtests/writer_llm.md.
+   `<provider>:<model>` entries tried in order: Groq's free tier, then OpenRouter's, then local Ollama models:
+   `dugout-writer-1.5b`, a LoRA fine-tune of Qwen2.5-1.5B on notes that passed this gate (docs/backtests/writer_finetune.md,
+   [on the Hub](https://huggingface.co/dhrxvie/dugout-writer-qwen2.5-1.5b)), then `qwen2.5:3b`. Entries without a key
+   or model are skipped; the choice is benchmarked in docs/backtests/writer_llm.md.
    Without an LLM every section is written from templates; nothing else changes.
 
 ## Stat Auditor (no LLM)

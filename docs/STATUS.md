@@ -451,6 +451,28 @@ each club's next match; error replies are never cached (#28). Skipped: Le Havre 
 Paderborn (no formation fits). Keep total calls well under 100/day (code caps at 90).
 
 **Usage guard:** scheduled task `dugout-usage-guard` (every 20 min) stops all sessions at 93% weekly usage.
+- **Fine-tuned writer (2026-10-20, branch `writer-finetune`):** docs/backtests/writer_finetune.md (résumé summary on top).
+  - `dugout-agents finetune-data`: production writer prompts (5 written sections, director summary, player
+    questions; 2,448 for 102 train/val clubs, 12 test clubs held out by league) -> teacher notes kept only if they
+    pass the writer checks and `graph.gate` whole; targets keep fact codes, no digits. Online teacher (Groq chain) or
+    offline: `--export-prompts` (with fact cards) -> `tools/finetune/teach.py` on Kaggle -> `--import-replies`.
+  - Teacher: Qwen3.8-27B. Groq caps it at 200k tokens/day (~80 requests), so 658 of the 745 notes came from the same
+    Apache-2.0 weights (ggml-org Q4_K_M, pinned revision) on llama.cpp b11330 across Kaggle's 2x T4 (7 h, 2,998
+    samples, best of two that passes). 705 train / 40 val.
+  - LoRA r16 on Qwen2.5-1.5B-Instruct, 3 epochs, one T4, 55 min (`tools/finetune/train.py`, pinned, seed 7); val loss
+    0.761 -> 0.235; q4_K_M GGUF built in the kernel. Public notebooks dhruv9604/dugout-writer-lora-1-5b and
+    dhruv9604/dugout-writer-teacher; datasets private (headlines). Model: huggingface.co/dhrxvie/dugout-writer-qwen2.5-1.5b.
+  - bench-writer on the 12 held-out clubs (50 notes): fine-tune 96% accepted / 82% first try / 0 stray-number drafts /
+    19 s on CPU; Groq Qwen 66% / 40% / 1 / 14 s (`--patient`, 12 h of rate-limit waits excluded); qwen2.5:3b 44% / 20%
+    / 10 / 62 s; base 1.5B 32% / 24% / 24 / 33 s. bench-writer now applies scout's writer_facts cap and skips the
+    lineup (as production).
+  - `LLM_CHAIN` default: `local:dugout-writer-1.5b` before `local:qwen2.5:3b` (a model not pulled -> 404 -> next).
+    Install: download the GGUF from the Hub, `uv run python tools/finetune/ollama_create.py <gguf>`.
+  - Site: How it works has a "Fine-tuned writer" row (numbers from docs/backtests/writer_finetune.json).
+  - Found, not fixed (follow-ups): (a) the gate passes notes that copy the fact-card layout ("Facts: - … (code …)"),
+    4 of the 3B's 22 accepted notes; (b) `squad_market`'s key players outside FPL leagues come from the evidence
+    ledger, so a prompt depends on what was built before it in the run; (c) the warehouse copy used had stale
+    ledger values for some standings (`rerun` audit failures).
 
 ## Key facts discovered (do not re-research)
 - API-Football free plan: seasons 2022–2024 only + rolling yesterday→tomorrow date window; 100 req/day.
@@ -462,6 +484,12 @@ Paderborn (no formation fits). Keep total calls well under 100/day (code caps at
 - socceraction can't run on numpy 2 → isolated in `tools/spadl`. Do not add `silly-kicks` (supply-chain risk).
 - Windows: PyTensor C compiler broken → NUTS via nutpie (`PYTENSOR_FLAGS=cxx=` set by CLI). No `make`: use `uv run dugout ...`.
 - When scripting edits in Python on Windows use `PYTHONUTF8=1` (cp1252 mangles text).
+- Groq free tier per model: 1,000 requests/day, 8k tokens/min and **200k tokens/day (rolling)**; the 429 says "tokens
+  per day (TPD)". qwen3.8-27b is ~80 writer requests a day.
+- Kaggle (CLI 2.2.4, `KAGGLE_API_TOKEN`): "T4 x2" machine, 30 GPU h/week, at most 2 batch GPU sessions (queued ones
+  count; no cancel in the CLI). A queued kernel sometimes starts at once when pushed again. Kaggle image: Python
+  3.13, torch 2.11 cu128; llama.cpp's ubuntu-cuda-12.8 release binaries run there.
+- Ollama 0.40 quantizes only safetensors imports (`--quantize` on a GGUF fails): quantize with llama-quantize first.
 
 ## Commands
 - `uv run dugout ingest [--job nightly|injuries|history] [--only a,b]`, `uv run dugout status`
