@@ -103,7 +103,10 @@ def build_graph(ctx: Context):
                 allowed_names=ctx.allowed_names(),
                 template_limit=spec.max_facts,
             )
-        sec = Section(spec.name, spec.title, question, facts, draft.template, draft.writer, draft.attempts)
+        title = spec.title
+        if spec.name == "lineup" and facts and facts[0].label == "confirmed formation for the next match":
+            title = "Confirmed XI"
+        sec = Section(spec.name, title, question, facts, draft.template, draft.writer, draft.attempts)
         return {"sections": [sec]}
 
     def synthesise(state: State) -> dict:
