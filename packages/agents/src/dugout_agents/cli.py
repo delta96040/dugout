@@ -8,6 +8,7 @@ import logging
 import os
 import sys
 import time
+from pathlib import Path
 
 from dugout_pipeline.settings import REPO_ROOT
 
@@ -112,9 +113,60 @@ def cmd_bench_writer(args) -> int:
     from dugout_agents.bench_writer import run
 
     ctx = _ctx(argparse.Namespace(no_llm=True, db=args.db))
-    r = run(ctx, args.models.split(","), args.clubs.split(","), out_dir=REPO_ROOT / "docs" / "backtests")
+    clubs = args.clubs.split(",")
+    if args.clubs == "heldout":  # the fine-tune's test clubs (data/finetune/split.json)
+        split = json.loads((REPO_ROOT / "data" / "finetune" / "split.json").read_text(encoding="utf-8"))
+        clubs = sorted(c for c, s in split.items() if s == "test")
+    r = run(
+        ctx,
+        args.models.split(","),
+        clubs,
+        out_dir=REPO_ROOT / "docs" / "backtests",
+        name=args.name,
+        patient=args.patient,
+    )
     for m, x in r["results"].items():
         print(m, {k: v for k, v in x.items() if k != "rows"})
+    return 0
+
+
+def cmd_finetune_data(args) -> int:
+    from dugout_agents import finetune
+
+    out = REPO_ROOT / "data" / "finetune"
+    if args.export_prompts or args.import_replies:
+        ctx = _ctx(argparse.Namespace(no_llm=True, db=args.db))
+        if args.export_prompts:
+            print(finetune.export_prompts(ctx, out, args.players, limit=args.limit), "prompts written")
+            return 0
+        print(dict(finetune.import_replies(ctx, out, Path(args.import_replies), args.offline_teacher)))
+    elif not args.finalise:
+        from dugout_agents.llm import FALLTHROUGH_WAIT, FallbackLLM, make_llm
+        from dugout_pipeline.settings import get_settings
+
+        # a chain: each member moves on (instead of sleeping) when its provider asks for a long wait, e.g. a
+        # daily token cap; the run stops when every member is capped and resumes on the next run
+        chain = [
+            make_llm(t, get_settings().llm_local_base_url, FALLTHROUGH_WAIT) for t in args.teacher.split(",")
+        ]
+        if None in chain:
+            raise SystemExit("a teacher's API key is not set in .env")
+        watch = finetune.RateWatch()
+        chain[0]._http.event_hooks["response"].append(watch)  # reads the remaining-requests header
+        llm = chain[0] if len(chain) == 1 else FallbackLLM(chain)
+        ctx = _ctx(argparse.Namespace(no_llm=True, db=args.db))
+        stats = finetune.generate(
+            ctx,
+            llm,
+            ",".join(m.name for m in chain) if len(chain) > 1 else chain[0].name,
+            out,
+            max_calls=args.max_calls,
+            floor=args.floor,
+            players_per_club=args.players,
+            watch=watch,
+        )
+        print(dict(stats))
+    print(json.dumps(finetune.finalise(out), indent=1))
     return 0
 
 
@@ -151,8 +203,39 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument(
         "--models", required=True, help="comma list of <provider>:<model> (groq, openrouter, local)"
     )
-    s.add_argument("--clubs", default="liverpool,arsenal")
+    s.add_argument(
+        "--clubs", default="liverpool,arsenal", help="comma list, or 'heldout' (fine-tune test clubs)"
+    )
+    s.add_argument("--name", default="writer_llm", help="report name in docs/backtests")
+    s.add_argument(
+        "--patient", action="store_true", help="wait out rate limits (waits excluded from seconds per note)"
+    )
     s.set_defaults(fn=cmd_bench_writer)
+    s = sub.add_parser(
+        "finetune-data", help="teacher notes that pass the publish gate -> data/finetune (SFT pairs)"
+    )
+    s.add_argument(
+        "--teacher",
+        default="groq:qwen/qwen3.8-27b",
+        help="comma list tried in order (the model that wrote each note is recorded)",
+    )
+    s.add_argument("--max-calls", type=int, default=300, help="teacher calls this run (the run resumes)")
+    s.add_argument("--floor", type=int, default=200, help="slow down below this many requests left today")
+    s.add_argument("--players", type=int, default=4, help="squad players per club with player questions")
+    s.add_argument("--finalise", action="store_true", help="only dedupe and write train/val files")
+    s.add_argument(
+        "--export-prompts", action="store_true", help="write data/finetune/prompts.jsonl (offline teacher)"
+    )
+    s.add_argument("--limit", type=int, help="at most this many exported prompts")
+    s.add_argument(
+        "--import-replies", help="judge an offline teacher's replies.jsonl and add the accepted ones"
+    )
+    s.add_argument(
+        "--offline-teacher",
+        default="qwen/qwen3.8-27b@Q4_K_M (llama.cpp, Kaggle)",
+        help="label recorded for imported replies",
+    )
+    s.set_defaults(fn=cmd_finetune_data)
     args = p.parse_args(argv)
     return args.fn(args)
 
