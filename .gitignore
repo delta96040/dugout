@@ -27,6 +27,8 @@ out/
 .cache/
 data/raw/
 data/warehouse/
+# writer fine-tune data: teacher notes quote headlines and rumours (rebuilt locally, never redistributed)
+data/finetune/
 *.duckdb
 *.duckdb.wal
 mlruns/

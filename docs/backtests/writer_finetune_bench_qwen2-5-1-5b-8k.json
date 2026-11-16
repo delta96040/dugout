@@ -1,0 +1,729 @@
+{
+  "generated_at": "2026-10-19T17:08:34+00:00",
+  "clubs": [
+    "bayern-munchen",
+    "chelsea",
+    "elche",
+    "elversberg",
+    "espanyol",
+    "heerenveen",
+    "internazionale",
+    "manchester-city",
+    "monza",
+    "olympique-lyonnais",
+    "rennes",
+    "utrecht"
+  ],
+  "results": {
+    "local:qwen2.5-1.5b-8k": {
+      "sections": 50,
+      "accepted": 0.32,
+      "first_try": 0.24,
+      "llm_errors": 0,
+      "stray_number_drafts": 24,
+      "seconds_per_section": 33.2,
+      "api_calls": 88,
+      "rows": [
+        {
+          "club": "bayern-munchen",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 33.8,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: 1, 2, 3, 4, 5, 6, three",
+            "numbers written directly: 1, 2, 3, 4, 5, 6"
+          ],
+          "text": ""
+        },
+        {
+          "club": "bayern-munchen",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 28.1,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "bayern-munchen",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 30.7,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: 1, 2, 3, 4, 5",
+            "too many sentences",
+            "sentence 1 conflicting: sale_likelihood of Jamal Musiala is placed next to another name; sale_likelihood of Alphonso Davies is placed next to another name",
+            "sentence 3 conflicting: no word for sale_likelihood near its number; no word for sale_likelihood near its number; no word for market_value near its number"
+          ],
+          "text": ""
+        },
+        {
+          "club": "bayern-munchen",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 31.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "We recommend Bayern München to strengthen in the centre-forward position. The best option there is {{stat:ev_25b547a242f8eb34}}, with a market value of {{stat:ev_3f7a6a15cbbff64f|eur_m}}. Additionally, they should consider Hugo Ekitiké, who is {{stat:ev_44576b4d0bff6224|int}} years old and has a strong market value of {{stat:ev_8024bad3397f98db|eur_m}}."
+        },
+        {
+          "club": "chelsea",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 22.3,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 18.5,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: elo of Chelsea is placed next to another name",
+            "sentence 3 conflicting: elo of Chelsea is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "news",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 115.1,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 unverified: injury clause: 0 independent source(s); need 2",
+            "sentence 4 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 43.7,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 2 conflicting: market_value belongs to Mike Penders, who is not named here; fair_fee belongs to Mike Penders, who is not named here; fair_fee_low belongs to Mike Penders, who is not named here; fair_fee_high belongs to Mike Penders, who is not named here",
+            "sentence 3 conflicting: market_value belongs to Mike Penders, who is not named here; fair_fee belongs to Mike Penders, who is not named here; fair_fee_low belongs to Mike Penders, who is not named here; fair_fee_high belongs to Mike Penders, who is not named here",
+            "sentence 4 conflicting: market_value belongs to Mike Penders, who is not named here; fair_fee belongs to Mike Penders, who is not named here; fair_fee_low belongs to Mike Penders, who is not named here; fair_fee_high belongs to Mike Penders, who is not named here; no word for market_value near its number",
+            "[F353] is a statement, not a value"
+          ],
+          "text": ""
+        },
+        {
+          "club": "chelsea",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 33.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elche",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 16.9,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: three",
+            "sentence 4 conflicting: league_form belongs to Elche, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elche",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 3.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Elche is set to face Rayo Vallecano in their next league match, which is scheduled for {{stat:ev_2fe39534a2c8d6ca|date}}."
+        },
+        {
+          "club": "elche",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 35.7,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 2 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence",
+            "numbers written directly: 0, 2, 6"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elche",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 58.6,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 2 conflicting: transfer clause: contradicted by a tier 1-2 source",
+            "sentence 3 conflicting: need_best_value belongs to Elche, who is not named here; positions_played belongs to Leo Kokubo, who is not named here",
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elversberg",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 10.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Elversberg, who is not named here",
+            "sentence 4 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 1 conflicting: league_form belongs to Elversberg, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elversberg",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 2.8,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Elversberg expects their next league match against RB Leipzig to be held on {{stat:ev_7a4dbb6523a9e002|date}}."
+        },
+        {
+          "club": "elversberg",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 15.9,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: 0, 2, 6",
+            "numbers written directly: 0, 2, 6"
+          ],
+          "text": ""
+        },
+        {
+          "club": "elversberg",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 31.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "We recommend Elversberg strengthen in the centre-back position, where they need {{stat:ev_9714ce1de592d1f0|int}} players, leaving veterans aside. The best option there is {{stat:ev_946d782fdc7c70c1}}. We recommend Elversberg strengthen in the goalkeeper position, where they need {{stat:ev_8b8d748899e02fcf|int}} players, leaving veterans aside. The best option there is typically worth {{stat:ev_78c097ee2d8a66ff|eur_m}}."
+        },
+        {
+          "club": "espanyol",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 9.8,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Espanyol are {{stat:ev_560735347b284232|ord}} in the La Liga table, indicating they are performing poorly in the league. They have {{stat:ev_4823d8ed195a49d3}} points, which is not indicative of their performance. Espanyol have scored {{stat:ev_0e9aac4fff0839e2}} league goals, but they have conceded {{stat:ev_00806a91d44b9578}} league goals, which is a concerning trend. The most recent league results for Espanyol are {{stat:ev_a7ccaa9123959d54}}, showing a mixed pattern of wins and losses. Manolo González has been Espanyol's head coach since {{stat:ev_35f6a279201b06f7|date}}, and the club's recent results suggest that the new coach may need to make adjustments to the team's approach."
+        },
+        {
+          "club": "espanyol",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 3.2,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Espanyol should expect a competitive match against Racing de Santander. The upcoming league encounter is scheduled for {{stat:ev_0f38146d39d6e7c3|date}}."
+        },
+        {
+          "club": "espanyol",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 34.4,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: no word for market_value near its number; no word for sale_likelihood near its number; no word for market_value near its number; sale_likelihood of Urko González is placed next to another name; sale_likelihood of Tyrhys Dolan is placed next to another name; fair_fee of Urko González is placed next to another name; no word for fair_fee near its number",
+            "sentence 3 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 4 conflicting: no word for market_value near its number; no word for sale_likelihood near its number; no word for market_value near its number; sale_likelihood of Urko González is placed next to another name; sale_likelihood of Tyrhys Dolan is placed next to another name; fair_fee of Urko González is placed next to another name; no word for fair_fee near its number"
+          ],
+          "text": ""
+        },
+        {
+          "club": "espanyol",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 48.8,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: 2, 3, 8"
+          ],
+          "text": "We recommend that Espanyol strengthen in the goalkeeper position, where they currently have {{stat:ev_f6cddec5947dab9f|int}} players. Yehvann Diouf, who is {{stat:ev_578738ac91b95cd6|int}} years old, is a veteran option but has a market value of {{stat:ev_7a5339df93157654|pct}} of players at his position in his league. Rome-Jayden Owusu-Oduro, who is {{stat:ev_ad047809ea7a16ea|int}} years old, is a younger option with a market value of {{stat:ev_fdb33b3a8cac73ec|eur_m}} and a stronger foot. Leo Kokubo, who is {{stat:ev_ff2d39f9755d9ec8|int}} centimetres tall and has won {{stat:ev_2d1b136fa8700ca7|int}} international caps, is a realistic target for the position. We project that Leo Kokubo will play {{stat:ev_9577246176b588c6|pct}} of Espanyol's minutes."
+        },
+        {
+          "club": "heerenveen",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 15.3,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Heerenveen, who is not named here",
+            "numbers written directly: 0, 1, 2, 6, 7, 9"
+          ],
+          "text": ""
+        },
+        {
+          "club": "heerenveen",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 3.8,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Heerenveen's next league match is ADO Den Haag v Heerenveen on {{stat:ev_0487e0e49411e7b9|date}}."
+        },
+        {
+          "club": "heerenveen",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 45.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: market_value of Jacob Trenskow is placed next to another name; market_value of Oliver Braude is placed next to another name; sale_likelihood of Jacob Trenskow is placed next to another name; sale_likelihood of Oliver Braude is placed next to another name; sale_likelihood of Maas Willemsen is placed next to another name",
+            "sentence 2 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 conflicting: sale_likelihood of Jacob Trenskow is placed next to another name; sale_likelihood of Oliver Braude is placed next to another name; no word for sale_likelihood near its number",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "heerenveen",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 40.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "sentence 3 unverified: transfer clause: no relevant source found"
+          ],
+          "text": ""
+        },
+        {
+          "club": "internazionale",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 9.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Internazionale are currently {{stat:ev_d6421cec4e70ad20|ord}} in the Serie A table, indicating they are performing well in the league. Internazionale have accumulated {{stat:ev_091fa46658db5764}} points, which is a strong showing. Internazionale have scored {{stat:ev_185dc490191fdfed}} league goals, showing their offensive capabilities. Internazionale have conceded {{stat:ev_42ab05698318f0b5}} league goals, indicating their defensive performance. Internazionale's recent league results, oldest first, are {{stat:ev_c66a97d53dfb1ab5}}, reflecting their recent form. Cristian Chivu has been Internazionale's head coach since {{stat:ev_58443d8341f9cb00|date}}, bringing a new approach to the team."
+        },
+        {
+          "club": "internazionale",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 8.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "more than one recommendation sentence",
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence"
+          ],
+          "text": ""
+        },
+        {
+          "club": "internazionale",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 27.1,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: 1, 2, 3",
+            "numbers written directly: 1, 2, 3"
+          ],
+          "text": ""
+        },
+        {
+          "club": "internazionale",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 79.8,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: 0, 1, 2, 3, 4, 8",
+            "too many sentences",
+            "numbers written directly: 1, 2, 3, 4",
+            "too many sentences"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 30.2,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "too many sentences",
+            "sentence 3 conflicting: elo of Manchester City is placed next to another name; appointed of Enzo Maresca is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 16.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 4 conflicting: elo of Manchester City is placed next to another name",
+            "sentence 4 conflicting: elo of Manchester City is placed next to another name"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "news",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 89.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: contradicted by a tier 1-2 source (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 43.6,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: 1, 2, 3, 4",
+            "too many sentences",
+            "numbers written directly: 1, 2, 3"
+          ],
+          "text": ""
+        },
+        {
+          "club": "manchester-city",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 54.8,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 conflicting: positions_played belongs to Aleksandar Pavlovic, who is not named here; market_value belongs to Aleksandar Pavlovic, who is not named here",
+            "the note states too few of the facts; state the facts first, then at most one recommendation"
+          ],
+          "text": "We recommend that Manchester City strengthen in defensive midfield, where Aleksandar Pavlovic is a priority. Pavlovic is a key player who averages {{stat:ev_dcb52f1495f223c8|.2f}} league goals per full match and {{stat:ev_eb1ecc27fe0243b4|.2f}} league assists per full match, and has more league goals and assists per full match than {{stat:ev_291a4d158367fdc3|pct}} of players at his position in his league. Pavlovic's stronger foot is his {{stat:ev_1309df03b9949ebe}}, and he is {{stat:ev_b8c97e43d46a3a63|int}} centimetres tall. Pavlovic's market value is {{stat:ev_5dc5d3657411a184|eur_m}}, and our fair-fee estimate for him is {{stat:ev_b281798ae73d06d4|eur_m}}."
+        },
+        {
+          "club": "monza",
+          "agent": "club",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 10.1,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Monza are currently in the bottom half of the Serie A table, having {{stat:ev_bf88ad96e43069af|ord}} points. They have scored {{stat:ev_013864a99ca54d9b}} league goals and conceded {{stat:ev_291b5faffec3139c}} league goals. Ivan Jurić has been Monza's head coach since {{stat:ev_4e7e9e5df901d6c0|date}}. Monza's recent league results, oldest first, show that they have struggled in recent matches, with {{stat:ev_2e7b1bf28924a1d8}}."
+        },
+        {
+          "club": "monza",
+          "agent": "match",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 36.6,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: two",
+            "sentence 2 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 unverified: 1 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": ""
+        },
+        {
+          "club": "monza",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 42.3,
+          "llm_error": false,
+          "stray": 2,
+          "errors": [
+            "numbers written directly: 1, 2, 3",
+            "too many sentences",
+            "numbers written directly: 1, 2"
+          ],
+          "text": ""
+        },
+        {
+          "club": "monza",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 38.3,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Monza needs to strengthen in defensive midfield. The best option for this position is {{stat:ev_c11e1cce2c80e873}}. Monza's squad carries {{stat:ev_510cdc810305c5be|int}} players for defensive midfield, and the last of Monza's regular starters at defensive midfield is {{stat:ev_97b2299e598f0230}}."
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 16.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Olympique Lyonnais, who is not named here",
+            "sentence 1 conflicting: league_position belongs to Olympique Lyonnais, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 4.4,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Olympique Lyonnais's next league match is Paris Saint-Germain v Olympique Lyonnais on {{stat:ev_d41e4e2f9406e8aa|date}}."
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 26.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 2 conflicting: no word for market_value near its number",
+            "sentence 3 conflicting: no word for sale_likelihood near its number"
+          ],
+          "text": ""
+        },
+        {
+          "club": "olympique-lyonnais",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 49.8,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence",
+            "sentence 3 conflicting: need_wanted belongs to Olympique Lyonnais, who is not named here; need_bar_player belongs to Olympique Lyonnais, who is not named here",
+            "sentence 4 conflicting: need_best_value belongs to Olympique Lyonnais, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "rennes",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 17.7,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "sentence 3 conflicting: league_form belongs to Rennes, who is not named here",
+            "sentence 3 conflicting: league_form belongs to Rennes, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "rennes",
+          "agent": "match",
+          "accepted": true,
+          "first_try": true,
+          "seconds": 3.9,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [],
+          "text": "Rennes expect a competitive match against Strasbourg on {{stat:ev_2fe15bc469641d60|date}}."
+        },
+        {
+          "club": "rennes",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 27.5,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 2 conflicting: sale_likelihood of Esteban Lepaul is placed next to another name; no word for sale_likelihood near its number; no word for sale_likelihood near its number",
+            "unknown fact code [F2687lo]",
+            "unknown fact code [F2687hi]",
+            "malformed or unresolved fact code"
+          ],
+          "text": ""
+        },
+        {
+          "club": "rennes",
+          "agent": "scout",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 46.5,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence"
+          ],
+          "text": "We recommend that Rennes strengthen in the defensive midfield position, where they need {{stat:ev_e390b75b07c7a17e|int}} players, leaving veterans aside. This area is crucial for the team's performance, and Wouter Burger, aged {{stat:ev_d14f87b0fea3b661|int}}, is the best target for this need."
+        },
+        {
+          "club": "utrecht",
+          "agent": "club",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 20.1,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: 0, 1, 2, 3, 7, 8, 9",
+            "sentence 1 unverified: no relevant source found (state it with a fact code, or in the wording of a statement fact)",
+            "sentence 3 conflicting: league_goalsFor belongs to Utrecht, who is not named here; league_goalsAgainst belongs to Utrecht, who is not named here",
+            "sentence 4 conflicting: league_form belongs to Utrecht, who is not named here"
+          ],
+          "text": ""
+        },
+        {
+          "club": "utrecht",
+          "agent": "match",
+          "accepted": true,
+          "first_try": false,
+          "seconds": 32.0,
+          "llm_error": false,
+          "stray": 0,
+          "errors": [
+            "the note states too few of the facts; state the facts first, then at most one recommendation",
+            "more than one recommendation sentence"
+          ],
+          "text": "Utrecht's next league match is Utrecht v PEC Zwolle on {{stat:ev_7f7e515695d7d2e5|date}}. Expect a competitive match with both teams looking to improve their recent form."
+        },
+        {
+          "club": "utrecht",
+          "agent": "transfer",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 89.4,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "numbers written directly: 1, 2, 3",
+            "too many sentences",
+            "sentence 2 conflicting: market_value belongs to Yoann Cathline, who is not named here; fair_fee belongs to Yoann Cathline, who is not named here; fair_fee_low belongs to Yoann Cathline, who is not named here; fair_fee_high belongs to Yoann Cathline, who is not named here; market_value belongs to Angel Alarcon, who is not named here; fair_fee belongs to Angel Alarcon, who is not named here; fair_fee_low belongs to Angel Alarcon, who is not named here; fair_fee_high belongs to Angel Alarcon, who is not named here",
+            "sentence 3 unverified: 0 independent source(s); need 2 (state it with a fact code, or in the wording of a statement fact)"
+          ],
+          "text": ""
+        },
+        {
+          "club": "utrecht",
+          "agent": "scout",
+          "accepted": false,
+          "first_try": false,
+          "seconds": 104.2,
+          "llm_error": false,
+          "stray": 1,
+          "errors": [
+            "sentence 2 unverified: transfer clause: no relevant source found",
+            "sentence 4 conflicting: need_wanted belongs to Utrecht, who is not named here; need_best_player belongs to Utrecht, who is not named here",
+            "numbers written directly: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9",
+            "too many sentences"
+          ],
+          "text": ""
+        }
+      ]
+    }
+  }
+}

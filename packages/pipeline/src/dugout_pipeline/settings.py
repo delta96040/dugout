@@ -31,8 +31,10 @@ class Settings(BaseSettings):
     hf_token: SecretStr | None = None
 
     # Agents' LLM: `<provider>:<model>` entries tried in order (providers in dugout_agents.llm.PROVIDERS), all
-    # open-weight models; entries whose key is missing are skipped. Chosen in docs/backtests/writer_llm.md.
-    llm_chain: str = "groq:qwen/qwen3.8-27b,groq:openai/gpt-oss-120b,openrouter:poolside/laguna-s-2.1:free,local:qwen2.5:3b"
+    # open-weight models; entries whose key is missing are skipped. Chosen in docs/backtests/writer_llm.md; the local
+    # fine-tuned writer (docs/backtests/writer_finetune.md) comes before qwen2.5:3b, which still serves when it is
+    # not installed (Ollama answers 404 and the chain moves on).
+    llm_chain: str = "groq:qwen/qwen3.8-27b,groq:openai/gpt-oss-120b,openrouter:poolside/laguna-s-2.1:free,local:dugout-writer-1.5b,local:qwen2.5:3b"
     llm_local_base_url: str | None = None  # Ollama somewhere other than localhost:11434 (e.g. docker compose)
 
     searxng_url: str | None = None
